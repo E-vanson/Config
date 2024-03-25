@@ -1,0 +1,958 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Add New Person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/household_member_registration_reminder/inputs/contact/_id:label">
+            <value>Household UUID</value>
+          </text>
+          <text id="/household_member_registration_reminder/inputs/contact/parent/_id:label">
+            <value>CHP Area UUID</value>
+          </text>
+          <text id="/household_member_registration_reminder/inputs/contact/parent:label">
+            <value>CHP Area object</value>
+          </text>
+          <text id="/household_member_registration_reminder/inputs/contact:label">
+            <value>Household object</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/alternate_phone:label">
+            <value>Secondary Mobile Number</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/contact_type:label">
+            <value>Contact type</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/delimiter:label">
+            <value>&lt;hr style="margin:0 auto;"&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/hearing:label">
+            <value>Hearing</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/mental:label">
+            <value>Mental</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/physical:label">
+            <value>Physical</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/speech:label">
+            <value>Speech</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities/visual:label">
+            <value>Visual</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities:label">
+            <value>Which one?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/disabilities_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/dob_method/approx:label">
+            <value>Date of birth with current age</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/dob_method/calendar:label">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/dob_method:label">
+            <value>Does <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> know their date of birth?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/get_id:label">
+            <value>**Encourage <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> to get an ID**</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_disability/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_disability/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_disability:label">
+            <value>Does <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> have any known disability?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_mch_handbook/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_mch_handbook/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/has_mch_handbook:label">
+            <value>Does the <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> have an MCH handbook?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/hh_member_age_months:hint">
+            <value>And how many months?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/hh_member_age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/hh_member_age_years:hint">
+            <value>Age in years</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/hh_member_age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/identification_number:label">
+            <value>Enter the <output value=" /household_member_registration_reminder/repeat/child/calc_identification_type_label "/> number</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/identification_type:label">
+            <value>Identification</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/imm_upto_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/imm_upto_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/imm_upto_date:label">
+            <value>Is <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> immunization status upto date?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/in_school/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/in_school/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/in_school:label">
+            <value>Is <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> in school?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/is_orphan/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/is_orphan/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/is_orphan:label">
+            <value>is <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/>an orphan?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/muac_colour/green:label">
+            <value>Green</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/muac_colour/red:label">
+            <value>Red</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/muac_colour/yellow:label">
+            <value>Yellow</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/muac_colour:label">
+            <value>Asses child for malnutrition using MUAC tape. What is the child's MUAC scores?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_counsel_fp:label">
+            <value>&lt;span style='color:blue'&gt;Counsel <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> on Family Planning.&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_encourage_and_register:label">
+            <value>&lt;span style='color:blue'&gt;Encourage <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> to visit health facility. Use the Pregnancy Home Services form to register pregnancy details.&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_imm_not_upto_date:label">
+            <value>&lt;span style='color:red'&gt;Refer to the health facility&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_provide_fp_education:label">
+            <value>&lt;span style='color:blue'&gt;Use the Family Planning Services form to provide family planning education and counselling and referral.&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_provide_pregnancy_home_services:label">
+            <value>&lt;span style='color:blue'&gt;Use the Pregnancy Home Services form to provide home pregnancy services.&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/n_refer_muac:label">
+            <value>&lt;span style='color:red'&gt;Refer to the health facility&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/name:hint">
+            <value>Please use 3 names</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/name:label">
+            <value>Name of household member</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/phone:label">
+            <value>Primary Mobile Number</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/pregnant/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/pregnant/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/pregnant:label">
+            <value>Is <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> pregnant?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/relationship_to_hh_head:label">
+            <value>What is the relationship to the household head?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/relationship_to_hh_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/sex/intersex:label">
+            <value>Intersex</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/using_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/using_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child/using_fp:label">
+            <value>Is <output value=" /household_member_registration_reminder/repeat/child/hh_member_name "/> using Family Planning?</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/child:label">
+            <value>Member Information</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat/note:label">
+            <value>&lt;span style="color:#888;font-size:11px;"&gt;**Add another person by pressing the + button.** 
+Remove this person by pressing the - button&lt;/span&gt;</value>
+          </text>
+          <text id="/household_member_registration_reminder/repeat:label">
+            <value>Family Members' Information</value>
+          </text>
+          <text id="static_instance-identification-0">
+            <value>National ID</value>
+          </text>
+          <text id="static_instance-identification-1">
+            <value>Birth Certificate</value>
+          </text>
+          <text id="static_instance-identification-2">
+            <value>Driver's License</value>
+          </text>
+          <text id="static_instance-identification-3">
+            <value>Passport</value>
+          </text>
+          <text id="static_instance-identification-4">
+            <value>Alien Card</value>
+          </text>
+          <text id="static_instance-identification-5">
+            <value>None</value>
+          </text>
+          <text id="static_instance-impairments-0">
+            <value>Visual</value>
+          </text>
+          <text id="static_instance-impairments-1">
+            <value>Hearing</value>
+          </text>
+          <text id="static_instance-impairments-2">
+            <value>Speech</value>
+          </text>
+          <text id="static_instance-impairments-3">
+            <value>Physical</value>
+          </text>
+          <text id="static_instance-impairments-4">
+            <value>Mental</value>
+          </text>
+          <text id="static_instance-impairments-5">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-insurance_cover-0">
+            <value>NHIF</value>
+          </text>
+          <text id="static_instance-insurance_cover-1">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>Male</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>Female</value>
+          </text>
+          <text id="static_instance-male_female-2">
+            <value>Intersex</value>
+          </text>
+          <text id="static_instance-muac_colour-0">
+            <value>Green</value>
+          </text>
+          <text id="static_instance-muac_colour-1">
+            <value>Yellow</value>
+          </text>
+          <text id="static_instance-muac_colour-2">
+            <value>Red</value>
+          </text>
+          <text id="static_instance-relationship-0">
+            <value>Parent</value>
+          </text>
+          <text id="static_instance-relationship-1">
+            <value>Spouse</value>
+          </text>
+          <text id="static_instance-relationship-2">
+            <value>Child</value>
+          </text>
+          <text id="static_instance-relationship-3">
+            <value>Sibling</value>
+          </text>
+          <text id="static_instance-relationship-4">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-repeat_yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-repeat_yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-select_dob_method-0">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="static_instance-select_dob_method-1">
+            <value>Date of birth with current age</value>
+          </text>
+          <text id="static_instance-true_false-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-true_false-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-water_source-0">
+            <value>Piped water</value>
+          </text>
+          <text id="static_instance-water_source-1">
+            <value>Shallow Well</value>
+          </text>
+          <text id="static_instance-water_source-2">
+            <value>Borehole</value>
+          </text>
+          <text id="static_instance-water_source-3">
+            <value>Roof Harvest</value>
+          </text>
+          <text id="static_instance-water_source-4">
+            <value>River or Dams</value>
+          </text>
+          <text id="static_instance-water_source-5">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <household_member_registration_reminder id="household_member_registration_reminder" prefix="J1!household_member_registration_reminder!" delimiter="#" version="2023-06-16  23-59">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <household_id/>
+          <place_id/>
+          <chv_area_id/>
+          <repeat>
+            <child jr:template="" db-doc="true">
+              <delimiter/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+              <created_by_doc db-docs-ref="/household_member_registration_reminder"/>
+              <type>contact</type>
+              <contact_type>f_client</contact_type>
+              <name/>
+              <hh_member_name/>
+              <sex/>
+              <date_of_birth/>
+              <dob_method>calendar</dob_method>
+              <dob_calendar/>
+              <hh_member_age_years/>
+              <hh_member_age_months>0</hh_member_age_months>
+              <ephemeral_months/>
+              <ephemeral_years/>
+              <dob_approx/>
+              <dob_raw/>
+              <dob_iso/>
+              <age_in_years/>
+              <age_in_months/>
+              <member_adult_filter/>
+              <phone/>
+              <alternate_phone/>
+              <identification_type/>
+              <calc_identification_type_label/>
+              <identification_number/>
+              <get_id/>
+              <relationship_to_hh_head/>
+              <relationship_to_hh_other/>
+              <has_disability/>
+              <disabilities/>
+              <disabilities_other/>
+              <in_school/>
+              <is_orphan/>
+              <pregnant/>
+              <has_mch_handbook/>
+              <n_encourage_and_register/>
+              <n_provide_pregnancy_home_services/>
+              <using_fp/>
+              <n_counsel_fp/>
+              <n_provide_fp_education/>
+              <imm_upto_date/>
+              <n_imm_not_upto_date/>
+              <muac_colour/>
+              <n_refer_muac/>
+              <meta tag="hidden">
+                <created_by/>
+                <created_by_person_uuid/>
+                <created_by_place_uuid/>
+              </meta>
+            </child>
+            <note/>
+          </repeat>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </household_member_registration_reminder>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="true_false">
+        <root>
+          <item>
+            <itextId>static_instance-true_false-0</itextId>
+            <name>true</name>
+          </item>
+          <item>
+            <itextId>static_instance-true_false-1</itextId>
+            <name>false</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="identification">
+        <root>
+          <item>
+            <itextId>static_instance-identification-0</itextId>
+            <name>national_id</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-1</itextId>
+            <name>birth_certificate</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-2</itextId>
+            <name>drivers_license</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-3</itextId>
+            <name>passport</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-4</itextId>
+            <name>alien_card</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-5</itextId>
+            <name>none</name>
+            <member_filter>2</member_filter>
+          </item>
+        </root>
+      </instance>
+      <instance id="male_female">
+        <root>
+          <item>
+            <itextId>static_instance-male_female-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female-1</itextId>
+            <name>female</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female-2</itextId>
+            <name>intersex</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="relationship">
+        <root>
+          <item>
+            <itextId>static_instance-relationship-0</itextId>
+            <name>parent</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-1</itextId>
+            <name>spouse</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-2</itextId>
+            <name>child</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-3</itextId>
+            <name>sibling</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-4</itextId>
+            <name>other</name>
+            <member_filter>2</member_filter>
+          </item>
+        </root>
+      </instance>
+      <instance id="muac_colour">
+        <root>
+          <item>
+            <itextId>static_instance-muac_colour-0</itextId>
+            <name>green</name>
+          </item>
+          <item>
+            <itextId>static_instance-muac_colour-1</itextId>
+            <name>yellow</name>
+          </item>
+          <item>
+            <itextId>static_instance-muac_colour-2</itextId>
+            <name>red</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="select_dob_method">
+        <root>
+          <item>
+            <itextId>static_instance-select_dob_method-0</itextId>
+            <name>calendar</name>
+          </item>
+          <item>
+            <itextId>static_instance-select_dob_method-1</itextId>
+            <name>approx</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="repeat_yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-repeat_yes_no-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-repeat_yes_no-1</itextId>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="insurance_cover">
+        <root>
+          <item>
+            <itextId>static_instance-insurance_cover-0</itextId>
+            <name>nhif</name>
+          </item>
+          <item>
+            <itextId>static_instance-insurance_cover-1</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="impairments">
+        <root>
+          <item>
+            <itextId>static_instance-impairments-0</itextId>
+            <name>visual</name>
+          </item>
+          <item>
+            <itextId>static_instance-impairments-1</itextId>
+            <name>hearing</name>
+          </item>
+          <item>
+            <itextId>static_instance-impairments-2</itextId>
+            <name>speech</name>
+          </item>
+          <item>
+            <itextId>static_instance-impairments-3</itextId>
+            <name>physical</name>
+          </item>
+          <item>
+            <itextId>static_instance-impairments-4</itextId>
+            <name>mental</name>
+          </item>
+          <item>
+            <itextId>static_instance-impairments-5</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="water_source">
+        <root>
+          <item>
+            <itextId>static_instance-water_source-0</itextId>
+            <name>piped_water</name>
+          </item>
+          <item>
+            <itextId>static_instance-water_source-1</itextId>
+            <name>shallow_well</name>
+          </item>
+          <item>
+            <itextId>static_instance-water_source-2</itextId>
+            <name>borehole</name>
+          </item>
+          <item>
+            <itextId>static_instance-water_source-3</itextId>
+            <name>roof_harvest</name>
+          </item>
+          <item>
+            <itextId>static_instance-water_source-4</itextId>
+            <name>river_or_dams</name>
+          </item>
+          <item>
+            <itextId>static_instance-water_source-5</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/household_member_registration_reminder/inputs" relevant="0"/>
+      <bind nodeset="/household_member_registration_reminder/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/inputs/user/name" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/inputs/contact/_id" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/household_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/household_member_registration_reminder/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/household_member_registration_reminder/chv_area_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/delimiter" readonly="true()" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/parent/_id" type="string" calculate=" /household_member_registration_reminder/household_id "/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/parent/parent/_id" type="string" calculate=" /household_member_registration_reminder/chv_area_id "/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/type" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/contact_type" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/name" type="string" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/hh_member_name" type="string" calculate="../name"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/sex" type="select1" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/date_of_birth" type="string" calculate="../dob_iso"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/dob_method" type="select1" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/dob_calendar" type="date" constraint=".&lt;today()" required="true()" jr:constraintMsg="Date must be before today" relevant="selected(../dob_method,'calendar')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/hh_member_age_years" type="int" constraint=". &gt;= 0 and . &lt;=130" required="true()" jr:constraintMsg="Age must be between 0 and 130" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/hh_member_age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" required="true()" jr:constraintMsg="Months must be between 0 and 11" relevant="selected(../dob_method,'approx')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../hh_member_age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../hh_member_age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../hh_member_age_months)"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - ../hh_member_age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../hh_member_age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../hh_member_age_years)"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/dob_approx" type="string" calculate="concat(string(../ephemeral_years),'-',if(../ephemeral_months&lt;10, concat('0',string(../ephemeral_months)), ../ephemeral_months),'-',string(format-date-time(today(), &quot;%d&quot;)))"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/dob_raw" type="string" calculate="if(not(selected( ../dob_method,'approx')), 
+../dob_calendar,
+../dob_approx )"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/dob_iso" type="string" calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/age_in_years" type="string" calculate="if(selected(../dob_method,'calendar'),floor( difference-in-months( ../dob_iso, today() ) div 12 ),../hh_member_age_years)"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/age_in_months" type="string" calculate="difference-in-months( ../dob_iso, today() )"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/member_adult_filter" type="string" calculate="if(../age_in_years &gt;= 18, 1, 0)"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/phone" type="tel" constraint="true()" required="false()" jr:constraintMsg="Please make sure the number is not already in use by another person and is in the format 7XXXXXXX or 6XXXXXXX." relevant="../age_in_years &gt;= 5"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/alternate_phone" type="tel" constraint="true()" required="false()" jr:constraintMsg="Please make sure the number is not already in use by another person and is in the format 7XXXXXXX or 6XXXXXXX." relevant="../age_in_years &gt;= 5"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/identification_type" type="select1" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/calc_identification_type_label" type="string" calculate="jr:choice-name( /household_member_registration_reminder/repeat/child/identification_type ,' /household_member_registration_reminder/repeat/child/identification_type ')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/identification_number" type="string" constraint="( /household_member_registration_reminder/repeat/child/identification_number  = 'national_id' and regex(.,'^[0-9]{6,20}')) or (  /household_member_registration_reminder/repeat/child/identification_number  != 'national_id' and regex(.,'^[A-Za-z0-9]{6,20}$'))" required="true()" jr:constraintMsg="Please enter a valid identification number - between 6 and 20 characters in length" relevant="../identification_type != 'none' and ../identification_type != ''"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/get_id" readonly="true()" type="string" relevant="selected(../identification_type, 'none')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/relationship_to_hh_head" type="select1" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/relationship_to_hh_other" type="string" required="true()" relevant="../relationship_to_hh_head = 'other'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/has_disability" type="select1" required="true()"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/disabilities" type="select" required="true()" relevant="selected(../has_disability, 'yes')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/disabilities_other" type="string" required="true()" relevant="selected(../disabilities, 'other')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/in_school" type="select1" required="true()" relevant="../age_in_years &gt;= 4 and ../age_in_years &lt;= 18"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/is_orphan" type="select1" required="true()" relevant="../age_in_years &lt; 18"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/pregnant" type="select1" required="true()" relevant="../age_in_years &gt;= 10 and ../age_in_years &lt;= 49 and ../sex = 'female'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/has_mch_handbook" type="select1" required="true()" relevant="../pregnant = 'yes'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_encourage_and_register" readonly="true()" type="string" relevant="../has_mch_handbook = 'no'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_provide_pregnancy_home_services" readonly="true()" type="string" relevant="../has_mch_handbook = 'yes'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/using_fp" type="select1" required="true()" relevant="../pregnant = 'no'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_counsel_fp" readonly="true()" type="string" relevant="../using_fp = 'no'"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_provide_fp_education" readonly="true()" type="string" relevant="../using_fp != ''"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/imm_upto_date" type="select1" required="true()" relevant="../age_in_years &lt; 2"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_imm_not_upto_date" readonly="true()" type="string" relevant="selected(../imm_upto_date,'no')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/muac_colour" type="select1" required="true()" relevant="../age_in_months &gt;= 6 and ../age_in_years &lt;=5"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/n_refer_muac" readonly="true()" type="string" relevant="selected(../muac_colour, 'yellow') or selected(../muac_colour, 'red')"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/meta/created_by" type="string" calculate="../../../../inputs/user/name"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/meta/created_by_person_uuid" type="string" calculate="../../../../inputs/user/contact_id"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/child/meta/created_by_place_uuid" type="string" calculate="../../../../inputs/user/facility_id"/>
+      <bind nodeset="/household_member_registration_reminder/repeat/note" readonly="true()" type="string"/>
+      <bind nodeset="/household_member_registration_reminder/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/household_member_registration_reminder/inputs">
+      <group ref="/household_member_registration_reminder/inputs/user">
+        <input ref="/household_member_registration_reminder/inputs/user/contact_id"/>
+        <input ref="/household_member_registration_reminder/inputs/user/facility_id"/>
+        <input ref="/household_member_registration_reminder/inputs/user/name"/>
+      </group>
+      <group ref="/household_member_registration_reminder/inputs/contact">
+        <label ref="jr:itext('/household_member_registration_reminder/inputs/contact:label')"/>
+        <group ref="/household_member_registration_reminder/inputs/contact/parent">
+          <label ref="jr:itext('/household_member_registration_reminder/inputs/contact/parent:label')"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/household_member_registration_reminder/repeat">
+      <label ref="jr:itext('/household_member_registration_reminder/repeat:label')"/>
+      <group ref="/household_member_registration_reminder/repeat/child">
+        <label ref="jr:itext('/household_member_registration_reminder/repeat/child:label')"/>
+        <repeat nodeset="/household_member_registration_reminder/repeat/child">
+          <input ref="/household_member_registration_reminder/repeat/child/delimiter">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/delimiter:label')"/>
+          </input>
+          <group ref="/household_member_registration_reminder/repeat/child/parent">
+            <group ref="/household_member_registration_reminder/repeat/child/parent/parent"/>
+          </group>
+          <input appearance="hidden" ref="/household_member_registration_reminder/repeat/child/type">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/type:label')"/>
+            <hint ref="jr:itext('/household_member_registration_reminder/repeat/child/type:hint')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/name">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/name:label')"/>
+            <hint ref="jr:itext('/household_member_registration_reminder/repeat/child/name:hint')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/sex">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/sex:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/sex/male:label')"/>
+              <value>male</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/sex/female:label')"/>
+              <value>female</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/sex/intersex:label')"/>
+              <value>intersex</value>
+            </item>
+          </select1>
+          <select1 appearance="columns" ref="/household_member_registration_reminder/repeat/child/dob_method">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/dob_method:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/dob_method/calendar:label')"/>
+              <value>calendar</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/dob_method/approx:label')"/>
+              <value>approx</value>
+            </item>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/dob_calendar">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/dob_calendar:label')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/hh_member_age_years">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/hh_member_age_years:label')"/>
+            <hint ref="jr:itext('/household_member_registration_reminder/repeat/child/hh_member_age_years:hint')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/hh_member_age_months">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/hh_member_age_months:label')"/>
+            <hint ref="jr:itext('/household_member_registration_reminder/repeat/child/hh_member_age_months:hint')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/phone">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/phone:label')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/alternate_phone">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/alternate_phone:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/identification_type">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/identification_type:label')"/>
+            <itemset nodeset="instance('identification')/root/item[member_filter =  /household_member_registration_reminder/repeat/child/member_adult_filter  or member_filter = 2]">
+              <value ref="name"/>
+              <label ref="jr:itext(itextId)"/>
+            </itemset>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/identification_number">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/identification_number:label')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/get_id">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/get_id:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/relationship_to_hh_head">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/relationship_to_hh_head:label')"/>
+            <itemset nodeset="instance('relationship')/root/item[member_filter =  /household_member_registration_reminder/repeat/child/member_adult_filter  or member_filter = 2]">
+              <value ref="name"/>
+              <label ref="jr:itext(itextId)"/>
+            </itemset>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/relationship_to_hh_other">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/relationship_to_hh_other:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/has_disability">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_disability:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_disability/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_disability/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select ref="/household_member_registration_reminder/repeat/child/disabilities">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/visual:label')"/>
+              <value>visual</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/hearing:label')"/>
+              <value>hearing</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/speech:label')"/>
+              <value>speech</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/physical:label')"/>
+              <value>physical</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/mental:label')"/>
+              <value>mental</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities/other:label')"/>
+              <value>other</value>
+            </item>
+          </select>
+          <input ref="/household_member_registration_reminder/repeat/child/disabilities_other">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/disabilities_other:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/in_school">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/in_school:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/in_school/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/in_school/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/household_member_registration_reminder/repeat/child/is_orphan">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/is_orphan:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/is_orphan/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/is_orphan/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/household_member_registration_reminder/repeat/child/pregnant">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/pregnant:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/pregnant/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/pregnant/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/household_member_registration_reminder/repeat/child/has_mch_handbook">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_mch_handbook:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_mch_handbook/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/has_mch_handbook/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/n_encourage_and_register">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_encourage_and_register:label')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/n_provide_pregnancy_home_services">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_provide_pregnancy_home_services:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/using_fp">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/using_fp:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/using_fp/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/using_fp/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/n_counsel_fp">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_counsel_fp:label')"/>
+          </input>
+          <input ref="/household_member_registration_reminder/repeat/child/n_provide_fp_education">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_provide_fp_education:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/imm_upto_date">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/imm_upto_date:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/imm_upto_date/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/imm_upto_date/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/n_imm_not_upto_date">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_imm_not_upto_date:label')"/>
+          </input>
+          <select1 ref="/household_member_registration_reminder/repeat/child/muac_colour">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/muac_colour:label')"/>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/muac_colour/green:label')"/>
+              <value>green</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/muac_colour/yellow:label')"/>
+              <value>yellow</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/household_member_registration_reminder/repeat/child/muac_colour/red:label')"/>
+              <value>red</value>
+            </item>
+          </select1>
+          <input ref="/household_member_registration_reminder/repeat/child/n_refer_muac">
+            <label ref="jr:itext('/household_member_registration_reminder/repeat/child/n_refer_muac:label')"/>
+          </input>
+          <group ref="/household_member_registration_reminder/repeat/child/meta"/>
+        </repeat>
+      </group>
+      <input ref="/household_member_registration_reminder/repeat/note">
+        <label ref="jr:itext('/household_member_registration_reminder/repeat/note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,11 @@
+{
+    "title":{
+        "en": "CHA Verbal Autopsy"
+    },
+    "icon": "icon-person",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "!!contact"
+    }
+}

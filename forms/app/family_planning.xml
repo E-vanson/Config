@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Family Planning Service</h:title>
+    <model>
+      <itext>
+        <translation lang="default">
+          <text id="static_instance-fp_methods-0">
+            <value>COCs – Combined Oral Contraceptive</value>
+          </text>
+          <text id="static_instance-fp_methods-1">
+            <value>POPs - Progestogen-only Pill</value>
+          </text>
+          <text id="static_instance-fp_methods-2">
+            <value>Injectables</value>
+          </text>
+          <text id="static_instance-fp_methods-3">
+            <value>Implants (1 rod)</value>
+          </text>
+          <text id="static_instance-fp_methods-4">
+            <value>Implants (2 rods)</value>
+          </text>
+          <text id="static_instance-fp_methods-5">
+            <value>IUCD (Coil)</value>
+          </text>
+          <text id="static_instance-fp_methods-6">
+            <value>Condoms</value>
+          </text>
+          <text id="static_instance-fp_methods-7">
+            <value>Tubal Ligation (TL)</value>
+          </text>
+          <text id="static_instance-fp_methods-8">
+            <value>Cycle beads</value>
+          </text>
+          <text id="static_instance-fp_methods-9">
+            <value>Vasectomy</value>
+          </text>
+          <text id="static_instance-insurance_cover-0">
+            <value>NHIF</value>
+          </text>
+          <text id="static_instance-insurance_cover-1">
+            <value>Others</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <family_planning id="family_planning" prefix="J1!family_planning!" delimiter="#" version="2023-09-01 13:12:34">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <upi/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <chw_area_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <visited_contact_uuid/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <patient_sex/>
+          <has_fp_follow_up/>
+          <fp_follow_up_date/>
+          <current_fp_method/>
+          <already_on_fp/>
+          <current_fp_method_display/>
+          <coalesced_fp_method/>
+          <on_fp/>
+          <is_referral/>
+          <has_been_referred/>
+          <calc_patient_sex/>
+          <coc_cycles/>
+          <pop_cycles/>
+          <condom_pieces/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <follow_up_date/>
+          <family_planning>
+            <is_still_on_fp/>
+            <is_on_fp/>
+            <is_pregnant/>
+            <n_use_pregnancy_services/>
+            <n_not_on_fp/>
+            <interested_in_fp/>
+            <n_refer_for_fp/>
+            <fp_method/>
+            <n_educate_attend_fp/>
+            <has_side_effects/>
+            <n_has_side_effects/>
+            <refilled_today/>
+            <n_refer_refilling/>
+            <num_pieces/>
+            <num_cycles/>
+            <c_cocs_pops_not_refilled/>
+            <next_appointment_date/>
+          </family_planning>
+          <insurance>
+            <has_upto_date_insurance/>
+            <n_encourage_to_get_cover/>
+            <insurance_cover/>
+            <n_congratulate_on_insurance/>
+            <specify_other/>
+          </insurance>
+          <group_summary>
+            <c_fp_status/>
+            <c_has_side_effects/>
+            <c_pops_cocs_condoms/>
+            <c_commodity_quantity/>
+            <c_referral_display/>
+            <summary_header/>
+            <insurance_status_display/>
+            <summary_title/>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_insurance_status/>
+            <no_referral_summary>
+              <r_findings/>
+              <r_on_fp/>
+              <r_side_effects/>
+              <r_commodities/>
+              <r_commodities_issued/>
+            </no_referral_summary>
+            <referral_summary>
+              <r_referrals/>
+              <r_refer_statement/>
+            </referral_summary>
+            <r_followup/>
+            <r_followup_message_no_referral/>
+            <r_followup_message_referral/>
+            <r_submit_instruction/>
+            <r_submit_sync/>
+          </group_summary>
+          <additional_doc db-doc="true">
+            <place_id/>
+            <chv_area_id/>
+            <type/>
+            <created_by_doc db-doc-ref="/family_planning"/>
+            <content_type/>
+            <form/>
+            <fields>
+              <coc_quantity_issued/>
+              <prog_quantity_issued/>
+              <condoms_quantity_issued/>
+            </fields>
+          </additional_doc>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_has_side_effects/>
+              <_interested_in_fp/>
+            </_screening>
+            <_supporting_info>
+              <_fp_method/>
+              <_num_cycles/>
+              <_num_pieces/>
+              <_refilled_today/>
+              <_next_appointment_date/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </family_planning>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="fp_methods">
+        <root>
+          <item>
+            <itextId>static_instance-fp_methods-0</itextId>
+            <intersex>2</intersex>
+            <name>cocs</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-1</itextId>
+            <intersex>2</intersex>
+            <name>pops</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-2</itextId>
+            <intersex>2</intersex>
+            <name>injectables</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-3</itextId>
+            <intersex>2</intersex>
+            <name>implants_1_rod</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-4</itextId>
+            <intersex>2</intersex>
+            <name>implants_2_rods</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-5</itextId>
+            <intersex>2</intersex>
+            <name>iucd</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-6</itextId>
+            <intersex>2</intersex>
+            <male>0</male>
+            <name>condoms</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-7</itextId>
+            <intersex>2</intersex>
+            <name>tubal_ligation</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-8</itextId>
+            <intersex>2</intersex>
+            <name>cycle_beads</name>
+            <female>1</female>
+          </item>
+          <item>
+            <itextId>static_instance-fp_methods-9</itextId>
+            <intersex>2</intersex>
+            <male>0</male>
+            <name>vasectomy</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="insurance_cover">
+        <root>
+          <item>
+            <itextId>static_instance-insurance_cover-0</itextId>
+            <name>nhif</name>
+          </item>
+          <item>
+            <itextId>static_instance-insurance_cover-1</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/family_planning/inputs" relevant="./source='user'"/>
+      <bind nodeset="/family_planning/inputs/source" type="string"/>
+      <bind nodeset="/family_planning/inputs/source_id" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/family_planning/inputs/contact/name" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/sex" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/upi" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/family_planning/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/family_planning/chw_area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/family_planning/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/family_planning/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/family_planning/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/family_planning/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/family_planning/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/family_planning/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /family_planning/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/family_planning/patient_age_in_months" type="string" calculate="difference-in-months(  /family_planning/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/family_planning/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /family_planning/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/family_planning/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /family_planning/inputs/contact/date_of_birth )) div 7)"/>
+      <bind nodeset="/family_planning/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/family_planning/has_fp_follow_up" type="string" calculate="if( /family_planning/family_planning/next_appointment_date  != '', 'yes','no')"/>
+      <bind nodeset="/family_planning/fp_follow_up_date" type="string" calculate=" /family_planning/family_planning/next_appointment_date "/>
+      <bind nodeset="/family_planning/current_fp_method" type="string" calculate="instance('contact-summary')/context/fp_method"/>
+      <bind nodeset="/family_planning/already_on_fp" type="string" calculate="instance('contact-summary')/context/on_fp"/>
+      <bind nodeset="/family_planning/current_fp_method_display" type="string" calculate="jr:choice-name( /family_planning/coalesced_fp_method , ' /family_planning/family_planning/fp_method ')"/>
+      <bind nodeset="/family_planning/coalesced_fp_method" type="string" calculate="if( /family_planning/family_planning/fp_method  != '',  /family_planning/family_planning/fp_method ,  /family_planning/current_fp_method )"/>
+      <bind nodeset="/family_planning/on_fp" type="string" calculate="if(selected( /family_planning/family_planning/is_on_fp ,'yes') or selected( /family_planning/family_planning/is_still_on_fp ,'yes'), 'yes', 'no')"/>
+      <bind nodeset="/family_planning/is_referral" type="string" calculate="if( /family_planning/family_planning/has_side_effects  = 'yes' or  /family_planning/family_planning/interested_in_fp  = 'yes', 'yes', 'no')"/>
+      <bind nodeset="/family_planning/has_been_referred" type="string" calculate="if( /family_planning/family_planning/has_side_effects  = 'yes' or  /family_planning/family_planning/refilled_today  = 'yes' or  /family_planning/family_planning/interested_in_fp  = 'yes', 'yes', 'no')"/>
+      <bind nodeset="/family_planning/calc_patient_sex" type="string" calculate="if( /family_planning/patient_sex ='male', 0, if( /family_planning/patient_sex ='female', 1, 2))"/>
+      <bind nodeset="/family_planning/coc_cycles" type="string" calculate="if( /family_planning/family_planning/fp_method  = 'cocs',  /family_planning/family_planning/num_cycles , 0)"/>
+      <bind nodeset="/family_planning/pop_cycles" type="string" calculate="if( /family_planning/family_planning/fp_method  = 'pops',  /family_planning/family_planning/num_cycles , 0)"/>
+      <bind nodeset="/family_planning/condom_pieces" type="string" calculate=" /family_planning/family_planning/num_pieces "/>
+      <bind nodeset="/family_planning/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/family_planning/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/family_planning/follow_up_date" type="string" calculate="if( /family_planning/is_referral ='yes', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/family_planning/family_planning/is_still_on_fp" type="select1" relevant=" /family_planning/already_on_fp  = 'true'" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/is_on_fp" type="select1" relevant=" /family_planning/family_planning/is_still_on_fp  = 'no' or  /family_planning/already_on_fp  != 'true'" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/is_pregnant" type="select1" relevant=" /family_planning/family_planning/is_on_fp  = 'no' and  /family_planning/patient_sex  != 'male'" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/n_use_pregnancy_services" readonly="true()" type="string" relevant=" /family_planning/family_planning/is_pregnant  = 'yes'"/>
+      <bind nodeset="/family_planning/family_planning/n_not_on_fp" readonly="true()" type="string" relevant=" /family_planning/family_planning/is_on_fp  = 'no' and ( /family_planning/family_planning/is_pregnant  = 'no' or  /family_planning/patient_sex  = 'male')"/>
+      <bind nodeset="/family_planning/family_planning/interested_in_fp" type="select1" relevant=" /family_planning/family_planning/is_on_fp  = 'no' and ( /family_planning/family_planning/is_pregnant  = 'no' or  /family_planning/patient_sex  = 'male')" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/n_refer_for_fp" readonly="true()" type="string" relevant=" /family_planning/family_planning/interested_in_fp  = 'yes'"/>
+      <bind nodeset="/family_planning/family_planning/fp_method" type="select1" relevant=" /family_planning/family_planning/is_on_fp  = 'yes'" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/n_educate_attend_fp" readonly="true()" type="string" relevant="( /family_planning/coalesced_fp_method  = 'implants_1_rod' or  /family_planning/coalesced_fp_method  = 'implants_2_rods' or  /family_planning/coalesced_fp_method  = 'iucd' or  /family_planning/coalesced_fp_method  = 'injectables') and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')"/>
+      <bind nodeset="/family_planning/family_planning/has_side_effects" type="select1" relevant="( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes') and not( /family_planning/coalesced_fp_method  = 'tubal_ligation' or  /family_planning/coalesced_fp_method  = 'cycle_beads' or  /family_planning/coalesced_fp_method  = 'vasectomy' or  /family_planning/coalesced_fp_method  = '')" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/n_has_side_effects" readonly="true()" type="string" relevant=" /family_planning/family_planning/has_side_effects  = 'yes' and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')"/>
+      <bind nodeset="/family_planning/family_planning/refilled_today" type="select1" relevant="(selected( /family_planning/coalesced_fp_method ,'pops') or selected( /family_planning/coalesced_fp_method ,'cocs') or selected( /family_planning/coalesced_fp_method ,'condoms')) and selected( /family_planning/family_planning/has_side_effects ,'no') and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')" required="true()"/>
+      <bind nodeset="/family_planning/family_planning/n_refer_refilling" readonly="true()" type="string" relevant="(selected( /family_planning/coalesced_fp_method ,'pops') or selected( /family_planning/coalesced_fp_method ,'cocs')) and  /family_planning/family_planning/refilled_today  = 'no' and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')"/>
+      <bind nodeset="/family_planning/family_planning/num_pieces" type="int" relevant="selected( /family_planning/coalesced_fp_method , 'condoms') and  /family_planning/family_planning/refilled_today  = 'yes' and selected( /family_planning/family_planning/has_side_effects ,'no') and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')" jr:constraintMsg="Should be greater than 0 and less than 31" required="true()" constraint=". &gt; 0 and . &lt;= 30"/>
+      <bind nodeset="/family_planning/family_planning/num_cycles" type="int" relevant="(selected( /family_planning/coalesced_fp_method , 'cocs') or selected( /family_planning/coalesced_fp_method , 'pops')) and  /family_planning/family_planning/refilled_today  = 'yes' and selected( /family_planning/family_planning/has_side_effects ,'no') and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')" jr:constraintMsg="Should be greater than 0 and less than 41" required="true()" constraint=". &gt; 0 and .&lt;=40"/>
+      <bind nodeset="/family_planning/family_planning/c_cocs_pops_not_refilled" type="string" calculate="if((selected( /family_planning/coalesced_fp_method ,'pops') or selected( /family_planning/coalesced_fp_method ,'cocs')) and  /family_planning/family_planning/refilled_today  = 'no', 'yes', 'no')"/>
+      <bind nodeset="/family_planning/family_planning/next_appointment_date" type="date" relevant=" /family_planning/family_planning/refilled_today  = 'yes' and (selected( /family_planning/coalesced_fp_method ,'pops') or selected( /family_planning/coalesced_fp_method ,'cocs') or selected( /family_planning/coalesced_fp_method ,'condoms')) and selected( /family_planning/family_planning/has_side_effects ,'no') and ( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes')" jr:constraintMsg="Date should within 30 days from today" required="true()" constraint=". &gt; today() and . &lt;= today() + 30"/>
+      <bind nodeset="/family_planning/insurance/has_upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/family_planning/insurance/n_encourage_to_get_cover" readonly="true()" type="string" relevant=" /family_planning/insurance/has_upto_date_insurance  = 'no'"/>
+      <bind nodeset="/family_planning/insurance/insurance_cover" type="select" relevant=" /family_planning/insurance/has_upto_date_insurance  = 'yes'" required="true()"/>
+      <bind nodeset="/family_planning/insurance/n_congratulate_on_insurance" readonly="true()" type="string" relevant=" /family_planning/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/family_planning/insurance/specify_other" type="string" relevant=" /family_planning/insurance/has_upto_date_insurance  = 'yes' and selected( /family_planning/insurance/insurance_cover ,'other')" required="true()"/>
+      <bind nodeset="/family_planning/group_summary/c_fp_status" type="string" calculate="if( /family_planning/family_planning/is_on_fp ='yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes','On', 'Not on')"/>
+      <bind nodeset="/family_planning/group_summary/c_has_side_effects" type="string" calculate="if( /family_planning/family_planning/has_side_effects ='yes','Has ', 'No ')"/>
+      <bind nodeset="/family_planning/group_summary/c_pops_cocs_condoms" type="string" calculate="jr:choice-name( /family_planning/coalesced_fp_method , ' /family_planning/family_planning/fp_method ')"/>
+      <bind nodeset="/family_planning/group_summary/c_commodity_quantity" type="string" calculate="if( /family_planning/family_planning/fp_method  = 'condoms' or  /family_planning/current_fp_method  = 'condoms', concat( /family_planning/family_planning/num_pieces , ' pieces'), concat( /family_planning/family_planning/num_cycles , ' cycles'))"/>
+      <bind nodeset="/family_planning/group_summary/c_referral_display" type="string" calculate="if( /family_planning/family_planning/has_side_effects  = 'yes','side effects', 'available FP services')"/>
+      <bind nodeset="/family_planning/group_summary/summary_header" type="string" calculate="if( /family_planning/is_referral  = 'yes' or  /family_planning/family_planning/refilled_today  = 'no', 'Family Planning Referral Note', 'Family Planning Results Page')"/>
+      <bind nodeset="/family_planning/group_summary/insurance_status_display" type="string" calculate="if( /family_planning/insurance/has_upto_date_insurance  = 'yes', 'Insurance upto date', 'Insurance not upto date')"/>
+      <bind nodeset="/family_planning/group_summary/summary_title" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/r_insurance_status" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary" relevant=" /family_planning/is_referral  != 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary/r_on_fp" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary/r_side_effects" readonly="true()" type="string" relevant="( /family_planning/family_planning/is_on_fp  = 'yes' or  /family_planning/family_planning/is_still_on_fp  = 'yes') and  /family_planning/is_referral  != 'yes' and  /family_planning/family_planning/has_side_effects  !=''"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary/r_commodities" readonly="true()" type="string" relevant=" /family_planning/family_planning/refilled_today  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/no_referral_summary/r_commodities_issued" readonly="true()" type="string" relevant=" /family_planning/family_planning/refilled_today  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/referral_summary" relevant=" /family_planning/is_referral  = 'yes' or  /family_planning/family_planning/c_cocs_pops_not_refilled  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/referral_summary/r_referrals" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/referral_summary/r_refer_statement" readonly="true()" type="string"/>
+      <bind nodeset="/family_planning/group_summary/r_followup" readonly="true()" type="string" relevant=" /family_planning/family_planning/refilled_today  = 'yes' or  /family_planning/is_referral  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/r_followup_message_no_referral" readonly="true()" type="string" relevant=" /family_planning/family_planning/refilled_today  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/r_followup_message_referral" readonly="true()" type="string" relevant=" /family_planning/is_referral  = 'yes'"/>
+      <bind nodeset="/family_planning/group_summary/r_submit_instruction" readonly="true()" type="string" relevant=" /family_planning/is_referral  = 'yes' or  /family_planning/family_planning/refilled_today  = 'no'"/>
+      <bind nodeset="/family_planning/group_summary/r_submit_sync" readonly="true()" type="string" relevant=" /family_planning/is_referral  = 'yes' or  /family_planning/family_planning/refilled_today  = 'no'"/>
+      <bind nodeset="/family_planning/additional_doc/place_id" type="string" calculate=" /family_planning/chw_area_id "/>
+      <bind nodeset="/family_planning/additional_doc/chv_area_id" type="string" calculate=" /family_planning/chw_area_id "/>
+      <bind nodeset="/family_planning/additional_doc/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/family_planning/additional_doc/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/family_planning/additional_doc/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/family_planning/additional_doc/form" type="string" calculate="&quot;chv_consumption_log&quot;"/>
+      <bind nodeset="/family_planning/additional_doc/fields/coc_quantity_issued" type="string" calculate=" /family_planning/coc_cycles "/>
+      <bind nodeset="/family_planning/additional_doc/fields/prog_quantity_issued" type="string" calculate=" /family_planning/pop_cycles "/>
+      <bind nodeset="/family_planning/additional_doc/fields/condoms_quantity_issued" type="string" calculate=" /family_planning/condom_pieces "/>
+      <bind nodeset="/family_planning/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/family_planning/data/_patient_name" type="string" calculate=" /family_planning/patient_name "/>
+      <bind nodeset="/family_planning/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/family_planning/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/family_planning/data/_referred_to_facility_code" type="string" calculate=" /family_planning/referred_to_facility_code "/>
+      <bind nodeset="/family_planning/data/_referred_to_facility_name" type="string" calculate=" /family_planning/referred_to_facility_name "/>
+      <bind nodeset="/family_planning/data/_follow_up_date" type="string" calculate=" /family_planning/follow_up_date "/>
+      <bind nodeset="/family_planning/data/_screening/_has_side_effects" type="string" relevant=" /family_planning/family_planning/has_side_effects  = 'yes'" calculate="'has_fp_side_effects'"/>
+      <bind nodeset="/family_planning/data/_screening/_interested_in_fp" type="string" relevant=" /family_planning/family_planning/interested_in_fp  = 'yes'" calculate="'interested_in_fp'"/>
+      <bind nodeset="/family_planning/data/_supporting_info/_fp_method" type="string" relevant=" /family_planning/current_fp_method_display !=''" calculate=" /family_planning/current_fp_method_display "/>
+      <bind nodeset="/family_planning/data/_supporting_info/_num_cycles" type="string" relevant=" /family_planning/family_planning/num_cycles !=''" calculate=" /family_planning/family_planning/num_cycles "/>
+      <bind nodeset="/family_planning/data/_supporting_info/_num_pieces" type="string" relevant=" /family_planning/family_planning/num_pieces !=''" calculate=" /family_planning/family_planning/num_pieces "/>
+      <bind nodeset="/family_planning/data/_supporting_info/_refilled_today" type="string" relevant=" /family_planning/family_planning/refilled_today ='yes'" calculate="today()"/>
+      <bind nodeset="/family_planning/data/_supporting_info/_next_appointment_date" type="string" relevant=" /family_planning/family_planning/next_appointment_date !=''" calculate=" /family_planning/family_planning/next_appointment_date "/>
+      <bind nodeset="/family_planning/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/family_planning/inputs">
+      <label>Inputs</label>
+      <group ref="/family_planning/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/family_planning/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/family_planning/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/family_planning/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/family_planning/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/family_planning/family_planning">
+      <label>Family Planning</label>
+      <select1 ref="/family_planning/family_planning/is_still_on_fp">
+        <label>Is <output value=" /family_planning/patient_name "/> on <output value=" /family_planning/current_fp_method_display "/> family planning?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/family_planning/family_planning/is_on_fp">
+        <label>Is <output value=" /family_planning/patient_name "/> on family planning?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/family_planning/family_planning/is_pregnant">
+        <label>Is <output value=" /family_planning/patient_name "/> pregnant?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/family_planning/family_planning/n_use_pregnancy_services">
+        <label>&lt;span style="color:blue;"&gt;**Use the Pregnancy Home Services form to register pregnancy details**&lt;/span&gt;</label>
+      </input>
+      <input ref="/family_planning/family_planning/n_not_on_fp">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;**Educate <output value=" /family_planning/patient_name "/> on available Family Planning services**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/family_planning/family_planning/interested_in_fp">
+        <label>Is <output value=" /family_planning/patient_name "/> interested in family planning?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/family_planning/family_planning/n_refer_for_fp">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Refer <output value=" /family_planning/patient_name "/> to the health facility for Family Planning services**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/family_planning/family_planning/fp_method">
+        <label>Which FP method is <output value=" /family_planning/patient_name "/> using?</label>
+        <itemset nodeset="instance('fp_methods')/root/item[ /family_planning/calc_patient_sex =male or  /family_planning/calc_patient_sex =female or  /family_planning/calc_patient_sex =intersex]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/family_planning/family_planning/n_educate_attend_fp">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;**Educate <output value=" /family_planning/patient_name "/> on the importance of attending Family Planning appointments in the health facility as scheduled**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/family_planning/family_planning/has_side_effects">
+        <label>Does <output value=" /family_planning/patient_name "/> have side effects?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/family_planning/family_planning/n_has_side_effects">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Educate and refer <output value=" /family_planning/patient_name "/> appropriately**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/family_planning/family_planning/refilled_today">
+        <label>Have you refilled <output value=" /family_planning/patient_name "/> today with <output value=" /family_planning/current_fp_method_display "/>?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/family_planning/family_planning/n_refer_refilling">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Refer <output value=" /family_planning/patient_name "/> to the health facility for refilling**&lt;/span&gt;</label>
+      </input>
+      <input ref="/family_planning/family_planning/num_pieces">
+        <label>How many pieces?</label>
+      </input>
+      <input ref="/family_planning/family_planning/num_cycles">
+        <label>How many cycles?</label>
+      </input>
+      <input ref="/family_planning/family_planning/next_appointment_date">
+        <label>Date of next appointment?</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/family_planning/insurance">
+      <label>Insurance</label>
+      <select1 ref="/family_planning/insurance/has_upto_date_insurance">
+        <label>Does <output value=" /family_planning/patient_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/family_planning/insurance/n_encourage_to_get_cover">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Encourage <output value=" /family_planning/patient_name "/> to get an insurance cover if they don't have or to update their insurance cover&lt;/span&gt;</label>
+      </input>
+      <select ref="/family_planning/insurance/insurance_cover">
+        <label>Which cover does <output value=" /family_planning/patient_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/family_planning/insurance/n_congratulate_on_insurance">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Congratulate <output value=" /family_planning/patient_name "/> and encourage them to continue updating their insurance cover&lt;/span&gt;</label>
+      </input>
+      <input ref="/family_planning/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/family_planning/group_summary">
+      <label></label>
+      <input appearance="h1 purple" ref="/family_planning/group_summary/summary_title">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;<output value=" /family_planning/group_summary/summary_header "/>&lt;/span&gt;</label>
+      </input>
+      <input ref="/family_planning/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/family_planning/group_summary/r_summary">
+        <label>Patient Details&lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/family_planning/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /family_planning/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /family_planning/patient_age_in_years "/> years old&lt;/h5&gt; &lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /family_planning/patient_sex "/>&lt;/h5&gt;</label>
+      </input>
+      <input ref="/family_planning/group_summary/r_insurance_status">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight:bold&quot;&gt;<output value=" /family_planning/group_summary/insurance_status_display "/>&lt;/h5&gt;</label>
+      </input>
+      <group appearance="field-list" ref="/family_planning/group_summary/no_referral_summary">
+        <label></label>
+        <input appearance="h1 blue" ref="/family_planning/group_summary/no_referral_summary/r_findings">
+          <label>Findings&lt;i class="fa fa-info"&gt;&lt;/i&gt;</label>
+        </input>
+        <input ref="/family_planning/group_summary/no_referral_summary/r_on_fp">
+          <label>&lt;p style=&quot;text-align: center&quot;&gt;<output value=" /family_planning/group_summary/c_fp_status "/> Family Planning&lt;/p&gt;</label>
+        </input>
+        <input ref="/family_planning/group_summary/no_referral_summary/r_side_effects">
+          <label>&lt;p style=&quot;text-align: center&quot;&gt;<output value=" /family_planning/group_summary/c_has_side_effects "/> Side effects&lt;/p&gt;</label>
+        </input>
+        <input appearance="h1 lime" ref="/family_planning/group_summary/no_referral_summary/r_commodities">
+          <label>Commodities Issued</label>
+        </input>
+        <input ref="/family_planning/group_summary/no_referral_summary/r_commodities_issued">
+          <label>&lt;p style=&quot;text-align: center&quot;&gt;<output value=" /family_planning/group_summary/c_pops_cocs_condoms "/> : <output value=" /family_planning/group_summary/c_commodity_quantity "/>&lt;/p&gt;</label>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/family_planning/group_summary/referral_summary">
+        <label></label>
+        <input appearance="h1 red" ref="/family_planning/group_summary/referral_summary/r_referrals">
+          <label>Reasons for Referral</label>
+        </input>
+        <input ref="/family_planning/group_summary/referral_summary/r_refer_statement">
+          <label>**Educate and refer <output value=" /family_planning/patient_name "/> to the health facility for <output value=" /family_planning/group_summary/c_referral_display "/>**</label>
+        </input>
+      </group>
+      <input appearance="h1 green" ref="/family_planning/group_summary/r_followup">
+        <label>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/family_planning/group_summary/r_followup_message_no_referral">
+        <label>A follow up task will appear 3 days before <output value=" /family_planning/family_planning/next_appointment_date "/></label>
+      </input>
+      <input ref="/family_planning/group_summary/r_followup_message_referral">
+        <label>A referral follow up task will appear after 3 days</label>
+      </input>
+      <input appearance="h1 lime" ref="/family_planning/group_summary/r_submit_instruction">
+        <label>Instruction</label>
+      </input>
+      <input ref="/family_planning/group_summary/r_submit_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+    <group ref="/family_planning/additional_doc">
+      <label></label>
+      <group ref="/family_planning/additional_doc/fields">
+        <label></label>
+      </group>
+    </group>
+    <group ref="/family_planning/data">
+      <label></label>
+      <group ref="/family_planning/data/_screening"/>
+      <group ref="/family_planning/data/_supporting_info"/>
+    </group>
+  </h:body>
+</h:html>

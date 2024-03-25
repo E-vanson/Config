@@ -1,0 +1,1024 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>CHU Supervision</h:title>
+    <model>
+      <instance>
+        <chu_supervision id="chu_supervision" prefix="J1!chu_supervision!" delimiter="#" version="2023-06-20 01:30:08">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <phone/>
+              <parent>
+                <name/>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <cha_id/>
+          <cha_name/>
+          <chu_name/>
+          <schmt_name/>
+          <schmt_phone/>
+          <needs_signoff/>
+          <last_action_points/>
+          <chvs_supervisor_contact/>
+          <no_chvs_chu/>
+          <no_chvs_chu_reported/>
+          <chvs_chs_stockout/>
+          <chvs_thermometer_stockout/>
+          <chvs_muac_stockout/>
+          <chvs_timer_stockout/>
+          <chvs_first_aid_stockout/>
+          <patient_id/>
+          <previous>
+            <n_supervisor_name/>
+            <n_last_action_points/>
+            <action_addressed/>
+            <give_reasons/>
+          </previous>
+          <plans>
+            <have_plans/>
+            <not_s_plans/>
+            <n_remind_list/>
+          </plans>
+          <targets>
+            <n_review/>
+            <avg_performance/>
+            <target_comments/>
+            <chu_visited/>
+            <why_not_visited/>
+          </targets>
+          <meetings_visits>
+            <supervisor_visits/>
+            <last_chu_visit/>
+            <no_visits/>
+            <supervisor_contact>${chvs_supervisor_contact}</supervisor_contact>
+            <last_chv_sup/>
+            <no_visits_chw/>
+            <no_focused_forums/>
+            <com_topics/>
+            <last_com_forum/>
+            <no_reports_visits_forums/>
+          </meetings_visits>
+          <followup>
+            <measures/>
+            <status_measure/>
+            <challenges/>
+          </followup>
+          <motivation>
+            <basic_no/>
+            <beyond_basic_no/>
+            <specify_training/>
+            <refresher_no/>
+            <reco_no/>
+            <cash_no/>
+            <non_cash_no/>
+            <specify_non_cash/>
+            <motivation_comments/>
+          </motivation>
+          <chv_motivation>
+            <chc_motivation/>
+            <specify_chc_motivation/>
+            <chc_training_no/>
+            <chc_cert_no/>
+            <chc_other_incentives/>
+            <specify_other_incentives/>
+            <comments_incentives/>
+            <reports_3_submit/>
+            <n_chv_report/>
+            <chv_submitted/>
+            <c_proportion_reported/>
+            <n_proportion_reported/>
+          </chv_motivation>
+          <acurracy>
+            <n_compare_data/>
+            <data_accurate/>
+          </acurracy>
+          <utilization>
+            <moh_516/>
+            <n_provide_moh_516/>
+            <moh_516_completed/>
+            <moh_516_updated/>
+            <discuss_util/>
+            <recommendations_util/>
+          </utilization>
+          <irc>
+            <info_corner/>
+            <n_discuss_corner/>
+            <info_updated/>
+            <relevance_info/>
+          </irc>
+          <service>
+            <chs_job_aid/>
+            <chs_job_aid_proportion/>
+            <n_chs_job_aid_proportion/>
+            <child_ilness_fraction/>
+            <over_5_fraction/>
+            <discuss_chs_response/>
+          </service>
+          <source>
+            <chu_county_budget/>
+            <chu_county_receive/>
+            <chu_county_utilised/>
+            <chu_county_accounted/>
+            <chu_cdf_budget/>
+            <chu_cdf_receive/>
+            <chu_cdf_utilised/>
+            <chu_cdf_accounted/>
+            <chu_hssf_budget/>
+            <chu_hssf_receiv/>
+            <chu_hssf_utilised/>
+            <chu_hssf_accounted/>
+            <chu_iga_budget/>
+            <chu_iga_receive/>
+            <chu_iga_utilised/>
+            <chu_iga_accounted/>
+            <other_source/>
+            <chu_other_budget/>
+            <chu_other_receive/>
+            <chu_other_utilised/>
+            <chu_other_accounted/>
+            <discuss_sources/>
+          </source>
+          <transport>
+            <means_transport/>
+            <specify_transport/>
+            <ambulance_no/>
+            <motorbike_no/>
+            <bicycle_no/>
+            <other_no/>
+            <transport_comments/>
+            <standard_ref/>
+            <ref_forms/>
+            <refcomsystem/>
+            <other_refcomsystem/>
+          </transport>
+          <supplies>
+            <inventory/>
+            <kit_stockout_no/>
+            <c_kit_stockout_prop/>
+            <n_kit_stockout_prop/>
+            <thermometer_no/>
+            <c_thermometer_prop/>
+            <n_thermometer_prop/>
+            <muac_no/>
+            <c_muac_prop/>
+            <n_muac_prop/>
+            <timer_no/>
+            <c_timer_prop/>
+            <n_timer_prop/>
+            <first_aid_no/>
+            <c_first_aid_prop/>
+            <n_first_aid_prop/>
+            <availability_comment/>
+          </supplies>
+          <chs_tools>
+            <n_expected_dialogue/>
+            <dialogue_days_held/>
+            <n_dialogue_percent_achieve/>
+            <n_expected_health_action/>
+            <health_action/>
+            <n_percent_health_action/>
+            <n_chc_meetings/>
+            <chc_meetings_held/>
+            <n_percent_chc_meetings/>
+            <moh_516_have/>
+            <moh_100_have/>
+            <action_pts_sup/>
+          </chs_tools>
+          <suggestions>
+            <remarks/>
+          </suggestions>
+          <summary>
+            <n_submit/>
+            <n_performance_summary/>
+            <n_observation/>
+            <n_wash_good/>
+            <n_findings/>
+            <n_scores/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chu_supervision>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/chu_supervision/inputs" relevant="./source='user'"/>
+      <bind nodeset="/chu_supervision/inputs/source" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/source_id" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/user/name" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/chu_supervision/inputs/contact/name" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/sex" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/phone" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/chu_supervision/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/chu_supervision/cha_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/chu_supervision/cha_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/chu_supervision/chu_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/chu_supervision/schmt_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/chu_supervision/schmt_phone" type="string" calculate="../inputs/contact/parent/parent/contact/phone"/>
+      <bind nodeset="/chu_supervision/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/chu_supervision/last_action_points" type="string" calculate="instance('contact-summary')/context/last_action_points"/>
+      <bind nodeset="/chu_supervision/chvs_supervisor_contact" type="string" calculate="instance('contact-summary')/context/chvs_supervisor_contact"/>
+      <bind nodeset="/chu_supervision/no_chvs_chu" type="string" calculate="1"/>
+      <bind nodeset="/chu_supervision/no_chvs_chu_reported" type="string" calculate="1"/>
+      <bind nodeset="/chu_supervision/chvs_chs_stockout" type="string" calculate="instance('contact-summary')/context/chvs_chs_stockout"/>
+      <bind nodeset="/chu_supervision/chvs_thermometer_stockout" type="string" calculate="instance('contact-summary')/context/chvs_thermometer_stockout"/>
+      <bind nodeset="/chu_supervision/chvs_muac_stockout" type="string" calculate="instance('contact-summary')/context/chvs_muac_stockout"/>
+      <bind nodeset="/chu_supervision/chvs_timer_stockout" type="string" calculate="instance('contact-summary')/context/chvs_timer_stockout"/>
+      <bind nodeset="/chu_supervision/chvs_first_aid_stockout" type="string" calculate="instance('contact-summary')/context/chvs_first_aid_stockout"/>
+      <bind nodeset="/chu_supervision/patient_id" type="string" calculate="../cha_id"/>
+      <bind nodeset="/chu_supervision/previous" relevant=" /chu_supervision/last_action_points  != ''"/>
+      <bind nodeset="/chu_supervision/previous/n_supervisor_name" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/previous/n_last_action_points" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/previous/action_addressed" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/previous/give_reasons" type="string" relevant="selected( /chu_supervision/previous/action_addressed , 'partial') or selected( /chu_supervision/previous/action_addressed , 'no')" required="true()"/>
+      <bind nodeset="/chu_supervision/plans/have_plans" type="select" required="true()"/>
+      <bind nodeset="/chu_supervision/plans/not_s_plans" type="string" calculate="concat(
+if(not(selected(../have_plans, 'annual')), 'Annual Community Health Unit Work Plans', ''),
+if(not(selected(../have_plans, 'quarter')), 'Quarterly implementation plans', ''),
+if(not(selected(../have_plans, 'month')), 'Monthly Action Plans', '')
+)" required="true()"/>
+      <bind nodeset="/chu_supervision/plans/n_remind_list" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/targets/n_review" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/targets/avg_performance" type="int" constraint=". &gt;=0 and . &lt;= 100" required="true()"/>
+      <bind nodeset="/chu_supervision/targets/target_comments" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/targets/chu_visited" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/targets/why_not_visited" type="select1" relevant=" /chu_supervision/targets/chu_visited  = 'no'" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/supervisor_visits" type="int" relevant=" /chu_supervision/targets/chu_visited  = 'yes'" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/last_chu_visit" type="date" jr:constraintMsg="This field does not allow future dates" relevant=" /chu_supervision/meetings_visits/supervisor_visits  != '' and  /chu_supervision/meetings_visits/supervisor_visits  &gt; 0" required="true()" constraint=". &lt;= today()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/no_visits" type="int" relevant=" /chu_supervision/meetings_visits/supervisor_visits  != '' and  /chu_supervision/meetings_visits/supervisor_visits  &gt; 0" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/supervisor_contact" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/last_chv_sup" type="date" jr:constraintMsg="This field does not allow future dates" relevant=" /chu_supervision/meetings_visits/supervisor_contact  != '' and  /chu_supervision/meetings_visits/supervisor_contact  &gt; 0" required="true()" constraint=". &lt;= today()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/no_visits_chw" type="int" relevant=" /chu_supervision/meetings_visits/supervisor_contact  != '' and  /chu_supervision/meetings_visits/supervisor_contact  &gt; 0" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/no_focused_forums" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/com_topics" type="string" relevant=" /chu_supervision/meetings_visits/no_focused_forums  != '' and  /chu_supervision/meetings_visits/no_focused_forums  &gt; 0" required="true()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/last_com_forum" type="date" jr:constraintMsg="This field does not allow future dates" relevant=" /chu_supervision/meetings_visits/no_focused_forums  != '' and  /chu_supervision/meetings_visits/no_focused_forums  &gt; 0" required="true()" constraint=". &lt;= today()"/>
+      <bind nodeset="/chu_supervision/meetings_visits/no_reports_visits_forums" type="int" relevant=" /chu_supervision/meetings_visits/no_focused_forums  != '' and  /chu_supervision/meetings_visits/no_focused_forums  &gt; 0" required="true()"/>
+      <bind nodeset="/chu_supervision/followup/measures" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/followup/status_measure" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/followup/challenges" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/basic_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/beyond_basic_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/specify_training" type="string" relevant=" /chu_supervision/motivation/beyond_basic_no  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/refresher_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/reco_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/cash_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/non_cash_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/specify_non_cash" type="string" relevant=" /chu_supervision/motivation/non_cash_no  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/motivation/motivation_comments" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/chc_motivation" type="select" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/specify_chc_motivation" type="string" relevant="selected( /chu_supervision/chv_motivation/chc_motivation , 'other')" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/chc_training_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/chc_cert_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/chc_other_incentives" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/specify_other_incentives" type="string" relevant=" /chu_supervision/chv_motivation/chc_other_incentives  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/comments_incentives" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/reports_3_submit" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/n_chv_report" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chv_motivation/chv_submitted" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chv_motivation/c_proportion_reported" type="string" calculate="if( /chu_supervision/no_chvs_chu  != '' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/no_chvs_chu_reported  div  /chu_supervision/no_chvs_chu , 0)"/>
+      <bind nodeset="/chu_supervision/chv_motivation/n_proportion_reported" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/acurracy/n_compare_data" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/acurracy/data_accurate" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/utilization/moh_516" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/utilization/n_provide_moh_516" readonly="true()" type="string" relevant=" /chu_supervision/utilization/moh_516  = 'no'"/>
+      <bind nodeset="/chu_supervision/utilization/moh_516_completed" type="select1" relevant=" /chu_supervision/utilization/moh_516  = 'yes'" required="true()"/>
+      <bind nodeset="/chu_supervision/utilization/moh_516_updated" type="select1" relevant=" /chu_supervision/utilization/moh_516  = 'yes'" required="true()"/>
+      <bind nodeset="/chu_supervision/utilization/discuss_util" type="select1" relevant=" /chu_supervision/utilization/moh_516  = 'yes'" required="true()"/>
+      <bind nodeset="/chu_supervision/utilization/recommendations_util" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/irc/info_corner" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/irc/n_discuss_corner" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/irc/info_updated" type="select1" relevant=" /chu_supervision/irc/info_corner  = 'yes'" required="true()"/>
+      <bind nodeset="/chu_supervision/irc/relevance_info" type="string" relevant=" /chu_supervision/irc/info_corner  = 'yes'"/>
+      <bind nodeset="/chu_supervision/service/chs_job_aid" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/service/chs_job_aid_proportion" type="string" calculate="if( /chu_supervision/no_chvs_chu  != '' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/service/chs_job_aid  div  /chu_supervision/no_chvs_chu , 0)"/>
+      <bind nodeset="/chu_supervision/service/n_chs_job_aid_proportion" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/service/child_ilness_fraction" type="decimal" required="true()"/>
+      <bind nodeset="/chu_supervision/service/over_5_fraction" type="decimal" required="true()"/>
+      <bind nodeset="/chu_supervision/service/discuss_chs_response" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_county_budget" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_county_receive" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_county_utilised" type="int" relevant=" /chu_supervision/source/chu_county_receive  &gt;=1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_county_accounted" type="int" relevant=" /chu_supervision/source/chu_county_receive  &gt;=1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_cdf_budget" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_cdf_receive" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_cdf_utilised" type="int" relevant=" /chu_supervision/source/chu_cdf_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_cdf_accounted" type="int" relevant=" /chu_supervision/source/chu_cdf_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_hssf_budget" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_hssf_receiv" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_hssf_utilised" type="int" relevant=" /chu_supervision/source/chu_hssf_receiv  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_hssf_accounted" type="int" relevant=" /chu_supervision/source/chu_hssf_receiv  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_iga_budget" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_iga_receive" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_iga_utilised" type="int" relevant=" /chu_supervision/source/chu_iga_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_iga_accounted" type="int" relevant=" /chu_supervision/source/chu_iga_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/other_source" type="string" required="false()"/>
+      <bind nodeset="/chu_supervision/source/chu_other_budget" type="int" relevant="../other_source != ''" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_other_receive" type="int" relevant="../other_source != ''" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_other_utilised" type="int" relevant=" /chu_supervision/source/chu_other_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/chu_other_accounted" type="int" relevant=" /chu_supervision/source/chu_other_receive  &gt;= 1" required="true()"/>
+      <bind nodeset="/chu_supervision/source/discuss_sources" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/means_transport" type="select" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/specify_transport" type="string" relevant="selected( /chu_supervision/transport/means_transport , 'other')" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/ambulance_no" type="int" relevant="selected( /chu_supervision/transport/means_transport , 'ambulance')" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/motorbike_no" type="int" relevant="selected( /chu_supervision/transport/means_transport , 'motorbike')" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/bicycle_no" type="int" relevant="selected( /chu_supervision/transport/means_transport , 'bicycle')" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/other_no" type="int" relevant=" /chu_supervision/transport/specify_transport  != ''" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/transport_comments" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/standard_ref" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/ref_forms" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/refcomsystem" type="select" required="true()"/>
+      <bind nodeset="/chu_supervision/transport/other_refcomsystem" type="string" relevant="selected( /chu_supervision/transport/refcomsystem , 'other')" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/inventory" type="select1" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/kit_stockout_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/c_kit_stockout_prop" type="string" calculate="if( /chu_supervision/no_chvs_chu  !='' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/chvs_chs_stockout  div  /chu_supervision/no_chvs_chu  * 100, 0)"/>
+      <bind nodeset="/chu_supervision/supplies/n_kit_stockout_prop" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/supplies/thermometer_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/c_thermometer_prop" type="string" calculate="if( /chu_supervision/no_chvs_chu  !='' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/chvs_thermometer_stockout  div  /chu_supervision/no_chvs_chu  * 100, 0)"/>
+      <bind nodeset="/chu_supervision/supplies/n_thermometer_prop" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/supplies/muac_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/c_muac_prop" type="string" calculate="if( /chu_supervision/no_chvs_chu  !='' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/chvs_muac_stockout  div  /chu_supervision/no_chvs_chu  * 100, 0)"/>
+      <bind nodeset="/chu_supervision/supplies/n_muac_prop" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/supplies/timer_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/c_timer_prop" type="string" calculate="if( /chu_supervision/no_chvs_chu  !='' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/chvs_timer_stockout  div  /chu_supervision/no_chvs_chu  * 100, 0)"/>
+      <bind nodeset="/chu_supervision/supplies/n_timer_prop" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/supplies/first_aid_no" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/supplies/c_first_aid_prop" type="string" calculate="if( /chu_supervision/no_chvs_chu  !='' and  /chu_supervision/no_chvs_chu  &gt; 0,  /chu_supervision/chvs_first_aid_stockout  div  /chu_supervision/no_chvs_chu  * 100, 0)"/>
+      <bind nodeset="/chu_supervision/supplies/n_first_aid_prop" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/supplies/availability_comment" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_expected_dialogue" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/dialogue_days_held" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_dialogue_percent_achieve" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_expected_health_action" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/health_action" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_percent_health_action" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_chc_meetings" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/chc_meetings_held" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/n_percent_chc_meetings" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/chs_tools/moh_516_have" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/moh_100_have" type="int" required="true()"/>
+      <bind nodeset="/chu_supervision/chs_tools/action_pts_sup" type="string" required="true()"/>
+      <bind nodeset="/chu_supervision/suggestions/remarks" type="string" relevant=" /chu_supervision/meetings_visits/supervisor_visits  = 0" required="true()"/>
+      <bind nodeset="/chu_supervision/summary/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/summary/n_performance_summary" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/summary/n_observation" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/summary/n_wash_good" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/summary/n_findings" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/summary/n_scores" readonly="true()" type="string"/>
+      <bind nodeset="/chu_supervision/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/chu_supervision/inputs">
+      <label>Patient</label>
+      <group ref="/chu_supervision/inputs/user">
+        <label></label>
+      </group>
+      <group ref="/chu_supervision/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/chu_supervision/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/chu_supervision/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/chu_supervision/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/chu_supervision/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/previous">
+      <label>Previous action points</label>
+      <input ref="/chu_supervision/previous/n_supervisor_name">
+        <label>Name(s) of supervisor(s): **<output value=" /chu_supervision/schmt_name "/>**</label>
+      </input>
+      <input ref="/chu_supervision/previous/n_last_action_points">
+        <label>The last action points were <output value=" /chu_supervision/last_action_points "/></label>
+      </input>
+      <select1 ref="/chu_supervision/previous/action_addressed">
+        <label>Were the action points addressed?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>Partial</label>
+          <value>partial</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/previous/give_reasons">
+        <label>Give reasons</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/plans">
+      <label>Plans</label>
+      <select ref="/chu_supervision/plans/have_plans">
+        <label>Which of the following plans does the CHU have?</label>
+        <item>
+          <label>Annual Community Health Unit Work Plans</label>
+          <value>annual</value>
+        </item>
+        <item>
+          <label>Quarterly implementation plans</label>
+          <value>quarter</value>
+        </item>
+        <item>
+          <label>Monthly Action Plans</label>
+          <value>month</value>
+        </item>
+      </select>
+      <input ref="/chu_supervision/plans/n_remind_list">
+        <label>Please remind <output value=" /chu_supervision/cha_name "/> to prepare <output value=" /chu_supervision/plans/not_s_plans "/></label></input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/targets">
+      <label>Targets for Key Priority Areas</label>
+      <input ref="/chu_supervision/targets/n_review">
+        <label>Review the key indicators in the eCHIS dashboard and discuss the CHU perfomance</label>
+      </input>
+      <input ref="/chu_supervision/targets/avg_performance">
+        <label>Average performance (%)</label>
+      </input>
+      <input ref="/chu_supervision/targets/target_comments">
+        <label>Comments</label>
+      </input>
+      <select1 ref="/chu_supervision/targets/chu_visited">
+        <label>Has this CHU been visited in the last quarter?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/chu_supervision/targets/why_not_visited">
+        <label>Why?</label>
+        <item>
+          <label>This is a new unit</label>
+          <value>new_unit</value>
+        </item>
+        <item>
+          <label>The last visit was more than 6 months ago</label>
+          <value>6_months_ago</value>
+        </item>
+        <item>
+          <label>The last visit was more than a year ago</label>
+          <value>year_ago</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/meetings_visits">
+      <label>Meetings and Supervisory visits in the Last Quarter</label>
+      <input ref="/chu_supervision/meetings_visits/supervisor_visits">
+        <label>How many supervisory visits has the CHU received from the Sub County in the last quarter</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/last_chu_visit">
+        <label>Date of last CHU supervision visit</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/no_visits">
+        <label>Number of reports/visits of last CHU supervision verified</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/supervisor_contact">
+        <label>How many CHPs received at least one supervisory contact in the last 3 Months</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/last_chv_sup">
+        <label>Date of last CHP supervision visit</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/no_visits_chw">
+        <label>Number of reports/visits of last CHP supervision verified</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/no_focused_forums">
+        <label>How many focused community mobilization forums held in the last quarter</label>
+        <hint>Examples Covid 19, immunization</hint>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/com_topics">
+        <label>State the community mobilization topics</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/last_com_forum">
+        <label>Date of last community mobilization forum</label>
+      </input>
+      <input ref="/chu_supervision/meetings_visits/no_reports_visits_forums">
+        <label>Number of reports/visits of last community mobilization forum</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/followup">
+      <label>Follow up measures and challenges</label>
+      <input ref="/chu_supervision/followup/measures">
+        <label>What follow up measures have you taken on previous supervision recommendations</label>
+      </input>
+      <select1 ref="/chu_supervision/followup/status_measure">
+        <label>Status of <output value=" /chu_supervision/followup/measures "/></label>
+        <item>
+          <label>Done</label>
+          <value>done</value>
+        </item>
+        <item>
+          <label>Not done</label>
+          <value>not_done</value>
+        </item>
+        <item>
+          <label>In Progress</label>
+          <value>progress</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/followup/challenges">
+        <label>What were the top three challenges encountered in bridging the previous supervision recommendations?</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/motivation">
+      <label>CHP Motivation</label>
+      <input ref="/chu_supervision/motivation/basic_no">
+        <label>How many CHPs have undergone basic training</label>
+      </input>
+      <input ref="/chu_supervision/motivation/beyond_basic_no">
+        <label>How many CHPs have undergone other training beyond basic</label>
+      </input>
+      <input ref="/chu_supervision/motivation/specify_training">
+        <label>Specify the other training</label>
+      </input>
+      <input ref="/chu_supervision/motivation/refresher_no">
+        <label>How many CHPs have undergone refresher training</label>
+      </input>
+      <input ref="/chu_supervision/motivation/reco_no">
+        <label>How many CHPs have undergone recognition (e.g. Certificates, badges)</label>
+      </input>
+      <input ref="/chu_supervision/motivation/cash_no">
+        <label>How many CHPs receive cash incentives</label>
+      </input>
+      <input ref="/chu_supervision/motivation/non_cash_no">
+        <label>How many CHPs receive other non cash incentives</label>
+      </input>
+      <input ref="/chu_supervision/motivation/specify_non_cash">
+        <label>Specify the other non cash incentives</label>
+      </input>
+      <input ref="/chu_supervision/motivation/motivation_comments">
+        <label>Comments</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/chv_motivation">
+      <label>CHC Motivation</label>
+      <select ref="/chu_supervision/chv_motivation/chc_motivation">
+        <label>Select all the CHC motivation in place</label>
+        <item>
+          <label>CHC Training</label>
+          <value>chc_training</value>
+        </item>
+        <item>
+          <label>Certificates</label>
+          <value>certificates</value>
+        </item>
+        <item>
+          <label>Other incentives</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/chu_supervision/chv_motivation/specify_chc_motivation">
+        <label>Specify</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/chc_training_no">
+        <label>How many CHC members have gone through CHC training</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/chc_cert_no">
+        <label>How many CHC members have received certificates</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/chc_other_incentives">
+        <label>How many CHC members have received other incentives</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/specify_other_incentives">
+        <label>Specify the other incentives</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/comments_incentives">
+        <label>Comments</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/reports_3_submit">
+        <label>Of the 3 expected reports how many did you submit</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/n_chv_report">
+        <label>Number of CHP reports expected to report: <output value=" /chu_supervision/no_chvs_chu "/></label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/chv_submitted">
+        <label>How many CHPs submitted their report in the last one month</label>
+      </input>
+      <input ref="/chu_supervision/chv_motivation/n_proportion_reported">
+        <label>Proportion of CHPs who reported in the last one month <output value=" /chu_supervision/chv_motivation/c_proportion_reported "/></label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/acurracy">
+      <label>Accuracy</label>
+      <input ref="/chu_supervision/acurracy/n_compare_data">
+        <label>Compare the data on the KHIS and dashboard</label>
+      </input>
+      <select1 ref="/chu_supervision/acurracy/data_accurate">
+        <label>Is the data accurate</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/utilization">
+      <label>Utilization of information</label>
+      <select1 ref="/chu_supervision/utilization/moh_516">
+        <label>Does the CHU have MoH 516</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/utilization/n_provide_moh_516">
+        <label>Plan to provide MOH 516</label>
+      </input>
+      <select1 ref="/chu_supervision/utilization/moh_516_completed">
+        <label>Is the MOH 516 completed</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/chu_supervision/utilization/moh_516_updated">
+        <label>Is the MOH 516 updated</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/chu_supervision/utilization/discuss_util">
+        <label>Was the data displayed discussed together with the CHC at least once in the last 3 months?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/utilization/recommendations_util">
+        <label>Discuss and provide recommendations on utilization of information</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/irc">
+      <label>Information Resource Corner</label>
+      <select1 ref="/chu_supervision/irc/info_corner">
+        <label>Has the CHU established information Corner</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/irc/n_discuss_corner">
+        <label>Discuss on the importance of the information corner</label>
+      </input>
+      <select1 ref="/chu_supervision/irc/info_updated">
+        <label>Is the information updated</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/irc/relevance_info">
+        <label>Discuss the relevance of the displayed information</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/service">
+      <label>Service Delivery</label>
+      <input ref="/chu_supervision/service/chs_job_aid">
+        <label>How many CHPs have the Comprehensive CHS Job Aid?</label>
+      </input>
+      <input ref="/chu_supervision/service/n_chs_job_aid_proportion">
+        <label>Proportion of CHPs with Comprehensive CHS job aids</label>
+      </input>
+      <input ref="/chu_supervision/service/child_ilness_fraction">
+        <label>What fraction of CHPs are demonstrating correct case management of childhood illnesses?</label>
+      </input>
+      <input ref="/chu_supervision/service/over_5_fraction">
+        <label>What fraction of CHPs are demonstrating correct case management of over 5</label>
+      </input>
+      <input ref="/chu_supervision/service/discuss_chs_response">
+        <label>Discuss the responses and give recommendations</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/source">
+      <label>Source of funds</label>
+      <input ref="/chu_supervision/source/chu_county_budget">
+        <label>How much money did the CHU budget from county government</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_county_receive">
+        <label>How much money did the CHU receive from county government</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_county_utilised">
+        <label>Of the money received from the county government how much was utilised</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_county_accounted">
+        <label>Of the money received from the county government how much was accounted for</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_cdf_budget">
+        <label>How much money did the CHU budget from consituency development fund</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_cdf_receive">
+        <label>How much money did the CHU receive from consituency development fund</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_cdf_utilised">
+        <label>Of the money received from the consituency development fund how much was utilised</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_cdf_accounted">
+        <label>Of the money received from the consituency development fund how much was accounted for</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_hssf_budget">
+        <label>How much money did the CHU budget from HSSF</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_hssf_receiv">
+        <label>How much money did the CHU receive from HSSF</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_hssf_utilised">
+        <label>Of the money received from the HSSF how much was utilised</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_hssf_accounted">
+        <label>Of the money received from the HSSF how much was accounted for</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_iga_budget">
+        <label>How much money did the CHU budget from IGA</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_iga_receive">
+        <label>How much money did the CHU receive from IGA</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_iga_utilised">
+        <label>Of the money received from the IGA how much was utilised</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_iga_accounted">
+        <label>Of the money received from the IGA how much was accounted for</label>
+      </input>
+      <input ref="/chu_supervision/source/other_source">
+        <label>Specify any other sources of funds</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_other_budget">
+        <label>How much money did the CHU budget from <output value=" /chu_supervision/source/other_source "/></label>
+      </input>
+      <input ref="/chu_supervision/source/chu_other_receive">
+        <label>How much money did the CHU receive from <output value=" /chu_supervision/source/other_source "/></label>
+      </input>
+      <input ref="/chu_supervision/source/chu_other_utilised">
+        <label>Of the money received from the <output value=" /chu_supervision/source/other_source "/> how much was utilised</label>
+      </input>
+      <input ref="/chu_supervision/source/chu_other_accounted">
+        <label>Of the money received from the <output value=" /chu_supervision/source/other_source "/> how much was accounted for</label>
+      </input>
+      <input ref="/chu_supervision/source/discuss_sources">
+        <label>Discuss and indicate on possible sources of finances for the CHU</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/transport">
+      <label>Transport</label>
+      <select ref="/chu_supervision/transport/means_transport">
+        <label>Select CHU means of transport</label>
+        <hint>Tick all that applies</hint>
+        <item>
+          <label>Community Ambulance</label>
+          <value>ambulance</value>
+        </item>
+        <item>
+          <label>Motorbike</label>
+          <value>motorbike</value>
+        </item>
+        <item>
+          <label>Bicycle</label>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label>Others (donkey, carts etc)</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/chu_supervision/transport/specify_transport">
+        <label>Specify</label>
+      </input>
+      <input ref="/chu_supervision/transport/ambulance_no">
+        <label>No of Community Ambulance</label>
+      </input>
+      <input ref="/chu_supervision/transport/motorbike_no">
+        <label>No of motorbike</label>
+      </input>
+      <input ref="/chu_supervision/transport/bicycle_no">
+        <label>No of bicycle</label>
+      </input>
+      <input ref="/chu_supervision/transport/other_no">
+        <label>No of <output value=" /chu_supervision/transport/specify_transport "/></label>
+      </input>
+      <input ref="/chu_supervision/transport/transport_comments">
+        <label>Comments</label>
+      </input>
+      <select1 ref="/chu_supervision/transport/standard_ref">
+        <label>Do you use any standard referral form for referring patients in the community</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/chu_supervision/transport/ref_forms">
+        <label>Are the referral forms available presently</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/chu_supervision/transport/refcomsystem">
+        <label>What is the available communication system for referrals</label>
+        <item>
+          <label>Phone</label>
+          <value>phone</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/chu_supervision/transport/other_refcomsystem">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/supplies">
+      <label>Supplies and commodoties</label>
+      <select1 ref="/chu_supervision/supplies/inventory">
+        <label>Does the CHA/CHEW have an updated inventory of community health services kit</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chu_supervision/supplies/kit_stockout_no">
+        <label>No of CHPs with stock outs of key CHS kit commodities in the 7 last days</label>
+      </input>
+      <input ref="/chu_supervision/supplies/n_kit_stockout_prop">
+        <label>Proportion of CHPs with stock outs of key CHS kit commodities in the 7 last days: <output value=" /chu_supervision/supplies/c_kit_stockout_prop "/>%</label>
+      </input>
+      <input ref="/chu_supervision/supplies/thermometer_no">
+        <label>No of CHP with a thermometer</label>
+      </input>
+      <input ref="/chu_supervision/supplies/n_thermometer_prop">
+        <label>Proportion of CHP with a thermometer <output value=" /chu_supervision/supplies/c_thermometer_prop "/>%</label>
+      </input>
+      <input ref="/chu_supervision/supplies/muac_no">
+        <label>No of CHP with a MUAC tape</label>
+      </input>
+      <input ref="/chu_supervision/supplies/n_muac_prop">
+        <label>Proportion of CHP with a MUAC tape <output value=" /chu_supervision/supplies/c_muac_prop "/>%</label>
+      </input>
+      <input ref="/chu_supervision/supplies/timer_no">
+        <label>No of CHP with a respiratory timer</label>
+      </input>
+      <input ref="/chu_supervision/supplies/n_timer_prop">
+        <label>Proportion of CHP with a respiratory timer <output value=" /chu_supervision/supplies/c_timer_prop "/>%</label>
+      </input>
+      <input ref="/chu_supervision/supplies/first_aid_no">
+        <label>No of CHP with a first aid kit</label>
+      </input>
+      <input ref="/chu_supervision/supplies/n_first_aid_prop">
+        <label>Proportion of CHP with a first aid kit <output value=" /chu_supervision/supplies/c_first_aid_prop "/>%</label>
+      </input>
+      <input ref="/chu_supervision/supplies/availability_comment">
+        <label>Comments on the availability of supplies and commodities</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/chs_tools">
+      <label>CHS tools available</label>
+      <input ref="/chu_supervision/chs_tools/n_expected_dialogue">
+        <label>Expected dialogue days in the last 3 months is 1</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/dialogue_days_held">
+        <label>How many dialogue days were held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/n_dialogue_percent_achieve">
+        <label>% achievement of dialogue days were held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/n_expected_health_action">
+        <label>Expected health action days in the last 3 months is 3</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/health_action">
+        <label>How many health action days were held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/n_percent_health_action">
+        <label>% achievement of health action days held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/n_chc_meetings">
+        <label>Expected CHC meetings in the last 3 months is 3</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/chc_meetings_held">
+        <label>How many CHC meetings were held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/n_percent_chc_meetings">
+        <label>% achievement of CHC meetings held in the last 3 months</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/moh_516_have">
+        <label>How many MOH 516 does the CHU have</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/moh_100_have">
+        <label>How many MOH 100 does the CHU have</label>
+      </input>
+      <input ref="/chu_supervision/chs_tools/action_pts_sup">
+        <label>Action points from the supervsion visit</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chu_supervision/suggestions">
+      <label>Overall Suggestions &amp; Next Steps(Comments)</label>
+      <input ref="/chu_supervision/suggestions/remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/chu_supervision/summary">
+      <label>CHU Supervision Visit Results Page</label>
+      <input ref="/chu_supervision/summary/n_submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input ref="/chu_supervision/summary/n_performance_summary">
+        <label>&amp;lt;h4 style="text-align:center;"&amp;gt;Performance Summary for {{CHUs name}}&amp;lt;/h4&amp;gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/chu_supervision/summary/n_observation">
+        <label>Overall Observation&lt;i class="fa fa-bookmark"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/chu_supervision/summary/n_wash_good">
+        <label>SCFP will type in the direct assistance and specific</label>
+      </input>
+      <input appearance="h1 blue" ref="/chu_supervision/summary/n_findings">
+        <label>Findings/Challenges&lt;i class="fa fa-bookmark"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="h4 red" ref="/chu_supervision/summary/n_scores">
+        <label>Scores</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

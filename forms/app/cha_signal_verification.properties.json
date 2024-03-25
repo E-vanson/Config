@@ -1,0 +1,8 @@
+{
+  "title": "CEBS Signal Verification",
+  "icon": "icon-signal-verification",
+  "context": {
+        "person": false,
+        "place": false
+  } 
+}

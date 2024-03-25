@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Defaulter follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="static_instance-select_yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-select_yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-services-0">
+            <value>ANC</value>
+          </text>
+          <text id="static_instance-services-1">
+            <value>PNC</value>
+          </text>
+          <text id="static_instance-services-2">
+            <value>Immunization</value>
+          </text>
+          <text id="static_instance-services-3">
+            <value>Growth Monitoring</value>
+          </text>
+          <text id="static_instance-services-4">
+            <value>Vit A and Deworming</value>
+          </text>
+          <text id="static_instance-services-5">
+            <value>HIV Exposed Infant (HEI)</value>
+          </text>
+          <text id="static_instance-services-6">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-services-7">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-services-8">
+            <value>Other services</value>
+          </text>
+          <text id="static_instance-visit_provider-0">
+            <value>Link Health Facility</value>
+          </text>
+          <text id="static_instance-visit_provider-1">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-visit_provider_referral-0">
+            <value>Link Health Facility</value>
+          </text>
+          <text id="static_instance-visit_provider_referral-1">
+            <value>Other within Sub county</value>
+          </text>
+          <text id="static_instance-visit_provider_referral-2">
+            <value>Other outside sub county</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <defaulter_follow_up id="defaulter_follow_up" prefix="J1!defaulter_follow_up!" delimiter="#" version="2023-03-08 00:00:00">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <reason/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_id/>
+          <visited_contact_uuid/>
+          <patient_name/>
+          <patient_sex/>
+          <chw_name/>
+          <defaulter_reason/>
+          <pregnant/>
+          <postnatal/>
+          <under_5/>
+          <under_2/>
+          <btw_1_and_5/>
+          <anc_defaulted/>
+          <imm_defaulted/>
+          <tb_defaulted/>
+          <hei_defaulted/>
+          <art_defaulted/>
+          <pnc_defaulted/>
+          <growth_monitoring_defaulted/>
+          <vit_a_and_deworming_defaulted/>
+          <other_defaulted/>
+          <needs_follow_up/>
+          <next_follow_up_date/>
+          <group_follow_up>
+            <client_available/>
+            <follow_up_date/>
+            <defaulted_services/>
+            <other_defaulted_services/>
+            <attended_visit/>
+            <n_notify_cha_or_hf/>
+            <service_provider/>
+            <service_provider_other/>
+            <why_default/>
+            <needs_to_go_to_health_facility/>
+            <n_educate/>
+            <referred_to_hf/>
+          </group_follow_up>
+          <group_summary>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_findings/>
+            <r_findings_not_available/>
+            <r_findings_available_no_facility/>
+            <r_findings_available_facility/>
+            <r_referral_title/>
+            <n_refer/>
+            <r_health_facility_title/>
+            <referral_health_facility/>
+            <r_follow_up_title/>
+            <r_referral_follow_up/>
+            <r_instruction_title/>
+            <r_sync/>
+          </group_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </defaulter_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="select_yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-select_yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-select_yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="services">
+        <root>
+          <item>
+            <itextId>static_instance-services-0</itextId>
+            <name>anc</name>
+            <pregnant>1</pregnant>
+          </item>
+          <item>
+            <itextId>static_instance-services-1</itextId>
+            <postnatal>1</postnatal>
+            <name>pnc</name>
+          </item>
+          <item>
+            <itextId>static_instance-services-2</itextId>
+            <name>immunization</name>
+            <under_5>1</under_5>
+          </item>
+          <item>
+            <itextId>static_instance-services-3</itextId>
+            <name>growth_monitoring</name>
+            <under_5>1</under_5>
+          </item>
+          <item>
+            <itextId>static_instance-services-4</itextId>
+            <name>vit_a_and_deworming</name>
+            <btw_1_and_5>1</btw_1_and_5>
+          </item>
+          <item>
+            <itextId>static_instance-services-5</itextId>
+            <name>hei</name>
+            <under_2>1</under_2>
+          </item>
+          <item>
+            <itextId>static_instance-services-6</itextId>
+            <name>art</name>
+            <all>1</all>
+          </item>
+          <item>
+            <itextId>static_instance-services-7</itextId>
+            <name>tb</name>
+            <all>1</all>
+          </item>
+          <item>
+            <itextId>static_instance-services-8</itextId>
+            <name>other</name>
+            <all>1</all>
+          </item>
+        </root>
+      </instance>
+      <instance id="visit_provider">
+        <root>
+          <item>
+            <itextId>static_instance-visit_provider-0</itextId>
+            <name>link_facility</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_provider-1</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="visit_provider_referral">
+        <root>
+          <item>
+            <itextId>static_instance-visit_provider_referral-0</itextId>
+            <name>link_facility</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_provider_referral-1</itextId>
+            <name>other_within_sc</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_provider_referral-2</itextId>
+            <name>other_outside_sc</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/defaulter_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/defaulter_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/reason" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/defaulter_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/defaulter_follow_up/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /defaulter_follow_up/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/defaulter_follow_up/patient_age_in_months" type="string" calculate="difference-in-months(  /defaulter_follow_up/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/defaulter_follow_up/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /defaulter_follow_up/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/defaulter_follow_up/patient_age_display" type="string" calculate="concat(
+ concat( /defaulter_follow_up/patient_age_in_years , if( /defaulter_follow_up/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /defaulter_follow_up/patient_age_in_months  mod 12, if(( /defaulter_follow_up/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/defaulter_follow_up/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/defaulter_follow_up/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/defaulter_follow_up/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/defaulter_follow_up/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/defaulter_follow_up/chw_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/defaulter_follow_up/defaulter_reason" type="string" calculate="../inputs/reason"/>
+      <bind nodeset="/defaulter_follow_up/pregnant" type="string" calculate="if(instance('contact-summary')/context/pregnant = 'true', 1, 0)"/>
+      <bind nodeset="/defaulter_follow_up/postnatal" type="string" calculate="if(instance('contact-summary')/context/is_in_pnc = 'true', 1, 0)"/>
+      <bind nodeset="/defaulter_follow_up/under_5" type="string" calculate="if( /defaulter_follow_up/patient_age_in_years  &lt; 5, 1, 0)"/>
+      <bind nodeset="/defaulter_follow_up/under_2" type="string" calculate="if( /defaulter_follow_up/patient_age_in_years  &lt; 2, 1, 0)"/>
+      <bind nodeset="/defaulter_follow_up/btw_1_and_5" type="string" calculate="if( /defaulter_follow_up/patient_age_in_years  &gt;= 1 and  /defaulter_follow_up/patient_age_in_years  &lt; 5, 1, 0)"/>
+      <bind nodeset="/defaulter_follow_up/anc_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'anc'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/imm_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'immunization'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/tb_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'tb'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/hei_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'hei'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/art_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'art'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/pnc_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'pnc'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/growth_monitoring_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'growth_monitoring'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/vit_a_and_deworming_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'vit_a_and_deworming'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/other_defaulted" type="string" calculate="if(selected(../group_follow_up/defaulted_services, 'other'), 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/needs_follow_up" type="string" calculate="if(../next_follow_up_date != '', 'yes', 'no')"/>
+      <bind nodeset="/defaulter_follow_up/next_follow_up_date" type="string" calculate="if(../group_follow_up/follow_up_date != '', ../group_follow_up/follow_up_date, if(../group_follow_up/referred_to_hf = 'yes', format-date(decimal-date-time(today()) + 3, '%Y-%m-%d'), ''))"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/client_available" type="select1" required="true()"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/follow_up_date" type="date" required="true()" jr:constraintMsg="The date should be in the future but within 7 days" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'no'" constraint=". &gt; today() and (decimal-date-time(.) - decimal-date-time(today())) &lt; 7"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/defaulted_services" type="select" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/other_defaulted_services" type="string" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and selected( /defaulter_follow_up/group_follow_up/defaulted_services ,'other')"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/attended_visit" type="select1" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/n_notify_cha_or_hf" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/service_provider" type="select1" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/service_provider_other" type="string" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'yes' and  /defaulter_follow_up/group_follow_up/service_provider  = 'other'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/why_default" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility" type="select1" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no' and  /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/n_educate" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no' and  /defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_follow_up/referred_to_hf" type="select1" required="true()" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no' and  /defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_findings_not_available" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_findings_available_no_facility" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_findings_available_facility" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_referral_title" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/n_refer" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/client_available  = 'yes' and  /defaulter_follow_up/group_follow_up/attended_visit  = 'no'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_health_facility_title" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/referral_health_facility" type="select1" required="true()" relevant=" /defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_follow_up_title" readonly="true()" type="string" relevant=" /defaulter_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_referral_follow_up" readonly="true()" type="string" relevant=" /defaulter_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_instruction_title" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/referred_to_hf ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/group_summary/r_sync" readonly="true()" type="string" relevant=" /defaulter_follow_up/group_follow_up/referred_to_hf ='yes'"/>
+      <bind nodeset="/defaulter_follow_up/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/defaulter_follow_up/inputs">
+      <label>Patient</label>
+      <group ref="/defaulter_follow_up/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/defaulter_follow_up/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/defaulter_follow_up/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/defaulter_follow_up/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/defaulter_follow_up/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/defaulter_follow_up/group_follow_up">
+      <label>Defaulter details</label>
+      <select1 ref="/defaulter_follow_up/group_follow_up/client_available">
+        <label>Is <output value=" /defaulter_follow_up/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/defaulter_follow_up/group_follow_up/follow_up_date">
+        <label>When would you like to follow up <output value=" /defaulter_follow_up/patient_name "/> again?</label>
+      </input>
+      <select ref="/defaulter_follow_up/group_follow_up/defaulted_services">
+        <label>Which service are you following up?</label>
+        <itemset nodeset="instance('services')/root/item[pregnant =  /defaulter_follow_up/pregnant 
+or under_5 =  /defaulter_follow_up/under_5 
+or under_2 =  /defaulter_follow_up/under_2 
+or all = 1
+or postnatal= /defaulter_follow_up/postnatal 
+or btw_1_and_5 =  /defaulter_follow_up/btw_1_and_5 ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/defaulter_follow_up/group_follow_up/other_defaulted_services">
+        <label>Specify</label>
+      </input>
+      <select1 ref="/defaulter_follow_up/group_follow_up/attended_visit">
+        <label>Did <output value=" /defaulter_follow_up/patient_name "/> attend the clinic visit.</label>
+        <hint>Confim from the clinic book</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/defaulter_follow_up/group_follow_up/n_notify_cha_or_hf">
+        <label>&lt;span style="color:blue;"&gt;**Notify CHA or Health Facility.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/defaulter_follow_up/group_follow_up/service_provider">
+        <label>Where?</label>
+        <item>
+          <label>Link Health Facility</label>
+          <value>link_facility</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/defaulter_follow_up/group_follow_up/service_provider_other">
+        <label>Specify</label>
+      </input>
+      <input ref="/defaulter_follow_up/group_follow_up/why_default">
+        <label>Why did <output value=" /defaulter_follow_up/patient_name "/> default the clinic visit.</label>
+      </input>
+      <select1 ref="/defaulter_follow_up/group_follow_up/needs_to_go_to_health_facility">
+        <label>Does <output value=" /defaulter_follow_up/patient_name "/> still need to go to the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/defaulter_follow_up/group_follow_up/n_educate">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;**Educate <output value=" /defaulter_follow_up/patient_name "/> and their caregiver on the importance of clinic visits adherence for their wellbeing and refer them to the health facility immediately.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/defaulter_follow_up/group_follow_up/referred_to_hf">
+        <label>Have you referred <output value=" /defaulter_follow_up/patient_name "/> to the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/defaulter_follow_up/group_summary">
+      <label>DEFAULTER FOLLOW UP RESULTS</label>
+      <input ref="/defaulter_follow_up/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/defaulter_follow_up/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/defaulter_follow_up/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /defaulter_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /defaulter_follow_up/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/defaulter_follow_up/group_summary/r_findings">
+        <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/r_findings_not_available">
+        <label><output value=" /defaulter_follow_up/patient_name "/> is not available</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/r_findings_available_no_facility">
+        <label><output value=" /defaulter_follow_up/patient_name "/> is available but did not go to the facility</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/r_findings_available_facility">
+        <label><output value=" /defaulter_follow_up/patient_name "/> is available and went to the facility</label>
+      </input>
+      <input appearance="h1 red" ref="/defaulter_follow_up/group_summary/r_referral_title">
+        <label>Refer urgently to Health Facility! &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/n_refer">
+        <label><output value=" /defaulter_follow_up/patient_name "/> is available but did not go to the facility</label>
+      </input>
+      <input appearance="h2 blue" ref="/defaulter_follow_up/group_summary/r_health_facility_title">
+        <label>Health Facility</label>
+      </input>
+      <select1 ref="/defaulter_follow_up/group_summary/referral_health_facility">
+        <label>Select the health facility you are referring to</label>
+        <item>
+          <label>Link Health Facility</label>
+          <value>link_facility</value>
+        </item>
+        <item>
+          <label>Other within Sub county</label>
+          <value>other_within_sc</value>
+        </item>
+        <item>
+          <label>Other outside sub county</label>
+          <value>other_outside_sc</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/defaulter_follow_up/group_summary/r_follow_up_title">
+        <label>Follow Up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/r_referral_follow_up">
+        <label>A Referral Follow up task will appear on <output value=" /defaulter_follow_up/next_follow_up_date "/></label>
+      </input>
+      <input appearance="h1 lime" ref="/defaulter_follow_up/group_summary/r_instruction_title">
+        <label>Instruction &lt;i class="fa fa-heart"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/defaulter_follow_up/group_summary/r_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

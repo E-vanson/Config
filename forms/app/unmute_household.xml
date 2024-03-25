@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Unmutehousehold request</h:title>
+    <model>
+      <instance>
+        <unmute_household id="unmute_household" prefix="J1!unmute_household!" delimiter="#" version="2020-01-12 00:00:00">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <place_id/>
+              <parent>
+                <contact>
+                  <name/>
+                  <phone/>
+                </contact>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <household_name/>
+          <visited_contact_uuid/>
+          <unmute_reason_other/>
+          <unmute_report>
+            <unmute_reason/>
+            <specify_reason/>
+          </unmute_report>
+          <unmuting_summary>
+            <r_summary/>
+            <r_household_info/>
+            <r_unmute_reasons_label/>
+            <r_unmute_reason1/>
+            <r_unmute_reason_other/>
+            <r_special_instructions/>
+            <r_followup_instructions/>
+          </unmuting_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </unmute_household>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/unmute_household/inputs" relevant="./source='user'"/>
+      <bind nodeset="/unmute_household/inputs/source" type="string"/>
+      <bind nodeset="/unmute_household/inputs/source_id" type="string"/>
+      <bind nodeset="/unmute_household/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/unmute_household/inputs/contact/name" type="string"/>
+      <bind nodeset="/unmute_household/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/unmute_household/inputs/contact/parent/contact/name" type="string"/>
+      <bind nodeset="/unmute_household/inputs/contact/parent/contact/phone" type="string"/>
+      <bind nodeset="/unmute_household/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/unmute_household/household_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/unmute_household/visited_contact_uuid" type="string" calculate="../place_id"/>
+      <bind nodeset="/unmute_household/unmute_reason_other" type="string" calculate=" /unmute_household/unmute_report/specify_reason "/>
+      <bind nodeset="/unmute_household/unmute_report/unmute_reason" type="select1" required="true()"/>
+      <bind nodeset="/unmute_household/unmute_report/specify_reason" type="string" required="true()" relevant=" /unmute_household/unmute_report/unmute_reason  = 'other'"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_household_info" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_unmute_reasons_label" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_unmute_reason1" readonly="true()" type="string" relevant="selected( /unmute_household/unmute_report/unmute_reason ,'moved_back')"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_unmute_reason_other" readonly="true()" type="string" relevant=" /unmute_household/unmute_report/specify_reason  !='' and  /unmute_household/unmute_report/unmute_reason  = 'other'"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_household/unmuting_summary/r_followup_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_household/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/unmute_household/inputs">
+      <label>Inputs</label>
+      <group ref="/unmute_household/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/unmute_household/inputs/contact/_id">
+          <label>ID of head of household</label>
+        </input>
+        <group ref="/unmute_household/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/unmute_household/inputs/contact/parent/contact">
+            <label>Contact</label>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/unmute_household/unmute_report">
+      <label>unmute Report</label>
+      <select1 ref="/unmute_household/unmute_report/unmute_reason">
+        <label>Why do you want <output value=" /unmute_household/household_name "/> household unmuted?</label>
+        <item>
+          <label>All the household members came back</label>
+          <value>moved_back</value>
+        </item>
+        <item>
+          <label>Other (Please specify)</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/unmute_household/unmute_report/specify_reason">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/unmute_household/unmuting_summary">
+      <label></label>
+      <input appearance="h1 yellow" ref="/unmute_household/unmuting_summary/r_summary">
+        <label>Unmute Request Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/unmute_household/unmuting_summary/r_household_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /unmute_household/household_name "/>&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h2 yellow" ref="/unmute_household/unmuting_summary/r_unmute_reasons_label">
+        <label>Reason for Unmute request</label>
+      </input>
+      <input appearance="li" ref="/unmute_household/unmuting_summary/r_unmute_reason1">
+        <label>All the household members came back</label>
+      </input>
+      <input appearance="li" ref="/unmute_household/unmuting_summary/r_unmute_reason_other">
+        <label><output value=" /unmute_household/unmute_reason_other "/></label>
+      </input>
+      <input appearance="h1 blue" ref="/unmute_household/unmuting_summary/r_special_instructions">
+        <label>Special Instruction</label>
+      </input>
+      <input ref="/unmute_household/unmuting_summary/r_followup_instructions">
+        <label>Tasks for &lt;b&gt;<output value=" /unmute_household/household_name "/>&lt;/b&gt; will start to show after you unmute this request. Thank you.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

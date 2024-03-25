@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Approve Mute Person</h:title>
+    <model>
+      <instance>
+        <approve_mute_person id="approve_mute_person" prefix="J1!approve_mute_person!" delimiter="#" version="2023-05-22 10:09:10">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_mute_reason/>
+            <t_current_timestamp/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <name/>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_name_calc/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <mute_reason/>
+          <household_name/>
+          <chv_name/>
+          <chv_id/>
+          <chv_phone/>
+          <approve_mute_report>
+            <n_msg_supervisor/>
+            <status/>
+            <reject_reason/>
+          </approve_mute_report>
+          <mute_confirmation_doc db-doc="true">
+            <form/>
+            <type/>
+            <content_type>string('xml')</content_type>
+            <muted/>
+            <patient_id/>
+            <patient_uuid/>
+            <child_doc db-doc=" /approve_mute_person/mute_confirmation_doc "/>
+            <created_by_doc db-doc-ref="/approve_mute_person"/>
+            <patient_name/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <inputs>
+                <source/>
+                <source_id/>
+                <contact>
+                  <_id/>
+                </contact>
+              </inputs>
+            </fields>
+          </mute_confirmation_doc>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </approve_mute_person>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/approve_mute_person/inputs" relevant="./source='user'"/>
+      <bind nodeset="/approve_mute_person/inputs/source" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/source_id" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/t_mute_reason" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/t_current_timestamp" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/name" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/sex" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/approve_mute_person/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/approve_mute_person/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/approve_mute_person/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/approve_mute_person/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/approve_mute_person/patient_name_calc" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/approve_mute_person/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/approve_mute_person/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/approve_mute_person/mute_reason" type="string" calculate=" /approve_mute_person/inputs/t_mute_reason "/>
+      <bind nodeset="/approve_mute_person/household_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/approve_mute_person/chv_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/approve_mute_person/chv_id" type="string" calculate="../inputs/contact/parent/parent/contact/_id"/>
+      <bind nodeset="/approve_mute_person/chv_phone" type="string" calculate="../inputs/contact/parent/parent/contact/phone"/>
+      <bind nodeset="/approve_mute_person/approve_mute_report/n_msg_supervisor" readonly="true()" type="string"/>
+      <bind nodeset="/approve_mute_person/approve_mute_report/status" type="select1" required="true()"/>
+      <bind nodeset="/approve_mute_person/approve_mute_report/reject_reason" type="string" required="true()" relevant=" /approve_mute_person/approve_mute_report/status  = 'reject'"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc" relevant=" /approve_mute_person/approve_mute_report/status  = 'approve'"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/form" type="string" calculate="if( /approve_mute_person/approve_mute_report/status  = 'approve', string('mute_person_confirmed'), string('mute_person_rejected'))"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/type" type="string" calculate="string('data_record')"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/content_type" type="string" calculate="string('xml')"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/muted" type="string" calculate=" /approve_mute_person/inputs/t_current_timestamp "/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/patient_id" type="string" calculate="../../patient_id"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/patient_uuid" type="string" calculate="../../patient_id"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/child_doc" type="string" calculate=" /approve_mute_person/mute_confirmation_doc "/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/patient_name" type="string" calculate="../../patient_name"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/contact/_id" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/fields/inputs/source" type="string" calculate="../../../../inputs/source"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/fields/inputs/source_id" type="string" calculate="../../../../inputs/source_id"/>
+      <bind nodeset="/approve_mute_person/mute_confirmation_doc/fields/inputs/contact/_id" type="string" calculate="../../../../../patient_id"/>
+      <bind nodeset="/approve_mute_person/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/approve_mute_person/inputs">
+      <label>Inputs</label>
+      <group ref="/approve_mute_person/inputs/user">
+        <label>Contact</label>
+      </group>
+      <group ref="/approve_mute_person/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/approve_mute_person/inputs/contact/_id">
+          <label>ID of head of household</label>
+        </input>
+        <group ref="/approve_mute_person/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/approve_mute_person/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/approve_mute_person/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/approve_mute_person/approve_mute_report">
+      <label>Approve Mute Report</label>
+      <input ref="/approve_mute_person/approve_mute_report/n_msg_supervisor">
+        <label><output value=" /approve_mute_person/chv_name "/> has requested that <output value=" /approve_mute_person/patient_name_calc "/> of <output value=" /approve_mute_person/household_name "/> to be muted because of the following reason: <output value=" /approve_mute_person/mute_reason "/>.</label>
+      </input>
+      <select1 ref="/approve_mute_person/approve_mute_report/status">
+        <label>Approve or reject the muting request?</label>
+        <item>
+          <label>Approve</label>
+          <value>approve</value>
+        </item>
+        <item>
+          <label>Reject</label>
+          <value>reject</value>
+        </item>
+      </select1>
+      <input ref="/approve_mute_person/approve_mute_report/reject_reason">
+        <label>What is the reason for rejecting this request?</label>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/approve_mute_person/mute_confirmation_doc">
+      <label>Contact</label>
+      <group ref="/approve_mute_person/mute_confirmation_doc/contact">
+        <label>Contact</label>
+      </group>
+      <group appearance="field-list" ref="/approve_mute_person/mute_confirmation_doc/fields">
+        <label>Approve Mute Report</label>
+        <group appearance="field-list" ref="/approve_mute_person/mute_confirmation_doc/fields/inputs">
+          <label>Approve Mute Report</label>
+          <group appearance="hidden" ref="/approve_mute_person/mute_confirmation_doc/fields/inputs/contact">
+            <label>Contact</label>
+          </group>
+        </group>
+      </group>
+    </group>
+  </h:body>
+</h:html>

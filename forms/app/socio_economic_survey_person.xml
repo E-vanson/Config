@@ -1,0 +1,1387 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Social Economic Survey</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/socio_economic_survey_person/dob:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/chronic_illnesses:label">
+            <value>Which one?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/chronic_illnesses_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/date_of_birth:label">
+            <value>What <output value=" /socio_economic_survey_person/person_name "/>'s date of birth?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/disability:label">
+            <value>What type of disability does <output value=" /socio_economic_survey_person/person_name "/> have?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/disability_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/doing_last_7_days:label">
+            <value>What was <output value=" /socio_economic_survey_person/person_name "/> mainly doing during the last seven days?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/education_level:label">
+            <value>What is the highest level of education reached by <output value=" /socio_economic_survey_person/person_name "/>?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/has_chronic_illness:label">
+            <value>Does <output value=" /socio_economic_survey_person/person_name "/> suffer from a chronic illness?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/identification_number:label">
+            <value>Enter the <output value=" /socio_economic_survey_person/group_demographics/identification_type_label "/> number</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/identification_type:label">
+            <value>Does <output value=" /socio_economic_survey_person/person_name "/> have an ID number?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/identification_type_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/is_father_alive:label">
+            <value>Is <output value=" /socio_economic_survey_person/person_name "/>' s father alive?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/is_mother_alive:label">
+            <value>Is <output value=" /socio_economic_survey_person/person_name "/>'s mother alive?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/main_care_giver_id:label">
+            <value>Who is <output value=" /socio_economic_survey_person/person_name "/>'s main caregiver?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/marital_status:label">
+            <value>What is <output value=" /socio_economic_survey_person/person_name "/>'s marital status?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/other_education_level:label">
+            <value>Other education level</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/relationship_to_hh_head:label">
+            <value>What <output value=" /socio_economic_survey_person/person_name "/>'s relationship to the head of the household?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/relationship_to_hh_other:label">
+            <value>Specify other:</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/requires_24_hour_care:label">
+            <value>Does <output value=" /socio_economic_survey_person/person_name "/>'s disability require 24-hour care?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/school_attendance_status:label">
+            <value>What is the school or learning institution attendance status of <output value=" /socio_economic_survey_person/person_name "/> ?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/sex:label">
+            <value>What is <output value=" /socio_economic_survey_person/person_name "/>'s sex?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/spouse_contact_uuid:label">
+            <value>Select the spouse</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/spouse_live_in_house:label">
+            <value>Does <output value=" /socio_economic_survey_person/person_name "/>'s spouse live in this household?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics/work_formal:label">
+            <value>Does <output value=" /socio_economic_survey_person/person_name "/> work on a formal job, teaching, public sector, NGO/FBO?</value>
+          </text>
+          <text id="/socio_economic_survey_person/group_demographics:label">
+            <value>DEMOGRAPHICS</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/_id:label">
+            <value>ID of head of household</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/contact/_id:label">
+            <value>household_head_id</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/contact/name:label">
+            <value>Household_head_name</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/contact/phone:label">
+            <value>household_head_phone</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/contact:label">
+            <value>household_head</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/date_of_birth:label">
+            <value>date_of_birth</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/parent/contact/name:label">
+            <value>CHP name</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/parent/contact/phone:label">
+            <value>CHP phone</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact/phone:label">
+            <value>household_head_phone</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs/source_id:label">
+            <value>Source Id</value>
+          </text>
+          <text id="/socio_economic_survey_person/inputs:label">
+            <value>Inputs</value>
+          </text>
+          <text id="/socio_economic_survey_person/patient_age_in_days:label">
+            <value>Days old</value>
+          </text>
+          <text id="/socio_economic_survey_person/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/socio_economic_survey_person/patient_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/socio_economic_survey_person/person_name:label">
+            <value>Person Name</value>
+          </text>
+          <text id="/socio_economic_survey_person/visited_contact_uuid:label">
+            <value>Contact Visited</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-0">
+            <value>Diabetes</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-1">
+            <value>Cancer</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-2">
+            <value>Mental Illness</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-3">
+            <value>Hypertension</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-4">
+            <value>Chronic Respiratory</value>
+          </text>
+          <text id="static_instance-chronic_illnesses-5">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-disabilities-0">
+            <value>Visual</value>
+          </text>
+          <text id="static_instance-disabilities-1">
+            <value>Hearing</value>
+          </text>
+          <text id="static_instance-disabilities-2">
+            <value>Speech</value>
+          </text>
+          <text id="static_instance-disabilities-3">
+            <value>Physical</value>
+          </text>
+          <text id="static_instance-disabilities-4">
+            <value>Mental</value>
+          </text>
+          <text id="static_instance-disabilities-5">
+            <value>Self-care difficulties</value>
+          </text>
+          <text id="static_instance-disabilities-6">
+            <value>Others</value>
+          </text>
+          <text id="static_instance-disabilities-7">
+            <value>None</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-0">
+            <value>Worked for pay</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-1">
+            <value>On leave</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-10">
+            <value>Full-time Student</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-11">
+            <value>Part-time student</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-12">
+            <value>Incapacitated</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-13">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-2">
+            <value>Sick leave</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-3">
+            <value>Worked own or at family business or at family agriculture</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-4">
+            <value>Apprentice/Intern</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-5">
+            <value>Volunteer</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-6">
+            <value>Seeking work</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-7">
+            <value>No work available</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-8">
+            <value>Retired with pension</value>
+          </text>
+          <text id="static_instance-doing_last_7_days-9">
+            <value>Homemaker</value>
+          </text>
+          <text id="static_instance-education_level-0">
+            <value>Pre primary (ECD) or NONE</value>
+          </text>
+          <text id="static_instance-education_level-1">
+            <value>Standard 1 (incomplete)</value>
+          </text>
+          <text id="static_instance-education_level-10">
+            <value>Form 1</value>
+          </text>
+          <text id="static_instance-education_level-11">
+            <value>Form 2</value>
+          </text>
+          <text id="static_instance-education_level-12">
+            <value>Form 3</value>
+          </text>
+          <text id="static_instance-education_level-13">
+            <value>Form 4</value>
+          </text>
+          <text id="static_instance-education_level-14">
+            <value>Form 5</value>
+          </text>
+          <text id="static_instance-education_level-15">
+            <value>Form 6</value>
+          </text>
+          <text id="static_instance-education_level-16">
+            <value>Incomplete post-secondary</value>
+          </text>
+          <text id="static_instance-education_level-17">
+            <value>Complete post-secondary</value>
+          </text>
+          <text id="static_instance-education_level-18">
+            <value>Incomplete undergraduate or Polytechnic</value>
+          </text>
+          <text id="static_instance-education_level-19">
+            <value>Complete undergraduate</value>
+          </text>
+          <text id="static_instance-education_level-2">
+            <value>Standard 1</value>
+          </text>
+          <text id="static_instance-education_level-20">
+            <value>Incomplete master/PhD</value>
+          </text>
+          <text id="static_instance-education_level-21">
+            <value>Complete master/PhD</value>
+          </text>
+          <text id="static_instance-education_level-22">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-education_level-3">
+            <value>Standard 2</value>
+          </text>
+          <text id="static_instance-education_level-4">
+            <value>Standard 3</value>
+          </text>
+          <text id="static_instance-education_level-5">
+            <value>Standard 4</value>
+          </text>
+          <text id="static_instance-education_level-6">
+            <value>Standard 5</value>
+          </text>
+          <text id="static_instance-education_level-7">
+            <value>Standard 6</value>
+          </text>
+          <text id="static_instance-education_level-8">
+            <value>Standard 7</value>
+          </text>
+          <text id="static_instance-education_level-9">
+            <value>Standard 8</value>
+          </text>
+          <text id="static_instance-gender-0">
+            <value>Male</value>
+          </text>
+          <text id="static_instance-gender-1">
+            <value>Female</value>
+          </text>
+          <text id="static_instance-identification-0">
+            <value>National ID</value>
+          </text>
+          <text id="static_instance-identification-1">
+            <value>Birth Certificate</value>
+          </text>
+          <text id="static_instance-identification-2">
+            <value>Passport</value>
+          </text>
+          <text id="static_instance-identification-3">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-identification-4">
+            <value>None</value>
+          </text>
+          <text id="static_instance-major_yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-major_yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-marital_status-0">
+            <value>Never married</value>
+          </text>
+          <text id="static_instance-marital_status-1">
+            <value>Married mono-gamous</value>
+          </text>
+          <text id="static_instance-marital_status-2">
+            <value>Married Poly-gamous</value>
+          </text>
+          <text id="static_instance-marital_status-3">
+            <value>Widowed</value>
+          </text>
+          <text id="static_instance-marital_status-4">
+            <value>Divorced</value>
+          </text>
+          <text id="static_instance-marital_status-5">
+            <value>Separated</value>
+          </text>
+          <text id="static_instance-marital_status-6">
+            <value>Dont Know</value>
+          </text>
+          <text id="static_instance-relationship-0">
+            <value>Head</value>
+          </text>
+          <text id="static_instance-relationship-1">
+            <value>Spouse</value>
+          </text>
+          <text id="static_instance-relationship-10">
+            <value>Non-relative</value>
+          </text>
+          <text id="static_instance-relationship-11">
+            <value>Employee</value>
+          </text>
+          <text id="static_instance-relationship-12">
+            <value>Don't Know</value>
+          </text>
+          <text id="static_instance-relationship-2">
+            <value>Son/Daughter</value>
+          </text>
+          <text id="static_instance-relationship-3">
+            <value>Grandchild</value>
+          </text>
+          <text id="static_instance-relationship-4">
+            <value>Brother/Sister</value>
+          </text>
+          <text id="static_instance-relationship-5">
+            <value>Father/mother</value>
+          </text>
+          <text id="static_instance-relationship-6">
+            <value>Nephew/Niece</value>
+          </text>
+          <text id="static_instance-relationship-7">
+            <value>In-Law</value>
+          </text>
+          <text id="static_instance-relationship-8">
+            <value>Grandparent</value>
+          </text>
+          <text id="static_instance-relationship-9">
+            <value>Other relative</value>
+          </text>
+          <text id="static_instance-school_attendance_status-0">
+            <value>At school or learning Institution</value>
+          </text>
+          <text id="static_instance-school_attendance_status-1">
+            <value>Left school or learning Institution</value>
+          </text>
+          <text id="static_instance-school_attendance_status-2">
+            <value>Never went to school or learning Institution</value>
+          </text>
+          <text id="static_instance-school_attendance_status-3">
+            <value>Don't Know</value>
+          </text>
+          <text id="static_instance-yes_no_do_not_know-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no_do_not_know-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-yes_no_do_not_know-2">
+            <value>Don't Know</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <socio_economic_survey_person id="socio_economic_survey_person" prefix="J1!socio_economic_survey_person!" delimiter="#" version="2023-07-06  19-37">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <phone/>
+              <date_of_birth/>
+              <contact>
+                <_id/>
+                <name/>
+                <phone/>
+              </contact>
+              <parent>
+                <_id/>
+                <contact>
+                  <name/>
+                  <phone/>
+                </contact>
+              </parent>
+            </contact>
+          </inputs>
+          <dob/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_in_weeks/>
+          <person_name/>
+          <patient_uuid/>
+          <patient_id/>
+          <visited_contact_uuid/>
+          <member_adult_filter/>
+          <once/>
+          <group_demographics>
+            <identification_type/>
+            <identification_type_other/>
+            <identification_type_label/>
+            <identification_number/>
+            <relationship_to_hh_head/>
+            <relationship_to_hh_other/>
+            <sex/>
+            <date_of_birth/>
+            <marital_status/>
+            <spouse_live_in_house/>
+            <spouse_contact_uuid/>
+            <is_father_alive/>
+            <is_mother_alive/>
+            <has_chronic_illness/>
+            <chronic_illnesses/>
+            <chronic_illnesses_other/>
+            <disability/>
+            <disability_other/>
+            <requires_24_hour_care/>
+            <main_care_giver_id/>
+            <school_attendance_status/>
+            <education_level/>
+            <other_education_level/>
+            <doing_last_7_days/>
+            <work_formal/>
+          </group_demographics>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </socio_economic_survey_person>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="major_yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-major_yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-major_yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="marital_status">
+        <root>
+          <item>
+            <itextId>static_instance-marital_status-0</itextId>
+            <name>never_married</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-1</itextId>
+            <name>married_monogamous</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-2</itextId>
+            <name>married_polygamous</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-3</itextId>
+            <name>widowed</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-4</itextId>
+            <name>divorced</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-5</itextId>
+            <name>separated</name>
+          </item>
+          <item>
+            <itextId>static_instance-marital_status-6</itextId>
+            <name>do_not_know</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="education_level">
+        <root>
+          <item>
+            <itextId>static_instance-education_level-0</itextId>
+            <name>ecd_or_none</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-1</itextId>
+            <name>standard_1_incomplete</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-2</itextId>
+            <name>standard_1</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-3</itextId>
+            <name>standard_2</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-4</itextId>
+            <name>standard_3</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-5</itextId>
+            <name>standard_4</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-6</itextId>
+            <name>standard_5</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-7</itextId>
+            <name>standard_6</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-8</itextId>
+            <name>standard_7</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-9</itextId>
+            <name>standard_8</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-10</itextId>
+            <name>form_1</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-11</itextId>
+            <name>form_2</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-12</itextId>
+            <name>form_3</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-13</itextId>
+            <name>form_4</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-14</itextId>
+            <name>form_5</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-15</itextId>
+            <name>form_6</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-16</itextId>
+            <name>incomplete_post_secondary</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-17</itextId>
+            <name>complete_post_secondary</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-18</itextId>
+            <name>incomplete_undergraduate_or_polytechnic</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-19</itextId>
+            <name>complete_undergraduate</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-20</itextId>
+            <name>incomplete_master_phd</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-21</itextId>
+            <name>complete_master_phd</name>
+          </item>
+          <item>
+            <itextId>static_instance-education_level-22</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="doing_last_7_days">
+        <root>
+          <item>
+            <itextId>static_instance-doing_last_7_days-0</itextId>
+            <name>worked_for_pay</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-1</itextId>
+            <name>on_leave</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-2</itextId>
+            <name>sick_leave</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-3</itextId>
+            <name>worked_own_or_family_business_agriculture</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-4</itextId>
+            <name>apprentice_intern</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-5</itextId>
+            <name>volunteer</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-6</itextId>
+            <name>seeking_work</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-7</itextId>
+            <name>no_work_available</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-8</itextId>
+            <name>retired_with_pension</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-9</itextId>
+            <name>homemaker</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-10</itextId>
+            <name>full_time_student</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-11</itextId>
+            <name>part_time_student</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-12</itextId>
+            <name>incapacitated</name>
+          </item>
+          <item>
+            <itextId>static_instance-doing_last_7_days-13</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="school_attendance_status">
+        <root>
+          <item>
+            <itextId>static_instance-school_attendance_status-0</itextId>
+            <name>at_school</name>
+          </item>
+          <item>
+            <itextId>static_instance-school_attendance_status-1</itextId>
+            <name>left_school</name>
+          </item>
+          <item>
+            <itextId>static_instance-school_attendance_status-2</itextId>
+            <name>never_schooled</name>
+          </item>
+          <item>
+            <itextId>static_instance-school_attendance_status-3</itextId>
+            <name>do_not_know</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="identification">
+        <root>
+          <item>
+            <itextId>static_instance-identification-0</itextId>
+            <name>national_id</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-1</itextId>
+            <name>birth_certificate</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-2</itextId>
+            <name>passport</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-3</itextId>
+            <name>other</name>
+            <member_filter>2</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-identification-4</itextId>
+            <name>none</name>
+            <member_filter>2</member_filter>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no_do_not_know">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no_do_not_know-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no_do_not_know-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no_do_not_know-2</itextId>
+            <name>do_not_know</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="disabilities">
+        <root>
+          <item>
+            <itextId>static_instance-disabilities-0</itextId>
+            <name>visual</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-1</itextId>
+            <name>hearing</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-2</itextId>
+            <name>speech</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-3</itextId>
+            <name>physical</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-4</itextId>
+            <name>mental</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-5</itextId>
+            <name>self_care_difficulties</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-6</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>static_instance-disabilities-7</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="relationship">
+        <root>
+          <item>
+            <itextId>static_instance-relationship-0</itextId>
+            <name>head</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-1</itextId>
+            <name>spouse</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-2</itextId>
+            <name>child</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-3</itextId>
+            <name>grandchild</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-4</itextId>
+            <name>sibling</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-5</itextId>
+            <name>parent</name>
+            <member_filter>0</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-6</itextId>
+            <name>nibling</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-7</itextId>
+            <name>in_law</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-8</itextId>
+            <name>grandparent</name>
+            <member_filter>1</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-9</itextId>
+            <name>other</name>
+            <member_filter>2</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-10</itextId>
+            <name>non_relative</name>
+            <member_filter>2</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-11</itextId>
+            <name>employee</name>
+            <member_filter>2</member_filter>
+          </item>
+          <item>
+            <itextId>static_instance-relationship-12</itextId>
+            <name>do_not_know</name>
+            <member_filter>2</member_filter>
+          </item>
+        </root>
+      </instance>
+      <instance id="chronic_illnesses">
+        <root>
+          <item>
+            <itextId>static_instance-chronic_illnesses-0</itextId>
+            <name>diabetes</name>
+          </item>
+          <item>
+            <itextId>static_instance-chronic_illnesses-1</itextId>
+            <name>cancer</name>
+          </item>
+          <item>
+            <itextId>static_instance-chronic_illnesses-2</itextId>
+            <name>mental_illness</name>
+          </item>
+          <item>
+            <itextId>static_instance-chronic_illnesses-3</itextId>
+            <name>hypertension</name>
+          </item>
+          <item>
+            <itextId>static_instance-chronic_illnesses-4</itextId>
+            <name>chronic_respiratory</name>
+          </item>
+          <item>
+            <itextId>static_instance-chronic_illnesses-5</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="gender">
+        <root>
+          <item>
+            <itextId>static_instance-gender-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-gender-1</itextId>
+            <name>female</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/socio_economic_survey_person/inputs" relevant="./source='user'"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/source" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/source_id" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/phone" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/contact/phone" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/parent/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/inputs/contact/parent/contact/phone" type="string"/>
+      <bind nodeset="/socio_economic_survey_person/dob" type="string" calculate="../group_demographics/date_of_birth"/>
+      <bind nodeset="/socio_economic_survey_person/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /socio_economic_survey_person/dob , today() ) div 12 )"/>
+      <bind nodeset="/socio_economic_survey_person/patient_age_in_months" type="string" calculate="difference-in-months(  /socio_economic_survey_person/dob , today() )"/>
+      <bind nodeset="/socio_economic_survey_person/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /socio_economic_survey_person/dob ) )"/>
+      <bind nodeset="/socio_economic_survey_person/patient_age_display" type="string" calculate="concat(
+ concat( /socio_economic_survey_person/patient_age_in_years , if( /socio_economic_survey_person/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /socio_economic_survey_person/patient_age_in_months  mod 12, if(( /socio_economic_survey_person/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/socio_economic_survey_person/patient_age_in_weeks" type="string" calculate="int(floor( /socio_economic_survey_person/patient_age_in_days  div 7))"/>
+      <bind nodeset="/socio_economic_survey_person/person_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/socio_economic_survey_person/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/socio_economic_survey_person/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/socio_economic_survey_person/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/socio_economic_survey_person/member_adult_filter" type="string" calculate="if(../patient_age_in_years &gt;= 18, 1, 0)"/>
+      <bind nodeset="/socio_economic_survey_person/once" type="string" calculate="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/identification_type" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/identification_type,  /socio_economic_survey_person/group_demographics/identification_type )" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="None cannot be selected with any other option!" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/identification_type_other" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/identification_type_other,  /socio_economic_survey_person/group_demographics/identification_type_other )" relevant=" /socio_economic_survey_person/group_demographics/identification_type ='other'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/identification_type_label" type="string" calculate="jr:choice-name( /socio_economic_survey_person/group_demographics/identification_type ,' /socio_economic_survey_person/group_demographics/identification_type ')"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/identification_number" type="string" jr:constraintMsg="Please enter a valid identification number - between 6 and 20 characters in length" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/identification_number,  /socio_economic_survey_person/group_demographics/identification_number )" constraint="( /socio_economic_survey_person/group_demographics/identification_number  = 'national_id' and regex(.,'^[0-9]{6,20}')) or (  /socio_economic_survey_person/group_demographics/identification_number  != 'national_id' and regex(.,'^[A-Za-z0-9]{6,20}$'))" relevant="../identification_type != 'none' and ../identification_type != ''" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/relationship_to_hh_head" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/relationship_to_hh_head,  /socio_economic_survey_person/group_demographics/relationship_to_hh_head )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/relationship_to_hh_other" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/relationship_to_hh_other,  /socio_economic_survey_person/group_demographics/relationship_to_hh_other )" relevant=" /socio_economic_survey_person/group_demographics/relationship_to_hh_head ='other'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/sex" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/sex,  /socio_economic_survey_person/group_demographics/sex )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/date_of_birth" type="date" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/date_of_birth, .)" constraint=" /socio_economic_survey_person/patient_age_in_years  &gt;= 0 and  /socio_economic_survey_person/patient_age_in_years  &lt;= 120" jr:constraintMsg="Calculated age must be between 0 and 120!" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/marital_status" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/marital_status,  /socio_economic_survey_person/group_demographics/marital_status )" relevant=" /socio_economic_survey_person/patient_age_in_years  &gt; 14" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/spouse_live_in_house" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/spouse_live_in_house,  /socio_economic_survey_person/group_demographics/spouse_live_in_house )" relevant=" /socio_economic_survey_person/group_demographics/marital_status ='married_monogamous' or  /socio_economic_survey_person/group_demographics/marital_status ='married_polygamous'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/spouse_contact_uuid" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/spouse_contact_uuid,  /socio_economic_survey_person/group_demographics/spouse_contact_uuid )" relevant=" /socio_economic_survey_person/group_demographics/spouse_live_in_house ='yes'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/is_father_alive" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/is_father_alive,  /socio_economic_survey_person/group_demographics/is_father_alive )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/is_mother_alive" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/is_mother_alive,  /socio_economic_survey_person/group_demographics/is_mother_alive )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/has_chronic_illness" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/has_chronic_illness,  /socio_economic_survey_person/group_demographics/has_chronic_illness )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/chronic_illnesses" type="select" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/chronic_illnesses,  /socio_economic_survey_person/group_demographics/chronic_illnesses )" relevant="selected(../has_chronic_illness, 'yes')" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/chronic_illnesses_other" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/chronic_illnesses_other,  /socio_economic_survey_person/group_demographics/chronic_illnesses_other )" relevant="selected(../chronic_illnesses, 'other')" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/disability" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/disability,  /socio_economic_survey_person/group_demographics/disability )" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="None cannot be selected with any other option!" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/disability_other" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/disability_other,  /socio_economic_survey_person/group_demographics/disability_other )" relevant=" /socio_economic_survey_person/group_demographics/disability ='other'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/requires_24_hour_care" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/requires_24_hour_care,  /socio_economic_survey_person/group_demographics/requires_24_hour_care )" relevant=" /socio_economic_survey_person/group_demographics/disability !='none' and  /socio_economic_survey_person/group_demographics/disability !=''" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/main_care_giver_id" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/main_care_giver_id,  /socio_economic_survey_person/group_demographics/main_care_giver_id )" relevant=" /socio_economic_survey_person/group_demographics/requires_24_hour_care ='yes' and ( /socio_economic_survey_person/patient_age_in_years  &lt; 18 or  /socio_economic_survey_person/patient_age_in_years  &gt;= 65)" required="false()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/school_attendance_status" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/school_attendance_status,  /socio_economic_survey_person/group_demographics/school_attendance_status )" relevant=" /socio_economic_survey_person/patient_age_in_years  &gt;= 3" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/education_level" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/education_level,  /socio_economic_survey_person/group_demographics/education_level )" relevant="selected( /socio_economic_survey_person/group_demographics/school_attendance_status , 'at_school') or selected( /socio_economic_survey_person/group_demographics/school_attendance_status , 'left_school')" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/other_education_level" type="string" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/other_education_level,  /socio_economic_survey_person/group_demographics/other_education_level )" relevant="../education_level='other'" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/doing_last_7_days" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/doing_last_7_days,  /socio_economic_survey_person/group_demographics/doing_last_7_days )" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/group_demographics/work_formal" type="select1" calculate="if( /socio_economic_survey_person/once ='', instance('contact-summary')/context/demographics/work_formal,  /socio_economic_survey_person/group_demographics/work_formal )" relevant=" /socio_economic_survey_person/patient_age_in_years  &gt;= 18" required="true()"/>
+      <bind nodeset="/socio_economic_survey_person/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/socio_economic_survey_person/inputs">
+      <label ref="jr:itext('/socio_economic_survey_person/inputs:label')"/>
+      <group ref="/socio_economic_survey_person/inputs/contact">
+        <label ref="jr:itext('/socio_economic_survey_person/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/socio_economic_survey_person/inputs/contact/_id">
+          <label ref="jr:itext('/socio_economic_survey_person/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/socio_economic_survey_person/inputs/contact/contact">
+          <label ref="jr:itext('/socio_economic_survey_person/inputs/contact/contact:label')"/>
+        </group>
+        <group ref="/socio_economic_survey_person/inputs/contact/parent">
+          <label ref="jr:itext('/socio_economic_survey_person/inputs/contact/parent:label')"/>
+          <group ref="/socio_economic_survey_person/inputs/contact/parent/contact">
+            <label ref="jr:itext('/socio_economic_survey_person/inputs/contact/parent/contact:label')"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey_person/group_demographics">
+      <label ref="jr:itext('/socio_economic_survey_person/group_demographics:label')"/>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/identification_type">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/identification_type:label')"/>
+        <itemset nodeset="instance('identification')/root/item[member_filter =  /socio_economic_survey_person/member_adult_filter  or member_filter = 2]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/socio_economic_survey_person/group_demographics/identification_type_other">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/identification_type_other:label')"/>
+      </input>
+      <input ref="/socio_economic_survey_person/group_demographics/identification_number">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/identification_number:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/relationship_to_hh_head">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/relationship_to_hh_head:label')"/>
+        <itemset nodeset="instance('relationship')/root/item[member_filter =  /socio_economic_survey_person/member_adult_filter  or member_filter = 2]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/socio_economic_survey_person/group_demographics/relationship_to_hh_other">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/relationship_to_hh_other:label')"/>
+      </input>
+      <select1 ref="/socio_economic_survey_person/group_demographics/sex">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/sex:label')"/>
+        <item>
+          <label>Male</label>
+          <value>male</value>
+        </item>
+        <item>
+          <label>Female</label>
+          <value>female</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey_person/group_demographics/date_of_birth">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/date_of_birth:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/marital_status">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/marital_status:label')"/>
+        <item>
+          <label>Never married</label>
+          <value>never_married</value>
+        </item>
+        <item>
+          <label>Married mono-gamous</label>
+          <value>married_monogamous</value>
+        </item>
+        <item>
+          <label>Married Poly-gamous</label>
+          <value>married_polygamous</value>
+        </item>
+        <item>
+          <label>Widowed</label>
+          <value>widowed</value>
+        </item>
+        <item>
+          <label>Divorced</label>
+          <value>divorced</value>
+        </item>
+        <item>
+          <label>Separated</label>
+          <value>separated</value>
+        </item>
+        <item>
+          <label>Dont Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/spouse_live_in_house">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/spouse_live_in_house:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="select-contact type-f_client" ref="/socio_economic_survey_person/group_demographics/spouse_contact_uuid">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/spouse_contact_uuid:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/is_father_alive">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/is_father_alive:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/is_mother_alive">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/is_mother_alive:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/has_chronic_illness">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/has_chronic_illness:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <select appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/chronic_illnesses">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/chronic_illnesses:label')"/>
+        <item>
+          <label>Diabetes</label>
+          <value>diabetes</value>
+        </item>
+        <item>
+          <label>Cancer</label>
+          <value>cancer</value>
+        </item>
+        <item>
+          <label>Mental Illness</label>
+          <value>mental_illness</value>
+        </item>
+        <item>
+          <label>Hypertension</label>
+          <value>hypertension</value>
+        </item>
+        <item>
+          <label>Chronic Respiratory</label>
+          <value>chronic_respiratory</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/socio_economic_survey_person/group_demographics/chronic_illnesses_other">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/chronic_illnesses_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/disability">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/disability:label')"/>
+        <item>
+          <label>Visual</label>
+          <value>visual</value>
+        </item>
+        <item>
+          <label>Hearing</label>
+          <value>hearing</value>
+        </item>
+        <item>
+          <label>Speech</label>
+          <value>speech</value>
+        </item>
+        <item>
+          <label>Physical</label>
+          <value>physical</value>
+        </item>
+        <item>
+          <label>Mental</label>
+          <value>mental</value>
+        </item>
+        <item>
+          <label>Self-care difficulties</label>
+          <value>self_care_difficulties</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey_person/group_demographics/disability_other">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/disability_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/requires_24_hour_care">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/requires_24_hour_care:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <input appearance="select-contact type-f_client" ref="/socio_economic_survey_person/group_demographics/main_care_giver_id">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/main_care_giver_id:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/school_attendance_status">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/school_attendance_status:label')"/>
+        <item>
+          <label>At school or learning Institution</label>
+          <value>at_school</value>
+        </item>
+        <item>
+          <label>Left school or learning Institution</label>
+          <value>left_school</value>
+        </item>
+        <item>
+          <label>Never went to school or learning Institution</label>
+          <value>never_schooled</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/education_level">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/education_level:label')"/>
+        <item>
+          <label>Pre primary (ECD) or NONE</label>
+          <value>ecd_or_none</value>
+        </item>
+        <item>
+          <label>Standard 1 (incomplete)</label>
+          <value>standard_1_incomplete</value>
+        </item>
+        <item>
+          <label>Standard 1</label>
+          <value>standard_1</value>
+        </item>
+        <item>
+          <label>Standard 2</label>
+          <value>standard_2</value>
+        </item>
+        <item>
+          <label>Standard 3</label>
+          <value>standard_3</value>
+        </item>
+        <item>
+          <label>Standard 4</label>
+          <value>standard_4</value>
+        </item>
+        <item>
+          <label>Standard 5</label>
+          <value>standard_5</value>
+        </item>
+        <item>
+          <label>Standard 6</label>
+          <value>standard_6</value>
+        </item>
+        <item>
+          <label>Standard 7</label>
+          <value>standard_7</value>
+        </item>
+        <item>
+          <label>Standard 8</label>
+          <value>standard_8</value>
+        </item>
+        <item>
+          <label>Form 1</label>
+          <value>form_1</value>
+        </item>
+        <item>
+          <label>Form 2</label>
+          <value>form_2</value>
+        </item>
+        <item>
+          <label>Form 3</label>
+          <value>form_3</value>
+        </item>
+        <item>
+          <label>Form 4</label>
+          <value>form_4</value>
+        </item>
+        <item>
+          <label>Form 5</label>
+          <value>form_5</value>
+        </item>
+        <item>
+          <label>Form 6</label>
+          <value>form_6</value>
+        </item>
+        <item>
+          <label>Incomplete post-secondary</label>
+          <value>incomplete_post_secondary</value>
+        </item>
+        <item>
+          <label>Complete post-secondary</label>
+          <value>complete_post_secondary</value>
+        </item>
+        <item>
+          <label>Incomplete undergraduate or Polytechnic</label>
+          <value>incomplete_undergraduate_or_polytechnic</value>
+        </item>
+        <item>
+          <label>Complete undergraduate</label>
+          <value>complete_undergraduate</value>
+        </item>
+        <item>
+          <label>Incomplete master/PhD</label>
+          <value>incomplete_master_phd</value>
+        </item>
+        <item>
+          <label>Complete master/PhD</label>
+          <value>complete_master_phd</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey_person/group_demographics/other_education_level">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/other_education_level:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/doing_last_7_days">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/doing_last_7_days:label')"/>
+        <item>
+          <label>Worked for pay</label>
+          <value>worked_for_pay</value>
+        </item>
+        <item>
+          <label>On leave</label>
+          <value>on_leave</value>
+        </item>
+        <item>
+          <label>Sick leave</label>
+          <value>sick_leave</value>
+        </item>
+        <item>
+          <label>Worked own or at family business or at family agriculture</label>
+          <value>worked_own_or_family_business_agriculture</value>
+        </item>
+        <item>
+          <label>Apprentice/Intern</label>
+          <value>apprentice_intern</value>
+        </item>
+        <item>
+          <label>Volunteer</label>
+          <value>volunteer</value>
+        </item>
+        <item>
+          <label>Seeking work</label>
+          <value>seeking_work</value>
+        </item>
+        <item>
+          <label>No work available</label>
+          <value>no_work_available</value>
+        </item>
+        <item>
+          <label>Retired with pension</label>
+          <value>retired_with_pension</value>
+        </item>
+        <item>
+          <label>Homemaker</label>
+          <value>homemaker</value>
+        </item>
+        <item>
+          <label>Full-time Student</label>
+          <value>full_time_student</value>
+        </item>
+        <item>
+          <label>Part-time student</label>
+          <value>part_time_student</value>
+        </item>
+        <item>
+          <label>Incapacitated</label>
+          <value>incapacitated</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey_person/group_demographics/work_formal">
+        <label ref="jr:itext('/socio_economic_survey_person/group_demographics/work_formal:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Don't Know</label>
+          <value>do_not_know</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

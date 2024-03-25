@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Unmute request</h:title>
+    <model>
+      <instance>
+        <unmute_person id="unmute_person" prefix="J1!unmute_person!" delimiter="#" version="2020-01-12 00:00:00">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <patient_age_display/>
+          <unmute_reason_other/>
+          <c_unmute_reason/>
+          <visited_contact_uuid/>
+          <unmute_report>
+            <unmute_reason/>
+            <specify_reason/>
+          </unmute_report>
+          <unmuting_summary>
+            <r_summary/>
+            <r_contact_info/>
+            <r_contact_age/>
+            <r_unmute_reasons_label/>
+            <r_unmute_reason1/>
+            <r_unmute_reasons_other/>
+            <r_special_instructions/>
+            <r_followup_instructions/>
+          </unmuting_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </unmute_person>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/unmute_person/inputs" relevant="./source='user'"/>
+      <bind nodeset="/unmute_person/inputs/source" type="string"/>
+      <bind nodeset="/unmute_person/inputs/source_id" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/unmute_person/inputs/contact/name" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/sex" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/unmute_person/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/unmute_person/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/unmute_person/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/unmute_person/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/unmute_person/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/unmute_person/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/unmute_person/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /unmute_person/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/unmute_person/patient_age_in_months" type="string" calculate="difference-in-months(  /unmute_person/patient_date_of_birth , today() )"/>
+      <bind nodeset="/unmute_person/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /unmute_person/patient_date_of_birth ) )"/>
+      <bind nodeset="/unmute_person/patient_age_in_weeks" type="string" calculate="floor( /unmute_person/patient_age_in_days  div 7)"/>
+      <bind nodeset="/unmute_person/patient_age_display" type="string" calculate="concat(
+ concat( /unmute_person/patient_age_in_years , if( /unmute_person/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /unmute_person/patient_age_in_months  mod 12, if(( /unmute_person/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/unmute_person/unmute_reason_other" type="string" calculate=" /unmute_person/unmute_report/specify_reason "/>
+      <bind nodeset="/unmute_person/c_unmute_reason" type="string" calculate="if( /unmute_person/unmute_report/unmute_reason  = 'other',  /unmute_person/unmute_report/specify_reason , jr:choice-name( /unmute_person/unmute_report/unmute_reason , ' /unmute_person/unmute_report/unmute_reason '))"/>
+      <bind nodeset="/unmute_person/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/unmute_person/unmute_report/unmute_reason" type="select1" required="true()"/>
+      <bind nodeset="/unmute_person/unmute_report/specify_reason" type="string" relevant=" /unmute_person/unmute_report/unmute_reason  = 'other'" required="true()"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_contact_info" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_contact_age" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_unmute_reasons_label" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_unmute_reason1" readonly="true()" type="string" relevant="selected( /unmute_person/unmute_report/unmute_reason ,'moved_back')"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_unmute_reasons_other" readonly="true()" type="string" relevant=" /unmute_person/unmute_reason_other  != '' and  /unmute_person/unmute_report/unmute_reason  = 'other'"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/unmuting_summary/r_followup_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_person/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/unmute_person/inputs">
+      <label>Inputs</label>
+      <group ref="/unmute_person/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/unmute_person/inputs/contact/_id">
+          <label>ID of head of household</label>
+        </input>
+        <group ref="/unmute_person/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/unmute_person/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/unmute_person/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/unmute_person/unmute_report">
+      <label>unmute Report</label>
+      <select1 ref="/unmute_person/unmute_report/unmute_reason">
+        <label>Why do you want <output value=" /unmute_person/patient_name "/> unmuted</label>
+        <item>
+          <label>Moved back</label>
+          <value>moved_back</value>
+        </item>
+        <item>
+          <label>Other (Please specify)</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/unmute_person/unmute_report/specify_reason">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/unmute_person/unmuting_summary">
+      <label></label>
+      <input appearance="h1 yellow" ref="/unmute_person/unmuting_summary/r_summary">
+        <label>Unmute Request Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/unmute_person/unmuting_summary/r_contact_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /unmute_person/patient_name "/>&lt;/h4&gt;</label>
+      </input>
+      <input ref="/unmute_person/unmuting_summary/r_contact_age">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /unmute_person/patient_age_display "/>&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h2 yellow" ref="/unmute_person/unmuting_summary/r_unmute_reasons_label">
+        <label>Reason for Unmute request</label>
+      </input>
+      <input appearance="li" ref="/unmute_person/unmuting_summary/r_unmute_reason1">
+        <label>Moved back</label>
+      </input>
+      <input appearance="li" ref="/unmute_person/unmuting_summary/r_unmute_reasons_other">
+        <label><output value=" /unmute_person/unmute_reason_other "/></label>
+      </input>
+      <input appearance="h1 blue" ref="/unmute_person/unmuting_summary/r_special_instructions">
+        <label>Special Instruction</label>
+      </input>
+      <input ref="/unmute_person/unmuting_summary/r_followup_instructions">
+        <label>Tasks for &lt;b&gt;<output value=" /unmute_person/patient_name "/>&lt;/b&gt; will start to show after you unmute this request. Thank you.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

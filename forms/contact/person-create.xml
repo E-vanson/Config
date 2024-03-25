@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>New Person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/init/parent_id:hint">
+            <value><output value=" /data/init/type_label "/></value>
+          </text>
+          <text id="/data/init/parent_id:label">
+            <value>Belongs To</value>
+          </text>
+          <text id="/data/init/type_selector/a_household:label">
+            <value>Household</value>
+          </text>
+          <text id="/data/init/type_selector/b_community_health_volunteer_area:label">
+            <value>Community Health Promoter Area</value>
+          </text>
+          <text id="/data/init/type_selector/c_community_health_unit:label">
+            <value>Community Health Unit</value>
+          </text>
+          <text id="/data/init/type_selector/d_sub_county:label">
+            <value>Sub County</value>
+          </text>
+          <text id="/data/init/type_selector/e_county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/person/role/chw:label">
+            <value>CHP</value>
+          </text>
+          <text id="/data/person/role/chw_supervisor:label">
+            <value>CHP Supervisor</value>
+          </text>
+          <text id="/data/person/role/manager:label">
+            <value>Facility Manager</value>
+          </text>
+          <text id="/data/person/role/nurse:label">
+            <value>Nurse</value>
+          </text>
+          <text id="/data/person/role/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/person/role/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/person/role_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Person Type</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2023-06-20  1-41">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <person>
+            <parent>PARENT</parent>
+            <type>person</type>
+            <name/>
+            <phone/>
+            <phone_alternate/>
+            <sex/>
+            <role/>
+            <role_other/>
+            <external_id/>
+            <notes/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </person>
+          <init>
+            <parent_id/>
+            <name/>
+            <type/>
+            <type_selector/>
+            <type_label/>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="0"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/parent_id" type="string" calculate=" /data/person/parent " readonly="true()"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/init/type" type="string"/>
+      <bind nodeset="/data/init/type_selector" type="select1" calculate="../type"/>
+      <bind nodeset="/data/init/type_label" type="string" calculate="jr:choice-name( /data/init/type_selector ,' /data/init/type_selector ')"/>
+      <bind nodeset="/data/person/parent" type="string"/>
+      <bind nodeset="/data/person/type" type="string"/>
+      <bind nodeset="/data/person/name" type="string" required="true()"/>
+      <bind nodeset="/data/person/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" constraint="1"/>
+      <bind nodeset="/data/person/phone_alternate" type="tel" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" constraint="1"/>
+      <bind nodeset="/data/person/sex" type="select1"/>
+      <bind nodeset="/data/person/role" type="select1"/>
+      <bind nodeset="/data/person/role_other" type="string" required="true()" relevant="selected(  /data/person/role ,'other')"/>
+      <bind nodeset="/data/person/external_id" type="string"/>
+      <bind nodeset="/data/person/notes" type="string"/>
+      <bind nodeset="/data/person/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/person/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/person/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/init">
+      <input appearance="db-object" ref="/data/init/parent_id">
+        <label ref="jr:itext('/data/init/parent_id:label')"/>
+        <hint ref="jr:itext('/data/init/parent_id:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/init/name"/>
+      <input appearance="hidden" ref="/data/init/type"/>
+      <select1 appearance="hidden" ref="/data/init/type_selector">
+        <item>
+          <label ref="jr:itext('/data/init/type_selector/e_county:label')"/>
+          <value>e_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/type_selector/d_sub_county:label')"/>
+          <value>d_sub_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/type_selector/c_community_health_unit:label')"/>
+          <value>c_community_health_unit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/type_selector/b_community_health_volunteer_area:label')"/>
+          <value>b_community_health_volunteer_area</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/type_selector/a_household:label')"/>
+          <value>a_household</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/data/person">
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
+      </input>
+      <input ref="/data/person/phone">
+        <label ref="jr:itext('/data/person/phone:label')"/>
+      </input>
+      <input ref="/data/person/phone_alternate">
+        <label ref="jr:itext('/data/person/phone_alternate:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/data/person/sex">
+        <label ref="jr:itext('/data/person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+      <select1 ref="/data/person/role">
+        <label ref="jr:itext('/data/person/role:label')"/>
+        <hint ref="jr:itext('/data/person/role:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw_supervisor:label')"/>
+          <value>chw_supervisor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/nurse:label')"/>
+          <value>nurse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/manager:label')"/>
+          <value>manager</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/patient:label')"/>
+          <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/person/role_other">
+        <label ref="jr:itext('/data/person/role_other:label')"/>
+      </input>
+      <input ref="/data/person/external_id">
+        <label ref="jr:itext('/data/person/external_id:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/person/notes">
+        <label ref="jr:itext('/data/person/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/person/meta"/>
+    </group>
+  </h:body>
+</h:html>

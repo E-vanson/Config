@@ -1,0 +1,269 @@
+{
+  "coreVersion": "4.0",
+  "user": "chv_id",
+  "subject": "patient_id",
+  "ownedBySubject": false,
+  "docs": [
+    {
+      "_id": "patient_id",
+      "type": "contact",
+      "parent": {
+        "_id": "household_id",
+        "parent": {
+          "_id": "chv_area_id",
+          "parent": {
+            "_id": "chu_id",
+            "parent": {
+              "_id": "sub_county_id",
+              "parent": {
+                "_id": "county_id"
+              }
+            }
+          }
+        }
+      },
+      "contact_type": "f_client",
+      "name": "Test Client",
+      "hh_member_name": "Test Client",
+      "sex": "female",
+      "date_of_birth": "1996-08-24",
+      "dob_method": "approx",
+      "hh_member_age_years": "26",
+      "hh_member_age_months": "0",
+      "ephemeral_months": "8",
+      "ephemeral_years": "1996",
+      "dob_approx": "1996-08-24",
+      "dob_raw": "1996-08-24",
+      "dob_iso": "1996-08-24",
+      "age_in_years": "26",
+      "age_in_months": "312",
+      "phone": "0712345678",
+      "alternate_phone": "",
+      "identification": "national_id",
+      "relationship_to_hh_head": "child",
+      "has_disability": "no",
+      "pregnant": "no",
+      "using_fp": "no",
+      "n_no_fp": "",
+      "meta": {
+        "created_by": "joshuakulei",
+        "created_by_person_uuid": "chv_id",
+        "created_by_place_uuid": "chv_area_id"
+      },
+      "reported_date": 1661355350040,
+      "patient_id": "83811"
+    },
+    {
+      "_id": "household_id",
+      "parent": {
+        "_id": "chv_area_id",
+        "parent": {
+          "_id": "chu_id",
+          "parent": {
+            "_id": "sub_county_id",
+            "parent": {
+              "_id": "county_id"
+            }
+          }
+        }
+      },
+      "type": "contact",
+      "contact_type": "e_household",
+      "name": "Test Household",
+      "geolocation": "",
+      "contact": {
+        "_id": "patient_id"
+      },
+      "has_functional_latrine": "yes",
+      "has_functional_handwashing_facility": "yes",
+      "uses_treated_water": "yes",
+      "has_functional_refuse_disposal_facility": "yes",
+      "wash_status": "good",
+      "has_upto_date_insurance": "true",
+      "specific_insurance_cover": "",
+      "r_has_health_cover": "Yes",
+      "needs_registration_follow_up": "no",
+      "meta": {
+        "created_by": "joshuakulei",
+        "created_by_person_uuid": "chv_id",
+        "created_by_place_uuid": "chv_area_id"
+      },
+      "reported_date": 1661350822478,
+      "place_id": "87658"
+    },
+    {
+      "_id": "chv_area_id",
+      "parent": {
+        "_id": "chu_id",
+        "parent": {
+          "_id": "sub_county_id",
+          "parent": {
+            "_id": "county_id"
+          }
+        }
+      },
+      "type": "contact",
+      "is_name_generated": "true",
+      "name": "Test CHV's Area",
+      "external_id": "",
+      "contact": {
+        "_id": "chv_id",
+        "parent": {
+          "_id": "chv_area_id",
+          "parent": {
+            "_id": "chu_id",
+            "parent": {
+              "_id": "sub_county_id",
+              "parent": {
+                "_id": "county_id"
+              }
+            }
+          }
+        }
+      },
+      "geolocation": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "contact_type": "d_community_health_volunteer_area",
+      "reported_date": 1661349986192,
+      "place_id": "81980"
+    },
+    {
+      "_id": "chu_id",
+      "parent": {
+        "_id": "sub_county_id",
+        "parent": {
+          "_id": "county_id"
+        }
+      },
+      "type": "contact",
+      "name": "Test Community Health Unit",
+      "external_id": "",
+      "contact": "",
+      "geolocation": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "contact_type": "c_community_health_unit",
+      "reported_date": 1661349566447,
+      "place_id": "15854"
+    },
+    {
+      "_id": "sub_county_id",
+      "parent": {
+        "_id": "county_id"
+      },
+      "type": "contact",
+      "contact": {
+        "_id": ""
+      },
+      "generated_name": "",
+      "name": "Test Sub County",
+      "external_id": "",
+      "geolocation": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": "",
+        "last_edited_by": "medic",
+        "last_edited_by_person_uuid": "",
+        "last_edited_by_place_uuid": ""
+      },
+      "contact_type": "b_sub_county",
+      "reported_date": 1661349542700,
+      "place_id": "39731"
+    },
+    {
+      "_id": "county_id",
+      "parent": "",
+      "type": "contact",
+      "name": "Test County",
+      "external_id": "",
+      "contact": "",
+      "geolocation": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "contact_type": "a_county",
+      "reported_date": 1661349530952,
+      "place_id": "26554"
+    },
+    {
+      "_id": "chv_id",
+      "type": "person",
+      "name": "Test CHV",
+      "phone": "",
+      "phone_alternate": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "reported_date": 1661349986192,
+      "parent": {
+        "_id": "chv_area_id",
+        "parent": {
+          "_id": "chu_id",
+          "parent": {
+            "_id": "sub_county_id",
+            "parent": {
+              "_id": "county_id"
+            }
+          }
+        }
+      },
+      "patient_id": "88316"
+    },
+    {
+      "_id": "cha_id",
+      "type": "person",
+      "name": "Test CHA",
+      "phone": "",
+      "phone_alternate": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "reported_date": 1661349986192,
+      "parent": {
+        "_id": "chu_id",
+        "parent": {
+          "_id": "sub_county_id",
+          "parent": {
+            "_id": "county_id"
+          }
+        }
+      },
+      "patient_id": "88317"
+    },
+    {
+      "_id": "schmt_id",
+      "type": "person",
+      "name": "Test SCHMT",
+      "phone": "",
+      "phone_alternate": "",
+      "meta": {
+        "created_by": "medic",
+        "created_by_person_uuid": "",
+        "created_by_place_uuid": ""
+      },
+      "reported_date": 1661349986192,
+      "parent": {
+        "_id": "sub_county_id",
+        "contact_type": "b_sub_county",
+        "parent": {
+          "_id": "county_id"
+        }
+      },
+      "patient_id": "88112"
+    }
+  ]
+}

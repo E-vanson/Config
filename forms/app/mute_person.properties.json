@@ -1,0 +1,11 @@
+{
+    "icon": "icon-mute",
+    "title": {
+        "en": "Mute Person"
+    },
+    "context": {
+        "person":true,
+        "place":false,
+        "expression": "contact.contact_type === 'f_client' && user.parent && user.parent.contact_type === 'd_community_health_volunteer_area' && summary.is_eligible_for_home_visit_service"
+    }
+}

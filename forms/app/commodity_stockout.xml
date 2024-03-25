@@ -1,0 +1,699 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Commodity Stockout</h:title>
+    <model>
+      <instance>
+        <commodity_stockout id="commodity_stockout" prefix="J1!commodity_stockout!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_wos_chv_name/>
+            <t_wos_rdts/>
+            <t_wos_act_6/>
+            <t_wos_act_12/>
+            <t_wos_act_18/>
+            <t_wos_act_24/>
+            <t_wos_dt_250/>
+            <t_wos_ors_zinc/>
+            <t_wos_ors_sachets/>
+            <t_wos_zinc_sulphate/>
+            <t_wos_albendazole/>
+            <t_wos_tetra_eye/>
+            <t_wos_paracetamol_120/>
+            <t_wos_mebendazole/>
+            <t_wos_coc/>
+            <t_wos_prog/>
+            <t_wos_depo_im/>
+            <t_wos_depo_sc/>
+            <t_wos_preg_strip/>
+            <t_wos_chlorine/>
+            <t_wos_gluc_strips/>
+            <t_wos_paracetamol_500/>
+            <t_wos_bandages/>
+            <t_wos_povi/>
+            <t_wos_strap/>
+            <t_wos_gloves/>
+            <t_wos_envelopes/>
+            <t_wos_glucometer/>
+            <t_wos_backpack/>
+            <t_wos_badge/>
+            <t_wos_flashlight/>
+            <t_wos_salter/>
+            <t_wos_color_salter/>
+            <t_wos_weighing_scale/>
+            <t_wos_first_aid/>
+            <t_wos_bp/>
+            <t_wos_thermometer/>
+            <t_wos_resp_timer/>
+            <t_wos_muac_tape_adults/>
+            <t_wos_muac_tape_children/>
+            <t_wos_family_muac_tape/>
+            <t_wos_moh_514/>
+            <t_wos_moh_521/>
+            <t_wos_moh_100/>
+            <t_wos_comm_daily_register/>
+            <t_wos_phone/>
+            <t_wos_safety_box/>
+            <t_wos_others/>
+            <t_soh_rdts/>
+            <t_soh_act_6/>
+            <t_soh_act_12/>
+            <t_soh_act_18/>
+            <t_soh_act_24/>
+            <t_soh_dt_250/>
+            <t_soh_ors_zinc/>
+            <t_soh_ors_sachets/>
+            <t_soh_zinc_sulphate/>
+            <t_soh_albendazole/>
+            <t_soh_tetra_eye/>
+            <t_soh_paracetamol_120/>
+            <t_soh_mebendazole/>
+            <t_soh_coc/>
+            <t_soh_prog/>
+            <t_soh_depo_im/>
+            <t_soh_depo_sc/>
+            <t_soh_preg_strip/>
+            <t_soh_chlorine/>
+            <t_soh_gluc_strips/>
+            <t_soh_paracetamol_500/>
+            <t_soh_bandages/>
+            <t_soh_povi/>
+            <t_soh_strap/>
+            <t_soh_gloves/>
+            <t_soh_envelopes/>
+            <t_soh_glucometer/>
+            <t_soh_backpack/>
+            <t_soh_badge/>
+            <t_soh_flashlight/>
+            <t_soh_salter/>
+            <t_soh_color_salter/>
+            <t_soh_weighing_scale/>
+            <t_soh_first_aid/>
+            <t_soh_bp/>
+            <t_soh_thermometer/>
+            <t_soh_resp_timer/>
+            <t_soh_muac_tape_adults/>
+            <t_soh_muac_tape_children/>
+            <t_soh_family_muac_tape/>
+            <t_soh_moh_514/>
+            <t_soh_moh_521/>
+            <t_soh_moh_100/>
+            <t_soh_comm_daily_register/>
+            <t_soh_phone/>
+            <t_soh_safety_box/>
+            <t_soh_others/>
+            <contact>
+              <_id/>
+              <name/>
+              <place_id/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <community_health_unit_name/>
+          <chv_name/>
+          <wos_rdts/>
+          <wos_act_6/>
+          <wos_act_12/>
+          <wos_act_18/>
+          <wos_act_24/>
+          <wos_dt_250/>
+          <wos_ors_zinc/>
+          <wos_ors_sachets/>
+          <wos_zinc_sulphate/>
+          <wos_albendazole/>
+          <wos_tetra_eye/>
+          <wos_paracetamol_120/>
+          <wos_mebendazole/>
+          <wos_coc/>
+          <wos_prog/>
+          <wos_depo_im/>
+          <wos_depo_sc/>
+          <wos_preg_strip/>
+          <wos_chlorine/>
+          <wos_gluc_strips/>
+          <wos_paracetamol_500/>
+          <wos_bandages/>
+          <wos_povi/>
+          <wos_strap/>
+          <wos_gloves/>
+          <wos_envelopes/>
+          <wos_glucometer/>
+          <wos_backpack/>
+          <wos_badge/>
+          <wos_flashlight/>
+          <wos_salter/>
+          <wos_color_salter/>
+          <wos_weighing_scale/>
+          <wos_first_aid/>
+          <wos_bp/>
+          <wos_thermometer/>
+          <wos_resp_timer/>
+          <wos_muac_tape_adults/>
+          <wos_muac_tape_children/>
+          <wos_family_muac_tape/>
+          <wos_moh_514/>
+          <wos_moh_521/>
+          <wos_moh_100/>
+          <wos_comm_daily_register/>
+          <wos_phone/>
+          <wos_safety_box/>
+          <wos_others/>
+          <soh_rdts/>
+          <soh_act_6/>
+          <soh_act_12/>
+          <soh_act_18/>
+          <soh_act_24/>
+          <soh_dt_250/>
+          <soh_ors_zinc/>
+          <soh_ors_sachets/>
+          <soh_zinc_sulphate/>
+          <soh_albendazole/>
+          <soh_tetra_eye/>
+          <soh_paracetamol_120/>
+          <soh_mebendazole/>
+          <soh_coc/>
+          <soh_prog/>
+          <soh_depo_im/>
+          <soh_depo_sc/>
+          <soh_preg_strip/>
+          <soh_chlorine/>
+          <soh_gluc_strips/>
+          <soh_paracetamol_500/>
+          <soh_bandages/>
+          <soh_povi/>
+          <soh_strap/>
+          <soh_gloves/>
+          <soh_envelopes/>
+          <soh_glucometer/>
+          <soh_backpack/>
+          <soh_badge/>
+          <soh_flashlight/>
+          <soh_salter/>
+          <soh_color_salter/>
+          <soh_weighing_scale/>
+          <soh_first_aid/>
+          <soh_bp/>
+          <soh_thermometer/>
+          <soh_resp_timer/>
+          <soh_muac_tape_adults/>
+          <soh_muac_tape_children/>
+          <soh_family_muac_tape/>
+          <soh_moh_514/>
+          <soh_moh_521/>
+          <soh_moh_100/>
+          <soh_comm_daily_register/>
+          <soh_phone/>
+          <soh_safety_box/>
+          <soh_others/>
+          <stockout>
+            <n_rdts/>
+            <n_act_6/>
+            <n_act_12/>
+            <n_act_18/>
+            <n_act_24/>
+            <n_dt_250/>
+            <n_ors_zinc/>
+            <n_ors_sachets/>
+            <n_zinc_sulphate/>
+            <n_albendazole/>
+            <n_tetra_eye/>
+            <n_paracetamol_120/>
+            <n_mebendazole/>
+            <n_coc/>
+            <n_prog/>
+            <n_depo_im/>
+            <n_depo_sc/>
+            <n_preg_strip/>
+            <n_chlorine/>
+            <n_gluc_strips/>
+            <n_paracetamol_500/>
+            <n_bandages/>
+            <n_povi/>
+            <n_strap/>
+            <n_gloves/>
+            <n_envelopes/>
+            <n_glucometer/>
+            <n_backpack/>
+            <n_badge/>
+            <n_flashlight/>
+            <n_salter/>
+            <n_color_salter/>
+            <n_weighing_scale/>
+            <n_first_aid_/>
+            <n_bp/>
+            <n_thermometer/>
+            <n_resp_timer/>
+            <n_muac_tape_adults/>
+            <n_muac_tape_children/>
+            <n_family_muac_tape/>
+            <n_moh_514/>
+            <n_moh_521/>
+            <n_moh_100/>
+            <n_comm_daily_register/>
+            <n_phone/>
+            <n_safety_box/>
+            <n_others/>
+            <n_remainder/>
+          </stockout>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </commodity_stockout>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/commodity_stockout/inputs" relevant="./source='user'"/>
+      <bind nodeset="/commodity_stockout/inputs/source" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/source_id" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_chv_name" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_rdts" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_act_6" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_act_12" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_act_18" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_act_24" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_dt_250" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_ors_zinc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_ors_sachets" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_zinc_sulphate" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_albendazole" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_tetra_eye" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_paracetamol_120" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_mebendazole" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_coc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_prog" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_depo_im" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_depo_sc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_preg_strip" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_chlorine" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_gluc_strips" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_paracetamol_500" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_bandages" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_povi" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_strap" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_gloves" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_envelopes" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_glucometer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_backpack" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_badge" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_flashlight" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_salter" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_color_salter" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_weighing_scale" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_first_aid" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_bp" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_thermometer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_resp_timer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_muac_tape_adults" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_muac_tape_children" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_family_muac_tape" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_moh_514" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_moh_521" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_moh_100" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_comm_daily_register" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_phone" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_safety_box" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_wos_others" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_rdts" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_act_6" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_act_12" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_act_18" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_act_24" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_dt_250" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_ors_zinc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_ors_sachets" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_zinc_sulphate" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_albendazole" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_tetra_eye" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_paracetamol_120" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_mebendazole" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_coc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_prog" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_depo_im" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_depo_sc" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_preg_strip" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_chlorine" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_gluc_strips" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_paracetamol_500" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_bandages" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_povi" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_strap" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_gloves" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_envelopes" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_glucometer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_backpack" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_badge" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_flashlight" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_salter" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_color_salter" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_weighing_scale" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_first_aid" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_bp" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_thermometer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_resp_timer" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_muac_tape_adults" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_muac_tape_children" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_family_muac_tape" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_moh_514" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_moh_521" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_moh_100" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_comm_daily_register" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_phone" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_safety_box" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/t_soh_others" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/commodity_stockout/inputs/contact/name" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/commodity_stockout/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/commodity_stockout/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/commodity_stockout/community_health_unit_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/commodity_stockout/chv_name" type="string" calculate="coalesce(../inputs/t_wos_chv_name,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_rdts" type="string" calculate="coalesce(../inputs/t_wos_rdts,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_act_6" type="string" calculate="coalesce(../inputs/t_wos_act_6,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_act_12" type="string" calculate="coalesce(../inputs/t_wos_act_12,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_act_18" type="string" calculate="coalesce(../inputs/t_wos_act_18,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_act_24" type="string" calculate="coalesce(../inputs/t_wos_act_24,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_dt_250" type="string" calculate="coalesce(../inputs/t_wos_dt_250,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_ors_zinc" type="string" calculate="coalesce(../inputs/t_wos_ors_zinc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_ors_sachets" type="string" calculate="coalesce(../inputs/t_wos_ors_sachets,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_zinc_sulphate" type="string" calculate="coalesce(../inputs/t_wos_zinc_sulphate,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_albendazole" type="string" calculate="coalesce(../inputs/t_wos_albendazole,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_tetra_eye" type="string" calculate="coalesce(../inputs/t_wos_tetra_eye,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_paracetamol_120" type="string" calculate="coalesce(../inputs/t_wos_paracetamol_120,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_mebendazole" type="string" calculate="coalesce(../inputs/t_wos_mebendazole,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_coc" type="string" calculate="coalesce(../inputs/t_wos_coc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_prog" type="string" calculate="coalesce(../inputs/t_wos_prog,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_depo_im" type="string" calculate="coalesce(../inputs/t_wos_depo_im,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_depo_sc" type="string" calculate="coalesce(../inputs/t_wos_depo_sc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_preg_strip" type="string" calculate="coalesce(../inputs/t_wos_preg_strip,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_chlorine" type="string" calculate="coalesce(../inputs/t_wos_chlorine,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_gluc_strips" type="string" calculate="coalesce(../inputs/t_wos_gluc_strips,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_paracetamol_500" type="string" calculate="coalesce(../inputs/t_wos_paracetamol_500,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_bandages" type="string" calculate="coalesce(../inputs/t_wos_bandages,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_povi" type="string" calculate="coalesce(../inputs/t_wos_povi,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_strap" type="string" calculate="coalesce(../inputs/t_wos_strap,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_gloves" type="string" calculate="coalesce(../inputs/t_wos_gloves,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_envelopes" type="string" calculate="coalesce(../inputs/t_wos_envelopes,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_glucometer" type="string" calculate="coalesce(../inputs/t_wos_glucometer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_backpack" type="string" calculate="coalesce(../inputs/t_wos_backpack,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_badge" type="string" calculate="coalesce(../inputs/t_wos_badge,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_flashlight" type="string" calculate="coalesce(../inputs/t_wos_flashlight,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_salter" type="string" calculate="coalesce(../inputs/t_wos_salter,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_color_salter" type="string" calculate="coalesce(../inputs/t_wos_color_salter,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_weighing_scale" type="string" calculate="coalesce(../inputs/t_wos_weighing_scale,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_first_aid" type="string" calculate="coalesce(../inputs/t_wos_first_aid,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_bp" type="string" calculate="coalesce(../inputs/t_wos_bp,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_thermometer" type="string" calculate="coalesce(../inputs/t_wos_thermometer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_resp_timer" type="string" calculate="coalesce(../inputs/t_wos_resp_timer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_muac_tape_adults" type="string" calculate="coalesce(../inputs/t_wos_muac_tape_adults,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_muac_tape_children" type="string" calculate="coalesce(../inputs/t_wos_muac_tape_children,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_family_muac_tape" type="string" calculate="coalesce(../inputs/t_wos_family_muac_tape,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_moh_514" type="string" calculate="coalesce(../inputs/t_wos_moh_514,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_moh_521" type="string" calculate="coalesce(../inputs/t_wos_moh_521,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_moh_100" type="string" calculate="coalesce(../inputs/t_wos_moh_100,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_comm_daily_register" type="string" calculate="coalesce(../inputs/t_wos_comm_daily_register,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_phone" type="string" calculate="coalesce(../inputs/t_wos_phone,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_safety_box" type="string" calculate="coalesce(../inputs/t_wos_safety_box,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/wos_others" type="string" calculate="coalesce(../inputs/t_wos_others,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_rdts" type="string" calculate="coalesce(../inputs/t_soh_rdts,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_act_6" type="string" calculate="coalesce(../inputs/t_soh_act_6,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_act_12" type="string" calculate="coalesce(../inputs/t_soh_act_12,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_act_18" type="string" calculate="coalesce(../inputs/t_soh_act_18,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_act_24" type="string" calculate="coalesce(../inputs/t_soh_act_24,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_dt_250" type="string" calculate="coalesce(../inputs/t_soh_dt_250,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_ors_zinc" type="string" calculate="coalesce(../inputs/t_soh_ors_zinc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_ors_sachets" type="string" calculate="coalesce(../inputs/t_soh_ors_sachets,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_zinc_sulphate" type="string" calculate="coalesce(../inputs/t_soh_zinc_sulphate,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_albendazole" type="string" calculate="coalesce(../inputs/t_soh_albendazole,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_tetra_eye" type="string" calculate="coalesce(../inputs/t_soh_tetra_eye,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_paracetamol_120" type="string" calculate="coalesce(../inputs/t_soh_paracetamol_120,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_mebendazole" type="string" calculate="coalesce(../inputs/t_soh_mebendazole,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_coc" type="string" calculate="coalesce(../inputs/t_soh_coc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_prog" type="string" calculate="coalesce(../inputs/t_soh_prog,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_depo_im" type="string" calculate="coalesce(../inputs/t_soh_depo_im,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_depo_sc" type="string" calculate="coalesce(../inputs/t_soh_depo_sc,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_preg_strip" type="string" calculate="coalesce(../inputs/t_soh_preg_strip,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_chlorine" type="string" calculate="coalesce(../inputs/t_soh_chlorine,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_gluc_strips" type="string" calculate="coalesce(../inputs/t_soh_gluc_strips,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_paracetamol_500" type="string" calculate="coalesce(../inputs/t_soh_paracetamol_500,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_bandages" type="string" calculate="coalesce(../inputs/t_soh_bandages,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_povi" type="string" calculate="coalesce(../inputs/t_soh_povi,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_strap" type="string" calculate="coalesce(../inputs/t_soh_strap,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_gloves" type="string" calculate="coalesce(../inputs/t_soh_gloves,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_envelopes" type="string" calculate="coalesce(../inputs/t_soh_envelopes,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_glucometer" type="string" calculate="coalesce(../inputs/t_soh_glucometer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_backpack" type="string" calculate="coalesce(../inputs/t_soh_backpack,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_badge" type="string" calculate="coalesce(../inputs/t_soh_badge,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_flashlight" type="string" calculate="coalesce(../inputs/t_soh_flashlight,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_salter" type="string" calculate="coalesce(../inputs/t_soh_salter,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_color_salter" type="string" calculate="coalesce(../inputs/t_soh_color_salter,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_weighing_scale" type="string" calculate="coalesce(../inputs/t_soh_weighing_scale,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_first_aid" type="string" calculate="coalesce(../inputs/t_soh_first_aid,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_bp" type="string" calculate="coalesce(../inputs/t_soh_bp,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_thermometer" type="string" calculate="coalesce(../inputs/t_soh_thermometer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_resp_timer" type="string" calculate="coalesce(../inputs/t_soh_resp_timer,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_muac_tape_adults" type="string" calculate="coalesce(../inputs/t_soh_muac_tape_adults,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_muac_tape_children" type="string" calculate="coalesce(../inputs/t_soh_muac_tape_children,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_family_muac_tape" type="string" calculate="coalesce(../inputs/t_soh_family_muac_tape,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_moh_514" type="string" calculate="coalesce(../inputs/t_soh_moh_514,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_moh_521" type="string" calculate="coalesce(../inputs/t_soh_moh_521,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_moh_100" type="string" calculate="coalesce(../inputs/t_soh_moh_100,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_comm_daily_register" type="string" calculate="coalesce(../inputs/t_soh_comm_daily_register,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_phone" type="string" calculate="coalesce(../inputs/t_soh_phone,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_safety_box" type="string" calculate="coalesce(../inputs/t_soh_safety_box,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/soh_others" type="string" calculate="coalesce(../inputs/t_soh_others,&quot;0&quot;)"/>
+      <bind nodeset="/commodity_stockout/stockout/n_rdts" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_rdts ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_act_6" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_act_6 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_act_12" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_act_12 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_act_18" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_act_18 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_act_24" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_act_24 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_dt_250" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_dt_250 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_ors_zinc" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_ors_zinc ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_ors_sachets" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_ors_sachets ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_zinc_sulphate" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_zinc_sulphate ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_albendazole" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_albendazole ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_tetra_eye" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_tetra_eye ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_paracetamol_120" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_paracetamol_120 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_mebendazole" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_mebendazole ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_coc" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_coc ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_prog" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_prog ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_depo_im" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_depo_im ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_depo_sc" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_depo_sc ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_preg_strip" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_preg_strip ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_chlorine" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_chlorine ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_gluc_strips" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_gluc_strips ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_paracetamol_500" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_paracetamol_500 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_bandages" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_bandages ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_povi" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_povi ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_strap" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_strap ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_gloves" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_gloves ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_envelopes" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_envelopes ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_glucometer" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_glucometer ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_backpack" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_backpack ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_badge" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_badge ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_flashlight" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_flashlight ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_salter" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_salter ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_color_salter" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_color_salter ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_weighing_scale" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_weighing_scale ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_first_aid_" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_first_aid ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_bp" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_bp ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_thermometer" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_thermometer ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_resp_timer" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_resp_timer ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_muac_tape_adults" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_muac_tape_adults ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_muac_tape_children" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_muac_tape_children ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_family_muac_tape" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_family_muac_tape ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_moh_514" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_moh_514 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_moh_521" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_moh_521 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_moh_100" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_moh_100 ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_comm_daily_register" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_comm_daily_register ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_phone" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_phone ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_safety_box" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_safety_box ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_others" readonly="true()" type="string" relevant="number( /commodity_stockout/wos_others ) &lt;= 2"/>
+      <bind nodeset="/commodity_stockout/stockout/n_remainder" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_stockout/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/commodity_stockout/inputs">
+      <label>Inputs</label>
+      <group ref="/commodity_stockout/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/commodity_stockout/inputs/contact/_id">
+          <label>What is the place's name?</label>
+        </input>
+        <group ref="/commodity_stockout/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/commodity_stockout/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/commodity_stockout/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/commodity_stockout/stockout">
+      <label>Commodity Stockout</label>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_rdts">
+        <label>RDTs (Malaria Test Kit): **<output value=" /commodity_stockout/soh_rdts "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_act_6">
+        <label>First Line Anti-Malarial (ACT/Coartem) 6 Pack: **<output value=" /commodity_stockout/soh_act_6 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_act_12">
+        <label>First Line Anti-Malarial (ACT/Coartem) 12 Pack:**<output value=" /commodity_stockout/soh_act_12 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_act_18">
+        <label>First Line Anti-Malarial (ACT/Coartem) 18 Pack: **<output value=" /commodity_stockout/soh_act_18 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_act_24">
+        <label>First Line Anti-Malarial (ACT/Coartem) 24 Pack: **<output value=" /commodity_stockout/soh_act_24 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_dt_250">
+        <label>Antibiotics (Amoxicillin DT 250mg ) tablets: **<output value=" /commodity_stockout/soh_dt_250 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_ors_zinc">
+        <label>ORS + Zinc Co-pack: **<output value=" /commodity_stockout/soh_ors_zinc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_ors_sachets">
+        <label>ORS Satchets: **<output value=" /commodity_stockout/soh_ors_sachets "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_zinc_sulphate">
+        <label>Zinc Sulphate 20mg Tablets: **<output value=" /commodity_stockout/soh_zinc_sulphate "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_albendazole">
+        <label>Albendazole 400mg (Dewormers) : **<output value=" /commodity_stockout/soh_albendazole "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_tetra_eye">
+        <label>Tetracycline Eye Ointment 1% tubes: **<output value=" /commodity_stockout/soh_tetra_eye "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_paracetamol_120">
+        <label>Paracetamol 120mg/5ml suspension: **<output value=" /commodity_stockout/soh_paracetamol_120 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_mebendazole">
+        <label>Mebendazole 500mg (Dewormers) tablets: **<output value=" /commodity_stockout/soh_mebendazole "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_coc">
+        <label>Combined Oral Contraceptives (packs): **<output value=" /commodity_stockout/soh_coc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_prog">
+        <label>Progestin Only pill (packs): **<output value=" /commodity_stockout/soh_prog "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_depo_im">
+        <label>Depo Medroxy provera injection-IM ( vials) : **<output value=" /commodity_stockout/soh_depo_im "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_depo_sc">
+        <label>Depo Medroxy provera injection - SC (vials): **<output value=" /commodity_stockout/soh_depo_sc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_preg_strip">
+        <label>Pregnancy Test Strip: **<output value=" /commodity_stockout/soh_preg_strip "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_chlorine">
+        <label>Chlorine: **<output value=" /commodity_stockout/soh_chlorine "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_gluc_strips">
+        <label>Glucometer strips: **<output value=" /commodity_stockout/soh_gluc_strips "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_paracetamol_500">
+        <label>Paracetamol Tablets, 500mg: **<output value=" /commodity_stockout/soh_paracetamol_500 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_bandages">
+        <label>Bandages: **<output value=" /commodity_stockout/soh_bandages "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_povi">
+        <label>Povidone Iodine Solution: **<output value=" /commodity_stockout/soh_povi "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_strap">
+        <label>Strapping: **<output value=" /commodity_stockout/soh_strap "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_gloves">
+        <label>Gloves: **<output value=" /commodity_stockout/soh_gloves "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_envelopes">
+        <label>Medical Dispensing Envelopes: **<output value=" /commodity_stockout/soh_envelopes "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_glucometer">
+        <label>Glucometer: **<output value=" /commodity_stockout/soh_glucometer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_backpack">
+        <label>Backpack with logo: **<output value=" /commodity_stockout/soh_backpack "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_badge">
+        <label>Badge (Name Tag): **<output value=" /commodity_stockout/soh_badge "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_flashlight">
+        <label>Flashlight (Torch): **<output value=" /commodity_stockout/soh_flashlight "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_salter">
+        <label>Salter scale: **<output value=" /commodity_stockout/soh_salter "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_color_salter">
+        <label>Color coded salter scale: **<output value=" /commodity_stockout/soh_color_salter "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_weighing_scale">
+        <label>Weighing scale (Bathroom): **<output value=" /commodity_stockout/soh_weighing_scale "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_first_aid_">
+        <label>First Aid Kit: **<output value=" /commodity_stockout/soh_first_aid "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_bp">
+        <label>BP Machine: **<output value=" /commodity_stockout/soh_bp "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_thermometer">
+        <label>Digital Thermometer: **<output value=" /commodity_stockout/soh_thermometer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_resp_timer">
+        <label>Respiratory Timer: **<output value=" /commodity_stockout/soh_resp_timer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_muac_tape_adults">
+        <label>MUAC TAPE (Adults): **<output value=" /commodity_stockout/soh_muac_tape_adults "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_muac_tape_children">
+        <label>MUAC TAPE (Children): **<output value=" /commodity_stockout/soh_muac_tape_children "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_family_muac_tape">
+        <label>Family MUAC tape (Children): **<output value=" /commodity_stockout/soh_family_muac_tape "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_moh_514">
+        <label>Register MOH 514: **<output value=" /commodity_stockout/soh_moh_514 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_moh_521">
+        <label>Register MOH 521: **<output value=" /commodity_stockout/soh_moh_521 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_moh_100">
+        <label>Referral Form MOH 100: **<output value=" /commodity_stockout/soh_moh_100 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_comm_daily_register">
+        <label>Community commodity Daily Activity Register: **<output value=" /commodity_stockout/soh_comm_daily_register "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_phone">
+        <label>Mobile Phone: **<output value=" /commodity_stockout/soh_phone "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_safety_box">
+        <label>Safety Box: **<output value=" /commodity_stockout/soh_safety_box "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_stockout/stockout/n_others">
+        <label>Others: **<output value=" /commodity_stockout/soh_others "/>**</label>
+      </input>
+      <input appearance="h1 red" ref="/commodity_stockout/stockout/n_remainder">
+        <label>&lt;b&gt;Plan to restock the above quantities&lt;/b&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

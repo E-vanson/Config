@@ -1,0 +1,1575 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Immunization service</h:title>
+    <model>
+      <itext>
+        <translation lang="default">
+          <text id="static_instance-developmental_milestones-0">
+            <value>Social Smile (4-6 weeks)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-1">
+            <value>Head Holding/Control (1-3 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-2">
+            <value>Turns towards the origin of sound (2-3 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-3">
+            <value>Extend hand to grasp a toy (2-3 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-4">
+            <value>Sitting (5-9 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-5">
+            <value>Standing (7-13 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-6">
+            <value>Walking (12-18 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-7">
+            <value>Talking (19-24 months)</value>
+          </text>
+          <text id="static_instance-developmental_milestones-8">
+            <value>None</value>
+          </text>
+          <text id="static_instance-deworming_doses-0">
+            <value>None</value>
+          </text>
+          <text id="static_instance-deworming_doses-1">
+            <value>12 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-2">
+            <value>18 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-3">
+            <value>24 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-4">
+            <value>30 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-5">
+            <value>36 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-6">
+            <value>42 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-7">
+            <value>48 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-8">
+            <value>54 months</value>
+          </text>
+          <text id="static_instance-deworming_doses-9">
+            <value>60 months</value>
+          </text>
+          <text id="static_instance-immunization_information_source-0">
+            <value>Mother and child health handbook</value>
+          </text>
+          <text id="static_instance-immunization_information_source-1">
+            <value>Other written record (card or book)</value>
+          </text>
+          <text id="static_instance-immunization_information_source-2">
+            <value>Caregivers recalls</value>
+          </text>
+          <text id="static_instance-insurance_cover-0">
+            <value>NHIF</value>
+          </text>
+          <text id="static_instance-insurance_cover-1">
+            <value>Others</value>
+          </text>
+          <text id="static_instance-optional_vaccines-0">
+            <value>Measles 6 months</value>
+          </text>
+          <text id="static_instance-optional_vaccines-1">
+            <value>Malaria</value>
+          </text>
+          <text id="static_instance-reason_not_dewormed-0">
+            <value>I am out of stock</value>
+          </text>
+          <text id="static_instance-reason_not_dewormed-1">
+            <value>Patient prefers another source</value>
+          </text>
+          <text id="static_instance-reason_not_dewormed-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="static_instance-vaccines-10">
+            <value>Penta 3</value>
+          </text>
+          <text id="static_instance-vaccines-11">
+            <value>IPV</value>
+          </text>
+          <text id="static_instance-vaccines-12">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-vaccines-13">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-14">
+            <value>Rota 3</value>
+          </text>
+          <text id="static_instance-vaccines-15">
+            <value>Vitamin A</value>
+          </text>
+          <text id="static_instance-vaccines-16">
+            <value>Measles 9 months</value>
+          </text>
+          <text id="static_instance-vaccines-17">
+            <value>Measles 18 months</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-vaccines-4">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-vaccines-5">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-vaccines-6">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-vaccines-7">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-vaccines-8">
+            <value>Penta 1</value>
+          </text>
+          <text id="static_instance-vaccines-9">
+            <value>Penta 2</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-0">
+            <value>None</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-1">
+            <value>6 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-10">
+            <value>60 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-2">
+            <value>12 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-3">
+            <value>18 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-4">
+            <value>24 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-5">
+            <value>30 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-6">
+            <value>36 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-7">
+            <value>42 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-8">
+            <value>48 months</value>
+          </text>
+          <text id="static_instance-vitamin_a_doses-9">
+            <value>54 months</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <immunization_service id="immunization_service" prefix="J1!immunization_service!" delimiter="#" version="2023-09-23 01:38:34">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <upi/>
+              <parent>
+                <_id/>
+                <parent>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_in_weeks/>
+          <patient_id/>
+          <visited_contact_uuid/>
+          <patient_name/>
+          <patient_sex/>
+          <chw_name/>
+          <vaccines_due/>
+          <needs_follow_up/>
+          <has_been_referred/>
+          <follow_up_date/>
+          <needs_immunization_follow_up/>
+          <needs_vitamin_a_follow_up/>
+          <needs_growth_monitoring_follow_up/>
+          <needs_deworming_follow_up/>
+          <services_for_follow_up/>
+          <has_bcg/>
+          <has_opv_0/>
+          <has_opv_1/>
+          <has_opv_2/>
+          <has_opv_3/>
+          <has_pcv_1/>
+          <has_pcv_2/>
+          <has_pcv_3/>
+          <has_penta_1/>
+          <has_penta_2/>
+          <has_penta_3/>
+          <has_ipv/>
+          <has_rota_1/>
+          <has_rota_2/>
+          <has_rota_3/>
+          <has_vitamin_a/>
+          <has_measles_6_months/>
+          <has_measles_9_months/>
+          <has_measles_18_months/>
+          <has_malaria_vaccine/>
+          <vaccines_due_missed/>
+          <has_good_immunization_status/>
+          <has_vitamin_a_6_months/>
+          <has_vitamin_a_12_months/>
+          <has_vitamin_a_18_months/>
+          <has_vitamin_a_24_months/>
+          <has_vitamin_a_30_months/>
+          <has_vitamin_a_36_months/>
+          <has_vitamin_a_42_months/>
+          <has_vitamin_a_48_months/>
+          <has_vitamin_a_54_months/>
+          <has_vitamin_a_60_months/>
+          <is_available/>
+          <is_available_and_completed_visit/>
+          <has_received_vaccines_due/>
+          <total_due_vaccines/>
+          <vitamin_a_vaccines_upto_date/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <group_follow_up>
+            <client_available/>
+            <n_remind/>
+            <visited/>
+            <n_find_out/>
+            <needs_to_go_to_health_facility/>
+            <n_encourage/>
+            <n_go_facility/>
+          </group_follow_up>
+          <group_vaccines>
+            <due_count/>
+            <has_received_vaccines/>
+            <source_of_immunization_information/>
+            <vaccines_given/>
+            <optional_vaccines_given/>
+            <n_due_count/>
+            <vaccines_for_referral/>
+            <n_vaccines_referral/>
+            <n_complete_immunization/>
+            <n_remind/>
+          </group_vaccines>
+          <group_vitamin_a>
+            <vitamin_a_doses_given/>
+            <n_advise_refer/>
+          </group_vitamin_a>
+          <group_deworming>
+            <has_deworming_status_uptodate/>
+            <n_advice_deworm/>
+            <n_deworm/>
+          </group_deworming>
+          <group_growth_and_monitoring>
+            <n_check_handbook/>
+            <is_participating_in_monthly_growth_monitoring/>
+            <n_advise_encourage/>
+            <has_signs_of_delayed_milestones/>
+            <n_refer_milestones/>
+          </group_growth_and_monitoring>
+          <insurance>
+            <has_upto_date_insurance/>
+            <n_encourage_to_get_cover/>
+            <insurance_cover/>
+            <n_congratulate_on_insurance/>
+            <specify_other/>
+          </insurance>
+          <group_summary>
+            <insurance_status_display/>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_insurance_status/>
+            <r_findings/>
+            <c_available/>
+            <r_available/>
+            <r_imm_uptodate/>
+            <r_growth_uptodate/>
+            <r_vit_a_uptodate/>
+            <r_deworming_uptodate/>
+            <r_imm_not_uptodate/>
+            <r_growth_not_uptodate/>
+            <r_vit_a_not_uptodate/>
+            <r_deworming_not_uptodate/>
+            <r_developmental_milestone_status/>
+            <r_social_smile/>
+            <r_head_handling_and_control/>
+            <r_turns_towards_the_origin_of_sound/>
+            <r_extend_hand_to_grasp_a_toy/>
+            <r_sitting/>
+            <r_standing/>
+            <r_walking/>
+            <r_talking/>
+            <r_none_developmental_delay/>
+            <r_diagnosis_and_treatment_title/>
+            <r_deworming_title/>
+            <r_dosages/>
+            <r_half_albendazole/>
+            <r_one_albendazole/>
+            <r_child_dewormed/>
+            <r_reason_child_not_dewormed/>
+            <r_other_reason_child_not_dewormed/>
+            <r_refer_deworming/>
+            <r_referral_title/>
+            <n_refer/>
+            <r_deworming_referral/>
+            <r_growth_monitoring_referral/>
+            <r_vit_a_referral/>
+            <r_referral_vaccines/>
+            <r_bcg_referral/>
+            <r_opv_0_referral/>
+            <r_opv_1_referral/>
+            <r_opv_2_referral/>
+            <r_opv_3_referral/>
+            <r_pcv_1_referral/>
+            <r_pcv_2_referral/>
+            <r_pcv_3_referral/>
+            <r_penta_1_referral/>
+            <r_penta_2_referral/>
+            <r_penta_3_referral/>
+            <r_ipv_referral/>
+            <r_rota_1_referral/>
+            <r_rota_2_referral/>
+            <r_rota_3_referral/>
+            <r_vitamin_a_referral/>
+            <r_measles_6_months_referral/>
+            <r_measles_9_months_referral/>
+            <r_measles_18_months_referral/>
+            <r_follow_up_title/>
+            <r_referral_follow_up/>
+            <r_instruction_title/>
+            <r_sync/>
+          </group_summary>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_vaccines_referred_for/>
+              <_vitamin_a_6_months/>
+              <_vitamin_a_12_months/>
+              <_vitamin_a_18_months/>
+              <_vitamin_a_24_months/>
+              <_vitamin_a_30_months/>
+              <_vitamin_a_36_months/>
+              <_vitamin_a_42_months/>
+              <_vitamin_a_48_months/>
+              <_vitamin_a_54_months/>
+              <_vitamin_a_60_months/>
+              <_has_delayed_development_milestones/>
+            </_screening>
+            <_supporting_info>
+              <is_participating_in_growth_monitoring/>
+              <deworming_upto_date/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </immunization_service>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-vaccines-0</itextId>
+            <name>bcg</name>
+            <name_compat>bcg</name_compat>
+            <age>0</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-1</itextId>
+            <name>opv_0</name>
+            <name_compat>opv0</name_compat>
+            <age>0</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-2</itextId>
+            <name>opv_1</name>
+            <name_compat>opv1</name_compat>
+            <age>6</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-3</itextId>
+            <name>opv_2</name>
+            <name_compat>opv2</name_compat>
+            <age>10</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-4</itextId>
+            <name>opv_3</name>
+            <name_compat>opv3</name_compat>
+            <age>14</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-5</itextId>
+            <name>pcv_1</name>
+            <name_compat>pcv1</name_compat>
+            <age>6</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-6</itextId>
+            <name>pcv_2</name>
+            <name_compat>pcv2</name_compat>
+            <age>10</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-7</itextId>
+            <name>pcv_3</name>
+            <name_compat>pcv3</name_compat>
+            <age>14</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-8</itextId>
+            <name>penta_1</name>
+            <name_compat>penta1</name_compat>
+            <age>6</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-9</itextId>
+            <name>penta_2</name>
+            <name_compat>penta2</name_compat>
+            <age>10</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-10</itextId>
+            <name>penta_3</name>
+            <name_compat>penta3</name_compat>
+            <age>14</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-11</itextId>
+            <name>ipv</name>
+            <name_compat>ipv</name_compat>
+            <age>14</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-12</itextId>
+            <name>rota_1</name>
+            <name_compat>rota1</name_compat>
+            <age>6</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-13</itextId>
+            <name>rota_2</name>
+            <name_compat>rota2</name_compat>
+            <age>10</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-14</itextId>
+            <name>rota_3</name>
+            <name_compat>rota3</name_compat>
+            <age>14</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-15</itextId>
+            <name>vitamin_a</name>
+            <name_compat>vit_a</name_compat>
+            <age>24</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-16</itextId>
+            <name>measles_9_months</name>
+            <name_compat>measles_9</name_compat>
+            <age>36</age>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-17</itextId>
+            <name>measles_18_months</name>
+            <name_compat>measles_18</name_compat>
+            <age>72</age>
+          </item>
+        </root>
+      </instance>
+      <instance id="optional_vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-optional_vaccines-0</itextId>
+            <name>measles_6</name>
+            <name_compat>measles_6</name_compat>
+            <age>24</age>
+          </item>
+          <item>
+            <itextId>static_instance-optional_vaccines-1</itextId>
+            <name>malaria</name>
+            <name_compat>malaria</name_compat>
+            <age>0</age>
+          </item>
+        </root>
+      </instance>
+      <instance id="immunization_information_source">
+        <root>
+          <item>
+            <itextId>static_instance-immunization_information_source-0</itextId>
+            <name>mother_and_child_handbook</name>
+          </item>
+          <item>
+            <itextId>static_instance-immunization_information_source-1</itextId>
+            <name>other_written_record</name>
+          </item>
+          <item>
+            <itextId>static_instance-immunization_information_source-2</itextId>
+            <name>mother_recalls</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vitamin_a_doses">
+        <root>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-0</itextId>
+            <name>none</name>
+            <age_limit_lower>0</age_limit_lower>
+            <all>1</all>
+            <age>0</age>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-1</itextId>
+            <name>6_months</name>
+            <age_limit_lower>24</age_limit_lower>
+            <age>24</age>
+            <age_limit_upper>48</age_limit_upper>
+            <dose_6_months_group>1</dose_6_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-2</itextId>
+            <name>12_months</name>
+            <dose_12_months_group>1</dose_12_months_group>
+            <age_limit_lower>48</age_limit_lower>
+            <age>48</age>
+            <age_limit_upper>72</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-3</itextId>
+            <name>18_months</name>
+            <age_limit_lower>72</age_limit_lower>
+            <age>72</age>
+            <age_limit_upper>96</age_limit_upper>
+            <dose_18_months_group>1</dose_18_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-4</itextId>
+            <name>24_months</name>
+            <age_limit_lower>96</age_limit_lower>
+            <dose_24_months_group>1</dose_24_months_group>
+            <age>96</age>
+            <age_limit_upper>120</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-5</itextId>
+            <name>30_months</name>
+            <age_limit_lower>120</age_limit_lower>
+            <age>120</age>
+            <dose_30_months_group>1</dose_30_months_group>
+            <age_limit_upper>144</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-6</itextId>
+            <name>36_months</name>
+            <age_limit_lower>144</age_limit_lower>
+            <age>144</age>
+            <age_limit_upper>168</age_limit_upper>
+            <dose_36_months_group>1</dose_36_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-7</itextId>
+            <name>42_months</name>
+            <age_limit_lower>168</age_limit_lower>
+            <age>168</age>
+            <age_limit_upper>192</age_limit_upper>
+            <dose_42_months_group>1</dose_42_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-8</itextId>
+            <name>48_months</name>
+            <age_limit_lower>192</age_limit_lower>
+            <age>192</age>
+            <dose_48_months_group>1</dose_48_months_group>
+            <age_limit_upper>216</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-9</itextId>
+            <name>54_months</name>
+            <age_limit_lower>216</age_limit_lower>
+            <age>216</age>
+            <age_limit_upper>240</age_limit_upper>
+            <dose_54_months_group>1</dose_54_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-vitamin_a_doses-10</itextId>
+            <name>60_months</name>
+            <dose_60_months_group>1</dose_60_months_group>
+            <age_limit_lower>240</age_limit_lower>
+            <age>240</age>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+        </root>
+      </instance>
+      <instance id="deworming_doses">
+        <root>
+          <item>
+            <itextId>static_instance-deworming_doses-0</itextId>
+            <name>none</name>
+            <age_limit_lower>0</age_limit_lower>
+            <all>1</all>
+            <age>0</age>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-1</itextId>
+            <name>12_months</name>
+            <dose_12_months_group>1</dose_12_months_group>
+            <age_limit_lower>48</age_limit_lower>
+            <age>48</age>
+            <age_limit_upper>72</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-2</itextId>
+            <name>18_months</name>
+            <age_limit_lower>72</age_limit_lower>
+            <age>72</age>
+            <age_limit_upper>96</age_limit_upper>
+            <dose_18_months_group>1</dose_18_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-3</itextId>
+            <name>24_months</name>
+            <age_limit_lower>96</age_limit_lower>
+            <dose_24_months_group>1</dose_24_months_group>
+            <age>96</age>
+            <age_limit_upper>120</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-4</itextId>
+            <name>30_months</name>
+            <age_limit_lower>120</age_limit_lower>
+            <age>120</age>
+            <dose_30_months_group>1</dose_30_months_group>
+            <age_limit_upper>144</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-5</itextId>
+            <name>36_months</name>
+            <age_limit_lower>144</age_limit_lower>
+            <age>144</age>
+            <age_limit_upper>168</age_limit_upper>
+            <dose_36_months_group>1</dose_36_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-6</itextId>
+            <name>42_months</name>
+            <age_limit_lower>168</age_limit_lower>
+            <age>168</age>
+            <age_limit_upper>192</age_limit_upper>
+            <dose_42_months_group>1</dose_42_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-7</itextId>
+            <name>48_months</name>
+            <age_limit_lower>192</age_limit_lower>
+            <age>192</age>
+            <dose_48_months_group>1</dose_48_months_group>
+            <age_limit_upper>216</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-8</itextId>
+            <name>54_months</name>
+            <age_limit_lower>216</age_limit_lower>
+            <age>216</age>
+            <age_limit_upper>240</age_limit_upper>
+            <dose_54_months_group>1</dose_54_months_group>
+          </item>
+          <item>
+            <itextId>static_instance-deworming_doses-9</itextId>
+            <name>60_months</name>
+            <dose_60_months_group>1</dose_60_months_group>
+            <age_limit_lower>240</age_limit_lower>
+            <age>240</age>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+        </root>
+      </instance>
+      <instance id="developmental_milestones">
+        <root>
+          <item>
+            <itextId>static_instance-developmental_milestones-0</itextId>
+            <name>social_smile</name>
+            <age_limit_lower>4</age_limit_lower>
+            <age_limit_upper>6</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-1</itextId>
+            <name>head_handling_and_control</name>
+            <age_limit_lower>4</age_limit_lower>
+            <age_limit_upper>13</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-2</itextId>
+            <name>turns_towards_the_origin_of_sound</name>
+            <age_limit_lower>8</age_limit_lower>
+            <age_limit_upper>13</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-3</itextId>
+            <name>extend_hand_to_grasp_a_toy</name>
+            <age_limit_lower>8</age_limit_lower>
+            <age_limit_upper>13</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-4</itextId>
+            <name>sitting</name>
+            <age_limit_lower>21</age_limit_lower>
+            <age_limit_upper>39</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-5</itextId>
+            <name>standing</name>
+            <age_limit_lower>30</age_limit_lower>
+            <age_limit_upper>56</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-6</itextId>
+            <name>walking</name>
+            <age_limit_lower>52</age_limit_lower>
+            <age_limit_upper>78</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-7</itextId>
+            <name>talking</name>
+            <age_limit_lower>79</age_limit_lower>
+            <age_limit_upper>104</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-developmental_milestones-8</itextId>
+            <name>none</name>
+            <age>0</age>
+          </item>
+        </root>
+      </instance>
+      <instance id="insurance_cover">
+        <root>
+          <item>
+            <itextId>static_instance-insurance_cover-0</itextId>
+            <name>nhif</name>
+          </item>
+          <item>
+            <itextId>static_instance-insurance_cover-1</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="reason_not_dewormed">
+        <root>
+          <item>
+            <itextId>static_instance-reason_not_dewormed-0</itextId>
+            <name>out_of_stock</name>
+          </item>
+          <item>
+            <itextId>static_instance-reason_not_dewormed-1</itextId>
+            <name>prefers_another_source</name>
+          </item>
+          <item>
+            <itextId>static_instance-reason_not_dewormed-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/immunization_service/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/immunization_service/inputs/source" type="string"/>
+      <bind nodeset="/immunization_service/inputs/source_id" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/immunization_service/inputs/contact/name" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/sex" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/upi" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/immunization_service/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/immunization_service/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /immunization_service/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/immunization_service/patient_age_in_months" type="string" calculate="difference-in-months(  /immunization_service/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/immunization_service/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /immunization_service/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/immunization_service/patient_age_display" type="string" calculate="concat(
+ concat( /immunization_service/patient_age_in_years , if( /immunization_service/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /immunization_service/patient_age_in_months  mod 12, if(( /immunization_service/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/immunization_service/patient_age_in_weeks" type="string" calculate="int(floor( /immunization_service/patient_age_in_days  div 7))"/>
+      <bind nodeset="/immunization_service/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/immunization_service/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/immunization_service/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/immunization_service/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/immunization_service/chw_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/immunization_service/vaccines_due" type="string" calculate="instance('contact-summary')/context/vaccines_due"/>
+      <bind nodeset="/immunization_service/needs_follow_up" type="string" calculate="if( /immunization_service/needs_immunization_follow_up  = 'yes' or  /immunization_service/needs_vitamin_a_follow_up  = 'yes' or  /immunization_service/needs_growth_monitoring_follow_up  = 'yes' or  /immunization_service/group_follow_up/needs_to_go_to_health_facility ='yes' or  /immunization_service/is_available_and_completed_visit ='no' or  /immunization_service/is_available ='no' or  /immunization_service/group_summary/r_child_dewormed  = 'no', 'yes', 'no')"/>
+      <bind nodeset="/immunization_service/has_been_referred" type="string" calculate=" /immunization_service/needs_follow_up "/>
+      <bind nodeset="/immunization_service/follow_up_date" type="string" calculate="if( /immunization_service/needs_follow_up  = 'yes', format-date-time(decimal-date-time(today() + 3),&quot;%Y-%m-%d&quot;), '')"/>
+      <bind nodeset="/immunization_service/needs_immunization_follow_up" type="string" calculate="if(count-selected( /immunization_service/group_vaccines/vaccines_for_referral ) &gt; 0 or ( /immunization_service/total_due_vaccines  != count-selected( /immunization_service/group_vaccines/vaccines_given ) and count-selected( /immunization_service/group_vaccines/vaccines_given )&gt;0), 'yes', 'no')"/>
+      <bind nodeset="/immunization_service/needs_vitamin_a_follow_up" type="string" calculate="if(selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , 'none'), 'yes', 'no')"/>
+      <bind nodeset="/immunization_service/needs_growth_monitoring_follow_up" type="string" calculate="if(not(selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'none'))
+and count-selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones ) &gt; 0, 'yes', 'no')"/>
+      <bind nodeset="/immunization_service/needs_deworming_follow_up" type="string" calculate="if(selected( /immunization_service/group_summary/r_child_dewormed , 'no'), 'yes', 'no')"/>
+      <bind nodeset="/immunization_service/services_for_follow_up" type="string" calculate="concat(if( /immunization_service/needs_immunization_follow_up  = 'yes', 'Immunization, ', ''), if( /immunization_service/needs_vitamin_a_follow_up  = 'yes', 'Vitamin A, ', ''), if( /immunization_service/needs_growth_monitoring_follow_up  = 'yes', 'Growth and Monitoring', ''))"/>
+      <bind nodeset="/immunization_service/has_bcg" type="string" calculate="if(instance('contact-summary')/context/bcg_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_opv_0" type="string" calculate="if(instance('contact-summary')/context/opv0_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_opv_1" type="string" calculate="if(instance('contact-summary')/context/opv1_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_opv_2" type="string" calculate="if(instance('contact-summary')/context/opv2_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_opv_3" type="string" calculate="if(instance('contact-summary')/context/opv3_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_pcv_1" type="string" calculate="if(instance('contact-summary')/context/pcv1_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_pcv_2" type="string" calculate="if(instance('contact-summary')/context/pcv2_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_pcv_3" type="string" calculate="if(instance('contact-summary')/context/pcv3_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_penta_1" type="string" calculate="if(instance('contact-summary')/context/penta1_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_penta_2" type="string" calculate="if(instance('contact-summary')/context/penta2_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_penta_3" type="string" calculate="if(instance('contact-summary')/context/penta3_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_ipv" type="string" calculate="if(instance('contact-summary')/context/ipv_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_rota_1" type="string" calculate="if(instance('contact-summary')/context/rota1_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_rota_2" type="string" calculate="if(instance('contact-summary')/context/rota2_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_rota_3" type="string" calculate="if(instance('contact-summary')/context/rota3_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_vitamin_a" type="string" calculate="if(instance('contact-summary')/context/vit_a_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_measles_6_months" type="string" calculate="if(instance('contact-summary')/context/measles_6_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_measles_9_months" type="string" calculate="if(instance('contact-summary')/context/measles_9_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_measles_18_months" type="string" calculate="if(instance('contact-summary')/context/measles_18_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/has_malaria_vaccine" type="string" calculate="if(instance('contact-summary')/context/malaria_given != '', 1, 0)"/>
+      <bind nodeset="/immunization_service/vaccines_due_missed" type="string" calculate=" /immunization_service/group_vaccines/vaccines_for_referral "/>
+      <bind nodeset="/immunization_service/has_good_immunization_status" type="string" calculate="coalesce(instance('contact-summary')/context/has_good_immunization_status,'no')"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_6_months" type="string" calculate="instance('contact-summary')/context/vit_a_6_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_12_months" type="string" calculate="instance('contact-summary')/context/vit_a_12_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_18_months" type="string" calculate="instance('contact-summary')/context/vit_a_18_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_24_months" type="string" calculate="instance('contact-summary')/context/vit_a_24_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_30_months" type="string" calculate="instance('contact-summary')/context/vit_a_30_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_36_months" type="string" calculate="instance('contact-summary')/context/vit_a_36_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_42_months" type="string" calculate="instance('contact-summary')/context/vit_a_42_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_48_months" type="string" calculate="instance('contact-summary')/context/vit_a_48_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_54_months" type="string" calculate="instance('contact-summary')/context/vit_a_54_given"/>
+      <bind nodeset="/immunization_service/has_vitamin_a_60_months" type="string" calculate="instance('contact-summary')/context/vit_a_60_given"/>
+      <bind nodeset="/immunization_service/is_available" type="string" calculate=" /immunization_service/group_follow_up/client_available "/>
+      <bind nodeset="/immunization_service/is_available_and_completed_visit" type="string" calculate="if( /immunization_service/group_follow_up/visited  = 'yes', 'yes', if( /immunization_service/group_follow_up/visited ='no','no', ''))"/>
+      <bind nodeset="/immunization_service/has_received_vaccines_due" type="string" calculate="coalesce(instance('contact-summary')/context/received_due_vaccines, 'no')"/>
+      <bind nodeset="/immunization_service/total_due_vaccines" type="string" calculate="coalesce(instance('contact-summary')/context/count_due_vaccines, 0)"/>
+      <bind nodeset="/immunization_service/vitamin_a_vaccines_upto_date" type="string" calculate="instance('contact-summary')/context/vitamin_a_vaccines_upto_date"/>
+      <bind nodeset="/immunization_service/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/immunization_service/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/immunization_service/group_follow_up" relevant="../inputs/source = 'task'"/>
+      <bind nodeset="/immunization_service/group_follow_up/client_available" type="select1" required="true()"/>
+      <bind nodeset="/immunization_service/group_follow_up/n_remind" readonly="true()" type="string" relevant=" /immunization_service/group_follow_up/client_available  = 'no'"/>
+      <bind nodeset="/immunization_service/group_follow_up/visited" type="select1" required="true()" relevant=" /immunization_service/group_follow_up/client_available  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_follow_up/n_find_out" readonly="true()" type="string" relevant=" /immunization_service/group_follow_up/visited  = 'no'"/>
+      <bind nodeset="/immunization_service/group_follow_up/needs_to_go_to_health_facility" type="select1" relevant=" /immunization_service/group_follow_up/visited  = 'no'"/>
+      <bind nodeset="/immunization_service/group_follow_up/n_encourage" readonly="true()" type="string" relevant=" /immunization_service/group_follow_up/needs_to_go_to_health_facility  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_follow_up/n_go_facility" readonly="true()" type="string" relevant=" /immunization_service/group_follow_up/needs_to_go_to_health_facility  = 'no'"/>
+      <bind nodeset="/immunization_service/group_vaccines" relevant="( /immunization_service/group_follow_up/visited  = 'yes' and ../inputs/source = 'task') or ../inputs/source != 'task'"/>
+      <bind nodeset="/immunization_service/group_vaccines/due_count" type="string" calculate="instance('contact-summary')/context/count_due_vaccines - count-selected(../vaccines_given)"/>
+      <bind nodeset="/immunization_service/group_vaccines/has_received_vaccines" type="select1" required="true()"/>
+      <bind nodeset="/immunization_service/group_vaccines/source_of_immunization_information" type="select1" required="true()" relevant=" /immunization_service/group_vaccines/has_received_vaccines !=''"/>
+      <bind nodeset="/immunization_service/group_vaccines/vaccines_given" type="select" required="true()" relevant=" /immunization_service/group_vaccines/has_received_vaccines ='yes' and  /immunization_service/total_due_vaccines  &gt; 0"/>
+      <bind nodeset="/immunization_service/group_vaccines/optional_vaccines_given" type="select" required="false()" relevant="( /immunization_service/has_malaria_vaccine  != 1 or  /immunization_service/has_measles_6_months  != 1) and  /immunization_service/patient_age_in_months  &gt;= 6"/>
+      <bind nodeset="/immunization_service/group_vaccines/n_due_count" readonly="true()" type="string" relevant=" /immunization_service/group_vaccines/due_count  &gt; 0"/>
+      <bind nodeset="/immunization_service/group_vaccines/vaccines_for_referral" type="select" required="true()" relevant="(( /immunization_service/has_bcg =0 or  /immunization_service/has_opv_0 =0 or  /immunization_service/has_opv_1 =0 or  /immunization_service/has_opv_2 =0 or  /immunization_service/has_opv_3 =0 or  /immunization_service/has_pcv_1 =0 or  /immunization_service/has_pcv_2 =0 or  /immunization_service/has_pcv_3 =0 or  /immunization_service/has_penta_1 =0 or  /immunization_service/has_penta_2 =0 or  /immunization_service/has_penta_3 =0 or  /immunization_service/has_ipv =0 or  /immunization_service/has_rota_1 =0 or  /immunization_service/has_rota_2 =0 or  /immunization_service/has_rota_3 =0 or  /immunization_service/has_vitamin_a =0 or  /immunization_service/has_measles_6_months =0 or  /immunization_service/has_measles_9_months =0 or  /immunization_service/has_measles_18_months =0) and  /immunization_service/group_vaccines/has_received_vaccines ='no' and  /immunization_service/total_due_vaccines  &gt; 0) or (count-selected(../vaccines_given) &gt; 0 and instance('contact-summary')/context/count_due_vaccines &gt; count-selected(../vaccines_given))"/>
+      <bind nodeset="/immunization_service/group_vaccines/n_vaccines_referral" readonly="true()" type="string" relevant=" /immunization_service/group_vaccines/has_received_vaccines ='no' and  /immunization_service/total_due_vaccines  &gt; 0"/>
+      <bind nodeset="/immunization_service/group_vaccines/n_complete_immunization" readonly="true()" type="string" relevant=" /immunization_service/needs_immunization_follow_up  = 'no' and  /immunization_service/has_good_immunization_status  = 'yes' and not( /immunization_service/group_vaccines/has_received_vaccines ='no')"/>
+      <bind nodeset="/immunization_service/group_vaccines/n_remind" readonly="true()" type="string" relevant="count-selected( /immunization_service/group_vaccines/vaccines_for_referral )&gt; 0 and  /immunization_service/group_vaccines/due_count  &gt; 0"/>
+      <bind nodeset="/immunization_service/group_vitamin_a" relevant="(( /immunization_service/group_follow_up/visited  = 'yes' and ../inputs/source = 'task') or ../inputs/source != 'task') and  /immunization_service/patient_age_in_months  &gt;= 6 and  /immunization_service/vitamin_a_vaccines_upto_date =0"/>
+      <bind nodeset="/immunization_service/group_vitamin_a/vitamin_a_doses_given" type="select" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="None cannot be selected with any other option!" required="true()"/>
+      <bind nodeset="/immunization_service/group_vitamin_a/n_advise_refer" readonly="true()" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , 'none')"/>
+      <bind nodeset="/immunization_service/group_deworming" relevant="(( /immunization_service/group_follow_up/visited  = 'yes' and ../inputs/source = 'task') or ../inputs/source != 'task') and  /immunization_service/patient_age_in_years  &gt;= 1"/>
+      <bind nodeset="/immunization_service/group_deworming/has_deworming_status_uptodate" type="select1" required="true()"/>
+      <bind nodeset="/immunization_service/group_deworming/n_advice_deworm" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_deworming/n_deworm" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring" relevant="(( /immunization_service/group_follow_up/visited  = 'yes' and ../inputs/source = 'task') or ../inputs/source != 'task') and  /immunization_service/patient_age_in_months  &gt;= 2"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring/n_check_handbook" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring/is_participating_in_monthly_growth_monitoring" type="select1" required="true()"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring/n_advise_encourage" readonly="true()" type="string" relevant=" /immunization_service/group_growth_and_monitoring/is_participating_in_monthly_growth_monitoring ='no'"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones" type="select" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="None cannot be selected with any other option!" relevant=" /immunization_service/patient_age_in_months  &lt;= 24" required="true()"/>
+      <bind nodeset="/immunization_service/group_growth_and_monitoring/n_refer_milestones" readonly="true()" type="string" relevant="not(selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'none'))
+and count-selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones ) &gt; 0"/>
+      <bind nodeset="/immunization_service/insurance/has_upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/immunization_service/insurance/n_encourage_to_get_cover" readonly="true()" type="string" relevant=" /immunization_service/insurance/has_upto_date_insurance  = 'no'"/>
+      <bind nodeset="/immunization_service/insurance/insurance_cover" type="select" required="true()" relevant=" /immunization_service/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/immunization_service/insurance/n_congratulate_on_insurance" readonly="true()" type="string" relevant=" /immunization_service/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/immunization_service/insurance/specify_other" type="string" required="true()" relevant=" /immunization_service/insurance/has_upto_date_insurance  = 'yes' and selected( /immunization_service/insurance/insurance_cover ,'other')"/>
+      <bind nodeset="/immunization_service/group_summary/insurance_status_display" type="string" calculate="if( /immunization_service/insurance/has_upto_date_insurance  = 'yes', 'Insurance upto date', 'Insurance not upto date')"/>
+      <bind nodeset="/immunization_service/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_summary/r_insurance_status" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/immunization_service/group_summary/c_available" type="string" calculate="if( /immunization_service/group_follow_up/visited  = 'yes', 'available and went to the health facility', 
+if( /immunization_service/group_follow_up/visited  = 'no', 'available but did not go to the hf', 
+if( /immunization_service/group_follow_up/client_available  = 'no', 'not available', ''))
+)"/>
+      <bind nodeset="/immunization_service/group_summary/r_available" readonly="true()" type="string" relevant=" /immunization_service/group_follow_up/client_available  != ''"/>
+      <bind nodeset="/immunization_service/group_summary/r_imm_uptodate" readonly="true()" type="string" relevant=" /immunization_service/needs_immunization_follow_up  = 'no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_growth_uptodate" readonly="true()" type="string" relevant=" /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones  != '' and  /immunization_service/needs_growth_monitoring_follow_up  = 'no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_vit_a_uptodate" readonly="true()" type="string" relevant=" /immunization_service/needs_vitamin_a_follow_up  = 'no' and  /immunization_service/group_vitamin_a/vitamin_a_doses_given  != ''"/>
+      <bind nodeset="/immunization_service/group_summary/r_deworming_uptodate" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_imm_not_uptodate" readonly="true()" type="string" relevant=" /immunization_service/needs_immunization_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_growth_not_uptodate" readonly="true()" type="string" relevant=" /immunization_service/needs_growth_monitoring_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_vit_a_not_uptodate" readonly="true()" type="string" relevant=" /immunization_service/needs_vitamin_a_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_deworming_not_uptodate" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_developmental_milestone_status" readonly="true()" type="string" relevant=" /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones  != ''"/>
+      <bind nodeset="/immunization_service/group_summary/r_social_smile" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'social_smile')"/>
+      <bind nodeset="/immunization_service/group_summary/r_head_handling_and_control" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'head_handling_and_control')"/>
+      <bind nodeset="/immunization_service/group_summary/r_turns_towards_the_origin_of_sound" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'turns_towards_the_origin_of_sound')"/>
+      <bind nodeset="/immunization_service/group_summary/r_extend_hand_to_grasp_a_toy" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'extend_hand_to_grasp_a_toy')"/>
+      <bind nodeset="/immunization_service/group_summary/r_sitting" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'sitting')"/>
+      <bind nodeset="/immunization_service/group_summary/r_standing" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'standing')"/>
+      <bind nodeset="/immunization_service/group_summary/r_walking" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'walking')"/>
+      <bind nodeset="/immunization_service/group_summary/r_talking" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'talking')"/>
+      <bind nodeset="/immunization_service/group_summary/r_none_developmental_delay" readonly="true()" type="string" relevant="selected( /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones , 'none')"/>
+      <bind nodeset="/immunization_service/group_summary/r_diagnosis_and_treatment_title" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_deworming_title" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_dosages" readonly="true()" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_half_albendazole" readonly="true()" type="string" relevant=" /immunization_service/patient_age_in_months  &gt;= 12 and  /immunization_service/patient_age_in_months  &lt;= 23 and  /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_one_albendazole" readonly="true()" type="string" relevant=" /immunization_service/patient_age_in_months  &gt;= 24 and  /immunization_service/patient_age_in_months  &lt;= 59 and  /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_child_dewormed" type="select1" required="true()" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate ='no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_reason_child_not_dewormed" type="select1" required="true()" relevant=" /immunization_service/group_summary/r_child_dewormed  = 'no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_other_reason_child_not_dewormed" type="string" required="true()" relevant=" /immunization_service/group_summary/r_reason_child_not_dewormed  = 'other'"/>
+      <bind nodeset="/immunization_service/group_summary/r_refer_deworming" readonly="true()" type="string" relevant=" /immunization_service/group_summary/r_child_dewormed  = 'no'"/>
+      <bind nodeset="/immunization_service/group_summary/r_referral_title" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/n_refer" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_deworming_referral" readonly="true()" type="string" relevant=" /immunization_service/needs_deworming_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_growth_monitoring_referral" readonly="true()" type="string" relevant=" /immunization_service/needs_growth_monitoring_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_vit_a_referral" readonly="true()" type="string" relevant=" /immunization_service/needs_vitamin_a_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_referral_vaccines" readonly="true()" type="string" relevant=" /immunization_service/needs_immunization_follow_up  = 'yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_bcg_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'bcg')"/>
+      <bind nodeset="/immunization_service/group_summary/r_opv_0_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'opv_0')"/>
+      <bind nodeset="/immunization_service/group_summary/r_opv_1_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'opv_1')"/>
+      <bind nodeset="/immunization_service/group_summary/r_opv_2_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'opv_2')"/>
+      <bind nodeset="/immunization_service/group_summary/r_opv_3_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'opv_3')"/>
+      <bind nodeset="/immunization_service/group_summary/r_pcv_1_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'pcv_1')"/>
+      <bind nodeset="/immunization_service/group_summary/r_pcv_2_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'pcv_2')"/>
+      <bind nodeset="/immunization_service/group_summary/r_pcv_3_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'pcv_3')"/>
+      <bind nodeset="/immunization_service/group_summary/r_penta_1_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'penta_1')"/>
+      <bind nodeset="/immunization_service/group_summary/r_penta_2_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'penta_2')"/>
+      <bind nodeset="/immunization_service/group_summary/r_penta_3_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'penta_3')"/>
+      <bind nodeset="/immunization_service/group_summary/r_ipv_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'ipv')"/>
+      <bind nodeset="/immunization_service/group_summary/r_rota_1_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'rota_1')"/>
+      <bind nodeset="/immunization_service/group_summary/r_rota_2_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'rota_2')"/>
+      <bind nodeset="/immunization_service/group_summary/r_rota_3_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'rota_3')"/>
+      <bind nodeset="/immunization_service/group_summary/r_vitamin_a_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'vitamin_a')"/>
+      <bind nodeset="/immunization_service/group_summary/r_measles_6_months_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'measles_6_months')"/>
+      <bind nodeset="/immunization_service/group_summary/r_measles_9_months_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'measles_9_months')"/>
+      <bind nodeset="/immunization_service/group_summary/r_measles_18_months_referral" readonly="true()" type="string" relevant="selected( /immunization_service/group_vaccines/vaccines_for_referral ,'measles_18_months')"/>
+      <bind nodeset="/immunization_service/group_summary/r_follow_up_title" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_referral_follow_up" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_instruction_title" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/group_summary/r_sync" readonly="true()" type="string" relevant=" /immunization_service/needs_follow_up ='yes'"/>
+      <bind nodeset="/immunization_service/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/immunization_service/data/_patient_name" type="string" calculate=" /immunization_service/patient_name "/>
+      <bind nodeset="/immunization_service/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/immunization_service/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/immunization_service/data/_referred_to_facility_code" type="string" calculate=" /immunization_service/referred_to_facility_code "/>
+      <bind nodeset="/immunization_service/data/_referred_to_facility_name" type="string" calculate=" /immunization_service/referred_to_facility_name "/>
+      <bind nodeset="/immunization_service/data/_follow_up_date" type="string" calculate=" /immunization_service/follow_up_date "/>
+      <bind nodeset="/immunization_service/data/_screening/_vaccines_referred_for" type="string" relevant=" /immunization_service/group_vaccines/vaccines_for_referral !=''" calculate=" /immunization_service/group_vaccines/vaccines_for_referral "/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_6_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '6_months')" calculate="'vitamin_a_6_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_12_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '12_months')" calculate="'vitamin_a_12_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_18_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '18_months')" calculate="'vitamin_a_18_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_24_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '24_months')" calculate="'vitamin_a_24_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_30_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '30_months')" calculate="'vitamin_a_30_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_36_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '36_months')" calculate="'vitamin_a_36_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_42_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '42_months')" calculate="'vitamin_a_42_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_48_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '48_months')" calculate="'vitamin_a_48_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_54_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '54_months')" calculate="'vitamin_a_54_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_vitamin_a_60_months" type="string" relevant="selected( /immunization_service/group_vitamin_a/vitamin_a_doses_given , '60_months')" calculate="'vitamin_a_60_months'"/>
+      <bind nodeset="/immunization_service/data/_screening/_has_delayed_development_milestones" type="string" relevant=" /immunization_service/needs_growth_monitoring_follow_up ='yes'" calculate=" /immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones "/>
+      <bind nodeset="/immunization_service/data/_supporting_info/is_participating_in_growth_monitoring" type="string" relevant=" /immunization_service/group_growth_and_monitoring/is_participating_in_monthly_growth_monitoring !=''" calculate=" /immunization_service/group_growth_and_monitoring/is_participating_in_monthly_growth_monitoring "/>
+      <bind nodeset="/immunization_service/data/_supporting_info/deworming_upto_date" type="string" relevant=" /immunization_service/group_deworming/has_deworming_status_uptodate !=''" calculate=" /immunization_service/group_deworming/has_deworming_status_uptodate "/>
+      <bind nodeset="/immunization_service/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/immunization_service/inputs">
+      <label>Patient</label>
+      <group ref="/immunization_service/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/immunization_service/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/immunization_service/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/immunization_service/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/immunization_service/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/group_follow_up">
+      <label>Immunization referral follow up</label>
+      <select1 ref="/immunization_service/group_follow_up/client_available">
+        <label>Is <output value=" /immunization_service/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_follow_up/n_remind">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**If <output value=" /immunization_service/patient_name "/> relocated remember to submit a muting request, if they died remember to submit a death report.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/immunization_service/group_follow_up/visited">
+        <label>Did <output value=" /immunization_service/patient_name "/> go to the facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_follow_up/n_find_out">
+        <label>Message to CHP: Find out why and encourage them to go.</label>
+      </input>
+      <select1 ref="/immunization_service/group_follow_up/needs_to_go_to_health_facility">
+        <label>Does <output value=" /immunization_service/patient_name "/> still need to go to the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_follow_up/n_encourage">
+        <label>Message to CHP: Explain to the caregiver the importance of immunization and REFER the child to the nearest Health Center where the child can be immunised. Follow up in 3 days to see if child has been immunized.</label>
+      </input>
+      <input ref="/immunization_service/group_follow_up/n_go_facility">
+        <label>Message to CHP if <output value=" /immunization_service/patient_name "/> should go to the Health facility any time they feel unwell</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/group_vaccines">
+      <label>Vaccines</label>
+      <select1 ref="/immunization_service/group_vaccines/has_received_vaccines">
+        <label>Has <output value=" /immunization_service/patient_name "/> received any vaccines?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization_service/group_vaccines/source_of_immunization_information">
+        <label>Indicate the source of the Immunization information</label>
+        <item>
+          <label>Mother and child health handbook</label>
+          <value>mother_and_child_handbook</value>
+        </item>
+        <item>
+          <label>Other written record (card or book)</label>
+          <value>other_written_record</value>
+        </item>
+        <item>
+          <label>Caregivers recalls</label>
+          <value>mother_recalls</value>
+        </item>
+      </select1>
+      <select ref="/immunization_service/group_vaccines/vaccines_given">
+        <label>Tick all vaccines that were given</label>
+        <itemset nodeset="instance('vaccines')/root/item[ /immunization_service/patient_age_in_weeks  != ''
+ and
+ (
+ (name_compat = 'bcg' and  /immunization_service/has_bcg =0 and  /immunization_service/patient_age_in_days  &gt;= 0)
+ or
+ (name_compat = 'opv0' and  /immunization_service/has_opv_0 =0 and  /immunization_service/patient_age_in_days  &gt;= 0)
+ or
+ (name_compat = 'opv1' and  /immunization_service/has_opv_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'opv2' and  /immunization_service/has_opv_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'opv3' and  /immunization_service/has_opv_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'pcv1' and  /immunization_service/has_pcv_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'pcv2' and  /immunization_service/has_pcv_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'pcv3' and  /immunization_service/has_pcv_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'penta1' and  /immunization_service/has_penta_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'penta2' and  /immunization_service/has_penta_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'penta3' and  /immunization_service/has_penta_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'ipv' and  /immunization_service/has_ipv =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'rota1' and  /immunization_service/has_rota_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'rota2' and  /immunization_service/has_rota_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'rota3' and  /immunization_service/has_rota_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'vit_a' and  /immunization_service/has_vitamin_a =0 and  /immunization_service/patient_age_in_months  &gt;= 6)
+ or
+ (name_compat = 'measles_9' and  /immunization_service/has_measles_9_months =0 and  /immunization_service/patient_age_in_months  &gt;= 9)
+ or
+ (name_compat = 'measles_18' and  /immunization_service/has_measles_18_months =0 and ( /immunization_service/patient_age_in_months  &gt;= 18))
+ )]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/immunization_service/group_vaccines/optional_vaccines_given">
+        <label>Tick these vaccines if they were given</label>
+        <itemset nodeset="instance('optional_vaccines')/root/item[ /immunization_service/patient_age_in_weeks  != '' 
+and ( 
+(name_compat = 'measles_6' and  /immunization_service/has_measles_6_months =0 and  /immunization_service/patient_age_in_months  &gt;= 6) 
+or 
+(name_compat = 'malaria' and  /immunization_service/has_malaria_vaccine =0) 
+)]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/immunization_service/group_vaccines/n_due_count">
+        <label>Due Vaccines: <output value=" /immunization_service/group_vaccines/due_count "/></label>
+      </input>
+      <select ref="/immunization_service/group_vaccines/vaccines_for_referral">
+        <label>Tick all the vaccines you are referring the child for</label>
+        <itemset nodeset="instance('vaccines')/root/item[ /immunization_service/patient_age_in_weeks  != ''
+ and
+ (
+ (name_compat = 'bcg' and  /immunization_service/has_bcg =0 and  /immunization_service/patient_age_in_days  &gt;= 0)
+ or
+ (name_compat = 'opv0' and  /immunization_service/has_opv_0 =0 and  /immunization_service/patient_age_in_days  &gt;= 0)
+ or
+ (name_compat = 'opv1' and  /immunization_service/has_opv_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'opv2' and  /immunization_service/has_opv_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'opv3' and  /immunization_service/has_opv_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'pcv1' and  /immunization_service/has_pcv_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'pcv2' and  /immunization_service/has_pcv_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'pcv3' and  /immunization_service/has_pcv_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'penta1' and  /immunization_service/has_penta_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'penta2' and  /immunization_service/has_penta_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'penta3' and  /immunization_service/has_penta_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'ipv' and  /immunization_service/has_ipv =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'rota1' and  /immunization_service/has_rota_1 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 6)
+ or
+ (name_compat = 'rota2' and  /immunization_service/has_rota_2 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 10)
+ or
+ (name_compat = 'rota3' and  /immunization_service/has_rota_3 =0 and  /immunization_service/patient_age_in_weeks  &gt;= 14)
+ or
+ (name_compat = 'vit_a' and  /immunization_service/has_vitamin_a =0 and  /immunization_service/patient_age_in_months  &gt;= 6)
+ or
+ (name_compat = 'measles_9' and  /immunization_service/has_measles_9_months =0 and  /immunization_service/patient_age_in_months  &gt;= 9)
+ or
+ (name_compat = 'measles_18' and  /immunization_service/has_measles_18_months =0 and ( /immunization_service/patient_age_in_months  &gt;= 18))
+ )]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/immunization_service/group_vaccines/n_vaccines_referral">
+        <label>**Explain to the caregiver the importance of immunization and &lt;span style="color:red;"&gt;REFER the child to the nearest Health Center where the child can be immunized.&lt;/span&gt;**</label>
+      </input>
+      <input ref="/immunization_service/group_vaccines/n_complete_immunization">
+        <label>**&lt;span style="color:blue;"&gt;Thank the caregiver for ensuring that their child's immunization status is completed. Encourage the caregiver to ensure that the child receives Vitamin A every 6 months until the child is 5 years old.&lt;/span&gt;**</label>
+      </input>
+      <input ref="/immunization_service/group_vaccines/n_remind">
+        <label>**&lt;span style="color:red;"&gt;REFER the child to the nearest Health Center where the child can be immunized.&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/group_vitamin_a">
+      <label>Vitamin A</label>
+      <select ref="/immunization_service/group_vitamin_a/vitamin_a_doses_given">
+        <label>Which Vitamin A dose has <output value=" /immunization_service/patient_name "/> received?</label>
+        <itemset nodeset="instance('vitamin_a_doses')/root/item[(age_limit_lower &lt;=  /immunization_service/patient_age_in_weeks  and (dose_6_months_group !=  /immunization_service/has_vitamin_a_6_months  or dose_12_months_group !=  /immunization_service/has_vitamin_a_12_months  or dose_18_months_group !=  /immunization_service/has_vitamin_a_18_months  or dose_24_months_group !=  /immunization_service/has_vitamin_a_24_months  or dose_30_months_group !=  /immunization_service/has_vitamin_a_30_months  or dose_36_months_group !=  /immunization_service/has_vitamin_a_36_months  or dose_42_months_group !=  /immunization_service/has_vitamin_a_42_months  or dose_48_months_group !=  /immunization_service/has_vitamin_a_48_months  or dose_54_months_group !=  /immunization_service/has_vitamin_a_54_months  or dose_60_months_group !=  /immunization_service/has_vitamin_a_60_months  or all = 1))]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/immunization_service/group_vitamin_a/n_advise_refer">
+        <label>**Advice the care giver that Vitamin A promotes good vision, boosts immunity and promotes growth and development and &lt;span style="color:red;"&gt;Refer&lt;/span&gt;.**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/group_deworming">
+      <label>Deworming</label>
+      <select1 ref="/immunization_service/group_deworming/has_deworming_status_uptodate">
+        <label>Is <output value=" /immunization_service/patient_name "/> deworming status upto date?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_deworming/n_advice_deworm">
+        <label>&lt;span style="color:orange;"&gt;Advice the care giver that deworming prevents worms which interferes with growth and development of a child.&lt;/span&gt;</label>
+      </input>
+      <input ref="/immunization_service/group_deworming/n_deworm">
+        <label>Deworm the child</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/group_growth_and_monitoring">
+      <label>Growth and Monitoring</label>
+      <input ref="/immunization_service/group_growth_and_monitoring/n_check_handbook">
+        <label>Check the Mother and Child Health (MCH) Handbook or other source of data</label>
+      </input>
+      <select1 ref="/immunization_service/group_growth_and_monitoring/is_participating_in_monthly_growth_monitoring">
+        <label>Is <output value=" /immunization_service/patient_name "/> participating in monthly growth monitoring?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_growth_and_monitoring/n_advise_encourage">
+        <label>**Advice the primary caregiver on importance of regular checking the weight of the baby and &lt;span style="color:red;"&gt;Encourage them to take the child to the clinic for monthly growth monitoring.&lt;/span&gt;**</label>
+      </input>
+      <select ref="/immunization_service/group_growth_and_monitoring/has_signs_of_delayed_milestones">
+        <label>Is the child showing signs of delayed developmental milestones?</label>
+        <itemset nodeset="instance('developmental_milestones')/root/item[(age_limit_lower &lt;=  /immunization_service/patient_age_in_weeks  and age_limit_upper &gt;  /immunization_service/patient_age_in_weeks ) or age=0]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/immunization_service/group_growth_and_monitoring/n_refer_milestones">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**Refer <output value=" /immunization_service/patient_name "/> to the health facility for further assessment.**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization_service/insurance">
+      <label>Insurance</label>
+      <select1 ref="/immunization_service/insurance/has_upto_date_insurance">
+        <label>Does <output value=" /immunization_service/patient_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/insurance/n_encourage_to_get_cover">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Encourage <output value=" /immunization_service/patient_name "/> to get an insurance cover if they don't have or to update their insurance cover&lt;/span&gt;</label>
+      </input>
+      <select ref="/immunization_service/insurance/insurance_cover">
+        <label>Which medical insurance cover does <output value=" /immunization_service/patient_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/immunization_service/insurance/n_congratulate_on_insurance">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Congratulate <output value=" /immunization_service/patient_name "/> and encourage them to continue updating their insurance cover&lt;/span&gt;</label>
+      </input>
+      <input ref="/immunization_service/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/immunization_service/group_summary">
+      <label>IMMUNIZATION RESULTS PAGE</label>
+      <input ref="/immunization_service/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/immunization_service/group_summary/r_summary">
+        <label>Child Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization_service/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization_service/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_insurance_status">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight:bold&quot;&gt;<output value=" /immunization_service/group_summary/insurance_status_display "/>&lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/immunization_service/group_summary/r_findings">
+        <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_available">
+        <label><output value=" /immunization_service/patient_name "/> <output value=" /immunization_service/group_summary/c_available "/></label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_imm_uptodate">
+        <label>Immunization status upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_growth_uptodate">
+        <label>Growth monitoring status upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_vit_a_uptodate">
+        <label>Vitamin A status upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_deworming_uptodate">
+        <label>Deworming upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_imm_not_uptodate">
+        <label>Immunization status not upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_growth_not_uptodate">
+        <label>Growth monitoring status not upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_vit_a_not_uptodate">
+        <label>Vitamin A status not upto date</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_deworming_not_uptodate">
+        <label>Deworming not upto date</label>
+      </input>
+      <input appearance="h3 blue" ref="/immunization_service/group_summary/r_developmental_milestone_status">
+        <label>Development milestone delays:</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_social_smile">
+        <label>Social Smile (4-6 weeks)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_head_handling_and_control">
+        <label>Head Holding/Control (1-3 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_turns_towards_the_origin_of_sound">
+        <label>Turns towards the origin of sound (2-3 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_extend_hand_to_grasp_a_toy">
+        <label>Extend hand to grasp a toy (2-3 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_sitting">
+        <label>Sitting (5-9 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_standing">
+        <label>Standing (7-13 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_walking">
+        <label>Walking (12-18 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_talking">
+        <label>Talking (19-24 months)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_none_developmental_delay">
+        <label>None</label>
+      </input>
+      <input appearance="h1 blue" ref="/immunization_service/group_summary/r_diagnosis_and_treatment_title">
+        <label>Diagnosis &amp; Treatment</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_deworming_title">
+        <label>**Deworming**</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_dosages">
+        <label>&lt;span style="color:blue;"&gt;*Dosages*&lt;/span&gt;</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_half_albendazole">
+        <label>Give ½ a tablet (200mg) Albendazole</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_one_albendazole">
+        <label>Give 1 tablet (400mg) Albendazole</label>
+      </input>
+      <select1 ref="/immunization_service/group_summary/r_child_dewormed">
+        <label>Have you dewormed the child?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization_service/group_summary/r_reason_child_not_dewormed">
+        <label>Please give reasons why</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/immunization_service/group_summary/r_other_reason_child_not_dewormed">
+        <label>Specify Other</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_refer_deworming">
+        <label>&lt;span style="color:red;"&gt;Refer to the Health facility&lt;/span&gt;</label>
+      </input>
+      <input appearance="h1 red" ref="/immunization_service/group_summary/r_referral_title">
+        <label>Reasons for Referral &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/n_refer">
+        <label>Educate the caregiver and refer <output value=" /immunization_service/patient_name "/> to the health facility for:</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_deworming_referral">
+        <label>- Deworming</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_growth_monitoring_referral">
+        <label>- Growth and Monitoring</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_vit_a_referral">
+        <label>- Vitamin A</label>
+      </input>
+      <input ref="/immunization_service/group_summary/r_referral_vaccines">
+        <label>- Immunizations:</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_bcg_referral">
+        <label>BCG</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_opv_0_referral">
+        <label>Birth Polio (OPV 0)</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_opv_1_referral">
+        <label>OPV 1</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_opv_2_referral">
+        <label>OPV 2</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_opv_3_referral">
+        <label>OPV 3</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_pcv_1_referral">
+        <label>PCV 1</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_pcv_2_referral">
+        <label>PCV 2</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_pcv_3_referral">
+        <label>PCV 3</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_penta_1_referral">
+        <label>Penta 1</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_penta_2_referral">
+        <label>Penta 2</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_penta_3_referral">
+        <label>Penta 3</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_ipv_referral">
+        <label>IPV</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_rota_1_referral">
+        <label>Rota 1</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_rota_2_referral">
+        <label>Rota 2</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_rota_3_referral">
+        <label>Rota 3</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_vitamin_a_referral">
+        <label>Vitamin A</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_measles_6_months_referral">
+        <label>Measles Rubella 6 months</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_measles_9_months_referral">
+        <label>Measles Rubella 9 months</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_measles_18_months_referral">
+        <label>Measles Rubella 18 months</label>
+      </input>
+      <input appearance="h1 green" ref="/immunization_service/group_summary/r_follow_up_title">
+        <label>Follow Up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_referral_follow_up">
+        <label>A Referral Follow up task will appear after 3 days</label>
+      </input>
+      <input appearance="h1 lime" ref="/immunization_service/group_summary/r_instruction_title">
+        <label>Instruction &lt;i class="fa fa-heart"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/immunization_service/group_summary/r_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+    <group ref="/immunization_service/data">
+      <label></label>
+      <group ref="/immunization_service/data/_screening"/>
+      <group ref="/immunization_service/data/_supporting_info"/>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,2416 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>CHP Supervision</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/chv_supervision/group_action_points/next_steps:hint">
+            <value>Observe how the CHP concludes the HH visit and communicates the next steps.</value>
+          </text>
+          <text id="/chv_supervision/group_action_points/next_steps:label">
+            <value>Communicate your findings to the CHP and indicate next steps</value>
+          </text>
+          <text id="/chv_supervision/group_action_points:label">
+            <value>Overall Suggestions&amp;Next Steps(Comments)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/diarrhea:label">
+            <value>Diarrhea assessment</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/family_planning:label">
+            <value>Family planning</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/household_visit:label">
+            <value>Household Visit</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/immunization:label">
+            <value>Immunization</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/infection_prevention_control:label">
+            <value>Infection Prevention Control</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/malaria:label">
+            <value>Malaria assesment</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/newborn_visit:label">
+            <value>Newborn visit (PNC Visit)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/nutrition:label">
+            <value>Nutrition assesment</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/pneumonia:label">
+            <value>Pneumonia assesment</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/pregnancy_home_visit:label">
+            <value>Pregnancy visit/registration</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment/wash:label">
+            <value>WASH</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/assessment:label">
+            <value>Which skill did you supervise?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/check_for_dehydration:label">
+            <value>Check for dehydration</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/dosage:label">
+            <value>Dosage</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/ors_zinc_preparation:label">
+            <value>ORS/ Zinc preparation</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/probe_for_diarrhea:label">
+            <value>Probe for diarrhea</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea:hint">
+            <value>Observe how the CHP takes history, classifies the diarrhoea, gives treatment and referral instructions.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/diarrhea:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning/addressing_myths_and_misconceptions:label">
+            <value>Addressing FP myths and misconceptions</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning/encourage_client_to_retain_or_take_up_fp:label">
+            <value>Encourage the client to make an informed choice and retain or take up an FP method</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning/proper_identification_of_eligible_cases:label">
+            <value>Proper identification of eligible cases</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning/used_job_aid_to_educate_modern_fp:label">
+            <value>Used the CHP job aid to educate on modern FP methods (Definition, benefits, how it prevents pregnancy, possible side effects, risk factors for eligibility)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning:hint">
+            <value>Observe how the CHP Educates and Counsels women on FP methods.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/family_planning:label">
+            <value>What areas did the CHP have challenges on (F.P counselling/Health Education)?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit/checks_for_key_health_issues:label">
+            <value>Checks for key health issues in the homestead eg latrine use, hygiene</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit/confirm_and_update_current_contact_address:label">
+            <value>Ensures to confirm and update current contact  address (phone number) of that household</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit/gives_relevant_health_education:label">
+            <value>Gives relevant health education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit/relates_well_with_the_household:label">
+            <value>Relates well with the household</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit:hint">
+            <value>Observe how the CHP conducts the Household visit</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/household_visit:label">
+            <value>Select areas they have challenges on</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization/checked_the_mch_handbook_against_the_kepi_schedule:label">
+            <value>Correctly checked the MCH handbook against the KEPI schedule as per age</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization/defaulter_tracing_or_follow_up:label">
+            <value>Defaulter tracing or follow up</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization/educated_on_expected_adverse_events_and_action:label">
+            <value>Education on expected adverse events and action to take following adverse effects</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization/education_on_importance_of_immunization:label">
+            <value>Education on importance of immunization</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization:hint">
+            <value>Observe how the CHP interrogates the MCH booklet and educates the mother/caregiver.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/immunization:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/activated_uniject:label">
+            <value>Activated uniject (mixing the solution holding the port,activate facing upwards)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/disposes_waste_timely:label">
+            <value>Disposes waste timely - when sharp bottle 3/4 or once every month at branch or nearest link facility</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/had_all_waste_management_supplies:label">
+            <value>Had all the required waste management supplies - Sharp bottle, Liner bags (yellow)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/handled_sharps_correctly:label">
+            <value>Handled sharps correctly/disposed immediately</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/injecting_subcutaneously:label">
+            <value>Injecting subcutaneously at ninety degrees on the thigh, stomach or upper arm</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/quality_checks:label">
+            <value>Quality checks (expiry, leakage)</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/washed_hands:label">
+            <value>CHP washed hands</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control/waste_disposal:label">
+            <value>Waste disposal</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control:hint">
+            <value>Observe how the CHP handles waste and use of PPEs.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/infection_prevention_control:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/correctly_interpretes_the_results:label">
+            <value>Correctly interpretes the results</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/dosage:label">
+            <value>Dosage</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/drawing_of_blood:label">
+            <value>Drawing of blood</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/put_on_gloves:label">
+            <value>Put on gloves</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/putting_the_correct_amount_of_blood:label">
+            <value>Putting the correct amount of blood</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/putting_the_required_amount_of_buffer:label">
+            <value>Putting the required amount of buffer</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/use_of_thermometer:label">
+            <value>Use of thermometer</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria/waiting_for_the_recommended_time:label">
+            <value>Waiting for the recommended time</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria:hint">
+            <value>Observe how the CHP takes history, decision for testing, testing procedure, result interpretation, decision for treatment and referral instructions.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/malaria:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_diarrhea:label">
+            <value>&lt;span style="color:green;"&gt;**Diarrhoea Assessment**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_family_planning:label">
+            <value>&lt;span style="color:green;"&gt;**Family Planning**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_household_visit:label">
+            <value>&lt;span style="color:green;"&gt;**Household Visit**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_immunization:label">
+            <value>&lt;span style="color:green;"&gt;**Immunization**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_infection_prevention_control:label">
+            <value>&lt;span style="color:green;"&gt;**Infection Prevention Control**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_malaria:label">
+            <value>&lt;span style="color:green;"&gt;**Malaria Assessment**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_newborn_visit:label">
+            <value>&lt;span style="color:green;"&gt;**Newborn Visit (PNC Mother and Newborn Visit)**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_nutrition:label">
+            <value>&lt;span style="color:green;"&gt;**Nutritional Assessment**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_pneumonia:label">
+            <value>&lt;span style="color:green;"&gt;**Pneumonia Assessment**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_pregnancy_home_visit:label">
+            <value>&lt;span style="color:green;"&gt;**Pregnancy Registration / Pregancy Visit**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/n_wash:label">
+            <value>&lt;span style="color:green;"&gt;**WASH**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/ask_or_check_for_newborn_danger_signs:label">
+            <value>Ask or check for newborn danger signs</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/family_planning:label">
+            <value>Family planning</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/importance_of_exclusive_breastfeeding:label">
+            <value>Importance of exclusive breastfeeding</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/maternal_danger_signs:label">
+            <value>Maternal danger signs</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/newborn_best_care_practices:label">
+            <value>Newborn best care practices</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit:hint">
+            <value>Observe how the CHP interrogates the MCH booklet and educates on PNC and Newborn danger signs and importance of PNC clinic attendance, Good nutrition and Exclusive breastfeeding.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/newborn_visit:label">
+            <value>In which areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/24hr_referral:label">
+            <value>24hr referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/check_for_muac_interpretation:label">
+            <value>Check for MUAC interpretation</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/check_for_muac_usage:label">
+            <value>Check for MUAC usage</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/check_for_oedema:label">
+            <value>Check for oedema</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/deworming:label">
+            <value>Deworming</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/growth_monitoring:label">
+            <value>Growth monitoring</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition:hint">
+            <value>Observe how the CHP is taking MUAC and intepreting, Oedema and 24 hr recall.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/nutrition:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/chest_indrawing:label">
+            <value>Chest indrawing</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/counting_breaths:label">
+            <value>Counting breaths</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/dosage_home_remedy:label">
+            <value>Dosage/ home remedy</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/probing_for_cough:label">
+            <value>Probing for cough</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia:hint">
+            <value>Observe how the CHP takes history and counts breaths and interpretes the diagnosis.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pneumonia:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/ask_for_check_the_mch_booklet:label">
+            <value>Ask for/check the MCH booklet</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/birth_plan_education:label">
+            <value>Birth plan education</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/educate_on_danger_signs_and_risk_factors:label">
+            <value>Educate on danger signs and risk factors</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/importance_anc_visits:label">
+            <value>Importance ANC visits</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/nutrition_in_pregnancy:label">
+            <value>Nutrition in pregnancy</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit/referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit:hint">
+            <value>Observe how the CHP interrogates the MCH booklet and educates on ANC danger signs and importance of ANC clinic attendance, Good nutrition, and Individual Birth Plan.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/pregnancy_home_visit:label">
+            <value>In which areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash/proper_handwashing:label">
+            <value>Education AND/OR demonstrating proper handwashing</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash/refusal_disposal:label">
+            <value>Education on the importance of a refusal disposal</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash/use_of_latrines:label">
+            <value>Education and sensitization about the importance of use of latrines</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash:hint">
+            <value>Observe how the CHP talks about the importance of the use of a latrine, proper handwashing facilities, use of safe water, water treatment and use of a refuse disposal pit.</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_assessments/wash:label">
+            <value>What areas did the CHP have challenges on?</value>
+          </text>
+          <text id="/chv_supervision/group_assessments:label">
+            <value>Assessment/Follow Ups</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_all_tools/no:label">
+            <value>No</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_all_tools/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_all_tools:label">
+            <value>Does the CHP have all their tools of work (e.g. Uniform, commodities, Charged phone, thermometer, MUAC tape)?</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_proper_protective_equipment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_proper_protective_equipment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/has_proper_protective_equipment:label">
+            <value>Does the CHP have proper personal protective equipment (masks, gloves, soap, surgical spirit, cotton wool)?</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/last_visit_action_points_addressed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/last_visit_action_points_addressed/partial:label">
+            <value>Partial</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/last_visit_action_points_addressed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/last_visit_action_points_addressed:label">
+            <value>Were the action points addressed</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/last_visit_action_points_addressed_not_reasons:label">
+            <value>Give reasons</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/n_last_visit_action_points:label">
+            <value>The last action points were <output value=" /chv_supervision/last_visit_action_points "/></value>
+          </text>
+          <text id="/chv_supervision/group_preparation/n_last_visit_date:label">
+            <value>The CHP was last visited on <output value=" /chv_supervision/formatted_last_visit_date "/></value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking/cotton_wool:label">
+            <value>Cotton Wool</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking/gloves:label">
+            <value>Gloves</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking/medical_mask:label">
+            <value>Medical Mask (Single use/Disposable)</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking/soap:label">
+            <value>Soap</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking/surgical_spirit:label">
+            <value>Surgical Spirit</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/protective_equipment_lacking:label">
+            <value>Which personal protective equipment does the CHP lack?</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/charged_phone:label">
+            <value>Charged phone</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/chv_job_aid:label">
+            <value>CHP Job Aid</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/commodities_bag:label">
+            <value>Commodities bag</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/muac_tape:label">
+            <value>MUAC tape</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/thermometer:label">
+            <value>Thermometer</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking/uniform_badge:label">
+            <value>Uniform/badge</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking:label">
+            <value>Which tool does the CHP lack?</value>
+          </text>
+          <text id="/chv_supervision/group_preparation/tools_lacking_other:label">
+            <value>Specify</value>
+          </text>
+          <text id="/chv_supervision/group_preparation:label">
+            <value>CHP Preparation</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/act:label">
+            <value>ACT</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/amoxicillin:label">
+            <value>Amoxicillin</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/chlohexidine:label">
+            <value>Chlohexidine</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/cocs:label">
+            <value>CoCs</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/mrdt:label">
+            <value>mRDT</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/ors_satchets:label">
+            <value>ORS satchets</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/paracetamol:label">
+            <value>Paracetamol</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/pops:label">
+            <value>PoPs</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/tetracycline_ointment:label">
+            <value>Tetracycline Ointment</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/wash_commodities:label">
+            <value>WASH commodities</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/zinc_ors_combo_packs:label">
+            <value>Zinc ORS Combo Packs</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking/zinc_tablets:label">
+            <value>Zinc tablets</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/essential_medicines_lacking:label">
+            <value>Which essential medicine does the CHP lack?</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/has_essential_medicines/no:label">
+            <value>No</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/has_essential_medicines/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/has_essential_medicines:label">
+            <value>Does the CHP have all the essential medicines?</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check/n_remind_to_order_commodities:label">
+            <value>&lt;span style="color:red;"&gt;**Remind the CHP to request for the commodities**&lt;/span&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_stock_check:label">
+            <value>Essential Medicine Stock Check</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_24hr_referral:label">
+            <value>24hr referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_act:label">
+            <value>ACT</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_activated_uniject:label">
+            <value>Activated uniject (mixing the solution holding the port,activate facing upwards)</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_addressing_myths_and_misconceptions:label">
+            <value>Addressing FP myths and misconceptions</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_amoxicillin:label">
+            <value>Amoxicillin</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_ask_for_check_the_mch_booklet:label">
+            <value>Ask for/check the MCH booklet</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_ask_or_check_for_newborn_danger_signs:label">
+            <value>Ask or check for newborn danger signs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_assessment:label">
+            <value>Assessment/Follow Up Findings</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_available:label">
+            <value><output value=" /chv_supervision/chv_name "/> is not available</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_birth_plan_education:label">
+            <value>Birth plan education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_check_for_dehydration:label">
+            <value>Check for dehydration</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_check_for_muac_interpretation:label">
+            <value>Check for MUAC interpretation</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_check_for_muac_usage:label">
+            <value>Check for MUAC usage</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_check_for_oedema:label">
+            <value>Check for oedema</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_checked_the_mch_handbook_against_the_kepi_schedule:label">
+            <value>Correctly checked the MCH handbook against the KEPI schedule as per age</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_checks_for_key_health_issues:label">
+            <value>Checks for key health issues in the homestead eg latrine use, hygiene</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_chest_indrawing:label">
+            <value>Chest indrawing</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_chlohexidine:label">
+            <value>Chlohexidine</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_cocs:label">
+            <value>CoCs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_confirm_and_update_current_contact_address:label">
+            <value>Ensures to confirm and update current contact address (phone number) of that household</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_correctly_interpretes_the_results:label">
+            <value>Correctly interpretes the results</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_counting_breaths:label">
+            <value>Counting breaths</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_defaulter_tracing_or_follow_up:label">
+            <value>Defaulter tracing or follow up</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_deworming:label">
+            <value>Deworming</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_diarrhea:label">
+            <value>Diarrhoea Assessment</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_diarrhea_dosage:label">
+            <value>Dosage</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_diarrhea_health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_diarrhea_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_diarrhea_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_diarrhea_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_disposes_waste_timely:label">
+            <value>Disposes waste timely - when sharp bottle 3/4 or once every month at branch or nearest link facility</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_dosage_home_remedy:label">
+            <value>Dosage/ home remedy</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_drawing_of_blood:label">
+            <value>Drawing of blood</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_educate_on_danger_signs_and_risk_factors:label">
+            <value>Educate on danger signs and risk factors</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_educated_on_expected_adverse_events_and_action:label">
+            <value>Education on expected adverse events and action to take following adverse effects</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_education_on_importance_of_immunization:label">
+            <value>Education on importance of immunization</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_encourage_client_to_retain_or_take_up_fp:label">
+            <value>Encourage the client to make an informed choice and retain or take up an FP method</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_family_planning:label">
+            <value>Family Planning</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_family_planning_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_family_planning_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_findings:label">
+            <value>Findings/challenges&lt;i class="fa fa-info"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_gives_relevant_health_education:label">
+            <value>Gives relevant health education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_growth_monitoring:label">
+            <value>Growth monitoring</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_had_all_waste_management_supplies:label">
+            <value>Had all the required waste management supplies - Sharp bottle, Liner bags (yellow)</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_handled_sharps_correctly:label">
+            <value>Handled sharps correctly/disposed immediately</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_has_all_tools:label">
+            <value>CHP has all their tools of work: <output value=" /chv_supervision/calc_has_all_tools "/></value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_has_proper_protective_equipment:label">
+            <value>CHP has proper personal protective equipment: <output value=" /chv_supervision/calc_has_proper_protective_equipment "/></value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_household_visit:label">
+            <value>Household Visit</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_immunization:label">
+            <value>Immunization</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_immunization_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_immunization_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_immunization_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_importance_anc_visits:label">
+            <value>Importance ANC visits</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_importance_of_exclusive_breastfeeding:label">
+            <value>Importance of exclusive breastfeeding</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_infection_prevention_control:label">
+            <value>Infection Prevention Control</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_infection_prevention_control_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_infection_prevention_control_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_injecting_subcutaneously:label">
+            <value>Injecting subcutaneously at ninety degrees on the thigh, stomach or upper arm</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_last_visit_action_points_addressed:label">
+            <value>Last action points: <output value=" /chv_supervision/calc_last_visit_action_points_addressed "/></value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_malaria:label">
+            <value>Malaria Assessment</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_malaria_dosage:label">
+            <value>Dosage</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_malaria_health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_malaria_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_malaria_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_malaria_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_maternal_danger_signs:label">
+            <value>Maternal danger signs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_mrdt:label">
+            <value>mRDT</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_newborn_best_care_practices:label">
+            <value>Newborn best care practices</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_newborn_visit:label">
+            <value>Newborn Visit (PNC Mother and Newborn Visit)</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_newborn_visit_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_newborn_visit_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_newborn_visit_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_next_visit:label">
+            <value>Next supervision date: <output value=" /chv_supervision/formatted_next_visit_date "/></value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_none:label">
+            <value>None</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_nutrition:label">
+            <value>Nutritional Assessment</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_nutrition_health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_nutrition_in_pregnancy:label">
+            <value>Nutrition in pregnancy</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_nutrition_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_nutrition_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_nutrition_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_ors_satchets:label">
+            <value>ORS satchets</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_ors_zinc_preparation:label">
+            <value>ORS/ Zinc preparation</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_overall_observations:label">
+            <value>Observations</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_paracetamol:label">
+            <value>Paracetamol</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pnc_family_planning:label">
+            <value>Family planning</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pneumonia:label">
+            <value>Pneumonia Assessment</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pneumonia_health_education:label">
+            <value>Health education</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pneumonia_referral:label">
+            <value>Referral</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pneumonia_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_pneumonia_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pops:label">
+            <value>PoPs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pregnancy_home_visit:label">
+            <value>Pregnancy Registration / Pregancy Visit</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_pregnancy_home_visit_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_pregnancy_home_visit_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_preparation:label">
+            <value>Preparation</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_probe_for_diarrhea:label">
+            <value>Probe for diarrhea</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_probing_for_cough:label">
+            <value>Probing for cough</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_proper_handwashing:label">
+            <value>Education AND/OR demonstrating proper handwashing</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_proper_identification_of_eligible_cases:label">
+            <value>Proper identification of eligible cases</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_put_on_gloves:label">
+            <value>Put on gloves</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_putting_the_correct_amount_of_blood:label">
+            <value>Putting the correct amount of blood</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_putting_the_required_amount_of_buffer:label">
+            <value>Putting the required amount of buffer</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_quality_checks:label">
+            <value>Quality checks (expiry, leakage)</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_refusal_disposal:label">
+            <value>Education on the importance of a refusal disposal</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_relates_well_with_the_household:label">
+            <value>Relates well with the household</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_assessment_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_stock_check:label">
+            <value>Essential Medicine Stock Outs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_submit_note:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure to submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_summary:label">
+            <value>Overall Observation&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_summary_details:label">
+            <value>Performance Summary for <output value=" /chv_supervision/chv_name "/>&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_tetracycline_ointment:label">
+            <value>Tetracycline Ointment</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_use_of_latrines:label">
+            <value>Education and sensitization about the importance of use of latrines</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_use_of_thermometer:label">
+            <value>Use of thermometer</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_used_job_aid_to_educate_modern_fp:label">
+            <value>Used the CHP job aid to educate on modern FP methods (Definition, benefits, how it prevents pregnancy, possible side effects, risk factors for eligibility)</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_waiting_for_the_recommended_time:label">
+            <value>Waiting for the recommended time</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_wash:label">
+            <value>WASH</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_wash_commodities:label">
+            <value>WASH commodities</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_wash_score:label">
+            <value>Score: <output value=" /chv_supervision/calc_wash_score "/> %</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_washed_hands:label">
+            <value>CHP washed hands</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_waste_disposal:label">
+            <value>Waste disposal</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_zinc_ors_combo_packs:label">
+            <value>Zinc ORS Combo Packs</value>
+          </text>
+          <text id="/chv_supervision/group_summary/r_zinc_tablets:label">
+            <value>Zinc tablets</value>
+          </text>
+          <text id="/chv_supervision/group_summary:label">
+            <value>CHP Supervision Visit Results Page</value>
+          </text>
+          <text id="/chv_supervision/group_visit/is_available/no:label">
+            <value>No</value>
+          </text>
+          <text id="/chv_supervision/group_visit/is_available/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/chv_supervision/group_visit/is_available:label">
+            <value>Is the <output value=" /chv_supervision/chv_name "/> available for supervision?</value>
+          </text>
+          <text id="/chv_supervision/group_visit/next_visit_date:jr:constraintMsg">
+            <value>Date cannot be in the past and more than two months into the future.</value>
+          </text>
+          <text id="/chv_supervision/group_visit/next_visit_date:label">
+            <value>Enter the next supervision date</value>
+          </text>
+          <text id="/chv_supervision/group_visit/visit/assessment:label">
+            <value>Assessment/Follow Ups</value>
+          </text>
+          <text id="/chv_supervision/group_visit/visit/stock_check:label">
+            <value>CHP stock check</value>
+          </text>
+          <text id="/chv_supervision/group_visit/visit:label">
+            <value>Visit type</value>
+          </text>
+          <text id="/chv_supervision/inputs/calc_last_visit_action_points:label">
+            <value>Action points from last observation</value>
+          </text>
+          <text id="/chv_supervision/inputs/calc_last_visit_date:label">
+            <value>Date CHP was last visited</value>
+          </text>
+          <text id="/chv_supervision/inputs/calc_supervision_visit_count:label">
+            <value>Action points from last observation</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/_id:label">
+            <value>What is the CHP's name?</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/parent/_id:label">
+            <value>CHP area ID</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/parent/name:label">
+            <value>CHP area Name</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/parent/parent/_id:label">
+            <value>CHU ID</value>
+          </text>
+          <text id="/chv_supervision/inputs/contact/phone:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/chv_supervision/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/chv_supervision/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <chv_supervision id="chv_supervision" prefix="J1!chv_supervision!" delimiter="#" version="2023-06-17 00:03:07">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <calc_last_visit_date/>
+            <calc_last_visit_action_points/>
+            <calc_supervision_visit_count/>
+            <contact>
+              <_id/>
+              <name/>
+              <phone/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_id tag="hidden"/>
+          <chv_uuid tag="hidden"/>
+          <chv_name tag="hidden"/>
+          <last_visit_date tag="hidden"/>
+          <formatted_last_visit_date/>
+          <last_visit_action_points tag="hidden"/>
+          <supervision_visit_count/>
+          <calc_assessment_score/>
+          <calc_assessment_denominator/>
+          <calc_pneumonia_denominator/>
+          <calc_malaria_denominator/>
+          <calc_diarrhea_denominator/>
+          <calc_nutrition_denominator/>
+          <calc_immunization_denominator/>
+          <calc_pregnancy_home_visit_denominator/>
+          <calc_newborn_visit_denominator/>
+          <calc_family_planning_denominator/>
+          <calc_infection_prevention_control_denominator/>
+          <calc_wash_denominator/>
+          <calc_pneumonia_score/>
+          <calc_malaria_score/>
+          <calc_diarrhea_score/>
+          <calc_nutrition_score/>
+          <calc_immunization_score/>
+          <calc_pregnancy_home_visit_score/>
+          <calc_newborn_visit_score/>
+          <calc_family_planning_score/>
+          <calc_infection_prevention_control_score/>
+          <calc_wash_score/>
+          <calc_last_visit_action_points_addressed/>
+          <calc_has_all_tools/>
+          <calc_has_proper_protective_equipment/>
+          <formatted_next_visit_date/>
+          <next_supervision_visit_date/>
+          <once/>
+          <group_visit tag="hidden">
+            <is_available/>
+            <next_visit_date/>
+            <visit/>
+          </group_visit>
+          <group_preparation>
+            <n_last_visit_date/>
+            <n_last_visit_action_points/>
+            <last_visit_action_points_addressed/>
+            <last_visit_action_points_addressed_not_reasons/>
+            <has_all_tools/>
+            <tools_lacking/>
+            <tools_lacking_other/>
+            <has_proper_protective_equipment/>
+            <protective_equipment_lacking/>
+          </group_preparation>
+          <group_stock_check>
+            <has_essential_medicines/>
+            <essential_medicines_lacking/>
+            <n_remind_to_order_commodities/>
+          </group_stock_check>
+          <group_assessments>
+            <assessment/>
+            <n_household_visit/>
+            <household_visit/>
+            <n_pneumonia/>
+            <pneumonia/>
+            <n_malaria/>
+            <malaria/>
+            <n_diarrhea/>
+            <diarrhea/>
+            <n_nutrition/>
+            <nutrition/>
+            <n_immunization/>
+            <immunization/>
+            <n_pregnancy_home_visit/>
+            <pregnancy_home_visit/>
+            <n_newborn_visit/>
+            <newborn_visit/>
+            <n_family_planning/>
+            <family_planning/>
+            <n_infection_prevention_control/>
+            <infection_prevention_control/>
+            <n_wash/>
+            <wash/>
+          </group_assessments>
+          <group_action_points>
+            <next_steps/>
+          </group_action_points>
+          <group_summary tag="hidden">
+            <r_submit_note/>
+            <r_summary_details/>
+            <r_summary/>
+            <r_overall_observations/>
+            <r_findings/>
+            <r_available/>
+            <r_next_visit/>
+            <r_preparation/>
+            <r_last_visit_action_points_addressed/>
+            <r_has_all_tools/>
+            <r_has_proper_protective_equipment/>
+            <r_stock_check/>
+            <r_act/>
+            <r_mrdt/>
+            <r_paracetamol/>
+            <r_zinc_tablets/>
+            <r_ors_satchets/>
+            <r_zinc_ors_combo_packs/>
+            <r_amoxicillin/>
+            <r_chlohexidine/>
+            <r_tetracycline_ointment/>
+            <r_wash_commodities/>
+            <r_cocs/>
+            <r_pops/>
+            <r_none/>
+            <r_assessment/>
+            <r_score/>
+            <r_household_visit/>
+            <r_relates_well_with_the_household/>
+            <r_gives_relevant_health_education/>
+            <r_checks_for_key_health_issues/>
+            <r_confirm_and_update_current_contact_address/>
+            <r_pneumonia/>
+            <r_pneumonia_score/>
+            <r_probing_for_cough/>
+            <r_chest_indrawing/>
+            <r_counting_breaths/>
+            <r_dosage_home_remedy/>
+            <r_pneumonia_referral/>
+            <r_pneumonia_health_education/>
+            <r_malaria/>
+            <r_malaria_score/>
+            <r_use_of_thermometer/>
+            <r_put_on_gloves/>
+            <r_drawing_of_blood/>
+            <r_putting_the_correct_amount_of_blood/>
+            <r_putting_the_required_amount_of_buffer/>
+            <r_waiting_for_the_recommended_time/>
+            <r_correctly_interpretes_the_results/>
+            <r_malaria_dosage/>
+            <r_malaria_referral/>
+            <r_malaria_health_education/>
+            <r_diarrhea/>
+            <r_diarrhea_score/>
+            <r_probe_for_diarrhea/>
+            <r_check_for_dehydration/>
+            <r_ors_zinc_preparation/>
+            <r_diarrhea_dosage/>
+            <r_diarrhea_referral/>
+            <r_diarrhea_health_education/>
+            <r_nutrition/>
+            <r_nutrition_score/>
+            <r_check_for_muac_usage/>
+            <r_check_for_muac_interpretation/>
+            <r_check_for_oedema/>
+            <r_nutrition_referral/>
+            <r_nutrition_health_education/>
+            <r_growth_monitoring/>
+            <r_vitamin_a/>
+            <r_deworming/>
+            <r_24hr_referral/>
+            <r_immunization/>
+            <r_immunization_score/>
+            <r_education_on_importance_of_immunization/>
+            <r_educated_on_expected_adverse_events_and_action/>
+            <r_defaulter_tracing_or_follow_up/>
+            <r_checked_the_mch_handbook_against_the_kepi_schedule/>
+            <r_pregnancy_home_visit/>
+            <r_pregnancy_home_visit_score/>
+            <r_educate_on_danger_signs_and_risk_factors/>
+            <r_nutrition_in_pregnancy/>
+            <r_importance_anc_visits/>
+            <r_birth_plan_education/>
+            <r_immunization_referral/>
+            <r_ask_for_check_the_mch_booklet/>
+            <r_newborn_visit/>
+            <r_newborn_visit_score/>
+            <r_ask_or_check_for_newborn_danger_signs/>
+            <r_maternal_danger_signs/>
+            <r_newborn_best_care_practices/>
+            <r_newborn_visit_referral/>
+            <r_pnc_family_planning/>
+            <r_importance_of_exclusive_breastfeeding/>
+            <r_family_planning/>
+            <r_family_planning_score/>
+            <r_proper_identification_of_eligible_cases/>
+            <r_used_job_aid_to_educate_modern_fp/>
+            <r_addressing_myths_and_misconceptions/>
+            <r_encourage_client_to_retain_or_take_up_fp/>
+            <r_infection_prevention_control/>
+            <r_infection_prevention_control_score/>
+            <r_washed_hands/>
+            <r_quality_checks/>
+            <r_activated_uniject/>
+            <r_injecting_subcutaneously/>
+            <r_waste_disposal/>
+            <r_had_all_waste_management_supplies/>
+            <r_handled_sharps_correctly/>
+            <r_disposes_waste_timely/>
+            <r_wash/>
+            <r_wash_score/>
+            <r_use_of_latrines/>
+            <r_proper_handwashing/>
+            <r_refusal_disposal/>
+          </group_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chv_supervision>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/chv_supervision/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/chv_supervision/inputs/source" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/source_id" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/calc_last_visit_date" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/calc_last_visit_action_points" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/calc_supervision_visit_count" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/chv_supervision/inputs/contact/name" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/contact/phone" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/chv_supervision/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/chv_supervision/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/chv_supervision/chv_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/chv_supervision/chv_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/chv_supervision/last_visit_date" type="string" calculate="../inputs/calc_last_visit_date"/>
+      <bind nodeset="/chv_supervision/formatted_last_visit_date" type="string" calculate="format-date( /chv_supervision/last_visit_date , '%d/%m/%Y')"/>
+      <bind nodeset="/chv_supervision/last_visit_action_points" type="string" calculate="../inputs/calc_last_visit_action_points"/>
+      <bind nodeset="/chv_supervision/supervision_visit_count" type="string" calculate="number(coalesce(../inputs/calc_supervision_visit_count, instance('contact-summary')/context/calc_supervision_visit_count, 0))+1"/>
+      <bind nodeset="/chv_supervision/calc_assessment_score" type="string" calculate="if(selected( /chv_supervision/group_visit/visit , 'assessment'), round((number( /chv_supervision/calc_pneumonia_score ) + number( /chv_supervision/calc_malaria_score ) + number( /chv_supervision/calc_diarrhea_score ) + number( /chv_supervision/calc_nutrition_score ) + number( /chv_supervision/calc_immunization_score ) + number( /chv_supervision/calc_pregnancy_home_visit_score ) + number( /chv_supervision/calc_newborn_visit_score ) + number( /chv_supervision/calc_family_planning_score ) + number( /chv_supervision/calc_infection_prevention_control_score ) + number( /chv_supervision/calc_wash_score )) * 100 div  /chv_supervision/calc_assessment_denominator , 2), '')"/>
+      <bind nodeset="/chv_supervision/calc_assessment_denominator" type="string" calculate="number( /chv_supervision/calc_pneumonia_denominator ) + number( /chv_supervision/calc_malaria_denominator ) + number( /chv_supervision/calc_diarrhea_denominator ) + number( /chv_supervision/calc_nutrition_denominator ) + number( /chv_supervision/calc_immunization_denominator ) + number( /chv_supervision/calc_pregnancy_home_visit_denominator ) + number( /chv_supervision/calc_newborn_visit_denominator ) + number( /chv_supervision/calc_family_planning_denominator ) + number( /chv_supervision/calc_infection_prevention_control_denominator ) + number( /chv_supervision/calc_wash_denominator )"/>
+      <bind nodeset="/chv_supervision/calc_pneumonia_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'pneumonia'), 7, 0)"/>
+      <bind nodeset="/chv_supervision/calc_malaria_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'malaria'), 11, 0)"/>
+      <bind nodeset="/chv_supervision/calc_diarrhea_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'diarrhea'), 7, 0)"/>
+      <bind nodeset="/chv_supervision/calc_nutrition_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'nutrition'), 10, 0)"/>
+      <bind nodeset="/chv_supervision/calc_immunization_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'immunization'), 5, 0)"/>
+      <bind nodeset="/chv_supervision/calc_pregnancy_home_visit_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'pregnancy_home_visit'), 7, 0)"/>
+      <bind nodeset="/chv_supervision/calc_newborn_visit_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'newborn_visit'), 7, 0)"/>
+      <bind nodeset="/chv_supervision/calc_family_planning_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'family_planning'), 5, 0)"/>
+      <bind nodeset="/chv_supervision/calc_infection_prevention_control_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'infection_prevention_control'), 9, 0)"/>
+      <bind nodeset="/chv_supervision/calc_wash_denominator" type="string" calculate="if(selected( /chv_supervision/group_assessments/assessment , 'wash'), 3, 0)"/>
+      <bind nodeset="/chv_supervision/calc_pneumonia_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/pneumonia , 'none'),  /chv_supervision/calc_pneumonia_denominator , if(not(selected( /chv_supervision/group_assessments/pneumonia , 'none') and count-selected( /chv_supervision/group_assessments/pneumonia ) &gt; 1),  /chv_supervision/calc_pneumonia_denominator -count-selected( /chv_supervision/group_assessments/pneumonia ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_malaria_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/malaria , 'none'),  /chv_supervision/calc_malaria_denominator , if(not(selected( /chv_supervision/group_assessments/malaria , 'none') and count-selected( /chv_supervision/group_assessments/malaria ) &gt; 1),  /chv_supervision/calc_malaria_denominator -count-selected( /chv_supervision/group_assessments/malaria ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_diarrhea_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/diarrhea , 'none'),  /chv_supervision/calc_diarrhea_denominator , if(not(selected( /chv_supervision/group_assessments/diarrhea , 'none') and count-selected( /chv_supervision/group_assessments/diarrhea ) &gt; 1),  /chv_supervision/calc_diarrhea_denominator -count-selected( /chv_supervision/group_assessments/diarrhea ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_nutrition_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/nutrition , 'none'),  /chv_supervision/calc_nutrition_denominator , if(not(selected( /chv_supervision/group_assessments/nutrition , 'none') and count-selected( /chv_supervision/group_assessments/nutrition ) &gt; 1),  /chv_supervision/calc_nutrition_denominator -count-selected( /chv_supervision/group_assessments/nutrition ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_immunization_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/immunization , 'none'),  /chv_supervision/calc_immunization_denominator , if(not(selected( /chv_supervision/group_assessments/immunization , 'none') and count-selected( /chv_supervision/group_assessments/immunization ) &gt; 1),  /chv_supervision/calc_immunization_denominator -count-selected( /chv_supervision/group_assessments/immunization ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_pregnancy_home_visit_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'none'),  /chv_supervision/calc_pregnancy_home_visit_denominator , if(not(selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'none') and count-selected( /chv_supervision/group_assessments/pregnancy_home_visit ) &gt; 1),  /chv_supervision/calc_pregnancy_home_visit_denominator -count-selected( /chv_supervision/group_assessments/pregnancy_home_visit ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_newborn_visit_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/newborn_visit , 'none'),  /chv_supervision/calc_newborn_visit_denominator , if(not(selected( /chv_supervision/group_assessments/newborn_visit , 'none') and count-selected( /chv_supervision/group_assessments/newborn_visit ) &gt; 1),  /chv_supervision/calc_newborn_visit_denominator -count-selected( /chv_supervision/group_assessments/newborn_visit ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_family_planning_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/family_planning , 'none'),  /chv_supervision/calc_family_planning_denominator , if(not(selected( /chv_supervision/group_assessments/family_planning , 'none') and count-selected( /chv_supervision/group_assessments/family_planning ) &gt; 1),  /chv_supervision/calc_family_planning_denominator -count-selected( /chv_supervision/group_assessments/family_planning ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_infection_prevention_control_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/infection_prevention_control , 'none'),  /chv_supervision/calc_infection_prevention_control_denominator , if(not(selected( /chv_supervision/group_assessments/infection_prevention_control , 'none') and count-selected( /chv_supervision/group_assessments/infection_prevention_control ) &gt; 1),  /chv_supervision/calc_infection_prevention_control_denominator -count-selected( /chv_supervision/group_assessments/infection_prevention_control ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_wash_score" type="string" calculate="if(selected( /chv_supervision/group_assessments/wash , 'none'),  /chv_supervision/calc_wash_denominator , if(not(selected( /chv_supervision/group_assessments/wash , 'none') and count-selected( /chv_supervision/group_assessments/wash ) &gt; 1),  /chv_supervision/calc_wash_denominator -count-selected( /chv_supervision/group_assessments/wash ), 0))"/>
+      <bind nodeset="/chv_supervision/calc_last_visit_action_points_addressed" type="string" calculate="jr:choice-name(last_visit_action_points_addressed, ' /chv_supervision/group_preparation/last_visit_action_points_addressed ')"/>
+      <bind nodeset="/chv_supervision/calc_has_all_tools" type="string" calculate="jr:choice-name(has_all_tools, ' /chv_supervision/group_preparation/has_all_tools ')"/>
+      <bind nodeset="/chv_supervision/calc_has_proper_protective_equipment" type="string" calculate="jr:choice-name(has_proper_protective_equipment, ' /chv_supervision/group_preparation/has_proper_protective_equipment ')"/>
+      <bind nodeset="/chv_supervision/formatted_next_visit_date" type="string" calculate="format-date( /chv_supervision/group_visit/next_visit_date , '%b %d, %Y')"/>
+      <bind nodeset="/chv_supervision/next_supervision_visit_date" type="string" calculate="if( /chv_supervision/group_visit/is_available ='no', format-date-time(decimal-date-time( /chv_supervision/group_visit/next_visit_date ),&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/chv_supervision/once" type="string" calculate="true()"/>
+      <bind nodeset="/chv_supervision/group_visit/is_available" type="select1" required="true()"/>
+      <bind nodeset="/chv_supervision/group_visit/next_visit_date" type="date" jr:constraintMsg="jr:itext('/chv_supervision/group_visit/next_visit_date:jr:constraintMsg')" required="true()" constraint=". &gt; today() and decimal-date-time(.) &lt; decimal-date-time(today() + 60)" relevant=" /chv_supervision/group_visit/is_available ='no'"/>
+      <bind nodeset="/chv_supervision/group_visit/visit" type="select" required="true()" relevant=" /chv_supervision/group_visit/is_available ='yes'"/>
+      <bind nodeset="/chv_supervision/group_preparation" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_preparation/n_last_visit_date" readonly="true()" type="string" relevant=" /chv_supervision/supervision_visit_count  &gt; 1"/>
+      <bind nodeset="/chv_supervision/group_preparation/n_last_visit_action_points" readonly="true()" type="string" relevant=" /chv_supervision/supervision_visit_count  &gt; 1"/>
+      <bind nodeset="/chv_supervision/group_preparation/last_visit_action_points_addressed" type="select1" required="true()" relevant=" /chv_supervision/supervision_visit_count  &gt; 1"/>
+      <bind nodeset="/chv_supervision/group_preparation/last_visit_action_points_addressed_not_reasons" type="string" required="true()" relevant=" /chv_supervision/group_preparation/last_visit_action_points_addressed ='no' or  /chv_supervision/group_preparation/last_visit_action_points_addressed ='partial'"/>
+      <bind nodeset="/chv_supervision/group_preparation/has_all_tools" type="select1" required="true()"/>
+      <bind nodeset="/chv_supervision/group_preparation/tools_lacking" type="select" required="true()" relevant=" /chv_supervision/group_preparation/has_all_tools ='no'"/>
+      <bind nodeset="/chv_supervision/group_preparation/tools_lacking_other" type="string" required="true()" relevant="selected( /chv_supervision/group_preparation/tools_lacking , 'other')"/>
+      <bind nodeset="/chv_supervision/group_preparation/has_proper_protective_equipment" type="select1" required="true()"/>
+      <bind nodeset="/chv_supervision/group_preparation/protective_equipment_lacking" type="select" required="true()" relevant=" /chv_supervision/group_preparation/has_proper_protective_equipment ='no'"/>
+      <bind nodeset="/chv_supervision/group_stock_check" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_stock_check/has_essential_medicines" type="select1" required="true()" relevant=" /chv_supervision/group_preparation/has_all_tools  = 'yes'"/>
+      <bind nodeset="/chv_supervision/group_stock_check/essential_medicines_lacking" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant=" /chv_supervision/group_stock_check/has_essential_medicines  = 'no'"/>
+      <bind nodeset="/chv_supervision/group_stock_check/n_remind_to_order_commodities" readonly="true()" type="string" relevant="not(selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'none')) and count-selected( /chv_supervision/group_stock_check/essential_medicines_lacking ) &gt; 0"/>
+      <bind nodeset="/chv_supervision/group_assessments" relevant="selected( /chv_supervision/group_visit/visit , 'assessment')"/>
+      <bind nodeset="/chv_supervision/group_assessments/assessment" type="select" required="true()"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_household_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'household_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/household_visit" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/household_visit:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'household_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_pneumonia" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pneumonia')"/>
+      <bind nodeset="/chv_supervision/group_assessments/pneumonia" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/pneumonia:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'pneumonia')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_malaria" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'malaria')"/>
+      <bind nodeset="/chv_supervision/group_assessments/malaria" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/malaria:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'malaria')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_diarrhea" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'diarrhea')"/>
+      <bind nodeset="/chv_supervision/group_assessments/diarrhea" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/diarrhea:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'diarrhea')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_nutrition" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'nutrition')"/>
+      <bind nodeset="/chv_supervision/group_assessments/nutrition" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/nutrition:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'nutrition')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_immunization" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'immunization')"/>
+      <bind nodeset="/chv_supervision/group_assessments/immunization" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/immunization:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'immunization')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_pregnancy_home_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pregnancy_home_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/pregnancy_home_visit" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'pregnancy_home_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_newborn_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'newborn_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/newborn_visit" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/newborn_visit:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'newborn_visit')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_family_planning" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'family_planning')"/>
+      <bind nodeset="/chv_supervision/group_assessments/family_planning" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/family_planning:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'family_planning')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_infection_prevention_control" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'infection_prevention_control')"/>
+      <bind nodeset="/chv_supervision/group_assessments/infection_prevention_control" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/infection_prevention_control:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'infection_prevention_control')"/>
+      <bind nodeset="/chv_supervision/group_assessments/n_wash" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'wash')"/>
+      <bind nodeset="/chv_supervision/group_assessments/wash" type="select" jr:constraintMsg="jr:itext('/chv_supervision/group_assessments/wash:jr:constraintMsg')" required="true()" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" relevant="selected( /chv_supervision/group_assessments/assessment , 'wash')"/>
+      <bind nodeset="/chv_supervision/group_action_points" relevant=" /chv_supervision/group_visit/is_available ='yes'"/>
+      <bind nodeset="/chv_supervision/group_action_points/next_steps" type="string" calculate="if( /chv_supervision/once ='',../../inputs/calc_last_visit_action_points,  /chv_supervision/group_action_points/next_steps )" required="true()"/>
+      <bind nodeset="/chv_supervision/group_summary/r_submit_note" readonly="true()" type="string"/>
+      <bind nodeset="/chv_supervision/group_summary/r_summary_details" readonly="true()" type="string" relevant=" /chv_supervision/group_visit/is_available ='yes'"/>
+      <bind nodeset="/chv_supervision/group_summary/r_summary" readonly="true()" type="string" relevant=" /chv_supervision/group_visit/is_available ='yes'"/>
+      <bind nodeset="/chv_supervision/group_summary/r_overall_observations" type="string" required="true()" relevant=" /chv_supervision/group_visit/is_available ='yes'"/>
+      <bind nodeset="/chv_supervision/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/chv_supervision/group_summary/r_available" readonly="true()" type="string" relevant=" /chv_supervision/group_visit/is_available ='no'"/>
+      <bind nodeset="/chv_supervision/group_summary/r_next_visit" readonly="true()" type="string" relevant=" /chv_supervision/group_visit/is_available ='no'"/>
+      <bind nodeset="/chv_supervision/group_summary/r_preparation" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_last_visit_action_points_addressed" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check') and  /chv_supervision/supervision_visit_count  &gt; 1"/>
+      <bind nodeset="/chv_supervision/group_summary/r_has_all_tools" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_has_proper_protective_equipment" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_stock_check" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'stock_check')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_act" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'act')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_mrdt" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'mrdt')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_paracetamol" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'paracetamol')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_zinc_tablets" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'zinc_tablets')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_ors_satchets" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'ors_satchets')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_zinc_ors_combo_packs" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'zinc_ors_combo_packs')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_amoxicillin" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'amoxicillin')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_chlohexidine" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'chlohexidine')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_tetracycline_ointment" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'tetracycline_ointment')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_wash_commodities" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'wash_commodities')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_cocs" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'cocs')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pops" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'pops')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_none" readonly="true()" type="string" relevant="selected( /chv_supervision/group_stock_check/essential_medicines_lacking , 'none')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_assessment" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'assessment')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_visit/visit , 'assessment')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_household_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'household_visit')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_relates_well_with_the_household" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/household_visit , 'relates_well_with_the_household')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_gives_relevant_health_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/household_visit , 'gives_relevant_health_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_checks_for_key_health_issues" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/household_visit , 'checks_for_key_health_issues')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_confirm_and_update_current_contact_address" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/household_visit , 'confirm_and_update_current_contact_address')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pneumonia" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pneumonia')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pneumonia_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pneumonia')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_probing_for_cough" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'probing_for_cough')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_chest_indrawing" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'chest_indrawing')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_counting_breaths" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'counting_breaths')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_dosage_home_remedy" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'dosage_home_remedy')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pneumonia_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pneumonia_health_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pneumonia , 'health_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_malaria" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'malaria')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_malaria_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'malaria')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_use_of_thermometer" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'use_of_thermometer')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_put_on_gloves" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'put_on_gloves')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_drawing_of_blood" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'drawing_of_blood')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_putting_the_correct_amount_of_blood" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'putting_the_correct_amount_of_blood')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_putting_the_required_amount_of_buffer" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'putting_the_required_amount_of_buffer')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_waiting_for_the_recommended_time" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'waiting_for_the_recommended_time')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_correctly_interpretes_the_results" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'correctly_interpretes_the_results')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_malaria_dosage" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'dosage')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_malaria_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_malaria_health_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/malaria , 'health_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_diarrhea" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'diarrhea')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_diarrhea_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'diarrhea')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_probe_for_diarrhea" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'probe_for_diarrhea')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_check_for_dehydration" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'check_for_dehydration')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_ors_zinc_preparation" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'ors_zinc_preparation')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_diarrhea_dosage" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'dosage')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_diarrhea_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_diarrhea_health_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/diarrhea , 'health_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_nutrition" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'nutrition')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_nutrition_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'nutrition')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_check_for_muac_usage" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'check_for_muac_usage')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_check_for_muac_interpretation" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'check_for_muac_interpretation')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_check_for_oedema" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'check_for_oedema')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_nutrition_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_nutrition_health_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'health_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_growth_monitoring" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'growth_monitoring')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_vitamin_a" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'vitamin_a')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_deworming" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , 'deworming')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_24hr_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/nutrition , '24hr_referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_immunization" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'immunization')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_immunization_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'immunization')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_education_on_importance_of_immunization" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/immunization , 'education_on_importance_of_immunization')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_educated_on_expected_adverse_events_and_action" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/immunization , 'educated_on_expected_adverse_events_and_action')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_defaulter_tracing_or_follow_up" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/immunization , 'defaulter_tracing_or_follow_up')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_checked_the_mch_handbook_against_the_kepi_schedule" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/immunization , 'checked_the_mch_handbook_against_the_kepi_schedule')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pregnancy_home_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pregnancy_home_visit')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pregnancy_home_visit_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'pregnancy_home_visit')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_educate_on_danger_signs_and_risk_factors" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'educate_on_danger_signs_and_risk_factors')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_nutrition_in_pregnancy" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'nutrition_in_pregnancy')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_importance_anc_visits" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'importance_anc_visits')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_birth_plan_education" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'birth_plan_education')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_immunization_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_ask_for_check_the_mch_booklet" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/pregnancy_home_visit , 'ask_for_check_the_mch_booklet')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_newborn_visit" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'newborn_visit')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_newborn_visit_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'newborn_visit')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_ask_or_check_for_newborn_danger_signs" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'ask_or_check_for_newborn_danger_signs')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_maternal_danger_signs" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'maternal_danger_signs')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_newborn_best_care_practices" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'newborn_best_care_practices')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_newborn_visit_referral" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'referral')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_pnc_family_planning" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'family_planning')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_importance_of_exclusive_breastfeeding" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/newborn_visit , 'importance_of_exclusive_breastfeeding')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_family_planning" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'family_planning')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_family_planning_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'family_planning')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_proper_identification_of_eligible_cases" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/family_planning , 'proper_identification_of_eligible_cases')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_used_job_aid_to_educate_modern_fp" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/family_planning , 'used_job_aid_to_educate_modern_fp')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_addressing_myths_and_misconceptions" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/family_planning , 'addressing_myths_and_misconceptions')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_encourage_client_to_retain_or_take_up_fp" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/family_planning , 'encourage_client_to_retain_or_take_up_fp')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_infection_prevention_control" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'infection_prevention_control')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_infection_prevention_control_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'infection_prevention_control')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_washed_hands" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'washed_hands')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_quality_checks" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'quality_checks')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_activated_uniject" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'activated_uniject')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_injecting_subcutaneously" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'injecting_subcutaneously')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_waste_disposal" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'waste_disposal')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_had_all_waste_management_supplies" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'had_all_waste_management_supplies')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_handled_sharps_correctly" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'handled_sharps_correctly')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_disposes_waste_timely" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/infection_prevention_control , 'disposes_waste_timely')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_wash" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'wash')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_wash_score" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/assessment , 'wash')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_use_of_latrines" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/wash , 'use_of_latrines')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_proper_handwashing" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/wash , 'proper_handwashing')"/>
+      <bind nodeset="/chv_supervision/group_summary/r_refusal_disposal" readonly="true()" type="string" relevant="selected( /chv_supervision/group_assessments/wash , 'refusal_disposal')"/>
+      <bind nodeset="/chv_supervision/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/chv_supervision/inputs">
+      <group ref="/chv_supervision/inputs/contact">
+        <input appearance="db-object" ref="/chv_supervision/inputs/contact/_id">
+          <label ref="jr:itext('/chv_supervision/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/chv_supervision/inputs/contact/parent">
+          <group ref="/chv_supervision/inputs/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/chv_supervision/group_visit">
+      <select1 ref="/chv_supervision/group_visit/is_available">
+        <label ref="jr:itext('/chv_supervision/group_visit/is_available:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_visit/is_available/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_visit/is_available/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chv_supervision/group_visit/next_visit_date">
+        <label ref="jr:itext('/chv_supervision/group_visit/next_visit_date:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_visit/visit">
+        <label ref="jr:itext('/chv_supervision/group_visit/visit:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_visit/visit/stock_check:label')"/>
+          <value>stock_check</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_visit/visit/assessment:label')"/>
+          <value>assessment</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/chv_supervision/group_preparation">
+      <label ref="jr:itext('/chv_supervision/group_preparation:label')"/>
+      <input ref="/chv_supervision/group_preparation/n_last_visit_date">
+        <label ref="jr:itext('/chv_supervision/group_preparation/n_last_visit_date:label')"/>
+      </input>
+      <input ref="/chv_supervision/group_preparation/n_last_visit_action_points">
+        <label ref="jr:itext('/chv_supervision/group_preparation/n_last_visit_action_points:label')"/>
+      </input>
+      <select1 ref="/chv_supervision/group_preparation/last_visit_action_points_addressed">
+        <label ref="jr:itext('/chv_supervision/group_preparation/last_visit_action_points_addressed:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/last_visit_action_points_addressed/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/last_visit_action_points_addressed/partial:label')"/>
+          <value>partial</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/last_visit_action_points_addressed/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="multiline" ref="/chv_supervision/group_preparation/last_visit_action_points_addressed_not_reasons">
+        <label ref="jr:itext('/chv_supervision/group_preparation/last_visit_action_points_addressed_not_reasons:label')"/>
+      </input>
+      <select1 ref="/chv_supervision/group_preparation/has_all_tools">
+        <label ref="jr:itext('/chv_supervision/group_preparation/has_all_tools:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/has_all_tools/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/has_all_tools/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/chv_supervision/group_preparation/tools_lacking">
+        <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/uniform_badge:label')"/>
+          <value>uniform_badge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/charged_phone:label')"/>
+          <value>charged_phone</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/thermometer:label')"/>
+          <value>thermometer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/muac_tape:label')"/>
+          <value>muac_tape</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/commodities_bag:label')"/>
+          <value>commodities_bag</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/chv_job_aid:label')"/>
+          <value>chv_job_aid</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_preparation/tools_lacking_other">
+        <label ref="jr:itext('/chv_supervision/group_preparation/tools_lacking_other:label')"/>
+      </input>
+      <select1 ref="/chv_supervision/group_preparation/has_proper_protective_equipment">
+        <label ref="jr:itext('/chv_supervision/group_preparation/has_proper_protective_equipment:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/has_proper_protective_equipment/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/has_proper_protective_equipment/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/chv_supervision/group_preparation/protective_equipment_lacking">
+        <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking/gloves:label')"/>
+          <value>gloves</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking/medical_mask:label')"/>
+          <value>medical_mask</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking/surgical_spirit:label')"/>
+          <value>surgical_spirit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking/cotton_wool:label')"/>
+          <value>cotton_wool</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_preparation/protective_equipment_lacking/soap:label')"/>
+          <value>soap</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/chv_supervision/group_stock_check">
+      <label ref="jr:itext('/chv_supervision/group_stock_check:label')"/>
+      <select1 ref="/chv_supervision/group_stock_check/has_essential_medicines">
+        <label ref="jr:itext('/chv_supervision/group_stock_check/has_essential_medicines:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/has_essential_medicines/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/has_essential_medicines/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/chv_supervision/group_stock_check/essential_medicines_lacking">
+        <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/act:label')"/>
+          <value>act</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/mrdt:label')"/>
+          <value>mrdt</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/paracetamol:label')"/>
+          <value>paracetamol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/zinc_tablets:label')"/>
+          <value>zinc_tablets</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/ors_satchets:label')"/>
+          <value>ors_satchets</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/zinc_ors_combo_packs:label')"/>
+          <value>zinc_ors_combo_packs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/amoxicillin:label')"/>
+          <value>amoxicillin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/chlohexidine:label')"/>
+          <value>chlohexidine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/tetracycline_ointment:label')"/>
+          <value>tetracycline_ointment</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/wash_commodities:label')"/>
+          <value>wash_commodities</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/cocs:label')"/>
+          <value>cocs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/pops:label')"/>
+          <value>pops</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_stock_check/essential_medicines_lacking/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_stock_check/n_remind_to_order_commodities">
+        <label ref="jr:itext('/chv_supervision/group_stock_check/n_remind_to_order_commodities:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/chv_supervision/group_assessments">
+      <label ref="jr:itext('/chv_supervision/group_assessments:label')"/>
+      <select ref="/chv_supervision/group_assessments/assessment">
+        <label ref="jr:itext('/chv_supervision/group_assessments/assessment:label')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/household_visit:label')"/>
+          <value>household_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/pneumonia:label')"/>
+          <value>pneumonia</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/malaria:label')"/>
+          <value>malaria</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/diarrhea:label')"/>
+          <value>diarrhea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/nutrition:label')"/>
+          <value>nutrition</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/immunization:label')"/>
+          <value>immunization</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/pregnancy_home_visit:label')"/>
+          <value>pregnancy_home_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/newborn_visit:label')"/>
+          <value>newborn_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/family_planning:label')"/>
+          <value>family_planning</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/infection_prevention_control:label')"/>
+          <value>infection_prevention_control</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/assessment/wash:label')"/>
+          <value>wash</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_household_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_household_visit:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/household_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/household_visit:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/household_visit:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/household_visit/relates_well_with_the_household:label')"/>
+          <value>relates_well_with_the_household</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/household_visit/gives_relevant_health_education:label')"/>
+          <value>gives_relevant_health_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/household_visit/checks_for_key_health_issues:label')"/>
+          <value>checks_for_key_health_issues</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/household_visit/confirm_and_update_current_contact_address:label')"/>
+          <value>confirm_and_update_current_contact_address</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/household_visit/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_pneumonia">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_pneumonia:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/pneumonia">
+        <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/pneumonia:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/probing_for_cough:label')"/>
+          <value>probing_for_cough</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/chest_indrawing:label')"/>
+          <value>chest_indrawing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/counting_breaths:label')"/>
+          <value>counting_breaths</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/dosage_home_remedy:label')"/>
+          <value>dosage_home_remedy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/health_education:label')"/>
+          <value>health_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pneumonia/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_malaria">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_malaria:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/malaria">
+        <label ref="jr:itext('/chv_supervision/group_assessments/malaria:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/malaria:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/use_of_thermometer:label')"/>
+          <value>use_of_thermometer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/put_on_gloves:label')"/>
+          <value>put_on_gloves</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/drawing_of_blood:label')"/>
+          <value>drawing_of_blood</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/putting_the_correct_amount_of_blood:label')"/>
+          <value>putting_the_correct_amount_of_blood</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/putting_the_required_amount_of_buffer:label')"/>
+          <value>putting_the_required_amount_of_buffer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/waiting_for_the_recommended_time:label')"/>
+          <value>waiting_for_the_recommended_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/correctly_interpretes_the_results:label')"/>
+          <value>correctly_interpretes_the_results</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/dosage:label')"/>
+          <value>dosage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/health_education:label')"/>
+          <value>health_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/malaria/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_diarrhea">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_diarrhea:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/diarrhea">
+        <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/diarrhea:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/probe_for_diarrhea:label')"/>
+          <value>probe_for_diarrhea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/check_for_dehydration:label')"/>
+          <value>check_for_dehydration</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/ors_zinc_preparation:label')"/>
+          <value>ors_zinc_preparation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/dosage:label')"/>
+          <value>dosage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/health_education:label')"/>
+          <value>health_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/diarrhea/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_nutrition">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_nutrition:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/nutrition">
+        <label ref="jr:itext('/chv_supervision/group_assessments/nutrition:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/nutrition:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/check_for_muac_usage:label')"/>
+          <value>check_for_muac_usage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/check_for_muac_interpretation:label')"/>
+          <value>check_for_muac_interpretation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/check_for_oedema:label')"/>
+          <value>check_for_oedema</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/health_education:label')"/>
+          <value>health_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/growth_monitoring:label')"/>
+          <value>growth_monitoring</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/vitamin_a:label')"/>
+          <value>vitamin_a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/deworming:label')"/>
+          <value>deworming</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/24hr_referral:label')"/>
+          <value>24hr_referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/nutrition/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_immunization">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_immunization:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/immunization">
+        <label ref="jr:itext('/chv_supervision/group_assessments/immunization:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/immunization:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/immunization/education_on_importance_of_immunization:label')"/>
+          <value>education_on_importance_of_immunization</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/immunization/educated_on_expected_adverse_events_and_action:label')"/>
+          <value>educated_on_expected_adverse_events_and_action</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/immunization/defaulter_tracing_or_follow_up:label')"/>
+          <value>defaulter_tracing_or_follow_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/immunization/checked_the_mch_handbook_against_the_kepi_schedule:label')"/>
+          <value>checked_the_mch_handbook_against_the_kepi_schedule</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/immunization/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_pregnancy_home_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_pregnancy_home_visit:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/pregnancy_home_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/educate_on_danger_signs_and_risk_factors:label')"/>
+          <value>educate_on_danger_signs_and_risk_factors</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/nutrition_in_pregnancy:label')"/>
+          <value>nutrition_in_pregnancy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/importance_anc_visits:label')"/>
+          <value>importance_anc_visits</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/birth_plan_education:label')"/>
+          <value>birth_plan_education</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/ask_for_check_the_mch_booklet:label')"/>
+          <value>ask_for_check_the_mch_booklet</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/pregnancy_home_visit/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_newborn_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_newborn_visit:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/newborn_visit">
+        <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/newborn_visit:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/ask_or_check_for_newborn_danger_signs:label')"/>
+          <value>ask_or_check_for_newborn_danger_signs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/maternal_danger_signs:label')"/>
+          <value>maternal_danger_signs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/newborn_best_care_practices:label')"/>
+          <value>newborn_best_care_practices</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/referral:label')"/>
+          <value>referral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/family_planning:label')"/>
+          <value>family_planning</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/importance_of_exclusive_breastfeeding:label')"/>
+          <value>importance_of_exclusive_breastfeeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/newborn_visit/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_family_planning">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_family_planning:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/family_planning">
+        <label ref="jr:itext('/chv_supervision/group_assessments/family_planning:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/family_planning:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/family_planning/proper_identification_of_eligible_cases:label')"/>
+          <value>proper_identification_of_eligible_cases</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/family_planning/used_job_aid_to_educate_modern_fp:label')"/>
+          <value>used_job_aid_to_educate_modern_fp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/family_planning/addressing_myths_and_misconceptions:label')"/>
+          <value>addressing_myths_and_misconceptions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/family_planning/encourage_client_to_retain_or_take_up_fp:label')"/>
+          <value>encourage_client_to_retain_or_take_up_fp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/family_planning/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_infection_prevention_control">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_infection_prevention_control:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/infection_prevention_control">
+        <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/washed_hands:label')"/>
+          <value>washed_hands</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/quality_checks:label')"/>
+          <value>quality_checks</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/activated_uniject:label')"/>
+          <value>activated_uniject</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/injecting_subcutaneously:label')"/>
+          <value>injecting_subcutaneously</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/waste_disposal:label')"/>
+          <value>waste_disposal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/had_all_waste_management_supplies:label')"/>
+          <value>had_all_waste_management_supplies</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/handled_sharps_correctly:label')"/>
+          <value>handled_sharps_correctly</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/disposes_waste_timely:label')"/>
+          <value>disposes_waste_timely</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/infection_prevention_control/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/chv_supervision/group_assessments/n_wash">
+        <label ref="jr:itext('/chv_supervision/group_assessments/n_wash:label')"/>
+      </input>
+      <select ref="/chv_supervision/group_assessments/wash">
+        <label ref="jr:itext('/chv_supervision/group_assessments/wash:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_assessments/wash:hint')"/>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/wash/use_of_latrines:label')"/>
+          <value>use_of_latrines</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/wash/proper_handwashing:label')"/>
+          <value>proper_handwashing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/wash/refusal_disposal:label')"/>
+          <value>refusal_disposal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/chv_supervision/group_assessments/wash/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+    </group>
+    <group ref="/chv_supervision/group_action_points">
+      <label ref="jr:itext('/chv_supervision/group_action_points:label')"/>
+      <input appearance="multiline" ref="/chv_supervision/group_action_points/next_steps">
+        <label ref="jr:itext('/chv_supervision/group_action_points/next_steps:label')"/>
+        <hint ref="jr:itext('/chv_supervision/group_action_points/next_steps:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/chv_supervision/group_summary">
+      <label ref="jr:itext('/chv_supervision/group_summary:label')"/>
+      <input ref="/chv_supervision/group_summary/r_submit_note">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_submit_note:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/chv_supervision/group_summary/r_summary_details">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_summary_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/chv_supervision/group_summary/r_summary">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_summary:label')"/>
+      </input>
+      <input appearance="multiline" ref="/chv_supervision/group_summary/r_overall_observations">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_overall_observations:label')"/>
+      </input>
+      <input appearance="h1 lime" ref="/chv_supervision/group_summary/r_findings">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_findings:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_available">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_available:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_next_visit">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_next_visit:label')"/>
+      </input>
+      <input appearance="h3 lime center underline" ref="/chv_supervision/group_summary/r_preparation">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_preparation:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_last_visit_action_points_addressed">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_last_visit_action_points_addressed:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_has_all_tools">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_has_all_tools:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_has_proper_protective_equipment">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_has_proper_protective_equipment:label')"/>
+      </input>
+      <input appearance="h3 lime center underline" ref="/chv_supervision/group_summary/r_stock_check">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_stock_check:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_act">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_act:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_mrdt">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_mrdt:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_paracetamol">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_paracetamol:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_zinc_tablets">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_zinc_tablets:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_ors_satchets">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_ors_satchets:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_zinc_ors_combo_packs">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_zinc_ors_combo_packs:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_amoxicillin">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_amoxicillin:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_chlohexidine">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_chlohexidine:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_tetracycline_ointment">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_tetracycline_ointment:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_wash_commodities">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_wash_commodities:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_cocs">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_cocs:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pops">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pops:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_none">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_none:label')"/>
+      </input>
+      <input appearance="h3 lime center underline" ref="/chv_supervision/group_summary/r_assessment">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_assessment:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_score:label')"/>
+      </input>
+      <input appearance="h3 green center underline" ref="/chv_supervision/group_summary/r_household_visit">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_household_visit:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_relates_well_with_the_household">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_relates_well_with_the_household:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_gives_relevant_health_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_gives_relevant_health_education:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_checks_for_key_health_issues">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_checks_for_key_health_issues:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_confirm_and_update_current_contact_address">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_confirm_and_update_current_contact_address:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_pneumonia">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pneumonia:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pneumonia_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pneumonia_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_probing_for_cough">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_probing_for_cough:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_chest_indrawing">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_chest_indrawing:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_counting_breaths">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_counting_breaths:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_dosage_home_remedy">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_dosage_home_remedy:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pneumonia_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pneumonia_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pneumonia_health_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pneumonia_health_education:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_malaria">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_malaria:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_malaria_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_malaria_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_use_of_thermometer">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_use_of_thermometer:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_put_on_gloves">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_put_on_gloves:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_drawing_of_blood">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_drawing_of_blood:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_putting_the_correct_amount_of_blood">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_putting_the_correct_amount_of_blood:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_putting_the_required_amount_of_buffer">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_putting_the_required_amount_of_buffer:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_waiting_for_the_recommended_time">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_waiting_for_the_recommended_time:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_correctly_interpretes_the_results">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_correctly_interpretes_the_results:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_malaria_dosage">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_malaria_dosage:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_malaria_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_malaria_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_malaria_health_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_malaria_health_education:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_diarrhea">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_diarrhea:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_diarrhea_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_diarrhea_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_probe_for_diarrhea">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_probe_for_diarrhea:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_check_for_dehydration">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_check_for_dehydration:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_ors_zinc_preparation">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_ors_zinc_preparation:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_diarrhea_dosage">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_diarrhea_dosage:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_diarrhea_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_diarrhea_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_diarrhea_health_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_diarrhea_health_education:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_nutrition">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_nutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_nutrition_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_nutrition_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_check_for_muac_usage">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_check_for_muac_usage:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_check_for_muac_interpretation">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_check_for_muac_interpretation:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_check_for_oedema">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_check_for_oedema:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_nutrition_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_nutrition_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_nutrition_health_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_nutrition_health_education:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_growth_monitoring">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_growth_monitoring:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_vitamin_a">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_vitamin_a:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_deworming">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_deworming:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_24hr_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_24hr_referral:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_immunization">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_immunization:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_immunization_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_immunization_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_education_on_importance_of_immunization">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_education_on_importance_of_immunization:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_educated_on_expected_adverse_events_and_action">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_educated_on_expected_adverse_events_and_action:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_defaulter_tracing_or_follow_up">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_defaulter_tracing_or_follow_up:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_checked_the_mch_handbook_against_the_kepi_schedule">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_checked_the_mch_handbook_against_the_kepi_schedule:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_pregnancy_home_visit">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pregnancy_home_visit:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pregnancy_home_visit_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pregnancy_home_visit_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_educate_on_danger_signs_and_risk_factors">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_educate_on_danger_signs_and_risk_factors:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_nutrition_in_pregnancy">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_nutrition_in_pregnancy:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_importance_anc_visits">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_importance_anc_visits:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_birth_plan_education">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_birth_plan_education:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_immunization_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_immunization_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_ask_for_check_the_mch_booklet">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_ask_for_check_the_mch_booklet:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_newborn_visit">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_newborn_visit:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_newborn_visit_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_newborn_visit_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_ask_or_check_for_newborn_danger_signs">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_ask_or_check_for_newborn_danger_signs:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_maternal_danger_signs">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_maternal_danger_signs:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_newborn_best_care_practices">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_newborn_best_care_practices:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_newborn_visit_referral">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_newborn_visit_referral:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_pnc_family_planning">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_pnc_family_planning:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_importance_of_exclusive_breastfeeding">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_importance_of_exclusive_breastfeeding:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_family_planning">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_family_planning:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_family_planning_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_family_planning_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_proper_identification_of_eligible_cases">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_proper_identification_of_eligible_cases:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_used_job_aid_to_educate_modern_fp">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_used_job_aid_to_educate_modern_fp:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_addressing_myths_and_misconceptions">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_addressing_myths_and_misconceptions:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_encourage_client_to_retain_or_take_up_fp">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_encourage_client_to_retain_or_take_up_fp:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_infection_prevention_control">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_infection_prevention_control:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_infection_prevention_control_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_infection_prevention_control_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_washed_hands">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_washed_hands:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_quality_checks">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_quality_checks:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_activated_uniject">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_activated_uniject:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_injecting_subcutaneously">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_injecting_subcutaneously:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_waste_disposal">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_waste_disposal:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_had_all_waste_management_supplies">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_had_all_waste_management_supplies:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_handled_sharps_correctly">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_handled_sharps_correctly:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_disposes_waste_timely">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_disposes_waste_timely:label')"/>
+      </input>
+      <input appearance="h3 red center underline" ref="/chv_supervision/group_summary/r_wash">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_wash:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_wash_score">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_wash_score:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_use_of_latrines">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_use_of_latrines:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_proper_handwashing">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_proper_handwashing:label')"/>
+      </input>
+      <input appearance="li" ref="/chv_supervision/group_summary/r_refusal_disposal">
+        <label ref="jr:itext('/chv_supervision/group_summary/r_refusal_disposal:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "*****Running unit tests******"
+git stash -q --keep-index
+npm test
+
+status=$?
+
+git stash pop -q
+exit $status

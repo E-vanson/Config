@@ -1,0 +1,9 @@
+{
+  "title": "CEBS Signal Report",
+  "icon": "icon-signal-reporting",
+  "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact.contact_type === 'd_community_health_volunteer_area' && user.parent && user.parent.contact_type === 'd_community_health_volunteer_area'"
+  }
+}

@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Pregnancy Home Visit</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pregnancy_home_visit/anc_visits/next_anc_visit_date:jr:constraintMsg">
+            <value>Date must be in the future and less than edd</value>
+          </text>
+          <text id="/pregnancy_home_visit/anc_visits/updated_edd:jr:constraintMsg">
+            <value>Date must be 10 months within the future</value>
+          </text>
+          <text id="/pregnancy_home_visit/danger_signs_evaluation/danger_signs:jr:constraintMsg">
+            <value>Cannot select other choices together with none!</value>
+          </text>
+          <text id="/pregnancy_home_visit/maternal_mental_health/mental_danger_signs:jr:constraintMsg">
+            <value>Cannot select other choices together with none!</value>
+          </text>
+          <text id="/pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs:jr:constraintMsg">
+            <value>Cannot select other choices together with none!</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pregnancy_home_visit id="pregnancy_home_visit" prefix="J1!pregnancy_home_visit!" delimiter="#" version="2023-08-09 05:29:36">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_pregnancy_uuid/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth>0</date_of_birth>
+              <upi/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <pregnancy_id/>
+          <was_available/>
+          <currently_pregnant/>
+          <current_edd/>
+          <marked_as_pregnant/>
+          <calc_has_danger_signs/>
+          <has_danger_signs/>
+          <calc_has_mental_danger_signs/>
+          <has_mental_danger_signs/>
+          <calc_is_pregnancy_referral/>
+          <is_pregnancy_referral/>
+          <calc_is_referral_case/>
+          <is_referral_case/>
+          <has_been_referred/>
+          <is_perinatal_death/>
+          <is_upcoming_pregnancy_home_visit/>
+          <is_anc_defaulter/>
+          <started_anc/>
+          <visited_contact_uuid/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <follow_up_date/>
+          <pregnancy_screening>
+            <is_available/>
+            <n_unavailable/>
+            <is_still_pregnant/>
+            <has_lost_pregnancy_within_last_month_subsequent_visit/>
+            <delivery_registration_note/>
+            <is_pregnant/>
+            <is_on_family_planning/>
+            <n_congratulate_on_fp/>
+            <n_register_for_fp/>
+            <has_lost_pregnancy_within_last_month_initial_visit/>
+            <has_lost_pregnancy_within_last_month/>
+            <has_received_post_abortal_care/>
+            <n_refer_post_abortal_care/>
+            <n_notify_cha/>
+            <period_of_pregnancy/>
+            <known_lmp/>
+            <n_family_planning_education/>
+            <pregnancy_test_result/>
+            <n_pregnancy_education_and_referral/>
+            <n_educate_and_refer_on_fp/>
+            <n_refer_test_not_done/>
+          </pregnancy_screening>
+          <calc_pregnancy_test_positive/>
+          <calc_pregnancy_test_not_done/>
+          <pregnancy_evaluation/>
+          <anc_visits>
+            <has_started_anc/>
+            <n_anc_education_1/>
+            <anc_upto_date/>
+            <n_anc_education_2/>
+            <updated_edd/>
+            <next_anc_visit_date/>
+          </anc_visits>
+          <danger_signs_evaluation>
+            <danger_signs/>
+            <other_danger_sign/>
+            <n_refer_danger_signs/>
+          </danger_signs_evaluation>
+          <nutrition_evaluation>
+            <n_nutritional_education_and_referral/>
+            <muac_color/>
+            <n_yellow_red_muac/>
+            <n_green_muac/>
+            <n_muac_not_taken/>
+            <n_refer_muac/>
+          </nutrition_evaluation>
+          <individual_birth_plan>
+            <n_ibp_education/>
+          </individual_birth_plan>
+          <iron_supplements>
+            <takes_iron_or_folate_supplements/>
+            <n_iron_folate_education/>
+            <n_iron_folate_congratulations/>
+          </iron_supplements>
+          <hiv_and_aids>
+            <n_hiv_and_aids_education/>
+          </hiv_and_aids>
+          <maternal_mental_health>
+            <mental_danger_signs/>
+            <other_mental_danger_sign/>
+            <observed_mental_danger_signs/>
+            <other_observed_mental_danger_signs/>
+            <n_danger_signs_referral/>
+          </maternal_mental_health>
+          <insurance>
+            <has_upto_date_insurance/>
+            <n_encourage_to_get_cover/>
+            <insurance_cover/>
+            <n_congratulate_on_insurance/>
+            <specify_other/>
+          </insurance>
+          <group_review>
+            <edd_display/>
+            <next_anc_date_display/>
+            <summary_header/>
+            <insurance_status_display/>
+            <summary_header_display/>
+            <n_submit/>
+            <n_household_member_details_title/>
+            <n_household_member_details/>
+            <r_insurance_status/>
+            <n_not_pregnant/>
+            <n_delivered/>
+            <n_mother_died/>
+            <n_miscarriage/>
+            <n_edd/>
+            <n_next_anc_visit_date/>
+            <n_service_findings/>
+            <n_on_fp/>
+            <n_lmp_less_than_30_days_ago/>
+            <n_negative_pregnancy_test/>
+            <n_appreciate_mother/>
+            <n_unavailable_for_follow_up/>
+            <n_refer_pac/>
+            <n_refer_title/>
+            <n_refer/>
+            <n_vaginal_bleeding/>
+            <n_fits/>
+            <n_severe_abdominal_pain/>
+            <n_severe_headache/>
+            <n_very_pale/>
+            <n_reduced_or_no_fetal_movement/>
+            <n_fever/>
+            <n_breaking_of_water/>
+            <n_getting_tired_easily/>
+            <n_swelling_of_the_face_and_hands/>
+            <n_breathlessness/>
+            <n_other/>
+            <n_mental_signs/>
+            <n_lack_sleep/>
+            <n_worthlessness/>
+            <n_stay_away_from_people/>
+            <n_tearfulness/>
+            <n_lack_hygiene/>
+            <n_anxiety/>
+            <n_irritability/>
+            <n_refer_pregnancy_confirmation/>
+            <n_refer_anc/>
+            <follow_up_title/>
+            <n_followup_task/>
+            <n_danger_sign_follow_up/>
+            <n_referral_followup_task/>
+            <n_follow_up_mental_signs/>
+            <n_follow_up_pregnancy_confirmation/>
+            <n_follow_up_anc_visit/>
+            <n_no_followup_tasks/>
+            <n_unavailable_followup_task/>
+            <r_submit_instruction/>
+            <r_submit_sync/>
+          </group_review>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_danger_signs/>
+              <_mental_danger_signs/>
+              <_observed_mental_danger_signs/>
+            </_screening>
+            <_supporting_info>
+              <_muac_color/>
+              <_other_danger_sign/>
+              <_other_mental_danger_sign/>
+              <_other_observed_mental_danger_signs/>
+              <_has_lost_pregnancy_within_last_month/>
+              <_takes_iron_or_folate_supplements/>
+              <_is_still_pregnant/>
+              <_has_started_anc/>
+              <_anc_upto_date/>
+              <_has_lost_pregnancy_within_last_month_subsequent_visit/>
+              <_pregnancy_test_result/>
+              <_is_pregnant/>
+              <_is_on_family_planning/>
+              <_period_of_pregnancy/>
+              <_known_lmp/>
+              <_next_anc_visit_date/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy_home_visit>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pregnancy_home_visit/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/source" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/source_id" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/t_pregnancy_uuid" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/upi" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/pregnancy_home_visit/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/pregnancy_home_visit/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /pregnancy_home_visit/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/pregnancy_home_visit/patient_age_in_months" type="string" calculate="if( /pregnancy_home_visit/inputs/contact/date_of_birth  = '', '', difference-in-months( /pregnancy_home_visit/inputs/contact/date_of_birth , today()))"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_id" type="string" calculate="instance('contact-summary')/context/pregnancy_id"/>
+      <bind nodeset="/pregnancy_home_visit/was_available" type="string" calculate="if( /pregnancy_home_visit/pregnancy_screening/is_available  = 'no', 'no', 'yes')"/>
+      <bind nodeset="/pregnancy_home_visit/currently_pregnant" type="string" calculate="instance('contact-summary')/context/is_pregnant"/>
+      <bind nodeset="/pregnancy_home_visit/current_edd" type="string" calculate="if( /pregnancy_home_visit/anc_visits/updated_edd  != '',  /pregnancy_home_visit/anc_visits/updated_edd , instance('contact-summary')/context/edd)"/>
+      <bind nodeset="/pregnancy_home_visit/marked_as_pregnant" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='yes' or  /pregnancy_home_visit/calc_pregnancy_test_positive ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/calc_has_danger_signs" type="string" calculate="( /pregnancy_home_visit/pregnancy_evaluation ='true' and count-selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs ) &gt; 0 and not(selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'none'))) or selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'red') or selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'yellow')"/>
+      <bind nodeset="/pregnancy_home_visit/has_danger_signs" type="string" calculate="if( /pregnancy_home_visit/calc_has_danger_signs ='true', 'yes', 'no' )"/>
+      <bind nodeset="/pregnancy_home_visit/calc_has_mental_danger_signs" type="string" calculate=" /pregnancy_home_visit/pregnancy_evaluation ='true' and (count-selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs ) &gt; 0 and not(selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'none'))) or (count-selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs ) &gt; 0 and not(selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'none')))"/>
+      <bind nodeset="/pregnancy_home_visit/has_mental_danger_signs" type="string" calculate="if( /pregnancy_home_visit/calc_has_mental_danger_signs ='true', 'yes', 'no' )"/>
+      <bind nodeset="/pregnancy_home_visit/calc_is_pregnancy_referral" type="string" calculate="( /pregnancy_home_visit/pregnancy_screening/is_pregnant !='yes' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='positive') or ( /pregnancy_home_visit/pregnancy_evaluation ='true' and ( /pregnancy_home_visit/anc_visits/has_started_anc = 'no' or  /pregnancy_home_visit/anc_visits/anc_upto_date ='no'))"/>
+      <bind nodeset="/pregnancy_home_visit/is_pregnancy_referral" type="string" calculate="if( /pregnancy_home_visit/calc_is_pregnancy_referral ='true', 'yes', 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/calc_is_referral_case" type="string" calculate=" /pregnancy_home_visit/has_danger_signs ='yes' or  /pregnancy_home_visit/has_mental_danger_signs ='yes' or  /pregnancy_home_visit/is_pregnancy_referral ='yes' or  /pregnancy_home_visit/calc_pregnancy_test_not_done ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/is_referral_case" type="string" calculate="if( /pregnancy_home_visit/calc_is_referral_case ='true', 'yes', 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/has_been_referred" type="string" calculate="if( /pregnancy_home_visit/is_referral_case  = 'yes', 'yes', 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/is_perinatal_death" type="string" calculate="if( /pregnancy_home_visit/pregnancy_screening/period_of_pregnancy  = '7_months_or_more', 'yes', 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/is_upcoming_pregnancy_home_visit" type="string" calculate="if( /pregnancy_home_visit/calc_pregnancy_test_positive ='true' or  /pregnancy_home_visit/calc_pregnancy_test_not_done ='true' or ( /pregnancy_home_visit/pregnancy_evaluation ='true' and  /pregnancy_home_visit/anc_visits/has_started_anc  != ''), 'yes', 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/is_anc_defaulter" type="string" calculate=" /pregnancy_home_visit/anc_visits/anc_upto_date  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/started_anc" type="string" calculate="instance('contact-summary')/context/started_anc"/>
+      <bind nodeset="/pregnancy_home_visit/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/pregnancy_home_visit/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/pregnancy_home_visit/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/pregnancy_home_visit/follow_up_date" type="string" calculate="if( /pregnancy_home_visit/has_been_referred ='yes', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/is_available" type="select1" required="true()" relevant=" /pregnancy_home_visit/currently_pregnant  = 'true' and ../../inputs/source = 'task'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_unavailable" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/pregnancy_screening/is_available , 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/is_still_pregnant" type="select1" required="true()" relevant=" /pregnancy_home_visit/currently_pregnant  = 'true' and not(selected( /pregnancy_home_visit/pregnancy_screening/is_available ,'no'))"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_subsequent_visit" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/delivery_registration_note" readonly="true()" type="string" relevant=" /pregnancy_home_visit/currently_pregnant  = 'true' and not(selected( /pregnancy_home_visit/pregnancy_screening/is_available ,'no')) and  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month ='no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/is_pregnant" type="select1" required="true()" relevant=" /pregnancy_home_visit/currently_pregnant  != 'true'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/is_on_family_planning" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='no' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_congratulate_on_fp" readonly="true()" type="string" relevant="( /pregnancy_home_visit/pregnancy_screening/is_pregnant ='no' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no') and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_register_for_fp" readonly="true()" type="string" relevant="( /pregnancy_home_visit/pregnancy_screening/is_pregnant ='no' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no') and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no'" calculate="if( /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='yes' or  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_subsequent_visit  ='yes', 'yes',if( /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit  = 'no' or  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_subsequent_visit  = 'no', 'no',''))"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/has_received_post_abortal_care" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_refer_post_abortal_care" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month ='yes' and  /pregnancy_home_visit/pregnancy_screening/has_received_post_abortal_care ='no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_notify_cha" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month ='yes' and  /pregnancy_home_visit/pregnancy_screening/has_received_post_abortal_care ='no'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/period_of_pregnancy" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/known_lmp" type="select1" required="true()" relevant="( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_family_planning_education" readonly="true()" type="string" relevant="(( /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='less_than_30_days_ago'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/pregnancy_test_result" type="select1" required="true()" relevant="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='more_than_30_days_ago'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_pregnancy_education_and_referral" readonly="true()" type="string" relevant=" /pregnancy_home_visit/calc_pregnancy_test_positive ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_educate_and_refer_on_fp" readonly="true()" type="string" relevant="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='more_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='negative'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_screening/n_refer_test_not_done" readonly="true()" type="string" relevant=" /pregnancy_home_visit/calc_pregnancy_test_not_done ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/calc_pregnancy_test_positive" type="string" calculate="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='more_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='positive'"/>
+      <bind nodeset="/pregnancy_home_visit/calc_pregnancy_test_not_done" type="string" calculate="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='more_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='not_done'"/>
+      <bind nodeset="/pregnancy_home_visit/pregnancy_evaluation" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes' or ((( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp ='more_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='positive')"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits" relevant=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/has_started_anc" type="select1" required="true()" relevant=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='yes' or  /pregnancy_home_visit/started_anc ='false'"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/n_anc_education_1" readonly="true()" type="string" relevant=" /pregnancy_home_visit/anc_visits/has_started_anc ='no'"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/anc_upto_date" type="select1" required="true()" relevant=" /pregnancy_home_visit/anc_visits/has_started_anc ='yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/n_anc_education_2" readonly="true()" type="string" relevant=" /pregnancy_home_visit/anc_visits/anc_upto_date ='no'"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/updated_edd" type="date" required="true()" jr:constraintMsg="jr:itext('/pregnancy_home_visit/anc_visits/updated_edd:jr:constraintMsg')" relevant=" /pregnancy_home_visit/anc_visits/anc_upto_date ='yes' and coalesce( /pregnancy_home_visit/anc_visits/has_started_anc , 'yes')='yes'" constraint="decimal-date-time(.) &gt;= decimal-date-time(today()) and difference-in-months(today(), .) &lt;= 10"/>
+      <bind nodeset="/pregnancy_home_visit/anc_visits/next_anc_visit_date" type="date" relevant=" /pregnancy_home_visit/anc_visits/anc_upto_date ='yes' and coalesce( /pregnancy_home_visit/anc_visits/has_started_anc , 'yes')='yes'" jr:constraintMsg="jr:itext('/pregnancy_home_visit/anc_visits/next_anc_visit_date:jr:constraintMsg')" constraint="decimal-date-time(.) &gt;= decimal-date-time(today()) and decimal-date-time(.) &lt;= decimal-date-time( /pregnancy_home_visit/current_edd )"/>
+      <bind nodeset="/pregnancy_home_visit/danger_signs_evaluation" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/danger_signs_evaluation/danger_signs" type="select" required="true()" jr:constraintMsg="jr:itext('/pregnancy_home_visit/danger_signs_evaluation/danger_signs:jr:constraintMsg')" constraint="not(count-selected(.) &gt; 1 and selected(., 'none'))"/>
+      <bind nodeset="/pregnancy_home_visit/danger_signs_evaluation/other_danger_sign" type="string" required="true()" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'other')"/>
+      <bind nodeset="/pregnancy_home_visit/danger_signs_evaluation/n_refer_danger_signs" readonly="true()" type="string" relevant=" /pregnancy_home_visit/has_danger_signs  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/n_nutritional_education_and_referral" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/muac_color" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/n_yellow_red_muac" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'yellow') or selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'red')"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/n_green_muac" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'green')"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/n_muac_not_taken" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'not_taken')"/>
+      <bind nodeset="/pregnancy_home_visit/nutrition_evaluation/n_refer_muac" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'yellow') or selected( /pregnancy_home_visit/nutrition_evaluation/muac_color , 'red')"/>
+      <bind nodeset="/pregnancy_home_visit/individual_birth_plan" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/individual_birth_plan/n_ibp_education" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/iron_supplements" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/iron_supplements/takes_iron_or_folate_supplements" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_home_visit/iron_supplements/n_iron_folate_education" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/iron_supplements/takes_iron_or_folate_supplements , 'no')"/>
+      <bind nodeset="/pregnancy_home_visit/iron_supplements/n_iron_folate_congratulations" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/iron_supplements/takes_iron_or_folate_supplements , 'yes')"/>
+      <bind nodeset="/pregnancy_home_visit/hiv_and_aids" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/hiv_and_aids/n_hiv_and_aids_education" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health" relevant=" /pregnancy_home_visit/pregnancy_evaluation ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health/mental_danger_signs" type="select" required="true()" jr:constraintMsg="jr:itext('/pregnancy_home_visit/maternal_mental_health/mental_danger_signs:jr:constraintMsg')" constraint="not(count-selected(.) &gt; 1 and selected(., 'none'))"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health/other_mental_danger_sign" type="string" required="true()" relevant="selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'other')"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs" type="select" required="true()" jr:constraintMsg="jr:itext('/pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs:jr:constraintMsg')" constraint="not(count-selected(.) &gt; 1 and selected(., 'none'))"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health/other_observed_mental_danger_signs" type="string" required="true()" relevant="selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'other')"/>
+      <bind nodeset="/pregnancy_home_visit/maternal_mental_health/n_danger_signs_referral" readonly="true()" type="string" relevant="(count-selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs ) &gt; 0 and not(selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'none'))) or count-selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs ) &gt; 0 and not(selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'none'))"/>
+      <bind nodeset="/pregnancy_home_visit/insurance" relevant=" /pregnancy_home_visit/pregnancy_screening/is_available ='yes' or  /pregnancy_home_visit/pregnancy_screening/is_pregnant !='' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant !=''"/>
+      <bind nodeset="/pregnancy_home_visit/insurance/has_upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/pregnancy_home_visit/insurance/n_encourage_to_get_cover" readonly="true()" type="string" relevant=" /pregnancy_home_visit/insurance/has_upto_date_insurance  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/insurance/insurance_cover" type="select" required="true()" relevant=" /pregnancy_home_visit/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/insurance/n_congratulate_on_insurance" readonly="true()" type="string" relevant=" /pregnancy_home_visit/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/insurance/specify_other" type="string" required="true()" relevant="selected( /pregnancy_home_visit/insurance/insurance_cover ,'other')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/edd_display" type="string" calculate="format-date( /pregnancy_home_visit/current_edd ,'%b %e, %Y')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/next_anc_date_display" type="string" calculate="format-date( /pregnancy_home_visit/anc_visits/next_anc_visit_date ,'%b %e, %Y')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/summary_header" type="string" calculate="if( /pregnancy_home_visit/is_referral_case  = 'yes', 'PREGNANCY REFERRAL NOTE', 'PREGNANCY RESULTS PAGE')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/insurance_status_display" type="string" calculate="if( /pregnancy_home_visit/insurance/has_upto_date_insurance  = 'yes', 'Insurance upto date', 'Insurance not upto date')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/summary_header_display" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_household_member_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_household_member_details" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/r_insurance_status" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_not_pregnant" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_pregnant ='no' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_delivered" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_mother_died" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_miscarriage" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_edd" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_next_anc_visit_date" readonly="true()" type="string" relevant=" /pregnancy_home_visit/is_referral_case  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_service_findings" readonly="true()" type="string" relevant=" /pregnancy_home_visit/anc_visits/anc_upto_date  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result  = 'negative' or ( /pregnancy_home_visit/pregnancy_screening/known_lmp  = 'less_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') or  /pregnancy_home_visit/pregnancy_screening/is_available  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_on_fp" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning  ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_lmp_less_than_30_days_ago" readonly="true()" type="string" relevant="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp  = 'less_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_negative_pregnancy_test" readonly="true()" type="string" relevant="(( /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'no' and  /pregnancy_home_visit/pregnancy_screening/is_on_family_planning ='no' and  /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit ='no') or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'unknown') and  /pregnancy_home_visit/pregnancy_screening/known_lmp  = 'more_than_30_days_ago' and  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='negative'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_appreciate_mother" readonly="true()" type="string" relevant="( /pregnancy_home_visit/pregnancy_screening/is_pregnant ='yes' or  /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result ='positive') and  /pregnancy_home_visit/anc_visits/anc_upto_date ='yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_unavailable_for_follow_up" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_available  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_refer_pac" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_refer_title" readonly="true()" type="string" relevant=" /pregnancy_home_visit/is_referral_case  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_refer" readonly="true()" type="string" relevant=" /pregnancy_home_visit/has_danger_signs  = 'yes' or  /pregnancy_home_visit/has_mental_danger_signs  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_vaginal_bleeding" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'vaginal_bleeding')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_fits" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'fits')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_severe_abdominal_pain" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'severe_abdominal_pain')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_severe_headache" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'severe_headache')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_very_pale" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'very_pale')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_reduced_or_no_fetal_movement" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'reduced_or_no_fetal_movement')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_fever" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'fever')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_breaking_of_water" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'breaking_of_water')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_getting_tired_easily" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'getting_tired_easily')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_swelling_of_the_face_and_hands" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'swelling_of_the_face_and_hands')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_breathlessness" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'breathlessness')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_other" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/danger_signs_evaluation/danger_signs , 'other')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_mental_signs" readonly="true()" type="string" relevant=" /pregnancy_home_visit/has_mental_danger_signs  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_lack_sleep" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'lack_of_sleep')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_worthlessness" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'feeling_of_worthlessness')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_stay_away_from_people" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'staying_away_from_people')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_tearfulness" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/mental_danger_signs , 'tearfulness')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_lack_hygiene" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'lack_of_hygiene')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_anxiety" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'anxiety')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_irritability" readonly="true()" type="string" relevant="selected( /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs , 'irritability')"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_refer_pregnancy_confirmation" readonly="true()" type="string" relevant=" /pregnancy_home_visit/calc_pregnancy_test_not_done ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_refer_anc" readonly="true()" type="string" relevant=" /pregnancy_home_visit/is_pregnancy_referral  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/follow_up_title" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/is_pregnant  = 'yes' or  /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result  = 'positive' or  /pregnancy_home_visit/is_referral_case  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_followup_task" readonly="true()" type="string" relevant=" /pregnancy_home_visit/anc_visits/next_anc_visit_date  != ''"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_danger_sign_follow_up" readonly="true()" type="string" relevant=" /pregnancy_home_visit/has_danger_signs  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_referral_followup_task" readonly="true()" type="string" relevant=" /pregnancy_home_visit/is_pregnancy_referral  = 'yes' or  /pregnancy_home_visit/has_mental_danger_signs  = 'yes' or  /pregnancy_home_visit/calc_pregnancy_test_not_done ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_follow_up_mental_signs" readonly="true()" type="string" relevant=" /pregnancy_home_visit/has_mental_danger_signs  = 'yes'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_follow_up_pregnancy_confirmation" readonly="true()" type="string" relevant=" /pregnancy_home_visit/calc_pregnancy_test_not_done ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_follow_up_anc_visit" readonly="true()" type="string" relevant=" /pregnancy_home_visit/anc_visits/anc_upto_date  = 'no' or  /pregnancy_home_visit/anc_visits/has_started_anc  = 'no' or  /pregnancy_home_visit/calc_pregnancy_test_positive ='true'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_no_followup_tasks" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/n_unavailable_followup_task" readonly="true()" type="string" relevant=" /pregnancy_home_visit/pregnancy_screening/is_available  = 'no'"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/r_submit_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/group_review/r_submit_sync" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_home_visit/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/pregnancy_home_visit/data/_patient_name" type="string" calculate=" /pregnancy_home_visit/patient_name "/>
+      <bind nodeset="/pregnancy_home_visit/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/pregnancy_home_visit/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/pregnancy_home_visit/data/_referred_to_facility_code" type="string" calculate=" /pregnancy_home_visit/referred_to_facility_code "/>
+      <bind nodeset="/pregnancy_home_visit/data/_referred_to_facility_name" type="string" calculate=" /pregnancy_home_visit/referred_to_facility_name "/>
+      <bind nodeset="/pregnancy_home_visit/data/_follow_up_date" type="string" calculate=" /pregnancy_home_visit/follow_up_date "/>
+      <bind nodeset="/pregnancy_home_visit/data/_screening/_danger_signs" type="string" calculate=" /pregnancy_home_visit/danger_signs_evaluation/danger_signs "/>
+      <bind nodeset="/pregnancy_home_visit/data/_screening/_mental_danger_signs" type="string" calculate=" /pregnancy_home_visit/maternal_mental_health/mental_danger_signs "/>
+      <bind nodeset="/pregnancy_home_visit/data/_screening/_observed_mental_danger_signs" type="string" calculate=" /pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_muac_color" type="string" calculate=" /pregnancy_home_visit/nutrition_evaluation/muac_color "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_other_danger_sign" type="string" calculate=" /pregnancy_home_visit/danger_signs_evaluation/other_danger_sign "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_other_mental_danger_sign" type="string" calculate=" /pregnancy_home_visit/maternal_mental_health/other_mental_danger_sign "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_other_observed_mental_danger_signs" type="string" calculate=" /pregnancy_home_visit/maternal_mental_health/other_observed_mental_danger_signs "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_has_lost_pregnancy_within_last_month" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_takes_iron_or_folate_supplements" type="string" calculate=" /pregnancy_home_visit/iron_supplements/takes_iron_or_folate_supplements "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_is_still_pregnant" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/is_still_pregnant "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_has_started_anc" type="string" calculate=" /pregnancy_home_visit/anc_visits/has_started_anc "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_anc_upto_date" type="string" calculate=" /pregnancy_home_visit/anc_visits/anc_upto_date "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_has_lost_pregnancy_within_last_month_subsequent_visit" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_subsequent_visit "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_pregnancy_test_result" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/pregnancy_test_result "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_is_pregnant" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/is_pregnant "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_is_on_family_planning" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/is_on_family_planning "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_period_of_pregnancy" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/period_of_pregnancy "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_known_lmp" type="string" calculate=" /pregnancy_home_visit/pregnancy_screening/known_lmp "/>
+      <bind nodeset="/pregnancy_home_visit/data/_supporting_info/_next_anc_visit_date" type="string" calculate=" /pregnancy_home_visit/anc_visits/next_anc_visit_date "/>
+      <bind nodeset="/pregnancy_home_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pregnancy_home_visit/inputs">
+      <label>Patient</label>
+      <group ref="/pregnancy_home_visit/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/pregnancy_home_visit/inputs/contact/_id">
+          <label>ID of head of household</label>
+        </input>
+        <group ref="/pregnancy_home_visit/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/pregnancy_home_visit/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/pregnancy_home_visit/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/pregnancy_screening">
+      <label>Pregnancy Screening</label>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/is_available">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_unavailable">
+        <label>**If <output value=" /pregnancy_home_visit/patient_name "/> relocated remember to submit a muting request , if they died remember to submit a death report**</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/is_still_pregnant">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/> still pregnant?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_subsequent_visit">
+        <label>Has <output value=" /pregnancy_home_visit/patient_name "/> lost a pregnancy within the last 1 month?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/delivery_registration_note">
+        <label>Use the PNC (Mother &amp; Newborn) Services form to register delivery details</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/is_pregnant">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/> pregnant?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Do not know</label>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/is_on_family_planning">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/> on Family Planning?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_congratulate_on_fp">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;**Congratulate <output value=" /pregnancy_home_visit/patient_name "/> for taking up Family Planning and encourage her to continue on the method**&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_register_for_fp">
+        <label>&lt;span style="color:blue;"&gt;**Submit this form and use the Family Planning Services form to provide family planning education and counselling and referral.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/has_lost_pregnancy_within_last_month_initial_visit">
+        <label>Has <output value=" /pregnancy_home_visit/patient_name "/> lost a pregnancy within the last 1 month?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/has_received_post_abortal_care">
+        <label>Has <output value=" /pregnancy_home_visit/patient_name "/> received post abortal care (PAC) at the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_refer_post_abortal_care">
+        <label>&lt;span style="color:red;"&gt;**Refer the mother to the health facility for post abortal care (PAC)**&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_notify_cha">
+        <label>&lt;span style="color:blue;"&gt;**Notify CHA**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/period_of_pregnancy">
+        <label>How old was the pregnancy?</label>
+        <item>
+          <label>Less than 7 months</label>
+          <value>less_than_7_months</value>
+        </item>
+        <item>
+          <label>7 months or more</label>
+          <value>7_months_or_more</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/known_lmp">
+        <label>When was <output value=" /pregnancy_home_visit/patient_name "/> Last Monthly Period?</label>
+        <item>
+          <label>More than 30 days ago</label>
+          <value>more_than_30_days_ago</value>
+        </item>
+        <item>
+          <label>Less than 30 days ago</label>
+          <value>less_than_30_days_ago</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_family_planning_education">
+        <label>**Reassure. Advice on Family Planning if Pregnancy is not desired and use the Family Planning Services to refer if Pregnancy is desired, advice on proper nutrition. You may refer to the health facility for pregnancy test.**</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/pregnancy_screening/pregnancy_test_result">
+        <label>Test for pregnancy. What are the results?</label>
+        <item>
+          <label>Positive</label>
+          <value>positive</value>
+        </item>
+        <item>
+          <label>Negative</label>
+          <value>negative</value>
+        </item>
+        <item>
+          <label>Not Done</label>
+          <value>not_done</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_pregnancy_education_and_referral">
+        <label>**Congratulate <output value=" /pregnancy_home_visit/patient_name "/>, educate them on the importance of starting ANC and refer to the health facility**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_educate_and_refer_on_fp">
+        <label>**Educate <output value=" /pregnancy_home_visit/patient_name "/> on Family Planning and refer to the health facility**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/pregnancy_screening/n_refer_test_not_done">
+        <label>**Educate <output value=" /pregnancy_home_visit/patient_name "/> on need for pregnancy test and refer to the health facility**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/anc_visits">
+      <label>ANC Visits</label>
+      <select1 ref="/pregnancy_home_visit/anc_visits/has_started_anc">
+        <label>Has <output value=" /pregnancy_home_visit/patient_name "/> started ANC?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/anc_visits/n_anc_education_1">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Educate <output value=" /pregnancy_home_visit/patient_name "/> on the importance of ANC visits and refer to the health facility**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/anc_visits/anc_upto_date">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/>'s ANC visit upto date?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/anc_visits/n_anc_education_2">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Educate <output value=" /pregnancy_home_visit/patient_name "/> on the importance of ANC visits adherence and refer to the health facility**&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/anc_visits/updated_edd">
+        <label>Enter most recently updated EDD</label>
+        <hint>Check the MCH handbook</hint>
+      </input>
+      <input ref="/pregnancy_home_visit/anc_visits/next_anc_visit_date">
+        <label>Enter next ANC visit date</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/danger_signs_evaluation">
+      <label>Danger Signs</label>
+      <select ref="/pregnancy_home_visit/danger_signs_evaluation/danger_signs">
+        <label>Educate <output value=" /pregnancy_home_visit/patient_name "/> on danger signs and select the danger signs she has
+ <output value=" /pregnancy_home_visit/started_anc "/></label><item>
+          <label>Vaginal Bleeding</label>
+          <value>vaginal_bleeding</value>
+        </item>
+        <item>
+          <label>Fits</label>
+          <value>fits</value>
+        </item>
+        <item>
+          <label>Severe Abdominal Pain</label>
+          <value>severe_abdominal_pain</value>
+        </item>
+        <item>
+          <label>Severe Headache</label>
+          <value>severe_headache</value>
+        </item>
+        <item>
+          <label>Very Pale</label>
+          <value>very_pale</value>
+        </item>
+        <item>
+          <label>Fever</label>
+          <value>fever</value>
+        </item>
+        <item>
+          <label>Reduced or no fetal movement</label>
+          <value>reduced_or_no_fetal_movement</value>
+        </item>
+        <item>
+          <label>Breaking of water</label>
+          <value>breaking_of_water</value>
+        </item>
+        <item>
+          <label>Getting tired easily</label>
+          <value>getting_tired_easily</value>
+        </item>
+        <item>
+          <label>Swelling of the face and hands</label>
+          <value>swelling_of_the_face_and_hands</value>
+        </item>
+        <item>
+          <label>Breathlessness</label>
+          <value>breathlessness</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_home_visit/danger_signs_evaluation/other_danger_sign">
+        <label>Specify</label>
+      </input>
+      <input ref="/pregnancy_home_visit/danger_signs_evaluation/n_refer_danger_signs">
+        <label>**&lt;span style=&quot;color:red;&quot;&gt;Refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/nutrition_evaluation">
+      <label>Nutrition</label>
+      <input ref="/pregnancy_home_visit/nutrition_evaluation/n_nutritional_education_and_referral">
+        <label>&lt;span style="color:blue;"&gt;**Provide nutrition counselling for 24 hrs recall and educate on the 10 food groups**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/pregnancy_home_visit/nutrition_evaluation/muac_color">
+        <label>Take <output value=" /pregnancy_home_visit/patient_name "/> MUAC. What is color of MUAC?</label>
+        <item>
+          <label>Green</label>
+          <value>green</value>
+        </item>
+        <item>
+          <label>Yellow</label>
+          <value>yellow</value>
+        </item>
+        <item>
+          <label>Red</label>
+          <value>red</value>
+        </item>
+        <item>
+          <label>Not Taken</label>
+          <value>not_taken</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/nutrition_evaluation/n_yellow_red_muac">
+        <label>**Provide nutrition counselling on the 10 food groups and refer to the health facility**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/nutrition_evaluation/n_green_muac">
+        <label>**Congratulate <output value=" /pregnancy_home_visit/patient_name "/> on eating well. Encourage her to continue observing good nutrition**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/nutrition_evaluation/n_muac_not_taken">
+        <label>**Provide nutrition counselling on the 10 food groups and refer to the health facility if need be**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/nutrition_evaluation/n_refer_muac">
+        <label>**&lt;span style=&quot;color:red;&quot;&gt;Refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/individual_birth_plan">
+      <label>Individual Birth Plan</label>
+      <input ref="/pregnancy_home_visit/individual_birth_plan/n_ibp_education">
+        <label>**Educate <output value=" /pregnancy_home_visit/patient_name "/> about an individual birth plan. Together discuss transportation, delivery at the health facility, birth companion**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/iron_supplements">
+      <label>Iron and Folate Supplement</label>
+      <select1 ref="/pregnancy_home_visit/iron_supplements/takes_iron_or_folate_supplements">
+        <label>Is <output value=" /pregnancy_home_visit/patient_name "/> taking her Iron or folate supplements daily?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/iron_supplements/n_iron_folate_education">
+        <label>**Provide education to <output value=" /pregnancy_home_visit/patient_name "/> on the importance of daily iron and folate intake throughout their pregnancy**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/iron_supplements/n_iron_folate_congratulations">
+        <label>**Congratulate <output value=" /pregnancy_home_visit/patient_name "/> on daily intake of iron and folate and encourage her to continue taking iron and folate supplements**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/hiv_and_aids">
+      <label>HIV/AIDs</label>
+      <input ref="/pregnancy_home_visit/hiv_and_aids/n_hiv_and_aids_education">
+        <label>&lt;span style="color:blue;"&gt;**Provide HIV/AIDs Education**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/maternal_mental_health">
+      <label>Maternal Mental Health</label>
+      <select ref="/pregnancy_home_visit/maternal_mental_health/mental_danger_signs">
+        <label>Ask if <output value=" /pregnancy_home_visit/patient_name "/> has any of these mental signs</label>
+        <item>
+          <label>Lack of sleep</label>
+          <value>lack_of_sleep</value>
+        </item>
+        <item>
+          <label>Feeling of worthlessness</label>
+          <value>feeling_of_worthlessness</value>
+        </item>
+        <item>
+          <label>Staying away from people</label>
+          <value>staying_away_from_people</value>
+        </item>
+        <item>
+          <label>Tearfulness</label>
+          <value>tearfulness</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_home_visit/maternal_mental_health/other_mental_danger_sign">
+        <label>Specify</label>
+      </input>
+      <select ref="/pregnancy_home_visit/maternal_mental_health/observed_mental_danger_signs">
+        <label>Observe if <output value=" /pregnancy_home_visit/patient_name "/> has any of these mental signs</label>
+        <item>
+          <label>Lack of hygiene</label>
+          <value>lack_of_hygiene</value>
+        </item>
+        <item>
+          <label>Anxiety/worried for no apparent reason</label>
+          <value>anxiety</value>
+        </item>
+        <item>
+          <label>Irritability/agitated</label>
+          <value>irritability</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_home_visit/maternal_mental_health/other_observed_mental_danger_signs">
+        <label>Specify</label>
+      </input>
+      <input ref="/pregnancy_home_visit/maternal_mental_health/n_danger_signs_referral">
+        <label>&lt;span style=&quot;color:red;&quot;&gt;**Refer <output value=" /pregnancy_home_visit/patient_name "/> to health facility**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_home_visit/insurance">
+      <label>Insurance</label>
+      <select1 ref="/pregnancy_home_visit/insurance/has_upto_date_insurance">
+        <label>Does <output value=" /pregnancy_home_visit/patient_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_home_visit/insurance/n_encourage_to_get_cover">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Encourage <output value=" /pregnancy_home_visit/patient_name "/> to get an insurance cover if they don't have or to update their insurance cover&lt;/span&gt;</label>
+      </input>
+      <select ref="/pregnancy_home_visit/insurance/insurance_cover">
+        <label>Which cover does <output value=" /pregnancy_home_visit/patient_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_home_visit/insurance/n_congratulate_on_insurance">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Congratulate <output value=" /pregnancy_home_visit/patient_name "/> and encourage them to continue updating their insurance cover&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/pregnancy_home_visit/group_review">
+      <label></label>
+      <input ref="/pregnancy_home_visit/group_review/summary_header_display">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**<output value=" /pregnancy_home_visit/group_review/summary_header "/>**&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_submit">
+        <label>_Be sure you submit to complete this action._</label>
+      </input>
+      <input appearance="h1 yellow" ref="/pregnancy_home_visit/group_review/n_household_member_details_title">
+        <label>Pregnancy Details&lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_household_member_details">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_home_visit/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_home_visit/patient_age_in_years "/> years old&lt;/h5&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/r_insurance_status">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight: bold&quot;&gt;<output value=" /pregnancy_home_visit/group_review/insurance_status_display "/>&lt;/h5&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_not_pregnant">
+        <label>&lt;h5 style="text-align:center;font-weight: bold"&gt;Not pregnant&lt;/h5&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_delivered">
+        <label>**Kindly submit the PNC visit report for <output value=" /pregnancy_home_visit/patient_name "/> if mother delivered**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_mother_died">
+        <label>Kindly notify the nurse at the facility about the death of <output value=" /pregnancy_home_visit/patient_name "/> if mother died</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_miscarriage">
+        <label>Ensure <output value=" /pregnancy_home_visit/patient_name "/> has the social support she needs if she had a miscarriage</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_edd">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight: bold&quot;&gt;Estimated Date of Delivery: <output value=" /pregnancy_home_visit/group_review/edd_display "/>&lt;/h5&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_next_anc_visit_date">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight: bold&quot;&gt;Next ANC Visit is on <output value=" /pregnancy_home_visit/group_review/next_anc_date_display "/>&lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy_home_visit/group_review/n_service_findings">
+        <label>Findings&lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_on_fp">
+        <label>&lt;span style=&quot;text-align:center&quot;&gt;<output value=" /pregnancy_home_visit/patient_name "/> is currently on Family Planning.
+Congratulate her for taking up Family Planning and encourage her to continue on the method.
+Use the Family Planning Services form to provide family planning education, counselling and referral.&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_lmp_less_than_30_days_ago">
+        <label>&lt;span style=&quot;text-align:center&quot;&gt;<output value=" /pregnancy_home_visit/patient_name "/> doesn't know if she is pregnant, her LMP is less than 30 days ago and she is not on family planning. 
+Use the Family Planning Services form to provide family planning education, counselling and referral.&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_negative_pregnancy_test">
+        <label>&lt;span style=&quot;text-align:center&quot;&gt;<output value=" /pregnancy_home_visit/patient_name "/> doesn't know if she is pregnant, her LMP is more than 30 days ago and she is not on family planning. 
+Her pregnancy test result is negative. 
+Use the Family Planning Services form to provide family planning education, counselling and referral.&lt;/span&gt;</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_appreciate_mother">
+        <label>Appreciate <output value=" /pregnancy_home_visit/patient_name "/> for attending her ANCs</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_unavailable_for_follow_up">
+        <label><output value=" /pregnancy_home_visit/patient_name "/> is not available for follow up</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_refer_pac">
+        <label>Ensure <output value=" /pregnancy_home_visit/patient_name "/> has the social support she needs and refer her to the health facility for post abortal care (PAC)
+Kindly notify CHA</label>
+      </input>
+      <input appearance="h1 red" ref="/pregnancy_home_visit/group_review/n_refer_title">
+        <label>Reasons for Referral</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_refer">
+        <label>**Educate and refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility for ANC danger signs**</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_vaginal_bleeding">
+        <label>Vaginal Bleeding</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_fits">
+        <label>Fits</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_severe_abdominal_pain">
+        <label>Severe Abdominal Pain</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_severe_headache">
+        <label>Severe Headache</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_very_pale">
+        <label>Very Pale</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_reduced_or_no_fetal_movement">
+        <label>Reduced or no fetal movement</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_fever">
+        <label>Fever</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_breaking_of_water">
+        <label>Breaking of water</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_getting_tired_easily">
+        <label>Getting tired easily</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_swelling_of_the_face_and_hands">
+        <label>Swelling of the face and hands</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_breathlessness">
+        <label>Breathlessness</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_other">
+        <label>Other: <output value=" /pregnancy_home_visit/danger_signs_evaluation/other_danger_sign "/></label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_mental_signs">
+        <label>**Educate and refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility for maternal mental health**</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_lack_sleep">
+        <label>Lack of sleep</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_worthlessness">
+        <label>Feeling of worthlessness</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_stay_away_from_people">
+        <label>Staying away from people</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_tearfulness">
+        <label>Tearfulness</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_lack_hygiene">
+        <label>Lack of hygiene</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_anxiety">
+        <label>Anxiety/worried for no apparent reason</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_irritability">
+        <label>Irritability/agitated</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_refer_pregnancy_confirmation">
+        <label>**Educate and refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility for pregnancy confirmation**</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_refer_anc">
+        <label>**Educate and refer <output value=" /pregnancy_home_visit/patient_name "/> to the health facility for ANC visit**</label>
+      </input>
+      <input appearance="h1 green" ref="/pregnancy_home_visit/group_review/follow_up_title">
+        <label>Follow Up</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_followup_task">
+        <label>A Follow up task will 3 days after <output value=" /pregnancy_home_visit/anc_visits/next_anc_visit_date "/></label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_danger_sign_follow_up">
+        <label>A Referral Follow up task will appear after 24 hours for ANC danger signs</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_referral_followup_task">
+        <label>A Referral Follow up task will appear after 3 days for:</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_follow_up_mental_signs">
+        <label>Mental Danger Signs</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_follow_up_pregnancy_confirmation">
+        <label>Pregnancy Confirmation</label>
+      </input>
+      <input appearance="li" ref="/pregnancy_home_visit/group_review/n_follow_up_anc_visit">
+        <label>ANC Visits</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_no_followup_tasks">
+        <label>There will be no more pregnancy home visit follow ups for <output value=" /pregnancy_home_visit/patient_name "/> if she is no longer pregnant</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/n_unavailable_followup_task">
+        <label>Follow up task for <output value=" /pregnancy_home_visit/patient_name "/> will appear after 3 days after date of report submission</label>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy_home_visit/group_review/r_submit_instruction">
+        <label>Instruction</label>
+      </input>
+      <input ref="/pregnancy_home_visit/group_review/r_submit_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+    <group ref="/pregnancy_home_visit/data">
+      <label></label>
+      <group ref="/pregnancy_home_visit/data/_screening">
+        <label></label>
+      </group>
+      <group ref="/pregnancy_home_visit/data/_supporting_info">
+        <label></label>
+      </group>
+    </group>
+  </h:body>
+</h:html>

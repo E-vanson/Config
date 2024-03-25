@@ -1,0 +1,9 @@
+{
+  "icon": "icon-commodity",
+  "title": "Commodity Supply",
+  "context": {
+      "person": false,
+      "place": true,
+      "expression": "contact.contact_type === 'd_community_health_volunteer_area' && user.parent && user.parent.contact_type === 'c_community_health_unit'"
+  }
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Community Event</h:title>
+    <model>
+      <instance>
+        <community_event id="community_event" prefix="J1!community_event!" delimiter="#" version="2023-02-22 04:02:17">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <place_id/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <community_health_unit_name/>
+          <event_information>
+            <event_types/>
+            <other_event/>
+            <event_date/>
+            <num_male_attendees/>
+            <num_female_attendees/>
+            <num_attendees/>
+          </event_information>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </community_event>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/community_event/inputs" relevant="./source='user'"/>
+      <bind nodeset="/community_event/inputs/source" type="string"/>
+      <bind nodeset="/community_event/inputs/source_id" type="string"/>
+      <bind nodeset="/community_event/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/community_event/inputs/contact/name" type="string"/>
+      <bind nodeset="/community_event/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/community_event/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/community_event/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/community_event/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/community_event/community_health_unit_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/community_event/event_information/event_types" type="select" required="true()"/>
+      <bind nodeset="/community_event/event_information/other_event" type="string" required="true()" relevant="selected( /community_event/event_information/event_types , 'other')"/>
+      <bind nodeset="/community_event/event_information/event_date" type="date" required="true()" jr:constraintMsg="Date cannot be in the future" constraint=". &lt;= today()"/>
+      <bind nodeset="/community_event/event_information/num_male_attendees" type="int" required="true()" jr:constraintMsg="Number must be greater or equal to 0" constraint="int(.) &gt;= 0"/>
+      <bind nodeset="/community_event/event_information/num_female_attendees" type="int" required="true()" jr:constraintMsg="Number must be greater or equal to 0" constraint="int(.) &gt;= 0"/>
+      <bind nodeset="/community_event/event_information/num_attendees" type="int" required="true()" jr:constraintMsg="Number must be at least 0 and equal to the number of male and female attendees" constraint="(int(.) =(int( /community_event/event_information/num_male_attendees ) + int( /community_event/event_information/num_female_attendees ))) and int(.) &gt; 0"/>
+      <bind nodeset="/community_event/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/community_event/inputs">
+      <label>Inputs</label>
+      <group ref="/community_event/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/community_event/inputs/contact/_id">
+          <label>What is the place's name?</label>
+        </input>
+        <group ref="/community_event/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/community_event/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/community_event/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/community_event/event_information">
+      <label>Events Information</label>
+      <select ref="/community_event/event_information/event_types">
+        <label>Select the event to be reported</label>
+        <item>
+          <label>Community Dialogue</label>
+          <value>community_dialogue</value>
+        </item>
+        <item>
+          <label>Community Action Days</label>
+          <value>community_action_days</value>
+        </item>
+        <item>
+          <label>Monthly CU Meetings</label>
+          <value>monthly_cu_meetings</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/community_event/event_information/other_event">
+        <label>Specify other</label>
+      </input>
+      <input ref="/community_event/event_information/event_date">
+        <label>Enter the date of the event</label>
+      </input>
+      <input ref="/community_event/event_information/num_male_attendees">
+        <label>Enter the number of male attendees</label>
+      </input>
+      <input ref="/community_event/event_information/num_female_attendees">
+        <label>Enter the number of female attendees</label>
+      </input>
+      <input ref="/community_event/event_information/num_attendees">
+        <label>Enter the number of people who attended</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

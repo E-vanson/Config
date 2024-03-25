@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Referral follow up</h:title>
+    <model>
+      <instance>
+        <referral_follow_up id="referral_follow_up" prefix="J1!referral_follow_up!" delimiter="#" version="2023-04-19 10:37:53">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_referral_type/>
+            <t_referral_reason/>
+            <t_follow_up_instruction/>
+            <t_health_facility_contact/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <chw_name/>
+          <referral_type/>
+          <referral_reason/>
+          <needs_follow_up/>
+          <follow_up_date/>
+          <is_available/>
+          <is_available_and_completed_visit/>
+          <visited_contact_uuid/>
+          <follow_up_instruction/>
+          <health_facility_contact/>
+          <group_follow_up>
+            <n_instruction/>
+            <call_button/>
+            <client_available/>
+            <n_remind/>
+            <visited/>
+            <n_counter_refer/>
+            <n_find_out/>
+            <needs_to_go_to_health_facility/>
+            <n_encourage/>
+            <n_go_facility/>
+          </group_follow_up>
+          <group_summary>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_findings/>
+            <r_not_available/>
+            <r_did_not_visit_health_facility/>
+            <r_went_to_health_facility/>
+            <r_referral_title/>
+            <n_refer/>
+            <r_health_facility_title/>
+            <referral_health_facility/>
+            <r_follow_up_title/>
+            <r_referral_follow_up/>
+            <r_instruction_title/>
+            <r_sync/>
+          </group_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </referral_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/referral_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/referral_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/t_referral_type" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/t_referral_reason" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/t_follow_up_instruction" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/t_health_facility_contact" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/referral_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/referral_follow_up/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /referral_follow_up/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/referral_follow_up/patient_age_in_months" type="string" calculate="difference-in-months(  /referral_follow_up/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/referral_follow_up/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /referral_follow_up/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/referral_follow_up/patient_age_display" type="string" calculate="concat(
+ concat( /referral_follow_up/patient_age_in_years , if( /referral_follow_up/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /referral_follow_up/patient_age_in_months  mod 12, if(( /referral_follow_up/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/referral_follow_up/patient_id" type="string" calculate="../inputs/contact/_id" required="true()"/>
+      <bind nodeset="/referral_follow_up/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/referral_follow_up/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/referral_follow_up/chw_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/referral_follow_up/referral_type" type="string" calculate="../inputs/t_referral_type"/>
+      <bind nodeset="/referral_follow_up/referral_reason" type="string" calculate="../inputs/t_referral_reason"/>
+      <bind nodeset="/referral_follow_up/needs_follow_up" type="string" calculate="if( /referral_follow_up/group_follow_up/needs_to_go_to_health_facility ='yes' or  /referral_follow_up/is_available_and_completed_visit ='no' or  /referral_follow_up/is_available ='no', 'yes', 'no')"/>
+      <bind nodeset="/referral_follow_up/follow_up_date" type="string" calculate="if( /referral_follow_up/needs_follow_up ='yes', format-date-time(decimal-date-time(today() + 3),&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/referral_follow_up/is_available" type="string" calculate=" /referral_follow_up/group_follow_up/client_available "/>
+      <bind nodeset="/referral_follow_up/is_available_and_completed_visit" type="string" calculate="if( /referral_follow_up/group_follow_up/visited  = 'yes', 'yes', if( /referral_follow_up/group_follow_up/visited ='no','no', ''))"/>
+      <bind nodeset="/referral_follow_up/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/referral_follow_up/follow_up_instruction" type="string" calculate=" /referral_follow_up/inputs/t_follow_up_instruction "/>
+      <bind nodeset="/referral_follow_up/health_facility_contact" type="string" calculate=" /referral_follow_up/inputs/t_health_facility_contact "/>
+      <bind nodeset="/referral_follow_up/group_follow_up" relevant=" /referral_follow_up/referral_type !=''"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/call_button" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/client_available" type="select1" required="true()"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_remind" readonly="true()" type="string" relevant=" /referral_follow_up/group_follow_up/client_available  = 'no'"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/visited" type="select1" relevant=" /referral_follow_up/group_follow_up/client_available  = 'yes'" required="true()"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_counter_refer" readonly="true()" type="string" relevant=" /referral_follow_up/group_follow_up/visited  = 'yes'"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_find_out" readonly="true()" type="string" relevant=" /referral_follow_up/group_follow_up/visited  = 'no'"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/needs_to_go_to_health_facility" type="select1" relevant=" /referral_follow_up/group_follow_up/visited  = 'no'"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_encourage" readonly="true()" type="string" relevant=" /referral_follow_up/group_follow_up/needs_to_go_to_health_facility  = 'yes'"/>
+      <bind nodeset="/referral_follow_up/group_follow_up/n_go_facility" readonly="true()" type="string" relevant=" /referral_follow_up/group_follow_up/needs_to_go_to_health_facility  = 'no'"/>
+      <bind nodeset="/referral_follow_up/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_not_available" readonly="true()" type="string" relevant=" /referral_follow_up/is_available  = 'no'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_did_not_visit_health_facility" readonly="true()" type="string" relevant=" /referral_follow_up/is_available_and_completed_visit ='no'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_went_to_health_facility" readonly="true()" type="string" relevant=" /referral_follow_up/is_available_and_completed_visit ='yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_referral_title" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes' and  /referral_follow_up/is_available  = 'yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/n_refer" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes' and  /referral_follow_up/is_available  = 'yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_health_facility_title" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes' and  /referral_follow_up/is_available  = 'yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/referral_health_facility" type="select1" relevant=" /referral_follow_up/needs_follow_up ='yes' and  /referral_follow_up/is_available  = 'yes'" required="true()"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_follow_up_title" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_referral_follow_up" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_instruction_title" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/referral_follow_up/group_summary/r_sync" readonly="true()" type="string" relevant=" /referral_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/referral_follow_up/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/referral_follow_up/inputs">
+      <label>Patient</label>
+      <group ref="/referral_follow_up/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/referral_follow_up/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/referral_follow_up/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/referral_follow_up/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/referral_follow_up/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/referral_follow_up/group_follow_up">
+      <label></label>
+      <input ref="/referral_follow_up/group_follow_up/n_instruction">
+        <label>**Health Facility Notes**: <output value=" /referral_follow_up/follow_up_instruction "/></label>
+      </input>
+      <input ref="/referral_follow_up/group_follow_up/call_button">
+        <label>[&lt;span style='background-color:#F0F4FD; border:1px solid #007AC0; padding: 0.5em; border-radius: 4px; text-decoration:none; display: block; margin-left: auto; margin-right: auto; width: 40%; text-align: center;'&gt;&lt;i class=&quot;fa fa-phone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;Call <output value=" /referral_follow_up/health_facility_contact "/>&lt;/span&gt;](tel://<output value=" /referral_follow_up/health_facility_contact "/>)</label>
+        <hint>Call the health facility contact above for any clarification you need.</hint>
+      </input>
+      <select1 ref="/referral_follow_up/group_follow_up/client_available">
+        <label>Is <output value=" /referral_follow_up/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/referral_follow_up/group_follow_up/n_remind">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**If <output value=" /referral_follow_up/patient_name "/> relocated remember to submit a muting request, if they died remember to submit a death report.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/referral_follow_up/group_follow_up/visited">
+        <label>Did <output value=" /referral_follow_up/patient_name "/> go to the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/referral_follow_up/group_follow_up/n_counter_refer">
+        <label>Message to CHV: Provide the Counter Referral Services as instructed.</label>
+      </input>
+      <input ref="/referral_follow_up/group_follow_up/n_find_out">
+        <label>Message to CHV: Find out why and encourage them to go.</label>
+      </input>
+      <select1 ref="/referral_follow_up/group_follow_up/needs_to_go_to_health_facility">
+        <label>Does <output value=" /referral_follow_up/patient_name "/> still need to go to the health facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/referral_follow_up/group_follow_up/n_encourage">
+        <label>**Encourage <output value=" /referral_follow_up/patient_name "/>to seek services and &lt;span style=&quot;color:red;&quot;&gt;refer to the health facility.&lt;/span&gt;**</label>
+      </input>
+      <input ref="/referral_follow_up/group_follow_up/n_go_facility">
+        <label>Message to the CHV if <output value=" /referral_follow_up/patient_name "/> should go to the Health facility any time they feel unwell</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/referral_follow_up/group_summary">
+      <label>REFERRAL FOLLOW UP RESULTS</label>
+      <input ref="/referral_follow_up/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/referral_follow_up/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/referral_follow_up/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /referral_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /referral_follow_up/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/referral_follow_up/group_summary/r_findings">
+        <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/r_not_available">
+        <label><output value=" /referral_follow_up/patient_name "/> is not available.</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/r_did_not_visit_health_facility">
+        <label><output value=" /referral_follow_up/patient_name "/> is available but did not go the the health facility.</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/r_went_to_health_facility">
+        <label><output value=" /referral_follow_up/patient_name "/> is available and went to the facility.</label>
+      </input>
+      <input appearance="h1 red" ref="/referral_follow_up/group_summary/r_referral_title">
+        <label>Refer urgently to Health facility! &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/n_refer">
+        <label><output value=" /referral_follow_up/patient_name "/> did not visit the health facility.</label>
+      </input>
+      <input appearance="h2 blue" ref="/referral_follow_up/group_summary/r_health_facility_title">
+        <label>Health Facility</label>
+      </input>
+      <select1 ref="/referral_follow_up/group_summary/referral_health_facility">
+        <label>Select the health facility you are referring to</label>
+        <item>
+          <label>Link health facility</label>
+          <value>link_health_facility</value>
+        </item>
+        <item>
+          <label>Other within sub county</label>
+          <value>other_within_sub_county</value>
+        </item>
+        <item>
+          <label>Other outside sub county</label>
+          <value>other_outside_sub_county</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/referral_follow_up/group_summary/r_follow_up_title">
+        <label>Follow Up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/r_referral_follow_up">
+        <label>A Referral Follow up task will appear after 3 days</label>
+      </input>
+      <input appearance="h1 lime" ref="/referral_follow_up/group_summary/r_instruction_title">
+        <label>Instruction &lt;i class="fa fa-heart"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/referral_follow_up/group_summary/r_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

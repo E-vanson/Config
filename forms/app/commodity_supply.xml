@@ -1,0 +1,2358 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Commodities Supply</h:title>
+    <model>
+      <instance>
+        <commodity_supply id="commodity_supply" prefix="J1!commodity_supply!" delimiter="#" version="2023-05-23 21:52:28">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <place_id/>
+              <parent>
+                <contact>
+                  <_id/>
+                  <name/>
+                </contact>
+                <parent/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <community_health_unit_name/>
+          <cha_name/>
+          <stock_summary_rdts/>
+          <stock_summary_act_6/>
+          <stock_summary_act_12/>
+          <stock_summary_act_18/>
+          <stock_summary_act_24/>
+          <stock_summary_dt_250/>
+          <stock_summary_ors_zinc/>
+          <stock_summary_ors_sachets/>
+          <stock_summary_zinc_sulphate/>
+          <stock_summary_albendazole/>
+          <stock_summary_tetra_eye/>
+          <stock_summary_paracetamol_120/>
+          <stock_summary_mebendazole/>
+          <stock_summary_coc/>
+          <stock_summary_prog/>
+          <stock_summary_depo_im/>
+          <stock_summary_depo_sc/>
+          <stock_summary_preg_strip/>
+          <stock_summary_chlorine/>
+          <stock_summary_gluc_strips/>
+          <stock_summary_paracetamol_500/>
+          <stock_summary_bandages/>
+          <stock_summary_povi/>
+          <stock_summary_strap/>
+          <stock_summary_gloves/>
+          <stock_summary_envelopes/>
+          <stock_summary_glucometer/>
+          <stock_summary_backpack/>
+          <stock_summary_badge/>
+          <stock_summary_flashlight/>
+          <stock_summary_salter/>
+          <stock_summary_color_salter/>
+          <stock_summary_weighing_scale/>
+          <stock_summary_first_aid/>
+          <stock_summary_bp/>
+          <stock_summary_thermometer/>
+          <stock_summary_resp_timer/>
+          <stock_summary_muac_tape_adults/>
+          <stock_summary_muac_tape_children/>
+          <stock_summary_family_muac_tape/>
+          <stock_summary_moh_514/>
+          <stock_summary_moh_521/>
+          <stock_summary_moh_100/>
+          <stock_summary_comm_daily_register/>
+          <stock_summary_phone/>
+          <stock_summary_safety_box/>
+          <stock_summary_others/>
+          <soh_rdts/>
+          <soh_act_6/>
+          <soh_act_12/>
+          <soh_act_18/>
+          <soh_act_24/>
+          <soh_dt_250/>
+          <soh_ors_zinc/>
+          <soh_ors_sachets/>
+          <soh_zinc_sulphate/>
+          <soh_albendazole/>
+          <soh_tetra_eye/>
+          <soh_paracetamol_120/>
+          <soh_mebendazole/>
+          <soh_coc/>
+          <soh_prog/>
+          <soh_depo_im/>
+          <soh_depo_sc/>
+          <soh_preg_strip/>
+          <soh_chlorine/>
+          <soh_gluc_strips/>
+          <soh_paracetamol_500/>
+          <soh_bandages/>
+          <soh_povi/>
+          <soh_strap/>
+          <soh_gloves/>
+          <soh_envelopes/>
+          <soh_glucometer/>
+          <soh_backpack/>
+          <soh_badge/>
+          <soh_flashlight/>
+          <soh_salter/>
+          <soh_color_salter/>
+          <soh_weighing_scale/>
+          <soh_first_aid/>
+          <soh_bp/>
+          <soh_thermometer/>
+          <soh_resp_timer/>
+          <soh_muac_tape_adults/>
+          <soh_muac_tape_children/>
+          <soh_family_muac_tape/>
+          <soh_moh_514/>
+          <soh_moh_521/>
+          <soh_moh_100/>
+          <soh_comm_daily_register/>
+          <soh_phone/>
+          <soh_safety_box/>
+          <soh_others/>
+          <awc_rdts/>
+          <awc_act_6/>
+          <awc_act_12/>
+          <awc_act_18/>
+          <awc_act_24/>
+          <awc_dt_250/>
+          <awc_ors_zinc/>
+          <awc_ors_sachets/>
+          <awc_zinc_sulphate/>
+          <awc_albendazole/>
+          <awc_tetra_eye/>
+          <awc_paracetamol_120/>
+          <awc_mebendazole/>
+          <awc_coc/>
+          <awc_prog/>
+          <awc_depo_im/>
+          <awc_depo_sc/>
+          <awc_preg_strip/>
+          <awc_chlorine/>
+          <awc_gluc_strips/>
+          <awc_paracetamol_500/>
+          <awc_bandages/>
+          <awc_povi/>
+          <awc_strap/>
+          <awc_gloves/>
+          <awc_envelopes/>
+          <awc_glucometer/>
+          <awc_backpack/>
+          <awc_badge/>
+          <awc_flashlight/>
+          <awc_salter/>
+          <awc_color_salter/>
+          <awc_weighing_scale/>
+          <awc_first_aid/>
+          <awc_bp/>
+          <awc_thermometer/>
+          <awc_resp_timer/>
+          <awc_muac_tape_adults/>
+          <awc_muac_tape_children/>
+          <awc_family_muac_tape/>
+          <awc_moh_514/>
+          <awc_moh_521/>
+          <awc_moh_100/>
+          <awc_comm_daily_register/>
+          <awc_phone/>
+          <awc_safety_box/>
+          <awc_others/>
+          <required_rdts/>
+          <eb_rdts/>
+          <required_act_6/>
+          <eb_act_6/>
+          <required_act_12/>
+          <eb_act_12/>
+          <required_act_18/>
+          <eb_act_18/>
+          <required_act_24/>
+          <eb_act_24/>
+          <required_dt_250/>
+          <eb_dt_250/>
+          <required_ors_zinc/>
+          <eb_ors_zinc/>
+          <required_ors_sachets/>
+          <eb_ors_sachets/>
+          <required_zinc_sulphate/>
+          <eb_zinc_sulphate/>
+          <required_albendazole/>
+          <eb_albendazole/>
+          <required_tetra_eye/>
+          <eb_tetra_eye/>
+          <required_paracetamol_120/>
+          <eb_paracetamol_120/>
+          <required_mebendazole/>
+          <eb_mebendazole/>
+          <required_coc/>
+          <eb_coc/>
+          <required_prog/>
+          <eb_prog/>
+          <required_depo_im/>
+          <eb_depo_im/>
+          <required_depo_sc/>
+          <eb_depo_sc/>
+          <required_preg_strip/>
+          <eb_preg_strip/>
+          <required_chlorine/>
+          <eb_chlorine/>
+          <required_gluc_strips/>
+          <eb_gluc_strips/>
+          <required_paracetamol_500/>
+          <eb_paracetamol_500/>
+          <required_bandages/>
+          <eb_bandages/>
+          <required_povi/>
+          <eb_povi/>
+          <required_strap/>
+          <eb_strap/>
+          <required_gloves/>
+          <eb_gloves/>
+          <required_envelopes/>
+          <eb_envelopes/>
+          <required_glucometer/>
+          <eb_glucometer/>
+          <required_backpack/>
+          <eb_backpack/>
+          <required_badge/>
+          <eb_badge/>
+          <required_flashlight/>
+          <eb_flashlight/>
+          <required_salter/>
+          <eb_salter/>
+          <required_color_salter/>
+          <eb_color_salter/>
+          <required_weighing_scale/>
+          <eb_weighing_scale/>
+          <required_first_aid/>
+          <eb_first_aid/>
+          <required_bp/>
+          <eb_bp/>
+          <required_thermometer/>
+          <eb_thermometer/>
+          <required_resp_timer/>
+          <eb_resp_timer/>
+          <required_muac_tape_adults/>
+          <eb_muac_tape_adults/>
+          <required_muac_tape_children/>
+          <eb_muac_tape_children/>
+          <required_family_muac_tape/>
+          <eb_family_muac_tape/>
+          <required_moh_514/>
+          <eb_moh_514/>
+          <required_moh_521/>
+          <eb_moh_521/>
+          <required_moh_100/>
+          <eb_moh_100/>
+          <required_comm_daily_register/>
+          <eb_comm_daily_register/>
+          <required_phone/>
+          <eb_phone/>
+          <required_safety_box/>
+          <eb_safety_box/>
+          <required_others/>
+          <eb_others/>
+          <first_group>
+            <category/>
+            <select_commodities/>
+            <list_commodities/>
+            <malaria/>
+            <child_health/>
+            <repro_maternal/>
+            <wash/>
+            <others/>
+            <ncds/>
+            <non_pharma/>
+            <select_equipment/>
+            <equipment/>
+          </first_group>
+          <s_malaria>
+            <rdts_note/>
+            <rdts_soh/>
+            <rdts_required/>
+            <rdts_supplied/>
+            <act_6_note/>
+            <act_6_soh/>
+            <act_6_required/>
+            <act_6_supplied/>
+            <act_12_note/>
+            <act_12_soh/>
+            <act_12_required/>
+            <act_12_supplied/>
+            <act_18_note/>
+            <act_18_soh/>
+            <act_18_required/>
+            <act_18_supplied/>
+            <act_24_note/>
+            <act_24_soh/>
+            <act_24_required/>
+            <act_24_supplied/>
+          </s_malaria>
+          <s_child_health>
+            <dt_250_note/>
+            <dt_250_soh/>
+            <dt_250_required/>
+            <dt_250_supplied/>
+            <ors_zinc_note/>
+            <ors_zinc_soh/>
+            <ors_zinc_required/>
+            <ors_zinc_supplied/>
+            <ors_sachets_note/>
+            <ors_sachets_soh/>
+            <ors_sachets_required/>
+            <ors_sachets_supplied/>
+            <zinc_sulphate_note/>
+            <zinc_sulphate_soh/>
+            <zinc_sulphate_required/>
+            <zinc_sulphate_supplied/>
+            <albendazole/>
+            <albendazole_soh/>
+            <albendazole_required/>
+            <albendazole_supplied/>
+            <tetra_eye_note/>
+            <tetra_eye_soh/>
+            <tetra_eye_required/>
+            <tetra_eye_supplied/>
+            <paracetamol_120_note/>
+            <paracetamol_120_soh/>
+            <paracetamol_120_required/>
+            <paracetamol_120_supplied/>
+          </s_child_health>
+          <s_reproductive>
+            <mebendazole_note/>
+            <mebendazole_soh/>
+            <mebendazole_required/>
+            <mebendazole_supplied/>
+            <coc_note/>
+            <coc_soh/>
+            <coc_required/>
+            <coc_supplied/>
+            <prog_note/>
+            <prog_soh/>
+            <prog_required/>
+            <prog_supplied/>
+            <depo_im_note/>
+            <depo_im_soh/>
+            <depo_im_required/>
+            <depo_im_supplied/>
+            <depo_sc_note/>
+            <depo_sc_soh/>
+            <depo_sc_required/>
+            <depo_sc_supplied/>
+            <preg_strip_note/>
+            <preg_strip_soh/>
+            <preg_strip_required/>
+            <preg_strip_supplied/>
+          </s_reproductive>
+          <s_wash>
+            <chlorine_note/>
+            <chlorine_soh/>
+            <chlorine_required/>
+            <chlorine_supplied/>
+          </s_wash>
+          <s_ncds>
+            <gluc_strips_note/>
+            <gluc_strips_soh/>
+            <gluc_strips_required/>
+            <gluc_strips_supplied/>
+          </s_ncds>
+          <s_others>
+            <paracetamol_500_tablets/>
+            <paracetamol_500_soh/>
+            <paracetamol_500_required/>
+            <paracetamol_500_supplied/>
+          </s_others>
+          <s_non_pharma>
+            <bandages_note/>
+            <bandages_soh/>
+            <bandages_required/>
+            <bandages_supplied/>
+            <povi_note/>
+            <povi_soh/>
+            <povi_required/>
+            <povi_supplied/>
+            <strap_note/>
+            <strap_soh/>
+            <strap_required/>
+            <strap_supplied/>
+            <gloves_note/>
+            <gloves_soh/>
+            <gloves_required/>
+            <gloves_supplied/>
+            <envelopes_note/>
+            <envelopes_soh/>
+            <envelopes_required/>
+            <envelopes_supplied/>
+          </s_non_pharma>
+          <s_equipment>
+            <glucometer_note/>
+            <glucometer_soh/>
+            <glucometer_required/>
+            <glucometer_supplied/>
+            <backpack_note/>
+            <backpack_soh/>
+            <backpack_required/>
+            <backpack_supplied/>
+            <badge_note/>
+            <badge_soh/>
+            <badge_required/>
+            <badge_supplied/>
+            <flashlight_note/>
+            <flashlight_soh/>
+            <flashlight_required/>
+            <flashlight_supplied/>
+            <salter_note/>
+            <salter_stock_on_hand/>
+            <salter_required/>
+            <salter_supplied/>
+            <color_salter_note/>
+            <color_salter_soh/>
+            <color_salter_required/>
+            <color_salter_supplied/>
+            <weighing_scale_note/>
+            <weighing_scale_soh/>
+            <weighing_scale_required/>
+            <weighing_scale_supplied/>
+            <first_aid_note/>
+            <first_aid_soh/>
+            <first_aid_required/>
+            <first_aid_supplied/>
+            <bp_note/>
+            <bp_soh/>
+            <bp_required/>
+            <bp_supplied/>
+            <thermometer_note/>
+            <thermometer_soh/>
+            <thermometer_required/>
+            <thermometer_supplied/>
+            <resp_timer_note/>
+            <resp_timer_soh/>
+            <resp_timer_required/>
+            <resp_timer_supplied/>
+            <muac_tape_adults_note/>
+            <muac_tape_adults_soh/>
+            <muac_tape_adults_required/>
+            <muac_tape_adults_supplied/>
+            <muac_tape_children_note/>
+            <muac_tape_children_soh/>
+            <muac_tape_children_required/>
+            <muac_tape_children_supplied/>
+            <family_muac_tape_note/>
+            <family_muac_tape_soh/>
+            <family_muac_tape_required/>
+            <family_muac_tape_supplied/>
+            <moh_514_note/>
+            <moh_514_soh/>
+            <moh_514_required/>
+            <moh_514_supplied/>
+            <moh_521_note/>
+            <moh_521_soh/>
+            <moh_521_required/>
+            <moh_521_supplied/>
+            <moh_100_note/>
+            <moh_100_soh/>
+            <moh_100_required/>
+            <moh_100_supplied/>
+            <comm_daily_register_note/>
+            <comm_daily_register_soh/>
+            <comm_daily_register_required/>
+            <comm_daily_register_supplied/>
+            <phone_note/>
+            <phone_soh/>
+            <phone_required/>
+            <phone_supplied/>
+            <safety_box_note/>
+            <safety_box_soh/>
+            <safety_box_required/>
+            <safety_box_supplied/>
+            <others_note/>
+            <others_soh/>
+            <others_required/>
+            <other_specify/>
+            <others_supplied/>
+          </s_equipment>
+          <r_summary>
+            <r_submit/>
+            <r_items_issued_note/>
+            <r_malaria/>
+            <r_rdt_note/>
+            <r_rdt_supplied/>
+            <r_act6_note/>
+            <r_act6_supplied/>
+            <r_act12_note/>
+            <r_act12_supplied/>
+            <r_act18_note/>
+            <r_act18_supplied/>
+            <r_act24_note/>
+            <r_act24_supplied/>
+            <r_child_health/>
+            <r_amox_note/>
+            <r_amox_supplied/>
+            <r_ors_zinc_note/>
+            <r_ors_zinc_supplied/>
+            <r_ors_note/>
+            <r_ors_supplied/>
+            <r_zinc_s_note/>
+            <r_zinc_s_supplied/>
+            <r_albe_s_note/>
+            <r_albe_supplied/>
+            <r_tetra_note/>
+            <r_tetra_supplied/>
+            <r_para_note/>
+            <r_para_supplied/>
+            <r_repro_maternal/>
+            <r_mebendazole_note/>
+            <r_mebendazole_supplied/>
+            <r_coc_note/>
+            <r_coc_supplied/>
+            <r_prog_note/>
+            <r_prog_supplied/>
+            <r_depo_im_note/>
+            <r_depo_im_supplied/>
+            <r_depo_sc_note/>
+            <r_depo_sc_supplied/>
+            <r_preg_strip_note/>
+            <r_preg_strip_supplied/>
+            <r_wash/>
+            <r_chlorine_note/>
+            <r_chlorine_supplied/>
+            <r_ncds/>
+            <r_gluc_note/>
+            <r_gluc_supplied/>
+            <r_others_section_note/>
+            <r_paracetamol_500_note/>
+            <r_paracetamol_500_supplied/>
+            <r_non_pharma/>
+            <r_bandage_note/>
+            <r_bandage_supplied/>
+            <r_povi_note/>
+            <r_povi_supplied/>
+            <r_strap_note/>
+            <r_strap_supplied/>
+            <r_glove_note/>
+            <r_glove_supplied/>
+            <r_env_note/>
+            <r_env_supplied/>
+            <r_equipment/>
+            <r_gluc_eq_note/>
+            <r_gluc_eq_supplied/>
+            <r_backpack_note/>
+            <r_backpack_supplied/>
+            <r_badge_note/>
+            <r_badge_supplied/>
+            <r_torch_note/>
+            <r_torch_supplied/>
+            <r_salter_note/>
+            <r_salter_supplied/>
+            <r_color_salter_note/>
+            <r_color_salter_supplied/>
+            <r_weighing_scale_note/>
+            <r_weighing_scale_supplied/>
+            <r_first_aid_note/>
+            <r_first_aid_supplied/>
+            <r_bp_note/>
+            <r_bp_supplied/>
+            <r_thermometer_note/>
+            <r_thermometer_supplied/>
+            <r_resp_timer_note/>
+            <r_resp_timer_supplied/>
+            <r_muac_tape_adults_note/>
+            <r_muac_tape_adults_supplied/>
+            <r_muac_tape_children_note/>
+            <r_muac_tape_children_supplied/>
+            <r_family_muac_tape_note/>
+            <r_family_muac_tape_supplied/>
+            <r_moh_514_note/>
+            <r_moh_514_supplied/>
+            <r_moh_521_note/>
+            <r_moh_521_supplied/>
+            <r_moh_100_note/>
+            <r_moh_100_supplied/>
+            <r_comm_daily_register_note/>
+            <r_comm_daily_register_supplied/>
+            <r_phone_note/>
+            <r_phone_supplied/>
+            <r_safety_box_note/>
+            <r_safety_box_supplied/>
+            <r_others_note/>
+            <r_others_supplied/>
+          </r_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </commodity_supply>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/commodity_supply/inputs" relevant="./source='user'"/>
+      <bind nodeset="/commodity_supply/inputs/source" type="string"/>
+      <bind nodeset="/commodity_supply/inputs/source_id" type="string"/>
+      <bind nodeset="/commodity_supply/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/commodity_supply/inputs/contact/name" type="string"/>
+      <bind nodeset="/commodity_supply/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/commodity_supply/inputs/contact/parent/contact/_id" type="db:person"/>
+      <bind nodeset="/commodity_supply/inputs/contact/parent/contact/name" type="db:person"/>
+      <bind nodeset="/commodity_supply/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/commodity_supply/community_health_unit_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/commodity_supply/cha_name" type="string" calculate="../inputs/contact/parent/contact/name"/>
+      <bind nodeset="/commodity_supply/stock_summary_rdts" type="string" calculate="instance('contact-summary')/context/stock_summary_rdts"/>
+      <bind nodeset="/commodity_supply/stock_summary_act_6" type="string" calculate="instance('contact-summary')/context/stock_summary_act_6"/>
+      <bind nodeset="/commodity_supply/stock_summary_act_12" type="string" calculate="instance('contact-summary')/context/stock_summary_act_12"/>
+      <bind nodeset="/commodity_supply/stock_summary_act_18" type="string" calculate="instance('contact-summary')/context/stock_summary_act_18"/>
+      <bind nodeset="/commodity_supply/stock_summary_act_24" type="string" calculate="instance('contact-summary')/context/stock_summary_act_24"/>
+      <bind nodeset="/commodity_supply/stock_summary_dt_250" type="string" calculate="instance('contact-summary')/context/stock_summary_dt_250"/>
+      <bind nodeset="/commodity_supply/stock_summary_ors_zinc" type="string" calculate="instance('contact-summary')/context/stock_summary_ors_zinc"/>
+      <bind nodeset="/commodity_supply/stock_summary_ors_sachets" type="string" calculate="instance('contact-summary')/context/stock_summary_ors_sachets"/>
+      <bind nodeset="/commodity_supply/stock_summary_zinc_sulphate" type="string" calculate="instance('contact-summary')/context/stock_summary_zinc_sulphate"/>
+      <bind nodeset="/commodity_supply/stock_summary_albendazole" type="string" calculate="instance('contact-summary')/context/stock_summary_albendazole"/>
+      <bind nodeset="/commodity_supply/stock_summary_tetra_eye" type="string" calculate="instance('contact-summary')/context/stock_summary_tetra_eye"/>
+      <bind nodeset="/commodity_supply/stock_summary_paracetamol_120" type="string" calculate="instance('contact-summary')/context/stock_summary_paracetamol_120"/>
+      <bind nodeset="/commodity_supply/stock_summary_mebendazole" type="string" calculate="instance('contact-summary')/context/stock_summary_mebendazole"/>
+      <bind nodeset="/commodity_supply/stock_summary_coc" type="string" calculate="instance('contact-summary')/context/stock_summary_coc"/>
+      <bind nodeset="/commodity_supply/stock_summary_prog" type="string" calculate="instance('contact-summary')/context/stock_summary_prog"/>
+      <bind nodeset="/commodity_supply/stock_summary_depo_im" type="string" calculate="instance('contact-summary')/context/stock_summary_depo_im"/>
+      <bind nodeset="/commodity_supply/stock_summary_depo_sc" type="string" calculate="instance('contact-summary')/context/stock_summary_depo_sc"/>
+      <bind nodeset="/commodity_supply/stock_summary_preg_strip" type="string" calculate="instance('contact-summary')/context/stock_summary_preg_strip"/>
+      <bind nodeset="/commodity_supply/stock_summary_chlorine" type="string" calculate="instance('contact-summary')/context/stock_summary_chlorine"/>
+      <bind nodeset="/commodity_supply/stock_summary_gluc_strips" type="string" calculate="instance('contact-summary')/context/stock_summary_gluc_strips"/>
+      <bind nodeset="/commodity_supply/stock_summary_paracetamol_500" type="string" calculate="instance('contact-summary')/context/stock_summary_paracetamol_500"/>
+      <bind nodeset="/commodity_supply/stock_summary_bandages" type="string" calculate="instance('contact-summary')/context/stock_summary_bandages"/>
+      <bind nodeset="/commodity_supply/stock_summary_povi" type="string" calculate="instance('contact-summary')/context/stock_summary_povi"/>
+      <bind nodeset="/commodity_supply/stock_summary_strap" type="string" calculate="instance('contact-summary')/context/stock_summary_strap"/>
+      <bind nodeset="/commodity_supply/stock_summary_gloves" type="string" calculate="instance('contact-summary')/context/stock_summary_gloves"/>
+      <bind nodeset="/commodity_supply/stock_summary_envelopes" type="string" calculate="instance('contact-summary')/context/stock_summary_envelopes"/>
+      <bind nodeset="/commodity_supply/stock_summary_glucometer" type="string" calculate="instance('contact-summary')/context/stock_summary_glucometer"/>
+      <bind nodeset="/commodity_supply/stock_summary_backpack" type="string" calculate="instance('contact-summary')/context/stock_summary_backpack"/>
+      <bind nodeset="/commodity_supply/stock_summary_badge" type="string" calculate="instance('contact-summary')/context/stock_summary_badge"/>
+      <bind nodeset="/commodity_supply/stock_summary_flashlight" type="string" calculate="instance('contact-summary')/context/stock_summary_flashlight"/>
+      <bind nodeset="/commodity_supply/stock_summary_salter" type="string" calculate="instance('contact-summary')/context/stock_summary_salter"/>
+      <bind nodeset="/commodity_supply/stock_summary_color_salter" type="string" calculate="instance('contact-summary')/context/stock_summary_color_salter"/>
+      <bind nodeset="/commodity_supply/stock_summary_weighing_scale" type="string" calculate="instance('contact-summary')/context/stock_summary_weighing_scale"/>
+      <bind nodeset="/commodity_supply/stock_summary_first_aid" type="string" calculate="instance('contact-summary')/context/stock_summary_first_aid"/>
+      <bind nodeset="/commodity_supply/stock_summary_bp" type="string" calculate="instance('contact-summary')/context/stock_summary_bp"/>
+      <bind nodeset="/commodity_supply/stock_summary_thermometer" type="string" calculate="instance('contact-summary')/context/stock_summary_thermometer"/>
+      <bind nodeset="/commodity_supply/stock_summary_resp_timer" type="string" calculate="instance('contact-summary')/context/stock_summary_resp_timer"/>
+      <bind nodeset="/commodity_supply/stock_summary_muac_tape_adults" type="string" calculate="instance('contact-summary')/context/stock_summary_muac_tape_adults"/>
+      <bind nodeset="/commodity_supply/stock_summary_muac_tape_children" type="string" calculate="instance('contact-summary')/context/stock_summary_muac_tape_children"/>
+      <bind nodeset="/commodity_supply/stock_summary_family_muac_tape" type="string" calculate="instance('contact-summary')/context/stock_summary_family_muac_tape"/>
+      <bind nodeset="/commodity_supply/stock_summary_moh_514" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_514"/>
+      <bind nodeset="/commodity_supply/stock_summary_moh_521" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_521"/>
+      <bind nodeset="/commodity_supply/stock_summary_moh_100" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_100"/>
+      <bind nodeset="/commodity_supply/stock_summary_comm_daily_register" type="string" calculate="instance('contact-summary')/context/stock_summary_comm_daily_register"/>
+      <bind nodeset="/commodity_supply/stock_summary_phone" type="string" calculate="instance('contact-summary')/context/stock_summary_phone"/>
+      <bind nodeset="/commodity_supply/stock_summary_safety_box" type="string" calculate="instance('contact-summary')/context/stock_summary_safety_box"/>
+      <bind nodeset="/commodity_supply/stock_summary_others" type="string" calculate="instance('contact-summary')/context/stock_summary_others"/>
+      <bind nodeset="/commodity_supply/soh_rdts" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_rdts ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_act_6" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_6 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_act_12" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_12 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_act_18" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_18 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_act_24" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_24 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_dt_250" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_dt_250 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_ors_zinc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_ors_zinc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_ors_sachets" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_ors_sachets ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_zinc_sulphate" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_zinc_sulphate ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_albendazole" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_albendazole ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_tetra_eye" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_tetra_eye ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_paracetamol_120" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_paracetamol_120 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_mebendazole" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_mebendazole ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_coc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_coc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_prog" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_prog ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_depo_im" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_depo_im ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_depo_sc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_depo_sc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_preg_strip" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_preg_strip ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_chlorine" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_chlorine ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_gluc_strips" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_gluc_strips ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_paracetamol_500" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_paracetamol_500 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_bandages" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_bandages ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_povi" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_povi ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_strap" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_strap ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_gloves" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_gloves ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_envelopes" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_envelopes ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_glucometer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_glucometer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_backpack" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_backpack ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_badge" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_badge ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_flashlight" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_flashlight ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_salter" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_salter ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_color_salter" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_color_salter ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_weighing_scale" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_weighing_scale ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_first_aid" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_first_aid ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_bp" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_bp ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_thermometer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_thermometer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_resp_timer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_resp_timer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_muac_tape_adults" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_muac_tape_adults ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_muac_tape_children" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_muac_tape_children ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_family_muac_tape" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_family_muac_tape ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_moh_514" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_514 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_moh_521" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_521 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_moh_100" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_100 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_comm_daily_register" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_comm_daily_register ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_phone" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_phone ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_safety_box" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_safety_box ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/soh_others" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_others ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_rdts" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_rdts ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_act_6" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_6 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_act_12" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_12 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_act_18" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_18 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_act_24" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_act_24 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_dt_250" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_dt_250 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_ors_zinc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_ors_zinc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_ors_sachets" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_ors_sachets ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_zinc_sulphate" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_zinc_sulphate ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_albendazole" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_albendazole ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_tetra_eye" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_tetra_eye ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_paracetamol_120" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_paracetamol_120 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_mebendazole" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_mebendazole ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_coc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_coc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_prog" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_prog ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_depo_im" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_depo_im ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_depo_sc" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_depo_sc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_preg_strip" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_preg_strip ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_chlorine" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_chlorine ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_gluc_strips" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_gluc_strips ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_paracetamol_500" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_paracetamol_500 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_bandages" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_bandages ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_povi" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_povi ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_strap" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_strap ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_gloves" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_gloves ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_envelopes" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_envelopes ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_glucometer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_glucometer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_backpack" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_backpack ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_badge" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_badge ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_flashlight" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_flashlight ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_salter" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_salter ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_color_salter" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_color_salter ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_weighing_scale" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_weighing_scale ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_first_aid" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_first_aid ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_bp" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_bp ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_thermometer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_thermometer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_resp_timer" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_resp_timer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_muac_tape_adults" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_muac_tape_adults ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_muac_tape_children" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_muac_tape_children ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_family_muac_tape" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_family_muac_tape ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_moh_514" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_514 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_moh_521" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_521 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_moh_100" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_moh_100 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_comm_daily_register" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_comm_daily_register ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_phone" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_phone ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_safety_box" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_safety_box ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/awc_others" type="string" calculate="coalesce(selected-at( /commodity_supply/stock_summary_others ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_supply/required_rdts" type="string" calculate="((number( /commodity_supply/awc_rdts )*6) - number( /commodity_supply/soh_rdts ))"/>
+      <bind nodeset="/commodity_supply/eb_rdts" type="string" calculate="number( /commodity_supply/soh_rdts ) + number( /commodity_supply/s_malaria/rdts_supplied )"/>
+      <bind nodeset="/commodity_supply/required_act_6" type="string" calculate="((number( /commodity_supply/awc_act_6 )*6) - number( /commodity_supply/soh_act_6 ))"/>
+      <bind nodeset="/commodity_supply/eb_act_6" type="string" calculate="number( /commodity_supply/soh_act_6 ) + number( /commodity_supply/s_malaria/act_6_supplied )"/>
+      <bind nodeset="/commodity_supply/required_act_12" type="string" calculate="((number( /commodity_supply/awc_act_12 )*6) - number( /commodity_supply/soh_act_12 ))"/>
+      <bind nodeset="/commodity_supply/eb_act_12" type="string" calculate="number( /commodity_supply/soh_act_12 ) + number( /commodity_supply/s_malaria/act_12_supplied )"/>
+      <bind nodeset="/commodity_supply/required_act_18" type="string" calculate="((number( /commodity_supply/awc_act_18 )*6) - number( /commodity_supply/soh_act_18 ))"/>
+      <bind nodeset="/commodity_supply/eb_act_18" type="string" calculate="number( /commodity_supply/soh_act_18 ) + number( /commodity_supply/s_malaria/act_18_supplied )"/>
+      <bind nodeset="/commodity_supply/required_act_24" type="string" calculate="((number( /commodity_supply/awc_act_24 )*6) - number( /commodity_supply/soh_act_24 ))"/>
+      <bind nodeset="/commodity_supply/eb_act_24" type="string" calculate="number( /commodity_supply/soh_act_24 ) + number( /commodity_supply/s_malaria/act_24_supplied )"/>
+      <bind nodeset="/commodity_supply/required_dt_250" type="string" calculate="((number( /commodity_supply/awc_dt_250 )*6) - number( /commodity_supply/soh_dt_250 ))"/>
+      <bind nodeset="/commodity_supply/eb_dt_250" type="string" calculate="number( /commodity_supply/soh_dt_250 ) + number( /commodity_supply/s_child_health/dt_250_supplied )"/>
+      <bind nodeset="/commodity_supply/required_ors_zinc" type="string" calculate="((number( /commodity_supply/awc_ors_zinc )*6) - number( /commodity_supply/soh_ors_zinc ))"/>
+      <bind nodeset="/commodity_supply/eb_ors_zinc" type="string" calculate="number( /commodity_supply/soh_ors_zinc ) + number( /commodity_supply/s_child_health/ors_zinc_supplied )"/>
+      <bind nodeset="/commodity_supply/required_ors_sachets" type="string" calculate="((number( /commodity_supply/awc_ors_sachets )*6) - number( /commodity_supply/soh_ors_sachets ))"/>
+      <bind nodeset="/commodity_supply/eb_ors_sachets" type="string" calculate="number( /commodity_supply/soh_ors_sachets ) + number( /commodity_supply/s_child_health/ors_sachets_supplied )"/>
+      <bind nodeset="/commodity_supply/required_zinc_sulphate" type="string" calculate="((number( /commodity_supply/awc_zinc_sulphate )*6) - number( /commodity_supply/soh_zinc_sulphate ))"/>
+      <bind nodeset="/commodity_supply/eb_zinc_sulphate" type="string" calculate="number( /commodity_supply/soh_zinc_sulphate ) + number( /commodity_supply/s_child_health/zinc_sulphate_supplied )"/>
+      <bind nodeset="/commodity_supply/required_albendazole" type="string" calculate="((number( /commodity_supply/awc_albendazole )*6) - number( /commodity_supply/soh_albendazole ))"/>
+      <bind nodeset="/commodity_supply/eb_albendazole" type="string" calculate="number( /commodity_supply/soh_albendazole ) + number( /commodity_supply/s_child_health/albendazole_supplied )"/>
+      <bind nodeset="/commodity_supply/required_tetra_eye" type="string" calculate="((number( /commodity_supply/awc_tetra_eye )*6) - number( /commodity_supply/soh_tetra_eye ))"/>
+      <bind nodeset="/commodity_supply/eb_tetra_eye" type="string" calculate="number( /commodity_supply/soh_tetra_eye ) + number( /commodity_supply/s_child_health/tetra_eye_supplied )"/>
+      <bind nodeset="/commodity_supply/required_paracetamol_120" type="string" calculate="((number( /commodity_supply/awc_paracetamol_120 )*6) - number( /commodity_supply/soh_paracetamol_120 ))"/>
+      <bind nodeset="/commodity_supply/eb_paracetamol_120" type="string" calculate="number( /commodity_supply/soh_paracetamol_120 ) + number( /commodity_supply/s_child_health/paracetamol_120_supplied )"/>
+      <bind nodeset="/commodity_supply/required_mebendazole" type="string" calculate="((number( /commodity_supply/awc_mebendazole )*6) - number( /commodity_supply/soh_mebendazole ))"/>
+      <bind nodeset="/commodity_supply/eb_mebendazole" type="string" calculate="number( /commodity_supply/soh_mebendazole ) + number( /commodity_supply/s_reproductive/mebendazole_supplied )"/>
+      <bind nodeset="/commodity_supply/required_coc" type="string" calculate="((number( /commodity_supply/awc_coc )*6) - number( /commodity_supply/soh_coc ))"/>
+      <bind nodeset="/commodity_supply/eb_coc" type="string" calculate="number( /commodity_supply/soh_coc ) + number( /commodity_supply/s_reproductive/coc_supplied )"/>
+      <bind nodeset="/commodity_supply/required_prog" type="string" calculate="((number( /commodity_supply/awc_prog )*6) - number( /commodity_supply/soh_prog ))"/>
+      <bind nodeset="/commodity_supply/eb_prog" type="string" calculate="number( /commodity_supply/soh_prog ) + number( /commodity_supply/s_reproductive/prog_supplied )"/>
+      <bind nodeset="/commodity_supply/required_depo_im" type="string" calculate="((number( /commodity_supply/awc_depo_im )*6) - number( /commodity_supply/soh_depo_im ))"/>
+      <bind nodeset="/commodity_supply/eb_depo_im" type="string" calculate="number( /commodity_supply/soh_depo_im ) + number( /commodity_supply/s_reproductive/depo_im_supplied )"/>
+      <bind nodeset="/commodity_supply/required_depo_sc" type="string" calculate="((number( /commodity_supply/awc_depo_sc )*6) - number( /commodity_supply/soh_depo_sc ))"/>
+      <bind nodeset="/commodity_supply/eb_depo_sc" type="string" calculate="number( /commodity_supply/soh_depo_sc ) + number( /commodity_supply/s_reproductive/depo_sc_supplied )"/>
+      <bind nodeset="/commodity_supply/required_preg_strip" type="string" calculate="((number( /commodity_supply/awc_preg_strip )*6) - number( /commodity_supply/soh_preg_strip ))"/>
+      <bind nodeset="/commodity_supply/eb_preg_strip" type="string" calculate="number( /commodity_supply/soh_preg_strip ) + number( /commodity_supply/s_reproductive/preg_strip_supplied )"/>
+      <bind nodeset="/commodity_supply/required_chlorine" type="string" calculate="((number( /commodity_supply/awc_chlorine )*6) - number( /commodity_supply/soh_chlorine ))"/>
+      <bind nodeset="/commodity_supply/eb_chlorine" type="string" calculate="number( /commodity_supply/soh_chlorine ) + number( /commodity_supply/s_wash/chlorine_supplied )"/>
+      <bind nodeset="/commodity_supply/required_gluc_strips" type="string" calculate="((number( /commodity_supply/awc_gluc_strips )*6) - number( /commodity_supply/soh_gluc_strips ))"/>
+      <bind nodeset="/commodity_supply/eb_gluc_strips" type="string" calculate="number( /commodity_supply/soh_gluc_strips ) + number( /commodity_supply/s_ncds/gluc_strips_supplied )"/>
+      <bind nodeset="/commodity_supply/required_paracetamol_500" type="string" calculate="((number( /commodity_supply/awc_paracetamol_500 )*6) - number( /commodity_supply/soh_paracetamol_500 ))"/>
+      <bind nodeset="/commodity_supply/eb_paracetamol_500" type="string" calculate="number( /commodity_supply/soh_paracetamol_500 ) + number( /commodity_supply/s_others/paracetamol_500_supplied )"/>
+      <bind nodeset="/commodity_supply/required_bandages" type="string" calculate="((number( /commodity_supply/awc_bandages )*6) - number( /commodity_supply/soh_bandages ))"/>
+      <bind nodeset="/commodity_supply/eb_bandages" type="string" calculate="number( /commodity_supply/soh_bandages ) + number( /commodity_supply/s_non_pharma/bandages_supplied )"/>
+      <bind nodeset="/commodity_supply/required_povi" type="string" calculate="((number( /commodity_supply/awc_povi )*6) - number( /commodity_supply/soh_povi ))"/>
+      <bind nodeset="/commodity_supply/eb_povi" type="string" calculate="number( /commodity_supply/soh_povi ) + number( /commodity_supply/s_non_pharma/povi_supplied )"/>
+      <bind nodeset="/commodity_supply/required_strap" type="string" calculate="((number( /commodity_supply/awc_strap )*6) - number( /commodity_supply/soh_strap ))"/>
+      <bind nodeset="/commodity_supply/eb_strap" type="string" calculate="number( /commodity_supply/soh_strap ) + number( /commodity_supply/s_non_pharma/strap_supplied )"/>
+      <bind nodeset="/commodity_supply/required_gloves" type="string" calculate="((number( /commodity_supply/awc_gloves )*6) - number( /commodity_supply/soh_gloves ))"/>
+      <bind nodeset="/commodity_supply/eb_gloves" type="string" calculate="number( /commodity_supply/soh_gloves ) + number( /commodity_supply/s_non_pharma/gloves_supplied )"/>
+      <bind nodeset="/commodity_supply/required_envelopes" type="string" calculate="((number( /commodity_supply/awc_envelopes )*6) - number( /commodity_supply/soh_envelopes ))"/>
+      <bind nodeset="/commodity_supply/eb_envelopes" type="string" calculate="number( /commodity_supply/soh_envelopes ) + number( /commodity_supply/s_non_pharma/envelopes_supplied )"/>
+      <bind nodeset="/commodity_supply/required_glucometer" type="string" calculate="((number( /commodity_supply/awc_glucometer )*6) - number( /commodity_supply/soh_glucometer ))"/>
+      <bind nodeset="/commodity_supply/eb_glucometer" type="string" calculate="number( /commodity_supply/soh_glucometer ) + number( /commodity_supply/s_equipment/glucometer_supplied )"/>
+      <bind nodeset="/commodity_supply/required_backpack" type="string" calculate="((number( /commodity_supply/awc_backpack )*6) - number( /commodity_supply/soh_backpack ))"/>
+      <bind nodeset="/commodity_supply/eb_backpack" type="string" calculate="number( /commodity_supply/soh_backpack ) + number( /commodity_supply/s_equipment/backpack_supplied )"/>
+      <bind nodeset="/commodity_supply/required_badge" type="string" calculate="((number( /commodity_supply/awc_badge )*6) - number( /commodity_supply/soh_badge ))"/>
+      <bind nodeset="/commodity_supply/eb_badge" type="string" calculate="number( /commodity_supply/soh_badge ) + number( /commodity_supply/s_equipment/badge_supplied )"/>
+      <bind nodeset="/commodity_supply/required_flashlight" type="string" calculate="((number( /commodity_supply/awc_flashlight )*6) - number( /commodity_supply/soh_flashlight ))"/>
+      <bind nodeset="/commodity_supply/eb_flashlight" type="string" calculate="number( /commodity_supply/soh_flashlight ) + number( /commodity_supply/s_equipment/flashlight_supplied )"/>
+      <bind nodeset="/commodity_supply/required_salter" type="string" calculate="((number( /commodity_supply/awc_salter )*6) - number( /commodity_supply/soh_salter ))"/>
+      <bind nodeset="/commodity_supply/eb_salter" type="string" calculate="number( /commodity_supply/soh_salter ) + number( /commodity_supply/s_equipment/salter_supplied )"/>
+      <bind nodeset="/commodity_supply/required_color_salter" type="string" calculate="((number( /commodity_supply/awc_color_salter )*6) - number( /commodity_supply/soh_color_salter ))"/>
+      <bind nodeset="/commodity_supply/eb_color_salter" type="string" calculate="number( /commodity_supply/soh_color_salter ) + number( /commodity_supply/s_equipment/color_salter_supplied )"/>
+      <bind nodeset="/commodity_supply/required_weighing_scale" type="string" calculate="((number( /commodity_supply/awc_weighing_scale )*6) - number( /commodity_supply/soh_weighing_scale ))"/>
+      <bind nodeset="/commodity_supply/eb_weighing_scale" type="string" calculate="number( /commodity_supply/soh_weighing_scale ) + number( /commodity_supply/s_equipment/weighing_scale_supplied )"/>
+      <bind nodeset="/commodity_supply/required_first_aid" type="string" calculate="((number( /commodity_supply/awc_first_aid )*6) - number( /commodity_supply/soh_first_aid ))"/>
+      <bind nodeset="/commodity_supply/eb_first_aid" type="string" calculate="number( /commodity_supply/soh_first_aid ) + number( /commodity_supply/s_equipment/first_aid_supplied )"/>
+      <bind nodeset="/commodity_supply/required_bp" type="string" calculate="((number( /commodity_supply/awc_bp )*6) - number( /commodity_supply/soh_bp ))"/>
+      <bind nodeset="/commodity_supply/eb_bp" type="string" calculate="number( /commodity_supply/soh_bp ) + number( /commodity_supply/s_equipment/bp_supplied )"/>
+      <bind nodeset="/commodity_supply/required_thermometer" type="string" calculate="((number( /commodity_supply/awc_thermometer )*6) - number( /commodity_supply/soh_thermometer ))"/>
+      <bind nodeset="/commodity_supply/eb_thermometer" type="string" calculate="number( /commodity_supply/soh_thermometer ) + number( /commodity_supply/s_equipment/thermometer_supplied )"/>
+      <bind nodeset="/commodity_supply/required_resp_timer" type="string" calculate="((number( /commodity_supply/awc_resp_timer )*6) - number( /commodity_supply/soh_resp_timer ))"/>
+      <bind nodeset="/commodity_supply/eb_resp_timer" type="string" calculate="number( /commodity_supply/soh_resp_timer ) + number( /commodity_supply/s_equipment/resp_timer_supplied )"/>
+      <bind nodeset="/commodity_supply/required_muac_tape_adults" type="string" calculate="((number( /commodity_supply/awc_muac_tape_adults )*6) - number( /commodity_supply/soh_muac_tape_adults ))"/>
+      <bind nodeset="/commodity_supply/eb_muac_tape_adults" type="string" calculate="number( /commodity_supply/soh_muac_tape_adults ) + number( /commodity_supply/s_equipment/muac_tape_adults_supplied )"/>
+      <bind nodeset="/commodity_supply/required_muac_tape_children" type="string" calculate="((number( /commodity_supply/awc_muac_tape_children )*6) - number( /commodity_supply/soh_muac_tape_children ))"/>
+      <bind nodeset="/commodity_supply/eb_muac_tape_children" type="string" calculate="number( /commodity_supply/soh_muac_tape_children ) + number( /commodity_supply/s_equipment/muac_tape_children_supplied )"/>
+      <bind nodeset="/commodity_supply/required_family_muac_tape" type="string" calculate="((number( /commodity_supply/awc_family_muac_tape )*6) - number( /commodity_supply/soh_family_muac_tape ))"/>
+      <bind nodeset="/commodity_supply/eb_family_muac_tape" type="string" calculate="number( /commodity_supply/soh_family_muac_tape ) + number( /commodity_supply/s_equipment/family_muac_tape_supplied )"/>
+      <bind nodeset="/commodity_supply/required_moh_514" type="string" calculate="((number( /commodity_supply/awc_moh_514 )*6) - number( /commodity_supply/soh_moh_514 ))"/>
+      <bind nodeset="/commodity_supply/eb_moh_514" type="string" calculate="number( /commodity_supply/soh_moh_514 ) + number( /commodity_supply/s_equipment/moh_514_supplied )"/>
+      <bind nodeset="/commodity_supply/required_moh_521" type="string" calculate="((number( /commodity_supply/awc_moh_521 )*6) - number( /commodity_supply/soh_moh_521 ))"/>
+      <bind nodeset="/commodity_supply/eb_moh_521" type="string" calculate="number( /commodity_supply/soh_moh_521 ) + number( /commodity_supply/s_equipment/moh_521_supplied )"/>
+      <bind nodeset="/commodity_supply/required_moh_100" type="string" calculate="((number( /commodity_supply/awc_moh_100 )*6) - number( /commodity_supply/soh_moh_100 ))"/>
+      <bind nodeset="/commodity_supply/eb_moh_100" type="string" calculate="number( /commodity_supply/soh_moh_100 ) + number( /commodity_supply/s_equipment/moh_100_supplied )"/>
+      <bind nodeset="/commodity_supply/required_comm_daily_register" type="string" calculate="((number( /commodity_supply/awc_comm_daily_register )*6) - number( /commodity_supply/soh_comm_daily_register ))"/>
+      <bind nodeset="/commodity_supply/eb_comm_daily_register" type="string" calculate="number( /commodity_supply/soh_comm_daily_register ) + number( /commodity_supply/s_equipment/comm_daily_register_supplied )"/>
+      <bind nodeset="/commodity_supply/required_phone" type="string" calculate="((number( /commodity_supply/awc_phone )*6) - number( /commodity_supply/soh_phone ))"/>
+      <bind nodeset="/commodity_supply/eb_phone" type="string" calculate="number( /commodity_supply/soh_phone ) + number( /commodity_supply/s_equipment/phone_supplied )"/>
+      <bind nodeset="/commodity_supply/required_safety_box" type="string" calculate="((number( /commodity_supply/awc_safety_box )*6) - number( /commodity_supply/soh_safety_box ))"/>
+      <bind nodeset="/commodity_supply/eb_safety_box" type="string" calculate="number( /commodity_supply/soh_safety_box ) + number( /commodity_supply/s_equipment/safety_box_supplied )"/>
+      <bind nodeset="/commodity_supply/required_others" type="string" calculate="((number( /commodity_supply/awc_others )*6) - number( /commodity_supply/soh_others ))"/>
+      <bind nodeset="/commodity_supply/eb_others" type="string" calculate="number( /commodity_supply/soh_others ) + number( /commodity_supply/s_equipment/others_supplied )"/>
+      <bind nodeset="/commodity_supply/first_group/category" type="select" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/select_commodities" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/category , 'commodities')"/>
+      <bind nodeset="/commodity_supply/first_group/list_commodities" type="select" relevant="selected( /commodity_supply/first_group/category , 'commodities')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/malaria" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'malaria')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/child_health" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'child_health')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/repro_maternal" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'repro_maternal')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/wash" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'wash')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/others" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'others')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/ncds" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'ncds')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/non_pharma" type="select" relevant="selected( /commodity_supply/first_group/list_commodities , 'non_pharma')" required="true()"/>
+      <bind nodeset="/commodity_supply/first_group/select_equipment" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/category , 'equipment')"/>
+      <bind nodeset="/commodity_supply/first_group/equipment" type="select" relevant="selected( /commodity_supply/first_group/category , 'equipment')" required="true()"/>
+      <bind nodeset="/commodity_supply/s_malaria" relevant="selected( /commodity_supply/first_group/list_commodities , 'malaria')"/>
+      <bind nodeset="/commodity_supply/s_malaria/rdts_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')"/>
+      <bind nodeset="/commodity_supply/s_malaria/rdts_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')"/>
+      <bind nodeset="/commodity_supply/s_malaria/rdts_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')"/>
+      <bind nodeset="/commodity_supply/s_malaria/rdts_supplied" type="int" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_6_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_6_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_6_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_6_supplied" type="int" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_12_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_12_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_12_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_12_supplied" type="int" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_18_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_18_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_18_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_18_supplied" type="int" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_24_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_24_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_24_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')"/>
+      <bind nodeset="/commodity_supply/s_malaria/act_24_supplied" type="int" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health" relevant="selected( /commodity_supply/first_group/list_commodities , 'child_health')"/>
+      <bind nodeset="/commodity_supply/s_child_health/dt_250_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')"/>
+      <bind nodeset="/commodity_supply/s_child_health/dt_250_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')"/>
+      <bind nodeset="/commodity_supply/s_child_health/dt_250_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')"/>
+      <bind nodeset="/commodity_supply/s_child_health/dt_250_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_zinc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_zinc_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_zinc_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_zinc_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_sachets_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_sachets_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_sachets_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')"/>
+      <bind nodeset="/commodity_supply/s_child_health/ors_sachets_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/zinc_sulphate_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')"/>
+      <bind nodeset="/commodity_supply/s_child_health/zinc_sulphate_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')"/>
+      <bind nodeset="/commodity_supply/s_child_health/zinc_sulphate_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')"/>
+      <bind nodeset="/commodity_supply/s_child_health/zinc_sulphate_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/albendazole" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')"/>
+      <bind nodeset="/commodity_supply/s_child_health/albendazole_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')"/>
+      <bind nodeset="/commodity_supply/s_child_health/albendazole_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')"/>
+      <bind nodeset="/commodity_supply/s_child_health/albendazole_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/tetra_eye_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')"/>
+      <bind nodeset="/commodity_supply/s_child_health/tetra_eye_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')"/>
+      <bind nodeset="/commodity_supply/s_child_health/tetra_eye_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')"/>
+      <bind nodeset="/commodity_supply/s_child_health/tetra_eye_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_child_health/paracetamol_120_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')"/>
+      <bind nodeset="/commodity_supply/s_child_health/paracetamol_120_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')"/>
+      <bind nodeset="/commodity_supply/s_child_health/paracetamol_120_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')"/>
+      <bind nodeset="/commodity_supply/s_child_health/paracetamol_120_supplied" type="int" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive" relevant="selected( /commodity_supply/first_group/list_commodities , 'repro_maternal')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/mebendazole_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/mebendazole_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/mebendazole_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/mebendazole_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive/coc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/coc_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/coc_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/coc_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive/prog_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/prog_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/prog_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/prog_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_im_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_im_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_im_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_im_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_sc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_sc_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_sc_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/depo_sc_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_reproductive/preg_strip_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/preg_strip_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/preg_strip_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')"/>
+      <bind nodeset="/commodity_supply/s_reproductive/preg_strip_supplied" type="int" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_wash" relevant="selected( /commodity_supply/first_group/list_commodities , 'wash')"/>
+      <bind nodeset="/commodity_supply/s_wash/chlorine_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')"/>
+      <bind nodeset="/commodity_supply/s_wash/chlorine_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')"/>
+      <bind nodeset="/commodity_supply/s_wash/chlorine_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')"/>
+      <bind nodeset="/commodity_supply/s_wash/chlorine_supplied" type="int" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_ncds" relevant="selected( /commodity_supply/first_group/list_commodities , 'ncds')"/>
+      <bind nodeset="/commodity_supply/s_ncds/gluc_strips_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_supply/s_ncds/gluc_strips_soh" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_supply/s_ncds/gluc_strips_required" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_supply/s_ncds/gluc_strips_supplied" type="int" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_others" relevant="selected( /commodity_supply/first_group/list_commodities , 'others')"/>
+      <bind nodeset="/commodity_supply/s_others/paracetamol_500_tablets" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')"/>
+      <bind nodeset="/commodity_supply/s_others/paracetamol_500_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')"/>
+      <bind nodeset="/commodity_supply/s_others/paracetamol_500_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')"/>
+      <bind nodeset="/commodity_supply/s_others/paracetamol_500_supplied" type="int" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_non_pharma" relevant="selected( /commodity_supply/first_group/list_commodities , 'non_pharma')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/bandages_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/bandages_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/bandages_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/bandages_supplied" type="int" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/povi_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/povi_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/povi_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/povi_supplied" type="int" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/strap_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/strap_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/strap_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/strap_supplied" type="int" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/gloves_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/gloves_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/gloves_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/gloves_supplied" type="int" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/envelopes_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/envelopes_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/envelopes_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')"/>
+      <bind nodeset="/commodity_supply/s_non_pharma/envelopes_supplied" type="int" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment" relevant="selected( /commodity_supply/first_group/category , 'equipment')"/>
+      <bind nodeset="/commodity_supply/s_equipment/glucometer_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/glucometer_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/glucometer_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/glucometer_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/backpack_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')"/>
+      <bind nodeset="/commodity_supply/s_equipment/backpack_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')"/>
+      <bind nodeset="/commodity_supply/s_equipment/backpack_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')"/>
+      <bind nodeset="/commodity_supply/s_equipment/backpack_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/badge_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'badge')"/>
+      <bind nodeset="/commodity_supply/s_equipment/badge_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'badge')"/>
+      <bind nodeset="/commodity_supply/s_equipment/badge_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'badge')"/>
+      <bind nodeset="/commodity_supply/s_equipment/badge_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'badge')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/flashlight_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')"/>
+      <bind nodeset="/commodity_supply/s_equipment/flashlight_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')"/>
+      <bind nodeset="/commodity_supply/s_equipment/flashlight_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')"/>
+      <bind nodeset="/commodity_supply/s_equipment/flashlight_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/salter_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/salter_stock_on_hand" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/salter_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/salter_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'salter')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/color_salter_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/color_salter_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/color_salter_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')"/>
+      <bind nodeset="/commodity_supply/s_equipment/color_salter_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/weighing_scale_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')"/>
+      <bind nodeset="/commodity_supply/s_equipment/weighing_scale_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')"/>
+      <bind nodeset="/commodity_supply/s_equipment/weighing_scale_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')"/>
+      <bind nodeset="/commodity_supply/s_equipment/weighing_scale_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/first_aid_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')"/>
+      <bind nodeset="/commodity_supply/s_equipment/first_aid_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')"/>
+      <bind nodeset="/commodity_supply/s_equipment/first_aid_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')"/>
+      <bind nodeset="/commodity_supply/s_equipment/first_aid_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/bp_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'bp')"/>
+      <bind nodeset="/commodity_supply/s_equipment/bp_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'bp')"/>
+      <bind nodeset="/commodity_supply/s_equipment/bp_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'bp')"/>
+      <bind nodeset="/commodity_supply/s_equipment/bp_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'bp')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/thermometer_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/thermometer_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/thermometer_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/thermometer_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/resp_timer_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/resp_timer_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/resp_timer_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')"/>
+      <bind nodeset="/commodity_supply/s_equipment/resp_timer_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_adults_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_adults_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_adults_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_adults_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_children_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_children_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_children_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')"/>
+      <bind nodeset="/commodity_supply/s_equipment/muac_tape_children_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/family_muac_tape_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')"/>
+      <bind nodeset="/commodity_supply/s_equipment/family_muac_tape_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')"/>
+      <bind nodeset="/commodity_supply/s_equipment/family_muac_tape_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')"/>
+      <bind nodeset="/commodity_supply/s_equipment/family_muac_tape_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_514_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_514_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_514_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_514_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_521_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_521_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_521_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_521_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_100_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_100_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_100_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')"/>
+      <bind nodeset="/commodity_supply/s_equipment/moh_100_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/comm_daily_register_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')"/>
+      <bind nodeset="/commodity_supply/s_equipment/comm_daily_register_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')"/>
+      <bind nodeset="/commodity_supply/s_equipment/comm_daily_register_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')"/>
+      <bind nodeset="/commodity_supply/s_equipment/comm_daily_register_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/phone_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'phone')"/>
+      <bind nodeset="/commodity_supply/s_equipment/phone_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'phone')"/>
+      <bind nodeset="/commodity_supply/s_equipment/phone_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'phone')"/>
+      <bind nodeset="/commodity_supply/s_equipment/phone_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'phone')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/safety_box_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')"/>
+      <bind nodeset="/commodity_supply/s_equipment/safety_box_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')"/>
+      <bind nodeset="/commodity_supply/s_equipment/safety_box_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')"/>
+      <bind nodeset="/commodity_supply/s_equipment/safety_box_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/others_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')"/>
+      <bind nodeset="/commodity_supply/s_equipment/others_soh" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')"/>
+      <bind nodeset="/commodity_supply/s_equipment/others_required" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')"/>
+      <bind nodeset="/commodity_supply/s_equipment/other_specify" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')" required="true()"/>
+      <bind nodeset="/commodity_supply/s_equipment/others_supplied" type="int" relevant="selected( /commodity_supply/first_group/equipment , 'others')" constraint=". &gt;=0" jr:constraintMsg="Should not be less than zero" required="true()"/>
+      <bind nodeset="/commodity_supply/r_summary/r_submit" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_supply/r_summary/r_items_issued_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_supply/r_summary/r_malaria" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'malaria')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_rdt_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_rdt_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'rdts')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act6_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act6_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_6')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act12_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act12_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_12')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act18_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act18_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_18')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act24_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_act24_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/malaria , 'act_24')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_child_health" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'child_health')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_amox_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_amox_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'dt_250')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_ors_zinc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_ors_zinc_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_zinc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_ors_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_ors_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'ors_sachets')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_zinc_s_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_zinc_s_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'zinc_sulphate')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_albe_s_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_albe_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'albendazole')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_tetra_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_tetra_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'tetra_eye')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_para_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_para_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/child_health , 'paracetamol_120')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_repro_maternal" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'repro_maternal')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_mebendazole_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_mebendazole_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'mebendazole')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_coc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_coc_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'coc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_prog_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_prog_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'prog')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_depo_im_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_depo_im_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_im')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_depo_sc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_depo_sc_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'depo_sc')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_preg_strip_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_preg_strip_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/repro_maternal , 'preg_strip')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_wash" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'wash')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_chlorine_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_chlorine_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/wash , 'chlorine')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_ncds" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'ncds')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_gluc_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/ncds , 'gluc_strips')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_gluc_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/ncds , 'gluc_strips')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_others_section_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'others')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_paracetamol_500_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_paracetamol_500_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/others , 'paracetamol_500')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_non_pharma" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'non_pharma')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_bandage_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_bandage_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'bandages')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_povi_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_povi_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'povi')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_strap_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_strap_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'strap')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_glove_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_glove_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'gloves')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_env_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_env_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/non_pharma , 'envelopes')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_equipment" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/list_commodities , 'equipment')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_gluc_eq_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_gluc_eq_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'glucometer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_backpack_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_backpack_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'backpack')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_badge_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'badge')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_badge_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'badge')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_torch_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_torch_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'flashlight')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_salter_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'salter')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_salter_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'salter')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_color_salter_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_color_salter_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'color_salter')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_weighing_scale_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_weighing_scale_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'weighing_scale')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_first_aid_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_first_aid_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'first_aid')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_bp_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'bp')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_bp_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'bp')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_thermometer_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_thermometer_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'thermometer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_resp_timer_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_resp_timer_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'resp_timer')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_muac_tape_adults_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_muac_tape_adults_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_adults')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_muac_tape_children_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_muac_tape_children_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'muac_tape_children')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_family_muac_tape_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_family_muac_tape_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'family_muac_tape')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_514_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_514_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_514')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_521_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_521_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_521')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_100_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_moh_100_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'moh_100')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_comm_daily_register_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_comm_daily_register_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'comm_daily_register')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_phone_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'phone')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_phone_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'phone')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_safety_box_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_safety_box_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'safety_box')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_others_note" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')"/>
+      <bind nodeset="/commodity_supply/r_summary/r_others_supplied" readonly="true()" type="string" relevant="selected( /commodity_supply/first_group/equipment , 'others')"/>
+      <bind nodeset="/commodity_supply/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/commodity_supply/inputs">
+      <label>Inputs</label>
+      <group ref="/commodity_supply/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/commodity_supply/inputs/contact/_id">
+          <label>What is the place's name?</label>
+        </input>
+        <group ref="/commodity_supply/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/commodity_supply/inputs/contact/parent/contact">
+            <label>Contact</label>
+            <input appearance="db-object" ref="/commodity_supply/inputs/contact/parent/contact/_id">
+              <label>ID</label>
+            </input>
+            <input appearance="db-object" ref="/commodity_supply/inputs/contact/parent/contact/name">
+              <label>Name</label>
+            </input>
+          </group>
+          <group ref="/commodity_supply/inputs/contact/parent/parent">
+            <label>Parent</label>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/first_group">
+      <label>Select</label>
+      <select ref="/commodity_supply/first_group/category">
+        <label>Select the category of what you want to supply</label>
+        <item>
+          <label>Commodities</label>
+          <value>commodities</value>
+        </item>
+        <item>
+          <label>Equipment</label>
+          <value>equipment</value>
+        </item>
+      </select>
+      <input ref="/commodity_supply/first_group/select_commodities">
+        <label>Select the different commodities you want to supply</label>
+      </input>
+      <select ref="/commodity_supply/first_group/list_commodities">
+        <label>List of commodities</label>
+        <item>
+          <label>Malaria</label>
+          <value>malaria</value>
+        </item>
+        <item>
+          <label>Child health</label>
+          <value>child_health</value>
+        </item>
+        <item>
+          <label>Reproductive and Maternal Health Services</label>
+          <value>repro_maternal</value>
+        </item>
+        <item>
+          <label>WASH</label>
+          <value>wash</value>
+        </item>
+        <item>
+          <label>NCDs</label>
+          <value>ncds</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>others</value>
+        </item>
+        <item>
+          <label>Non-Pharmaceutical</label>
+          <value>non_pharma</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/malaria">
+        <label>MALARIA</label>
+        <item>
+          <label>RDTs (Malaria Test Kit)</label>
+          <value>rdts</value>
+        </item>
+        <item>
+          <label>First Line Anti-Malarial (ACT/Coartem) 6 pack</label>
+          <value>act_6</value>
+        </item>
+        <item>
+          <label>First Line Anti-Malarial (ACT/Coartem) 12 pack</label>
+          <value>act_12</value>
+        </item>
+        <item>
+          <label>First Line Anti-Malarial (ACT/Coartem) 18 pack</label>
+          <value>act_18</value>
+        </item>
+        <item>
+          <label>First Line Anti-Malarial (ACT/Coartem) 24 pack</label>
+          <value>act_24</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/child_health">
+        <label>CHILD HEALTH</label>
+        <item>
+          <label>Antibiotics (Amoxicillin DT 250mg ) tablets</label>
+          <value>dt_250</value>
+        </item>
+        <item>
+          <label>ORS + Zinc Co-pack</label>
+          <value>ors_zinc</value>
+        </item>
+        <item>
+          <label>ORS Satchets</label>
+          <value>ors_sachets</value>
+        </item>
+        <item>
+          <label>Zinc Sulphate 20mg Tablets</label>
+          <value>zinc_sulphate</value>
+        </item>
+        <item>
+          <label>Albendazole 400mg (Dewormers)</label>
+          <value>albendazole</value>
+        </item>
+        <item>
+          <label>Tetracycline Eye Ointment 1% tubes</label>
+          <value>tetra_eye</value>
+        </item>
+        <item>
+          <label>Paracetamol 120mg/5ml suspension</label>
+          <value>paracetamol_120</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/repro_maternal">
+        <label>REPRODUCTIVE AND MATERNAL HEALTH SERVICES</label>
+        <item>
+          <label>Mebendazole 500mg (Dewormers) tablets</label>
+          <value>mebendazole</value>
+        </item>
+        <item>
+          <label>Combined Oral Contraceptives (packs)</label>
+          <value>coc</value>
+        </item>
+        <item>
+          <label>Progestin Only pill (packs)</label>
+          <value>prog</value>
+        </item>
+        <item>
+          <label>Depo Medroxy provera injection-IM ( vials)</label>
+          <value>depo_im</value>
+        </item>
+        <item>
+          <label>Depo Medroxy provera injection - SC (vials)</label>
+          <value>depo_sc</value>
+        </item>
+        <item>
+          <label>Pregnancy Test Strip</label>
+          <value>preg_strip</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/wash">
+        <label>WASH</label>
+        <item>
+          <label>Chlorine</label>
+          <value>chlorine</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/others">
+        <label>OTHERS</label>
+        <item>
+          <label>Paracetamol Tablets, 500mg</label>
+          <value>paracetamol_500</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/ncds">
+        <label>NCDs</label>
+        <item>
+          <label>Glucometer Strips</label>
+          <value>gluc_strips</value>
+        </item>
+      </select>
+      <select ref="/commodity_supply/first_group/non_pharma">
+        <label>NON-PHARMACEUTICAL</label>
+        <item>
+          <label>Bandages</label>
+          <value>bandages</value>
+        </item>
+        <item>
+          <label>Povidone Iodine Solution</label>
+          <value>povi</value>
+        </item>
+        <item>
+          <label>Strapping</label>
+          <value>strap</value>
+        </item>
+        <item>
+          <label>Gloves</label>
+          <value>gloves</value>
+        </item>
+        <item>
+          <label>Medical Dispensing Envelopes</label>
+          <value>envelopes</value>
+        </item>
+      </select>
+      <input ref="/commodity_supply/first_group/select_equipment">
+        <label>Select the different equipment you want to supply</label>
+      </input>
+      <select ref="/commodity_supply/first_group/equipment">
+        <label>List of equipment</label>
+        <item>
+          <label>Glucometer</label>
+          <value>glucometer</value>
+        </item>
+        <item>
+          <label>Backpack with logo</label>
+          <value>backpack</value>
+        </item>
+        <item>
+          <label>Badge (Name Tag)</label>
+          <value>badge</value>
+        </item>
+        <item>
+          <label>Flashlight (Torch)</label>
+          <value>flashlight</value>
+        </item>
+        <item>
+          <label>Salter scale</label>
+          <value>salter</value>
+        </item>
+        <item>
+          <label>Color coded salter scale</label>
+          <value>color_salter</value>
+        </item>
+        <item>
+          <label>Weighing scale (Bathroom)</label>
+          <value>weighing_scale</value>
+        </item>
+        <item>
+          <label>First Aid Kit</label>
+          <value>first_aid</value>
+        </item>
+        <item>
+          <label>BP Machine</label>
+          <value>bp</value>
+        </item>
+        <item>
+          <label>Digital Thermometer</label>
+          <value>thermometer</value>
+        </item>
+        <item>
+          <label>Respiratory Timer</label>
+          <value>resp_timer</value>
+        </item>
+        <item>
+          <label>MUAC TAPE (Adults)</label>
+          <value>muac_tape_adults</value>
+        </item>
+        <item>
+          <label>MUAC TAPE (Children)</label>
+          <value>muac_tape_children</value>
+        </item>
+        <item>
+          <label>Family MUAC tape (Children)</label>
+          <value>family_muac_tape</value>
+        </item>
+        <item>
+          <label>Register MOH 514</label>
+          <value>moh_514</value>
+        </item>
+        <item>
+          <label>Register MOH 521</label>
+          <value>moh_521</value>
+        </item>
+        <item>
+          <label>Referral Form MOH 100</label>
+          <value>moh_100</value>
+        </item>
+        <item>
+          <label>Community commodity Daily Activity Register</label>
+          <value>comm_daily_register</value>
+        </item>
+        <item>
+          <label>Mobile Phone</label>
+          <value>phone</value>
+        </item>
+        <item>
+          <label>Safety Box</label>
+          <value>safety_box</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>others</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_malaria">
+      <label>Malaria</label>
+      <input ref="/commodity_supply/s_malaria/rdts_note">
+        <label>&lt;b&gt;RDTs (Malaria Test Kit)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/rdts_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_rdts "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/rdts_required">
+        <label>Kits required: **<output value=" /commodity_supply/required_rdts "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/rdts_supplied">
+        <label>Kits supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_6_note">
+        <label>&lt;b&gt;First Line Anti-Malarial (ACT/Coartem) 6 Pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_6_soh">
+        <label>Stock on hand : ACT 6 Pack: **<output value=" /commodity_supply/soh_act_6 "/>**,</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_6_required">
+        <label>Quantity of {{6 packs}} required: **<output value=" /commodity_supply/required_act_6 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_6_supplied">
+        <label>Quantity of 6 packs supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_12_note">
+        <label>&lt;b&gt;First Line Anti-Malarial (ACT/Coartem) 12 Pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_12_soh">
+        <label>Stock on hand : ACT 12 Pack: **<output value=" /commodity_supply/soh_act_12 "/>**,</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_12_required">
+        <label>Quantity of {{12 packs}} required: **<output value=" /commodity_supply/required_act_12 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_12_supplied">
+        <label>Quantity of 12 packs supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_18_note">
+        <label>&lt;b&gt;First Line Anti-Malarial (ACT/Coartem) 18 Pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_18_soh">
+        <label>Stock on hand : ACT 18 Pack: **<output value=" /commodity_supply/soh_act_18 "/>**,</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_18_required">
+        <label>Quantity of {{18 packs}} required: **<output value=" /commodity_supply/required_act_18 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_18_supplied">
+        <label>Quantity of 18 packs supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_24_note">
+        <label>&lt;b&gt;First Line Anti-Malarial (ACT/Coartem) 24 Pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_24_soh">
+        <label>Stock on hand : ACT 24 Pack: **<output value=" /commodity_supply/soh_act_24 "/>**,</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_24_required">
+        <label>Quantity of 24 packs required: **<output value=" /commodity_supply/required_act_24 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_malaria/act_24_supplied">
+        <label>Quantity of 24 packs supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_child_health">
+      <label>Child Health</label>
+      <input ref="/commodity_supply/s_child_health/dt_250_note">
+        <label>&lt;b&gt;Antibiotics (Amoxicillin DT 250mg ) tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/dt_250_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_dt_250 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/dt_250_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_dt_250 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/dt_250_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_zinc_note">
+        <label>&lt;b&gt;ORS + Zinc Co-pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_zinc_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_ors_zinc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_zinc_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_ors_zinc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_zinc_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_sachets_note">
+        <label>&lt;b&gt;ORS Satchets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_sachets_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_ors_sachets "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_sachets_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_ors_sachets "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/ors_sachets_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/zinc_sulphate_note">
+        <label>&lt;b&gt;Zinc Sulphate 20mg Tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/zinc_sulphate_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_zinc_sulphate "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/zinc_sulphate_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_zinc_sulphate "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/zinc_sulphate_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/albendazole">
+        <label>&lt;b&gt;Albendazole 400mg (Dewormers)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/albendazole_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_albendazole "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/albendazole_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_albendazole "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/albendazole_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/tetra_eye_note">
+        <label>&lt;b&gt;Tetracycline Eye Ointment 1% tubes&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/tetra_eye_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_tetra_eye "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/tetra_eye_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_tetra_eye "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/tetra_eye_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/paracetamol_120_note">
+        <label>&lt;b&gt;Paracetamol 120mg/5ml suspension&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/paracetamol_120_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_paracetamol_120 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/paracetamol_120_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_paracetamol_120 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_child_health/paracetamol_120_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_reproductive">
+      <label>REPRODUCTIVE AND MATERNAL HEALTH SERVICES</label>
+      <input ref="/commodity_supply/s_reproductive/mebendazole_note">
+        <label>&lt;b&gt;Mebendazole 500mg (Dewormers) tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/mebendazole_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_mebendazole "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/mebendazole_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_mebendazole "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/mebendazole_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/coc_note">
+        <label>&lt;b&gt;Combined Oral Contraceptives (packs)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/coc_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_coc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/coc_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_coc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/coc_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/prog_note">
+        <label>&lt;b&gt;Progestin Only pill (packs)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/prog_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_prog "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/prog_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_prog "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/prog_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_im_note">
+        <label>&lt;b&gt;Depo Medroxy provera injection-IM ( vials)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_im_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_depo_im "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_im_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_depo_im "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_im_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_sc_note">
+        <label>&lt;b&gt;Depo Medroxy provera injection - SC (vials)&lt;b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_sc_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_depo_sc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_sc_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_depo_sc "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/depo_sc_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/preg_strip_note">
+        <label>&lt;b&gt;Pregnancy Test Strip&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/preg_strip_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_preg_strip "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/preg_strip_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_preg_strip "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_reproductive/preg_strip_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_wash">
+      <label>WASH</label>
+      <input ref="/commodity_supply/s_wash/chlorine_note">
+        <label>Chlorine</label>
+      </input>
+      <input ref="/commodity_supply/s_wash/chlorine_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_chlorine "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_wash/chlorine_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_chlorine "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_wash/chlorine_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_ncds">
+      <label>NCDS</label>
+      <input ref="/commodity_supply/s_ncds/gluc_strips_note">
+        <label>glucometer strips</label>
+      </input>
+      <input ref="/commodity_supply/s_ncds/gluc_strips_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_gluc_strips "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_ncds/gluc_strips_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_gluc_strips "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_ncds/gluc_strips_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_others">
+      <label>OTHERS</label>
+      <input ref="/commodity_supply/s_others/paracetamol_500_tablets">
+        <label>&lt;b&gt;Paracetamol Tablets, 500mg&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_others/paracetamol_500_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_paracetamol_500 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_others/paracetamol_500_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_paracetamol_500 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_others/paracetamol_500_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_non_pharma">
+      <label>NON- PHARMACEUTICAL</label>
+      <input ref="/commodity_supply/s_non_pharma/bandages_note">
+        <label>Bandages</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/bandages_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_bandages "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/bandages_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_bandages "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/bandages_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/povi_note">
+        <label>&lt;b&gt;Povidone Iodine Solution&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/povi_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_povi "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/povi_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_povi "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/povi_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/strap_note">
+        <label>&lt;b&gt;Strapping&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/strap_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_strap "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/strap_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_strap "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/strap_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/gloves_note">
+        <label>&lt;b&gt;Gloves&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/gloves_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_gloves "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/gloves_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_gloves "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/gloves_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/envelopes_note">
+        <label>&lt;b&gt;Medical Dispensing Envelopes&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/envelopes_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_envelopes "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/envelopes_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_envelopes "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_non_pharma/envelopes_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_supply/s_equipment">
+      <label>EQUIPMENT</label>
+      <input ref="/commodity_supply/s_equipment/glucometer_note">
+        <label>&lt;b&gt;glucometer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/glucometer_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_glucometer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/glucometer_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_glucometer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/glucometer_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/backpack_note">
+        <label>Backpack with logo</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/backpack_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_backpack "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/backpack_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_backpack "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/backpack_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/badge_note">
+        <label>&lt;b&gt;Badge (Name Tag)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/badge_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_badge "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/badge_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_badge "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/badge_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/flashlight_note">
+        <label>&lt;b&gt;Flashlight (Torch)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/flashlight_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_flashlight "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/flashlight_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_flashlight "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/flashlight_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/salter_note">
+        <label>&lt;b&gt;Salter scale&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/salter_stock_on_hand">
+        <label>Stock on hand</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/salter_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_salter "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/salter_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/color_salter_note">
+        <label>&lt;b&gt;Color coded salter scale&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/color_salter_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_color_salter "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/color_salter_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_color_salter "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/color_salter_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/weighing_scale_note">
+        <label>&lt;b&gt;Weighing scale (Bathroom)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/weighing_scale_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_weighing_scale "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/weighing_scale_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_weighing_scale "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/weighing_scale_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/first_aid_note">
+        <label>&lt;b&gt;First Aid Kit&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/first_aid_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_first_aid "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/first_aid_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_first_aid "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/first_aid_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/bp_note">
+        <label>&lt;b&gt;BP Machine&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/bp_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_bp "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/bp_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_bp "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/bp_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/thermometer_note">
+        <label>&lt;b&gt;Digital Thermometer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/thermometer_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_thermometer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/thermometer_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_thermometer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/thermometer_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/resp_timer_note">
+        <label>&lt;b&gt;Respiratory Timer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/resp_timer_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_resp_timer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/resp_timer_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_resp_timer "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/resp_timer_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_adults_note">
+        <label>&lt;b&gt;MUAC TAPE (Adults)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_adults_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_muac_tape_adults "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_adults_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_muac_tape_adults "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_adults_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_children_note">
+        <label>MUAC TAPE (Children)</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_children_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_muac_tape_children "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_children_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_muac_tape_children "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/muac_tape_children_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/family_muac_tape_note">
+        <label>&lt;b&gt;Family MUAC tape (Family)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/family_muac_tape_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_family_muac_tape "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/family_muac_tape_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_family_muac_tape "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/family_muac_tape_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_514_note">
+        <label>&lt;b&gt;Register MOH 514&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_514_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_moh_514 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_514_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_moh_514 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_514_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_521_note">
+        <label>&lt;b&gt;Register MOH 521&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_521_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_moh_521 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_521_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_moh_521 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_521_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_100_note">
+        <label>&lt;b&gt;Referral MOH 100&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_100_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_moh_100 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_100_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_moh_100 "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/moh_100_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/comm_daily_register_note">
+        <label>&lt;b&gt;Community commodity Daily Activity Register&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/comm_daily_register_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_comm_daily_register "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/comm_daily_register_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_comm_daily_register "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/comm_daily_register_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/phone_note">
+        <label>&lt;b&gt;Mobile Phone&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/phone_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_phone "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/phone_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_phone "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/phone_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/safety_box_note">
+        <label>&lt;b&gt;Safety Box&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/safety_box_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_safety_box "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/safety_box_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_safety_box "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/safety_box_supplied">
+        <label>Quantity supplied</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/others_note">
+        <label>&lt;b&gt;Others&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/others_soh">
+        <label>Stock on hand: **<output value=" /commodity_supply/soh_others "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/others_required">
+        <label>Quantity required: **<output value=" /commodity_supply/required_others "/>**</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/other_specify">
+        <label>Specify</label>
+      </input>
+      <input ref="/commodity_supply/s_equipment/others_supplied">
+        <label>Quantity supplied</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/commodity_supply/r_summary">
+      <label>COMMODITY SUPPLY FORM SUMMARY</label>
+      <input ref="/commodity_supply/r_summary/r_submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/commodity_supply/r_summary/r_items_issued_note">
+        <label>Items issued</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_malaria">
+        <label>Malaria</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_rdt_note">
+        <label>RDTs (Malaria Test Kit)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_rdt_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_malaria/rdts_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_rdts "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act6_note">
+        <label>First Line Anti-Malarial (ACT/Coartem) 6 pack</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act6_supplied">
+        <label>Quantity issued: 6 packs **<output value=" /commodity_supply/s_malaria/act_6_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_act_6 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act12_note">
+        <label>First Line Anti-Malarial (ACT/Coartem) 12 pack</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act12_supplied">
+        <label>Quantity issued: 12 packs **<output value=" /commodity_supply/s_malaria/act_12_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_act_12 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act18_note">
+        <label>First Line Anti-Malarial (ACT/Coartem) 18 pack</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act18_supplied">
+        <label>Quantity issued: 18 packs **<output value=" /commodity_supply/s_malaria/act_18_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_act_18 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act24_note">
+        <label>First Line Anti-Malarial (ACT/Coartem) 24 pack</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_act24_supplied">
+        <label>Quantity issued: 24 packs **<output value=" /commodity_supply/s_malaria/act_24_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_act_24 "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_child_health">
+        <label>Child Health</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_amox_note">
+        <label>Antibiotics (Amoxicillin DT 250mg ) tablets</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_amox_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/dt_250_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_dt_250 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_ors_zinc_note">
+        <label>ORS + Zinc Co-pack</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_ors_zinc_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/ors_zinc_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_ors_zinc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_ors_note">
+        <label>ORS Satchets</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_ors_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/ors_sachets_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_ors_sachets "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_zinc_s_note">
+        <label>Zinc Sulphate 20mg Tablets</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_zinc_s_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/zinc_sulphate_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_zinc_sulphate "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_albe_s_note">
+        <label>Albendazole 400mg (Dewormers)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_albe_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/albendazole_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_albendazole "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_tetra_note">
+        <label>Tetracycline Eye Ointment 1% tubes</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_tetra_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/tetra_eye_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_tetra_eye "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_para_note">
+        <label>Paracetamol 120mg/5ml suspension</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_para_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_child_health/paracetamol_120_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_paracetamol_120 "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_repro_maternal">
+        <label>Reproductive and maternal health services</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_mebendazole_note">
+        <label>Mebendazole 500mg (Dewormers) tablets</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_mebendazole_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/mebendazole_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_mebendazole "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_coc_note">
+        <label>Combined Oral Contraceptives (packs)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_coc_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/coc_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_coc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_prog_note">
+        <label>Progestin Only pill (packs)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_prog_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/prog_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_prog "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_depo_im_note">
+        <label>Depo Medroxy provera injection-IM ( vials)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_depo_im_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/depo_im_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_depo_im "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_depo_sc_note">
+        <label>Depo Medroxy provera injection - SC (vials)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_depo_sc_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/depo_sc_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_depo_sc "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_preg_strip_note">
+        <label>Pregnancy Test Strip</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_preg_strip_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_reproductive/preg_strip_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_preg_strip "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_wash">
+        <label>Wash</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_chlorine_note">
+        <label>Chlorine</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_chlorine_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_wash/chlorine_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_chlorine "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_ncds">
+        <label>NCDs</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_gluc_note">
+        <label>Glucometer strips</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_gluc_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_ncds/gluc_strips_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_gluc_strips "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_others_section_note">
+        <label>Others</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_paracetamol_500_note">
+        <label>Paracetamol Tablets</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_paracetamol_500_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_others/paracetamol_500_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_paracetamol_500 "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_non_pharma">
+        <label>Non- pharmaceutical</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_bandage_note">
+        <label>Bandages</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_bandage_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_non_pharma/bandages_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_bandages "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_povi_note">
+        <label>Povidone Iodine Solution</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_povi_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_non_pharma/povi_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_povi "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_strap_note">
+        <label>Strapping</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_strap_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_non_pharma/strap_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_strap "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_glove_note">
+        <label>Gloves</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_glove_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_non_pharma/gloves_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_gloves "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_env_note">
+        <label>Medical Dispensing Envelopes</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_env_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_non_pharma/envelopes_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_envelopes "/>**</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_supply/r_summary/r_equipment">
+        <label>Equipment</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_gluc_eq_note">
+        <label>Glucometer</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_gluc_eq_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/glucometer_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_glucometer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_backpack_note">
+        <label>Backpack with logo</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_backpack_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/backpack_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_backpack "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_badge_note">
+        <label>Badge (Name Tag)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_badge_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/badge_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_badge "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_torch_note">
+        <label>Flashlight (Torch)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_torch_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/flashlight_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_flashlight "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_salter_note">
+        <label>Salter scale</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_salter_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/salter_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_salter "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_color_salter_note">
+        <label>Color coded salter scale</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_color_salter_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/color_salter_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_color_salter "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_weighing_scale_note">
+        <label>Weighing scale (Bathroom)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_weighing_scale_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/weighing_scale_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_weighing_scale "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_first_aid_note">
+        <label>First Aid Kit</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_first_aid_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/first_aid_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_first_aid "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_bp_note">
+        <label>BP Machine</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_bp_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/bp_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_bp "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_thermometer_note">
+        <label>Digital Thermometer</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_thermometer_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/thermometer_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_thermometer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_resp_timer_note">
+        <label>Respiratory Timer</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_resp_timer_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/resp_timer_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_resp_timer "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_muac_tape_adults_note">
+        <label>MUAC TAPE (Adults)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_muac_tape_adults_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/muac_tape_adults_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_muac_tape_adults "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_muac_tape_children_note">
+        <label>MUAC TAPE (Children)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_muac_tape_children_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/muac_tape_children_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_muac_tape_children "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_family_muac_tape_note">
+        <label>Family MUAC tape (Family)</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_family_muac_tape_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/family_muac_tape_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_family_muac_tape "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_514_note">
+        <label>Register MOH 514</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_514_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/moh_514_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_moh_514 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_521_note">
+        <label>Register MOH 521</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_521_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/moh_521_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_moh_521 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_100_note">
+        <label>Referral Form MOH 100</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_moh_100_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/moh_100_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_moh_100 "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_comm_daily_register_note">
+        <label>Community commodity Daily Activity Register</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_comm_daily_register_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/comm_daily_register_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_comm_daily_register "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_phone_note">
+        <label>Mobile Phone</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_phone_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/phone_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_phone "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_safety_box_note">
+        <label>Safety Box</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_safety_box_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/safety_box_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_safety_box "/>**</label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_others_note">
+        <label>Others : <output value=" /commodity_supply/s_equipment/other_specify "/></label>
+      </input>
+      <input appearance="li" ref="/commodity_supply/r_summary/r_others_supplied">
+        <label>Quantity issued: **<output value=" /commodity_supply/s_equipment/others_supplied "/>** , Ending Balance : **<output value=" /commodity_supply/eb_others "/>**</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

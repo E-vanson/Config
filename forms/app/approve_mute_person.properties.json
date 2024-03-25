@@ -1,0 +1,7 @@
+{
+    "icon": "icon-mute",
+    "context": {
+        "person":false,
+        "place":false
+    }
+}

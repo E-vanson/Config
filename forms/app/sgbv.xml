@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Sexual and Gender Based Violence</h:title>
+    <model>
+      <instance>
+        <sgbv id="sgbv" prefix="J1!sgbv!" delimiter="#" version="2023-05-19 17:07:42">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <contact>
+                      <name/>
+                      <phone/>
+                    </contact>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <patient_age/>
+          <household_name/>
+          <chv_name/>
+          <chv_phone/>
+          <cha_name/>
+          <cha_phone/>
+          <sgbv>
+            <sgbv_observe_note/>
+            <has_observed_sgbv_signs/>
+            <sgbv_signs_observed/>
+            <is_referred_to_cha/>
+          </sgbv>
+          <group_summary>
+            <submit/>
+            <r_summary/>
+            <r_patient_name/>
+            <r_patient_sex/>
+            <r_patient_age/>
+            <r_findings/>
+            <r_sgbv_signs_observed/>
+            <r_instruction/>
+            <r_note_sync_instruction/>
+          </group_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </sgbv>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/sgbv/inputs" relevant="./source='user'"/>
+      <bind nodeset="/sgbv/inputs/source" type="string"/>
+      <bind nodeset="/sgbv/inputs/source_id" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/sgbv/inputs/contact/name" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/sex" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/sgbv/inputs/contact/parent/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/sgbv/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/sgbv/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/sgbv/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/sgbv/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/sgbv/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/sgbv/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /sgbv/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/sgbv/patient_age_in_months" type="string" calculate="difference-in-months(  /sgbv/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/sgbv/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /sgbv/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/sgbv/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /sgbv/inputs/contact/date_of_birth )) div 7)"/>
+      <bind nodeset="/sgbv/patient_age" type="string" calculate="if( /sgbv/patient_age_in_years  &gt; 1, concat( /sgbv/patient_age_in_years , ' years old'), if( /sgbv/patient_age_in_months  &gt; 1, concat( /sgbv/patient_age_in_months , ' months old'), if( /sgbv/patient_age_in_weeks  &gt; 1, concat( /sgbv/patient_age_in_weeks , ' weeks old'), concat( /sgbv/patient_age_in_days , ' days old'))))"/>
+      <bind nodeset="/sgbv/household_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/sgbv/chv_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/sgbv/chv_phone" type="string" calculate="../inputs/contact/parent/parent/contact/phone"/>
+      <bind nodeset="/sgbv/cha_name" type="string" calculate="../inputs/contact/parent/parent/parent/contact/name"/>
+      <bind nodeset="/sgbv/cha_phone" type="string" calculate="../inputs/contact/parent/parent/parent/contact/phone"/>
+      <bind nodeset="/sgbv/sgbv/sgbv_observe_note" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/sgbv/has_observed_sgbv_signs" type="select1" required="true()"/>
+      <bind nodeset="/sgbv/sgbv/sgbv_signs_observed" type="string" required="true()" relevant=" /sgbv/sgbv/has_observed_sgbv_signs  = 'yes'"/>
+      <bind nodeset="/sgbv/sgbv/is_referred_to_cha" type="select1" required="true()" relevant=" /sgbv/sgbv/has_observed_sgbv_signs  = 'yes'"/>
+      <bind nodeset="/sgbv/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/group_summary/r_patient_name" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/group_summary/r_patient_sex" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/group_summary/r_patient_age" readonly="true()" type="string"/>
+      <bind nodeset="/sgbv/group_summary/r_findings" readonly="true()" type="string" relevant=" /sgbv/sgbv/has_observed_sgbv_signs  = 'yes' and  /sgbv/sgbv/is_referred_to_cha  = 'yes'"/>
+      <bind nodeset="/sgbv/group_summary/r_sgbv_signs_observed" readonly="true()" type="string" relevant=" /sgbv/sgbv/has_observed_sgbv_signs  = 'yes' and  /sgbv/sgbv/is_referred_to_cha  = 'yes'"/>
+      <bind nodeset="/sgbv/group_summary/r_instruction" readonly="true()" type="string" relevant=" /sgbv/sgbv/is_referred_to_cha  = 'yes'"/>
+      <bind nodeset="/sgbv/group_summary/r_note_sync_instruction" readonly="true()" type="string" relevant=" /sgbv/sgbv/is_referred_to_cha  = 'yes'"/>
+      <bind nodeset="/sgbv/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/sgbv/inputs">
+      <label>Inputs</label>
+      <group ref="/sgbv/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/sgbv/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/sgbv/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/sgbv/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/sgbv/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+            <group ref="/sgbv/inputs/contact/parent/parent/parent">
+              <label>Parent</label>
+              <group ref="/sgbv/inputs/contact/parent/parent/parent/contact">
+                <label>Contact</label>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/sgbv/sgbv">
+      <label>Sexual and Gender Based Violence</label>
+      <input ref="/sgbv/sgbv/sgbv_observe_note">
+        <label>Observe for signs of any form of violence and notify the CHA</label>
+      </input>
+      <select1 ref="/sgbv/sgbv/has_observed_sgbv_signs">
+        <label>Have you observed sign(s) of any form of violence?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="multiline" ref="/sgbv/sgbv/sgbv_signs_observed">
+        <label>Specify the signs you have observed</label>
+      </input>
+      <select1 ref="/sgbv/sgbv/is_referred_to_cha">
+        <label>Have you referred them to the CHA?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/sgbv/group_summary">
+      <label>SGBV REFERRAL NOTE</label>
+      <input ref="/sgbv/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/sgbv/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/sgbv/group_summary/r_patient_name">
+        <label>&lt;p style=&quot;text-align:center;&quot;&gt;<output value=" /sgbv/patient_name "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/sgbv/group_summary/r_patient_sex">
+        <label>&lt;p style=&quot;text-align:center;&quot;&gt;<output value=" /sgbv/patient_sex "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/sgbv/group_summary/r_patient_age">
+        <label>&lt;p style=&quot;text-align:center;&quot;&gt;<output value=" /sgbv/patient_age "/>&lt;/p&gt;</label>
+      </input>
+      <input appearance="h1 red" ref="/sgbv/group_summary/r_findings">
+        <label>Reasons for Referral &lt;i class="fa fa-warning"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/sgbv/group_summary/r_sgbv_signs_observed">
+        <label>SGBV observed</label>
+      </input>
+      <input appearance="h1 lime" ref="/sgbv/group_summary/r_instruction">
+        <label>Instruction &lt;i class="fa fa-info"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/sgbv/group_summary/r_note_sync_instruction">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

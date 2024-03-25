@@ -1,0 +1,11 @@
+{
+    "icon": "icon-commodity",
+    "title": {
+        "en": "Treatment follow up"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "!!contact.contact_type"
+    }
+}

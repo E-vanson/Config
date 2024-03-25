@@ -1,0 +1,1911 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Assessment Service</h:title>
+    <model>
+      <itext>
+        <translation lang="default">
+          <text id="/over_five_assessment/group_malaria/n_negative:label">
+            <value>Negative Result</value>
+            <value form="image">jr://images/negative.png</value>
+          </text>
+          <text id="/over_five_assessment/group_malaria/n_positive:label">
+            <value>Positive Result</value>
+            <value form="image">jr://images/positive.png</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <over_five_assessment id="over_five_assessment" prefix="J1!over_five_assessment!" delimiter="#" version="2024-01-30 22:10:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <upi/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <chw_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <chw_area_id/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_in_weeks/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <source_value/>
+          <is_malaria_endemic/>
+          <is_pregnant/>
+          <is_in_pnc/>
+          <needs_follow_up/>
+          <has_been_referred/>
+          <has_malaria/>
+          <needs_general_danger_signs_referral/>
+          <needs_general_signs_symptoms_referral/>
+          <needs_fever_referral/>
+          <needs_malaria_referral/>
+          <needs_tb_referral/>
+          <needs_diarrhoea_referral/>
+          <needs_diabetes_referral/>
+          <needs_hypertension_referral/>
+          <needs_mental_health_referral/>
+          <needs_sgbv_referral/>
+          <general_danger_signs_referral_follow_up_date/>
+          <general_signs_symptoms_referral_follow_up_date/>
+          <fever_referral_follow_up_date/>
+          <malaria_referral_follow_up_date/>
+          <tb_referral_follow_up_date/>
+          <diarrhoea_referral_follow_up_date/>
+          <diabetes_referral_follow_up_date/>
+          <hypertension_referral_follow_up_date/>
+          <mental_health_referral_follow_up_date/>
+          <sgbv_referral_follow_up_date/>
+          <fever_duration_in_days/>
+          <rdt_result_display/>
+          <repeat_rdt_result_display/>
+          <diarrhoea_duration_display/>
+          <is_hypertensive_display/>
+          <is_on_hypertension_medication_display/>
+          <is_diabetic_display/>
+          <is_on_diabetes_medication_display/>
+          <visited_contact_uuid/>
+          <is_curr_diabetic/>
+          <is_curr_hypertensive/>
+          <is_sub_diabetic/>
+          <is_sub_hypertensive/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <assessment>
+            <is_sick/>
+            <caregiver/>
+            <other_caregiver/>
+            <symptoms/>
+            <symptoms_other/>
+            <n_danger_symptoms_note/>
+          </assessment>
+          <group_fever>
+            <fever_duration/>
+            <n_fever_note/>
+            <has_taken_al/>
+            <n_al_note/>
+            <n_malaria_test/>
+          </group_fever>
+          <group_malaria>
+            <n_positive/>
+            <n_negative/>
+            <rdt_result/>
+            <repeat_rdt_result/>
+            <n_negative_result_notes/>
+            <n_invalid_result_notes/>
+          </group_malaria>
+          <group_tb>
+            <is_on_tb_treatment/>
+            <n_positive_tb/>
+            <n_negative_tb/>
+            <tb_symptoms/>
+            <n_tb_symptoms/>
+            <n_screen_contacts/>
+          </group_tb>
+          <group_hiv>
+            <knows_hiv_status/>
+            <n_health_education/>
+            <n_adherence/>
+          </group_hiv>
+          <group_diarrhoea>
+            <diarrhoea_duration/>
+            <n_diarrhoea_note/>
+            <has_blood_in_stool/>
+            <n_blood_in_stool_note/>
+          </group_diarrhoea>
+          <group_diabetes>
+            <is_diabetic/>
+            <is_on_diabetes_medication/>
+            <n_diabetes_health_ed/>
+            <n_educate_symptoms/>
+            <diabetes_symptoms/>
+            <n_diabetic_symptoms/>
+          </group_diabetes>
+          <group_hypertension>
+            <is_hypertensive/>
+            <is_on_hypertension_medication/>
+            <n_hypertension_meds/>
+            <n_check_bp_1/>
+            <n_hypertension_signs_symptoms/>
+            <hypertension_symptoms/>
+            <systolic_blood_pressure/>
+            <diastolic_blood_pressure/>
+            <bp_label/>
+            <bp_label_color/>
+            <bp_values_valid/>
+            <n_bp_high_low/>
+            <n_bp_normal/>
+            <n_bp_intermediate/>
+            <n_further_hypertension_check_up/>
+          </group_hypertension>
+          <group_cancer>
+            <is_screened_cancer/>
+            <n_screened_cancer/>
+            <n_not_screened_cancer/>
+          </group_cancer>
+          <group_mental_health>
+            <mental_signs/>
+            <observed_mental_signs/>
+            <n_mental_health/>
+          </group_mental_health>
+          <group_sexual_gender_based_violence>
+            <n_sgbv/>
+            <has_observed_signs_of_violence/>
+            <specify_sgbv/>
+            <is_referred_to_cha/>
+          </group_sexual_gender_based_violence>
+          <insurance>
+            <upto_date_insurance/>
+            <encourage_to_update/>
+            <medical_cover_name/>
+            <specify_other/>
+            <congratulate_for_cover/>
+          </insurance>
+          <group_summary>
+            <header_label/>
+            <header/>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_findings/>
+            <r_cough_findings/>
+            <r_sign_cough_of_any_duration/>
+            <r_sign_diarrhoea_findings/>
+            <r_sign_diarrhoea_duration/>
+            <r_sign_diarrhoea_blood_in_stool/>
+            <r_fever_findings/>
+            <r_fever_duration/>
+            <r_malaria_findings/>
+            <r_rdt_result/>
+            <r_repeat_rdt_result/>
+            <r_tb_findings/>
+            <r_tb_treatment/>
+            <r_any_history_of_contact_with_persons_with_TB_in_the_family_household/>
+            <r_chest_pain/>
+            <r_weight_loss_failure_to_thrive/>
+            <r_night_sweats/>
+            <r_fatigue/>
+            <r_none_tb/>
+            <r_hiv_findings/>
+            <r_knows_status/>
+            <r_knows_not_status/>
+            <r_diabetes_findings/>
+            <r_diabetic/>
+            <diabetic_from_subsequent/>
+            <r_on_diabetes_treatment/>
+            <r_thirst_or_hunger/>
+            <r_frequent_urination/>
+            <r_weight_changes/>
+            <r_hypertension_findings/>
+            <r_hypertensive/>
+            <hypertensive_from_subsequent/>
+            <r_on_hypertension_treatment/>
+            <r_dizziness/>
+            <r_severe_headache/>
+            <r_nose_bleeding/>
+            <r_unusual_tiredness/>
+            <r_fast_heartbeat/>
+            <r_nausea_vomiting/>
+            <r_bp/>
+            <r_cancer_findings/>
+            <r_screened/>
+            <r_not_screened/>
+            <r_mental_health_findings/>
+            <r_lack_of_sleep/>
+            <r_feeling_of_worthlessness/>
+            <r_staying_away_from_people/>
+            <r_tearfulness/>
+            <r_none/>
+            <r_lack_of_hygiene/>
+            <r_anxiety_worried_for_no_apparent_reason/>
+            <r_irritability_agitated/>
+            <r_sgbv_findings/>
+            <r_observed_sgbv_signs/>
+            <r_observed_sgbv/>
+            <r_sign_other/>
+            <r_other_specified/>
+            <r_danger_sign/>
+            <r_pre_treatment/>
+            <r_cough_management/>
+            <r_cough_treatment/>
+            <r_malaria/>
+            <r_treat_with_al/>
+            <al_tablets/>
+            <generated_note_name_243/>
+            <treatment_for_under_8/>
+            <treatment_for_under_12/>
+            <treatment_for_over_12/>
+            <given_al/>
+            <not_given_al_reasons/>
+            <not_given_al_reasons_other/>
+            <r_refer_no_al/>
+            <al_pack/>
+            <al_6_packs_tablets_count/>
+            <al_12_packs_tablets_count/>
+            <al_18_packs_tablets_count/>
+            <al_24_packs_tablets_count/>
+            <total_tablets_given_from_packs/>
+            <r_special_instructions_1/>
+            <r_dose_advice/>
+            <r_remind_full_dose/>
+            <r_refer_malaria/>
+            <r_fever/>
+            <r_paracetamol/>
+            <r_paracetamol_types/>
+            <r_syrup_dosage/>
+            <r_tablets_dosage/>
+            <given_paracetamol/>
+            <not_given_paracetamol_reasons/>
+            <paracetamol_given/>
+            <not_given_paracetamol_reasons_other/>
+            <r_refer_no_paracetamol/>
+            <r_special_instructions/>
+            <r_first_dose/>
+            <r_special_instructions_3/>
+            <r_adherence/>
+            <r_return/>
+            <r_llin/>
+            <first_dose/>
+            <r_diarrhoea/>
+            <note_for_ors/>
+            <have_given_ors/>
+            <reason_not_given_ors/>
+            <specify_other_reason_ors/>
+            <have_given_zinc/>
+            <reason_not_given_zinc/>
+            <specify_other_reason_zinc/>
+            <no_zinc_tablet/>
+            <r_fever_with_danger_sign/>
+            <r_for_paracetamol/>
+            <have_given_paracetamol/>
+            <reason_not_given_paracetamol/>
+            <specify_other_reason_paracetamol/>
+            <paracetamol_given_2/>
+            <r_referral_title/>
+            <r_fever_referral/>
+            <r_cough_referral/>
+            <r_malaria_referral/>
+            <r_tb_referral/>
+            <r_diarrhoea_referral/>
+            <r_diabetes_referral/>
+            <r_hypertension_referral/>
+            <r_mental_health_referral/>
+            <r_sgbv_referral/>
+            <observation_notes/>
+            <r_health_facility_title/>
+            <r_facility_referral_note/>
+            <r_follow_up_title/>
+            <r_three_days_follow_up/>
+            <r_referral_follow_up/>
+            <r_referral_danger_sign/>
+            <r_instruction_title/>
+            <r_sync/>
+          </group_summary>
+          <additional_doc db-doc="true">
+            <place_id/>
+            <chv_area_id/>
+            <type/>
+            <created_by_doc db-doc-ref="/over_five_assessment"/>
+            <content_type/>
+            <form/>
+            <fields>
+              <rdts_quantity_issued/>
+              <act_6_quantity_issued/>
+              <act_12_quantity_issued/>
+              <act_18_quantity_issued/>
+              <act_24_quantity_issued/>
+              <dt_250_quantity_issued/>
+              <ors_zinc_quantity_issued/>
+              <ors_sachets_quantity_issued/>
+              <zinc_sulphate_quantity_issued/>
+              <albendazole_quantity_issued/>
+              <tetra_eye_quantity_issued/>
+              <paracetamol_120_quantity_issued/>
+              <mebendazole_quantity_issued/>
+              <coc_quantity_issued/>
+              <prog_quantity_issued/>
+              <depo_im_quantity_issued/>
+              <depo_sc_quantity_issued/>
+              <preg_strip_quantity_issued/>
+              <chlorine_quantity_issued/>
+              <gluc_strips_quantity_issued/>
+              <paracetamol_500_quantity_issued/>
+              <bandages_quantity_issued/>
+              <povi_quantity_issued/>
+              <strap_quantity_issued/>
+              <gloves_quantity_issued/>
+              <envelopes_quantity_issued/>
+            </fields>
+          </additional_doc>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_symptoms/>
+              <_tb_symptoms/>
+              <_has_blood_in_stool/>
+              <_is_diabetic/>
+              <_diabetes_symptoms/>
+              <_is_hypertensive/>
+              <_hypertension_symptoms/>
+              <_mental_signs/>
+              <_observed_mental_signs/>
+            </_screening>
+            <_supporting_info>
+              <_fever_duration/>
+              <_diarrhea_duration/>
+              <_symptoms_other/>
+              <_systolic_blood_pressure/>
+              <_diastolic_blood_pressure/>
+              <_has_taken_al/>
+              <_rdt_result/>
+              <_repeat_rdt_result/>
+              <_is_on_tb_treatment/>
+              <_knows_hiv_status/>
+              <_is_on_diabetes_medication/>
+              <_is_on_hypertension_medication/>
+              <_is_screened_cancer/>
+              <_has_observed_signs_of_violence/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </over_five_assessment>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/over_five_assessment/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/over_five_assessment/inputs/source" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/source_id" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/name" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/sex" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/upi" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/contact/chw_name" type="string"/>
+      <bind nodeset="/over_five_assessment/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/over_five_assessment/chw_area_id" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/over_five_assessment/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /over_five_assessment/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/over_five_assessment/patient_age_in_months" type="string" calculate="difference-in-months(  /over_five_assessment/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/over_five_assessment/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /over_five_assessment/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/over_five_assessment/patient_age_display" type="string" calculate="concat(
+ concat( /over_five_assessment/patient_age_in_years , if( /over_five_assessment/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /over_five_assessment/patient_age_in_months  mod 12, if(( /over_five_assessment/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/over_five_assessment/patient_age_in_weeks" type="string" calculate="int(floor( /over_five_assessment/patient_age_in_days  div 7))"/>
+      <bind nodeset="/over_five_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/over_five_assessment/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/over_five_assessment/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/over_five_assessment/source_value" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/over_five_assessment/is_malaria_endemic" type="string" calculate="true()"/>
+      <bind nodeset="/over_five_assessment/is_pregnant" type="string" calculate="false()"/>
+      <bind nodeset="/over_five_assessment/is_in_pnc" type="string" calculate="false()"/>
+      <bind nodeset="/over_five_assessment/needs_follow_up" type="string" calculate="if( /over_five_assessment/needs_general_danger_signs_referral ='true' or  /over_five_assessment/needs_general_signs_symptoms_referral ='true' or selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') or  /over_five_assessment/needs_fever_referral ='true' or  /over_five_assessment/needs_malaria_referral ='true' or  /over_five_assessment/needs_tb_referral ='true' or  /over_five_assessment/needs_diarrhoea_referral ='true' or  /over_five_assessment/needs_diabetes_referral ='true' or  /over_five_assessment/needs_hypertension_referral ='true' or  /over_five_assessment/needs_mental_health_referral ='true' or  /over_five_assessment/needs_sgbv_referral ='true', 'yes', 'no')"/>
+      <bind nodeset="/over_five_assessment/has_been_referred" type="string" calculate=" /over_five_assessment/needs_follow_up "/>
+      <bind nodeset="/over_five_assessment/has_malaria" type="string" calculate=" /over_five_assessment/group_malaria/rdt_result ='positive' or  /over_five_assessment/group_malaria/repeat_rdt_result ='positive'"/>
+      <bind nodeset="/over_five_assessment/needs_general_danger_signs_referral" type="string" calculate="selected( /over_five_assessment/assessment/symptoms , 'other') or  /over_five_assessment/needs_diarrhoea_referral  = 'true' or  /over_five_assessment/needs_fever_referral  = 'true'"/>
+      <bind nodeset="/over_five_assessment/needs_general_signs_symptoms_referral" type="string" calculate="selected( /over_five_assessment/assessment/symptoms , 'other')"/>
+      <bind nodeset="/over_five_assessment/needs_fever_referral" type="string" calculate=" /over_five_assessment/group_fever/has_taken_al ='yes' or number( /over_five_assessment/group_fever/fever_duration )&gt;=7"/>
+      <bind nodeset="/over_five_assessment/needs_malaria_referral" type="string" calculate=" /over_five_assessment/group_malaria/rdt_result ='not_done' or  /over_five_assessment/group_malaria/rdt_result ='negative' or selected( /over_five_assessment/assessment/symptoms , 'fever') or  /over_five_assessment/group_malaria/repeat_rdt_result ='invalid'"/>
+      <bind nodeset="/over_five_assessment/needs_tb_referral" type="string" calculate="not(selected( /over_five_assessment/group_tb/tb_symptoms , 'none'))
+and count-selected( /over_five_assessment/group_tb/tb_symptoms ) &gt; 0"/>
+      <bind nodeset="/over_five_assessment/needs_diarrhoea_referral" type="string" calculate="number( /over_five_assessment/group_diarrhoea/diarrhoea_duration )&gt;=14 or  /over_five_assessment/group_diarrhoea/has_blood_in_stool ='yes'"/>
+      <bind nodeset="/over_five_assessment/needs_diabetes_referral" type="string" calculate=" /over_five_assessment/group_diabetes/is_on_diabetes_medication ='no' or (not(selected( /over_five_assessment/group_diabetes/diabetes_symptoms , 'none')) and count-selected( /over_five_assessment/group_diabetes/diabetes_symptoms ) &gt; 0) or ( /over_five_assessment/group_diabetes/is_on_diabetes_medication ='no' and  /over_five_assessment/is_sub_diabetic  = 'true')"/>
+      <bind nodeset="/over_five_assessment/needs_hypertension_referral" type="string" calculate=" /over_five_assessment/group_hypertension/is_on_hypertension_medication ='no' or (not(selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'none')) and count-selected( /over_five_assessment/group_hypertension/hypertension_symptoms ) &gt; 0) or ( /over_five_assessment/group_diabetes/is_on_diabetes_medication ='no' and  /over_five_assessment/is_sub_hypertensive  = 'true')"/>
+      <bind nodeset="/over_five_assessment/needs_mental_health_referral" type="string" calculate="(not(selected( /over_five_assessment/group_mental_health/mental_signs , 'none')) and count-selected( /over_five_assessment/group_mental_health/mental_signs ) &gt; 0) or (not(selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'none')) and count-selected( /over_five_assessment/group_mental_health/observed_mental_signs ) &gt; 0)"/>
+      <bind nodeset="/over_five_assessment/needs_sgbv_referral" type="string" calculate=" /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence ='yes'"/>
+      <bind nodeset="/over_five_assessment/general_danger_signs_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_general_danger_signs_referral ='true', format-date-time(decimal-date-time(today()) + 1,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/general_signs_symptoms_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_general_signs_symptoms_referral ='true', format-date-time(decimal-date-time(today()) + 1,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/fever_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_fever_referral ='true', format-date-time(decimal-date-time(today()) + 1,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/malaria_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_malaria_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/tb_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_tb_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/diarrhoea_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_diarrhoea_referral ='true', format-date-time(decimal-date-time(today()) + 1,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/diabetes_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_diabetes_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/hypertension_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_hypertension_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/mental_health_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_mental_health_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/sgbv_referral_follow_up_date" type="string" calculate="if( /over_five_assessment/needs_sgbv_referral ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/over_five_assessment/fever_duration_in_days" type="string" calculate="jr:choice-name( /over_five_assessment/group_fever/fever_duration , ' /over_five_assessment/group_fever/fever_duration ')"/>
+      <bind nodeset="/over_five_assessment/rdt_result_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_malaria/rdt_result , ' /over_five_assessment/group_malaria/rdt_result ')"/>
+      <bind nodeset="/over_five_assessment/repeat_rdt_result_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_malaria/repeat_rdt_result , ' /over_five_assessment/group_malaria/repeat_rdt_result ')"/>
+      <bind nodeset="/over_five_assessment/diarrhoea_duration_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_diarrhoea/diarrhoea_duration , ' /over_five_assessment/group_diarrhoea/diarrhoea_duration ')"/>
+      <bind nodeset="/over_five_assessment/is_hypertensive_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_hypertension/is_hypertensive , ' /over_five_assessment/group_hypertension/is_hypertensive ')"/>
+      <bind nodeset="/over_five_assessment/is_on_hypertension_medication_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_hypertension/is_on_hypertension_medication , ' /over_five_assessment/group_hypertension/is_on_hypertension_medication ')"/>
+      <bind nodeset="/over_five_assessment/is_diabetic_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_diabetes/is_diabetic , ' /over_five_assessment/group_diabetes/is_diabetic ')"/>
+      <bind nodeset="/over_five_assessment/is_on_diabetes_medication_display" type="string" calculate="jr:choice-name( /over_five_assessment/group_diabetes/is_on_diabetes_medication , ' /over_five_assessment/group_diabetes/is_on_diabetes_medication ')"/>
+      <bind nodeset="/over_five_assessment/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/over_five_assessment/is_curr_diabetic" type="string" calculate="( /over_five_assessment/group_diabetes/is_diabetic  != '' and  /over_five_assessment/group_diabetes/is_diabetic  = 'yes') or  /over_five_assessment/group_diabetes/is_on_diabetes_medication  != '' or ( /over_five_assessment/group_diabetes/diabetes_symptoms  != '' and  /over_five_assessment/group_diabetes/diabetes_symptoms  != 'none')"/>
+      <bind nodeset="/over_five_assessment/is_curr_hypertensive" type="string" calculate="( /over_five_assessment/group_hypertension/is_hypertensive  != '' and  /over_five_assessment/group_hypertension/is_hypertensive  = 'yes') or  /over_five_assessment/group_hypertension/is_on_hypertension_medication  != '' or ( /over_five_assessment/group_hypertension/hypertension_symptoms  != '' and  /over_five_assessment/group_hypertension/hypertension_symptoms  != 'none')"/>
+      <bind nodeset="/over_five_assessment/is_sub_diabetic" type="string" calculate="instance('contact-summary')/context/hasDiabetes"/>
+      <bind nodeset="/over_five_assessment/is_sub_hypertensive" type="string" calculate="instance('contact-summary')/context/hasHypertension"/>
+      <bind nodeset="/over_five_assessment/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/over_five_assessment/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/over_five_assessment/assessment/is_sick" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/assessment/caregiver" type="select1" required="true()" relevant=" /over_five_assessment/patient_age_in_years &gt;= 5 and  /over_five_assessment/patient_age_in_years &lt;18"/>
+      <bind nodeset="/over_five_assessment/assessment/other_caregiver" type="string" required="true()" relevant=" /over_five_assessment/assessment/caregiver  = 'other'"/>
+      <bind nodeset="/over_five_assessment/assessment/symptoms" type="select" required="true()" relevant=" /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/assessment/symptoms_other" type="string" required="true()" relevant=" /over_five_assessment/assessment/is_sick ='yes' and selected( /over_five_assessment/assessment/symptoms , 'other')"/>
+      <bind nodeset="/over_five_assessment/assessment/n_danger_symptoms_note" readonly="true()" type="string" relevant=" /over_five_assessment/assessment/is_sick ='yes' and selected( /over_five_assessment/assessment/symptoms , 'other')"/>
+      <bind nodeset="/over_five_assessment/group_fever" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_fever/fever_duration" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever')"/>
+      <bind nodeset="/over_five_assessment/group_fever/n_fever_note" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and number( /over_five_assessment/group_fever/fever_duration ) &gt;= 7"/>
+      <bind nodeset="/over_five_assessment/group_fever/has_taken_al" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and number( /over_five_assessment/group_fever/fever_duration ) &lt; 7"/>
+      <bind nodeset="/over_five_assessment/group_fever/n_al_note" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and number( /over_five_assessment/group_fever/fever_duration ) &lt; 7 and  /over_five_assessment/group_fever/has_taken_al ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_fever/n_malaria_test" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and number( /over_five_assessment/group_fever/fever_duration ) &lt; 7 and  /over_five_assessment/group_fever/has_taken_al ='no'"/>
+      <bind nodeset="/over_five_assessment/group_malaria" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false' and selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_malaria/n_positive" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_malaria/n_negative" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_malaria/rdt_result" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_malaria/repeat_rdt_result" type="select1" required="true()" relevant=" /over_five_assessment/group_malaria/rdt_result ='invalid'"/>
+      <bind nodeset="/over_five_assessment/group_malaria/n_negative_result_notes" readonly="true()" type="string" relevant=" /over_five_assessment/group_malaria/rdt_result ='negative' or  /over_five_assessment/group_malaria/rdt_result ='not_done'"/>
+      <bind nodeset="/over_five_assessment/group_malaria/n_invalid_result_notes" readonly="true()" type="string" relevant=" /over_five_assessment/group_malaria/repeat_rdt_result  = 'invalid'"/>
+      <bind nodeset="/over_five_assessment/group_tb" relevant="selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_tb/is_on_tb_treatment" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_tb/n_positive_tb" readonly="true()" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_tb/n_negative_tb" readonly="true()" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='no'"/>
+      <bind nodeset="/over_five_assessment/group_tb/tb_symptoms" type="select" jr:constraintMsg="None cannot be selected with any other option!" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" required="true()" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='no'"/>
+      <bind nodeset="/over_five_assessment/group_tb/n_tb_symptoms" readonly="true()" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='no' and not(selected( /over_five_assessment/group_tb/tb_symptoms , 'none'))
+and count-selected( /over_five_assessment/group_tb/tb_symptoms ) &gt; 0"/>
+      <bind nodeset="/over_five_assessment/group_tb/n_screen_contacts" readonly="true()" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='no' and not(selected( /over_five_assessment/group_tb/tb_symptoms , 'none'))
+and count-selected( /over_five_assessment/group_tb/tb_symptoms ) &gt; 0"/>
+      <bind nodeset="/over_five_assessment/group_hiv" relevant=" /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_hiv/knows_hiv_status" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_hiv/n_health_education" readonly="true()" type="string" relevant=" /over_five_assessment/group_hiv/knows_hiv_status ='no'"/>
+      <bind nodeset="/over_five_assessment/group_hiv/n_adherence" readonly="true()" type="string" relevant=" /over_five_assessment/group_hiv/knows_hiv_status ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_diarrhoea" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_diarrhoea/diarrhoea_duration" type="select1" jr:constraintMsg="Diarrhoea duration should be within a month(1-30 days)" constraint=". &lt;= 30 and .&gt;0" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea')"/>
+      <bind nodeset="/over_five_assessment/group_diarrhoea/n_diarrhoea_note" readonly="true()" type="string" relevant="number( /over_five_assessment/group_diarrhoea/diarrhoea_duration )&gt;=14"/>
+      <bind nodeset="/over_five_assessment/group_diarrhoea/has_blood_in_stool" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea')"/>
+      <bind nodeset="/over_five_assessment/group_diarrhoea/n_blood_in_stool_note" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/group_diarrhoea/has_blood_in_stool ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes" relevant=" /over_five_assessment/patient_age_in_years &gt;=5 and ( /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false') and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/is_diabetic" type="select1" required="true()" relevant=" /over_five_assessment/is_sub_diabetic  != 'true'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/is_on_diabetes_medication" type="select1" required="true()" relevant=" /over_five_assessment/group_diabetes/is_diabetic ='yes' or  /over_five_assessment/is_sub_diabetic  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/n_diabetes_health_ed" readonly="true()" type="string" relevant=" /over_five_assessment/group_diabetes/is_on_diabetes_medication ='no' and ( /over_five_assessment/group_diabetes/is_diabetic ='yes' or  /over_five_assessment/is_sub_diabetic  = 'true')"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/n_educate_symptoms" readonly="true()" type="string" relevant="( /over_five_assessment/group_diabetes/is_diabetic ='no' or  /over_five_assessment/group_diabetes/is_diabetic ='unknown') and  /over_five_assessment/is_sub_diabetic  != 'true'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/diabetes_symptoms" type="select" jr:constraintMsg="Cannot select 'None' with other options" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" required="true()" relevant="( /over_five_assessment/group_diabetes/is_diabetic ='no' or  /over_five_assessment/group_diabetes/is_diabetic ='unknown') and  /over_five_assessment/is_sub_diabetic  != 'true'"/>
+      <bind nodeset="/over_five_assessment/group_diabetes/n_diabetic_symptoms" readonly="true()" type="string" relevant=" /over_five_assessment/group_diabetes/is_diabetic !='yes' and  /over_five_assessment/group_diabetes/diabetes_symptoms !='' and  /over_five_assessment/group_diabetes/diabetes_symptoms  != 'none' and  /over_five_assessment/is_sub_diabetic  != 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension" relevant=" /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/is_hypertensive" type="select1" required="true()" relevant=" /over_five_assessment/is_sub_hypertensive  != 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/is_on_hypertension_medication" type="select1" required="true()" relevant=" /over_five_assessment/group_hypertension/is_hypertensive ='yes' or  /over_five_assessment/is_sub_hypertensive  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_hypertension_meds" readonly="true()" type="string" relevant="( /over_five_assessment/group_hypertension/is_hypertensive ='yes' or  /over_five_assessment/is_sub_hypertensive  = 'true') and  /over_five_assessment/group_hypertension/is_on_hypertension_medication ='no'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_check_bp_1" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_hypertension_signs_symptoms" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/is_hypertensive ='no' or  /over_five_assessment/group_hypertension/is_hypertensive ='unknown'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/hypertension_symptoms" type="select" jr:constraintMsg="You cannot select 'None' with other options" constraint="not(selected(.,'none') and count-selected(.) &gt; 1)" required="true()" relevant=" /over_five_assessment/group_hypertension/is_hypertensive ='no' or  /over_five_assessment/group_hypertension/is_hypertensive ='unknown'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/systolic_blood_pressure" type="int" jr:constraintMsg="Please confirm the systolic blood pressure" constraint=".&gt;0 and .&lt;500"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/diastolic_blood_pressure" type="int" jr:constraintMsg="Please confirm the diastolic blood pressure" constraint=".&gt;0 and .&lt;500"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/bp_label" type="string" calculate="if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &lt;=90 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &lt;=60, 'LOW', if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &gt; 90 and number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &lt; 140 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &gt; 60 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &lt;90, 'NORMAL', if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &gt;= 140 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &gt;= 90, 'HIGH', 'INDETERMINATE')))"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/bp_label_color" type="string" calculate="if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &lt;=90 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &lt;=60, 'red', if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &gt; 90 and number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &lt; 140 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &gt; 60 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &lt;90, 'green', if(number( /over_five_assessment/group_hypertension/systolic_blood_pressure ) &gt;= 140 and number( /over_five_assessment/group_hypertension/diastolic_blood_pressure ) &gt;= 90, 'red', 'orange')))"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/bp_values_valid" type="string" calculate=" /over_five_assessment/group_hypertension/systolic_blood_pressure  != '' and  /over_five_assessment/group_hypertension/diastolic_blood_pressure  != ''"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_bp_high_low" readonly="true()" type="string" relevant="( /over_five_assessment/group_hypertension/bp_label  = 'LOW' or  /over_five_assessment/group_hypertension/bp_label  = 'HIGH') and  /over_five_assessment/group_hypertension/bp_values_valid  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_bp_normal" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/bp_label  = 'NORMAL' and  /over_five_assessment/group_hypertension/bp_values_valid  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_bp_intermediate" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/bp_label  = 'INDETERMINATE' and  /over_five_assessment/group_hypertension/bp_values_valid  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_hypertension/n_further_hypertension_check_up" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/is_on_hypertension_medication ='no' or ( /over_five_assessment/group_hypertension/hypertension_symptoms  != '' and  /over_five_assessment/group_hypertension/hypertension_symptoms  != 'none') or (( /over_five_assessment/group_hypertension/bp_label  = 'LOW' or  /over_five_assessment/group_hypertension/bp_label  = 'HIGH') and  /over_five_assessment/group_hypertension/bp_values_valid  = 'true')"/>
+      <bind nodeset="/over_five_assessment/group_cancer" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_cancer/is_screened_cancer" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_cancer/n_screened_cancer" readonly="true()" type="string" relevant=" /over_five_assessment/group_cancer/is_screened_cancer  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_cancer/n_not_screened_cancer" readonly="true()" type="string" relevant=" /over_five_assessment/group_cancer/is_screened_cancer  = 'no'"/>
+      <bind nodeset="/over_five_assessment/group_mental_health" relevant=" /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_mental_health/mental_signs" type="select" jr:constraintMsg="None cannot be selected with any other option!" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_mental_health/observed_mental_signs" type="select" jr:constraintMsg="None cannot be selected with any other option!" constraint="not(selected(., 'none') and count-selected(.) &gt; 1)" required="true()"/>
+      <bind nodeset="/over_five_assessment/group_mental_health/n_mental_health" readonly="true()" type="string" relevant="(not(selected( /over_five_assessment/group_mental_health/mental_signs , 'none')) and count-selected( /over_five_assessment/group_mental_health/mental_signs ) &gt; 0) or (not(selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'none')) and count-selected( /over_five_assessment/group_mental_health/observed_mental_signs ) &gt; 0)"/>
+      <bind nodeset="/over_five_assessment/group_sexual_gender_based_violence" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_sexual_gender_based_violence/n_sgbv" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence" type="select1"/>
+      <bind nodeset="/over_five_assessment/group_sexual_gender_based_violence/specify_sgbv" type="string" relevant=" /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_sexual_gender_based_violence/is_referred_to_cha" type="select1" relevant=" /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence ='yes'"/>
+      <bind nodeset="/over_five_assessment/insurance" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/insurance/upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/over_five_assessment/insurance/encourage_to_update" readonly="true()" type="string" relevant=" /over_five_assessment/insurance/upto_date_insurance  = 'no'"/>
+      <bind nodeset="/over_five_assessment/insurance/medical_cover_name" type="select" required="true()" relevant=" /over_five_assessment/insurance/upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/insurance/specify_other" type="string" required="true()" relevant="selected( /over_five_assessment/insurance/medical_cover_name , 'others')"/>
+      <bind nodeset="/over_five_assessment/insurance/congratulate_for_cover" readonly="true()" type="string" relevant=" /over_five_assessment/insurance/upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/header_label" type="string" calculate="if( /over_five_assessment/assessment/is_sick ='yes', 'REFERRAL', 'RESULTS')"/>
+      <bind nodeset="/over_five_assessment/group_summary/header" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_cough_findings" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/needs_general_danger_signs_referral  = 'false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sign_cough_of_any_duration" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sign_diarrhoea_findings" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sign_diarrhoea_duration" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/group_diarrhoea/diarrhoea_duration  != '' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sign_diarrhoea_blood_in_stool" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/group_diarrhoea/has_blood_in_stool ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fever_findings" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fever_duration" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_malaria_findings" readonly="true()" type="string" relevant=" /over_five_assessment/group_malaria/rdt_result !='' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_rdt_result" readonly="true()" type="string" relevant=" /over_five_assessment/group_malaria/rdt_result !='' and  /over_five_assessment/group_malaria/rdt_result !='invalid' and  /over_five_assessment/needs_general_danger_signs_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_repeat_rdt_result" readonly="true()" type="string" relevant=" /over_five_assessment/group_malaria/repeat_rdt_result !='' and  /over_five_assessment/group_malaria/rdt_result  = 'invalid' and  /over_five_assessment/needs_general_danger_signs_referral  = 'false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_tb_findings" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/group_tb/is_on_tb_treatment  != '' and ( /over_five_assessment/needs_general_danger_signs_referral ='false' or  /over_five_assessment/needs_fever_referral ='false' or  /over_five_assessment/needs_diarrhoea_referral ='false') and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_tb_treatment" readonly="true()" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment ='yes' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_any_history_of_contact_with_persons_with_TB_in_the_family_household" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'tb_contact') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_chest_pain" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'chest_pain') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_weight_loss_failure_to_thrive" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'weight_loss_failure_to_thrive') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_night_sweats" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'night_sweats') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fatigue" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'fatigue') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_none_tb" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_tb/tb_symptoms , 'none') and  /over_five_assessment/group_tb/is_on_tb_treatment  = 'no' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration') and  /over_five_assessment/assessment/is_sick  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_hiv_findings" readonly="true()" type="string" relevant=" /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_fever_referral ='false' and  /over_five_assessment/needs_diarrhoea_referral ='false' and  /over_five_assessment/group_hiv/knows_hiv_status  !=''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_knows_status" readonly="true()" type="string" relevant=" /over_five_assessment/group_hiv/knows_hiv_status ='yes' and  /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_knows_not_status" readonly="true()" type="string" relevant=" /over_five_assessment/group_hiv/knows_hiv_status ='no' and  /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_diabetes_findings" readonly="true()" type="string" relevant="( /over_five_assessment/patient_age_in_years &gt;=5 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/group_diabetes/is_diabetic !='' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false') or  /over_five_assessment/is_sub_diabetic  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_diabetic" readonly="true()" type="string" relevant="( /over_five_assessment/group_diabetes/is_diabetic !='' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_general_signs_symptoms_referral ='false' and  /over_five_assessment/group_diabetes/is_diabetic !='' and  /over_five_assessment/needs_fever_referral  = 'false' and  /over_five_assessment/needs_diarrhoea_referral  = 'false' and  /over_five_assessment/patient_age_in_years &gt;=5)"/>
+      <bind nodeset="/over_five_assessment/group_summary/diabetic_from_subsequent" readonly="true()" type="string" relevant=" /over_five_assessment/is_sub_diabetic  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_on_diabetes_treatment" readonly="true()" type="string" relevant="( /over_five_assessment/group_diabetes/is_on_diabetes_medication !='' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=5) or ( /over_five_assessment/is_sub_diabetic  = 'true' and  /over_five_assessment/group_diabetes/is_on_diabetes_medication !='')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_thirst_or_hunger" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_diabetes/diabetes_symptoms , 'thirst_or_hunger') and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=5"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_frequent_urination" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_diabetes/diabetes_symptoms , 'frequent_urination') and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=5"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_weight_changes" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_diabetes/diabetes_symptoms , 'weight_changes') and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=5"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_hypertension_findings" readonly="true()" type="string" relevant="( /over_five_assessment/patient_age_in_years &gt;=18 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_fever_referral ='false' and  /over_five_assessment/needs_diarrhoea_referral ='false' and  /over_five_assessment/group_hypertension/is_hypertensive !='') or  /over_five_assessment/is_sub_hypertensive  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_hypertensive" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/is_hypertensive !='' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/hypertensive_from_subsequent" readonly="true()" type="string" relevant=" /over_five_assessment/is_sub_hypertensive  = 'true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_on_hypertension_treatment" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/is_on_hypertension_medication !='' and ( /over_five_assessment/group_hypertension/is_hypertensive = 'yes' or  /over_five_assessment/is_sub_hypertensive  = 'true') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_dizziness" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'dizziness') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_severe_headache" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'severe_headache') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_nose_bleeding" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'nose_bleeding') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_unusual_tiredness" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'unusual_tiredness') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fast_heartbeat" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'fast_heartbeat') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_nausea_vomiting" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_hypertension/hypertension_symptoms , 'nausea_vomiting') and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_bp" readonly="true()" type="string" relevant=" /over_five_assessment/group_hypertension/systolic_blood_pressure !='' and  /over_five_assessment/group_hypertension/diastolic_blood_pressure !=''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_cancer_findings" readonly="true()" type="string" relevant=" /over_five_assessment/patient_age_in_years &gt;=15 and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/group_cancer/is_screened_cancer  != ''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_screened" readonly="true()" type="string" relevant=" /over_five_assessment/group_cancer/is_screened_cancer ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=15"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_not_screened" readonly="true()" type="string" relevant=" /over_five_assessment/group_cancer/is_screened_cancer ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/patient_age_in_years &gt;=15"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_mental_health_findings" readonly="true()" type="string" relevant=" /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18 and (count-selected( /over_five_assessment/group_mental_health/mental_signs ) &gt; 0 or count-selected( /over_five_assessment/group_mental_health/observed_mental_signs ) &gt; 0) and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/needs_fever_referral ='false' and  /over_five_assessment/needs_diarrhoea_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_lack_of_sleep" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/mental_signs , 'lack_of_sleep') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_feeling_of_worthlessness" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/mental_signs , 'feeling_of_worthlessness') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_staying_away_from_people" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/mental_signs , 'staying_away_from_people') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_tearfulness" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/mental_signs , 'tearfulness') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_none" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/mental_signs , 'none') or selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'none') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_lack_of_hygiene" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'lack_of_hygiene') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_anxiety_worried_for_no_apparent_reason" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'anxiety_worried_for_no_apparent_reason') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_irritability_agitated" readonly="true()" type="string" relevant="selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'irritability_agitated') and  /over_five_assessment/is_pregnant ='false' and  /over_five_assessment/is_in_pnc ='false' and  /over_five_assessment/patient_age_in_years &gt;=18"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sgbv_findings" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence  != ''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_observed_sgbv_signs" readonly="true()" type="string" relevant=" /over_five_assessment/needs_sgbv_referral ='true' and  /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence != ''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_observed_sgbv" readonly="true()" type="string" relevant="( /over_five_assessment/needs_sgbv_referral ='false' or  /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence ='no') and  /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence != ''"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sign_other" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'other')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_other_specified" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'other')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_danger_sign" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_pre_treatment" readonly="true()" type="string" relevant=" /over_five_assessment/assessment/is_sick ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_cough_management" readonly="true()" type="string" relevant=" /over_five_assessment/assessment/is_sick ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_cough_treatment" readonly="true()" type="string" relevant=" /over_five_assessment/assessment/is_sick ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_malaria" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_treat_with_al" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_tablets" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'" calculate="if( /over_five_assessment/patient_age_in_years  &lt; 3, 6, if( /over_five_assessment/patient_age_in_years  &gt;= 3 and  /over_five_assessment/patient_age_in_years  &lt; 8, 12, if( /over_five_assessment/patient_age_in_years  &gt;= 8 and  /over_five_assessment/patient_age_in_years  &lt; 12, 18, 24)))"/>
+      <bind nodeset="/over_five_assessment/group_summary/generated_note_name_243" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/treatment_for_under_8" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/patient_age_in_years  &lt; 8 and  /over_five_assessment/group_fever/has_taken_al ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/treatment_for_under_12" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/patient_age_in_years  &gt;= 8 and  /over_five_assessment/patient_age_in_years  &lt; 12 and  /over_five_assessment/group_fever/has_taken_al ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/treatment_for_over_12" readonly="true()" type="string" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/patient_age_in_years  &gt; 12 and  /over_five_assessment/group_fever/has_taken_al ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false' and  /over_five_assessment/assessment/is_sick ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/given_al" type="select1" required="true()" relevant=" /over_five_assessment/has_malaria ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/not_given_al_reasons" type="select1" required="true()" relevant=" /over_five_assessment/group_summary/given_al ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/not_given_al_reasons_other" type="string" required="true()" relevant="selected( /over_five_assessment/group_summary/not_given_al_reasons , 'other') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_refer_no_al" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_al ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_pack" type="select" required="true()" relevant=" /over_five_assessment/group_summary/given_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_6_packs_tablets_count" type="int" jr:constraintMsg="Number of tablets should tally with the number of tablets given." constraint=" /over_five_assessment/group_summary/al_tablets  &lt;=  /over_five_assessment/group_summary/total_tablets_given_from_packs " required="true()" relevant="selected( /over_five_assessment/group_summary/al_pack , '6') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_12_packs_tablets_count" type="int" jr:constraintMsg="Number of tablets should tally with the number of tablets given." constraint=" /over_five_assessment/group_summary/al_tablets  &lt;=  /over_five_assessment/group_summary/total_tablets_given_from_packs " required="true()" relevant="selected( /over_five_assessment/group_summary/al_pack , '12') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_18_packs_tablets_count" type="int" jr:constraintMsg="Number of tablets should tally with the number of tablets given." constraint=" /over_five_assessment/group_summary/al_tablets  &lt;=  /over_five_assessment/group_summary/total_tablets_given_from_packs " required="true()" relevant="selected( /over_five_assessment/group_summary/al_pack , '18') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/al_24_packs_tablets_count" type="int" jr:constraintMsg="Number of tablets should tally with the number of tablets given." constraint=" /over_five_assessment/group_summary/al_tablets  &lt;=  /over_five_assessment/group_summary/total_tablets_given_from_packs " required="true()" relevant="selected( /over_five_assessment/group_summary/al_pack , '24') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/total_tablets_given_from_packs" type="string" relevant=" /over_five_assessment/group_summary/given_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'" calculate="number(coalesce( /over_five_assessment/group_summary/al_6_packs_tablets_count ,0))+number(coalesce( /over_five_assessment/group_summary/al_12_packs_tablets_count ,0))+number(coalesce( /over_five_assessment/group_summary/al_18_packs_tablets_count ,0))+number(coalesce( /over_five_assessment/group_summary/al_24_packs_tablets_count ,0))"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_special_instructions_1" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_dose_advice" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_remind_full_dose" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_refer_malaria" readonly="true()" type="string" relevant=" /over_five_assessment/group_fever/has_taken_al ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fever" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_paracetamol" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_paracetamol_types" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_syrup_dosage" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_tablets_dosage" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/given_paracetamol" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/not_given_paracetamol_reasons" type="select1" required="true()" relevant=" /over_five_assessment/group_summary/given_paracetamol ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/paracetamol_given" type="int" required="true()" relevant=" /over_five_assessment/group_summary/given_paracetamol ='yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/not_given_paracetamol_reasons_other" type="string" required="true()" relevant="selected( /over_five_assessment/group_summary/not_given_paracetamol_reasons , 'other') and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_refer_no_paracetamol" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_paracetamol ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_special_instructions" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_paracetamol ='no' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_first_dose" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_paracetamol ='yes' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_special_instructions_3" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_adherence" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_return" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_llin" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/first_dose" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_diarrhoea" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/note_for_ors" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/have_given_ors" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/reason_not_given_ors" type="select1" required="true()" relevant=" /over_five_assessment/group_summary/have_given_ors  = 'no' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/specify_other_reason_ors" type="string" required="true()" relevant=" /over_five_assessment/group_summary/reason_not_given_ors  = 'other' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/have_given_zinc" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/reason_not_given_zinc" type="select1" required="true()" relevant=" /over_five_assessment/group_summary/have_given_zinc  = 'no' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/specify_other_reason_zinc" type="string" required="true()" relevant=" /over_five_assessment/group_summary/reason_not_given_zinc  = 'other' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/no_zinc_tablet" type="int" required="true()" relevant=" /over_five_assessment/group_summary/have_given_zinc  = 'yes' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fever_with_danger_sign" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_for_paracetamol" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/have_given_paracetamol" type="select1" required="true()" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/reason_not_given_paracetamol" type="select1" required="true()" relevant=" /over_five_assessment/group_summary/have_given_paracetamol  = 'no' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/specify_other_reason_paracetamol" type="string" required="true()" relevant=" /over_five_assessment/group_summary/reason_not_given_paracetamol  = 'other' and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/paracetamol_given_2" type="int" required="true()" relevant=" /over_five_assessment/group_summary/have_given_paracetamol ='yes' and selected( /over_five_assessment/assessment/symptoms , 'fever') and  /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_referral_title" readonly="true()" type="string" relevant=" /over_five_assessment/assessment/is_sick ='yes' or  /over_five_assessment/needs_diabetes_referral ='true' or  /over_five_assessment/needs_hypertension_referral ='true' or  /over_five_assessment/needs_mental_health_referral ='true' or  /over_five_assessment/needs_sgbv_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_fever_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_fever_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_cough_referral" readonly="true()" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'cough_of_any_duration')"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_malaria_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_malaria_referral ='true' and  /over_five_assessment/needs_general_danger_signs_referral ='false'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_tb_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_tb_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_diarrhoea_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_diarrhoea_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_diabetes_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_diabetes_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_hypertension_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_hypertension_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_mental_health_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_mental_health_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sgbv_referral" readonly="true()" type="string" relevant=" /over_five_assessment/needs_sgbv_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/observation_notes" type="string" required="false()" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_health_facility_title" readonly="true()" type="string" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_facility_referral_note" readonly="true()" type="string" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_follow_up_title" readonly="true()" type="string" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_three_days_follow_up" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_paracetamol ='yes' or  /over_five_assessment/group_summary/given_al  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_referral_follow_up" readonly="true()" type="string" relevant=" /over_five_assessment/group_summary/given_paracetamol ='no' or  /over_five_assessment/group_summary/given_al  = 'no' or  /over_five_assessment/needs_sgbv_referral ='true' or  /over_five_assessment/needs_mental_health_referral ='true' or  /over_five_assessment/needs_hypertension_referral ='true' or  /over_five_assessment/needs_diabetes_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_referral_danger_sign" readonly="true()" type="string" relevant=" /over_five_assessment/needs_general_danger_signs_referral ='true'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_instruction_title" readonly="true()" type="string" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/group_summary/r_sync" readonly="true()" type="string" relevant=" /over_five_assessment/needs_follow_up  = 'yes'"/>
+      <bind nodeset="/over_five_assessment/additional_doc/place_id" type="string" calculate=" /over_five_assessment/chw_area_id "/>
+      <bind nodeset="/over_five_assessment/additional_doc/chv_area_id" type="string" calculate=" /over_five_assessment/chw_area_id "/>
+      <bind nodeset="/over_five_assessment/additional_doc/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/over_five_assessment/additional_doc/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/over_five_assessment/additional_doc/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/over_five_assessment/additional_doc/form" type="string" calculate="&quot;chv_consumption_log&quot;"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/rdts_quantity_issued" type="string" calculate="if(count-selected( /over_five_assessment/group_malaria/rdt_result ) &gt; 0 and not(selected( /over_five_assessment/group_malaria/rdt_result ,&quot;not_done&quot;)),1,0)"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/act_6_quantity_issued" type="string" calculate="coalesce( /over_five_assessment/group_summary/al_6_packs_tablets_count ,&quot;0&quot;)"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/act_12_quantity_issued" type="string" calculate="coalesce( /over_five_assessment/group_summary/al_12_packs_tablets_count ,&quot;0&quot;)"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/act_18_quantity_issued" type="string" calculate="coalesce( /over_five_assessment/group_summary/al_18_packs_tablets_count ,&quot;0&quot;)"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/act_24_quantity_issued" type="string" calculate="coalesce( /over_five_assessment/group_summary/al_24_packs_tablets_count ,&quot;0&quot;)"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/dt_250_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/ors_zinc_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/ors_sachets_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/zinc_sulphate_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/albendazole_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/tetra_eye_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/paracetamol_120_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/mebendazole_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/coc_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/prog_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/depo_im_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/depo_sc_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/preg_strip_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/chlorine_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/gluc_strips_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/paracetamol_500_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/bandages_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/povi_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/strap_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/gloves_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/additional_doc/fields/envelopes_quantity_issued" type="string" calculate="0"/>
+      <bind nodeset="/over_five_assessment/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/over_five_assessment/data/_patient_name" type="string" calculate=" /over_five_assessment/patient_name "/>
+      <bind nodeset="/over_five_assessment/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/over_five_assessment/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/over_five_assessment/data/_referred_to_facility_code" type="string" calculate=" /over_five_assessment/referred_to_facility_code "/>
+      <bind nodeset="/over_five_assessment/data/_referred_to_facility_name" type="string" calculate=" /over_five_assessment/referred_to_facility_name "/>
+      <bind nodeset="/over_five_assessment/data/_follow_up_date" type="string" calculate="format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/over_five_assessment/data/_screening/_symptoms" type="string" relevant=" /over_five_assessment/assessment/symptoms !=''" calculate=" /over_five_assessment/assessment/symptoms "/>
+      <bind nodeset="/over_five_assessment/data/_screening/_tb_symptoms" type="string" relevant=" /over_five_assessment/group_tb/tb_symptoms !=''" calculate=" /over_five_assessment/group_tb/tb_symptoms "/>
+      <bind nodeset="/over_five_assessment/data/_screening/_has_blood_in_stool" type="string" relevant=" /over_five_assessment/group_diarrhoea/has_blood_in_stool ='yes'" calculate="'blood_in_stool'"/>
+      <bind nodeset="/over_five_assessment/data/_screening/_is_diabetic" type="string" relevant=" /over_five_assessment/group_diabetes/is_diabetic ='yes'" calculate="'diabetic'"/>
+      <bind nodeset="/over_five_assessment/data/_screening/_diabetes_symptoms" type="string" relevant=" /over_five_assessment/group_diabetes/diabetes_symptoms !=''" calculate=" /over_five_assessment/group_diabetes/diabetes_symptoms "/>
+      <bind nodeset="/over_five_assessment/data/_screening/_is_hypertensive" type="string" relevant=" /over_five_assessment/group_hypertension/is_hypertensive ='yes'" calculate="'hypertensive'"/>
+      <bind nodeset="/over_five_assessment/data/_screening/_hypertension_symptoms" type="string" relevant=" /over_five_assessment/group_hypertension/hypertension_symptoms !=''" calculate=" /over_five_assessment/group_hypertension/hypertension_symptoms "/>
+      <bind nodeset="/over_five_assessment/data/_screening/_mental_signs" type="string" relevant=" /over_five_assessment/group_mental_health/mental_signs !='' and not(selected( /over_five_assessment/group_mental_health/mental_signs , 'none'))" calculate=" /over_five_assessment/group_mental_health/mental_signs "/>
+      <bind nodeset="/over_five_assessment/data/_screening/_observed_mental_signs" type="string" relevant=" /over_five_assessment/group_mental_health/observed_mental_signs !='' and not(selected( /over_five_assessment/group_mental_health/observed_mental_signs , 'none'))" calculate=" /over_five_assessment/group_mental_health/observed_mental_signs "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_fever_duration" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'fever')" calculate=" /over_five_assessment/group_fever/fever_duration "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_diarrhea_duration" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'diarrhoea')" calculate=" /over_five_assessment/group_diarrhoea/diarrhoea_duration "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_symptoms_other" type="string" relevant="selected( /over_five_assessment/assessment/symptoms , 'other')" calculate=" /over_five_assessment/assessment/symptoms_other "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_systolic_blood_pressure" type="string" relevant=" /over_five_assessment/group_hypertension/systolic_blood_pressure !=''" calculate=" /over_five_assessment/group_hypertension/systolic_blood_pressure "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_diastolic_blood_pressure" type="string" relevant=" /over_five_assessment/group_hypertension/diastolic_blood_pressure !=''" calculate=" /over_five_assessment/group_hypertension/diastolic_blood_pressure "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_has_taken_al" type="string" relevant=" /over_five_assessment/group_fever/has_taken_al !=''" calculate=" /over_five_assessment/group_fever/has_taken_al "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_rdt_result" type="string" relevant=" /over_five_assessment/group_malaria/rdt_result !=''" calculate=" /over_five_assessment/group_malaria/rdt_result "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_repeat_rdt_result" type="string" relevant=" /over_five_assessment/group_malaria/rdt_result ='invalid'" calculate=" /over_five_assessment/group_malaria/repeat_rdt_result "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_is_on_tb_treatment" type="string" relevant=" /over_five_assessment/group_tb/is_on_tb_treatment !=''" calculate=" /over_five_assessment/group_tb/is_on_tb_treatment "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_knows_hiv_status" type="string" relevant=" /over_five_assessment/group_hiv/knows_hiv_status !=''" calculate=" /over_five_assessment/group_hiv/knows_hiv_status "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_is_on_diabetes_medication" type="string" relevant=" /over_five_assessment/group_diabetes/is_on_diabetes_medication !=''" calculate=" /over_five_assessment/group_diabetes/is_on_diabetes_medication "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_is_on_hypertension_medication" type="string" relevant=" /over_five_assessment/group_hypertension/is_on_hypertension_medication !=''" calculate=" /over_five_assessment/group_hypertension/is_on_hypertension_medication "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_is_screened_cancer" type="string" relevant=" /over_five_assessment/group_cancer/is_screened_cancer !=''" calculate=" /over_five_assessment/group_cancer/is_screened_cancer "/>
+      <bind nodeset="/over_five_assessment/data/_supporting_info/_has_observed_signs_of_violence" type="string" relevant=" /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence !=''" calculate=" /over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence "/>
+      <bind nodeset="/over_five_assessment/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/over_five_assessment/inputs">
+      <label>Inputs</label>
+      <group ref="/over_five_assessment/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/over_five_assessment/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/over_five_assessment/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/over_five_assessment/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/over_five_assessment/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/assessment">
+      <label>Assessment</label>
+      <select1 ref="/over_five_assessment/assessment/is_sick">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> sick?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/assessment/caregiver">
+        <label>Who is the caregiver today?</label>
+        <item>
+          <label>Mother</label>
+          <value>mother</value>
+        </item>
+        <item>
+          <label>Father</label>
+          <value>father</value>
+        </item>
+        <item>
+          <label>Sister</label>
+          <value>sister</value>
+        </item>
+        <item>
+          <label>Brother</label>
+          <value>brother</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/assessment/other_caregiver">
+        <label>Specify</label>
+      </input>
+      <select ref="/over_five_assessment/assessment/symptoms">
+        <label>What are the signs of illness?</label>
+        <item>
+          <label>Cough of any duration</label>
+          <value>cough_of_any_duration</value>
+        </item>
+        <item>
+          <label>Fever</label>
+          <value>fever</value>
+        </item>
+        <item>
+          <label>Diarrhoea</label>
+          <value>diarrhoea</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/assessment/symptoms_other">
+        <label>Specify</label>
+      </input>
+      <input ref="/over_five_assessment/assessment/n_danger_symptoms_note">
+        <label>&lt;span style="color:red"&gt;Refer Immediately to the health facility.&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_fever">
+      <label>Fever</label>
+      <select1 ref="/over_five_assessment/group_fever/fever_duration">
+        <label>How many days has the fever lasted (hotness of the body)?</label>
+        <item>
+          <label>1 day</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2 days</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3 days-6 days</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>7 days-14 days</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>More than 14 days</label>
+          <value>14</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_fever/n_fever_note">
+        <label>&lt;span style="color:red"&gt;Fever for 7 days or more is a danger sign.&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_fever/has_taken_al">
+        <label>Has <output value=" /over_five_assessment/patient_name "/> taken AL in the last one week?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_fever/n_al_note">
+        <label>&lt;span style="color:red"&gt;Refer Immediately to the health facility&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_fever/n_malaria_test">
+        <label>&lt;span style="color:orange"&gt;Conduct a rapid malaria test&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_malaria">
+      <label>Malaria</label>
+      <input ref="/over_five_assessment/group_malaria/n_positive">
+        <label ref="jr:itext('/over_five_assessment/group_malaria/n_positive:label')"/>
+      </input>
+      <input ref="/over_five_assessment/group_malaria/n_negative">
+        <label ref="jr:itext('/over_five_assessment/group_malaria/n_negative:label')"/>
+      </input>
+      <select1 ref="/over_five_assessment/group_malaria/rdt_result">
+        <label>Rapid Malaria Tests Results: <output value=" /over_five_assessment/rdt_result_display "/></label>
+        <item>
+          <label>Positive</label>
+          <value>positive</value>
+        </item>
+        <item>
+          <label>Negative</label>
+          <value>negative</value>
+        </item>
+        <item>
+          <label>Invalid</label>
+          <value>invalid</value>
+        </item>
+        <item>
+          <label>Not done</label>
+          <value>not_done</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_malaria/repeat_rdt_result">
+        <label>Repeat Malaria Test</label>
+        <item>
+          <label>Positive</label>
+          <value>positive</value>
+        </item>
+        <item>
+          <label>Negative</label>
+          <value>negative</value>
+        </item>
+        <item>
+          <label>Invalid</label>
+          <value>invalid</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_malaria/n_negative_result_notes">
+        <label>&lt;span style="color:red"&gt;**Refer the client to health facility for further assessment.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_malaria/n_invalid_result_notes">
+        <label>&lt;span style="color:red"&gt;**Refer the client to health facility for malaria testing and explain to the client the importance of malaria diagnosis.**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_tb">
+      <label>TB</label>
+      <select1 ref="/over_five_assessment/group_tb/is_on_tb_treatment">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> on TB treatment?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_tb/n_positive_tb">
+        <label>&lt;span style="color:red"&gt;**Health Educate about the importance of adherence.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_tb/n_negative_tb">
+        <label>&lt;span style="color:orange"&gt;**Educate about TB signs and symptoms.**&lt;/span&gt;</label>
+      </input>
+      <select ref="/over_five_assessment/group_tb/tb_symptoms">
+        <label>Does <output value=" /over_five_assessment/patient_name "/> have any of the following?</label>
+        <item>
+          <label>Any history of contact with persons with TB in the family/household</label>
+          <value>tb_contact</value>
+        </item>
+        <item>
+          <label>Chest pain</label>
+          <value>chest_pain</value>
+        </item>
+        <item>
+          <label>Weight loss, failure to thrive</label>
+          <value>weight_loss_failure_to_thrive</value>
+        </item>
+        <item>
+          <label>Night sweats</label>
+          <value>night_sweats</value>
+        </item>
+        <item>
+          <label>Fatigue</label>
+          <value>fatigue</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/group_tb/n_tb_symptoms">
+        <label>&lt;span style="color:red"&gt;**Refer Immediately to the health facility.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_tb/n_screen_contacts">
+        <label>&lt;span style="color:orange"&gt;**Go to the profile of that household member and screen (assessment services) all members of the household and refer them if necessary.**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_hiv">
+      <label>HIV</label>
+      <select1 ref="/over_five_assessment/group_hiv/knows_hiv_status">
+        <label>Does <output value=" /over_five_assessment/patient_name "/> know their HIV status?</label>
+        <hint>One should be tested every three months.</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_hiv/n_health_education">
+        <label>Health Educate on the importance of knowing ones HIV status and Encourage them to go the the health facility. One should be tested every three months.</label>
+      </input>
+      <input ref="/over_five_assessment/group_hiv/n_adherence">
+        <label>Congratulate <output value=" /over_five_assessment/patient_name "/> on knowing their status and Health Educate on the importance of knowing ones HIV status every three months, as well as the importance of HIV prevention and adherence.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_diarrhoea">
+      <label>diarrhoea</label>
+      <select1 ref="/over_five_assessment/group_diarrhoea/diarrhoea_duration">
+        <label>How long has the Diarrhoea lasted?</label>
+        <item>
+          <label>1 day</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2 days</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3 days-6 days</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>7 days-13 days</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>14 days or more</label>
+          <value>14</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_diarrhoea/n_diarrhoea_note">
+        <label>&lt;span style="color:red"&gt;**Diarrhoea for 14 days or more is a danger sign.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_diarrhoea/has_blood_in_stool">
+        <label>Is there blood in stool?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_diarrhoea/n_blood_in_stool_note">
+        <label>&lt;span style="color:red"&gt;Blood in stool is a danger sign&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_diabetes">
+      <label>Diabetes</label>
+      <select1 ref="/over_five_assessment/group_diabetes/is_diabetic">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> diabetic?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>I don't know</label>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_diabetes/is_on_diabetes_medication">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> on medication?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_diabetes/n_diabetes_health_ed">
+        <label>**Health educate on the importance of adherence **</label>
+      </input>
+      <input ref="/over_five_assessment/group_diabetes/n_educate_symptoms">
+        <label>Educate about diabetes signs and symptoms.</label>
+      </input>
+      <select ref="/over_five_assessment/group_diabetes/diabetes_symptoms">
+        <label>Does <output value=" /over_five_assessment/patient_name "/> have any of these symptoms?</label>
+        <item>
+          <label>Excessive thirst or hunger</label>
+          <value>thirst_or_hunger</value>
+        </item>
+        <item>
+          <label>Frequent urination</label>
+          <value>frequent_urination</value>
+        </item>
+        <item>
+          <label>Weight changes ( unexplained weight loss)</label>
+          <value>weight_changes</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/group_diabetes/n_diabetic_symptoms">
+        <label>**Health educate and &lt;span style="color:red"&gt;refer for further check up.&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_hypertension">
+      <label>Hypertension</label>
+      <select1 ref="/over_five_assessment/group_hypertension/is_hypertensive">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> hypertensive?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>I don't know</label>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_hypertension/is_on_hypertension_medication">
+        <label>Is <output value=" /over_five_assessment/patient_name "/> on medication?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_hypertension/n_hypertension_meds">
+        <label>Provide Health Education about the importance of adherence</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_check_bp_1">
+        <label>Check <output value=" /over_five_assessment/patient_name "/>'s blood pressure</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_hypertension_signs_symptoms">
+        <label>**Message to CHV: ** Educate about hypertension signs and symptoms.</label>
+      </input>
+      <select ref="/over_five_assessment/group_hypertension/hypertension_symptoms">
+        <label>Does <output value=" /over_five_assessment/patient_name "/> have any of these symptoms?</label>
+        <item>
+          <label>Dizziness</label>
+          <value>dizziness</value>
+        </item>
+        <item>
+          <label>Severe headache</label>
+          <value>severe_headache</value>
+        </item>
+        <item>
+          <label>Nose bleeding</label>
+          <value>nose_bleeding</value>
+        </item>
+        <item>
+          <label>Unusual tiredness</label>
+          <value>unusual_tiredness</value>
+        </item>
+        <item>
+          <label>Fast heartbeat</label>
+          <value>fast_heartbeat</value>
+        </item>
+        <item>
+          <label>Nausea or Vomiting</label>
+          <value>nausea_vomiting</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/group_hypertension/systolic_blood_pressure">
+        <label>Systolic blood pressure (mmHg)</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/diastolic_blood_pressure">
+        <label>Diastolic blood pressure (mmHg)</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_bp_high_low">
+        <label>**<output value=" /over_five_assessment/group_hypertension/systolic_blood_pressure "/>/<output value=" /over_five_assessment/group_hypertension/diastolic_blood_pressure "/>** is &lt;span style='color: red;font-weight: bold;'&gt;<output value=" /over_five_assessment/group_hypertension/bp_label "/>&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_bp_normal">
+        <label>**<output value=" /over_five_assessment/group_hypertension/systolic_blood_pressure "/>/<output value=" /over_five_assessment/group_hypertension/diastolic_blood_pressure "/>** is &lt;span style='color: green;font-weight: bold;'&gt;<output value=" /over_five_assessment/group_hypertension/bp_label "/>&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_bp_intermediate">
+        <label>**<output value=" /over_five_assessment/group_hypertension/systolic_blood_pressure "/>/<output value=" /over_five_assessment/group_hypertension/diastolic_blood_pressure "/>** is &lt;span style='color: orange;font-weight: bold;'&gt;<output value=" /over_five_assessment/group_hypertension/bp_label "/>&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_hypertension/n_further_hypertension_check_up">
+        <label>**Health Educate and &lt;span style="color:red"&gt;Refer for further check up.&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_cancer">
+      <label>Cancer</label>
+      <select1 ref="/over_five_assessment/group_cancer/is_screened_cancer">
+        <label>Has <output value=" /over_five_assessment/patient_name "/> been screened for cancer in the last one year?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_cancer/n_screened_cancer">
+        <label>**Health Educate, Encourage <output value=" /over_five_assessment/patient_name "/> to have cancer screening every year.**</label>
+      </input>
+      <input ref="/over_five_assessment/group_cancer/n_not_screened_cancer">
+        <label>**Health Educate, Encourage <output value=" /over_five_assessment/patient_name "/> to go to the health facility for screening.**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_mental_health">
+      <label>Mental health</label>
+      <select ref="/over_five_assessment/group_mental_health/mental_signs">
+        <label>Ask if <output value=" /over_five_assessment/patient_name "/> has any of these mental signs?</label>
+        <item>
+          <label>Lack of sleep</label>
+          <value>lack_of_sleep</value>
+        </item>
+        <item>
+          <label>Feeling of worthlessness</label>
+          <value>feeling_of_worthlessness</value>
+        </item>
+        <item>
+          <label>Staying away from people</label>
+          <value>staying_away_from_people</value>
+        </item>
+        <item>
+          <label>Tearfulness</label>
+          <value>tearfulness</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <select ref="/over_five_assessment/group_mental_health/observed_mental_signs">
+        <label>Observe if <output value=" /over_five_assessment/patient_name "/> has any of these mental signs</label>
+        <item>
+          <label>Lack of hygiene</label>
+          <value>lack_of_hygiene</value>
+        </item>
+        <item>
+          <label>Anxiety/worried for no apparent reason</label>
+          <value>anxiety_worried_for_no_apparent_reason</value>
+        </item>
+        <item>
+          <label>Irritability/agitated</label>
+          <value>irritability_agitated</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/group_mental_health/n_mental_health">
+        <label>**Health Educate and &lt;span style='color:red'&gt;Refer for further check up.&lt;/span&gt;**</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/over_five_assessment/group_sexual_gender_based_violence">
+      <label>Sexual and Gender Based Violence</label>
+      <input ref="/over_five_assessment/group_sexual_gender_based_violence/n_sgbv">
+        <label>&lt;span style='color:orange'&gt;**Observe for signs of any form of violence and notify the CHA.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_sexual_gender_based_violence/has_observed_signs_of_violence">
+        <label>Have you observed sign(s) of any form of violence?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_sexual_gender_based_violence/specify_sgbv">
+        <label>Specify</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_sexual_gender_based_violence/is_referred_to_cha">
+        <label>Have you referred them to the CHA?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="Field-list" ref="/over_five_assessment/insurance">
+      <label>Insurance</label>
+      <select1 ref="/over_five_assessment/insurance/upto_date_insurance">
+        <label>Does <output value=" /over_five_assessment/patient_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/insurance/encourage_to_update">
+        <label>Encourage <output value=" /over_five_assessment/patient_name "/> to get an insurance cover if they don't have or to update their insurance cover.</label>
+      </input>
+      <select ref="/over_five_assessment/insurance/medical_cover_name">
+        <label>Which medical insurance cover does <output value=" /over_five_assessment/patient_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>others</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+      <input ref="/over_five_assessment/insurance/congratulate_for_cover">
+        <label>Congratulate <output value=" /over_five_assessment/patient_name "/> and encourage them to continue updating their insurance cover.</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/over_five_assessment/group_summary">
+      <label></label>
+      <input ref="/over_five_assessment/group_summary/header">
+        <label>&lt;h3 style=&quot;text-align:center;&quot;&gt;ASSESSMENT <output value=" /over_five_assessment/group_summary/header_label "/> NOTE&lt;/h4&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/over_five_assessment/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /over_five_assessment/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /over_five_assessment/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/over_five_assessment/group_summary/r_findings">
+        <label>Signs of Illness</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_cough_findings">
+        <label>Cough</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_sign_cough_of_any_duration">
+        <label>Cough = Cough of any Duration</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_sign_diarrhoea_findings">
+        <label>diarrhoea</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_sign_diarrhoea_duration">
+        <label>Diarrhoea duration: <output value=" /over_five_assessment/diarrhoea_duration_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_sign_diarrhoea_blood_in_stool">
+        <label>Blood in stool</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_fever_findings">
+        <label>Fever</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_fever_duration">
+        <label>Fever duration: <output value=" /over_five_assessment/fever_duration_in_days "/></label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_malaria_findings">
+        <label>Malaria</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_rdt_result">
+        <label>Rapid Malaria Tests Results: <output value=" /over_five_assessment/rdt_result_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_repeat_rdt_result">
+        <label>Rapid Malaria Tests Results: <output value=" /over_five_assessment/repeat_rdt_result_display "/></label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_tb_findings">
+        <label>TB</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_tb_treatment">
+        <label>On TB treatment</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_any_history_of_contact_with_persons_with_TB_in_the_family_household">
+        <label>Any history of contact with persons with TB in the family/household</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_chest_pain">
+        <label>Chest pain</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_weight_loss_failure_to_thrive">
+        <label>Weight loss, failure to thrive</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_night_sweats">
+        <label>Night sweats</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_fatigue">
+        <label>Fatigue</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_none_tb">
+        <label>None</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_hiv_findings">
+        <label>HIV</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_knows_status">
+        <label>Knows HIV status</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_knows_not_status">
+        <label>Does not know HIV status</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_diabetes_findings">
+        <label>Diabetes</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_diabetic">
+        <label>Diabetic: <output value=" /over_five_assessment/is_diabetic_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/diabetic_from_subsequent">
+        <label>Diabetic: Yes</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_on_diabetes_treatment">
+        <label>On medication: <output value=" /over_five_assessment/is_on_diabetes_medication_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_thirst_or_hunger">
+        <label>Excessive thirst or hunger</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_frequent_urination">
+        <label>Frequent urination</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_weight_changes">
+        <label>Weight changes</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_hypertension_findings">
+        <label>Hypertension</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_hypertensive">
+        <label>Hypertensive: <output value=" /over_five_assessment/is_hypertensive_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/hypertensive_from_subsequent">
+        <label>Hypertensive: Yes</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_on_hypertension_treatment">
+        <label>On medication: <output value=" /over_five_assessment/is_on_hypertension_medication_display "/></label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_dizziness">
+        <label>Dizziness</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_severe_headache">
+        <label>Severe headache</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_nose_bleeding">
+        <label>Nose bleeding</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_unusual_tiredness">
+        <label>Unusual tiredness</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_fast_heartbeat">
+        <label>Fast heartbeat</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_nausea_vomiting">
+        <label>Nausea or Vomiting</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_bp">
+        <label>Blood pressure: **<output value=" /over_five_assessment/group_hypertension/systolic_blood_pressure "/>/<output value=" /over_five_assessment/group_hypertension/diastolic_blood_pressure "/> is <output value=" /over_five_assessment/group_hypertension/bp_label "/>**</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_cancer_findings">
+        <label>Cancer</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_screened">
+        <label>Screened for cancer in the last one year</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_not_screened">
+        <label>Not screened for cancer in the last one year</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_mental_health_findings">
+        <label>Mental Health</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_lack_of_sleep">
+        <label>Lack of sleep</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_feeling_of_worthlessness">
+        <label>Feeling of worthlessness</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_staying_away_from_people">
+        <label>Staying away from people</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_tearfulness">
+        <label>Tearfulness</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_none">
+        <label>None</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_lack_of_hygiene">
+        <label>Lack of hygiene</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_anxiety_worried_for_no_apparent_reason">
+        <label>Anxiety/worried for no apparent reason</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_irritability_agitated">
+        <label>Irritability/agitated</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_sgbv_findings">
+        <label>Sexual And Gender Based Violence</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_observed_sgbv_signs">
+        <label>Has observed sign(s) of any form of violence</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_observed_sgbv">
+        <label>Has no observed sign(s) of any form of violence</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_sign_other">
+        <label>Other</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_other_specified">
+        <label>Other sign of Illness: **<output value=" /over_five_assessment/assessment/symptoms_other "/>**</label>
+      </input>
+      <input appearance="h2 red" ref="/over_five_assessment/group_summary/r_danger_sign">
+        <label>**Danger Signs!**
+**Refer to the Health Facility**</label>
+      </input>
+      <input appearance="h1 blue" ref="/over_five_assessment/group_summary/r_pre_treatment">
+        <label>Diagnosis &amp; Management</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_cough_management">
+        <label>**Cough**</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_cough_treatment">
+        <label>&lt;li&gt;Soothe the throat and releave the cough with a safe home remedy eg (warm fluids, warm lemon water with honey)&lt;/li&gt;
+&lt;li&gt;Advise the caregiver to increase fluids. &lt;/li&gt;
+&lt;li&gt;Advise the caregiver not to give any drugs to the child for this condition.&lt;/li&gt;
+&lt;li&gt;Advise the caregiver when to go to the health facility immediately.&lt;/li&gt;</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_malaria">
+        <label>**Malaria**</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_treat_with_al">
+        <label>&lt;span style="color:blue"&gt;**Treat with AL.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/generated_note_name_243">
+        <label>AL Dosage</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/treatment_for_under_8">
+        <label>&lt;p style="color:blue"&gt;Give 2 tablets of AL as per the instructions for 3 days. A total of 12 tablets.&lt;/p&gt; 
+
+&lt;p&gt;Give two tablets of AL immediately&lt;/p&gt;
+&lt;p&gt;Give the second dose after 8 hours. &lt;/p&gt;
+&lt;p&gt;Give the third dose 24 hours after the first dose and 
+subsequent doses every 12 hours until completion of the doses.&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/treatment_for_under_12">
+        <label>&lt;p style="color:blue"&gt;Give 3 tablets of AL as per the instructions for 3 days. A total of 18 tablets.&lt;/p&gt; 
+
+&lt;p&gt;Give two tablets of AL immediately&lt;/p&gt;
+&lt;p&gt;Give the second dose after 8 hours. &lt;/p&gt;
+&lt;p&gt;Give the third dose 24 hours after the first dose and 
+subsequent doses every 12 hours until completion of the doses.&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/treatment_for_over_12">
+        <label>&lt;p style="color:blue"&gt;Give 4 tablets of AL as per the instructions for 3 days. A total of 24 tablets.&lt;/p&gt; 
+
+&lt;p&gt;Give two tablets of AL immediately&lt;/p&gt;
+&lt;p&gt;Give the second dose after 8 hours. &lt;/p&gt;
+&lt;p&gt;Give the third dose 24 hours after the first dose and 
+subsequent doses every 12 hours until completion of the doses.&lt;/p&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_summary/given_al">
+        <label>Have you given AL?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_summary/not_given_al_reasons">
+        <label>Please give reasons why.</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>patient_prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_summary/not_given_al_reasons_other">
+        <label>Specify Other</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_refer_no_al">
+        <label>**&lt;span style="color:red"&gt;Refer to the Health Facility.&lt;/span&gt;**</label>
+      </input>
+      <select ref="/over_five_assessment/group_summary/al_pack">
+        <label>From which pack did you give <output value=" /over_five_assessment/group_summary/al_tablets "/> tablets?</label>
+        <item>
+          <label>6 pack</label>
+          <value>6</value>
+        </item>
+        <item>
+          <label>12 pack</label>
+          <value>12</value>
+        </item>
+        <item>
+          <label>18 pack</label>
+          <value>18</value>
+        </item>
+        <item>
+          <label>24 pack</label>
+          <value>24</value>
+        </item>
+      </select>
+      <input ref="/over_five_assessment/group_summary/al_6_packs_tablets_count">
+        <label>How many tablets did you give from 6 packs?</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/al_12_packs_tablets_count">
+        <label>How many tablets did you give from 12 packs?</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/al_18_packs_tablets_count">
+        <label>How many tablets did you give from 18 packs?</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/al_24_packs_tablets_count">
+        <label>How many tablets did you give from 24 packs?</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_special_instructions_1">
+        <label>**&lt;span style="color:blue"&gt;Important Instructions for Malaria&lt;/span&gt;**</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_dose_advice">
+        <label>&lt;p&gt;Advice the care giver to give:&lt;/p&gt;
+&lt;p&gt;2nd dose 8hours after the first dose&lt;/p&gt;
+&lt;p&gt;3rd dose 24hours after the first dose(same time the 1st dose was given)&lt;/p&gt; 
+&lt;p&gt;4th dose 12hours from the 3rd dose&lt;/p&gt; 
+&lt;p&gt;5th dose 12hours from the 4th dose and &lt;/p&gt;
+&lt;p&gt;6th dose 12hours from the 5th dose &lt;/p&gt;</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_remind_full_dose">
+        <label>Remind the caregiver to give the full dose as recommended</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_refer_malaria">
+        <label>**&lt;span style="color:red"&gt;Refer to the Health Facility.&lt;/span&gt;**</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_fever">
+        <label>**Fever**</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_paracetamol">
+        <label>&lt;span style="color:blue"&gt;**Treat with Paracetamol**&lt;/span&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_paracetamol_types">
+        <label>&lt;p&gt;1. Paracetamol Syrup (120mg/5ml)&lt;/p&gt;
+&lt;p&gt;2. Paracetamol Syrup (250mg/5ml)&lt;/p&gt;
+&lt;p&gt;3. Paracetamol Tablets (500mg)&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_syrup_dosage">
+        <label>&lt;h2&gt;**Syrup Dosage**&lt;/h2&gt;
+&lt;li&gt;Give Paracetamol Syrup (120mg/5ml) 10 ml Max 4 times in 24 hours&lt;/li&gt;
+ &lt;li&gt;Give Paracetamol Syrup (250mg/5ml) 5ml Max 4 times in 24 hours&lt;/li&gt;	
+&lt;li&gt;Give Paracetamol Syrup (250mg/5ml) 7.5ml Max 4 times in 24 hrs&lt;/li&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_tablets_dosage">
+        <label>&lt;h2&gt;**Tablet Dosage**&lt;/h2&gt;
+&lt;li&gt;Give Paracetamol tablet 250mg&lt;/li&gt;
+ &lt;li&gt;Give Paracetamol tablet 375mg&lt;/li&gt;	
+&lt;li&gt;Give Paracetamol tablet 500mg&lt;/li&gt;	
+&lt;li&gt;Give Paracetamol tablet 750mg&lt;/li&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_summary/given_paracetamol">
+        <label>Have you given Paracetamol?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_summary/not_given_paracetamol_reasons">
+        <label>Please give reasons why.</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>patient_prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_summary/paracetamol_given">
+        <label>How many tablets of Paracetamol did you give?</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/not_given_paracetamol_reasons_other">
+        <label>Specify Other</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_refer_no_paracetamol">
+        <label>**&lt;span style="color:red"&gt;Refer to the Health Facility.&lt;/span&gt;**</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_special_instructions">
+        <label>**&lt;span style="color:blue"&gt;Important Instructions for Fever.&lt;/span&gt;**</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_first_dose">
+        <label>Help the caregiver give first dose of paracetamol now. Advice the caregiver to give the full dose as recommended</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_special_instructions_3">
+        <label>**&lt;span style="color:blue"&gt;Advice to the Caregiver For All Persons Managed at Home &lt;/span&gt;**</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_adherence">
+        <label>Advise caregiver to give more fluids and continue feeding.</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_return">
+        <label>Advise on when to return. Go to nearest health facility immediately or if not possible return if child: becomes sicker, has blood in the stool.</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_llin">
+        <label>Advise caregiver on use of a bednet (LLITN).</label>
+      </input>
+      <input appearance="h1 blue" ref="/over_five_assessment/group_summary/first_dose">
+        <label>Give First Dose for Treatment Management</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_diarrhoea">
+        <label>diarrhoea</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/note_for_ors">
+        <label>&lt;li&gt;Begin giving ORS solution right away.&lt;/li&gt;
+&lt;li&gt;Give first dose of Zinc&lt;/li&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_summary/have_given_ors">
+        <label>Have you given ORS?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_summary/reason_not_given_ors">
+        <label>Please give reasons why.</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>patient_prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_summary/specify_other_reason_ors">
+        <label>Specify Other</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_summary/have_given_zinc">
+        <label>Have you given Zinc?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_summary/reason_not_given_zinc">
+        <label>Please give reasons why.</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>patient_prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_summary/specify_other_reason_zinc">
+        <label>Specify Other</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/no_zinc_tablet">
+        <label>How many tablets of Zinc did you give?</label>
+      </input>
+      <input appearance="h2 yellow" ref="/over_five_assessment/group_summary/r_fever_with_danger_sign">
+        <label>Fever</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_for_paracetamol">
+        <label>&lt;span style ='color:blue'&gt;Treat with Paracetamol.&lt;/span&gt;
+&lt;li&gt;Give Paracetamol tablet 500mg&lt;/li&gt;</label>
+      </input>
+      <select1 ref="/over_five_assessment/group_summary/have_given_paracetamol">
+        <label>Have you given Paracetamol?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/over_five_assessment/group_summary/reason_not_given_paracetamol">
+        <label>Please give reasons why</label>
+        <item>
+          <label>I am out of stock</label>
+          <value>out_of_stock</value>
+        </item>
+        <item>
+          <label>Patient prefers another source</label>
+          <value>patient_prefers_another_source</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/over_five_assessment/group_summary/specify_other_reason_paracetamol">
+        <label>Specify Other</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/paracetamol_given_2">
+        <label>How many tablets of Paracetamol did you give?</label>
+      </input>
+      <input appearance="h1 red" ref="/over_five_assessment/group_summary/r_referral_title">
+        <label>Reason for Referral</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_fever_referral">
+        <label>&lt;p style ="text-align: center"&gt;Fever&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_cough_referral">
+        <label>&lt;p style ="text-align: center"&gt;Cough&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_malaria_referral">
+        <label>&lt;p style ="text-align: center"&gt;Malaria&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_tb_referral">
+        <label>&lt;p style ="text-align: center"&gt;TB&lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_diarrhoea_referral">
+        <label>&lt;p style ="text-align: center"&gt;diarrhoea &lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_diabetes_referral">
+        <label>&lt;p style ="text-align: center"&gt;diabetes &lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_hypertension_referral">
+        <label>&lt;p style ="text-align: center"&gt;Hypertension &lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_mental_health_referral">
+        <label>Mental Health &lt;p style ="text-align: center"&gt;Mental Health &lt;/p&gt;</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_sgbv_referral">
+        <label>&lt;p style ="text-align: center"&gt;Sexual And Gender Based Violence &lt;/p&gt;</label>
+      </input>
+      <input appearance="multiline" ref="/over_five_assessment/group_summary/observation_notes">
+        <label>Other condition</label>
+      </input>
+      <input appearance="h2 orange" ref="/over_five_assessment/group_summary/r_health_facility_title">
+        <label>Health Facility</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_facility_referral_note">
+        <label>&lt;span style="color:red; text-align: center;"&gt;**Refer to the health facility**&lt;/span&gt;</label>
+      </input>
+      <input appearance="h2 green" ref="/over_five_assessment/group_summary/r_follow_up_title">
+        <label>Follow Up</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_three_days_follow_up">
+        <label>A Treatment Follow up task will appear in two 3 days to see if there is improvement with treatment</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_referral_follow_up">
+        <label>A Referral Follow up task will appear after 3 days</label>
+      </input>
+      <input ref="/over_five_assessment/group_summary/r_referral_danger_sign">
+        <label>A Referral Follow up task will appear in 24 hrs</label>
+      </input>
+      <input appearance="h2 lime" ref="/over_five_assessment/group_summary/r_instruction_title">
+        <label>Instruction</label>
+      </input>
+      <input appearance="li" ref="/over_five_assessment/group_summary/r_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+    <group ref="/over_five_assessment/additional_doc">
+      <label></label>
+      <group ref="/over_five_assessment/additional_doc/fields">
+        <label></label>
+      </group>
+    </group>
+    <group ref="/over_five_assessment/data">
+      <label></label>
+      <group ref="/over_five_assessment/data/_screening"/>
+      <group ref="/over_five_assessment/data/_supporting_info"/>
+    </group>
+  </h:body>
+</h:html>

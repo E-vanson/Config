@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Treatment Follow-up</h:title>
+    <model>
+      <instance>
+        <treatment_follow_up id="treatment_follow_up" prefix="J1!treatment_follow_up!" delimiter="#" version="2023-09-23 01:41:17">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_original_source_id/>
+            <t_referral_type/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <upi/>
+              <parent>
+                <_id/>
+                <parent>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <visited_contact_uuid/>
+          <chw_name/>
+          <original_source_id/>
+          <referral_type/>
+          <has_side_effects/>
+          <needs_follow_up/>
+          <has_been_referred/>
+          <follow_up_date/>
+          <is_available/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <group_follow_up>
+            <client_available/>
+            <n_remind/>
+            <progress/>
+            <progress_display/>
+            <is_taking_treatment_as_prescribed/>
+            <n_treatment_as_prescribed/>
+            <side_effects/>
+            <n_educate_encourage_refer/>
+            <n_encourage_to_continue/>
+          </group_follow_up>
+          <group_summary>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_findings/>
+            <r_not_available/>
+            <r_available_no_medication/>
+            <r_progress/>
+            <r_referral_title/>
+            <r_worsening/>
+            <r_health_facility_title/>
+            <referral_health_facility/>
+            <r_follow_up_title/>
+            <r_referral_follow_up/>
+            <r_instruction_title/>
+            <r_sync/>
+          </group_summary>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_progress/>
+              <_side_effects/>
+            </_screening>
+            <_supporting_info>
+              <_is_taking_treatment_as_prescribed/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </treatment_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/treatment_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/treatment_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/t_original_source_id" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/t_referral_type" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/upi" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/treatment_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/treatment_follow_up/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /treatment_follow_up/inputs/contact/date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/treatment_follow_up/patient_age_in_months" type="string" calculate="difference-in-months(  /treatment_follow_up/inputs/contact/date_of_birth , today() )"/>
+      <bind nodeset="/treatment_follow_up/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /treatment_follow_up/inputs/contact/date_of_birth ) )"/>
+      <bind nodeset="/treatment_follow_up/patient_age_display" type="string" calculate="concat(
+ if( /treatment_follow_up/patient_age_in_years  &gt;= 1,concat( /treatment_follow_up/patient_age_in_years , if( /treatment_follow_up/patient_age_in_years =1,' year and ',' years and ')),''),
+ concat( /treatment_follow_up/patient_age_in_months  mod 12, if(( /treatment_follow_up/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/treatment_follow_up/patient_id" type="string" calculate="../inputs/contact/_id" required="true()"/>
+      <bind nodeset="/treatment_follow_up/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/treatment_follow_up/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/treatment_follow_up/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/treatment_follow_up/chw_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/treatment_follow_up/original_source_id" type="string" calculate=" /treatment_follow_up/inputs/t_original_source_id "/>
+      <bind nodeset="/treatment_follow_up/referral_type" type="string" calculate="../inputs/t_referral_type"/>
+      <bind nodeset="/treatment_follow_up/has_side_effects" type="string" calculate="if(count-selected( /treatment_follow_up/group_follow_up/side_effects )&gt;0 and not(selected( /treatment_follow_up/group_follow_up/side_effects , 'none')), 'yes', if(selected( /treatment_follow_up/group_follow_up/side_effects , 'none'),'no', ''))"/>
+      <bind nodeset="/treatment_follow_up/needs_follow_up" type="string" calculate="if( /treatment_follow_up/is_available ='no' or  /treatment_follow_up/has_side_effects ='yes' or ( /treatment_follow_up/group_follow_up/progress ='worse' or  /treatment_follow_up/group_follow_up/progress ='no_change'), 'yes', 'no')"/>
+      <bind nodeset="/treatment_follow_up/has_been_referred" type="string" calculate=" /treatment_follow_up/needs_follow_up "/>
+      <bind nodeset="/treatment_follow_up/follow_up_date" type="string" calculate="if( /treatment_follow_up/is_available ='no', format-date-time(decimal-date-time(today()) + 1,&quot;%Y-%m-%d&quot;), if( /treatment_follow_up/needs_follow_up ='yes', format-date-time(decimal-date-time(today() )+ 3,&quot;%Y-%m-%d&quot;), ''))"/>
+      <bind nodeset="/treatment_follow_up/is_available" type="string" calculate=" /treatment_follow_up/group_follow_up/client_available "/>
+      <bind nodeset="/treatment_follow_up/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/treatment_follow_up/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/client_available" type="select1" required="true()"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/n_remind" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/client_available  = 'no'"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/progress" type="select1" relevant=" /treatment_follow_up/group_follow_up/client_available  = 'yes'" required="true()"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/progress_display" type="string" calculate="jr:choice-name( /treatment_follow_up/group_follow_up/progress , ' /treatment_follow_up/group_follow_up/progress ')"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed" type="select1" relevant=" /treatment_follow_up/group_follow_up/client_available  = 'yes'" required="true()"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/n_treatment_as_prescribed" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed ='no' and  /treatment_follow_up/group_follow_up/client_available  = 'yes'"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/side_effects" type="select" relevant=" /treatment_follow_up/group_follow_up/progress ='feeling_better' and  /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed ='yes' and  /treatment_follow_up/group_follow_up/client_available  = 'yes'" required="true()"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/n_educate_encourage_refer" readonly="true()" type="string" relevant="(count-selected( /treatment_follow_up/group_follow_up/side_effects )&gt; 0 or  /treatment_follow_up/group_follow_up/progress ='worse' or  /treatment_follow_up/group_follow_up/progress ='no_change') and  /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed ='yes' and  /treatment_follow_up/group_follow_up/client_available  = 'yes'"/>
+      <bind nodeset="/treatment_follow_up/group_follow_up/n_encourage_to_continue" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/progress ='feeling_better' and  /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed ='yes' and count-selected( /treatment_follow_up/group_follow_up/side_effects )=0"/>
+      <bind nodeset="/treatment_follow_up/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_not_available" readonly="true()" type="string" relevant=" /treatment_follow_up/is_available  = 'no'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_available_no_medication" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed ='no'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_progress" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/progress  != ''"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_referral_title" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes' and  /treatment_follow_up/is_available  = 'yes'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_worsening" readonly="true()" type="string" relevant=" /treatment_follow_up/group_follow_up/progress  = 'worsening'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_health_facility_title" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes' and  /treatment_follow_up/is_available  = 'yes'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/referral_health_facility" type="select1" relevant=" /treatment_follow_up/needs_follow_up ='yes' and  /treatment_follow_up/is_available  = 'yes'" required="true()"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_follow_up_title" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_referral_follow_up" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_instruction_title" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/treatment_follow_up/group_summary/r_sync" readonly="true()" type="string" relevant=" /treatment_follow_up/needs_follow_up ='yes'"/>
+      <bind nodeset="/treatment_follow_up/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/treatment_follow_up/data/_patient_name" type="string" calculate=" /treatment_follow_up/patient_name "/>
+      <bind nodeset="/treatment_follow_up/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/treatment_follow_up/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/treatment_follow_up/data/_referred_to_facility_code" type="string" calculate=" /treatment_follow_up/referred_to_facility_code "/>
+      <bind nodeset="/treatment_follow_up/data/_referred_to_facility_name" type="string" calculate=" /treatment_follow_up/referred_to_facility_name "/>
+      <bind nodeset="/treatment_follow_up/data/_follow_up_date" type="string" calculate=" /treatment_follow_up/follow_up_date "/>
+      <bind nodeset="/treatment_follow_up/data/_screening/_progress" type="string" calculate=" /treatment_follow_up/group_follow_up/progress "/>
+      <bind nodeset="/treatment_follow_up/data/_screening/_side_effects" type="string" relevant=" /treatment_follow_up/group_follow_up/side_effects !=''" calculate=" /treatment_follow_up/group_follow_up/side_effects "/>
+      <bind nodeset="/treatment_follow_up/data/_supporting_info/_is_taking_treatment_as_prescribed" type="string" calculate=" /treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed "/>
+      <bind nodeset="/treatment_follow_up/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/treatment_follow_up/inputs">
+      <label>Patient</label>
+      <group ref="/treatment_follow_up/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/treatment_follow_up/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/treatment_follow_up/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/treatment_follow_up/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/treatment_follow_up/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/treatment_follow_up/group_follow_up">
+      <label>For all people with a treatment done by CHP and submitted within the last 1 week</label>
+      <select1 ref="/treatment_follow_up/group_follow_up/client_available">
+        <label>Is <output value=" /treatment_follow_up/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/treatment_follow_up/group_follow_up/n_remind">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**If <output value=" /treatment_follow_up/patient_name "/> relocated remember to submit a muting request, if they died remember to submit a death report.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/treatment_follow_up/group_follow_up/progress">
+        <label>How is <output value=" /treatment_follow_up/patient_name "/> doing today?</label>
+        <item>
+          <label>Feeling better</label>
+          <value>feeling_better</value>
+        </item>
+        <item>
+          <label>No change</label>
+          <value>no_change</value>
+        </item>
+        <item>
+          <label>Worse</label>
+          <value>worse</value>
+        </item>
+      </select1>
+      <select1 ref="/treatment_follow_up/group_follow_up/is_taking_treatment_as_prescribed">
+        <label>Is <output value=" /treatment_follow_up/patient_name "/> taking treatment as prescribed?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/treatment_follow_up/group_follow_up/n_treatment_as_prescribed">
+        <label>Find out why and encourage <output value=" /treatment_follow_up/patient_name "/> to complete treatment as prescribed</label>
+      </input>
+      <select ref="/treatment_follow_up/group_follow_up/side_effects">
+        <label>Does <output value=" /treatment_follow_up/patient_name "/> have side effects?</label>
+        <hint>Find out if they have any side effects.</hint>
+        <item>
+          <label>Constipation</label>
+          <value>constipation</value>
+        </item>
+        <item>
+          <label>Skin rash or dermatitis</label>
+          <value>skin_rash_or_dermatitis</value>
+        </item>
+        <item>
+          <label>Diarrhea</label>
+          <value>diarrhea</value>
+        </item>
+        <item>
+          <label>Dizziness</label>
+          <value>dizziness</value>
+        </item>
+        <item>
+          <label>Drowsiness</label>
+          <value>drowsiness</value>
+        </item>
+        <item>
+          <label>Dry mouth</label>
+          <value>dry_mouth</value>
+        </item>
+        <item>
+          <label>Fatigue</label>
+          <value>fatigue</value>
+        </item>
+        <item>
+          <label>Headache</label>
+          <value>headache</value>
+        </item>
+        <item>
+          <label>Hives</label>
+          <value>hives</value>
+        </item>
+        <item>
+          <label>Insomnia</label>
+          <value>insomnia</value>
+        </item>
+        <item>
+          <label>Irregular heartbeat</label>
+          <value>irregular_heartbeat</value>
+        </item>
+        <item>
+          <label>Nausea</label>
+          <value>nausea</value>
+        </item>
+        <item>
+          <label>Upset stomach</label>
+          <value>upset_stomach</value>
+        </item>
+        <item>
+          <label>Rash</label>
+          <value>rash</value>
+        </item>
+        <item>
+          <label>Vomiting</label>
+          <value>vomiting</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/treatment_follow_up/group_follow_up/n_educate_encourage_refer">
+        <label>Educate, encourage and refer <output value=" /treatment_follow_up/patient_name "/> to the health facility.</label>
+      </input>
+      <input ref="/treatment_follow_up/group_follow_up/n_encourage_to_continue">
+        <label>Encourage <output value=" /treatment_follow_up/patient_name "/> to continue treatment.</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/treatment_follow_up/group_summary">
+      <label>TREATMENT FOLLOW UP RESULTS</label>
+      <input ref="/treatment_follow_up/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/treatment_follow_up/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/treatment_follow_up/group_summary/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /treatment_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /treatment_follow_up/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/treatment_follow_up/group_summary/r_findings">
+        <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_not_available">
+        <label><output value=" /treatment_follow_up/patient_name "/> is not available.</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_available_no_medication">
+        <label><output value=" /treatment_follow_up/patient_name "/> is available, but did not take medication.</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_progress">
+        <label><output value=" /treatment_follow_up/patient_name "/>'s condition is <output value=" /treatment_follow_up/group_follow_up/progress_display "/></label></input>
+      <input appearance="h1 red" ref="/treatment_follow_up/group_summary/r_referral_title">
+        <label>Refer urgently to Health facility! &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_worsening">
+        <label><output value=" /treatment_follow_up/group_follow_up/progress_display "/></label>
+      </input>
+      <input appearance="h2 blue" ref="/treatment_follow_up/group_summary/r_health_facility_title">
+        <label>Health Facility</label>
+      </input>
+      <select1 ref="/treatment_follow_up/group_summary/referral_health_facility">
+        <label>Select the health facility you are referring to</label>
+        <item>
+          <label>Link health facility</label>
+          <value>link_health_facility</value>
+        </item>
+        <item>
+          <label>Other within sub county</label>
+          <value>other_within_sub_county</value>
+        </item>
+        <item>
+          <label>Other outside sub county</label>
+          <value>other_outside_sub_county</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/treatment_follow_up/group_summary/r_follow_up_title">
+        <label>Follow Up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_referral_follow_up">
+        <label>A Referral Follow up task will appear after in 24 hrs</label>
+      </input>
+      <input appearance="h1 lime" ref="/treatment_follow_up/group_summary/r_instruction_title">
+        <label>Instruction &lt;i class="fa fa-heart"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/treatment_follow_up/group_summary/r_sync">
+        <label>Please sync after submitting this form for the health facility to receive this referral information</label>
+      </input>
+    </group>
+    <group ref="/treatment_follow_up/data">
+      <label></label>
+      <group ref="/treatment_follow_up/data/_screening"/>
+      <group ref="/treatment_follow_up/data/_supporting_info"/>
+    </group>
+  </h:body>
+</h:html>

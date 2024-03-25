@@ -1,0 +1,30 @@
+{
+  "name": "config-echis",
+  "version": "2.0.0",
+  "scripts": {
+    "postinstall": "cp scripts/git-hooks/* .git/hooks/ && chmod +x .git/hooks/* && echo 'git hooks copied'",
+    "eslint": "npx eslint *.json *.js 'test/**/*.js'",
+    "test": "npm run eslint && npm run compile-app-settings && npm run validate-forms && npm run test-unit",
+    "validate-forms": "npx cht convert-contact-forms validate-contact-forms convert-app-forms validate-app-forms",
+    "compile-app-settings": "npx cht --no-check compile-app-settings",
+    "test-unit": "TZ=Africa/Nairobi mocha --parallel --reporter spec 'test/**/*.spec.js' --timeout 50000 --slow 5000",
+    "sqlint": "sqlfluff lint sql/",
+    "readenv": "node scripts/deploy/readenv.js"
+  },
+  "dependencies": {
+    "@medic/contact-summary-testing": "^2.0.1",
+    "@medic/eslint-config": "^1.1.0",
+    "chai": "^4.3.6",
+    "chai-exclude": "^2.1.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
+    "cht-conf": "^3.21.4",
+    "cht-conf-test-harness": "^3.0.14",
+    "cht-nootils": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^3.1.0",
+    "luxon": "^3.4.4",
+    "mocha": "^10.0.0",
+    "semver": "^7.3.8"
+  }
+}

@@ -1,0 +1,1876 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Commodities Discrepancy</h:title>
+    <model>
+      <instance>
+        <commodity_discrepancy id="commodity_discrepancy" prefix="J1!commodity_discrepancy!" delimiter="#" version="2023-11-27 12:54:03">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <d_rs_chv_name/>
+            <d_rs_chv_area_uuid/>
+            <t_rs_rdts/>
+            <t_rs_act_6/>
+            <t_rs_act_12/>
+            <t_rs_act_18/>
+            <t_rs_act_24/>
+            <t_rs_dt_250/>
+            <t_rs_ors_zinc/>
+            <t_rs_ors_sachets/>
+            <t_rs_zinc_sulphate/>
+            <t_rs_albendazole/>
+            <t_rs_tetra_eye/>
+            <t_rs_paracetamol_120/>
+            <t_rs_mebendazole/>
+            <t_rs_coc/>
+            <t_rs_prog/>
+            <t_rs_depo_im/>
+            <t_rs_depo_sc/>
+            <t_rs_preg_strip/>
+            <t_rs_chlorine/>
+            <t_rs_gluc_strips/>
+            <t_rs_paracetamol_500/>
+            <t_rs_bandages/>
+            <t_rs_povi/>
+            <t_rs_strap/>
+            <t_rs_gloves/>
+            <t_rs_envelopes/>
+            <t_rs_glucometer/>
+            <t_rs_backpack/>
+            <t_rs_badge/>
+            <t_rs_flashlight/>
+            <t_rs_salter/>
+            <t_rs_color_salter/>
+            <t_rs_weighing_scale/>
+            <t_rs_first_aid/>
+            <t_rs_bp/>
+            <t_rs_thermometer/>
+            <t_rs_resp_timer/>
+            <t_rs_muac_tape_adults/>
+            <t_rs_muac_tape_children/>
+            <t_rs_family_muac_tape/>
+            <t_rs_moh_514/>
+            <t_rs_moh_521/>
+            <t_rs_moh_100/>
+            <t_rs_comm_daily_register/>
+            <t_rs_phone/>
+            <t_rs_safety_box/>
+            <t_rs_others/>
+            <d_rs_rdts/>
+            <d_rs_act_6/>
+            <d_rs_act_12/>
+            <d_rs_act_18/>
+            <d_rs_act_24/>
+            <d_rs_dt_250/>
+            <d_rs_ors_zinc/>
+            <d_rs_ors_sachets/>
+            <d_rs_zinc_sulphate/>
+            <d_rs_albendazole/>
+            <d_rs_tetra_eye/>
+            <d_rs_paracetamol_120/>
+            <d_rs_mebendazole/>
+            <d_rs_coc/>
+            <d_rs_prog/>
+            <d_rs_depo_im/>
+            <d_rs_depo_sc/>
+            <d_rs_preg_strip/>
+            <d_rs_chlorine/>
+            <d_rs_gluc_strips/>
+            <d_rs_paracetamol_500/>
+            <d_rs_bandages/>
+            <d_rs_povi/>
+            <d_rs_strap/>
+            <d_rs_gloves/>
+            <d_rs_envelopes/>
+            <d_rs_glucometer/>
+            <d_rs_backpack/>
+            <d_rs_badge/>
+            <d_rs_flashlight/>
+            <d_rs_salter/>
+            <d_rs_color_salter/>
+            <d_rs_weighing_scale/>
+            <d_rs_first_aid/>
+            <d_rs_bp/>
+            <d_rs_thermometer/>
+            <d_rs_resp_timer/>
+            <d_rs_muac_tape_adults/>
+            <d_rs_muac_tape_children/>
+            <d_rs_family_muac_tape/>
+            <d_rs_moh_514/>
+            <d_rs_moh_521/>
+            <d_rs_moh_100/>
+            <d_rs_comm_daily_register/>
+            <d_rs_phone/>
+            <d_rs_safety_box/>
+            <d_rs_others/>
+            <contact>
+              <_id/>
+              <name/>
+              <phone/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <contact>
+                      <name/>
+                      <_id/>
+                    </contact>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <area_name/>
+          <chv_contact_details/>
+          <chv_name/>
+          <chv_area_uuid/>
+          <cu_id/>
+          <rs_rdts/>
+          <rs_act_6/>
+          <rs_act_12/>
+          <rs_act_18/>
+          <rs_act_24/>
+          <rs_dt_250/>
+          <rs_ors_zinc/>
+          <rs_ors_sachets/>
+          <rs_zinc_sulphate/>
+          <rs_albendazole/>
+          <rs_tetra_eye/>
+          <rs_paracetamol_120/>
+          <rs_mebendazole/>
+          <rs_coc/>
+          <rs_prog/>
+          <rs_depo_im/>
+          <rs_depo_sc/>
+          <rs_preg_strip/>
+          <rs_chlorine/>
+          <rs_gluc_strips/>
+          <rs_paracetamol_500/>
+          <rs_bandages/>
+          <rs_povi/>
+          <rs_strap/>
+          <rs_gloves/>
+          <rs_envelopes/>
+          <rs_glucometer/>
+          <rs_backpack/>
+          <rs_badge/>
+          <rs_flashlight/>
+          <rs_salter/>
+          <rs_color_salter/>
+          <rs_weighing_scale/>
+          <rs_first_aid/>
+          <rs_bp/>
+          <rs_thermometer/>
+          <rs_resp_timer/>
+          <rs_muac_tape_adults/>
+          <rs_muac_tape_children/>
+          <rs_family_muac_tape/>
+          <rs_moh_514/>
+          <rs_moh_521/>
+          <rs_moh_100/>
+          <rs_comm_daily_register/>
+          <rs_phone/>
+          <rs_safety_box/>
+          <rs_others/>
+          <rd_rdts/>
+          <rd_act_6/>
+          <rd_act_12/>
+          <rd_act_18/>
+          <rd_act_24/>
+          <rd_dt_250/>
+          <rd_ors_zinc/>
+          <rd_ors_sachets/>
+          <rd_zinc_sulphate/>
+          <rd_albendazole/>
+          <rd_tetra_eye/>
+          <rd_paracetamol_120/>
+          <rd_mebendazole/>
+          <rd_coc/>
+          <rd_prog/>
+          <rd_depo_im/>
+          <rd_depo_sc/>
+          <rd_preg_strip/>
+          <rd_chlorine/>
+          <rd_gluc_strips/>
+          <rd_paracetamol_500/>
+          <rd_bandages/>
+          <rd_povi/>
+          <rd_strap/>
+          <rd_gloves/>
+          <rd_envelopes/>
+          <rd_glucometer/>
+          <rd_backpack/>
+          <rd_badge/>
+          <rd_flashlight/>
+          <rd_salter/>
+          <rd_color_salter/>
+          <rd_weighing_scale/>
+          <rd_first_aid/>
+          <rd_bp/>
+          <rd_thermometer/>
+          <rd_resp_timer/>
+          <rd_muac_tape_adults/>
+          <rd_muac_tape_children/>
+          <rd_family_muac_tape/>
+          <rd_moh_514/>
+          <rd_moh_521/>
+          <rd_moh_100/>
+          <rd_comm_daily_register/>
+          <rd_phone/>
+          <rd_safety_box/>
+          <rd_others/>
+          <rdts_ammendment/>
+          <act_6_ammendment/>
+          <act_12_ammendment/>
+          <act_18_ammendment/>
+          <act_24_ammendment/>
+          <dt_250_ammendment/>
+          <ors_zinc_ammendment/>
+          <ors_sachets_ammendment/>
+          <zinc_sulphate_ammendment/>
+          <albendazole_ammendment/>
+          <tetra_eye_ammendment/>
+          <paracetamol_120_ammendment/>
+          <mebendazole_ammendment/>
+          <coc_ammendment/>
+          <prog_ammendment/>
+          <depo_im_ammendment/>
+          <depo_sc_ammendment/>
+          <preg_strip_ammendment/>
+          <chlorine_ammendment/>
+          <gluc_strips_ammendment/>
+          <paracetamol_500_ammendment/>
+          <bandages_ammendment/>
+          <povi_ammendment/>
+          <strap_ammendment/>
+          <gloves_ammendment/>
+          <envelopes_ammendment/>
+          <glucometer_ammendment/>
+          <backpack_ammendment/>
+          <badge_ammendment/>
+          <flashlight_ammendment/>
+          <salter_ammendment/>
+          <color_salter_ammendment/>
+          <weighing_scale_ammendment/>
+          <first_aid_ammendment/>
+          <bp_ammendment/>
+          <thermometer_ammendment/>
+          <resp_timer_ammendment/>
+          <muac_tape_adults_ammendment/>
+          <muac_tape_children_ammendment/>
+          <family_muac_tape_ammendment/>
+          <moh_514_ammendment/>
+          <moh_521_ammendment/>
+          <moh_100_ammendment/>
+          <comm_daily_register_ammendment/>
+          <phone_ammendment/>
+          <safety_box_ammendment/>
+          <others_ammendment/>
+          <s_discrepancy>
+            <n_intro/>
+            <n_rdts/>
+            <rdts_issued_by_cha/>
+            <rdts_confirmed_by_chv/>
+            <rdts_contact_chv/>
+            <rdts_amended/>
+            <n_act_6/>
+            <act_6_issued_by_cha/>
+            <act_6_confirmed_by_chv/>
+            <act_6_contact_chv/>
+            <act_6_amended/>
+            <n_act_12/>
+            <act_12_issued_by_cha/>
+            <act_12_confirmed_by_chv/>
+            <act_12_contact_chv/>
+            <act_12_amended/>
+            <n_act_18/>
+            <act_18_issued_by_cha/>
+            <act_18_confirmed_by_chv/>
+            <act_18_contact_chv/>
+            <act_18_amended/>
+            <n_act_24/>
+            <act_24_issued_by_cha/>
+            <act_24_confirmed_by_chv/>
+            <act_24_contact_chv/>
+            <act_24_amended/>
+            <n_dt_250/>
+            <dt_250_issued_by_cha/>
+            <dt_250_confirmed_by_chv/>
+            <dt_250_contact_chv/>
+            <dt_250_amended/>
+            <n_ors_zinc/>
+            <ors_zinc_issued_by_cha/>
+            <ors_zinc_confirmed_by_chv/>
+            <ors_zinc_contact_chv/>
+            <ors_zinc_amended/>
+            <n_ors_sachets/>
+            <ors_sachets_issued_by_cha/>
+            <ors_sachets_confirmed_by_chv/>
+            <ors_sachets_contact_chv/>
+            <ors_sachets_amended/>
+            <n_zinc_sulphate/>
+            <zinc_sulphate_issued_by_cha/>
+            <zinc_sulphate_confirmed_by_chv/>
+            <zinc_sulphate_contact_chv/>
+            <zinc_sulphate_amended/>
+            <n_albendazole/>
+            <albendazole_issued_by_cha/>
+            <albendazole_confirmed_by_chv/>
+            <albendazole_contact_chv/>
+            <albendazole_amended/>
+            <n_tetra_eye/>
+            <tetra_eye_issued_by_cha/>
+            <tetra_eye_confirmed_by_chv/>
+            <tetra_eye_contact_chv/>
+            <tetra_eye_amended/>
+            <n_paracetamol_120/>
+            <paracetamol_120_issued_by_cha/>
+            <paracetamol_120_confirmed_by_chv/>
+            <paracetamol_120_contact_chv/>
+            <paracetamol_120_amended/>
+            <n_mebendazole/>
+            <mebendazole_issued_by_cha/>
+            <mebendazole_confirmed_by_chv/>
+            <mebendazole_contact_chv/>
+            <mebendazole_amended/>
+            <n_coc/>
+            <coc_issued_by_cha/>
+            <coc_confirmed_by_chv/>
+            <coc_contact_chv/>
+            <coc_amended/>
+            <n_prog/>
+            <prog_issued_by_cha/>
+            <prog_confirmed_by_chv/>
+            <prog_contact_chv/>
+            <prog_amended/>
+            <n_depo_im/>
+            <depo_im_issued_by_cha/>
+            <depo_im_confirmed_by_chv/>
+            <depo_im_contact_chv/>
+            <depo_im_amended/>
+            <n_depo_sc/>
+            <depo_sc_issued_by_cha/>
+            <depo_sc_confirmed_by_chv/>
+            <depo_sc_contact_chv/>
+            <depo_sc_amended/>
+            <n_preg_strip/>
+            <preg_strip_issued_by_cha/>
+            <preg_strip_confirmed_by_chv/>
+            <preg_strip_contact_chv/>
+            <preg_strip_amended/>
+            <n_chlorine/>
+            <chlorine_issued_by_cha/>
+            <chlorine_confirmed_by_chv/>
+            <chlorine_contact_chv/>
+            <chlorine_amended/>
+            <n_gluc_strips/>
+            <gluc_strips_issued_by_cha/>
+            <gluc_strips_confirmed_by_chv/>
+            <gluc_strips_contact_chv/>
+            <gluc_strips_amended/>
+            <n_paracetamol_500/>
+            <paracetamol_500_issued_by_cha/>
+            <paracetamol_500_confirmed_by_chv/>
+            <paracetamol_500_contact_chv/>
+            <paracetamol_500_amended/>
+            <n_bandages/>
+            <bandages_issued_by_cha/>
+            <bandages_confirmed_by_chv/>
+            <bandages_contact_chv/>
+            <bandages_amended/>
+            <n_povi/>
+            <povi_issued_by_cha/>
+            <povi_confirmed_by_chv/>
+            <povi_contact_chv/>
+            <povi_amended/>
+            <n_strap/>
+            <strap_issued_by_cha/>
+            <strap_confirmed_by_chv/>
+            <strap_contact_chv/>
+            <strap_amended/>
+            <n_gloves/>
+            <gloves_issued_by_cha/>
+            <gloves_confirmed_by_chv/>
+            <gloves_contact_chv/>
+            <gloves_amended/>
+            <n_envelopes/>
+            <envelopes_issued_by_cha/>
+            <envelopes_confirmed_by_chv/>
+            <envelopes_contact_chv/>
+            <envelopes_amended/>
+            <n_glucometer/>
+            <glucometer_issued_by_cha/>
+            <glucometer_confirmed_by_chv/>
+            <glucometer_contact_chv/>
+            <glucometer_amended/>
+            <n_backpack/>
+            <backpack_issued_by_cha/>
+            <backpack_confirmed_by_chv/>
+            <backpack_contact_chv/>
+            <backpack_amended/>
+            <n_badge/>
+            <badge_issued_by_cha/>
+            <badge_confirmed_by_chv/>
+            <badge_contact_chv/>
+            <badge_amended/>
+            <n_flashlight/>
+            <flashlight_issued_by_cha/>
+            <flashlight_confirmed_by_chv/>
+            <flashlight_contact_chv/>
+            <flashlight_amended/>
+            <n_salter/>
+            <salter_issued_by_cha/>
+            <salter_confirmed_by_chv/>
+            <salter_contact_chv/>
+            <salter_amended/>
+            <n_color_salter/>
+            <color_salter_issued_by_cha/>
+            <color_salter_confirmed_by_chv/>
+            <color_salter_contact_chv/>
+            <color_salter_amended/>
+            <n_weighing_scale/>
+            <weighing_scale_issued_by_cha/>
+            <weighing_scale_confirmed_by_chv/>
+            <weighing_scale_contact_chv/>
+            <weighing_scale_amended/>
+            <n_first_aid/>
+            <first_aid_issued_by_cha/>
+            <first_aid_confirmed_by_chv/>
+            <first_aid_contact_chv/>
+            <first_aid_amended/>
+            <n_bp/>
+            <bp_issued_by_cha/>
+            <bp_confirmed_by_chv/>
+            <bp_contact_chv/>
+            <bp_amended/>
+            <n_thermometer/>
+            <thermometer_issued_by_cha/>
+            <thermometer_confirmed_by_chv/>
+            <thermometer_contact_chv/>
+            <thermometer_amended/>
+            <n_resp_timer/>
+            <resp_timer_issued_by_cha/>
+            <resp_timer_confirmed_by_chv/>
+            <resp_timer_contact_chv/>
+            <resp_timer_amended/>
+            <n_muac_tape_adults/>
+            <muac_tape_adults_issued_by_cha/>
+            <muac_tape_adults_confirmed_by_chv/>
+            <muac_tape_adults_contact_chv/>
+            <muac_tape_adults_amended/>
+            <n_muac_tape_children/>
+            <muac_tape_children_issued_by_cha/>
+            <muac_tape_children_confirmed_by_chv/>
+            <muac_tape_children_contact_chv/>
+            <muac_tape_children_amended/>
+            <n_family_muac_tape/>
+            <family_muac_tape_issued_by_cha/>
+            <family_muac_tape_confirmed_by_chv/>
+            <family_muac_tape_contact_chv/>
+            <family_muac_tape_amended/>
+            <n_moh_514/>
+            <moh_514_issued_by_cha/>
+            <moh_514_confirmed_by_chv/>
+            <moh_514_contact_chv/>
+            <moh_514_amended/>
+            <n_moh_521/>
+            <moh_521_issued_by_cha/>
+            <moh_521_confirmed_by_chv/>
+            <moh_521_contact_chv/>
+            <moh_521_amended/>
+            <n_moh_100/>
+            <moh_100_issued_by_cha/>
+            <moh_100_contact_chv/>
+            <moh_100_confirmed_by_chv/>
+            <moh_100_amended/>
+            <n_comm_daily_register/>
+            <comm_daily_register_issued_by_cha/>
+            <comm_daily_register_confirmed_by_chv/>
+            <comm_daily_register_contact_chv/>
+            <comm_daily_register_amended/>
+            <n_phone/>
+            <phone_issued_by_cha/>
+            <phone_confirmed_by_chv/>
+            <phone_contact_chv/>
+            <phone_amended/>
+            <n_safety_box/>
+            <safety_box_issued_by_cha/>
+            <safety_box_confirmed_by_chv/>
+            <safety_box_contact_chv/>
+            <safety_box_amended/>
+            <n_others/>
+            <others_issued_by_cha/>
+            <others_confirmed_by_chv/>
+            <others_contact_chv/>
+            <others_amended/>
+          </s_discrepancy>
+          <additional_doc db-doc="true">
+            <place_id/>
+            <chvName/>
+            <chu_id/>
+            <type/>
+            <created_by_doc db-doc-ref="/commodity_discrepancy"/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <rdts_reconciliation/>
+              <act_6_reconciliation/>
+              <act_12_reconciliation/>
+              <act_18_reconciliation/>
+              <act_24_reconciliation/>
+              <dt_250_reconciliation/>
+              <ors_zinc_reconciliation/>
+              <ors_sachets_reconciliation/>
+              <zinc_sulphate_reconciliation/>
+              <albendazole_reconciliation/>
+              <tetra_eye_reconciliation/>
+              <paracetamol_120_reconciliation/>
+              <mebendazole_reconciliation/>
+              <coc_reconciliation/>
+              <prog_reconciliation/>
+              <depo_im_reconciliation/>
+              <depo_sc_reconciliation/>
+              <preg_strip_reconciliation/>
+              <chlorine_reconciliation/>
+              <gluc_strips_reconciliation/>
+              <paracetamol_500_reconciliation/>
+              <bandages_reconciliation/>
+              <povi_reconciliation/>
+              <strap_reconciliation/>
+              <gloves_reconciliation/>
+              <envelopes_reconciliation/>
+              <glucometer_reconciliation/>
+              <backpack_reconciliation/>
+              <badge_reconciliation/>
+              <flashlight_reconciliation/>
+              <salter_reconciliation/>
+              <color_salter_reconciliation/>
+              <weighing_scale_reconciliation/>
+              <first_aid_reconciliation/>
+              <bp_reconciliation/>
+              <thermometer_reconciliation/>
+              <resp_timer_reconciliation/>
+              <muac_tape_adults_reconciliation/>
+              <muac_tape_children_reconciliation/>
+              <family_muac_tape_reconciliation/>
+              <moh_514_reconciliation/>
+              <moh_521_reconciliation/>
+              <moh_100_reconciliation/>
+              <comm_daily_register_reconciliation/>
+              <phone_reconciliation/>
+              <safety_box_reconciliation/>
+              <others_reconciliation/>
+            </fields>
+          </additional_doc>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </commodity_discrepancy>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/commodity_discrepancy/inputs" relevant="./source='user'"/>
+      <bind nodeset="/commodity_discrepancy/inputs/source" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/source_id" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_chv_name" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_chv_area_uuid" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_rdts" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_act_6" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_act_12" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_act_18" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_act_24" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_dt_250" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_ors_zinc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_ors_sachets" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_zinc_sulphate" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_albendazole" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_tetra_eye" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_paracetamol_120" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_mebendazole" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_coc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_prog" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_depo_im" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_depo_sc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_preg_strip" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_chlorine" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_gluc_strips" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_paracetamol_500" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_bandages" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_povi" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_strap" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_gloves" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_envelopes" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_glucometer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_backpack" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_badge" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_flashlight" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_salter" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_color_salter" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_weighing_scale" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_first_aid" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_bp" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_thermometer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_resp_timer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_muac_tape_adults" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_muac_tape_children" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_family_muac_tape" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_moh_514" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_moh_521" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_moh_100" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_comm_daily_register" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_phone" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_safety_box" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/t_rs_others" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_rdts" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_act_6" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_act_12" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_act_18" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_act_24" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_dt_250" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_ors_zinc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_ors_sachets" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_zinc_sulphate" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_albendazole" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_tetra_eye" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_paracetamol_120" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_mebendazole" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_coc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_prog" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_depo_im" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_depo_sc" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_preg_strip" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_chlorine" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_gluc_strips" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_paracetamol_500" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_bandages" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_povi" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_strap" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_gloves" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_envelopes" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_glucometer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_backpack" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_badge" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_flashlight" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_salter" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_color_salter" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_weighing_scale" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_first_aid" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_bp" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_thermometer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_resp_timer" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_muac_tape_adults" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_muac_tape_children" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_family_muac_tape" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_moh_514" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_moh_521" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_moh_100" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_comm_daily_register" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_phone" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_safety_box" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/d_rs_others" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/name" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/phone" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/parent/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/commodity_discrepancy/inputs/contact/parent/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/commodity_discrepancy/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/commodity_discrepancy/area_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/commodity_discrepancy/chv_contact_details" type="string" calculate="../inputs/contact/phone"/>
+      <bind nodeset="/commodity_discrepancy/chv_name" type="string" calculate="../inputs/d_rs_chv_name"/>
+      <bind nodeset="/commodity_discrepancy/chv_area_uuid" type="string" calculate="../inputs/d_rs_chv_area_uuid"/>
+      <bind nodeset="/commodity_discrepancy/cu_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/commodity_discrepancy/rs_rdts" type="string" calculate="../inputs/t_rs_rdts"/>
+      <bind nodeset="/commodity_discrepancy/rs_act_6" type="string" calculate="../inputs/t_rs_act_6"/>
+      <bind nodeset="/commodity_discrepancy/rs_act_12" type="string" calculate="../inputs/t_rs_act_12"/>
+      <bind nodeset="/commodity_discrepancy/rs_act_18" type="string" calculate="../inputs/t_rs_act_18"/>
+      <bind nodeset="/commodity_discrepancy/rs_act_24" type="string" calculate="../inputs/t_rs_act_24"/>
+      <bind nodeset="/commodity_discrepancy/rs_dt_250" type="string" calculate="../inputs/t_rs_dt_250"/>
+      <bind nodeset="/commodity_discrepancy/rs_ors_zinc" type="string" calculate="../inputs/t_rs_ors_zinc"/>
+      <bind nodeset="/commodity_discrepancy/rs_ors_sachets" type="string" calculate="../inputs/t_rs_ors_sachets"/>
+      <bind nodeset="/commodity_discrepancy/rs_zinc_sulphate" type="string" calculate="../inputs/t_rs_zinc_sulphate"/>
+      <bind nodeset="/commodity_discrepancy/rs_albendazole" type="string" calculate="../inputs/t_rs_albendazole"/>
+      <bind nodeset="/commodity_discrepancy/rs_tetra_eye" type="string" calculate="../inputs/t_rs_tetra_eye"/>
+      <bind nodeset="/commodity_discrepancy/rs_paracetamol_120" type="string" calculate="../inputs/t_rs_paracetamol_120"/>
+      <bind nodeset="/commodity_discrepancy/rs_mebendazole" type="string" calculate="../inputs/t_rs_mebendazole"/>
+      <bind nodeset="/commodity_discrepancy/rs_coc" type="string" calculate="../inputs/t_rs_coc"/>
+      <bind nodeset="/commodity_discrepancy/rs_prog" type="string" calculate="../inputs/t_rs_prog"/>
+      <bind nodeset="/commodity_discrepancy/rs_depo_im" type="string" calculate="../inputs/t_rs_depo_im"/>
+      <bind nodeset="/commodity_discrepancy/rs_depo_sc" type="string" calculate="../inputs/t_rs_depo_sc"/>
+      <bind nodeset="/commodity_discrepancy/rs_preg_strip" type="string" calculate="../inputs/t_rs_preg_strip"/>
+      <bind nodeset="/commodity_discrepancy/rs_chlorine" type="string" calculate="../inputs/t_rs_chlorine"/>
+      <bind nodeset="/commodity_discrepancy/rs_gluc_strips" type="string" calculate="../inputs/t_rs_gluc_strips"/>
+      <bind nodeset="/commodity_discrepancy/rs_paracetamol_500" type="string" calculate="../inputs/t_rs_paracetamol_500"/>
+      <bind nodeset="/commodity_discrepancy/rs_bandages" type="string" calculate="../inputs/t_rs_bandages"/>
+      <bind nodeset="/commodity_discrepancy/rs_povi" type="string" calculate="../inputs/t_rs_povi"/>
+      <bind nodeset="/commodity_discrepancy/rs_strap" type="string" calculate="../inputs/t_rs_strap"/>
+      <bind nodeset="/commodity_discrepancy/rs_gloves" type="string" calculate="../inputs/t_rs_gloves"/>
+      <bind nodeset="/commodity_discrepancy/rs_envelopes" type="string" calculate="../inputs/t_rs_envelopes"/>
+      <bind nodeset="/commodity_discrepancy/rs_glucometer" type="string" calculate="../inputs/t_rs_glucometer"/>
+      <bind nodeset="/commodity_discrepancy/rs_backpack" type="string" calculate="../inputs/t_rs_backpack"/>
+      <bind nodeset="/commodity_discrepancy/rs_badge" type="string" calculate="../inputs/t_rs_badge"/>
+      <bind nodeset="/commodity_discrepancy/rs_flashlight" type="string" calculate="../inputs/t_rs_flashlight"/>
+      <bind nodeset="/commodity_discrepancy/rs_salter" type="string" calculate="../inputs/t_rs_salter"/>
+      <bind nodeset="/commodity_discrepancy/rs_color_salter" type="string" calculate="../inputs/t_rs_color_salter"/>
+      <bind nodeset="/commodity_discrepancy/rs_weighing_scale" type="string" calculate="../inputs/t_rs_weighing_scale"/>
+      <bind nodeset="/commodity_discrepancy/rs_first_aid" type="string" calculate="../inputs/t_rs_first_aid"/>
+      <bind nodeset="/commodity_discrepancy/rs_bp" type="string" calculate="../inputs/t_rs_bp"/>
+      <bind nodeset="/commodity_discrepancy/rs_thermometer" type="string" calculate="../inputs/t_rs_thermometer"/>
+      <bind nodeset="/commodity_discrepancy/rs_resp_timer" type="string" calculate="../inputs/t_rs_resp_timer"/>
+      <bind nodeset="/commodity_discrepancy/rs_muac_tape_adults" type="string" calculate="../inputs/t_rs_muac_tape_adults"/>
+      <bind nodeset="/commodity_discrepancy/rs_muac_tape_children" type="string" calculate="../inputs/t_rs_muac_tape_children"/>
+      <bind nodeset="/commodity_discrepancy/rs_family_muac_tape" type="string" calculate="../inputs/t_rs_family_muac_tape"/>
+      <bind nodeset="/commodity_discrepancy/rs_moh_514" type="string" calculate="../inputs/t_rs_moh_514"/>
+      <bind nodeset="/commodity_discrepancy/rs_moh_521" type="string" calculate="../inputs/t_rs_moh_521"/>
+      <bind nodeset="/commodity_discrepancy/rs_moh_100" type="string" calculate="../inputs/t_rs_moh_100"/>
+      <bind nodeset="/commodity_discrepancy/rs_comm_daily_register" type="string" calculate="../inputs/t_rs_comm_daily_register"/>
+      <bind nodeset="/commodity_discrepancy/rs_phone" type="string" calculate="../inputs/t_rs_phone"/>
+      <bind nodeset="/commodity_discrepancy/rs_safety_box" type="string" calculate="../inputs/t_rs_safety_box"/>
+      <bind nodeset="/commodity_discrepancy/rs_others" type="string" calculate="../inputs/t_rs_others"/>
+      <bind nodeset="/commodity_discrepancy/rd_rdts" type="string" calculate="../inputs/d_rs_rdts"/>
+      <bind nodeset="/commodity_discrepancy/rd_act_6" type="string" calculate="../inputs/d_rs_act_6"/>
+      <bind nodeset="/commodity_discrepancy/rd_act_12" type="string" calculate="../inputs/d_rs_act_12"/>
+      <bind nodeset="/commodity_discrepancy/rd_act_18" type="string" calculate="../inputs/d_rs_act_18"/>
+      <bind nodeset="/commodity_discrepancy/rd_act_24" type="string" calculate="../inputs/d_rs_act_24"/>
+      <bind nodeset="/commodity_discrepancy/rd_dt_250" type="string" calculate="../inputs/d_rs_dt_250"/>
+      <bind nodeset="/commodity_discrepancy/rd_ors_zinc" type="string" calculate="../inputs/d_rs_ors_zinc"/>
+      <bind nodeset="/commodity_discrepancy/rd_ors_sachets" type="string" calculate="../inputs/d_rs_ors_sachets"/>
+      <bind nodeset="/commodity_discrepancy/rd_zinc_sulphate" type="string" calculate="../inputs/d_rs_zinc_sulphate"/>
+      <bind nodeset="/commodity_discrepancy/rd_albendazole" type="string" calculate="../inputs/d_rs_albendazole"/>
+      <bind nodeset="/commodity_discrepancy/rd_tetra_eye" type="string" calculate="../inputs/d_rs_tetra_eye"/>
+      <bind nodeset="/commodity_discrepancy/rd_paracetamol_120" type="string" calculate="../inputs/d_rs_paracetamol_120"/>
+      <bind nodeset="/commodity_discrepancy/rd_mebendazole" type="string" calculate="../inputs/d_rs_mebendazole"/>
+      <bind nodeset="/commodity_discrepancy/rd_coc" type="string" calculate="../inputs/d_rs_coc"/>
+      <bind nodeset="/commodity_discrepancy/rd_prog" type="string" calculate="../inputs/d_rs_prog"/>
+      <bind nodeset="/commodity_discrepancy/rd_depo_im" type="string" calculate="../inputs/d_rs_depo_im"/>
+      <bind nodeset="/commodity_discrepancy/rd_depo_sc" type="string" calculate="../inputs/d_rs_depo_sc"/>
+      <bind nodeset="/commodity_discrepancy/rd_preg_strip" type="string" calculate="../inputs/d_rs_preg_strip"/>
+      <bind nodeset="/commodity_discrepancy/rd_chlorine" type="string" calculate="../inputs/d_rs_chlorine"/>
+      <bind nodeset="/commodity_discrepancy/rd_gluc_strips" type="string" calculate="../inputs/d_rs_gluc_strips"/>
+      <bind nodeset="/commodity_discrepancy/rd_paracetamol_500" type="string" calculate="../inputs/d_rs_paracetamol_500"/>
+      <bind nodeset="/commodity_discrepancy/rd_bandages" type="string" calculate="../inputs/d_rs_bandages"/>
+      <bind nodeset="/commodity_discrepancy/rd_povi" type="string" calculate="../inputs/d_rs_povi"/>
+      <bind nodeset="/commodity_discrepancy/rd_strap" type="string" calculate="../inputs/d_rs_strap"/>
+      <bind nodeset="/commodity_discrepancy/rd_gloves" type="string" calculate="../inputs/d_rs_gloves"/>
+      <bind nodeset="/commodity_discrepancy/rd_envelopes" type="string" calculate="../inputs/d_rs_envelopes"/>
+      <bind nodeset="/commodity_discrepancy/rd_glucometer" type="string" calculate="../inputs/d_rs_glucometer"/>
+      <bind nodeset="/commodity_discrepancy/rd_backpack" type="string" calculate="../inputs/d_rs_backpack"/>
+      <bind nodeset="/commodity_discrepancy/rd_badge" type="string" calculate="../inputs/d_rs_badge"/>
+      <bind nodeset="/commodity_discrepancy/rd_flashlight" type="string" calculate="../inputs/d_rs_flashlight"/>
+      <bind nodeset="/commodity_discrepancy/rd_salter" type="string" calculate="../inputs/d_rs_salter"/>
+      <bind nodeset="/commodity_discrepancy/rd_color_salter" type="string" calculate="../inputs/d_rs_color_salter"/>
+      <bind nodeset="/commodity_discrepancy/rd_weighing_scale" type="string" calculate="../inputs/d_rs_weighing_scale"/>
+      <bind nodeset="/commodity_discrepancy/rd_first_aid" type="string" calculate="../inputs/d_rs_first_aid"/>
+      <bind nodeset="/commodity_discrepancy/rd_bp" type="string" calculate="../inputs/d_rs_bp"/>
+      <bind nodeset="/commodity_discrepancy/rd_thermometer" type="string" calculate="../inputs/d_rs_thermometer"/>
+      <bind nodeset="/commodity_discrepancy/rd_resp_timer" type="string" calculate="../inputs/d_rs_resp_timer"/>
+      <bind nodeset="/commodity_discrepancy/rd_muac_tape_adults" type="string" calculate="../inputs/d_rs_muac_tape_adults"/>
+      <bind nodeset="/commodity_discrepancy/rd_muac_tape_children" type="string" calculate="../inputs/d_rs_muac_tape_children"/>
+      <bind nodeset="/commodity_discrepancy/rd_family_muac_tape" type="string" calculate="../inputs/d_rs_family_muac_tape"/>
+      <bind nodeset="/commodity_discrepancy/rd_moh_514" type="string" calculate="../inputs/d_rs_moh_514"/>
+      <bind nodeset="/commodity_discrepancy/rd_moh_521" type="string" calculate="../inputs/d_rs_moh_521"/>
+      <bind nodeset="/commodity_discrepancy/rd_moh_100" type="string" calculate="../inputs/d_rs_moh_100"/>
+      <bind nodeset="/commodity_discrepancy/rd_comm_daily_register" type="string" calculate="../inputs/d_rs_comm_daily_register"/>
+      <bind nodeset="/commodity_discrepancy/rd_phone" type="string" calculate="../inputs/d_rs_phone"/>
+      <bind nodeset="/commodity_discrepancy/rd_safety_box" type="string" calculate="../inputs/d_rs_safety_box"/>
+      <bind nodeset="/commodity_discrepancy/rd_others" type="string" calculate="../inputs/d_rs_others"/>
+      <bind nodeset="/commodity_discrepancy/rdts_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/rdts_amended ) - number( /commodity_discrepancy/rd_rdts )"/>
+      <bind nodeset="/commodity_discrepancy/act_6_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/act_6_amended ) - number( /commodity_discrepancy/rd_act_6 )"/>
+      <bind nodeset="/commodity_discrepancy/act_12_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/act_12_amended ) - number( /commodity_discrepancy/rd_act_12 )"/>
+      <bind nodeset="/commodity_discrepancy/act_18_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/act_18_amended ) - number( /commodity_discrepancy/rd_act_18 )"/>
+      <bind nodeset="/commodity_discrepancy/act_24_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/act_24_amended ) - number( /commodity_discrepancy/rd_act_24 )"/>
+      <bind nodeset="/commodity_discrepancy/dt_250_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/dt_250_amended ) - number( /commodity_discrepancy/rd_dt_250 )"/>
+      <bind nodeset="/commodity_discrepancy/ors_zinc_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/ors_zinc_amended ) - number( /commodity_discrepancy/rd_ors_zinc )"/>
+      <bind nodeset="/commodity_discrepancy/ors_sachets_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/ors_sachets_amended ) - number( /commodity_discrepancy/rd_ors_sachets )"/>
+      <bind nodeset="/commodity_discrepancy/zinc_sulphate_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/zinc_sulphate_amended ) - number( /commodity_discrepancy/rd_zinc_sulphate )"/>
+      <bind nodeset="/commodity_discrepancy/albendazole_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/albendazole_amended ) - number( /commodity_discrepancy/rd_albendazole )"/>
+      <bind nodeset="/commodity_discrepancy/tetra_eye_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/tetra_eye_amended ) - number( /commodity_discrepancy/rd_tetra_eye )"/>
+      <bind nodeset="/commodity_discrepancy/paracetamol_120_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/paracetamol_120_amended ) - number( /commodity_discrepancy/rd_paracetamol_120 )"/>
+      <bind nodeset="/commodity_discrepancy/mebendazole_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/mebendazole_amended ) - number( /commodity_discrepancy/rd_mebendazole )"/>
+      <bind nodeset="/commodity_discrepancy/coc_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/coc_amended ) - number( /commodity_discrepancy/rd_coc )"/>
+      <bind nodeset="/commodity_discrepancy/prog_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/prog_amended ) - number( /commodity_discrepancy/rd_prog )"/>
+      <bind nodeset="/commodity_discrepancy/depo_im_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/depo_im_amended ) - number( /commodity_discrepancy/rd_depo_im )"/>
+      <bind nodeset="/commodity_discrepancy/depo_sc_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/depo_sc_amended ) - number( /commodity_discrepancy/rd_depo_sc )"/>
+      <bind nodeset="/commodity_discrepancy/preg_strip_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/preg_strip_amended ) - number( /commodity_discrepancy/rd_preg_strip )"/>
+      <bind nodeset="/commodity_discrepancy/chlorine_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/chlorine_amended ) - number( /commodity_discrepancy/rd_chlorine )"/>
+      <bind nodeset="/commodity_discrepancy/gluc_strips_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/gluc_strips_amended ) - number( /commodity_discrepancy/rd_gluc_strips )"/>
+      <bind nodeset="/commodity_discrepancy/paracetamol_500_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/paracetamol_500_amended ) - number( /commodity_discrepancy/rd_paracetamol_500 )"/>
+      <bind nodeset="/commodity_discrepancy/bandages_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/bandages_amended ) - number( /commodity_discrepancy/rd_bandages )"/>
+      <bind nodeset="/commodity_discrepancy/povi_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/povi_amended ) - number( /commodity_discrepancy/rd_povi )"/>
+      <bind nodeset="/commodity_discrepancy/strap_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/strap_amended ) - number( /commodity_discrepancy/rd_strap )"/>
+      <bind nodeset="/commodity_discrepancy/gloves_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/gloves_amended ) - number( /commodity_discrepancy/rd_gloves )"/>
+      <bind nodeset="/commodity_discrepancy/envelopes_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/envelopes_amended ) - number( /commodity_discrepancy/rd_envelopes )"/>
+      <bind nodeset="/commodity_discrepancy/glucometer_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/glucometer_amended )-number( /commodity_discrepancy/rd_glucometer )"/>
+      <bind nodeset="/commodity_discrepancy/backpack_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/backpack_amended ) - number( /commodity_discrepancy/rd_backpack )"/>
+      <bind nodeset="/commodity_discrepancy/badge_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/badge_amended ) - number( /commodity_discrepancy/rd_badge )"/>
+      <bind nodeset="/commodity_discrepancy/flashlight_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/flashlight_amended ) - number( /commodity_discrepancy/rd_flashlight )"/>
+      <bind nodeset="/commodity_discrepancy/salter_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/salter_amended ) - number( /commodity_discrepancy/rd_salter )"/>
+      <bind nodeset="/commodity_discrepancy/color_salter_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/color_salter_amended )-number( /commodity_discrepancy/rd_color_salter )"/>
+      <bind nodeset="/commodity_discrepancy/weighing_scale_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/weighing_scale_amended ) - number( /commodity_discrepancy/rd_weighing_scale )"/>
+      <bind nodeset="/commodity_discrepancy/first_aid_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/first_aid_amended ) - number( /commodity_discrepancy/rd_first_aid )"/>
+      <bind nodeset="/commodity_discrepancy/bp_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/bp_amended ) - number( /commodity_discrepancy/rd_bp )"/>
+      <bind nodeset="/commodity_discrepancy/thermometer_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/thermometer_amended ) - number( /commodity_discrepancy/rd_thermometer )"/>
+      <bind nodeset="/commodity_discrepancy/resp_timer_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/resp_timer_amended ) - number( /commodity_discrepancy/rd_resp_timer )"/>
+      <bind nodeset="/commodity_discrepancy/muac_tape_adults_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/muac_tape_adults_amended ) - number( /commodity_discrepancy/rd_muac_tape_adults )"/>
+      <bind nodeset="/commodity_discrepancy/muac_tape_children_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/muac_tape_children_amended ) - number( /commodity_discrepancy/rd_muac_tape_children )"/>
+      <bind nodeset="/commodity_discrepancy/family_muac_tape_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/family_muac_tape_amended ) - number( /commodity_discrepancy/rd_family_muac_tape )"/>
+      <bind nodeset="/commodity_discrepancy/moh_514_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/moh_514_amended ) - number( /commodity_discrepancy/rd_moh_514 )"/>
+      <bind nodeset="/commodity_discrepancy/moh_521_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/moh_521_amended ) - number( /commodity_discrepancy/rd_moh_521 )"/>
+      <bind nodeset="/commodity_discrepancy/moh_100_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/moh_100_amended ) - number( /commodity_discrepancy/rd_moh_100 )"/>
+      <bind nodeset="/commodity_discrepancy/comm_daily_register_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/comm_daily_register_amended ) - number( /commodity_discrepancy/rd_comm_daily_register )"/>
+      <bind nodeset="/commodity_discrepancy/phone_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/phone_amended ) - number( /commodity_discrepancy/rd_phone )"/>
+      <bind nodeset="/commodity_discrepancy/safety_box_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/safety_box_amended ) - number( /commodity_discrepancy/rd_safety_box )"/>
+      <bind nodeset="/commodity_discrepancy/others_ammendment" type="string" calculate="number( /commodity_discrepancy/s_discrepancy/others_amended ) - number( /commodity_discrepancy/rd_others )"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_intro" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_rdts" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_rdts  != '' and number( /commodity_discrepancy/rd_rdts ) &gt; 0) or (number( /commodity_discrepancy/rs_rdts ) &gt;0 and number( /commodity_discrepancy/rd_rdts ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/rdts_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_rdts  != '' and number( /commodity_discrepancy/rd_rdts ) &gt; 0) or (number( /commodity_discrepancy/rs_rdts ) &gt;0 and number( /commodity_discrepancy/rd_rdts ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/rdts_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_rdts  != '' and number( /commodity_discrepancy/rd_rdts ) &gt; 0) or (number( /commodity_discrepancy/rs_rdts ) &gt;0 and number( /commodity_discrepancy/rd_rdts ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/rdts_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_rdts  != '' and number( /commodity_discrepancy/rd_rdts ) &gt; 0) or (number( /commodity_discrepancy/rs_rdts ) &gt;0 and number( /commodity_discrepancy/rd_rdts ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/rdts_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_rdts  != '' and number( /commodity_discrepancy/rd_rdts ) &gt; 0) or (number( /commodity_discrepancy/rs_rdts ) &gt;0 and number( /commodity_discrepancy/rd_rdts ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_act_6" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_6  != '' and number( /commodity_discrepancy/rd_act_6 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_6 ) &gt;0 and number( /commodity_discrepancy/rd_act_6 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_6_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_6  != '' and number( /commodity_discrepancy/rd_act_6 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_6 ) &gt;0 and number( /commodity_discrepancy/rd_act_6 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_6_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_6  != '' and number( /commodity_discrepancy/rd_act_6 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_6 ) &gt;0 and number( /commodity_discrepancy/rd_act_6 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_6_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_6  != '' and number( /commodity_discrepancy/rd_act_6 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_6 ) &gt;0 and number( /commodity_discrepancy/rd_act_6 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_6_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_act_6  != '' and number( /commodity_discrepancy/rd_act_6 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_6 ) &gt;0 and number( /commodity_discrepancy/rd_act_6 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_act_12" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_12  != '' and number( /commodity_discrepancy/rd_act_12 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_12 ) &gt;0 and number( /commodity_discrepancy/rd_act_12 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_12_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_12  != '' and number( /commodity_discrepancy/rd_act_12 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_12 ) &gt;0 and number( /commodity_discrepancy/rd_act_12 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_12_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_12  != '' and number( /commodity_discrepancy/rd_act_12 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_12 ) &gt;0 and number( /commodity_discrepancy/rd_act_12 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_12_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_12  != '' and number( /commodity_discrepancy/rd_act_12 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_12 ) &gt;0 and number( /commodity_discrepancy/rd_act_12 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_12_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_act_12  != '' and number( /commodity_discrepancy/rd_act_12 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_12 ) &gt;0 and number( /commodity_discrepancy/rd_act_12 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_act_18" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_18  != '' and number( /commodity_discrepancy/rd_act_18 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_18 ) &gt;0 and number( /commodity_discrepancy/rd_act_18 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_18_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_18  != '' and number( /commodity_discrepancy/rd_act_18 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_18 ) &gt;0 and number( /commodity_discrepancy/rd_act_18 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_18_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_18  != '' and number( /commodity_discrepancy/rd_act_18 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_18 ) &gt;0 and number( /commodity_discrepancy/rd_act_18 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_18_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_18  != '' and number( /commodity_discrepancy/rd_act_18 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_18 ) &gt;0 and number( /commodity_discrepancy/rd_act_18 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_18_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_act_18  != '' and number( /commodity_discrepancy/rd_act_18 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_18 ) &gt;0 and number( /commodity_discrepancy/rd_act_18 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_act_24" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_24  != '' and number( /commodity_discrepancy/rd_act_24 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_24 ) &gt;0 and number( /commodity_discrepancy/rd_act_24 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_24_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_24  != '' and number( /commodity_discrepancy/rd_act_24 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_24 ) &gt;0 and number( /commodity_discrepancy/rd_act_24 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_24_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_24  != '' and number( /commodity_discrepancy/rd_act_24 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_24 ) &gt;0 and number( /commodity_discrepancy/rd_act_24 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_24_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_act_24  != '' and number( /commodity_discrepancy/rd_act_24 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_24 ) &gt;0 and number( /commodity_discrepancy/rd_act_24 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/act_24_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_act_24  != '' and number( /commodity_discrepancy/rd_act_24 ) &gt; 0) or (number( /commodity_discrepancy/rs_act_24 ) &gt;0 and number( /commodity_discrepancy/rd_act_24 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_dt_250" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_dt_250  != '' and number( /commodity_discrepancy/rd_dt_250 ) &gt; 0) or (number( /commodity_discrepancy/rs_dt_250 ) &gt;0 and number( /commodity_discrepancy/rd_dt_250 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/dt_250_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_dt_250  != '' and number( /commodity_discrepancy/rd_dt_250 ) &gt; 0) or (number( /commodity_discrepancy/rs_dt_250 ) &gt;0 and number( /commodity_discrepancy/rd_dt_250 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/dt_250_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_dt_250  != '' and number( /commodity_discrepancy/rd_dt_250 ) &gt; 0) or (number( /commodity_discrepancy/rs_dt_250 ) &gt;0 and number( /commodity_discrepancy/rd_dt_250 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/dt_250_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_dt_250  != '' and number( /commodity_discrepancy/rd_dt_250 ) &gt; 0) or (number( /commodity_discrepancy/rs_dt_250 ) &gt;0 and number( /commodity_discrepancy/rd_dt_250 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/dt_250_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_dt_250  != '' and number( /commodity_discrepancy/rd_dt_250 ) &gt; 0) or (number( /commodity_discrepancy/rs_dt_250 ) &gt;0 and number( /commodity_discrepancy/rd_dt_250 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_ors_zinc" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_zinc  != '' and number( /commodity_discrepancy/rd_ors_zinc ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_zinc ) &gt;0 and number( /commodity_discrepancy/rd_ors_zinc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_zinc_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_zinc  != '' and number( /commodity_discrepancy/rd_ors_zinc ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_zinc ) &gt;0 and number( /commodity_discrepancy/rd_ors_zinc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_zinc_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_zinc  != '' and number( /commodity_discrepancy/rd_ors_zinc ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_zinc ) &gt;0 and number( /commodity_discrepancy/rd_ors_zinc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_zinc_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_zinc  != '' and number( /commodity_discrepancy/rd_ors_zinc ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_zinc ) &gt;0 and number( /commodity_discrepancy/rd_ors_zinc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_zinc_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_ors_zinc  != '' and number( /commodity_discrepancy/rd_ors_zinc ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_zinc ) &gt;0 and number( /commodity_discrepancy/rd_ors_zinc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_ors_sachets" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_sachets  != '' and number( /commodity_discrepancy/rd_ors_sachets ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_sachets ) &gt;0 and number( /commodity_discrepancy/rd_ors_sachets ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_sachets_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_sachets  != '' and number( /commodity_discrepancy/rd_ors_sachets ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_sachets ) &gt;0 and number( /commodity_discrepancy/rd_ors_sachets ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_sachets_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_sachets  != '' and number( /commodity_discrepancy/rd_ors_sachets ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_sachets ) &gt;0 and number( /commodity_discrepancy/rd_ors_sachets ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_sachets_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_ors_sachets  != '' and number( /commodity_discrepancy/rd_ors_sachets ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_sachets ) &gt;0 and number( /commodity_discrepancy/rd_ors_sachets ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/ors_sachets_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_ors_sachets  != '' and number( /commodity_discrepancy/rd_ors_sachets ) &gt; 0) or (number( /commodity_discrepancy/rs_ors_sachets ) &gt;0 and number( /commodity_discrepancy/rd_ors_sachets ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_zinc_sulphate" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_zinc_sulphate  != '' and number( /commodity_discrepancy/rd_zinc_sulphate ) &gt; 0) or (number( /commodity_discrepancy/rs_zinc_sulphate ) &gt;0 and number( /commodity_discrepancy/rd_zinc_sulphate ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/zinc_sulphate_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_zinc_sulphate  != '' and number( /commodity_discrepancy/rd_zinc_sulphate ) &gt; 0) or (number( /commodity_discrepancy/rs_zinc_sulphate ) &gt;0 and number( /commodity_discrepancy/rd_zinc_sulphate ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/zinc_sulphate_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_zinc_sulphate  != '' and number( /commodity_discrepancy/rd_zinc_sulphate ) &gt; 0) or (number( /commodity_discrepancy/rs_zinc_sulphate ) &gt;0 and number( /commodity_discrepancy/rd_zinc_sulphate ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/zinc_sulphate_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_zinc_sulphate  != '' and number( /commodity_discrepancy/rd_zinc_sulphate ) &gt; 0) or (number( /commodity_discrepancy/rs_zinc_sulphate ) &gt;0 and number( /commodity_discrepancy/rd_zinc_sulphate ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/zinc_sulphate_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_zinc_sulphate  != '' and number( /commodity_discrepancy/rd_zinc_sulphate ) &gt; 0) or (number( /commodity_discrepancy/rs_zinc_sulphate ) &gt;0 and number( /commodity_discrepancy/rd_zinc_sulphate ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_albendazole" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_albendazole  != '' and number( /commodity_discrepancy/rd_albendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_albendazole ) &gt;0 and number( /commodity_discrepancy/rd_albendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/albendazole_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_albendazole  != '' and number( /commodity_discrepancy/rd_albendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_albendazole ) &gt;0 and number( /commodity_discrepancy/rd_albendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/albendazole_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_albendazole  != '' and number( /commodity_discrepancy/rd_albendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_albendazole ) &gt;0 and number( /commodity_discrepancy/rd_albendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/albendazole_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_albendazole  != '' and number( /commodity_discrepancy/rd_albendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_albendazole ) &gt;0 and number( /commodity_discrepancy/rd_albendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/albendazole_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_albendazole  != '' and number( /commodity_discrepancy/rd_albendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_albendazole ) &gt;0 and number( /commodity_discrepancy/rd_albendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_tetra_eye" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_tetra_eye  != '' and number( /commodity_discrepancy/rd_tetra_eye ) &gt; 0) or (number( /commodity_discrepancy/rs_tetra_eye ) &gt;0 and number( /commodity_discrepancy/rd_tetra_eye ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/tetra_eye_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_tetra_eye  != '' and number( /commodity_discrepancy/rd_tetra_eye ) &gt; 0) or (number( /commodity_discrepancy/rs_tetra_eye ) &gt;0 and number( /commodity_discrepancy/rd_tetra_eye ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/tetra_eye_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_tetra_eye  != '' and number( /commodity_discrepancy/rd_tetra_eye ) &gt; 0) or (number( /commodity_discrepancy/rs_tetra_eye ) &gt;0 and number( /commodity_discrepancy/rd_tetra_eye ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/tetra_eye_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_tetra_eye  != '' and number( /commodity_discrepancy/rd_tetra_eye ) &gt; 0) or (number( /commodity_discrepancy/rs_tetra_eye ) &gt;0 and number( /commodity_discrepancy/rd_tetra_eye ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/tetra_eye_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_tetra_eye  != '' and number( /commodity_discrepancy/rd_tetra_eye ) &gt; 0) or (number( /commodity_discrepancy/rs_tetra_eye ) &gt;0 and number( /commodity_discrepancy/rd_tetra_eye ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_paracetamol_120" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_120  != '' and number( /commodity_discrepancy/rd_paracetamol_120 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_120 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_120 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_120_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_120  != '' and number( /commodity_discrepancy/rd_paracetamol_120 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_120 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_120 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_120_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_120  != '' and number( /commodity_discrepancy/rd_paracetamol_120 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_120 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_120 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_120_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_120  != '' and number( /commodity_discrepancy/rd_paracetamol_120 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_120 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_120 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_120_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_paracetamol_120  != '' and number( /commodity_discrepancy/rd_paracetamol_120 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_120 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_120 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_mebendazole" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_mebendazole  != '' and number( /commodity_discrepancy/rd_mebendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_mebendazole ) &gt;0 and number( /commodity_discrepancy/rd_mebendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/mebendazole_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_mebendazole  != '' and number( /commodity_discrepancy/rd_mebendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_mebendazole ) &gt;0 and number( /commodity_discrepancy/rd_mebendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/mebendazole_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_mebendazole  != '' and number( /commodity_discrepancy/rd_mebendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_mebendazole ) &gt;0 and number( /commodity_discrepancy/rd_mebendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/mebendazole_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_mebendazole  != '' and number( /commodity_discrepancy/rd_mebendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_mebendazole ) &gt;0 and number( /commodity_discrepancy/rd_mebendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/mebendazole_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_mebendazole  != '' and number( /commodity_discrepancy/rd_mebendazole ) &gt; 0) or (number( /commodity_discrepancy/rs_mebendazole ) &gt;0 and number( /commodity_discrepancy/rd_mebendazole ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_coc" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_coc  != '' and number( /commodity_discrepancy/rd_coc ) &gt; 0) or (number( /commodity_discrepancy/rs_coc ) &gt;0 and number( /commodity_discrepancy/rd_coc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/coc_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_coc  != '' and number( /commodity_discrepancy/rd_coc ) &gt; 0) or (number( /commodity_discrepancy/rs_coc ) &gt;0 and number( /commodity_discrepancy/rd_coc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/coc_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_coc  != '' and number( /commodity_discrepancy/rd_coc ) &gt; 0) or (number( /commodity_discrepancy/rs_coc ) &gt;0 and number( /commodity_discrepancy/rd_coc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/coc_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_coc  != '' and number( /commodity_discrepancy/rd_coc ) &gt; 0) or (number( /commodity_discrepancy/rs_coc ) &gt;0 and number( /commodity_discrepancy/rd_coc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/coc_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_coc  != '' and number( /commodity_discrepancy/rd_coc ) &gt; 0) or (number( /commodity_discrepancy/rs_coc ) &gt;0 and number( /commodity_discrepancy/rd_coc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_prog" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_prog  != '' and number( /commodity_discrepancy/rd_prog ) &gt; 0) or (number( /commodity_discrepancy/rs_prog ) &gt;0 and number( /commodity_discrepancy/rd_prog ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/prog_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_prog  != '' and number( /commodity_discrepancy/rd_prog ) &gt; 0) or (number( /commodity_discrepancy/rs_prog ) &gt;0 and number( /commodity_discrepancy/rd_prog ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/prog_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_prog  != '' and number( /commodity_discrepancy/rd_prog ) &gt; 0) or (number( /commodity_discrepancy/rs_prog ) &gt;0 and number( /commodity_discrepancy/rd_prog ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/prog_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_prog  != '' and number( /commodity_discrepancy/rd_prog ) &gt; 0) or (number( /commodity_discrepancy/rs_prog ) &gt;0 and number( /commodity_discrepancy/rd_prog ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/prog_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_prog  != '' and number( /commodity_discrepancy/rd_prog ) &gt; 0) or (number( /commodity_discrepancy/rs_prog ) &gt;0 and number( /commodity_discrepancy/rd_prog ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_depo_im" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_im  != '' and number( /commodity_discrepancy/rd_depo_im ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_im ) &gt;0 and number( /commodity_discrepancy/rd_depo_im ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_im_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_im  != '' and number( /commodity_discrepancy/rd_depo_im ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_im ) &gt;0 and number( /commodity_discrepancy/rd_depo_im ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_im_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_im  != '' and number( /commodity_discrepancy/rd_depo_im ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_im ) &gt;0 and number( /commodity_discrepancy/rd_depo_im ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_im_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_im  != '' and number( /commodity_discrepancy/rd_depo_im ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_im ) &gt;0 and number( /commodity_discrepancy/rd_depo_im ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_im_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_depo_im  != '' and number( /commodity_discrepancy/rd_depo_im ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_im ) &gt;0 and number( /commodity_discrepancy/rd_depo_im ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_depo_sc" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_sc  != '' and number( /commodity_discrepancy/rd_depo_sc ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_sc ) &gt;0 and number( /commodity_discrepancy/rd_depo_sc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_sc_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_sc  != '' and number( /commodity_discrepancy/rd_depo_sc ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_sc ) &gt;0 and number( /commodity_discrepancy/rd_depo_sc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_sc_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_sc  != '' and number( /commodity_discrepancy/rd_depo_sc ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_sc ) &gt;0 and number( /commodity_discrepancy/rd_depo_sc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_sc_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_depo_sc  != '' and number( /commodity_discrepancy/rd_depo_sc ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_sc ) &gt;0 and number( /commodity_discrepancy/rd_depo_sc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/depo_sc_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_depo_sc  != '' and number( /commodity_discrepancy/rd_depo_sc ) &gt; 0) or (number( /commodity_discrepancy/rs_depo_sc ) &gt;0 and number( /commodity_discrepancy/rd_depo_sc ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_preg_strip" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_preg_strip  != '' and number( /commodity_discrepancy/rd_preg_strip ) &gt; 0) or (number( /commodity_discrepancy/rs_preg_strip ) &gt;0 and number( /commodity_discrepancy/rd_preg_strip ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/preg_strip_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_preg_strip  != '' and number( /commodity_discrepancy/rd_preg_strip ) &gt; 0) or (number( /commodity_discrepancy/rs_preg_strip ) &gt;0 and number( /commodity_discrepancy/rd_preg_strip ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/preg_strip_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_preg_strip  != '' and number( /commodity_discrepancy/rd_preg_strip ) &gt; 0) or (number( /commodity_discrepancy/rs_preg_strip ) &gt;0 and number( /commodity_discrepancy/rd_preg_strip ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/preg_strip_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_preg_strip  != '' and number( /commodity_discrepancy/rd_preg_strip ) &gt; 0) or (number( /commodity_discrepancy/rs_preg_strip ) &gt;0 and number( /commodity_discrepancy/rd_preg_strip ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/preg_strip_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_preg_strip  != '' and number( /commodity_discrepancy/rd_preg_strip ) &gt; 0) or (number( /commodity_discrepancy/rs_preg_strip ) &gt;0 and number( /commodity_discrepancy/rd_preg_strip ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_chlorine" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_chlorine  != '' and number( /commodity_discrepancy/rd_chlorine ) &gt; 0) or (number( /commodity_discrepancy/rs_chlorine ) &gt;0 and number( /commodity_discrepancy/rd_chlorine ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/chlorine_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_chlorine  != '' and number( /commodity_discrepancy/rd_chlorine ) &gt; 0) or (number( /commodity_discrepancy/rs_chlorine ) &gt;0 and number( /commodity_discrepancy/rd_chlorine ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/chlorine_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_chlorine  != '' and number( /commodity_discrepancy/rd_chlorine ) &gt; 0) or (number( /commodity_discrepancy/rs_chlorine ) &gt;0 and number( /commodity_discrepancy/rd_chlorine ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/chlorine_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_chlorine  != '' and number( /commodity_discrepancy/rd_chlorine ) &gt; 0) or (number( /commodity_discrepancy/rs_chlorine ) &gt;0 and number( /commodity_discrepancy/rd_chlorine ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/chlorine_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_chlorine  != '' and number( /commodity_discrepancy/rd_chlorine ) &gt; 0) or (number( /commodity_discrepancy/rs_chlorine ) &gt;0 and number( /commodity_discrepancy/rd_chlorine ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_gluc_strips" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gluc_strips  != '' and number( /commodity_discrepancy/rd_gluc_strips ) &gt; 0) or (number( /commodity_discrepancy/rs_gluc_strips ) &gt;0 and number( /commodity_discrepancy/rd_gluc_strips ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gluc_strips_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gluc_strips  != '' and number( /commodity_discrepancy/rd_gluc_strips ) &gt; 0) or (number( /commodity_discrepancy/rs_gluc_strips ) &gt;0 and number( /commodity_discrepancy/rd_gluc_strips ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gluc_strips_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gluc_strips  != '' and number( /commodity_discrepancy/rd_gluc_strips ) &gt; 0) or (number( /commodity_discrepancy/rs_gluc_strips ) &gt;0 and number( /commodity_discrepancy/rd_gluc_strips ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gluc_strips_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gluc_strips  != '' and number( /commodity_discrepancy/rd_gluc_strips ) &gt; 0) or (number( /commodity_discrepancy/rs_gluc_strips ) &gt;0 and number( /commodity_discrepancy/rd_gluc_strips ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gluc_strips_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_gluc_strips  != '' and number( /commodity_discrepancy/rd_gluc_strips ) &gt; 0) or (number( /commodity_discrepancy/rs_gluc_strips ) &gt;0 and number( /commodity_discrepancy/rd_gluc_strips ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_paracetamol_500" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_500  != '' and number( /commodity_discrepancy/rd_paracetamol_500 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_500 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_500 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_500_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_500  != '' and number( /commodity_discrepancy/rd_paracetamol_500 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_500 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_500 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_500_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_500  != '' and number( /commodity_discrepancy/rd_paracetamol_500 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_500 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_500 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_500_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_paracetamol_500  != '' and number( /commodity_discrepancy/rd_paracetamol_500 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_500 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_500 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/paracetamol_500_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_paracetamol_500  != '' and number( /commodity_discrepancy/rd_paracetamol_500 ) &gt; 0) or (number( /commodity_discrepancy/rs_paracetamol_500 ) &gt;0 and number( /commodity_discrepancy/rd_paracetamol_500 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_bandages" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bandages  != '' and number( /commodity_discrepancy/rd_bandages ) &gt; 0) or (number( /commodity_discrepancy/rs_bandages ) &gt;0 and number( /commodity_discrepancy/rd_bandages ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bandages_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bandages  != '' and number( /commodity_discrepancy/rd_bandages ) &gt; 0) or (number( /commodity_discrepancy/rs_bandages ) &gt;0 and number( /commodity_discrepancy/rd_bandages ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bandages_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bandages  != '' and number( /commodity_discrepancy/rd_bandages ) &gt; 0) or (number( /commodity_discrepancy/rs_bandages ) &gt;0 and number( /commodity_discrepancy/rd_bandages ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bandages_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bandages  != '' and number( /commodity_discrepancy/rd_bandages ) &gt; 0) or (number( /commodity_discrepancy/rs_bandages ) &gt;0 and number( /commodity_discrepancy/rd_bandages ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bandages_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_bandages  != '' and number( /commodity_discrepancy/rd_bandages ) &gt; 0) or (number( /commodity_discrepancy/rs_bandages ) &gt;0 and number( /commodity_discrepancy/rd_bandages ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_povi" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_povi  != '' and number( /commodity_discrepancy/rd_povi ) &gt; 0) or (number( /commodity_discrepancy/rs_povi ) &gt;0 and number( /commodity_discrepancy/rd_povi ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/povi_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_povi  != '' and number( /commodity_discrepancy/rd_povi ) &gt; 0) or (number( /commodity_discrepancy/rs_povi ) &gt;0 and number( /commodity_discrepancy/rd_povi ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/povi_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_povi  != '' and number( /commodity_discrepancy/rd_povi ) &gt; 0) or (number( /commodity_discrepancy/rs_povi ) &gt;0 and number( /commodity_discrepancy/rd_povi ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/povi_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_povi  != '' and number( /commodity_discrepancy/rd_povi ) &gt; 0) or (number( /commodity_discrepancy/rs_povi ) &gt;0 and number( /commodity_discrepancy/rd_povi ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/povi_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_povi  != '' and number( /commodity_discrepancy/rd_povi ) &gt; 0) or (number( /commodity_discrepancy/rs_povi ) &gt;0 and number( /commodity_discrepancy/rd_povi ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_strap" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_strap  != '' and number( /commodity_discrepancy/rd_strap ) &gt; 0) or (number( /commodity_discrepancy/rs_strap ) &gt;0 and number( /commodity_discrepancy/rd_strap ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/strap_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_strap  != '' and number( /commodity_discrepancy/rd_strap ) &gt; 0) or (number( /commodity_discrepancy/rs_strap ) &gt;0 and number( /commodity_discrepancy/rd_strap ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/strap_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_strap  != '' and number( /commodity_discrepancy/rd_strap ) &gt; 0) or (number( /commodity_discrepancy/rs_strap ) &gt;0 and number( /commodity_discrepancy/rd_strap ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/strap_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_strap  != '' and number( /commodity_discrepancy/rd_strap ) &gt; 0) or (number( /commodity_discrepancy/rs_strap ) &gt;0 and number( /commodity_discrepancy/rd_strap ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/strap_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_strap  != '' and number( /commodity_discrepancy/rd_strap ) &gt; 0) or (number( /commodity_discrepancy/rs_strap ) &gt;0 and number( /commodity_discrepancy/rd_strap ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_gloves" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gloves  != '' and number( /commodity_discrepancy/rd_gloves ) &gt; 0) or (number( /commodity_discrepancy/rs_gloves ) &gt;0 and number( /commodity_discrepancy/rd_gloves ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gloves_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gloves  != '' and number( /commodity_discrepancy/rd_gloves ) &gt; 0) or (number( /commodity_discrepancy/rs_gloves ) &gt;0 and number( /commodity_discrepancy/rd_gloves ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gloves_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gloves  != '' and number( /commodity_discrepancy/rd_gloves ) &gt; 0) or (number( /commodity_discrepancy/rs_gloves ) &gt;0 and number( /commodity_discrepancy/rd_gloves ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gloves_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_gloves  != '' and number( /commodity_discrepancy/rd_gloves ) &gt; 0) or (number( /commodity_discrepancy/rs_gloves ) &gt;0 and number( /commodity_discrepancy/rd_gloves ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/gloves_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_gloves  != '' and number( /commodity_discrepancy/rd_gloves ) &gt; 0) or (number( /commodity_discrepancy/rs_gloves ) &gt;0 and number( /commodity_discrepancy/rd_gloves ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_envelopes" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_envelopes  != '' and number( /commodity_discrepancy/rd_envelopes ) &gt; 0) or (number( /commodity_discrepancy/rs_envelopes ) &gt;0 and number( /commodity_discrepancy/rd_envelopes ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/envelopes_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_envelopes  != '' and number( /commodity_discrepancy/rd_envelopes ) &gt; 0) or (number( /commodity_discrepancy/rs_envelopes ) &gt;0 and number( /commodity_discrepancy/rd_envelopes ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/envelopes_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_envelopes  != '' and number( /commodity_discrepancy/rd_envelopes ) &gt; 0) or (number( /commodity_discrepancy/rs_envelopes ) &gt;0 and number( /commodity_discrepancy/rd_envelopes ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/envelopes_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_envelopes  != '' and number( /commodity_discrepancy/rd_envelopes ) &gt; 0) or (number( /commodity_discrepancy/rs_envelopes ) &gt;0 and number( /commodity_discrepancy/rd_envelopes ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/envelopes_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_envelopes  != '' and number( /commodity_discrepancy/rd_envelopes ) &gt; 0) or (number( /commodity_discrepancy/rs_envelopes ) &gt;0 and number( /commodity_discrepancy/rd_envelopes ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_glucometer" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_glucometer  != '' and number( /commodity_discrepancy/rd_glucometer ) &gt; 0) or (number( /commodity_discrepancy/rs_glucometer ) &gt;0 and number( /commodity_discrepancy/rd_glucometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/glucometer_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_glucometer  != '' and number( /commodity_discrepancy/rd_glucometer ) &gt; 0) or (number( /commodity_discrepancy/rs_glucometer ) &gt;0 and number( /commodity_discrepancy/rd_glucometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/glucometer_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_glucometer  != '' and number( /commodity_discrepancy/rd_glucometer ) &gt; 0) or (number( /commodity_discrepancy/rs_glucometer ) &gt;0 and number( /commodity_discrepancy/rd_glucometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/glucometer_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_glucometer  != '' and number( /commodity_discrepancy/rd_glucometer ) &gt; 0) or (number( /commodity_discrepancy/rs_glucometer ) &gt;0 and number( /commodity_discrepancy/rd_glucometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/glucometer_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_glucometer  != '' and number( /commodity_discrepancy/rd_glucometer ) &gt; 0) or (number( /commodity_discrepancy/rs_glucometer ) &gt;0 and number( /commodity_discrepancy/rd_glucometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_backpack" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_backpack  != '' and number( /commodity_discrepancy/rd_backpack ) &gt; 0) or (number( /commodity_discrepancy/rs_backpack ) &gt;0 and number( /commodity_discrepancy/rd_backpack ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/backpack_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_backpack  != '' and number( /commodity_discrepancy/rd_backpack ) &gt; 0) or (number( /commodity_discrepancy/rs_backpack ) &gt;0 and number( /commodity_discrepancy/rd_backpack ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/backpack_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_backpack  != '' and number( /commodity_discrepancy/rd_backpack ) &gt; 0) or (number( /commodity_discrepancy/rs_backpack ) &gt;0 and number( /commodity_discrepancy/rd_backpack ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/backpack_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_backpack  != '' and number( /commodity_discrepancy/rd_backpack ) &gt; 0) or (number( /commodity_discrepancy/rs_backpack ) &gt;0 and number( /commodity_discrepancy/rd_backpack ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/backpack_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_backpack  != '' and number( /commodity_discrepancy/rd_backpack ) &gt; 0) or (number( /commodity_discrepancy/rs_backpack ) &gt;0 and number( /commodity_discrepancy/rd_backpack ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_badge" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_badge  != '' and number( /commodity_discrepancy/rd_badge ) &gt; 0) or (number( /commodity_discrepancy/rs_badge ) &gt;0 and number( /commodity_discrepancy/rd_badge ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/badge_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_badge  != '' and number( /commodity_discrepancy/rd_badge ) &gt; 0) or (number( /commodity_discrepancy/rs_badge ) &gt;0 and number( /commodity_discrepancy/rd_badge ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/badge_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_badge  != '' and number( /commodity_discrepancy/rd_badge ) &gt; 0) or (number( /commodity_discrepancy/rs_badge ) &gt;0 and number( /commodity_discrepancy/rd_badge ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/badge_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_badge  != '' and number( /commodity_discrepancy/rd_badge ) &gt; 0) or (number( /commodity_discrepancy/rs_badge ) &gt;0 and number( /commodity_discrepancy/rd_badge ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/badge_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_badge  != '' and number( /commodity_discrepancy/rd_badge ) &gt; 0) or (number( /commodity_discrepancy/rs_badge ) &gt;0 and number( /commodity_discrepancy/rd_badge ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_flashlight" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_flashlight  != '' and number( /commodity_discrepancy/rd_flashlight ) &gt; 0) or (number( /commodity_discrepancy/rs_flashlight ) &gt;0 and number( /commodity_discrepancy/rd_flashlight ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/flashlight_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_flashlight  != '' and number( /commodity_discrepancy/rd_flashlight ) &gt; 0) or (number( /commodity_discrepancy/rs_flashlight ) &gt;0 and number( /commodity_discrepancy/rd_flashlight ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/flashlight_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_flashlight  != '' and number( /commodity_discrepancy/rd_flashlight ) &gt; 0) or (number( /commodity_discrepancy/rs_flashlight ) &gt;0 and number( /commodity_discrepancy/rd_flashlight ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/flashlight_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_flashlight  != '' and number( /commodity_discrepancy/rd_flashlight ) &gt; 0) or (number( /commodity_discrepancy/rs_flashlight ) &gt;0 and number( /commodity_discrepancy/rd_flashlight ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/flashlight_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_flashlight  != '' and number( /commodity_discrepancy/rd_flashlight ) &gt; 0) or (number( /commodity_discrepancy/rs_flashlight ) &gt;0 and number( /commodity_discrepancy/rd_flashlight ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_salter" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_salter  != '' and number( /commodity_discrepancy/rd_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_salter ) &gt;0 and number( /commodity_discrepancy/rd_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/salter_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_salter  != '' and number( /commodity_discrepancy/rd_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_salter ) &gt;0 and number( /commodity_discrepancy/rd_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/salter_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_salter  != '' and number( /commodity_discrepancy/rd_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_salter ) &gt;0 and number( /commodity_discrepancy/rd_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/salter_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_salter  != '' and number( /commodity_discrepancy/rd_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_salter ) &gt;0 and number( /commodity_discrepancy/rd_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/salter_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_salter  != '' and number( /commodity_discrepancy/rd_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_salter ) &gt;0 and number( /commodity_discrepancy/rd_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_color_salter" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_color_salter  != '' and number( /commodity_discrepancy/rd_color_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_color_salter ) &gt;0 and number( /commodity_discrepancy/rd_color_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/color_salter_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_color_salter  != '' and number( /commodity_discrepancy/rd_color_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_color_salter ) &gt;0 and number( /commodity_discrepancy/rd_color_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/color_salter_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_color_salter  != '' and number( /commodity_discrepancy/rd_color_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_color_salter ) &gt;0 and number( /commodity_discrepancy/rd_color_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/color_salter_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_color_salter  != '' and number( /commodity_discrepancy/rd_color_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_color_salter ) &gt;0 and number( /commodity_discrepancy/rd_color_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/color_salter_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_color_salter  != '' and number( /commodity_discrepancy/rd_color_salter ) &gt; 0) or (number( /commodity_discrepancy/rs_color_salter ) &gt;0 and number( /commodity_discrepancy/rd_color_salter ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_weighing_scale" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_weighing_scale  != '' and number( /commodity_discrepancy/rd_weighing_scale ) &gt; 0) or (number( /commodity_discrepancy/rs_weighing_scale ) &gt;0 and number( /commodity_discrepancy/rd_weighing_scale ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/weighing_scale_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_weighing_scale  != '' and number( /commodity_discrepancy/rd_weighing_scale ) &gt; 0) or (number( /commodity_discrepancy/rs_weighing_scale ) &gt;0 and number( /commodity_discrepancy/rd_weighing_scale ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/weighing_scale_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_weighing_scale  != '' and number( /commodity_discrepancy/rd_weighing_scale ) &gt; 0) or (number( /commodity_discrepancy/rs_weighing_scale ) &gt;0 and number( /commodity_discrepancy/rd_weighing_scale ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/weighing_scale_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_weighing_scale  != '' and number( /commodity_discrepancy/rd_weighing_scale ) &gt; 0) or (number( /commodity_discrepancy/rs_weighing_scale ) &gt;0 and number( /commodity_discrepancy/rd_weighing_scale ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/weighing_scale_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_weighing_scale  != '' and number( /commodity_discrepancy/rd_weighing_scale ) &gt; 0) or (number( /commodity_discrepancy/rs_weighing_scale ) &gt;0 and number( /commodity_discrepancy/rd_weighing_scale ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_first_aid" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_first_aid  != '' and number( /commodity_discrepancy/rd_first_aid ) &gt; 0) or (number( /commodity_discrepancy/rs_first_aid ) &gt;0 and number( /commodity_discrepancy/rd_first_aid ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/first_aid_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_first_aid  != '' and number( /commodity_discrepancy/rd_first_aid ) &gt; 0) or (number( /commodity_discrepancy/rs_first_aid ) &gt;0 and number( /commodity_discrepancy/rd_first_aid ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/first_aid_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_first_aid  != '' and number( /commodity_discrepancy/rd_first_aid ) &gt; 0) or (number( /commodity_discrepancy/rs_first_aid ) &gt;0 and number( /commodity_discrepancy/rd_first_aid ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/first_aid_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_first_aid  != '' and number( /commodity_discrepancy/rd_first_aid ) &gt; 0) or (number( /commodity_discrepancy/rs_first_aid ) &gt;0 and number( /commodity_discrepancy/rd_first_aid ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/first_aid_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_first_aid  != '' and number( /commodity_discrepancy/rd_first_aid ) &gt; 0) or (number( /commodity_discrepancy/rs_first_aid ) &gt;0 and number( /commodity_discrepancy/rd_first_aid ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_bp" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bp  != '' and number( /commodity_discrepancy/rd_bp ) &gt; 0) or (number( /commodity_discrepancy/rs_bp ) &gt;0 and number( /commodity_discrepancy/rd_bp ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bp_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bp  != '' and number( /commodity_discrepancy/rd_bp ) &gt; 0) or (number( /commodity_discrepancy/rs_bp ) &gt;0 and number( /commodity_discrepancy/rd_bp ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bp_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bp  != '' and number( /commodity_discrepancy/rd_bp ) &gt; 0) or (number( /commodity_discrepancy/rs_bp ) &gt;0 and number( /commodity_discrepancy/rd_bp ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bp_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_bp  != '' and number( /commodity_discrepancy/rd_bp ) &gt; 0) or (number( /commodity_discrepancy/rs_bp ) &gt;0 and number( /commodity_discrepancy/rd_bp ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/bp_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_bp  != '' and number( /commodity_discrepancy/rd_bp ) &gt; 0) or (number( /commodity_discrepancy/rs_bp ) &gt;0 and number( /commodity_discrepancy/rd_bp ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_thermometer" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_thermometer  != '' and number( /commodity_discrepancy/rd_thermometer ) &gt; 0) or (number( /commodity_discrepancy/rs_thermometer ) &gt;0 and number( /commodity_discrepancy/rd_thermometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/thermometer_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_thermometer  != '' and number( /commodity_discrepancy/rd_thermometer ) &gt; 0) or (number( /commodity_discrepancy/rs_thermometer ) &gt;0 and number( /commodity_discrepancy/rd_thermometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/thermometer_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_thermometer  != '' and number( /commodity_discrepancy/rd_thermometer ) &gt; 0) or (number( /commodity_discrepancy/rs_thermometer ) &gt;0 and number( /commodity_discrepancy/rd_thermometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/thermometer_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_thermometer  != '' and number( /commodity_discrepancy/rd_thermometer ) &gt; 0) or (number( /commodity_discrepancy/rs_thermometer ) &gt;0 and number( /commodity_discrepancy/rd_thermometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/thermometer_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_thermometer  != '' and number( /commodity_discrepancy/rd_thermometer ) &gt; 0) or (number( /commodity_discrepancy/rs_thermometer ) &gt;0 and number( /commodity_discrepancy/rd_thermometer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_resp_timer" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_resp_timer  != '' and number( /commodity_discrepancy/rd_resp_timer ) &gt; 0) or (number( /commodity_discrepancy/rs_resp_timer ) &gt;0 and number( /commodity_discrepancy/rd_resp_timer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/resp_timer_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_resp_timer  != '' and number( /commodity_discrepancy/rd_resp_timer ) &gt; 0) or (number( /commodity_discrepancy/rs_resp_timer ) &gt;0 and number( /commodity_discrepancy/rd_resp_timer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/resp_timer_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_resp_timer  != '' and number( /commodity_discrepancy/rd_resp_timer ) &gt; 0) or (number( /commodity_discrepancy/rs_resp_timer ) &gt;0 and number( /commodity_discrepancy/rd_resp_timer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/resp_timer_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_resp_timer  != '' and number( /commodity_discrepancy/rd_resp_timer ) &gt; 0) or (number( /commodity_discrepancy/rs_resp_timer ) &gt;0 and number( /commodity_discrepancy/rd_resp_timer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/resp_timer_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_resp_timer  != '' and number( /commodity_discrepancy/rd_resp_timer ) &gt; 0) or (number( /commodity_discrepancy/rs_resp_timer ) &gt;0 and number( /commodity_discrepancy/rd_resp_timer ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_muac_tape_adults" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_adults  != '' and number( /commodity_discrepancy/rd_muac_tape_adults ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_adults ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_adults ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_adults_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_adults  != '' and number( /commodity_discrepancy/rd_muac_tape_adults ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_adults ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_adults ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_adults_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_adults  != '' and number( /commodity_discrepancy/rd_muac_tape_adults ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_adults ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_adults ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_adults_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_adults  != '' and number( /commodity_discrepancy/rd_muac_tape_adults ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_adults ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_adults ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_adults_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_muac_tape_adults  != '' and number( /commodity_discrepancy/rd_muac_tape_adults ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_adults ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_adults ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_muac_tape_children" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_children  != '' and number( /commodity_discrepancy/rd_muac_tape_children ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_children ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_children ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_children_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_children  != '' and number( /commodity_discrepancy/rd_muac_tape_children ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_children ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_children ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_children_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_children  != '' and number( /commodity_discrepancy/rd_muac_tape_children ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_children ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_children ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_children_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_muac_tape_children  != '' and number( /commodity_discrepancy/rd_muac_tape_children ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_children ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_children ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/muac_tape_children_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_muac_tape_children  != '' and number( /commodity_discrepancy/rd_muac_tape_children ) &gt; 0) or (number( /commodity_discrepancy/rs_muac_tape_children ) &gt;0 and number( /commodity_discrepancy/rd_muac_tape_children ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_family_muac_tape" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_family_muac_tape  != '' and number( /commodity_discrepancy/rd_family_muac_tape ) &gt; 0) or (number( /commodity_discrepancy/rs_family_muac_tape ) &gt;0 and number( /commodity_discrepancy/rd_family_muac_tape ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/family_muac_tape_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_family_muac_tape  != '' and number( /commodity_discrepancy/rd_family_muac_tape ) &gt; 0) or (number( /commodity_discrepancy/rs_family_muac_tape ) &gt;0 and number( /commodity_discrepancy/rd_family_muac_tape ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/family_muac_tape_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_family_muac_tape  != '' and number( /commodity_discrepancy/rd_family_muac_tape ) &gt; 0) or (number( /commodity_discrepancy/rs_family_muac_tape ) &gt;0 and number( /commodity_discrepancy/rd_family_muac_tape ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/family_muac_tape_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_family_muac_tape  != '' and number( /commodity_discrepancy/rd_family_muac_tape ) &gt; 0) or (number( /commodity_discrepancy/rs_family_muac_tape ) &gt;0 and number( /commodity_discrepancy/rd_family_muac_tape ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/family_muac_tape_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_family_muac_tape  != '' and number( /commodity_discrepancy/rd_family_muac_tape ) &gt; 0) or (number( /commodity_discrepancy/rs_family_muac_tape ) &gt;0 and number( /commodity_discrepancy/rd_family_muac_tape ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_moh_514" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_514  != '' and number( /commodity_discrepancy/rd_moh_514 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_514 ) &gt;0 and number( /commodity_discrepancy/rd_moh_514 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_514_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_514  != '' and number( /commodity_discrepancy/rd_moh_514 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_514 ) &gt;0 and number( /commodity_discrepancy/rd_moh_514 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_514_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_514  != '' and number( /commodity_discrepancy/rd_moh_514 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_514 ) &gt;0 and number( /commodity_discrepancy/rd_moh_514 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_514_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_514  != '' and number( /commodity_discrepancy/rd_moh_514 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_514 ) &gt;0 and number( /commodity_discrepancy/rd_moh_514 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_514_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_moh_514  != '' and number( /commodity_discrepancy/rd_moh_514 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_514 ) &gt;0 and number( /commodity_discrepancy/rd_moh_514 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_moh_521" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_521  != '' and number( /commodity_discrepancy/rd_moh_521 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_521 ) &gt;0 and number( /commodity_discrepancy/rd_moh_521 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_521_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_521  != '' and number( /commodity_discrepancy/rd_moh_521 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_521 ) &gt;0 and number( /commodity_discrepancy/rd_moh_521 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_521_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_521  != '' and number( /commodity_discrepancy/rd_moh_521 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_521 ) &gt;0 and number( /commodity_discrepancy/rd_moh_521 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_521_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_521  != '' and number( /commodity_discrepancy/rd_moh_521 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_521 ) &gt;0 and number( /commodity_discrepancy/rd_moh_521 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_521_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_moh_521  != '' and number( /commodity_discrepancy/rd_moh_521 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_521 ) &gt;0 and number( /commodity_discrepancy/rd_moh_521 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_moh_100" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_100  != '' and number( /commodity_discrepancy/rd_moh_100 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_100 ) &gt;0 and number( /commodity_discrepancy/rd_moh_100 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_100_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_100  != '' and number( /commodity_discrepancy/rd_moh_100 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_100 ) &gt;0 and number( /commodity_discrepancy/rd_moh_100 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_100_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_100  != '' and number( /commodity_discrepancy/rd_moh_100 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_100 ) &gt;0 and number( /commodity_discrepancy/rd_moh_100 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_100_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_moh_100  != '' and number( /commodity_discrepancy/rd_moh_100 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_100 ) &gt;0 and number( /commodity_discrepancy/rd_moh_100 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/moh_100_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_moh_100  != '' and number( /commodity_discrepancy/rd_moh_100 ) &gt; 0) or (number( /commodity_discrepancy/rs_moh_100 ) &gt;0 and number( /commodity_discrepancy/rd_moh_100 ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_comm_daily_register" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_comm_daily_register  != '' and number( /commodity_discrepancy/rd_comm_daily_register ) &gt; 0) or (number( /commodity_discrepancy/rs_comm_daily_register ) &gt;0 and number( /commodity_discrepancy/rd_comm_daily_register ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/comm_daily_register_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_comm_daily_register  != '' and number( /commodity_discrepancy/rd_comm_daily_register ) &gt; 0) or (number( /commodity_discrepancy/rs_comm_daily_register ) &gt;0 and number( /commodity_discrepancy/rd_comm_daily_register ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/comm_daily_register_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_comm_daily_register  != '' and number( /commodity_discrepancy/rd_comm_daily_register ) &gt; 0) or (number( /commodity_discrepancy/rs_comm_daily_register ) &gt;0 and number( /commodity_discrepancy/rd_comm_daily_register ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/comm_daily_register_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_comm_daily_register  != '' and number( /commodity_discrepancy/rd_comm_daily_register ) &gt; 0) or (number( /commodity_discrepancy/rs_comm_daily_register ) &gt;0 and number( /commodity_discrepancy/rd_comm_daily_register ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/comm_daily_register_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_comm_daily_register  != '' and number( /commodity_discrepancy/rd_comm_daily_register ) &gt; 0) or (number( /commodity_discrepancy/rs_comm_daily_register ) &gt;0 and number( /commodity_discrepancy/rd_comm_daily_register ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_phone" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_phone  != '' and number( /commodity_discrepancy/rd_phone ) &gt; 0) or (number( /commodity_discrepancy/rs_phone ) &gt;0 and number( /commodity_discrepancy/rd_phone ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/phone_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_phone  != '' and number( /commodity_discrepancy/rd_phone ) &gt; 0) or (number( /commodity_discrepancy/rs_phone ) &gt;0 and number( /commodity_discrepancy/rd_phone ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/phone_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_phone  != '' and number( /commodity_discrepancy/rd_phone ) &gt; 0) or (number( /commodity_discrepancy/rs_phone ) &gt;0 and number( /commodity_discrepancy/rd_phone ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/phone_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_phone  != '' and number( /commodity_discrepancy/rd_phone ) &gt; 0) or (number( /commodity_discrepancy/rs_phone ) &gt;0 and number( /commodity_discrepancy/rd_phone ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/phone_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_phone  != '' and number( /commodity_discrepancy/rd_phone ) &gt; 0) or (number( /commodity_discrepancy/rs_phone ) &gt;0 and number( /commodity_discrepancy/rd_phone ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_safety_box" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_safety_box  != '' and number( /commodity_discrepancy/rd_safety_box ) &gt; 0) or (number( /commodity_discrepancy/rs_safety_box ) &gt;0 and number( /commodity_discrepancy/rd_safety_box ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/safety_box_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_safety_box  != '' and number( /commodity_discrepancy/rd_safety_box ) &gt; 0) or (number( /commodity_discrepancy/rs_safety_box ) &gt;0 and number( /commodity_discrepancy/rd_safety_box ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/safety_box_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_safety_box  != '' and number( /commodity_discrepancy/rd_safety_box ) &gt; 0) or (number( /commodity_discrepancy/rs_safety_box ) &gt;0 and number( /commodity_discrepancy/rd_safety_box ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/safety_box_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_safety_box  != '' and number( /commodity_discrepancy/rd_safety_box ) &gt; 0) or (number( /commodity_discrepancy/rs_safety_box ) &gt;0 and number( /commodity_discrepancy/rd_safety_box ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/safety_box_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_safety_box  != '' and number( /commodity_discrepancy/rd_safety_box ) &gt; 0) or (number( /commodity_discrepancy/rs_safety_box ) &gt;0 and number( /commodity_discrepancy/rd_safety_box ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/n_others" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_others  != '' and number( /commodity_discrepancy/rd_others ) &gt; 0) or (number( /commodity_discrepancy/rs_others ) &gt;0 and number( /commodity_discrepancy/rd_others ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/others_issued_by_cha" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_others  != '' and number( /commodity_discrepancy/rd_others ) &gt; 0) or (number( /commodity_discrepancy/rs_others ) &gt;0 and number( /commodity_discrepancy/rd_others ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/others_confirmed_by_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_others  != '' and number( /commodity_discrepancy/rd_others ) &gt; 0) or (number( /commodity_discrepancy/rs_others ) &gt;0 and number( /commodity_discrepancy/rd_others ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/others_contact_chv" readonly="true()" type="string" relevant="( /commodity_discrepancy/rd_others  != '' and number( /commodity_discrepancy/rd_others ) &gt; 0) or (number( /commodity_discrepancy/rs_others ) &gt;0 and number( /commodity_discrepancy/rd_others ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/s_discrepancy/others_amended" type="int" required="true()" relevant="( /commodity_discrepancy/rd_others  != '' and number( /commodity_discrepancy/rd_others ) &gt; 0) or (number( /commodity_discrepancy/rs_others ) &gt;0 and number( /commodity_discrepancy/rd_others ) = 0)"/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/place_id" type="string" calculate=" /commodity_discrepancy/chv_area_uuid "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/chvName" type="string" calculate=" /commodity_discrepancy/chv_name "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/chu_id" type="string" calculate=" /commodity_discrepancy/cu_id "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/form" type="string" calculate="&quot;stock_ammendment&quot;"/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/contact/_id" type="string" calculate=" /commodity_discrepancy/chv_area_uuid "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/rdts_reconciliation" type="string" calculate=" /commodity_discrepancy/rdts_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/act_6_reconciliation" type="string" calculate=" /commodity_discrepancy/act_6_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/act_12_reconciliation" type="string" calculate=" /commodity_discrepancy/act_12_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/act_18_reconciliation" type="string" calculate=" /commodity_discrepancy/act_18_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/act_24_reconciliation" type="string" calculate=" /commodity_discrepancy/act_24_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/dt_250_reconciliation" type="string" calculate=" /commodity_discrepancy/dt_250_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/ors_zinc_reconciliation" type="string" calculate=" /commodity_discrepancy/ors_zinc_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/ors_sachets_reconciliation" type="string" calculate=" /commodity_discrepancy/ors_sachets_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/zinc_sulphate_reconciliation" type="string" calculate=" /commodity_discrepancy/zinc_sulphate_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/albendazole_reconciliation" type="string" calculate=" /commodity_discrepancy/albendazole_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/tetra_eye_reconciliation" type="string" calculate=" /commodity_discrepancy/tetra_eye_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/paracetamol_120_reconciliation" type="string" calculate=" /commodity_discrepancy/paracetamol_120_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/mebendazole_reconciliation" type="string" calculate=" /commodity_discrepancy/mebendazole_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/coc_reconciliation" type="string" calculate=" /commodity_discrepancy/coc_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/prog_reconciliation" type="string" calculate=" /commodity_discrepancy/prog_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/depo_im_reconciliation" type="string" calculate=" /commodity_discrepancy/depo_im_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/depo_sc_reconciliation" type="string" calculate=" /commodity_discrepancy/depo_sc_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/preg_strip_reconciliation" type="string" calculate=" /commodity_discrepancy/preg_strip_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/chlorine_reconciliation" type="string" calculate=" /commodity_discrepancy/chlorine_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/gluc_strips_reconciliation" type="string" calculate=" /commodity_discrepancy/gluc_strips_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/paracetamol_500_reconciliation" type="string" calculate=" /commodity_discrepancy/paracetamol_500_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/bandages_reconciliation" type="string" calculate=" /commodity_discrepancy/bandages_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/povi_reconciliation" type="string" calculate=" /commodity_discrepancy/povi_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/strap_reconciliation" type="string" calculate=" /commodity_discrepancy/strap_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/gloves_reconciliation" type="string" calculate=" /commodity_discrepancy/gloves_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/envelopes_reconciliation" type="string" calculate=" /commodity_discrepancy/envelopes_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/glucometer_reconciliation" type="string" calculate=" /commodity_discrepancy/glucometer_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/backpack_reconciliation" type="string" calculate=" /commodity_discrepancy/backpack_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/badge_reconciliation" type="string" calculate=" /commodity_discrepancy/badge_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/flashlight_reconciliation" type="string" calculate=" /commodity_discrepancy/flashlight_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/salter_reconciliation" type="string" calculate=" /commodity_discrepancy/salter_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/color_salter_reconciliation" type="string" calculate=" /commodity_discrepancy/color_salter_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/weighing_scale_reconciliation" type="string" calculate=" /commodity_discrepancy/weighing_scale_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/first_aid_reconciliation" type="string" calculate=" /commodity_discrepancy/first_aid_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/bp_reconciliation" type="string" calculate=" /commodity_discrepancy/bp_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/thermometer_reconciliation" type="string" calculate=" /commodity_discrepancy/thermometer_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/resp_timer_reconciliation" type="string" calculate=" /commodity_discrepancy/resp_timer_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/muac_tape_adults_reconciliation" type="string" calculate=" /commodity_discrepancy/muac_tape_adults_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/muac_tape_children_reconciliation" type="string" calculate=" /commodity_discrepancy/muac_tape_children_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/family_muac_tape_reconciliation" type="string" calculate=" /commodity_discrepancy/family_muac_tape_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/moh_514_reconciliation" type="string" calculate=" /commodity_discrepancy/moh_514_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/moh_521_reconciliation" type="string" calculate=" /commodity_discrepancy/moh_521_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/moh_100_reconciliation" type="string" calculate=" /commodity_discrepancy/moh_100_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/comm_daily_register_reconciliation" type="string" calculate=" /commodity_discrepancy/comm_daily_register_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/phone_reconciliation" type="string" calculate=" /commodity_discrepancy/phone_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/safety_box_reconciliation" type="string" calculate=" /commodity_discrepancy/safety_box_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/additional_doc/fields/others_reconciliation" type="string" calculate=" /commodity_discrepancy/others_ammendment "/>
+      <bind nodeset="/commodity_discrepancy/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/commodity_discrepancy/inputs">
+      <label>Inputs</label>
+      <group ref="/commodity_discrepancy/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object bind-id-only" ref="/commodity_discrepancy/inputs/contact/_id">
+          <label>What is the place's name?</label>
+        </input>
+        <group ref="/commodity_discrepancy/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/commodity_discrepancy/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/commodity_discrepancy/inputs/contact/parent/parent/parent">
+              <label>Parent</label>
+              <group ref="/commodity_discrepancy/inputs/contact/parent/parent/parent/contact">
+                <label>Contact</label>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/commodity_discrepancy/s_discrepancy">
+      <label>Commodities With Discrepancies</label>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_intro">
+        <label>**<output value=" /commodity_discrepancy/chv_name "/>** has disputed the quantity of the following commodities</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_rdts">
+        <label>&lt;b&gt;RDTs (Malaria Test Kit)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/rdts_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_rdts "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/rdts_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_rdts "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/rdts_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/rdts_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_act_6">
+        <label>First Line Anti-Malarial (ACT/Coartem) 6 Pack</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_6_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_act_6 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_6_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_act_6 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_6_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_6_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_act_12">
+        <label>First Line Anti-Malarial (ACT/Coartem) 12 Pack</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_12_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_act_12 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_12_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_act_12 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_12_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_12_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_act_18">
+        <label>First Line Anti-Malarial (ACT/Coartem) 18 Pack</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_18_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_act_18 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_18_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_act_18 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_18_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_18_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_act_24">
+        <label>First Line Anti-Malarial (ACT/Coartem) 24 Pack</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_24_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_act_24 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_24_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_act_24 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_24_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/act_24_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_dt_250">
+        <label>Antibiotics (Amoxicillin DT 250mg ) tablets</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/dt_250_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_dt_250 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/dt_250_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_dt_250 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/dt_250_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/dt_250_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_ors_zinc">
+        <label>ORS + Zinc Co-pack</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_zinc_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_ors_zinc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_zinc_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_ors_zinc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_zinc_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_zinc_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_ors_sachets">
+        <label>ORS Sachets</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_sachets_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_ors_sachets "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_sachets_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_ors_sachets "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_sachets_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/ors_sachets_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_zinc_sulphate">
+        <label>Zinc Sulphate 20mg Tablets</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/zinc_sulphate_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_zinc_sulphate "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/zinc_sulphate_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_zinc_sulphate "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/zinc_sulphate_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/zinc_sulphate_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_albendazole">
+        <label>Albendazole 400mg (Dewormers)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/albendazole_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_albendazole "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/albendazole_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_albendazole "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/albendazole_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/albendazole_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_tetra_eye">
+        <label>Tetracycline Eye Ointment 1% tubes</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/tetra_eye_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_tetra_eye "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/tetra_eye_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_tetra_eye "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/tetra_eye_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/tetra_eye_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_paracetamol_120">
+        <label>Paracetamol 120mg/5ml suspension</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_120_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_paracetamol_120 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_120_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_paracetamol_120 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_120_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_120_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_mebendazole">
+        <label>Mebendazole 500mg (Dewormers) tablets</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/mebendazole_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_mebendazole "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/mebendazole_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_mebendazole "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/mebendazole_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/mebendazole_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_coc">
+        <label>Combined Oral Contraceptives (packs)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/coc_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_coc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/coc_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_coc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/coc_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/coc_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_prog">
+        <label>Progestin Only pill (packs)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/prog_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_prog "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/prog_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_prog "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/prog_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/prog_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_depo_im">
+        <label>Depo Medroxy provera injection-IM ( vials)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_im_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_depo_im "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_im_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_depo_im "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_im_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_im_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_depo_sc">
+        <label>Depo Medroxy provera injection - SC (vials)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_sc_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_depo_sc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_sc_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_depo_sc "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_sc_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/depo_sc_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_preg_strip">
+        <label>Pregnancy Test Strip</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/preg_strip_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_preg_strip "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/preg_strip_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_preg_strip "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/preg_strip_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/preg_strip_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_chlorine">
+        <label>Chlorine</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/chlorine_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_chlorine "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/chlorine_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_chlorine "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/chlorine_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/chlorine_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_gluc_strips">
+        <label>Glucometer strips</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gluc_strips_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_gluc_strips "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gluc_strips_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_gluc_strips "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gluc_strips_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gluc_strips_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_paracetamol_500">
+        <label>Paracetamol Tablets, 500mg</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_500_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_paracetamol_500 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_500_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_paracetamol_500 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_500_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/paracetamol_500_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_bandages">
+        <label>Bandages</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bandages_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_bandages "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bandages_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_bandages "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bandages_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bandages_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_povi">
+        <label>Povidone Iodine Solution</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/povi_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_povi "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/povi_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_povi "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/povi_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/povi_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_strap">
+        <label>Strapping</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/strap_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_strap "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/strap_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_strap "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/strap_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/strap_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_gloves">
+        <label>Gloves</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gloves_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_gloves "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gloves_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_gloves "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gloves_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/gloves_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_envelopes">
+        <label>Medical Dispensing Envelopes</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/envelopes_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_envelopes "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/envelopes_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_envelopes "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/envelopes_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/envelopes_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_glucometer">
+        <label>Glucometer</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/glucometer_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_glucometer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/glucometer_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_glucometer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/glucometer_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/glucometer_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_backpack">
+        <label>Backpack with logo</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/backpack_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_backpack "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/backpack_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_backpack "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/backpack_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/backpack_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_badge">
+        <label>Badge (Name Tag)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/badge_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_badge "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/badge_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_badge "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/badge_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/badge_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_flashlight">
+        <label>Flashlight (Torch)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/flashlight_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_flashlight "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/flashlight_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_flashlight "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/flashlight_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/flashlight_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_salter">
+        <label>Salter scale</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/salter_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_salter "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/salter_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_salter "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/salter_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/salter_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_color_salter">
+        <label>Color coded salter scale</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/color_salter_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_color_salter "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/color_salter_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_color_salter "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/color_salter_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/color_salter_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_weighing_scale">
+        <label>Weighing scale (Bathroom)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/weighing_scale_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_weighing_scale "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/weighing_scale_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_weighing_scale "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/weighing_scale_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/weighing_scale_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_first_aid">
+        <label>First Aid Kit</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/first_aid_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_first_aid "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/first_aid_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_first_aid "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/first_aid_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/first_aid_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_bp">
+        <label>BP Machine</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bp_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_bp "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bp_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_bp "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bp_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/bp_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_thermometer">
+        <label>Digital Thermometer</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/thermometer_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_thermometer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/thermometer_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_thermometer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/thermometer_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/thermometer_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_resp_timer">
+        <label>Respiratory Timer</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/resp_timer_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_resp_timer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/resp_timer_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_resp_timer "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/resp_timer_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/resp_timer_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_muac_tape_adults">
+        <label>MUAC TAPE (Adults)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_adults_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_muac_tape_adults "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_adults_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_muac_tape_adults "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_adults_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_adults_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_muac_tape_children">
+        <label>MUAC TAPE (Children)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_children_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_muac_tape_children "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_children_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_muac_tape_children "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_children_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/muac_tape_children_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_family_muac_tape">
+        <label>Family MUAC tape (Children)</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/family_muac_tape_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_family_muac_tape "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/family_muac_tape_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_family_muac_tape "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/family_muac_tape_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/family_muac_tape_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_moh_514">
+        <label>Register MOH 514</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_514_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_moh_514 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_514_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_moh_514 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_514_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_514_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_moh_521">
+        <label>Register MOH 521</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_521_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_moh_521 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_521_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_moh_521 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_521_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_521_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_moh_100">
+        <label>Referral Form MOH 100</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_100_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_moh_100 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_100_contact_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_moh_100 "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_100_confirmed_by_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/moh_100_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_comm_daily_register">
+        <label>Community commodity Daily Activity Register</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/comm_daily_register_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_comm_daily_register "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/comm_daily_register_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_comm_daily_register "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/comm_daily_register_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/comm_daily_register_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_phone">
+        <label>Mobile Phone</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/phone_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_phone "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/phone_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_phone "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/phone_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/phone_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_safety_box">
+        <label>Safety Box</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/safety_box_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_safety_box "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/safety_box_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_safety_box "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/safety_box_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/safety_box_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/n_others">
+        <label>Others</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/others_issued_by_cha">
+        <label>Quantity issued by the CHA: **<output value=" /commodity_discrepancy/rs_others "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/others_confirmed_by_chv">
+        <label>Quantity confirmed by the CHP : **<output value=" /commodity_discrepancy/rd_others "/>**</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/others_contact_chv">
+        <label>Contact the CHP and confirm the correct quantity issued</label>
+      </input>
+      <input ref="/commodity_discrepancy/s_discrepancy/others_amended">
+        <label>Amend the quantities issued</label>
+      </input>
+    </group>
+    <group ref="/commodity_discrepancy/additional_doc">
+      <group ref="/commodity_discrepancy/additional_doc/contact">
+        <label></label>
+      </group>
+      <group ref="/commodity_discrepancy/additional_doc/fields">
+        <label></label>
+      </group>
+    </group>
+  </h:body>
+</h:html>

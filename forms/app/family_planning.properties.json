@@ -1,0 +1,9 @@
+{
+    "title": "Family Planning Service",
+    "icon": "icon-family-planning-service",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'f_client' && (!contact.date_of_birth || (ageInYears(contact) >= 15 && ageInYears(contact) <= 49)) && summary.is_female_or_intersex && user.parent &&  user.parent.contact_type === 'd_community_health_volunteer_area' && summary.is_eligible_for_home_visit_service && !summary.is_pregnant"
+    }
+}

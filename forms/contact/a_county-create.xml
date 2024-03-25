@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>New County</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/a_county/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/a_county/is_name_generated/false:label">
+            <value>No, I want to name it manually</value>
+          </text>
+          <text id="/data/a_county/is_name_generated/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/a_county/is_name_generated:label">
+            <value>Would you like to name the place after the primary contact?</value>
+          </text>
+          <text id="/data/a_county/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/contact/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>New Person</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>Create a new person</value>
+          </text>
+          <text id="/data/init/create_new_person/none:label">
+            <value>Skip this step</value>
+          </text>
+          <text id="/data/init/create_new_person/old_person:label">
+            <value>Select an existing person</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
+          </text>
+          <text id="/data/init/custom_place_name:label">
+            <value>Name of this <output value=" /data/init/place_type_translation "/></value>
+          </text>
+          <text id="/data/init/generated_name/a_county:label">
+            <value><output value=" /data/init/contact_name "/>'s County</value>
+          </text>
+          <text id="/data/init/generated_name/b_sub_county:label">
+            <value><output value=" /data/init/contact_name "/>'s Sub County</value>
+          </text>
+          <text id="/data/init/generated_name/c_community_health_unit:label">
+            <value><output value=" /data/init/contact_name "/>'s Community Health Unit</value>
+          </text>
+          <text id="/data/init/generated_name/d_community_health_volunteer_area:label">
+            <value><output value=" /data/init/contact_name "/>'s Area</value>
+          </text>
+          <text id="/data/init/generated_name/e_household:label">
+            <value><output value=" /data/init/contact_name "/>'s Household</value>
+          </text>
+          <text id="/data/init/place_type/a_county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/init/place_type/b_sub_county:label">
+            <value>Sub County</value>
+          </text>
+          <text id="/data/init/place_type/c_community_health_unit:label">
+            <value>Community Health Unit</value>
+          </text>
+          <text id="/data/init/place_type/d_community_health_volunteer_area:label">
+            <value>Community Health Promoter Area</value>
+          </text>
+          <text id="/data/init/place_type/e_household:label">
+            <value>Household</value>
+          </text>
+          <text id="/data/init/place_type:label">
+            <value>Enter the name of this place</value>
+          </text>
+          <text id="/data/init/select_person:label">
+            <value>Select the Primary Contact</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:a_county:create" prefix="J1!contact:a_county:create!" delimiter="#" version="2023-06-19  17-27">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <a_county>
+            <parent>PARENT</parent>
+            <type/>
+            <is_name_generated>true</is_name_generated>
+            <name/>
+            <external_id/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </a_county>
+          <init>
+            <create_new_person/>
+            <select_person/>
+            <name/>
+            <contact_name/>
+            <custom_place_name/>
+            <place_type>a_county</place_type>
+            <place_type_translation/>
+            <generated_name>a_county</generated_name>
+            <generated_name_translation/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>person</type>
+            <name/>
+            <phone/>
+            <phone_alternate/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="0"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" required="true()" relevant="selected( /data/init/create_new_person ,'old_person')"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/init/contact_name" type="string" calculate="coalesce(../name, ../../contact/name)"/>
+      <bind nodeset="/data/init/custom_place_name" type="string" required="true()" relevant="selected( /data/init/create_new_person ,'none') or selected( /data/a_county/is_name_generated , 'false') or selected( /data/a_county/is_name_generated , 'no')"/>
+      <bind nodeset="/data/init/place_type" type="select1"/>
+      <bind nodeset="/data/init/place_type_translation" type="string" calculate="jr:choice-name( /data/init/place_type ,' /data/init/place_type ')"/>
+      <bind nodeset="/data/init/generated_name" type="select1"/>
+      <bind nodeset="/data/init/generated_name_translation" type="string" calculate="jr:choice-name( /data/init/generated_name ,' /data/init/generated_name ')"/>
+      <bind nodeset="/data/contact" relevant="selected( /data/init/create_new_person ,'new_person')"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/name" type="string" required="true()"/>
+      <bind nodeset="/data/contact/phone" type="tel" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" constraint="1"/>
+      <bind nodeset="/data/contact/phone_alternate" type="tel" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" constraint="1"/>
+      <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/contact/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/a_county/parent" type="string"/>
+      <bind nodeset="/data/a_county/type" type="string"/>
+      <bind nodeset="/data/a_county/is_name_generated" type="select1" required="true()" relevant="not(selected( /data/init/create_new_person ,'none'))"/>
+      <bind nodeset="/data/a_county/name" type="string" required="true()" calculate="if( ( selected( /data/a_county/is_name_generated , 'true') or selected( /data/a_county/is_name_generated , 'yes') ),  /data/init/generated_name_translation ,  /data/init/custom_place_name )"/>
+      <bind nodeset="/data/a_county/external_id" type="string"/>
+      <bind nodeset="/data/a_county/contact" type="string" calculate="if(selected( /data/init/create_new_person ,'none'), &quot;&quot;, coalesce( /data/init/select_person ,&quot;NEW&quot;))"/>
+      <bind nodeset="/data/a_county/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/a_county/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/a_county/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/a_county/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/new_person:label')"/>
+          <value>new_person</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/old_person:label')"/>
+          <value>old_person</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/none:label')"/>
+          <value>none</value>
+        </item>
+      </select1>
+      <input appearance="db-object" ref="/data/init/select_person">
+        <label ref="jr:itext('/data/init/select_person:label')"/>
+      </input>
+      <input appearance="hidden" ref="/data/init/name"/>
+      <select1 appearance="hidden" ref="/data/init/place_type">
+        <label ref="jr:itext('/data/init/place_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/a_county:label')"/>
+          <value>a_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/b_sub_county:label')"/>
+          <value>b_sub_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/c_community_health_unit:label')"/>
+          <value>c_community_health_unit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/d_community_health_volunteer_area:label')"/>
+          <value>d_community_health_volunteer_area</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/place_type/e_household:label')"/>
+          <value>e_household</value>
+        </item>
+      </select1>
+      <select1 appearance="hidden" ref="/data/init/generated_name">
+        <item>
+          <label ref="jr:itext('/data/init/generated_name/a_county:label')"/>
+          <value>a_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/generated_name/b_sub_county:label')"/>
+          <value>b_sub_county</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/generated_name/c_community_health_unit:label')"/>
+          <value>c_community_health_unit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/generated_name/d_community_health_volunteer_area:label')"/>
+          <value>d_community_health_volunteer_area</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/generated_name/e_household:label')"/>
+          <value>e_household</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/data/contact">
+        <label ref="jr:itext('/data/contact:label')"/>
+        <input ref="/data/contact/name">
+          <label ref="jr:itext('/data/contact/name:label')"/>
+        </input>
+        <input ref="/data/contact/phone">
+          <label ref="jr:itext('/data/contact/phone:label')"/>
+        </input>
+        <input ref="/data/contact/phone_alternate">
+          <label ref="jr:itext('/data/contact/phone_alternate:label')"/>
+        </input>
+        <group appearance="hidden" ref="/data/contact/meta"/>
+        </group>
+      </group>
+    <group appearance="field-list" ref="/data/a_county">
+      <select1 ref="/data/a_county/is_name_generated">
+        <label ref="jr:itext('/data/a_county/is_name_generated:label')"/>
+        <item>
+          <label ref="jr:itext('/data/a_county/is_name_generated/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/a_county/is_name_generated/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <input ref="/data/init/custom_place_name">
+        <label ref="jr:itext('/data/init/custom_place_name:label')"/>
+      </input>
+      <input ref="/data/a_county/external_id">
+        <label ref="jr:itext('/data/a_county/external_id:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/a_county/meta"/>
+    </group>
+  </h:body>
+</h:html>

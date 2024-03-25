@@ -1,0 +1,7 @@
+{
+    "icon": "icon-person",
+    "context": {
+        "person": false,
+        "place": false
+    }
+}

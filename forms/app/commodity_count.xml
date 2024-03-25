@@ -1,0 +1,2161 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Commodity Count</h:title>
+    <model>
+      <instance>
+        <commodity_count id="commodity_count" prefix="J1!commodity_count!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <place_id/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <community_health_unit_name/>
+          <stock_summary_rdts/>
+          <stock_summary_act_6/>
+          <stock_summary_act_12/>
+          <stock_summary_act_18/>
+          <stock_summary_act_24/>
+          <stock_summary_dt_250/>
+          <stock_summary_ors_zinc/>
+          <stock_summary_ors_sachets/>
+          <stock_summary_zinc_sulphate/>
+          <stock_summary_albendazole/>
+          <stock_summary_tetra_eye/>
+          <stock_summary_paracetamol_120/>
+          <stock_summary_mebendazole/>
+          <stock_summary_coc/>
+          <stock_summary_prog/>
+          <stock_summary_depo_im/>
+          <stock_summary_depo_sc/>
+          <stock_summary_preg_strip/>
+          <stock_summary_condoms/>
+          <stock_summary_chlorine/>
+          <stock_summary_gluc_strips/>
+          <stock_summary_paracetamol_500/>
+          <stock_summary_bandages/>
+          <stock_summary_povi/>
+          <stock_summary_strap/>
+          <stock_summary_gloves/>
+          <stock_summary_envelopes/>
+          <stock_summary_glucometer/>
+          <stock_summary_backpack/>
+          <stock_summary_badge/>
+          <stock_summary_flashlight/>
+          <stock_summary_salter/>
+          <stock_summary_color_salter/>
+          <stock_summary_weighing_scale/>
+          <stock_summary_first_aid/>
+          <stock_summary_bp/>
+          <stock_summary_thermometer/>
+          <stock_summary_resp_timer/>
+          <stock_summary_muac_tape_adults/>
+          <stock_summary_muac_tape_children/>
+          <stock_summary_family_muac_tape/>
+          <stock_summary_moh_513/>
+          <stock_summary_moh_514/>
+          <stock_summary_moh_521/>
+          <stock_summary_moh_100/>
+          <stock_summary_comm_daily_register/>
+          <stock_summary_phone/>
+          <stock_summary_safety_box/>
+          <stock_summary_others/>
+          <system_soh_rdts/>
+          <system_soh_act_6/>
+          <system_soh_act_12/>
+          <system_soh_act_18/>
+          <system_soh_act_24/>
+          <system_soh_dt_250/>
+          <system_soh_ors_zinc/>
+          <system_soh_ors_sachets/>
+          <system_soh_zinc_sulphate/>
+          <system_soh_albendazole/>
+          <system_soh_tetra_eye/>
+          <system_soh_paracetamol_120/>
+          <system_soh_mebendazole/>
+          <system_soh_coc/>
+          <system_soh_prog/>
+          <system_soh_depo_im/>
+          <system_soh_depo_sc/>
+          <system_soh_preg_strip/>
+          <system_soh_condoms/>
+          <system_soh_chlorine/>
+          <system_soh_gluc_strips/>
+          <system_soh_paracetamol_500/>
+          <system_soh_bandages/>
+          <system_soh_povi/>
+          <system_soh_strap/>
+          <system_soh_gloves/>
+          <system_soh_envelopes/>
+          <system_soh_glucometer/>
+          <system_soh_backpack/>
+          <system_soh_badge/>
+          <system_soh_flashlight/>
+          <system_soh_salter/>
+          <system_soh_color_salter/>
+          <system_soh_weighing_scale/>
+          <system_soh_first_aid/>
+          <system_soh_bp/>
+          <system_soh_thermometer/>
+          <system_soh_resp_timer/>
+          <system_soh_muac_tape_adults/>
+          <system_soh_muac_tape_children/>
+          <system_soh_family_muac_tape/>
+          <system_soh_moh_513/>
+          <system_soh_moh_514/>
+          <system_soh_moh_521/>
+          <system_soh_moh_100/>
+          <system_soh_comm_daily_register/>
+          <system_soh_phone/>
+          <system_soh_safety_box/>
+          <system_soh_others/>
+          <rdts_count_final/>
+          <act_6_count_final/>
+          <act_12_count_final/>
+          <act_18_count_final/>
+          <act_24_count_final/>
+          <dt_250_count_final/>
+          <ors_zinc_count_final/>
+          <ors_sachets_count_final/>
+          <zinc_sulphate_count_final/>
+          <albendazole_count_final/>
+          <tetra_eye_count_final/>
+          <paracetamol_120_count_final/>
+          <mebendazole_count_final/>
+          <coc_count_final/>
+          <prog_count_final/>
+          <depo_im_count_final/>
+          <depo_sc_count_final/>
+          <preg_strip_count_final/>
+          <condoms_count_final/>
+          <chlorine_count_final/>
+          <gluc_strips_count_final/>
+          <paracetamol_500_count_final/>
+          <bandages_count_final/>
+          <povi_count_final/>
+          <strap_count_final/>
+          <gloves_count_final/>
+          <envelopes_count_final/>
+          <glucometer_count_final/>
+          <backpack_count_final/>
+          <badge_count_final/>
+          <flashlight_count_final/>
+          <salter_count_final/>
+          <color_salter_count_final/>
+          <weighing_scale_count_final/>
+          <first_aid_count_final/>
+          <bp_count_final/>
+          <thermometer_count_final/>
+          <resp_timer_count_final/>
+          <muac_tape_adults_count_final/>
+          <muac_tape_children_count_final/>
+          <family_muac_tape_count_final/>
+          <moh_513_count_final/>
+          <moh_514_count_final/>
+          <moh_521_count_final/>
+          <moh_100_count_final/>
+          <comm_daily_register_count_final/>
+          <phone_count_final/>
+          <safety_box_count_final/>
+          <others_count_final/>
+          <awc_rdts/>
+          <awc_act_6/>
+          <awc_act_12/>
+          <awc_act_18/>
+          <awc_act_24/>
+          <awc_dt_250/>
+          <awc_ors_zinc/>
+          <awc_ors_sachets/>
+          <awc_zinc_sulphate/>
+          <awc_albendazole/>
+          <awc_tetra_eye/>
+          <awc_paracetamol_120/>
+          <awc_mebendazole/>
+          <awc_coc/>
+          <awc_prog/>
+          <awc_depo_im/>
+          <awc_depo_sc/>
+          <awc_preg_strip/>
+          <awc_chlorine/>
+          <awc_gluc_strips/>
+          <awc_paracetamol_500/>
+          <awc_bandages/>
+          <awc_povi/>
+          <awc_strap/>
+          <awc_gloves/>
+          <awc_envelopes/>
+          <awc_glucometer/>
+          <awc_backpack/>
+          <awc_badge/>
+          <awc_flashlight/>
+          <awc_salter/>
+          <awc_color_salter/>
+          <awc_weighing_scale/>
+          <awc_first_aid/>
+          <awc_bp/>
+          <awc_thermometer/>
+          <awc_resp_timer/>
+          <awc_muac_tape_adults/>
+          <awc_muac_tape_children/>
+          <awc_family_muac_tape/>
+          <awc_moh_514/>
+          <awc_moh_521/>
+          <awc_moh_100/>
+          <awc_comm_daily_register/>
+          <awc_phone/>
+          <awc_safety_box/>
+          <awc_others/>
+          <wos_rdts/>
+          <wos_act_6/>
+          <wos_act_12/>
+          <wos_act_18/>
+          <wos_act_24/>
+          <wos_dt_250/>
+          <wos_ors_zinc/>
+          <wos_ors_sachets/>
+          <wos_zinc_sulphate/>
+          <wos_albendazole/>
+          <wos_tetra_eye/>
+          <wos_paracetamol_120/>
+          <wos_mebendazole/>
+          <wos_coc/>
+          <wos_prog/>
+          <wos_depo_im/>
+          <wos_depo_sc/>
+          <wos_preg_strip/>
+          <wos_chlorine/>
+          <wos_gluc_strips/>
+          <wos_paracetamol_500/>
+          <wos_bandages/>
+          <wos_povi/>
+          <wos_strap/>
+          <wos_gloves/>
+          <wos_envelopes/>
+          <wos_glucometer/>
+          <wos_backpack/>
+          <wos_badge/>
+          <wos_flashlight/>
+          <wos_salter/>
+          <wos_color_salter/>
+          <wos_weighing_scale/>
+          <wos_first_aid/>
+          <wos_bp/>
+          <wos_thermometer/>
+          <wos_resp_timer/>
+          <wos_muac_tape_adults/>
+          <wos_muac_tape_children/>
+          <wos_family_muac_tape/>
+          <wos_moh_514/>
+          <wos_moh_521/>
+          <wos_moh_100/>
+          <wos_comm_daily_register/>
+          <wos_phone/>
+          <wos_safety_box/>
+          <wos_others/>
+          <commodity_count>
+            <confirm_commodities/>
+          </commodity_count>
+          <s_malaria>
+            <rdts/>
+            <rdts_stock_on_hand/>
+            <rdts_system_stock_on_hand/>
+            <rdts_recount/>
+            <rdts_remarks/>
+            <act/>
+            <act_stock/>
+            <act_6_stock_on_hand/>
+            <act_6_system_stock_on_hand/>
+            <act_6_recount/>
+            <act_12_stock_on_hand/>
+            <act_12_system_stock_on_hand/>
+            <act_12_recount/>
+            <act_18_stock_on_hand/>
+            <act_18_system_stock_on_hand/>
+            <act_18_recount/>
+            <act_24_stock_on_hand/>
+            <act_24_system_stock_on_hand/>
+            <act_24_recount/>
+            <acts_remarks/>
+          </s_malaria>
+          <s_child_health>
+            <dt_250_note/>
+            <dt_250_stock_on_hand/>
+            <dt_250_system_stock_on_hand/>
+            <dt_250_recount/>
+            <dt_250_remarks/>
+            <ors_zinc_note/>
+            <ors_zinc_stock_on_hand/>
+            <ors_zinc_system_stock_on_hand/>
+            <ors_zinc_recount/>
+            <ors_zinc_remarks/>
+            <ors_sachets_note/>
+            <ors_sachets_stock_on_hand/>
+            <ors_sachets_system_stock_on_hand/>
+            <ors_sachets_recount/>
+            <ors_sachets_remarks/>
+            <zinc_sulphate_note/>
+            <zinc_sulphate_stock_on_hand/>
+            <zinc_sulphate_system_stock_on_hand/>
+            <zinc_sulphate_recount/>
+            <zinc_sulphate_remarks/>
+            <albendazole_note/>
+            <albendazole_stock_on_hand/>
+            <albendazole_system_stock_on_hand/>
+            <albendazole_recount/>
+            <albendazole_remarks/>
+            <tetra_eye_note/>
+            <tetra_eye_stock_on_hand/>
+            <tetra_eye_system_stock_on_hand/>
+            <tetra_eye_recount/>
+            <tetra_eye_remarks/>
+            <paracetamol_120_note/>
+            <paracetamol_120_stock_on_hand/>
+            <paracetamol_120_system_stock_on_hand/>
+            <paracetamol_120_recount/>
+            <paracetamol_120_remarks/>
+          </s_child_health>
+          <s_reproductive>
+            <mebendazole_note/>
+            <mebendazole_stock_on_hand/>
+            <mebendazole_system_stock_on_hand/>
+            <mebendazole_recount/>
+            <mebendazole_remarks/>
+            <coc_note/>
+            <coc_stock_on_hand/>
+            <coc_system_stock_on_hand/>
+            <coc_recount/>
+            <coc_remarks/>
+            <prog_note/>
+            <prog_stock_on_hand/>
+            <prog_system_stock_on_hand/>
+            <prog_recount/>
+            <prog_remarks/>
+            <depo_im_note/>
+            <depo_im_stock_on_hand/>
+            <depo_im_system_stock_on_hand/>
+            <depo_im_recount/>
+            <depo_im_remarks/>
+            <depo_sc_note/>
+            <depo_sc_stock_on_hand/>
+            <depo_sc_system_stock_on_hand/>
+            <depo_sc_recount/>
+            <depo_sc_remarks/>
+            <preg_strip_bote/>
+            <preg_strip_stock_on_hand/>
+            <strip_system_stock_on_hand/>
+            <preg_strip_recount/>
+            <preg_strip_remarks/>
+            <condoms_note/>
+            <condoms_stock_on_hand/>
+            <condoms_system_stock_on_hand/>
+            <condoms_recount/>
+            <condoms_remarks/>
+          </s_reproductive>
+          <s_wash>
+            <chlorine_note/>
+            <chlorine_stock_on_hand/>
+            <chlorine_system_stock_on_hand/>
+            <chlorine_recount/>
+            <chlorine_remarks/>
+          </s_wash>
+          <s_ncds>
+            <gluc_strips_note/>
+            <gluc_strips_stock_on_hand/>
+            <gluc_strips_system_stock_on_hand/>
+            <gluc_strips_recount/>
+            <gluc_strips_remarks/>
+          </s_ncds>
+          <s_others>
+            <paracetamol_500_note/>
+            <paracetamol_500_stock_on_hand/>
+            <paracetamol_500_system_stock_on_hand/>
+            <paracetamol_500_recount/>
+            <paracetamol_remarks/>
+          </s_others>
+          <s_non_pharma>
+            <bandages/>
+            <bandages_stock_on_hand/>
+            <bandages_system_stock_on_hand/>
+            <bandages_recount/>
+            <bandages_remarks/>
+            <povi_/>
+            <povi_stock_on_hand/>
+            <povi_system_stock_on_hand/>
+            <povi_recount/>
+            <povi_remarks/>
+            <strap_note/>
+            <strap_stock_on_hand/>
+            <strap_system_stock_on_hand/>
+            <strap_recount/>
+            <strap_remarks/>
+            <gloves_note/>
+            <gloves_stock_on_hand/>
+            <gloves_system_stock_on_hand/>
+            <gloves_recount/>
+            <gloves_remarks/>
+            <envelopes_note/>
+            <envelopes_stock_on_hand/>
+            <envelopes_system_stock_on_hand/>
+            <envelopes_recount/>
+            <envelopes_remarks/>
+          </s_non_pharma>
+          <s_equipment>
+            <glucometer_note/>
+            <glucometer_stock_on_hand/>
+            <glucometer_system_stock_on_hand/>
+            <glucometer_recount/>
+            <glucometer_remarks/>
+            <backpack/>
+            <backpack_stock_on_hand/>
+            <backpack_system_stock_on_hand/>
+            <backpack_recount/>
+            <backpack_remarks/>
+            <badge_note/>
+            <badge_stock_on_hand/>
+            <badge_system_stock_on_hand/>
+            <badge_recount/>
+            <badge_remarks/>
+            <flashlight_note/>
+            <flashlight_stock_on_hand/>
+            <flashlight_system_stock_on_hand/>
+            <flashlight_recount/>
+            <flashlight_remarks/>
+            <salter_note/>
+            <salter_stock_on_hand/>
+            <salter_system_stock_on_hand/>
+            <salter_recount/>
+            <salter_system_remarks/>
+            <color_salter_note/>
+            <color_salter_stock_on_hand/>
+            <color_salter_system_stock_on_hand/>
+            <color_salter_recount/>
+            <color_salter_remarks/>
+            <weighing_scale_note/>
+            <weighing_scale_stock_on_hand/>
+            <weighing_scale_system_stock_on_hand/>
+            <weighing_scale_recount/>
+            <weighing_scale_remarks/>
+            <first_aid/>
+            <first_aid_stock_on_hand/>
+            <first_aid_system_stock_on_hand/>
+            <first_aid_recount/>
+            <first_aid_remarks/>
+            <bp_note/>
+            <bp_stock_on_hand/>
+            <bp_system_stock_on_hand/>
+            <bp_recount/>
+            <bp_remarks/>
+            <thermometer_note/>
+            <thermometer_stock_on_hand/>
+            <thermometer_system_stock_on_hand/>
+            <thermometer_recount/>
+            <thermometer_remarks/>
+            <resp_timer_note/>
+            <resp_timer_stock_on_hand/>
+            <resp_timer_system_stock_on_hand/>
+            <resp_timer_recount/>
+            <resp_timer_remarks/>
+            <muac_tape_adults_note/>
+            <muac_tape_adults_stock_on_hand/>
+            <muac_tape_adults_system_stock_on_hand/>
+            <muac_tape_adults_recount/>
+            <muac_tape_adults_remarks/>
+            <muac_tape_children_note/>
+            <muac_tape_children_stock_on_hand/>
+            <muac_tape_children_system_stock_on_hand/>
+            <muac_tape_children_recount/>
+            <muac_tape_children_remarks/>
+            <family_muac_tape_note/>
+            <family_muac_tape_stock_on_hand/>
+            <family_muac_tape_system_stock_on_hand/>
+            <family_muac_tape_recount/>
+            <family_muac_tape_remarks/>
+            <moh_513_note/>
+            <moh_513_stock_on_hand/>
+            <moh_513_system_stock_on_hand/>
+            <moh_513_recount/>
+            <moh_513_remarks/>
+            <moh_514_note/>
+            <moh_514_stock_on_hand/>
+            <moh_514_system_stock_on_hand/>
+            <moh_514_recount/>
+            <moh_514_remarks/>
+            <moh_521_note/>
+            <moh_521_stock_on_hand/>
+            <moh_521_system_stock_on_hand/>
+            <moh_521_recount/>
+            <moh_521_remarks/>
+            <moh_100_note/>
+            <moh_100_stock_on_hand/>
+            <moh_100_system_stock_on_hand/>
+            <moh_100_recount/>
+            <moh_100_remarks/>
+            <comm_daily_register_note/>
+            <comm_daily_register_stock_on_hand/>
+            <comm_daily_register_system_stock_on_hand/>
+            <comm_daily_register_recount/>
+            <comm_daily_remarks/>
+            <phone_note/>
+            <phone_stock_on_hand/>
+            <phone_system_stock_on_hand/>
+            <phone_recount/>
+            <phone_remarks/>
+            <safety_box_note/>
+            <safety_box_stock_on_hand/>
+            <safety_box_system_stock_on_hand/>
+            <safety_box_recount/>
+            <safety_box_remarks/>
+            <others_note/>
+            <others_specify/>
+            <others_stock_on_hand/>
+            <others_system_stock_on_hand/>
+          </s_equipment>
+          <r_summary>
+            <r_submit/>
+            <r_commodities/>
+            <r_malaria/>
+            <r_rdt_note/>
+            <r_act6_note/>
+            <r_act12_note/>
+            <r_act18_note/>
+            <r_act24_note/>
+            <r_child_health/>
+            <r_amox_note/>
+            <r_ors_zinc_note/>
+            <r_ors_note/>
+            <r_zinc_s_note/>
+            <r_albe_s_note/>
+            <r_tetra_note/>
+            <r_para_note/>
+            <r_repro_maternal/>
+            <r_mebendazole_note/>
+            <r_coc_note/>
+            <r_prog_note/>
+            <r_depo_im_note/>
+            <r_depo_sc_note/>
+            <r_preg_strip_note/>
+            <r_condoms_note/>
+            <r_wash/>
+            <r_chlorine_note/>
+            <r_ncds/>
+            <r_gluc_note/>
+            <r_others_section_note/>
+            <r_paracetamol_500_note/>
+            <r_non_pharma/>
+            <r_bandage_note/>
+            <r_povi_note/>
+            <r_strap_note/>
+            <r_glove_note/>
+            <r_env_note/>
+            <r_equipment/>
+            <r_gluc_eq_note/>
+            <r_backpack_note/>
+            <r_badge_note/>
+            <r_torch_note/>
+            <r_salter_note/>
+            <r_color_salter_note/>
+            <r_weighing_scale_note/>
+            <r_first_aid_note/>
+            <r_bp_note/>
+            <r_thermometer_note/>
+            <r_resp_timer_note/>
+            <r_muac_tape_adults_note/>
+            <r_muac_tape_children_note/>
+            <r_family_muac_tape_note/>
+            <r_moh_514_note/>
+            <r_moh_521_note/>
+            <r_moh_100_note/>
+            <r_comm_daily_register_note/>
+            <r_phone_note/>
+            <r_safety_box_note/>
+            <r_others_note/>
+          </r_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </commodity_count>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/commodity_count/inputs" constraint="field-list" relevant="./source='user'"/>
+      <bind nodeset="/commodity_count/inputs/source" type="string"/>
+      <bind nodeset="/commodity_count/inputs/source_id" type="string"/>
+      <bind nodeset="/commodity_count/inputs/contact/_id" type="db:person" constraint="db-object"/>
+      <bind nodeset="/commodity_count/inputs/contact/name" type="string"/>
+      <bind nodeset="/commodity_count/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/commodity_count/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/commodity_count/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/commodity_count/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/commodity_count/community_health_unit_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/commodity_count/stock_summary_rdts" type="string" calculate="instance('contact-summary')/context/stock_summary_rdts"/>
+      <bind nodeset="/commodity_count/stock_summary_act_6" type="string" calculate="instance('contact-summary')/context/stock_summary_act_6"/>
+      <bind nodeset="/commodity_count/stock_summary_act_12" type="string" calculate="instance('contact-summary')/context/stock_summary_act_12"/>
+      <bind nodeset="/commodity_count/stock_summary_act_18" type="string" calculate="instance('contact-summary')/context/stock_summary_act_18"/>
+      <bind nodeset="/commodity_count/stock_summary_act_24" type="string" calculate="instance('contact-summary')/context/stock_summary_act_24"/>
+      <bind nodeset="/commodity_count/stock_summary_dt_250" type="string" calculate="instance('contact-summary')/context/stock_summary_dt_250"/>
+      <bind nodeset="/commodity_count/stock_summary_ors_zinc" type="string" calculate="instance('contact-summary')/context/stock_summary_ors_zinc"/>
+      <bind nodeset="/commodity_count/stock_summary_ors_sachets" type="string" calculate="instance('contact-summary')/context/stock_summary_ors_sachets"/>
+      <bind nodeset="/commodity_count/stock_summary_zinc_sulphate" type="string" calculate="instance('contact-summary')/context/stock_summary_zinc_sulphate"/>
+      <bind nodeset="/commodity_count/stock_summary_albendazole" type="string" calculate="instance('contact-summary')/context/stock_summary_albendazole"/>
+      <bind nodeset="/commodity_count/stock_summary_tetra_eye" type="string" calculate="instance('contact-summary')/context/stock_summary_tetra_eye"/>
+      <bind nodeset="/commodity_count/stock_summary_paracetamol_120" type="string" calculate="instance('contact-summary')/context/stock_summary_paracetamol_120"/>
+      <bind nodeset="/commodity_count/stock_summary_mebendazole" type="string" calculate="instance('contact-summary')/context/stock_summary_mebendazole"/>
+      <bind nodeset="/commodity_count/stock_summary_coc" type="string" calculate="instance('contact-summary')/context/stock_summary_coc"/>
+      <bind nodeset="/commodity_count/stock_summary_prog" type="string" calculate="instance('contact-summary')/context/stock_summary_prog"/>
+      <bind nodeset="/commodity_count/stock_summary_depo_im" type="string" calculate="instance('contact-summary')/context/stock_summary_depo_im"/>
+      <bind nodeset="/commodity_count/stock_summary_depo_sc" type="string" calculate="instance('contact-summary')/context/stock_summary_depo_sc"/>
+      <bind nodeset="/commodity_count/stock_summary_preg_strip" type="string" calculate="instance('contact-summary')/context/stock_summary_preg_strip"/>
+      <bind nodeset="/commodity_count/stock_summary_condoms" type="string" calculate="instance('contact-summary')/context/stock_summary_condoms"/>
+      <bind nodeset="/commodity_count/stock_summary_chlorine" type="string" calculate="instance('contact-summary')/context/stock_summary_chlorine"/>
+      <bind nodeset="/commodity_count/stock_summary_gluc_strips" type="string" calculate="instance('contact-summary')/context/stock_summary_gluc_strips"/>
+      <bind nodeset="/commodity_count/stock_summary_paracetamol_500" type="string" calculate="instance('contact-summary')/context/stock_summary_paracetamol_500"/>
+      <bind nodeset="/commodity_count/stock_summary_bandages" type="string" calculate="instance('contact-summary')/context/stock_summary_bandages"/>
+      <bind nodeset="/commodity_count/stock_summary_povi" type="string" calculate="instance('contact-summary')/context/stock_summary_povi"/>
+      <bind nodeset="/commodity_count/stock_summary_strap" type="string" calculate="instance('contact-summary')/context/stock_summary_strap"/>
+      <bind nodeset="/commodity_count/stock_summary_gloves" type="string" calculate="instance('contact-summary')/context/stock_summary_gloves"/>
+      <bind nodeset="/commodity_count/stock_summary_envelopes" type="string" calculate="instance('contact-summary')/context/stock_summary_envelopes"/>
+      <bind nodeset="/commodity_count/stock_summary_glucometer" type="string" calculate="instance('contact-summary')/context/stock_summary_glucometer"/>
+      <bind nodeset="/commodity_count/stock_summary_backpack" type="string" calculate="instance('contact-summary')/context/stock_summary_backpack"/>
+      <bind nodeset="/commodity_count/stock_summary_badge" type="string" calculate="instance('contact-summary')/context/stock_summary_badge"/>
+      <bind nodeset="/commodity_count/stock_summary_flashlight" type="string" calculate="instance('contact-summary')/context/stock_summary_flashlight"/>
+      <bind nodeset="/commodity_count/stock_summary_salter" type="string" calculate="instance('contact-summary')/context/stock_summary_salter"/>
+      <bind nodeset="/commodity_count/stock_summary_color_salter" type="string" calculate="instance('contact-summary')/context/stock_summary_color_salter"/>
+      <bind nodeset="/commodity_count/stock_summary_weighing_scale" type="string" calculate="instance('contact-summary')/context/stock_summary_weighing_scale"/>
+      <bind nodeset="/commodity_count/stock_summary_first_aid" type="string" calculate="instance('contact-summary')/context/stock_summary_first_aid"/>
+      <bind nodeset="/commodity_count/stock_summary_bp" type="string" calculate="instance('contact-summary')/context/stock_summary_bp"/>
+      <bind nodeset="/commodity_count/stock_summary_thermometer" type="string" calculate="instance('contact-summary')/context/stock_summary_thermometer"/>
+      <bind nodeset="/commodity_count/stock_summary_resp_timer" type="string" calculate="instance('contact-summary')/context/stock_summary_resp_timer"/>
+      <bind nodeset="/commodity_count/stock_summary_muac_tape_adults" type="string" calculate="instance('contact-summary')/context/stock_summary_muac_tape_adults"/>
+      <bind nodeset="/commodity_count/stock_summary_muac_tape_children" type="string" calculate="instance('contact-summary')/context/stock_summary_muac_tape_children"/>
+      <bind nodeset="/commodity_count/stock_summary_family_muac_tape" type="string" calculate="instance('contact-summary')/context/stock_summary_family_muac_tape"/>
+      <bind nodeset="/commodity_count/stock_summary_moh_513" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_513"/>
+      <bind nodeset="/commodity_count/stock_summary_moh_514" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_514"/>
+      <bind nodeset="/commodity_count/stock_summary_moh_521" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_521"/>
+      <bind nodeset="/commodity_count/stock_summary_moh_100" type="string" calculate="instance('contact-summary')/context/stock_summary_moh_100"/>
+      <bind nodeset="/commodity_count/stock_summary_comm_daily_register" type="string" calculate="instance('contact-summary')/context/stock_summary_comm_daily_register"/>
+      <bind nodeset="/commodity_count/stock_summary_phone" type="string" calculate="instance('contact-summary')/context/stock_summary_phone"/>
+      <bind nodeset="/commodity_count/stock_summary_safety_box" type="string" calculate="instance('contact-summary')/context/stock_summary_safety_box"/>
+      <bind nodeset="/commodity_count/stock_summary_others" type="string" calculate="instance('contact-summary')/context/stock_summary_others"/>
+      <bind nodeset="/commodity_count/system_soh_rdts" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_rdts ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_act_6" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_6 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_act_12" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_12 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_act_18" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_18 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_act_24" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_24 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_dt_250" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_dt_250 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_ors_zinc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_ors_zinc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_ors_sachets" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_ors_sachets ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_zinc_sulphate" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_zinc_sulphate ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_albendazole" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_albendazole ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_tetra_eye" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_tetra_eye ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_paracetamol_120" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_paracetamol_120 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_mebendazole" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_mebendazole ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_coc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_coc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_prog" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_prog ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_depo_im" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_depo_im ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_depo_sc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_depo_sc ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_preg_strip" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_preg_strip ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_condoms" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_condoms ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_chlorine" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_chlorine ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_gluc_strips" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_gluc_strips ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_paracetamol_500" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_paracetamol_500 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_bandages" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_bandages ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_povi" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_povi ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_strap" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_strap ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_gloves" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_gloves ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_envelopes" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_envelopes ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_glucometer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_glucometer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_backpack" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_backpack ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_badge" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_badge ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_flashlight" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_flashlight ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_salter" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_salter ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_color_salter" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_color_salter ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_weighing_scale" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_weighing_scale ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_first_aid" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_first_aid ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_bp" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_bp ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_thermometer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_thermometer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_resp_timer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_resp_timer ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_muac_tape_adults" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_muac_tape_adults ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_muac_tape_children" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_muac_tape_children ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_family_muac_tape" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_family_muac_tape ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_moh_513" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_513 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_moh_514" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_514 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_moh_521" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_521 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_moh_100" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_100 ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_comm_daily_register" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_comm_daily_register ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_phone" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_phone ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_safety_box" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_safety_box ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/system_soh_others" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_others ,0),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/rdts_count_final" type="string" calculate="coalesce( /commodity_count/s_malaria/rdts_recount ,  /commodity_count/s_malaria/rdts_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/act_6_count_final" type="string" calculate="coalesce(coalesce( /commodity_count/s_malaria/act_6_recount ,  /commodity_count/s_malaria/act_6_stock_on_hand ),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/act_12_count_final" type="string" calculate="coalesce(coalesce( /commodity_count/s_malaria/act_12_recount ,  /commodity_count/s_malaria/act_12_stock_on_hand ),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/act_18_count_final" type="string" calculate="coalesce(coalesce( /commodity_count/s_malaria/act_18_recount ,  /commodity_count/s_malaria/act_18_stock_on_hand ),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/act_24_count_final" type="string" calculate="coalesce(coalesce( /commodity_count/s_malaria/act_24_recount ,  /commodity_count/s_malaria/act_24_stock_on_hand ),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/dt_250_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/dt_250_recount ,  /commodity_count/s_child_health/dt_250_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/ors_zinc_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/ors_zinc_recount ,  /commodity_count/s_child_health/ors_zinc_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/ors_sachets_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/ors_sachets_recount ,  /commodity_count/s_child_health/ors_sachets_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/zinc_sulphate_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/zinc_sulphate_recount ,  /commodity_count/s_child_health/zinc_sulphate_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/albendazole_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/albendazole_recount ,  /commodity_count/s_child_health/albendazole_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/tetra_eye_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/tetra_eye_recount ,  /commodity_count/s_child_health/tetra_eye_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/paracetamol_120_count_final" type="string" calculate="coalesce( /commodity_count/s_child_health/paracetamol_120_recount ,  /commodity_count/s_child_health/paracetamol_120_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/mebendazole_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/mebendazole_recount ,  /commodity_count/s_reproductive/mebendazole_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/coc_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/coc_recount ,  /commodity_count/s_reproductive/coc_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/prog_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/prog_recount ,  /commodity_count/s_reproductive/prog_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/depo_im_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/depo_im_recount ,  /commodity_count/s_reproductive/depo_im_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/depo_sc_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/depo_sc_recount ,  /commodity_count/s_reproductive/depo_sc_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/preg_strip_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/preg_strip_recount ,  /commodity_count/s_reproductive/preg_strip_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/condoms_count_final" type="string" calculate="coalesce( /commodity_count/s_reproductive/condoms_recount ,  /commodity_count/s_reproductive/condoms_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/chlorine_count_final" type="string" calculate="coalesce( /commodity_count/s_wash/chlorine_recount ,  /commodity_count/s_wash/chlorine_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/gluc_strips_count_final" type="string" calculate="coalesce( /commodity_count/s_ncds/gluc_strips_recount ,  /commodity_count/s_ncds/gluc_strips_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/paracetamol_500_count_final" type="string" calculate="coalesce( /commodity_count/s_others/paracetamol_500_recount ,  /commodity_count/s_others/paracetamol_500_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/bandages_count_final" type="string" calculate="coalesce( /commodity_count/s_non_pharma/bandages_recount ,  /commodity_count/s_non_pharma/bandages_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/povi_count_final" type="string" calculate="coalesce( /commodity_count/s_non_pharma/povi_recount ,  /commodity_count/s_non_pharma/povi_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/strap_count_final" type="string" calculate="coalesce( /commodity_count/s_non_pharma/strap_recount ,  /commodity_count/s_non_pharma/strap_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/gloves_count_final" type="string" calculate="coalesce( /commodity_count/s_non_pharma/gloves_recount ,  /commodity_count/s_non_pharma/gloves_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/envelopes_count_final" type="string" calculate="coalesce( /commodity_count/s_non_pharma/envelopes_recount ,  /commodity_count/s_non_pharma/envelopes_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/glucometer_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/glucometer_recount ,  /commodity_count/s_equipment/glucometer_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/backpack_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/backpack_recount ,  /commodity_count/s_equipment/backpack_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/badge_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/badge_recount ,  /commodity_count/s_equipment/badge_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/flashlight_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/flashlight_recount ,  /commodity_count/s_equipment/flashlight_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/salter_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/salter_recount ,  /commodity_count/s_equipment/salter_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/color_salter_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/color_salter_recount ,  /commodity_count/s_equipment/color_salter_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/weighing_scale_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/weighing_scale_recount ,  /commodity_count/s_equipment/weighing_scale_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/first_aid_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/first_aid_recount ,  /commodity_count/s_equipment/first_aid_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/bp_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/bp_recount ,  /commodity_count/s_equipment/bp_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/thermometer_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/thermometer_recount ,  /commodity_count/s_equipment/thermometer_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/resp_timer_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/resp_timer_recount ,  /commodity_count/s_equipment/resp_timer_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/muac_tape_adults_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/muac_tape_adults_recount ,  /commodity_count/s_equipment/muac_tape_adults_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/muac_tape_children_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/muac_tape_children_recount ,  /commodity_count/s_equipment/muac_tape_children_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/family_muac_tape_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/family_muac_tape_recount ,  /commodity_count/s_equipment/family_muac_tape_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/moh_513_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/moh_513_recount ,  /commodity_count/s_equipment/moh_513_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/moh_514_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/moh_514_recount ,  /commodity_count/s_equipment/moh_514_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/moh_521_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/moh_521_recount ,  /commodity_count/s_equipment/moh_521_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/moh_100_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/moh_100_recount ,  /commodity_count/s_equipment/moh_100_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/comm_daily_register_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/comm_daily_register_recount ,  /commodity_count/s_equipment/comm_daily_register_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/phone_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/phone_recount , /commodity_count/s_equipment/phone_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/safety_box_count_final" type="string" calculate="coalesce( /commodity_count/s_equipment/safety_box_recount ,  /commodity_count/s_equipment/safety_box_stock_on_hand )"/>
+      <bind nodeset="/commodity_count/others_count_final" type="string" calculate=" /commodity_count/s_equipment/others_stock_on_hand "/>
+      <bind nodeset="/commodity_count/awc_rdts" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_rdts ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_act_6" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_6 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_act_12" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_12 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_act_18" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_18 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_act_24" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_act_24 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_dt_250" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_dt_250 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_ors_zinc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_ors_zinc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_ors_sachets" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_ors_sachets ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_zinc_sulphate" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_zinc_sulphate ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_albendazole" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_albendazole ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_tetra_eye" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_tetra_eye ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_paracetamol_120" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_paracetamol_120 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_mebendazole" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_mebendazole ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_coc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_coc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_prog" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_prog ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_depo_im" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_depo_im ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_depo_sc" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_depo_sc ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_preg_strip" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_preg_strip ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_chlorine" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_chlorine ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_gluc_strips" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_gluc_strips ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_paracetamol_500" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_paracetamol_500 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_bandages" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_bandages ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_povi" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_povi ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_strap" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_strap ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_gloves" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_gloves ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_envelopes" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_envelopes ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_glucometer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_glucometer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_backpack" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_backpack ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_badge" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_badge ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_flashlight" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_flashlight ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_salter" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_salter ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_color_salter" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_color_salter ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_weighing_scale" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_weighing_scale ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_first_aid" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_first_aid ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_bp" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_bp ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_thermometer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_thermometer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_resp_timer" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_resp_timer ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_muac_tape_adults" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_muac_tape_adults ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_muac_tape_children" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_muac_tape_children ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_family_muac_tape" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_family_muac_tape ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_moh_514" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_514 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_moh_521" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_521 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_moh_100" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_moh_100 ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_comm_daily_register" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_comm_daily_register ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_phone" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_phone ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_safety_box" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_safety_box ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/awc_others" type="string" calculate="coalesce(selected-at( /commodity_count/stock_summary_others ,1),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_rdts" type="string" calculate="coalesce(floor(number( /commodity_count/rdts_count_final ) div if( /commodity_count/awc_rdts  = &quot;0&quot;,1 , number( /commodity_count/awc_rdts ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_act_6" type="string" calculate="coalesce(floor(number( /commodity_count/act_6_count_final ) div if( /commodity_count/awc_act_6  = &quot;0&quot;,1 , number( /commodity_count/awc_act_6 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_act_12" type="string" calculate="coalesce(floor(number( /commodity_count/act_12_count_final ) div if( /commodity_count/awc_act_12  = &quot;0&quot;,1 , number( /commodity_count/awc_act_12 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_act_18" type="string" calculate="coalesce(floor(number( /commodity_count/act_18_count_final ) div if( /commodity_count/awc_act_18  = &quot;0&quot;,1 , number( /commodity_count/awc_act_18 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_act_24" type="string" calculate="coalesce(floor(number( /commodity_count/act_24_count_final ) div if( /commodity_count/awc_act_24  = &quot;0&quot;,1 , number( /commodity_count/awc_act_24 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_dt_250" type="string" calculate="coalesce(floor(number( /commodity_count/dt_250_count_final ) div if( /commodity_count/awc_dt_250  = &quot;0&quot;,1 , number( /commodity_count/awc_dt_250 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_ors_zinc" type="string" calculate="coalesce(floor(number( /commodity_count/ors_zinc_count_final ) div if( /commodity_count/awc_ors_zinc  = &quot;0&quot;,1 , number( /commodity_count/awc_ors_zinc ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_ors_sachets" type="string" calculate="coalesce(floor(number( /commodity_count/ors_sachets_count_final ) div if( /commodity_count/awc_ors_sachets  = &quot;0&quot;,1 , number( /commodity_count/awc_ors_sachets ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_zinc_sulphate" type="string" calculate="coalesce(floor(number( /commodity_count/zinc_sulphate_count_final ) div if( /commodity_count/awc_zinc_sulphate  = &quot;0&quot;,1 , number( /commodity_count/awc_zinc_sulphate ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_albendazole" type="string" calculate="coalesce(floor(number( /commodity_count/albendazole_count_final ) div if( /commodity_count/awc_albendazole  = &quot;0&quot;,1 , number( /commodity_count/awc_albendazole ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_tetra_eye" type="string" calculate="coalesce(floor(number( /commodity_count/tetra_eye_count_final ) div if( /commodity_count/awc_tetra_eye  = &quot;0&quot;,1 , number( /commodity_count/awc_tetra_eye ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_paracetamol_120" type="string" calculate="coalesce(floor(number( /commodity_count/paracetamol_120_count_final ) div if( /commodity_count/awc_paracetamol_120  = &quot;0&quot;,1 , number( /commodity_count/awc_paracetamol_120 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_mebendazole" type="string" calculate="coalesce(floor(number( /commodity_count/mebendazole_count_final ) div if( /commodity_count/awc_mebendazole  = &quot;0&quot;,1 , number( /commodity_count/awc_mebendazole ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_coc" type="string" calculate="coalesce(floor(number( /commodity_count/coc_count_final ) div if( /commodity_count/awc_coc  = &quot;0&quot;,1 , number( /commodity_count/awc_coc ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_prog" type="string" calculate="coalesce(floor(number( /commodity_count/prog_count_final ) div if( /commodity_count/awc_prog  = &quot;0&quot;,1 , number( /commodity_count/awc_prog ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_depo_im" type="string" calculate="coalesce(floor(number( /commodity_count/depo_im_count_final ) div if( /commodity_count/awc_depo_im  = &quot;0&quot;,1 , number( /commodity_count/awc_depo_im ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_depo_sc" type="string" calculate="coalesce(floor(number( /commodity_count/depo_sc_count_final ) div if( /commodity_count/awc_depo_sc  = &quot;0&quot;,1 , number( /commodity_count/awc_depo_sc ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_preg_strip" type="string" calculate="coalesce(floor(number( /commodity_count/preg_strip_count_final ) div if( /commodity_count/awc_preg_strip  = &quot;0&quot;,1 , number( /commodity_count/awc_preg_strip ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_chlorine" type="string" calculate="coalesce(floor(number( /commodity_count/chlorine_count_final ) div if( /commodity_count/awc_chlorine  = &quot;0&quot;,1 , number( /commodity_count/awc_chlorine ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_gluc_strips" type="string" calculate="coalesce(floor(number( /commodity_count/gluc_strips_count_final ) div if( /commodity_count/awc_gluc_strips  = &quot;0&quot;,1 , number( /commodity_count/awc_gluc_strips ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_paracetamol_500" type="string" calculate="coalesce(floor(number( /commodity_count/paracetamol_500_count_final ) div if( /commodity_count/awc_paracetamol_500  = &quot;0&quot;,1 , number( /commodity_count/awc_paracetamol_500 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_bandages" type="string" calculate="coalesce(floor(number( /commodity_count/bandages_count_final ) div if( /commodity_count/awc_bandages  = &quot;0&quot;,1 , number( /commodity_count/awc_bandages ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_povi" type="string" calculate="coalesce(floor(number( /commodity_count/povi_count_final ) div if( /commodity_count/awc_povi  = &quot;0&quot;,1 , number( /commodity_count/awc_povi ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_strap" type="string" calculate="coalesce(floor(number( /commodity_count/strap_count_final ) div if( /commodity_count/awc_strap  = &quot;0&quot;,1 , number( /commodity_count/awc_strap ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_gloves" type="string" calculate="coalesce(floor(number( /commodity_count/gloves_count_final ) div if( /commodity_count/awc_gloves  = &quot;0&quot;,1 , number( /commodity_count/awc_gloves ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_envelopes" type="string" calculate="coalesce(floor(number( /commodity_count/envelopes_count_final ) div if( /commodity_count/awc_envelopes  = &quot;0&quot;,1 , number( /commodity_count/awc_envelopes ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_glucometer" type="string" calculate="coalesce(floor(number( /commodity_count/glucometer_count_final ) div if( /commodity_count/awc_glucometer  = &quot;0&quot;,1 , number( /commodity_count/awc_glucometer ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_backpack" type="string" calculate="coalesce(floor(number( /commodity_count/backpack_count_final ) div if( /commodity_count/awc_backpack  = &quot;0&quot;,1 , number( /commodity_count/awc_backpack ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_badge" type="string" calculate="coalesce(floor(number( /commodity_count/badge_count_final ) div if( /commodity_count/awc_badge  = &quot;0&quot;,1 , number( /commodity_count/awc_badge ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_flashlight" type="string" calculate="coalesce(floor(number( /commodity_count/flashlight_count_final ) div if( /commodity_count/awc_flashlight  = &quot;0&quot;,1 , number( /commodity_count/awc_flashlight ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_salter" type="string" calculate="coalesce(floor(number( /commodity_count/salter_count_final ) div if( /commodity_count/awc_salter  = &quot;0&quot;,1 , number( /commodity_count/awc_salter ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_color_salter" type="string" calculate="coalesce(floor(number( /commodity_count/color_salter_count_final ) div if( /commodity_count/awc_color_salter  = &quot;0&quot;,1 , number( /commodity_count/awc_color_salter ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_weighing_scale" type="string" calculate="coalesce(floor(number( /commodity_count/weighing_scale_count_final ) div if( /commodity_count/awc_weighing_scale  = &quot;0&quot;,1 , number( /commodity_count/awc_weighing_scale ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_first_aid" type="string" calculate="coalesce(floor(number( /commodity_count/first_aid_count_final ) div if( /commodity_count/awc_first_aid  = &quot;0&quot;,1 , number( /commodity_count/awc_first_aid ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_bp" type="string" calculate="coalesce(floor(number( /commodity_count/bp_count_final ) div if( /commodity_count/awc_bp  = &quot;0&quot;,1 , number( /commodity_count/awc_bp ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_thermometer" type="string" calculate="coalesce(floor(number( /commodity_count/thermometer_count_final ) div if( /commodity_count/awc_thermometer  = &quot;0&quot;,1 , number( /commodity_count/awc_thermometer ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_resp_timer" type="string" calculate="coalesce(floor(number( /commodity_count/resp_timer_count_final ) div if( /commodity_count/awc_resp_timer  = &quot;0&quot;,1 , number( /commodity_count/awc_resp_timer ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_muac_tape_adults" type="string" calculate="coalesce(floor(number( /commodity_count/muac_tape_adults_count_final ) div if( /commodity_count/awc_muac_tape_adults  = &quot;0&quot;,1 , number( /commodity_count/awc_muac_tape_adults ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_muac_tape_children" type="string" calculate="coalesce(floor(number( /commodity_count/muac_tape_children_count_final ) div if( /commodity_count/awc_muac_tape_children  = &quot;0&quot;,1 , number( /commodity_count/awc_muac_tape_children ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_family_muac_tape" type="string" calculate="coalesce(floor(number( /commodity_count/family_muac_tape_count_final ) div if( /commodity_count/awc_family_muac_tape  = &quot;0&quot;,1 , number( /commodity_count/awc_family_muac_tape ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_moh_514" type="string" calculate="coalesce(floor(number( /commodity_count/moh_514_count_final ) div if( /commodity_count/awc_moh_514  = &quot;0&quot;,1 , number( /commodity_count/awc_moh_514 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_moh_521" type="string" calculate="coalesce(floor(number( /commodity_count/moh_521_count_final ) div if( /commodity_count/awc_moh_521  = &quot;0&quot;,1 , number( /commodity_count/awc_moh_521 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_moh_100" type="string" calculate="coalesce(floor(number( /commodity_count/moh_100_count_final ) div if( /commodity_count/awc_moh_100  = &quot;0&quot;,1 , number( /commodity_count/awc_moh_100 ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_comm_daily_register" type="string" calculate="coalesce(floor(number( /commodity_count/comm_daily_register_count_final ) div if( /commodity_count/awc_comm_daily_register  = &quot;0&quot;,1 , number( /commodity_count/awc_comm_daily_register ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_phone" type="string" calculate="coalesce(floor(number( /commodity_count/phone_count_final ) div if( /commodity_count/awc_phone  = &quot;0&quot;,1 , number( /commodity_count/awc_phone ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_safety_box" type="string" calculate="coalesce(floor(number( /commodity_count/safety_box_count_final ) div if( /commodity_count/awc_safety_box  = &quot;0&quot;,1 , number( /commodity_count/awc_safety_box ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/wos_others" type="string" calculate="coalesce(floor(number( /commodity_count/others_count_final ) div if( /commodity_count/awc_others  = &quot;0&quot;,1 , number( /commodity_count/awc_others ))),&quot;0&quot;)"/>
+      <bind nodeset="/commodity_count/commodity_count/confirm_commodities" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_malaria/rdts" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_malaria/rdts_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_malaria/rdts_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_malaria/rdts_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant="string-length( /commodity_count/s_malaria/rdts_stock_on_hand ) &gt;0 and (number( /commodity_count/s_malaria/rdts_stock_on_hand ) != number( /commodity_count/system_soh_rdts ))"/>
+      <bind nodeset="/commodity_count/s_malaria/rdts_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_malaria/act" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_malaria/act_stock" type="select"/>
+      <bind nodeset="/commodity_count/s_malaria/act_6_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_6')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_6_system_stock_on_hand" readonly="true()" type="string" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_6')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_6_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_malaria/act_6_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_malaria/act_6_stock_on_hand ) != number( /commodity_count/system_soh_act_6 ))"/>
+      <bind nodeset="/commodity_count/s_malaria/act_12_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_12')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_12_system_stock_on_hand" readonly="true()" type="string" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_12')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_12_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_malaria/act_12_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_malaria/act_12_stock_on_hand ) != number( /commodity_count/system_soh_act_12 ))"/>
+      <bind nodeset="/commodity_count/s_malaria/act_18_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_18')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_18_system_stock_on_hand" readonly="true()" type="string" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_18')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_18_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_malaria/act_18_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_malaria/act_18_stock_on_hand ) != number( /commodity_count/system_soh_act_18 ))"/>
+      <bind nodeset="/commodity_count/s_malaria/act_24_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_24')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_24_system_stock_on_hand" readonly="true()" type="string" relevant="selected( /commodity_count/s_malaria/act_stock ,'act_24')"/>
+      <bind nodeset="/commodity_count/s_malaria/act_24_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_malaria/act_24_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_malaria/act_24_stock_on_hand ) != number( /commodity_count/system_soh_act_24 ))"/>
+      <bind nodeset="/commodity_count/s_malaria/acts_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/dt_250_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/dt_250_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/dt_250_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/dt_250_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/dt_250_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/dt_250_stock_on_hand ) != number( /commodity_count/system_soh_dt_250 ))"/>
+      <bind nodeset="/commodity_count/s_child_health/dt_250_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_zinc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_zinc_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_zinc_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_zinc_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/ors_zinc_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/ors_zinc_stock_on_hand ) != number( /commodity_count/system_soh_ors_zinc ))"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_zinc_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_sachets_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_sachets_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_sachets_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_sachets_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/ors_sachets_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/ors_sachets_stock_on_hand ) != number( /commodity_count/system_soh_ors_sachets ))"/>
+      <bind nodeset="/commodity_count/s_child_health/ors_sachets_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/zinc_sulphate_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/zinc_sulphate_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/zinc_sulphate_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/zinc_sulphate_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/zinc_sulphate_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/zinc_sulphate_stock_on_hand ) != number( /commodity_count/system_soh_zinc_sulphate ))"/>
+      <bind nodeset="/commodity_count/s_child_health/zinc_sulphate_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/albendazole_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/albendazole_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/albendazole_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/albendazole_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/albendazole_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/albendazole_stock_on_hand ) != number( /commodity_count/system_soh_albendazole ))"/>
+      <bind nodeset="/commodity_count/s_child_health/albendazole_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/tetra_eye_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/tetra_eye_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/tetra_eye_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/tetra_eye_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/tetra_eye_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/tetra_eye_stock_on_hand ) != number( /commodity_count/system_soh_tetra_eye ))"/>
+      <bind nodeset="/commodity_count/s_child_health/tetra_eye_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/paracetamol_120_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/paracetamol_120_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_child_health/paracetamol_120_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_child_health/paracetamol_120_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_child_health/paracetamol_120_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_child_health/paracetamol_120_stock_on_hand ) != number( /commodity_count/system_soh_paracetamol_120 ))"/>
+      <bind nodeset="/commodity_count/s_child_health/paracetamol_120_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/mebendazole_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/mebendazole_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/mebendazole_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/mebendazole_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/mebendazole_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/mebendazole_stock_on_hand ) != number( /commodity_count/system_soh_mebendazole ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/mebendazole_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/coc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/coc_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/coc_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/coc_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/coc_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/coc_stock_on_hand ) != number( /commodity_count/system_soh_coc ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/coc_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/prog_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/prog_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/prog_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/prog_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/prog_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/prog_stock_on_hand ) != number( /commodity_count/system_soh_prog ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/prog_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_im_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_im_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_im_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_im_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/depo_im_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/depo_im_stock_on_hand ) != number( /commodity_count/system_soh_depo_im ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_im_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_sc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_sc_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_sc_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_sc_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/depo_sc_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/depo_sc_stock_on_hand ) != number( /commodity_count/system_soh_depo_sc ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/depo_sc_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/preg_strip_bote" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/preg_strip_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/strip_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/preg_strip_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/preg_strip_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/preg_strip_stock_on_hand ) != number( /commodity_count/system_soh_preg_strip ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/preg_strip_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/condoms_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/condoms_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_reproductive/condoms_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_reproductive/condoms_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_reproductive/condoms_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_reproductive/condoms_stock_on_hand ) != number( /commodity_count/system_soh_condoms ))"/>
+      <bind nodeset="/commodity_count/s_reproductive/condoms_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_wash/chlorine_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_wash/chlorine_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_wash/chlorine_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_wash/chlorine_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_wash/chlorine_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_wash/chlorine_stock_on_hand ) != number( /commodity_count/system_soh_chlorine ))"/>
+      <bind nodeset="/commodity_count/s_wash/chlorine_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_ncds/gluc_strips_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_ncds/gluc_strips_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_ncds/gluc_strips_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_ncds/gluc_strips_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_ncds/gluc_strips_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_ncds/gluc_strips_stock_on_hand ) != number( /commodity_count/system_soh_gluc_strips ))"/>
+      <bind nodeset="/commodity_count/s_ncds/gluc_strips_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_others/paracetamol_500_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_others/paracetamol_500_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_others/paracetamol_500_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_others/paracetamol_500_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_others/paracetamol_500_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_others/paracetamol_500_stock_on_hand ) != number( /commodity_count/system_soh_paracetamol_500 ))"/>
+      <bind nodeset="/commodity_count/s_others/paracetamol_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/bandages" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/bandages_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_non_pharma/bandages_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/bandages_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_non_pharma/bandages_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_non_pharma/bandages_stock_on_hand ) != number( /commodity_count/system_soh_bandages ))"/>
+      <bind nodeset="/commodity_count/s_non_pharma/bandages_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/povi_" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/povi_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_non_pharma/povi_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/povi_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_non_pharma/povi_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_non_pharma/povi_stock_on_hand ) != number( /commodity_count/system_soh_povi ))"/>
+      <bind nodeset="/commodity_count/s_non_pharma/povi_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/strap_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/strap_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_non_pharma/strap_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/strap_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_non_pharma/strap_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_non_pharma/strap_stock_on_hand ) != number( /commodity_count/system_soh_strap ))"/>
+      <bind nodeset="/commodity_count/s_non_pharma/strap_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/gloves_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/gloves_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_non_pharma/gloves_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/gloves_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_non_pharma/gloves_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_non_pharma/gloves_stock_on_hand ) != number( /commodity_count/system_soh_gloves ))"/>
+      <bind nodeset="/commodity_count/s_non_pharma/gloves_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/envelopes_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/envelopes_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_non_pharma/envelopes_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_non_pharma/envelopes_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_non_pharma/envelopes_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_non_pharma/envelopes_stock_on_hand ) != number( /commodity_count/system_soh_envelopes ))"/>
+      <bind nodeset="/commodity_count/s_non_pharma/envelopes_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/glucometer_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/glucometer_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/glucometer_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/glucometer_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/glucometer_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/glucometer_stock_on_hand ) != number( /commodity_count/system_soh_glucometer ))"/>
+      <bind nodeset="/commodity_count/s_equipment/glucometer_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/backpack" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/backpack_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/backpack_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/backpack_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/backpack_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/backpack_stock_on_hand ) != number( /commodity_count/system_soh_backpack ))"/>
+      <bind nodeset="/commodity_count/s_equipment/backpack_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/badge_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/badge_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/badge_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/badge_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/badge_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/badge_stock_on_hand ) != number( /commodity_count/system_soh_badge ))"/>
+      <bind nodeset="/commodity_count/s_equipment/badge_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/flashlight_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/flashlight_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/flashlight_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/flashlight_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/flashlight_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/flashlight_stock_on_hand ) != number( /commodity_count/system_soh_flashlight ))"/>
+      <bind nodeset="/commodity_count/s_equipment/flashlight_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/salter_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/salter_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/salter_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/salter_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/salter_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/salter_stock_on_hand ) != number( /commodity_count/system_soh_salter ))"/>
+      <bind nodeset="/commodity_count/s_equipment/salter_system_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/color_salter_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/color_salter_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/color_salter_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/color_salter_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/color_salter_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/color_salter_stock_on_hand ) != number( /commodity_count/system_soh_color_salter ))"/>
+      <bind nodeset="/commodity_count/s_equipment/color_salter_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/weighing_scale_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/weighing_scale_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/weighing_scale_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/weighing_scale_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/weighing_scale_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/weighing_scale_stock_on_hand ) != number( /commodity_count/system_soh_weighing_scale ))"/>
+      <bind nodeset="/commodity_count/s_equipment/weighing_scale_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/first_aid" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/first_aid_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/first_aid_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/first_aid_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/first_aid_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/first_aid_stock_on_hand ) != number( /commodity_count/system_soh_first_aid ))"/>
+      <bind nodeset="/commodity_count/s_equipment/first_aid_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/bp_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/bp_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/bp_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/bp_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/bp_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/bp_stock_on_hand ) != number( /commodity_count/system_soh_bp ))"/>
+      <bind nodeset="/commodity_count/s_equipment/bp_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/thermometer_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/thermometer_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/thermometer_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/thermometer_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/thermometer_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/thermometer_stock_on_hand ) != number( /commodity_count/system_soh_thermometer ))"/>
+      <bind nodeset="/commodity_count/s_equipment/thermometer_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/resp_timer_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/resp_timer_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/resp_timer_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/resp_timer_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/resp_timer_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/resp_timer_stock_on_hand ) != number( /commodity_count/system_soh_resp_timer ))"/>
+      <bind nodeset="/commodity_count/s_equipment/resp_timer_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_adults_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_adults_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_adults_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_adults_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/muac_tape_adults_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/muac_tape_adults_stock_on_hand ) != number( /commodity_count/system_soh_muac_tape_adults ))"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_adults_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_children_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_children_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_children_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_children_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/muac_tape_children_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/muac_tape_children_stock_on_hand ) != number( /commodity_count/system_soh_muac_tape_children ))"/>
+      <bind nodeset="/commodity_count/s_equipment/muac_tape_children_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/family_muac_tape_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/family_muac_tape_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/family_muac_tape_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/family_muac_tape_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/family_muac_tape_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/family_muac_tape_stock_on_hand ) != number( /commodity_count/system_soh_family_muac_tape ))"/>
+      <bind nodeset="/commodity_count/s_equipment/family_muac_tape_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_513_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_513_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_513_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_513_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/moh_513_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/moh_513_stock_on_hand ) != number( /commodity_count/system_soh_moh_513 ))"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_513_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_514_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_514_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_514_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_514_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/moh_514_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/moh_514_stock_on_hand ) != number( /commodity_count/system_soh_moh_514 ))"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_514_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_521_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_521_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_521_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_521_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/moh_521_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/moh_521_stock_on_hand ) != number( /commodity_count/system_soh_moh_521 ))"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_521_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_100_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_100_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_100_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_100_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/moh_100_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/moh_100_stock_on_hand ) != number( /commodity_count/system_soh_moh_100 ))"/>
+      <bind nodeset="/commodity_count/s_equipment/moh_100_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/comm_daily_register_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/comm_daily_register_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/comm_daily_register_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/comm_daily_register_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/comm_daily_register_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/comm_daily_register_stock_on_hand ) != number( /commodity_count/system_soh_comm_daily_register ))"/>
+      <bind nodeset="/commodity_count/s_equipment/comm_daily_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/phone_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/phone_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/phone_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/phone_recount" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0" relevant=" /commodity_count/s_equipment/phone_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/phone_stock_on_hand ) != number( /commodity_count/system_soh_phone ))"/>
+      <bind nodeset="/commodity_count/s_equipment/phone_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/safety_box_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/safety_box_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/safety_box_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/safety_box_recount" type="int" required="true()" relevant=" /commodity_count/s_equipment/safety_box_stock_on_hand !=&quot;&quot; and (number( /commodity_count/s_equipment/safety_box_stock_on_hand ) != number( /commodity_count/system_soh_safety_box ))"/>
+      <bind nodeset="/commodity_count/s_equipment/safety_box_remarks" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/others_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/s_equipment/others_specify" type="string" required="true()"/>
+      <bind nodeset="/commodity_count/s_equipment/others_stock_on_hand" type="int" jr:constraintMsg="Should not be less than zero" required="true()" constraint=". &gt;=0"/>
+      <bind nodeset="/commodity_count/s_equipment/others_system_stock_on_hand" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_submit" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_commodities" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_malaria" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_rdt_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_act6_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_act12_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_act18_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_act24_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_child_health" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_amox_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_ors_zinc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_ors_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_zinc_s_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_albe_s_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_tetra_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_para_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_repro_maternal" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_mebendazole_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_coc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_prog_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_depo_im_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_depo_sc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_preg_strip_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_condoms_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_wash" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_chlorine_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_ncds" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_gluc_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_others_section_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_paracetamol_500_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_non_pharma" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_bandage_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_povi_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_strap_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_glove_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_env_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_equipment" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_gluc_eq_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_backpack_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_badge_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_torch_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_salter_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_color_salter_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_weighing_scale_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_first_aid_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_bp_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_thermometer_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_resp_timer_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_muac_tape_adults_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_muac_tape_children_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_family_muac_tape_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_moh_514_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_moh_521_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_moh_100_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_comm_daily_register_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_phone_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_safety_box_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/r_summary/r_others_note" readonly="true()" type="string"/>
+      <bind nodeset="/commodity_count/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/commodity_count/inputs">
+      <label>Inputs</label>
+      <group ref="/commodity_count/inputs/contact">
+        <label>Contact</label>
+        <input ref="/commodity_count/inputs/contact/_id">
+          <label>What is the place's name?</label>
+        </input>
+        <group ref="/commodity_count/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/commodity_count/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/commodity_count/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/commodity_count">
+      <label>Commodity count</label>
+      <input ref="/commodity_count/commodity_count/confirm_commodities">
+        <label>Use this form to fill in balances on hand</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_malaria">
+      <label>MALARIA</label>
+      <input ref="/commodity_count/s_malaria/rdts">
+        <label>&lt;b&gt;RDTs (Malaria Test Kit)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/rdts_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_malaria/rdts_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_rdts "/></label>
+      </input>
+      <input ref="/commodity_count/s_malaria/rdts_recount">
+        <label>Please recount and enter the final number you have</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/rdts_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act">
+        <label>&lt;b&gt;First Line Anti-Malarial (ACT/Coartem)&lt;/b&gt;</label>
+      </input>
+      <select ref="/commodity_count/s_malaria/act_stock">
+        <label>Select the stock on hand</label>
+        <item>
+          <label>6 pack</label>
+          <value>act_6</value>
+        </item>
+        <item>
+          <label>12 pack</label>
+          <value>act_12</value>
+        </item>
+        <item>
+          <label>18 pack</label>
+          <value>act_18</value>
+        </item>
+        <item>
+          <label>24 pack</label>
+          <value>act_24</value>
+        </item>
+      </select>
+      <input ref="/commodity_count/s_malaria/act_6_stock_on_hand">
+        <label>ACT 6 Pack stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_6_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_act_6 "/></label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_6_recount">
+        <label>Please recount and enter the final number ACT 6 Pack</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_12_stock_on_hand">
+        <label>ACT 12 Pack stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_12_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_act_12 "/></label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_12_recount">
+        <label>Please recount and enter the final number ACT 12 Pack</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_18_stock_on_hand">
+        <label>ACT 18 Pack stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_18_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_act_18 "/></label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_18_recount">
+        <label>Please recount and enter the final number ACT 18 Pack</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_24_stock_on_hand">
+        <label>ACT 24 Pack stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_24_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_act_24 "/></label>
+      </input>
+      <input ref="/commodity_count/s_malaria/act_24_recount">
+        <label>Please recount and enter the final number ACT 24 Pack</label>
+      </input>
+      <input ref="/commodity_count/s_malaria/acts_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_child_health">
+      <label>CHILD'S HEALTH</label>
+      <input ref="/commodity_count/s_child_health/dt_250_note">
+        <label>&lt;b&gt;Antibiotics (Amoxicillin DT 250mg ) tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/dt_250_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/dt_250_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_dt_250 "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/dt_250_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/dt_250_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_zinc_note">
+        <label>&lt;b&gt;ORS + Zinc Co-pack&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_zinc_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_zinc_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_ors_zinc "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_zinc_recount">
+        <label>Please recount and enter the final number of packs you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_zinc_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_sachets_note">
+        <label>&lt;b&gt;ORS Satchets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_sachets_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_sachets_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_ors_sachets "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_sachets_recount">
+        <label>Please recount and enter the final number of satchets you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/ors_sachets_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/zinc_sulphate_note">
+        <label>&lt;b&gt;Zinc Sulphate 20mg Tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/zinc_sulphate_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/zinc_sulphate_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_zinc_sulphate "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/zinc_sulphate_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/zinc_sulphate_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/albendazole_note">
+        <label>&lt;b&gt;Albendazole 400mg (Dewormers&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/albendazole_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/albendazole_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_albendazole "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/albendazole_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/albendazole_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/tetra_eye_note">
+        <label>&lt;b&gt;Tetracycline Eye Ointment 1% tubes&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/tetra_eye_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/tetra_eye_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_tetra_eye "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/tetra_eye_recount">
+        <label>Please recount and enter the final number of tubes you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/tetra_eye_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/paracetamol_120_note">
+        <label>&lt;b&gt;Paracetamol 120mg/5ml suspension&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/paracetamol_120_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_child_health/paracetamol_120_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_paracetamol_120 "/></label>
+      </input>
+      <input ref="/commodity_count/s_child_health/paracetamol_120_recount">
+        <label>Please recount and enter the final number of bottles you have</label>
+      </input>
+      <input ref="/commodity_count/s_child_health/paracetamol_120_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_reproductive">
+      <label>REPRODUCTIVE AND MATERNAL HEALTH SERVICES</label>
+      <input ref="/commodity_count/s_reproductive/mebendazole_note">
+        <label>&lt;b&gt;Mebendazole 500mg (Dewormers) tablets&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/mebendazole_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/mebendazole_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_mebendazole "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/mebendazole_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/mebendazole_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/coc_note">
+        <label>&lt;b&gt;Combined Oral Contraceptives (packs)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/coc_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/coc_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_coc "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/coc_recount">
+        <label>Please recount and enter the final number of packs you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/coc_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/prog_note">
+        <label>&lt;b&gt;Progestin Only pill (packs)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/prog_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/prog_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_prog "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/prog_recount">
+        <label>Please recount and enter the final number of packs you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/prog_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_im_note">
+        <label>&lt;b&gt;Depo Medroxy provera injection-IM ( vials)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_im_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_im_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_depo_im "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_im_recount">
+        <label>Please recount and enter the final number of vials you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_im_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_sc_note">
+        <label>&lt;b&gt;Depo Medroxy provera injection - SC (vials)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_sc_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_sc_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_depo_sc "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_sc_recount">
+        <label>Please recount and enter the final number of vials you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/depo_sc_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/preg_strip_bote">
+        <label>&lt;b&gt;Pregnancy Test Strip&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/preg_strip_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/strip_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_preg_strip "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/preg_strip_recount">
+        <label>Please recount and enter the final number of strips you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/preg_strip_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/condoms_note">
+        <label>&lt;b&gt;Condoms&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/condoms_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_reproductive/condoms_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_condoms "/></label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/condoms_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_reproductive/condoms_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_wash">
+      <label>WASH</label>
+      <input ref="/commodity_count/s_wash/chlorine_note">
+        <label>&lt;b&gt;Chlorine&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_wash/chlorine_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_wash/chlorine_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_chlorine "/></label>
+      </input>
+      <input ref="/commodity_count/s_wash/chlorine_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_wash/chlorine_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_ncds">
+      <label>NCDS</label>
+      <input ref="/commodity_count/s_ncds/gluc_strips_note">
+        <label>Glucometer strips</label>
+      </input>
+      <input ref="/commodity_count/s_ncds/gluc_strips_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_ncds/gluc_strips_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_gluc_strips "/></label>
+      </input>
+      <input ref="/commodity_count/s_ncds/gluc_strips_recount">
+        <label>Please recount and enter the final number of strips you have</label>
+      </input>
+      <input ref="/commodity_count/s_ncds/gluc_strips_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_others">
+      <label>OTHERS</label>
+      <input ref="/commodity_count/s_others/paracetamol_500_note">
+        <label>Paracetamol Tablets, 500mg</label>
+      </input>
+      <input ref="/commodity_count/s_others/paracetamol_500_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_others/paracetamol_500_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_paracetamol_500 "/></label>
+      </input>
+      <input ref="/commodity_count/s_others/paracetamol_500_recount">
+        <label>Please recount and enter the final number of tablets you have</label>
+      </input>
+      <input ref="/commodity_count/s_others/paracetamol_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_non_pharma">
+      <label>NON- PHARMACEUTICAL</label>
+      <input ref="/commodity_count/s_non_pharma/bandages">
+        <label>&lt;b&gt;Bandages&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/bandages_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/bandages_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_bandages "/></label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/bandages_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/bandages_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/povi_">
+        <label>&lt;b&gt;Povidone Iodine Solution&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/povi_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/povi_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_povi "/></label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/povi_recount">
+        <label>Please recount and enter the final number of bottles you have</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/povi_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/strap_note">
+        <label>&lt;b&gt;Strapping&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/strap_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/strap_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_strap "/></label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/strap_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/strap_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/gloves_note">
+        <label>&lt;b&gt;Gloves&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/gloves_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/gloves_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_gloves "/></label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/gloves_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/gloves_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/envelopes_note">
+        <label>&lt;b&gt;Medical Dispensing Envelopes&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/envelopes_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/envelopes_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_envelopes "/></label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/envelopes_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_non_pharma/envelopes_remarks">
+        <label>Remarks</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/commodity_count/s_equipment">
+      <label>EQUIPMENT</label>
+      <input ref="/commodity_count/s_equipment/glucometer_note">
+        <label>&lt;b&gt;Glucometer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/glucometer_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/glucometer_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_glucometer "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/glucometer_recount">
+        <label>Please recount and enter the final number of strips you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/glucometer_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/backpack">
+        <label>&lt;b&gt;Backpack with logo&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/backpack_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/backpack_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_backpack "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/backpack_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/backpack_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/badge_note">
+        <label>&lt;b&gt;Badge (Name Tag)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/badge_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/badge_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_badge "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/badge_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/badge_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/flashlight_note">
+        <label>&lt;b&gt;Flashlight (Torch)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/flashlight_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/flashlight_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_flashlight "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/flashlight_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/flashlight_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/salter_note">
+        <label>&lt;b&gt;Salter scale&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/salter_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/salter_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_salter "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/salter_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/salter_system_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/color_salter_note">
+        <label>&lt;b&gt;Color coded salter scale&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/color_salter_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/color_salter_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_color_salter "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/color_salter_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/color_salter_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/weighing_scale_note">
+        <label>&lt;b&gt;Weighing scale (Bathroom)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/weighing_scale_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/weighing_scale_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_weighing_scale "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/weighing_scale_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/weighing_scale_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/first_aid">
+        <label>&lt;b&gt;First Aid Kit&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/first_aid_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/first_aid_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_first_aid "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/first_aid_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/first_aid_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/bp_note">
+        <label>&lt;b&gt;BP Machine&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/bp_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/bp_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_bp "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/bp_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/bp_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/thermometer_note">
+        <label>&lt;b&gt;Digital Thermometer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/thermometer_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/thermometer_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_thermometer "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/thermometer_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/thermometer_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/resp_timer_note">
+        <label>&lt;b&gt;Respiratory Timer&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/resp_timer_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/resp_timer_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_resp_timer "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/resp_timer_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/resp_timer_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_adults_note">
+        <label>&lt;b&gt;MUAC TAPE (Adults)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_adults_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_adults_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_muac_tape_adults "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_adults_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_adults_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_children_note">
+        <label>&lt;b&gt; MUAC tape (Children)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_children_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_children_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_muac_tape_children "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_children_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/muac_tape_children_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/family_muac_tape_note">
+        <label>&lt;b&gt; MUAC tape (Family)&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/family_muac_tape_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/family_muac_tape_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_muac_tape_children "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/family_muac_tape_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/family_muac_tape_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_513_note">
+        <label>&lt;b&gt;Register MOH 513&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_513_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_513_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_moh_513 "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_513_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_513_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_514_note">
+        <label>&lt;b&gt;Register MOH 514&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_514_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_514_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_moh_514 "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_514_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_514_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_521_note">
+        <label>&lt;b&gt;Register MOH 521&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_521_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_521_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_moh_521 "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_521_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_521_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_100_note">
+        <label>&lt;b&gt;Referral Form MOH 100&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_100_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_100_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_moh_100 "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_100_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/moh_100_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/comm_daily_register_note">
+        <label>&lt;b&gt;Community commodity Daily Activity Register&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/comm_daily_register_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/comm_daily_register_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_comm_daily_register "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/comm_daily_register_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/comm_daily_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/phone_note">
+        <label>&lt;b&gt;Mobile Phone&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/phone_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/phone_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_phone "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/phone_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/phone_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/safety_box_note">
+        <label>&lt;b&gt;Safety Box&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/safety_box_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/safety_box_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_safety_box "/></label>
+      </input>
+      <input ref="/commodity_count/s_equipment/safety_box_recount">
+        <label>Please recount and enter the final number of pieces you have</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/safety_box_remarks">
+        <label>Remarks</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/others_note">
+        <label>&lt;b&gt;Others&lt;/b&gt;</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/others_specify">
+        <label>Specify</label>
+      </input>
+      <input ref="/commodity_count/s_equipment/others_stock_on_hand">
+        <label>Stock on hand</label>
+        <hint>Physically count your stock and enter the number.</hint>
+      </input>
+      <input ref="/commodity_count/s_equipment/others_system_stock_on_hand">
+        <label>System stock on hand: <output value=" /commodity_count/system_soh_others "/></label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/commodity_count/r_summary">
+      <label>STOCK COUNT FORM SUMMARY</label>
+      <input ref="/commodity_count/r_summary/r_submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 blu" ref="/commodity_count/r_summary/r_commodities">
+        <label>Commodities</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_malaria">
+        <label>Malaria</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_rdt_note">
+        <label>&lt;b&gt; &lt;h3&gt; RDTs (Malaria Test Kit)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/rdts_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_act6_note">
+        <label>&lt;b&gt; &lt;h3&gt; First Line Anti-Malarial (ACT/Coartem) 6 pack&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock 6 packs: **<output value=" /commodity_count/act_6_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_act12_note">
+        <label>&lt;b&gt; &lt;h3&gt; First Line Anti-Malarial (ACT/Coartem) 12 pack&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock 12 packs: **<output value=" /commodity_count/act_12_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_act18_note">
+        <label>&lt;b&gt; &lt;h3&gt; First Line Anti-Malarial (ACT/Coartem) 18 pack&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock 18 packs: **<output value=" /commodity_count/act_18_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_act24_note">
+        <label>&lt;b&gt; &lt;h3&gt; First Line Anti-Malarial (ACT/Coartem) 24 pack&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock 24 packs: **<output value=" /commodity_count/act_24_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_child_health">
+        <label>Child Health</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_amox_note">
+        <label>&lt;b&gt; &lt;h3&gt; Antibiotics (Amoxicillin DT 250mg ) tablets&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/dt_250_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_ors_zinc_note">
+        <label>&lt;b&gt; &lt;h3&gt; ORS + Zinc Co-pack&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/ors_zinc_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_ors_note">
+        <label>&lt;b&gt; &lt;h3&gt; ORS Satchets&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/ors_sachets_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_zinc_s_note">
+        <label>&lt;b&gt; &lt;h3&gt; Zinc Sulphate 20mg Tablets&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/zinc_sulphate_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_albe_s_note">
+        <label>&lt;b&gt; &lt;h3&gt; Albendazole 400mg (Dewormers)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/albendazole_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_tetra_note">
+        <label>&lt;b&gt; &lt;h3&gt; Tetracycline Eye Ointment 1% tubes&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/tetra_eye_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_para_note">
+        <label>&lt;b&gt; &lt;h3&gt; Paracetamol 120mg/5ml suspension&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/paracetamol_120_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_repro_maternal">
+        <label>Reproductive and maternal health services</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_mebendazole_note">
+        <label>&lt;b&gt; &lt;h3&gt; Mebendazole 500mg (Dewormers) tablets&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/mebendazole_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_coc_note">
+        <label>&lt;b&gt; &lt;h3&gt; Combined Oral Contraceptives (packs)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/coc_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_prog_note">
+        <label>&lt;b&gt; &lt;h3&gt; Progestin Only pill (packs)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/prog_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_depo_im_note">
+        <label>&lt;b&gt; &lt;h3&gt; Depo Medroxy provera injection-IM ( vials)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/depo_im_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_depo_sc_note">
+        <label>&lt;b&gt; &lt;h3&gt; Depo Medroxy provera injection - SC (vials)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/depo_sc_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_preg_strip_note">
+        <label>&lt;b&gt; &lt;h3&gt; Pregnancy Test Strip&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/preg_strip_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_condoms_note">
+        <label>&lt;b&gt; &lt;h3&gt;Condoms&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/condoms_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_wash">
+        <label>Wash</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_chlorine_note">
+        <label>&lt;b&gt; &lt;h3&gt; Chlorine&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/chlorine_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_ncds">
+        <label>NCDs</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_gluc_note">
+        <label>&lt;b&gt; &lt;h3&gt; Glucometer strips&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/gluc_strips_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_others_section_note">
+        <label>Others</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_paracetamol_500_note">
+        <label>&lt;b&gt; &lt;h3&gt; Paracetamol Tablets&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/paracetamol_500_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h3 blue" ref="/commodity_count/r_summary/r_non_pharma">
+        <label>Non- pharmaceutical</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_bandage_note">
+        <label>&lt;b&gt; &lt;h3&gt; Bandages&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/bandages_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_povi_note">
+        <label>&lt;b&gt; &lt;h3&gt; Povidone Iodine Solution&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/povi_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_strap_note">
+        <label>&lt;b&gt; &lt;h3&gt; Strapping&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/strap_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_glove_note">
+        <label>&lt;b&gt; &lt;h3&gt; Gloves&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/gloves_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_env_note">
+        <label>&lt;b&gt; &lt;h3&gt; Medical Dispensing Envelopes&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/envelopes_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/commodity_count/r_summary/r_equipment">
+        <label>Equipment</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_gluc_eq_note">
+        <label>&lt;b&gt; &lt;h3&gt; Glucometer&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/glucometer_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_backpack_note">
+        <label>&lt;b&gt; &lt;h3&gt; Backpack with logo&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/backpack_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_badge_note">
+        <label>&lt;b&gt; &lt;h3&gt; Badge (Name Tag)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/badge_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_torch_note">
+        <label>&lt;b&gt; &lt;h3&gt; Flashlight (Torch)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/flashlight_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_salter_note">
+        <label>&lt;b&gt; &lt;h3&gt; Salter scale&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/salter_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_color_salter_note">
+        <label>&lt;b&gt; &lt;h3&gt; Color coded salter scale&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/color_salter_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_weighing_scale_note">
+        <label>&lt;b&gt; &lt;h3&gt; Weighing scale (Bathroom)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/weighing_scale_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_first_aid_note">
+        <label>&lt;b&gt; &lt;h3&gt; First Aid Kit&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/first_aid_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_bp_note">
+        <label>&lt;b&gt; &lt;h3&gt; BP Machine&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/bp_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_thermometer_note">
+        <label>&lt;b&gt; &lt;h3&gt; Digital Thermometer&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/thermometer_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_resp_timer_note">
+        <label>&lt;b&gt; &lt;h3&gt; Respiratory Timer&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/resp_timer_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_muac_tape_adults_note">
+        <label>&lt;b&gt; &lt;h3&gt; MUAC TAPE (Adults)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/muac_tape_adults_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_muac_tape_children_note">
+        <label>&lt;b&gt; &lt;h3&gt; MUAC TAPE (Children)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/muac_tape_children_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_family_muac_tape_note">
+        <label>&lt;b&gt; &lt;h3&gt; Family MUAC tape (Family)&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/family_muac_tape_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_moh_514_note">
+        <label>&lt;b&gt; &lt;h3&gt; Register MOH 514&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/moh_514_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_moh_521_note">
+        <label>&lt;b&gt; &lt;h3&gt; Register MOH 521&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/moh_521_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_moh_100_note">
+        <label>&lt;b&gt; &lt;h3&gt; Referral Form MOH 100&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/moh_100_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_comm_daily_register_note">
+        <label>&lt;b&gt; &lt;h3&gt; Community commodity Daily Activity Register&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/comm_daily_register_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_phone_note">
+        <label>&lt;b&gt; &lt;h3&gt; Mobile Phone&lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/phone_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_safety_box_note">
+        <label>&lt;b&gt; &lt;h3&gt; Safety Box &lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/safety_box_count_final "/>** &lt;/li&gt;</label>
+      </input>
+      <input appearance="li" ref="/commodity_count/r_summary/r_others_note">
+        <label>&lt;b&gt; &lt;h3&gt; Others : <output value=" /commodity_count/s_equipment/others_specify "/> &lt;/h3&gt;&lt;/b&gt; &lt;li&gt; Current stock: **<output value=" /commodity_count/s_equipment/others_stock_on_hand "/>** &lt;/li&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

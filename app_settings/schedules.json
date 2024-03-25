@@ -1,0 +1,19 @@
+[
+  {
+    "name": "dummy",
+    "summary": "Seemingly, `accept_case_reports` has dependency on `registrations`. A form configured for `accept_case_reports` needs to have a corresponding entry in `registrations`. This schedule is never triggered. It is used in the corresponding entries in `registrations` config.",
+    "description": "",
+    "start_from": "reported_date",
+    "start_mid_group": true,
+    "messages": [
+      {
+        "translation_key": "schedules.dummy.message",
+        "group": 1,
+        "offset": "52 weeks",
+        "send_day": "monday",
+        "send_time": "09:00",
+        "recipient": "reporting_unit"
+      }
+    ]
+  }
+]

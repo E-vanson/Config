@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>WASH Service</h:title>
+    <model>
+      <instance>
+        <wash id="wash" prefix="J1!wash!" delimiter="#" version="2023-06-06 09:34:51">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <contact>
+                <_id/>
+                <name/>
+              </contact>
+              <parent>
+                <_id/>
+                <contact>
+                  <_id/>
+                  <name/>
+                  <phone/>
+                </contact>
+                <parent/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <chw_area_id/>
+          <place_name/>
+          <chv_name/>
+          <place_contact_id/>
+          <place_contact_name/>
+          <visited_contact_uuid/>
+          <group_wash>
+            <has_functional_latrine/>
+            <n_latrine/>
+            <has_functional_handwash_facility/>
+            <n_functional_handwash/>
+            <n_handwash/>
+            <main_drinking_water_source/>
+            <main_drinking_water_source_other/>
+            <uses_safe_water/>
+            <household_treats_water/>
+            <n_encourage_safe_storage/>
+            <n_encourage_treatment/>
+            <n_safe_water/>
+            <water_treatment/>
+            <issued_water_treatment_commodities/>
+            <water_treatment_commodities/>
+            <water_treatment_commodities_other/>
+            <satchets_count/>
+            <tablets_count/>
+            <other_count/>
+            <uses_dish_rack/>
+            <n_dish_rack/>
+            <has_functional_refuse_disposal_site/>
+            <n_refuse_disposal/>
+            <helped_identify_refuse_disposal_site/>
+            <notes/>
+          </group_wash>
+          <insurance>
+            <has_upto_date_insurance/>
+            <n_encourage_to_get_cover/>
+            <insurance_cover/>
+            <n_congratulate_on_insurance/>
+            <specify_other/>
+          </insurance>
+          <summary>
+            <n_submit/>
+            <good_wash_status/>
+            <insurance_status_display/>
+            <n_title/>
+            <n_hh_name/>
+            <r_insurance_status/>
+            <n_findings/>
+            <n_wash_good/>
+            <n_wash_bad/>
+            <n_latrine_review/>
+            <n_handwashing_review/>
+            <n_safe_water_review/>
+            <n_dish_rack_review/>
+            <n_compost_pit_review/>
+            <n_followup/>
+            <next_follow_up_date/>
+            <next_follow_up_date_display/>
+            <n_latrine_follow_up/>
+          </summary>
+          <additional_doc db-doc="true">
+            <place_id/>
+            <chv_area_id/>
+            <type/>
+            <created_by_doc db-doc-ref="/wash"/>
+            <content_type/>
+            <form/>
+            <fields>
+              <chlorine_quantity_issued>0</chlorine_quantity_issued>
+              <pg_quantity_issued>0</pg_quantity_issued>
+            </fields>
+          </additional_doc>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </wash>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/wash/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/wash/inputs/source" type="string"/>
+      <bind nodeset="/wash/inputs/source_id" type="string"/>
+      <bind nodeset="/wash/inputs/contact/_id" type="db:clinic"/>
+      <bind nodeset="/wash/inputs/contact/name" type="string"/>
+      <bind nodeset="/wash/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/wash/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/wash/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/wash/inputs/contact/parent/contact/_id" type="string"/>
+      <bind nodeset="/wash/inputs/contact/parent/contact/name" type="string"/>
+      <bind nodeset="/wash/inputs/contact/parent/contact/phone" type="string"/>
+      <bind nodeset="/wash/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/wash/chw_area_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/wash/place_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/wash/chv_name" type="string" calculate="../inputs/contact/parent/contact/name"/>
+      <bind nodeset="/wash/place_contact_id" type="string" calculate="../inputs/contact/contact/_id"/>
+      <bind nodeset="/wash/place_contact_name" type="string" calculate="../inputs/contact/contact/name"/>
+      <bind nodeset="/wash/visited_contact_uuid" type="string" calculate="../place_id"/>
+      <bind nodeset="/wash/group_wash/has_functional_latrine" type="select1" required="true()"/>
+      <bind nodeset="/wash/group_wash/n_latrine" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_latrine  = 'no'"/>
+      <bind nodeset="/wash/group_wash/has_functional_handwash_facility" type="select1" required="true()"/>
+      <bind nodeset="/wash/group_wash/n_functional_handwash" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_handwash_facility  = 'no'"/>
+      <bind nodeset="/wash/group_wash/n_handwash" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_handwash_facility  = 'no'"/>
+      <bind nodeset="/wash/group_wash/main_drinking_water_source" type="select1" required="true()"/>
+      <bind nodeset="/wash/group_wash/main_drinking_water_source_other" type="string" required="true()" relevant=" /wash/group_wash/main_drinking_water_source ='other'"/>
+      <bind nodeset="/wash/group_wash/uses_safe_water" type="string" calculate="if( /wash/group_wash/main_drinking_water_source ='piped_water' or  /wash/group_wash/main_drinking_water_source ='borehole', 'true', 'false')"/>
+      <bind nodeset="/wash/group_wash/household_treats_water" type="select1" required="true()" relevant=" /wash/group_wash/main_drinking_water_source !='' and  /wash/group_wash/uses_safe_water  = 'false'"/>
+      <bind nodeset="/wash/group_wash/n_encourage_safe_storage" readonly="true()" type="string" relevant=" /wash/group_wash/uses_safe_water ='true' or ( /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/household_treats_water ='yes')"/>
+      <bind nodeset="/wash/group_wash/n_encourage_treatment" readonly="true()" type="string" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/household_treats_water ='yes'"/>
+      <bind nodeset="/wash/group_wash/n_safe_water" readonly="true()" type="string" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/household_treats_water ='no'"/>
+      <bind nodeset="/wash/group_wash/water_treatment" type="select" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/household_treats_water ='no'"/>
+      <bind nodeset="/wash/group_wash/issued_water_treatment_commodities" type="select1" required="true()" relevant=" /wash/group_wash/uses_safe_water ='false'"/>
+      <bind nodeset="/wash/group_wash/water_treatment_commodities" type="select" required="true()" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/issued_water_treatment_commodities  = 'yes'"/>
+      <bind nodeset="/wash/group_wash/water_treatment_commodities_other" type="string" required="true()" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/issued_water_treatment_commodities  = 'yes' and selected( /wash/group_wash/water_treatment_commodities , 'other')"/>
+      <bind nodeset="/wash/group_wash/satchets_count" type="int" required="true()" constraint=".&gt;=0 and .&lt;=10" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/issued_water_treatment_commodities  = 'yes' and selected( /wash/group_wash/water_treatment_commodities , 'pur')"/>
+      <bind nodeset="/wash/group_wash/tablets_count" type="int" required="true()" constraint=".&gt;=0 and .&lt;=10" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/issued_water_treatment_commodities  = 'yes' and selected( /wash/group_wash/water_treatment_commodities , 'chlorine')"/>
+      <bind nodeset="/wash/group_wash/other_count" type="int" required="true()" constraint=".&gt;=0 and .&lt;=10" relevant=" /wash/group_wash/uses_safe_water ='false' and  /wash/group_wash/issued_water_treatment_commodities  = 'yes' and selected( /wash/group_wash/water_treatment_commodities , 'other')"/>
+      <bind nodeset="/wash/group_wash/uses_dish_rack" type="select1" required="true()"/>
+      <bind nodeset="/wash/group_wash/n_dish_rack" readonly="true()" type="string" relevant=" /wash/group_wash/uses_dish_rack  = 'no'"/>
+      <bind nodeset="/wash/group_wash/has_functional_refuse_disposal_site" type="select1" required="true()"/>
+      <bind nodeset="/wash/group_wash/n_refuse_disposal" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_refuse_disposal_site  = 'no'"/>
+      <bind nodeset="/wash/group_wash/helped_identify_refuse_disposal_site" type="select1" required="true()" relevant=" /wash/group_wash/has_functional_refuse_disposal_site  = 'no'"/>
+      <bind nodeset="/wash/group_wash/notes" type="string"/>
+      <bind nodeset="/wash/insurance/has_upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/wash/insurance/n_encourage_to_get_cover" readonly="true()" type="string" relevant=" /wash/insurance/has_upto_date_insurance  = 'no'"/>
+      <bind nodeset="/wash/insurance/insurance_cover" type="select" required="true()" relevant=" /wash/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/wash/insurance/n_congratulate_on_insurance" readonly="true()" type="string" relevant=" /wash/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/wash/insurance/specify_other" type="string" required="true()" relevant="selected( /wash/insurance/insurance_cover ,'other')"/>
+      <bind nodeset="/wash/summary/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/wash/summary/good_wash_status" type="string" calculate="if( /wash/group_wash/has_functional_latrine  = 'yes' and  /wash/group_wash/has_functional_handwash_facility  = 'yes' and  /wash/group_wash/uses_safe_water  = 'true' and  /wash/group_wash/uses_dish_rack  = 'yes' and  /wash/group_wash/has_functional_refuse_disposal_site  = 'yes','true','false')"/>
+      <bind nodeset="/wash/summary/insurance_status_display" type="string" calculate="if( /wash/insurance/has_upto_date_insurance  = 'yes', 'Insurance upto date', 'Insurance not upto date')"/>
+      <bind nodeset="/wash/summary/n_title" readonly="true()" type="string"/>
+      <bind nodeset="/wash/summary/n_hh_name" readonly="true()" type="string"/>
+      <bind nodeset="/wash/summary/r_insurance_status" readonly="true()" type="string"/>
+      <bind nodeset="/wash/summary/n_findings" readonly="true()" type="string"/>
+      <bind nodeset="/wash/summary/n_wash_good" readonly="true()" type="string" relevant=" /wash/summary/good_wash_status  = 'true'"/>
+      <bind nodeset="/wash/summary/n_wash_bad" readonly="true()" type="string" relevant=" /wash/summary/good_wash_status  = 'false'"/>
+      <bind nodeset="/wash/summary/n_latrine_review" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_latrine  = 'no'"/>
+      <bind nodeset="/wash/summary/n_handwashing_review" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_handwash_facility  = 'no'"/>
+      <bind nodeset="/wash/summary/n_safe_water_review" readonly="true()" type="string" relevant=" /wash/group_wash/uses_safe_water  = 'false'"/>
+      <bind nodeset="/wash/summary/n_dish_rack_review" readonly="true()" type="string" relevant=" /wash/group_wash/uses_dish_rack  = 'no'"/>
+      <bind nodeset="/wash/summary/n_compost_pit_review" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_refuse_disposal_site  = 'no'"/>
+      <bind nodeset="/wash/summary/n_followup" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_latrine  = 'no'"/>
+      <bind nodeset="/wash/summary/next_follow_up_date" type="string" calculate="if( /wash/group_wash/has_functional_latrine  ='no', format-date-time(decimal-date-time(today()) + 28,&quot;%Y-%m-%d&quot;), '')"/>
+      <bind nodeset="/wash/summary/next_follow_up_date_display" type="string" calculate="if( /wash/summary/next_follow_up_date  != '', format-date-time( /wash/summary/next_follow_up_date ,&quot;%b %e, %Y&quot;), '')"/>
+      <bind nodeset="/wash/summary/n_latrine_follow_up" readonly="true()" type="string" relevant=" /wash/group_wash/has_functional_latrine  = 'no'"/>
+      <bind nodeset="/wash/additional_doc/place_id" type="string" calculate=" /wash/chw_area_id "/>
+      <bind nodeset="/wash/additional_doc/chv_area_id" type="string" calculate=" /wash/chw_area_id "/>
+      <bind nodeset="/wash/additional_doc/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/wash/additional_doc/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/wash/additional_doc/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/wash/additional_doc/form" type="string" calculate="&quot;chv_consumption_log&quot;"/>
+      <bind nodeset="/wash/additional_doc/fields/chlorine_quantity_issued" type="string" calculate=" /wash/group_wash/tablets_count "/>
+      <bind nodeset="/wash/additional_doc/fields/pg_quantity_issued" type="string" calculate=" /wash/group_wash/satchets_count "/>
+      <bind nodeset="/wash/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/wash/inputs">
+      <label>Patient</label>
+      <group ref="/wash/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/wash/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/wash/inputs/contact/contact">
+          <label>Contact</label>
+        </group>
+        <group ref="/wash/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/wash/inputs/contact/parent/contact">
+            <label>Contact</label>
+          </group>
+          <group ref="/wash/inputs/contact/parent/parent">
+            <label>Contact</label>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/wash/group_wash">
+      <label>WASH of <output value=" /wash/place_name "/></label>
+      <select1 ref="/wash/group_wash/has_functional_latrine">
+        <label>Does <output value=" /wash/place_name "/> have a functional latrine?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/n_latrine">
+        <label>&lt;span style="color:blue;"&gt;**Teach on the importance of using latrines to promote environmental hygiene and to prevent diseases.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/wash/group_wash/has_functional_handwash_facility">
+        <label>Does <output value=" /wash/place_name "/> have a functional handwashing facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/n_functional_handwash">
+        <label>&lt;span style="color:blue;"&gt;**There should be a functional handwashing facility for the household members and visitors.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/wash/group_wash/n_handwash">
+        <label>&lt;span style="color:green;"&gt;**Proper hand washing with soap and running water prevents diseases like Covid 19, cholera, diarrhoea, worms etc.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/wash/group_wash/main_drinking_water_source">
+        <label>What is the main source of drinking water?</label>
+        <item>
+          <label>Piped water</label>
+          <value>piped_water</value>
+        </item>
+        <item>
+          <label>Shallow Well</label>
+          <value>shallow_well</value>
+        </item>
+        <item>
+          <label>Borehole</label>
+          <value>borehole</value>
+        </item>
+        <item>
+          <label>Roof harvest</label>
+          <value>roof_harvest</value>
+        </item>
+        <item>
+          <label>River or Dams</label>
+          <value>river_or_dams</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/main_drinking_water_source_other">
+        <label>Specify</label>
+      </input>
+      <select1 ref="/wash/group_wash/household_treats_water">
+        <label>Does the household treat water?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/n_encourage_safe_storage">
+        <label>&lt;span style="color:blue;"&gt;**Encourage the household to store water in clean and safe containers.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/wash/group_wash/n_encourage_treatment">
+        <label>&lt;span style="color:blue;"&gt;**Encourage to continue treating water.**&lt;/span&gt;</label>
+      </input>
+      <input ref="/wash/group_wash/n_safe_water">
+        <label>&lt;span style="color:green;"&gt;**Safe water prevents diseases that are water borne diseases like cholera, diarrhea.**&lt;/span&gt;</label>
+      </input>
+      <select ref="/wash/group_wash/water_treatment">
+        <label>Educate that water can be treated in several ways and select the ones that the household will be using to make their water safe for drinking?</label>
+        <item>
+          <label>Boiling</label>
+          <value>boiling</value>
+        </item>
+        <item>
+          <label>Chlorination</label>
+          <value>chlorination</value>
+        </item>
+        <item>
+          <label>Filtration</label>
+          <value>filtration</value>
+        </item>
+        <item>
+          <label>SODIS</label>
+          <value>sodis</value>
+        </item>
+      </select>
+      <select1 ref="/wash/group_wash/issued_water_treatment_commodities">
+        <label>Have you issued water treatment commodities?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/wash/group_wash/water_treatment_commodities">
+        <label>Select the type of commodities</label>
+        <item>
+          <label>P&amp;G</label>
+          <value>pur</value>
+        </item>
+        <item>
+          <label>Chlorine tablets</label>
+          <value>chlorine</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/wash/group_wash/water_treatment_commodities_other">
+        <label>Specify</label>
+      </input>
+      <input ref="/wash/group_wash/satchets_count">
+        <label>How many satchets did you give the household</label>
+      </input>
+      <input ref="/wash/group_wash/tablets_count">
+        <label>How many tablets did you give the household</label>
+      </input>
+      <input ref="/wash/group_wash/other_count">
+        <label>How many <output value=" /wash/group_wash/water_treatment_commodities_other "/> did you give the household</label>
+      </input>
+      <select1 ref="/wash/group_wash/uses_dish_rack">
+        <label>Does <output value=" /wash/place_name "/> use a dish rack?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/n_dish_rack">
+        <label>&lt;span style="color:green;"&gt;**Dish rack helps to mantain hygiene and keeps utensils from dust and animals. You can construct one from locally available materials.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/wash/group_wash/has_functional_refuse_disposal_site">
+        <label>Does <output value=" /wash/place_name "/> have a functional refuse disposal facility?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/n_refuse_disposal">
+        <label>&lt;span style="color:green;"&gt;**A clean environment prevents diseases and flies.**&lt;/span&gt;</label>
+      </input>
+      <select1 ref="/wash/group_wash/helped_identify_refuse_disposal_site">
+        <label>Have you helped the household to identify a site for a refuse disposal?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/group_wash/notes">
+        <label>Additional notes</label>
+        <hint>Write any additional activity you have performed on this household</hint>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/wash/insurance">
+      <label>Insurance</label>
+      <select1 ref="/wash/insurance/has_upto_date_insurance">
+        <label>Does <output value=" /wash/place_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/wash/insurance/n_encourage_to_get_cover">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Encourage <output value=" /wash/place_contact_name "/> to get an insurance cover if they don't have or to update their insurance cover&lt;/span&gt;</label>
+      </input>
+      <select ref="/wash/insurance/insurance_cover">
+        <label>Which medical insurance cover does <output value=" /wash/place_contact_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/wash/insurance/n_congratulate_on_insurance">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Congratulate <output value=" /wash/place_contact_name "/> and encourage them to continue updating their insurance cover&lt;/span&gt;</label>
+      </input>
+      <input ref="/wash/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/wash/summary">
+      <label>WASH RESULTS PAGE</label>
+      <input ref="/wash/summary/n_submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/wash/summary/n_title">
+        <label>Household Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/wash/summary/n_hh_name">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /wash/place_contact_name "/>&lt;/h4&gt;</label>
+      </input>
+      <input ref="/wash/summary/r_insurance_status">
+        <label>&lt;h5 style=&quot;text-align:center;font-weight:bold&quot;&gt;<output value=" /wash/summary/insurance_status_display "/>&lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/wash/summary/n_findings">
+        <label>Findings&lt;i class="fa fa-bookmark"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="h2 green" ref="/wash/summary/n_wash_good">
+        <label>Wash Status = **GOOD**</label>
+      </input>
+      <input appearance="h2 red" ref="/wash/summary/n_wash_bad">
+        <label>Wash Status = **NOT GOOD**</label>
+      </input>
+      <input appearance="li" ref="/wash/summary/n_latrine_review">
+        <label>Functional latrine = NO</label>
+      </input>
+      <input appearance="li" ref="/wash/summary/n_handwashing_review">
+        <label>Functional handwashing facility = NO</label>
+      </input>
+      <input appearance="li" ref="/wash/summary/n_safe_water_review">
+        <label>Use of safe drinking water = NO</label>
+      </input>
+      <input appearance="li" ref="/wash/summary/n_dish_rack_review">
+        <label>Use of a dish rack = NO</label>
+      </input>
+      <input appearance="li" ref="/wash/summary/n_compost_pit_review">
+        <label>Functional refuse disposal facility = NO</label>
+      </input>
+      <input appearance="h1 lime" ref="/wash/summary/n_followup">
+        <label>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/wash/summary/n_latrine_follow_up">
+        <label>A follow up task will appear in four weeks on <output value=" /wash/summary/next_follow_up_date_display "/></label>
+      </input>
+    </group>
+    <group ref="/wash/additional_doc">
+      <label></label>
+      <group ref="/wash/additional_doc/fields">
+        <label></label>
+      </group>
+    </group>
+  </h:body>
+</h:html>

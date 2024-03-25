@@ -1,0 +1,62 @@
+name: Staging app deployment
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+
+    - name: Update app settings with env variables
+      env:
+        INTEROP_CLIENT_USER: STAGING
+        INTEROP_GATEWAY_URL: https://interop-gateway-staging.health.go.ke/interop
+      run: npm run readenv
+  
+    - name: Set Interop Gateway password
+      run: |
+        curl -X PUT -H "Content-Type: text/plain" https://${{ secrets.STAGING_USERNAME }}:${{ secrets.STAGING_PASSWORD }}@chis-staging.health.go.ke/api/v1/credentials/mykey -d ${{ secrets.INTEROP_GATEWAY_STAGING_PASSWORD }}
+
+    - name: Deploy to staging
+      uses: 'medic/cht-core/.github/actions/deploy-conf@master'
+      with:
+        directory: '.'
+        hostname: chis-staging.health.go.ke
+        username: ${{ secrets.STAGING_USERNAME }}
+        password: ${{ secrets.STAGING_PASSWORD }}
+
+    - name: 'Get message'
+      id: 'deploy-message'
+      run: |
+            echo "::set-output name=commit_msg::$(git log -1 --format=%B)"
+            echo "::set-output name=commit_sha::$(git log -1 --format=%H)"
+
+    - name: Notify successful deployment
+      if: success()
+      id: deploy-success
+      uses: slackapi/slack-github-action@v1.24.0
+      with:
+        channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+        slack-message: "Staging deployment successful :successful: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    
+    - name: Notify failed deployment
+      if: failure()
+      id: deploy-fail
+      uses: slackapi/slack-github-action@v1.24.0
+      with:
+        channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+        slack-message: "Staging deployment failed :warning: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+

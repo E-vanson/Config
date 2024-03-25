@@ -1,0 +1,2768 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Mother and Newborn PNC Home Visit Service</h:title>
+    <model>
+      <instance>
+        <postnatal_care_service id="postnatal_care_service" prefix="J1!postnatal_care_service!" delimiter="#" version="2023-10-03 07:10:28">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <pnc_follow_up_count/>
+            <pregnancy_id/>
+            <place_of_birth/>
+            <is_in_pnc/>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <upi/>
+              <phone/>
+              <county_of_residence/>
+              <subcounty/>
+              <ward/>
+              <village/>
+              <nationality/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <link_facility_code/>
+                  <link_facility_name/>
+                  <chu_code/>
+                  <chu_name/>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <mother_phone/>
+          <mother_county_of_residence/>
+          <mother_subcounty/>
+          <mother_ward/>
+          <mother_village/>
+          <mother_nationality/>
+          <dob/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_age_in_weeks/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <chw_name/>
+          <parent_uuid/>
+          <grandparent_uuid/>
+          <great_grandparent_uuid/>
+          <great_great_grandparent_uuid/>
+          <great_great_great_grandparent_uuid/>
+          <neonatal_deaths/>
+          <postnatal_care_service_count/>
+          <pregnancy_id/>
+          <place_of_birth/>
+          <needs_danger_signs_follow_up/>
+          <danger_signs_follow_up_date/>
+          <needs_pnc_update_follow_up/>
+          <pnc_update_follow_up_date/>
+          <needs_mental_health_follow_up/>
+          <mental_health_follow_up_date/>
+          <needs_subsequent_visit/>
+          <subsequent_visit_date/>
+          <needs_missed_home_visit_follow_up/>
+          <missed_home_visit_date/>
+          <is_in_postnatal_care/>
+          <days_since_delivery/>
+          <count_perinatal_deaths/>
+          <is_maternal_death/>
+          <visited_contact_uuid/>
+          <has_been_referred/>
+          <referred_to_facility_code/>
+          <referred_to_facility_name/>
+          <resident_chu_code/>
+          <resident_chu_name/>
+          <group_follow_up>
+            <client_available/>
+            <n_remind/>
+          </group_follow_up>
+          <group_pregnancy_status>
+            <has_delivered/>
+          </group_pregnancy_status>
+          <group_pnc_visit>
+            <condition_of_the_mother/>
+            <n_death_report/>
+            <date_of_delivery/>
+            <date_of_delivery_display/>
+            <place_of_delivery/>
+            <place_of_delivery_display/>
+            <n_refer_home_birth/>
+          </group_pnc_visit>
+          <group_delivery_outcome>
+            <number_of_babies_delivered/>
+            <number_of_babies_alive/>
+          </group_delivery_outcome>
+          <group_mother_pnc_danger_signs>
+            <mother_danger_signs/>
+            <mother_danger_signs_other/>
+            <n_refer_mother/>
+            <has_pnc_up_to_date/>
+            <n_refer_pnc_update/>
+            <next_pnc_visit_date/>
+            <has_started_family_planning/>
+            <next_appointment_date_for_family_planning_service/>
+            <is_referred_for_family_planning/>
+          </group_mother_pnc_danger_signs>
+          <newborn_details>
+            <child_count/>
+            <child jr:template="" db-doc="true">
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+              <type>contact</type>
+              <contact_type>f_client</contact_type>
+              <first_name/>
+              <middle_name/>
+              <last_name/>
+              <name/>
+              <baby_name/>
+              <date_of_birth/>
+              <sex/>
+              <is_born_in_kenya/>
+              <other_country_of_birth/>
+              <country_of_birth/>
+              <county_of_birth/>
+              <phone/>
+              <county_of_residence/>
+              <subcounty/>
+              <ward/>
+              <village/>
+              <nationality/>
+              <relationship_to_hh_head/>
+              <relationship_to_hh_other/>
+              <has_disability/>
+              <disabilities/>
+              <disabilities_other/>
+              <knows_dob>yes</knows_dob>
+              <identification_type>none</identification_type>
+              <calc_identification_type_label/>
+              <identification_number/>
+              <get_id/>
+              <needs_newborn_danger_signs_follow_up/>
+              <newborn_danger_signs_follow_up_date/>
+              <needs_immunization_follow_up/>
+              <immunization_follow_up_date/>
+              <place_of_birth/>
+              <newborn_danger_signs/>
+              <count_has_danger_signs/>
+              <n_breaths_per_minute/>
+              <breaths_per_minute/>
+              <n_fast_breathing/>
+              <n_normal_breathing/>
+              <n_temperature/>
+              <temperature/>
+              <n_high_temperature/>
+              <n_low_temperature/>
+              <n_refer_temperature/>
+              <has_updated_immunization_status/>
+              <count_has_imm_not_uptodate/>
+              <n_educate_immunization/>
+              <n_encourage_immunization_schedule_adherence/>
+              <newborn_education/>
+              <caregiver_educated_on_newborn_care/>
+              <data>
+                <_service/>
+                <_patient_name/>
+                <_chu_code/>
+                <_chu_name/>
+                <_referred_to_facility_code/>
+                <_referred_to_facility_name/>
+                <_follow_up_date/>
+                <_screening>
+                  <_not_feeding/>
+                  <_convulsed/>
+                  <_fast_breathing/>
+                  <_chest_indrawn/>
+                  <_fever/>
+                  <_not_moving/>
+                  <_yellow_soles/>
+                  <_umbilical_stump_bleeding/>
+                  <_infected_umbilicus/>
+                  <_has_updated_immunization_status/>
+                </_screening>
+                <_supporting_info>
+                  <_breaths_per_minute/>
+                  <_temperature/>
+                </_supporting_info>
+              </data>
+              <child_doc db-doc-ref=" /postnatal_care_service/newborn_details/child "/>
+              <created_by_doc db-doc-ref="/postnatal_care_service"/>
+            </child>
+          </newborn_details>
+          <baby_doc_ids/>
+          <baby_names/>
+          <baby_birth_certs/>
+          <group_newborn_danger_signs_assessment>
+            <newborn_assessment_count/>
+            <newborn_assessment jr:template="">
+              <child_name/>
+              <child_doc/>
+              <child_cert_id/>
+              <child_available/>
+              <n_remind/>
+              <child_danger_signs/>
+              <count_child_has_danger_signs/>
+              <n_breaths_per_minute/>
+              <c_breaths_per_minute/>
+              <n_fast_breathing/>
+              <n_normal_breathing/>
+              <n_temperature/>
+              <c_temperature/>
+              <n_high_temperature/>
+              <n_low_temperature/>
+              <n_refer_temperature/>
+              <c_has_updated_immunization_status/>
+              <c_count_has_imm_not_uptodate/>
+              <n_educate_immunization/>
+              <n_encourage_immunization_schedule_adherence/>
+              <newborn_education/>
+            </newborn_assessment>
+          </group_newborn_danger_signs_assessment>
+          <group_maternal_mental_health>
+            <mental_signs/>
+            <observed_mental_signs/>
+            <n_refer_mental_signs/>
+          </group_maternal_mental_health>
+          <insurance>
+            <has_upto_date_insurance/>
+            <n_encourage_to_get_cover/>
+            <insurance_cover/>
+            <n_congratulate_on_insurance/>
+            <specify_other/>
+          </insurance>
+          <group_review>
+            <summary_title/>
+            <summary_title_referral/>
+            <insurance_status_display/>
+            <submit/>
+            <r_summary/>
+            <r_patient_info/>
+            <r_findings/>
+            <r_delivery_status_delivered/>
+            <r_delivery_status_not_delivered/>
+            <r_mother_alive/>
+            <r_mother_dead/>
+            <r_date_of_delivery/>
+            <r_place_of_delivery/>
+            <r_babies_delivered/>
+            <r_babies_alive/>
+            <r_pnc_uptodate_note/>
+            <r_pnc_not_uptodate_note/>
+            <r_pnc_on_fp/>
+            <r_pnc_not_on_fp/>
+            <r_uptodate_insurance/>
+            <r_not_uptodate_insurance/>
+            <r_was_available/>
+            <group_mother_assessment_summary>
+              <r_mother_has_danger_signs/>
+              <r_mother_has_mental_danger_signs/>
+              <r_mother_danger_signs/>
+              <r_mother_ds_title/>
+              <r_selected_mother_danger_signs_count/>
+              <r_selected_mother_danger_signs jr:template="">
+                <sign/>
+                <mother_ds_sign_note/>
+              </r_selected_mother_danger_signs>
+              <r_mother_mental_title/>
+              <r_no_maternal_health/>
+              <r_selected_maternal_mental_signs_count/>
+              <r_selected_maternal_mental_signs jr:template="">
+                <selected_mental_sign/>
+                <mother_selected_mental_sign_note/>
+              </r_selected_maternal_mental_signs>
+              <r_observed_maternal_mental_signs_count/>
+              <r_observed_maternal_mental_signs jr:template="">
+                <observed_mental_sign/>
+                <mother_observed_mental_sign_note/>
+              </r_observed_maternal_mental_signs>
+            </group_mother_assessment_summary>
+            <r_show_newborn_details/>
+            <r_newborn_details/>
+            <r_newborn_details_repeat_count/>
+            <r_newborn_details_repeat jr:template="">
+              <r_calc_newborn_name/>
+              <r_newborn_name/>
+              <r_calc_newborn_dob_display/>
+              <r_newborn_date_of_birth/>
+              <r_newborn_age/>
+              <r_calc_newborn_id/>
+              <r_newborn_id/>
+              <r_newborn_findings_title/>
+              <r_calc_newborn_disability>'None'</r_calc_newborn_disability>
+              <r_newborn_disabilities/>
+              <r_calc_imm_status>'None'</r_calc_imm_status>
+              <r_newborn_imm_status/>
+              <r_newborn_ds/>
+              <r_newborn_ds_title/>
+              <r_child_ds_label_not_feeding/>
+              <r_newborn_ds_not_feeding/>
+              <r_child_ds_label_convulsed/>
+              <r_newborn_ds_convulsed/>
+              <r_child_ds_label_fast_breathing/>
+              <r_newborn_ds_fast_breathing/>
+              <r_child_ds_label_chest_indrawn/>
+              <r_newborn_ds_chest_indrawn/>
+              <r_child_ds_label_fever/>
+              <r_newborn_ds_fever/>
+              <r_child_ds_label_not_moving/>
+              <r_newborn_ds_not_moving/>
+              <r_child_ds_label_yellow_soles/>
+              <r_newborn_ds_yellow_soles/>
+              <r_child_ds_label_umbilical_stump_bleeding/>
+              <r_newborn_ds_umbilical_stump_bleeding/>
+              <r_child_ds_label_infected_umbilicus/>
+              <r_newborn_ds_infected_umbilicus/>
+              <r_child_ds_label_none/>
+              <r_newborn_ds_none/>
+            </r_newborn_details_repeat>
+            <r_calc_newborn_ds_exists/>
+            <r_calc_mother_ds_exists/>
+            <r_calc_should_refer/>
+            <r_referral_title/>
+            <r_follow_up_title/>
+            <r_referral_follow_up_1/>
+            <r_referral_follow_up_3/>
+            <r_instruction_title/>
+            <r_sync_if_refer/>
+            <r_sync/>
+          </group_review>
+          <data>
+            <_upi/>
+            <_patient_name/>
+            <_chu_code/>
+            <_chu_name/>
+            <_referred_to_facility_code/>
+            <_referred_to_facility_name/>
+            <_follow_up_date/>
+            <_screening>
+              <_mother_danger_signs/>
+              <_mother_danger_signs_other/>
+              <_mental_danger_signs/>
+              <_observed_mental_danger_signs/>
+            </_screening>
+            <_supporting_info>
+              <_has_pnc_up_to_date/>
+              <_has_started_family_planning/>
+              <_next_pnc_visit_date/>
+              <_next_appointment_date_for_family_planning_service/>
+            </_supporting_info>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </postnatal_care_service>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/postnatal_care_service/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/postnatal_care_service/inputs/source" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/source_id" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/pnc_follow_up_count" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/pregnancy_id" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/place_of_birth" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/is_in_pnc" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/name" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/date_of_birth" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/sex" type="string" relevant="hidden"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/upi" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/phone" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/county_of_residence" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/subcounty" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/ward" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/village" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/nationality" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/link_facility_code" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/link_facility_name" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/chu_code" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/chu_name" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/inputs/contact/parent/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/postnatal_care_service/mother_phone" type="string" calculate="../inputs/contact/phone"/>
+      <bind nodeset="/postnatal_care_service/mother_county_of_residence" type="string" calculate="../inputs/contact/county_of_residence"/>
+      <bind nodeset="/postnatal_care_service/mother_subcounty" type="string" calculate="../inputs/contact/subcounty"/>
+      <bind nodeset="/postnatal_care_service/mother_ward" type="string" calculate="../inputs/contact/ward"/>
+      <bind nodeset="/postnatal_care_service/mother_village" type="string" calculate="../inputs/contact/village"/>
+      <bind nodeset="/postnatal_care_service/mother_nationality" type="string" calculate="../inputs/contact/nationality"/>
+      <bind nodeset="/postnatal_care_service/dob" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/postnatal_care_service/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /postnatal_care_service/dob , today() ) div 12 )"/>
+      <bind nodeset="/postnatal_care_service/patient_age_in_months" type="string" calculate="difference-in-months(  /postnatal_care_service/dob , today() )"/>
+      <bind nodeset="/postnatal_care_service/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /postnatal_care_service/dob ) )"/>
+      <bind nodeset="/postnatal_care_service/patient_age_display" type="string" calculate="concat(
+ concat( /postnatal_care_service/patient_age_in_years , if( /postnatal_care_service/patient_age_in_years =1,' year and ',' years and ')),
+ concat( /postnatal_care_service/patient_age_in_months  mod 12, if(( /postnatal_care_service/patient_age_in_months  mod 12)=1,' month old',' months old'))
+)"/>
+      <bind nodeset="/postnatal_care_service/patient_age_in_weeks" type="string" calculate="int(floor( /postnatal_care_service/patient_age_in_days  div 7))"/>
+      <bind nodeset="/postnatal_care_service/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/postnatal_care_service/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/postnatal_care_service/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/postnatal_care_service/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/postnatal_care_service/chw_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/postnatal_care_service/parent_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/postnatal_care_service/grandparent_uuid" type="string" calculate="../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/postnatal_care_service/great_grandparent_uuid" type="string" calculate="../inputs/contact/parent/parent/parent/_id"/>
+      <bind nodeset="/postnatal_care_service/great_great_grandparent_uuid" type="string" calculate="../inputs/contact/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/postnatal_care_service/great_great_great_grandparent_uuid" type="string" calculate="../inputs/contact/parent/parent/parent/parent/parent/_id"/>
+      <bind nodeset="/postnatal_care_service/neonatal_deaths" type="string" calculate=" /postnatal_care_service/group_delivery_outcome/number_of_babies_delivered - /postnatal_care_service/group_delivery_outcome/number_of_babies_alive "/>
+      <bind nodeset="/postnatal_care_service/postnatal_care_service_count" type="string" calculate="if( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes', 1, coalesce(coalesce(instance('contact-summary')/context/pnc_follow_up_count, ../inputs/pnc_follow_up_count),0))"/>
+      <bind nodeset="/postnatal_care_service/pregnancy_id" type="string" calculate="instance('contact-summary')/context/pregnancy_id"/>
+      <bind nodeset="/postnatal_care_service/place_of_birth" type="string" calculate="if( /postnatal_care_service/postnatal_care_service_count =1,  /postnatal_care_service/group_pnc_visit/place_of_delivery , coalesce(instance('contact-summary')/context/place_of_birth, ../inputs/place_of_birth))"/>
+      <bind nodeset="/postnatal_care_service/needs_danger_signs_follow_up" type="string" calculate="not(selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs , 'none')) and count-selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs )&gt;0"/>
+      <bind nodeset="/postnatal_care_service/danger_signs_follow_up_date" type="string" calculate="if( /postnatal_care_service/needs_danger_signs_follow_up ='true', format-date-time(decimal-date-time(today() + 1),&quot;%Y-%m-%d&quot;), '')"/>
+      <bind nodeset="/postnatal_care_service/needs_pnc_update_follow_up" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date ='no'"/>
+      <bind nodeset="/postnatal_care_service/pnc_update_follow_up_date" type="string" calculate="if( /postnatal_care_service/needs_pnc_update_follow_up ='true',format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/postnatal_care_service/needs_mental_health_follow_up" type="string" calculate="(not(selected( /postnatal_care_service/group_maternal_mental_health/mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/mental_signs )&gt;0) or (not(selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs )&gt;0)"/>
+      <bind nodeset="/postnatal_care_service/mental_health_follow_up_date" type="string" calculate="if( /postnatal_care_service/needs_mental_health_follow_up ='true',format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/postnatal_care_service/needs_subsequent_visit" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date !=''"/>
+      <bind nodeset="/postnatal_care_service/subsequent_visit_date" type="string" calculate="if( /postnatal_care_service/needs_subsequent_visit ='true',format-date-time(decimal-date-time( /postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date ) + 3,&quot;%Y-%m-%d&quot;),'')"/>
+      <bind nodeset="/postnatal_care_service/needs_missed_home_visit_follow_up" type="string" calculate=" /postnatal_care_service/group_follow_up/client_available ='no'"/>
+      <bind nodeset="/postnatal_care_service/missed_home_visit_date" type="string" calculate="if( /postnatal_care_service/needs_missed_home_visit_follow_up ='true',if(../place_of_birth='home', format-date-time(decimal-date-time( /postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date ) + 1,&quot;%Y-%m-%d&quot;),format-date-time(decimal-date-time( /postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date ) + 2,&quot;%Y-%m-%d&quot;)),'')"/>
+      <bind nodeset="/postnatal_care_service/is_in_postnatal_care" type="string" calculate="coalesce( /postnatal_care_service/group_pregnancy_status/has_delivered , coalesce(instance('contact-summary')/context/is_in_pnc, ../inputs/is_in_pnc))"/>
+      <bind nodeset="/postnatal_care_service/days_since_delivery" type="string" calculate="coalesce(instance('contact-summary')/context/days_since_delivery, -1)"/>
+      <bind nodeset="/postnatal_care_service/count_perinatal_deaths" type="string" calculate="if( /postnatal_care_service/group_delivery_outcome/number_of_babies_alive !='' and  /postnatal_care_service/group_delivery_outcome/number_of_babies_alive  &lt;  /postnatal_care_service/group_delivery_outcome/number_of_babies_delivered , number( /postnatal_care_service/group_delivery_outcome/number_of_babies_delivered )-number( /postnatal_care_service/group_delivery_outcome/number_of_babies_alive ),0)"/>
+      <bind nodeset="/postnatal_care_service/is_maternal_death" type="string" calculate="if( /postnatal_care_service/group_pnc_visit/condition_of_the_mother  = 'dead', 'yes', '')"/>
+      <bind nodeset="/postnatal_care_service/visited_contact_uuid" type="string" calculate="../parent_uuid"/>
+      <bind nodeset="/postnatal_care_service/has_been_referred" type="string" calculate="if( /postnatal_care_service/needs_danger_signs_follow_up  = 'true' or  /postnatal_care_service/needs_mental_health_follow_up  = 'true', 'yes', 'no')"/>
+      <bind nodeset="/postnatal_care_service/referred_to_facility_code" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_code, instance('contact-summary')/context/referred_to_facility_code)"/>
+      <bind nodeset="/postnatal_care_service/referred_to_facility_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/link_facility_name, instance('contact-summary')/context/referred_to_facility_name)"/>
+      <bind nodeset="/postnatal_care_service/resident_chu_code" type="string" calculate="coalesce( /postnatal_care_service/inputs/contact/parent/parent/chu_code , instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/postnatal_care_service/resident_chu_name" type="string" calculate="coalesce( /postnatal_care_service/inputs/contact/parent/parent/chu_name , instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/postnatal_care_service/group_follow_up" relevant=" /postnatal_care_service/days_since_delivery  &gt;= 0 and  /postnatal_care_service/inputs/source  = 'task'"/>
+      <bind nodeset="/postnatal_care_service/group_follow_up/client_available" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_follow_up/n_remind" readonly="true()" type="string" relevant=" /postnatal_care_service/group_follow_up/client_available  = 'no'"/>
+      <bind nodeset="/postnatal_care_service/group_pregnancy_status" relevant=" /postnatal_care_service/days_since_delivery  &lt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_pregnancy_status/has_delivered" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered  = 'yes'"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/condition_of_the_mother" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/n_death_report" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pnc_visit/condition_of_the_mother  = 'dead'"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/date_of_delivery" type="date" constraint=". &lt;= today() and . &gt; date(decimal-date-time(today()) - 365)" required="true()" jr:constraintMsg="Date cannot be in the future or more than a year ago"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/date_of_delivery_display" type="string" calculate="format-date( /postnatal_care_service/group_pnc_visit/date_of_delivery ,&quot;%b %e, %Y&quot;)" relevant=" /postnatal_care_service/group_pnc_visit/date_of_delivery !=''"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/place_of_delivery" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/place_of_delivery_display" type="string" calculate="jr:choice-name( /postnatal_care_service/group_pnc_visit/place_of_delivery ,' /postnatal_care_service/group_pnc_visit/place_of_delivery ')"/>
+      <bind nodeset="/postnatal_care_service/group_pnc_visit/n_refer_home_birth" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pnc_visit/place_of_delivery  = 'home' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive'"/>
+      <bind nodeset="/postnatal_care_service/group_delivery_outcome" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered  = 'yes'"/>
+      <bind nodeset="/postnatal_care_service/group_delivery_outcome/number_of_babies_delivered" type="int" constraint=". &gt;= 0 and . &lt;= 7" required="true()" jr:constraintMsg="Please confirm the number of babies born to a maximum of 7."/>
+      <bind nodeset="/postnatal_care_service/group_delivery_outcome/number_of_babies_alive" type="int" constraint=". &gt;= 0 and . &lt;= number( /postnatal_care_service/group_delivery_outcome/number_of_babies_delivered )" required="true()" jr:constraintMsg="The number cannot be more than those delivered"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs" relevant=" /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive' or  /postnatal_care_service/group_follow_up/client_available ='yes' or ( /postnatal_care_service/inputs/source  = 'contact' and  /postnatal_care_service/days_since_delivery  &gt;= 0)"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs" type="select" constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs_other" type="string" relevant="selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs , 'other')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/n_refer_mother" readonly="true()" type="string" relevant="not(selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs , 'none')) and count-selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs )&gt;0"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/n_refer_pnc_update" readonly="true()" type="string" relevant=" /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date  = 'no'"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date" type="date" constraint="decimal-date-time(.) &gt;= floor(decimal-date-time(today()))" required="true()" jr:constraintMsg="Date cannot be in the past"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/next_appointment_date_for_family_planning_service" type="date" constraint="decimal-date-time(.) &gt;= floor(decimal-date-time(today()))" relevant=" /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning  = 'yes'" required="true()" jr:constraintMsg="Date cannot be in the past"/>
+      <bind nodeset="/postnatal_care_service/group_mother_pnc_danger_signs/is_referred_for_family_planning" type="select1" relevant=" /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning  = 'no'" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details" relevant=" /postnatal_care_service/group_delivery_outcome/number_of_babies_alive  &gt; 0"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child_count" type="string" readonly="true()" calculate=" /postnatal_care_service/group_delivery_outcome/number_of_babies_alive "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/parent/_id" type="string" calculate=" /postnatal_care_service/parent_uuid "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/parent/parent/_id" type="string" calculate=" /postnatal_care_service/grandparent_uuid "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/parent/parent/parent/_id" type="string" calculate=" /postnatal_care_service/great_grandparent_uuid "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/parent/parent/parent/parent/_id" type="string" calculate=" /postnatal_care_service/great_great_grandparent_uuid "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/parent/parent/parent/parent/parent/_id" type="string" calculate=" /postnatal_care_service/great_great_great_grandparent_uuid "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/type" type="string" calculate="&quot;contact&quot;"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/contact_type" type="string" calculate="&quot;f_client&quot;"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/first_name" type="string" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/middle_name" type="string"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/last_name" type="string" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/name" type="string" calculate="concat(string(../first_name),' ',if(../middle_name != '',string(../middle_name),''),' ',string(../last_name))"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/baby_name" type="string" calculate="../name"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/date_of_birth" type="string" constraint=". &lt;= today()" calculate=" /postnatal_care_service/group_pnc_visit/date_of_delivery " required="true()" jr:constraintMsg="Date cannot be in the future"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/sex" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/is_born_in_kenya" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/other_country_of_birth" type="select1" relevant=" /postnatal_care_service/newborn_details/child/is_born_in_kenya ='no'" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/country_of_birth" type="string" calculate="if( /postnatal_care_service/newborn_details/child/is_born_in_kenya ='yes', 'KE',  /postnatal_care_service/newborn_details/child/other_country_of_birth )"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/county_of_birth" type="select1" relevant=" /postnatal_care_service/newborn_details/child/is_born_in_kenya ='yes'" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/phone" type="string" calculate=" /postnatal_care_service/mother_phone "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/county_of_residence" type="string" calculate=" /postnatal_care_service/mother_county_of_residence "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/subcounty" type="string" calculate=" /postnatal_care_service/mother_subcounty "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/ward" type="string" calculate=" /postnatal_care_service/mother_ward "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/village" type="string" calculate=" /postnatal_care_service/mother_village "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/nationality" type="string" calculate=" /postnatal_care_service/mother_nationality "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/relationship_to_hh_head" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/relationship_to_hh_other" type="string" relevant="../relationship_to_hh_head = 'other'" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/has_disability" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/disabilities" type="select" relevant="selected(../has_disability, 'yes')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/disabilities_other" type="string" relevant="selected(../disabilities, 'other')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/knows_dob" type="string" calculate="&quot;yes&quot;"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/identification_type" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/calc_identification_type_label" type="string" calculate="jr:choice-name( /postnatal_care_service/newborn_details/child/identification_type ,' /postnatal_care_service/newborn_details/child/identification_type ')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/identification_number" type="string" constraint="( /postnatal_care_service/newborn_details/child/identification_number  = 'national_id' and regex(.,'^[0-9]{8,20}')) or (  /postnatal_care_service/newborn_details/child/identification_number  != 'national_id' and regex(.,'^[A-Za-z0-9]{8,20}$'))" relevant="../identification_type != 'none' and ../identification_type != ''" required="true()" jr:constraintMsg="Please enter a valid identification number - between 8 and 20 characters in length"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/get_id" readonly="true()" type="string" relevant="selected(../identification_type, 'none')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/needs_newborn_danger_signs_follow_up" type="string" calculate="(not(selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'none')) and count-selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs )&gt;0) or ( /postnatal_care_service/newborn_details/child/breaths_per_minute &gt;=60 or  /postnatal_care_service/newborn_details/child/temperature  &gt;= 38)"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/newborn_danger_signs_follow_up_date" type="string" calculate="if( /postnatal_care_service/newborn_details/child/needs_newborn_danger_signs_follow_up ='true', format-date-time(decimal-date-time(today() )+ 1,&quot;%Y-%m-%d&quot;), '')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/needs_immunization_follow_up" type="string" calculate=" /postnatal_care_service/newborn_details/child/has_updated_immunization_status ='no'"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/immunization_follow_up_date" type="string" calculate="if( /postnatal_care_service/newborn_details/child/needs_immunization_follow_up ='true', format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;), '')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/place_of_birth" type="string" calculate=" /postnatal_care_service/group_pnc_visit/place_of_delivery "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/newborn_danger_signs" type="select" constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/count_has_danger_signs" type="string" calculate="if(selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'none'), 0, 1)"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_breaths_per_minute" readonly="true()" type="string" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fast_breathing')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/breaths_per_minute" type="int" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fast_breathing')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_fast_breathing" readonly="true()" type="string" relevant="../breaths_per_minute != '' and ../breaths_per_minute &gt;= 60"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_normal_breathing" readonly="true()" type="string" relevant="../breaths_per_minute != '' and ../breaths_per_minute &lt; 60"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_temperature" readonly="true()" type="string" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fever')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/temperature" type="int" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fever')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_high_temperature" readonly="true()" type="string" relevant=" /postnatal_care_service/newborn_details/child/temperature !='' and  /postnatal_care_service/newborn_details/child/temperature  &gt;= 38"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_low_temperature" readonly="true()" type="string" relevant=" /postnatal_care_service/newborn_details/child/temperature !='' and  /postnatal_care_service/newborn_details/child/temperature  &lt;= 35.4"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_refer_temperature" readonly="true()" type="string" relevant="count-selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs )&gt;0 and not(selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'none'))"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/has_updated_immunization_status" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/count_has_imm_not_uptodate" type="string" calculate="if(selected( /postnatal_care_service/newborn_details/child/has_updated_immunization_status , 'yes'), 0, 1)"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_educate_immunization" readonly="true()" type="string" relevant=" /postnatal_care_service/newborn_details/child/has_updated_immunization_status ='no'"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/n_encourage_immunization_schedule_adherence" readonly="true()" type="string" relevant=" /postnatal_care_service/newborn_details/child/has_updated_immunization_status ='yes'"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/newborn_education" type="select" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'none')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/caregiver_educated_on_newborn_care" type="select1" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'none')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_service" type="string" calculate="'postnatal_care_service_newborn'"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_patient_name" type="string" calculate=" /postnatal_care_service/newborn_details/child/baby_name "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_chu_code" type="string" calculate=" /postnatal_care_service/resident_chu_code "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_chu_name" type="string" calculate=" /postnatal_care_service/resident_chu_name "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_referred_to_facility_code" type="string" calculate=" /postnatal_care_service/referred_to_facility_code "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_referred_to_facility_name" type="string" calculate=" /postnatal_care_service/referred_to_facility_name "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_follow_up_date" type="string" calculate="format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_not_feeding" type="string" calculate="'not_feeding'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'not_feeding')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_convulsed" type="string" calculate="'convulsions_newborn'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'convulsed')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_fast_breathing" type="string" calculate="'fast_breathing'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'fast_breathing')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_chest_indrawn" type="string" calculate="'chest_indrawn'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'chest_indrawn')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_fever" type="string" calculate="'fever'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'fever')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_not_moving" type="string" calculate="'not_moving'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'not_moving')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_yellow_soles" type="string" calculate="'yellow_soles'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'yellow_soles')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_umbilical_stump_bleeding" type="string" calculate="'bleeding_umbilical_stump'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'umbilical_stump_bleeding')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_infected_umbilicus" type="string" calculate="'infected_umbilicus'" relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,'infected_umbilicus')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_screening/_has_updated_immunization_status" type="string" calculate="'imm_not_upto_date'" relevant="selected( /postnatal_care_service/newborn_details/child/has_updated_immunization_status , 'no')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_supporting_info/_breaths_per_minute" type="string" calculate=" /postnatal_care_service/newborn_details/child/breaths_per_minute " relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fast_breathing')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/data/_supporting_info/_temperature" type="string" calculate=" /postnatal_care_service/newborn_details/child/temperature " relevant="selected( /postnatal_care_service/newborn_details/child/newborn_danger_signs , 'fever')"/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/child_doc" type="string" calculate=" /postnatal_care_service/newborn_details/child "/>
+      <bind nodeset="/postnatal_care_service/newborn_details/child/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/postnatal_care_service/baby_doc_ids" type="string" calculate="instance('contact-summary')/context/baby_doc_ids"/>
+      <bind nodeset="/postnatal_care_service/baby_names" type="string" calculate="instance('contact-summary')/context/baby_names"/>
+      <bind nodeset="/postnatal_care_service/baby_birth_certs" type="string" calculate="instance('contact-summary')/context/baby_birth_cert_ids"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment" relevant=" /postnatal_care_service/days_since_delivery  &gt;= 0 and ( /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source ='contact')"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment_count" type="string" readonly="true()" calculate="count-selected( /postnatal_care_service/baby_names )"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name" type="string" calculate="selected-at( /postnatal_care_service/baby_names ,(position(..)-1))"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_doc" type="string" calculate="selected-at( /postnatal_care_service/baby_doc_ids ,(position(..)-1))"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_cert_id" type="string" calculate="selected-at( /postnatal_care_service/baby_birth_certs ,(position(..)-1))"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_available" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_remind" readonly="true()" type="string" relevant=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_available  = 'no'"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs" type="select" constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/count_child_has_danger_signs" type="string" calculate="if(selected( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs , 'none'), 0, 1)"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_breaths_per_minute" readonly="true()" type="string" relevant="selected(../child_danger_signs, 'fast_breathing')"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_breaths_per_minute" type="int" relevant="selected(../child_danger_signs, 'fast_breathing')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_fast_breathing" readonly="true()" type="string" relevant="../c_breaths_per_minute != '' and ../c_breaths_per_minute &gt;= 60"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_normal_breathing" readonly="true()" type="string" relevant="../c_breaths_per_minute != '' and ../c_breaths_per_minute &lt; 60"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_temperature" readonly="true()" type="string" relevant="selected(../child_danger_signs, 'fever')"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature" type="int" relevant="selected(../child_danger_signs, 'fever')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_high_temperature" readonly="true()" type="string" relevant=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature !='' and  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature  &gt;= 38"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_low_temperature" readonly="true()" type="string" relevant=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature !='' and  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature  &lt;= 35.4"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_refer_temperature" readonly="true()" type="string" relevant="count-selected(../child_danger_signs)&gt;0 and not(selected(../child_danger_signs,'none'))"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_count_has_imm_not_uptodate" type="string" calculate="if(selected( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status , 'yes'), 0, 1)"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_educate_immunization" readonly="true()" type="string" relevant=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status ='no'"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_encourage_immunization_schedule_adherence" readonly="true()" type="string" relevant=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/newborn_education" type="select" relevant="selected(../child_danger_signs,'none')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_maternal_mental_health" relevant=" /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive' or  /postnatal_care_service/group_follow_up/client_available ='yes' or ( /postnatal_care_service/inputs/source  = 'contact' and  /postnatal_care_service/days_since_delivery  &gt;= 0)"/>
+      <bind nodeset="/postnatal_care_service/group_maternal_mental_health/mental_signs" type="select" constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!"/>
+      <bind nodeset="/postnatal_care_service/group_maternal_mental_health/observed_mental_signs" type="select" constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!"/>
+      <bind nodeset="/postnatal_care_service/group_maternal_mental_health/n_refer_mental_signs" readonly="true()" type="string" relevant="(not(selected( /postnatal_care_service/group_maternal_mental_health/mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/mental_signs )&gt;0) or (not(selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs )&gt;0)"/>
+      <bind nodeset="/postnatal_care_service/insurance" relevant=" /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive' or  /postnatal_care_service/group_follow_up/client_available ='yes' or ( /postnatal_care_service/inputs/source  = 'contact' and  /postnatal_care_service/days_since_delivery  &gt;= 0)"/>
+      <bind nodeset="/postnatal_care_service/insurance/has_upto_date_insurance" type="select1" required="true()"/>
+      <bind nodeset="/postnatal_care_service/insurance/n_encourage_to_get_cover" readonly="true()" type="string" relevant=" /postnatal_care_service/insurance/has_upto_date_insurance  = 'no'"/>
+      <bind nodeset="/postnatal_care_service/insurance/insurance_cover" type="select" relevant=" /postnatal_care_service/insurance/has_upto_date_insurance  = 'yes'" required="true()"/>
+      <bind nodeset="/postnatal_care_service/insurance/n_congratulate_on_insurance" readonly="true()" type="string" relevant=" /postnatal_care_service/insurance/has_upto_date_insurance  = 'yes'"/>
+      <bind nodeset="/postnatal_care_service/insurance/specify_other" type="string" relevant=" /postnatal_care_service/insurance/has_upto_date_insurance  = 'yes' and selected( /postnatal_care_service/insurance/insurance_cover ,'other')" required="true()"/>
+      <bind nodeset="/postnatal_care_service/group_review/summary_title" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='false'"/>
+      <bind nodeset="/postnatal_care_service/group_review/summary_title_referral" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/insurance_status_display" type="string" calculate="if( /postnatal_care_service/insurance/has_upto_date_insurance  = 'yes', 'Insurance upto date', 'Insurance not upto date')"/>
+      <bind nodeset="/postnatal_care_service/group_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_patient_info" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_delivery_status_delivered" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_delivery_status_not_delivered" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='no'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_mother_alive" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and ( /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive' or  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='sick')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_mother_dead" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother  = 'dead'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_date_of_delivery" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_place_of_delivery" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_babies_delivered" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_babies_alive" readonly="true()" type="string" relevant=" /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_pnc_uptodate_note" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_pnc_not_uptodate_note" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date ='no'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_pnc_on_fp" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_pnc_not_on_fp" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning ='no'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_uptodate_insurance" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/insurance/has_upto_date_insurance ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_not_uptodate_insurance" readonly="true()" type="string" relevant="(( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes' and  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive') or  /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact') and  /postnatal_care_service/insurance/has_upto_date_insurance ='no'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_was_available" type="string" calculate="if( /postnatal_care_service/group_pregnancy_status/has_delivered ='yes',  /postnatal_care_service/group_pnc_visit/condition_of_the_mother ='alive', ( /postnatal_care_service/group_follow_up/client_available ='yes' or  /postnatal_care_service/inputs/source  = 'contact'))"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary" relevant=" /postnatal_care_service/group_review/r_was_available ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_danger_signs" type="string" calculate="not(selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs , 'none')) and count-selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs ) &gt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_mental_danger_signs" type="string" calculate="(not(selected( /postnatal_care_service/group_maternal_mental_health/mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/mental_signs ) &gt; 0) or (not(selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs ) &gt; 0)"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_danger_signs" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_danger_signs ='true' or  /postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_mental_danger_signs ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_ds_title" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_danger_signs ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs_count" type="string" readonly="true()" calculate="count-selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs/sign" type="string" calculate="jr:choice-name(selected-at( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs ,(position(..)-1)),  /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs/mother_ds_sign_note" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_mental_title" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_has_mental_danger_signs ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_no_maternal_health" readonly="true()" type="string" relevant=" /postnatal_care_service/group_maternal_mental_health/mental_signs ='none' and  /postnatal_care_service/group_maternal_mental_health/observed_mental_signs ='none'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs_count" type="string" readonly="true()" calculate="count-selected( /postnatal_care_service/group_maternal_mental_health/mental_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs" relevant=" /postnatal_care_service/group_maternal_mental_health/mental_signs !='none'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs/selected_mental_sign" type="string" calculate="jr:choice-name(selected-at( /postnatal_care_service/group_maternal_mental_health/mental_signs ,(position(..)-1)),  /postnatal_care_service/group_maternal_mental_health/mental_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs/mother_selected_mental_sign_note" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs_count" type="string" readonly="true()" calculate="count-selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs" relevant=" /postnatal_care_service/group_maternal_mental_health/observed_mental_signs !='none'"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs/observed_mental_sign" type="string" calculate="jr:choice-name(selected-at( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs ,(position(..)-1)),  /postnatal_care_service/group_maternal_mental_health/observed_mental_signs )"/>
+      <bind nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs/mother_observed_mental_sign_note" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_show_newborn_details" type="string" calculate="( /postnatal_care_service/group_pregnancy_status/has_delivered  = 'yes' and  /postnatal_care_service/group_delivery_outcome/number_of_babies_alive  &gt; 0) or ( /postnatal_care_service/days_since_delivery  &gt; 0 and count-selected( /postnatal_care_service/baby_names ) &gt; 0)"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_show_newborn_details ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat_count" type="string" readonly="true()" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0, count( /postnatal_care_service/newborn_details/child ), count( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment ))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat" relevant=" /postnatal_care_service/group_review/r_show_newborn_details ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_name" type="string" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0, indexed-repeat( /postnatal_care_service/newborn_details/child/baby_name ,  /postnatal_care_service/newborn_details/child , position(..)), indexed-repeat( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name ,  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment , position(..)))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_name" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_dob_display" type="string" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0,  /postnatal_care_service/group_pnc_visit/date_of_delivery_display , concat( /postnatal_care_service/days_since_delivery , ' days'))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_date_of_birth" readonly="true()" type="string" relevant=" /postnatal_care_service/days_since_delivery  &lt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_age" readonly="true()" type="string" relevant=" /postnatal_care_service/days_since_delivery  &gt;= 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_id" type="string" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0, if(indexed-repeat( /postnatal_care_service/newborn_details/child/identification_type ,  /postnatal_care_service/newborn_details/child , position(..))='none', 'None', concat('Birth certificate No: ', indexed-repeat( /postnatal_care_service/newborn_details/child/identification_number ,  /postnatal_care_service/newborn_details/child , position(..)))), indexed-repeat( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_cert_id ,  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment , position(..)))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_id" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_findings_title" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_disability" type="string" calculate="if(indexed-repeat( /postnatal_care_service/newborn_details/child/has_disability ,  /postnatal_care_service/newborn_details/child , position(..))='no', 'None', concat(indexed-repeat( /postnatal_care_service/newborn_details/child/disabilities ,  /postnatal_care_service/newborn_details/child , position(..)), ' ', indexed-repeat( /postnatal_care_service/newborn_details/child/disabilities_other ,  /postnatal_care_service/newborn_details/child , position(..))))" relevant=" /postnatal_care_service/days_since_delivery  &lt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_disabilities" readonly="true()" type="string" relevant=" /postnatal_care_service/days_since_delivery  &lt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_imm_status" type="string" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0, if(indexed-repeat( /postnatal_care_service/newborn_details/child/has_updated_immunization_status ,  /postnatal_care_service/newborn_details/child , position(..))='no', 'Not Upto date', 'Upto date'), if(indexed-repeat( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status ,  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment , position(..))='no', 'Not Upto date', 'Upto date'))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_imm_status" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds" type="string" calculate="if( /postnatal_care_service/days_since_delivery  &lt; 0, indexed-repeat( /postnatal_care_service/newborn_details/child/newborn_danger_signs ,  /postnatal_care_service/newborn_details/child , position(..)), indexed-repeat( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs ,  /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment , position(..)))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_title" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_not_feeding" type="string" calculate="coalesce(jr:choice-name('not_feeding', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('not_feeding', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_not_feeding" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'not_feeding')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_convulsed" type="string" calculate="coalesce(jr:choice-name('convulsed', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('convulsed', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_convulsed" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'convulsed')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_fast_breathing" type="string" calculate="coalesce(jr:choice-name('fast_breathing', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('fast_breathing', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_fast_breathing" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'fast_breathing')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_chest_indrawn" type="string" calculate="coalesce(jr:choice-name('chest_indrawn', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('chest_indrawn', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_chest_indrawn" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'chest_indrawn')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_fever" type="string" calculate="coalesce(jr:choice-name('fever', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('fever', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_fever" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'fever')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_not_moving" type="string" calculate="coalesce(jr:choice-name('not_moving', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('not_moving', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_not_moving" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'not_moving')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_yellow_soles" type="string" calculate="coalesce(jr:choice-name('yellow_soles', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('yellow_soles', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_yellow_soles" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'yellow_soles')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_umbilical_stump_bleeding" type="string" calculate="coalesce(jr:choice-name('umbilical_stump_bleeding', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('umbilical_stump_bleeding', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_umbilical_stump_bleeding" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'umbilical_stump_bleeding')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_infected_umbilicus" type="string" calculate="coalesce(jr:choice-name('infected_umbilicus', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('infected_umbilicus', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_infected_umbilicus" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'infected_umbilicus')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_none" type="string" calculate="coalesce(jr:choice-name('none', ' /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs '), jr:choice-name('none', ' /postnatal_care_service/newborn_details/child/newborn_danger_signs '))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_none" readonly="true()" type="string" relevant="selected( /postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds , 'none')"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_calc_newborn_ds_exists" type="string" calculate="sum( /postnatal_care_service/newborn_details/child/count_has_danger_signs ) &gt; 0 or sum( /postnatal_care_service/newborn_details/child/count_has_imm_not_uptodate ) &gt; 0 or sum( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/count_child_has_danger_signs ) &gt; 0 or sum( /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_count_has_imm_not_uptodate ) &gt; 0"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_calc_mother_ds_exists" type="string" calculate=" /postnatal_care_service/group_review/r_was_available ='true' and ((not(selected( /postnatal_care_service/group_maternal_mental_health/mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/mental_signs ) &gt; 0) or (not(selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs , 'none')) and count-selected( /postnatal_care_service/group_maternal_mental_health/observed_mental_signs ) &gt; 0) or (not(selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs , 'none')) and count-selected( /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs ) &gt; 0) or selected( /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date , 'no'))"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_calc_should_refer" type="string" calculate=" /postnatal_care_service/group_review/r_calc_newborn_ds_exists ='true' or  /postnatal_care_service/group_review/r_calc_mother_ds_exists ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_referral_title" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_follow_up_title" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true' and  /postnatal_care_service/group_pregnancy_status/has_delivered ='yes'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_referral_follow_up_1" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true' and  /postnatal_care_service/group_pnc_visit/place_of_delivery  = 'home'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_referral_follow_up_3" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true' and  /postnatal_care_service/group_pnc_visit/place_of_delivery  = 'health_facility'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_instruction_title" readonly="true()" type="string"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_sync_if_refer" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='true'"/>
+      <bind nodeset="/postnatal_care_service/group_review/r_sync" readonly="true()" type="string" relevant=" /postnatal_care_service/group_review/r_calc_should_refer ='false'"/>
+      <bind nodeset="/postnatal_care_service/data/_upi" type="string" calculate="../../inputs/contact/upi"/>
+      <bind nodeset="/postnatal_care_service/data/_patient_name" type="string" calculate=" /postnatal_care_service/patient_name "/>
+      <bind nodeset="/postnatal_care_service/data/_chu_code" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_code, instance('contact-summary')/context/chu_code)"/>
+      <bind nodeset="/postnatal_care_service/data/_chu_name" type="string" calculate="coalesce(../../inputs/contact/parent/parent/chu_name, instance('contact-summary')/context/chu_name)"/>
+      <bind nodeset="/postnatal_care_service/data/_referred_to_facility_code" type="string" calculate=" /postnatal_care_service/referred_to_facility_code "/>
+      <bind nodeset="/postnatal_care_service/data/_referred_to_facility_name" type="string" calculate=" /postnatal_care_service/referred_to_facility_name "/>
+      <bind nodeset="/postnatal_care_service/data/_follow_up_date" type="string" calculate="format-date-time(decimal-date-time(today()) + 3,&quot;%Y-%m-%d&quot;)"/>
+      <bind nodeset="/postnatal_care_service/data/_screening/_mother_danger_signs" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs "/>
+      <bind nodeset="/postnatal_care_service/data/_screening/_mother_danger_signs_other" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs_other "/>
+      <bind nodeset="/postnatal_care_service/data/_screening/_mental_danger_signs" type="string" calculate=" /postnatal_care_service/group_maternal_mental_health/mental_signs "/>
+      <bind nodeset="/postnatal_care_service/data/_screening/_observed_mental_danger_signs" type="string" calculate=" /postnatal_care_service/group_maternal_mental_health/observed_mental_signs "/>
+      <bind nodeset="/postnatal_care_service/data/_supporting_info/_has_pnc_up_to_date" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date "/>
+      <bind nodeset="/postnatal_care_service/data/_supporting_info/_has_started_family_planning" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning "/>
+      <bind nodeset="/postnatal_care_service/data/_supporting_info/_next_pnc_visit_date" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date "/>
+      <bind nodeset="/postnatal_care_service/data/_supporting_info/_next_appointment_date_for_family_planning_service" type="string" calculate=" /postnatal_care_service/group_mother_pnc_danger_signs/next_appointment_date_for_family_planning_service " relevant=" /postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning  = 'yes'"/>
+      <bind nodeset="/postnatal_care_service/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/postnatal_care_service/inputs">
+      <label>Patient</label>
+      <group ref="/postnatal_care_service/inputs/contact">
+        <label>Contact</label>
+        <input appearance="select-contact type-f_client" ref="/postnatal_care_service/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/postnatal_care_service/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/postnatal_care_service/inputs/contact/parent/parent">
+            <label>Grand Parent</label>
+            <group ref="/postnatal_care_service/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+            <group ref="/postnatal_care_service/inputs/contact/parent/parent/parent">
+              <label>Great Grand Parent</label>
+              <group ref="/postnatal_care_service/inputs/contact/parent/parent/parent/parent">
+                <label>Great Great Grand Parent</label>
+                <group ref="/postnatal_care_service/inputs/contact/parent/parent/parent/parent/parent">
+                  <label>Great Great Great Grand Parent</label>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_follow_up">
+      <label>Follow up details</label>
+      <select1 ref="/postnatal_care_service/group_follow_up/client_available">
+        <label>Is <output value=" /postnatal_care_service/patient_name "/> available?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/group_follow_up/n_remind">
+        <label>&lt;span style=&quot;color:orange;&quot;&gt;**If <output value=" /postnatal_care_service/patient_name "/> relocated remember to submit a muting request, if they died remember to submit a death report.**&lt;/span&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_pregnancy_status">
+      <label>Pregnancy status</label>
+      <select1 ref="/postnatal_care_service/group_pregnancy_status/has_delivered">
+        <label>Has <output value=" /postnatal_care_service/patient_name "/> delivered?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_pnc_visit">
+      <label>Home Visit</label>
+      <select1 ref="/postnatal_care_service/group_pnc_visit/condition_of_the_mother">
+        <label>What is the condition of the mother?</label>
+        <item>
+          <label>Alive</label>
+          <value>alive</value>
+        </item>
+        <item>
+          <label>Dead</label>
+          <value>dead</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/group_pnc_visit/n_death_report">
+        <label>Remember to fill a death report form</label>
+      </input>
+      <input ref="/postnatal_care_service/group_pnc_visit/date_of_delivery">
+        <label>Date of delivery</label>
+      </input>
+      <select1 ref="/postnatal_care_service/group_pnc_visit/place_of_delivery">
+        <label>Place of delivery</label>
+        <item>
+          <label>Home</label>
+          <value>home</value>
+        </item>
+        <item>
+          <label>Health facility</label>
+          <value>health_facility</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/group_pnc_visit/n_refer_home_birth">
+        <label>Refer mother to health facility</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_delivery_outcome">
+      <label>Delivery outcome</label>
+      <input ref="/postnatal_care_service/group_delivery_outcome/number_of_babies_delivered">
+        <label>How many babies were delivered?</label>
+      </input>
+      <input ref="/postnatal_care_service/group_delivery_outcome/number_of_babies_alive">
+        <label>Number of babies alive?</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_mother_pnc_danger_signs">
+      <label>Mother PNC Danger Signs</label>
+      <select ref="/postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs">
+        <label>Ask for the following danger signs of a new mother</label>
+        <item>
+          <label>Fever</label>
+          <value>fever</value>
+        </item>
+        <item>
+          <label>Severe Headache</label>
+          <value>severe_headache</value>
+        </item>
+        <item>
+          <label>Heavy Vaginal Bleeding</label>
+          <value>heavy_vaginal_bleeding</value>
+        </item>
+        <item>
+          <label>Foul Smelling vaginal discharge</label>
+          <value>foul_smelling_discharge</value>
+        </item>
+        <item>
+          <label>Cracked and painful nipples</label>
+          <value>cracked_and_painful_nipples</value>
+        </item>
+        <item>
+          <label>Convulsions</label>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/postnatal_care_service/group_mother_pnc_danger_signs/mother_danger_signs_other">
+        <label>Specify other</label>
+      </input>
+      <input ref="/postnatal_care_service/group_mother_pnc_danger_signs/n_refer_mother">
+        <label>Refer mother to health facility</label>
+      </input>
+      <select1 ref="/postnatal_care_service/group_mother_pnc_danger_signs/has_pnc_up_to_date">
+        <label>Is <output value=" /postnatal_care_service/patient_name "/>'s PNC visit up to date?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/group_mother_pnc_danger_signs/n_refer_pnc_update">
+        <label>Educate on importance of PNC and refer to health facility</label>
+      </input>
+      <input ref="/postnatal_care_service/group_mother_pnc_danger_signs/next_pnc_visit_date">
+        <label>Enter next PNC visit date</label>
+      </input>
+      <select1 ref="/postnatal_care_service/group_mother_pnc_danger_signs/has_started_family_planning">
+        <label>Has <output value=" /postnatal_care_service/patient_name "/> started post-partum family planning</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/group_mother_pnc_danger_signs/next_appointment_date_for_family_planning_service">
+        <label>Next appointment date for family planning services</label>
+      </input>
+      <select1 ref="/postnatal_care_service/group_mother_pnc_danger_signs/is_referred_for_family_planning">
+        <label>Educate on family planning methods. Are you referring for family planning today?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/newborn_details">
+      <label>Newborn details</label>
+      <group ref="/postnatal_care_service/newborn_details/child">
+        <label></label>
+        <repeat nodeset="/postnatal_care_service/newborn_details/child" appearance="field-list" jr:count=" /postnatal_care_service/newborn_details/child_count ">
+          <group appearance="hidden" ref="/postnatal_care_service/newborn_details/child/parent">
+            <label></label>
+            <group ref="/postnatal_care_service/newborn_details/child/parent/parent">
+              <label></label>
+              <group ref="/postnatal_care_service/newborn_details/child/parent/parent/parent">
+                <label></label>
+                <group ref="/postnatal_care_service/newborn_details/child/parent/parent/parent/parent">
+                  <label></label>
+                  <group ref="/postnatal_care_service/newborn_details/child/parent/parent/parent/parent/parent">
+                    <label></label>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+          <input ref="/postnatal_care_service/newborn_details/child/first_name">
+            <label>First name</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/middle_name">
+            <label>Middle name</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/last_name">
+            <label>Last name</label>
+          </input>
+          <select1 ref="/postnatal_care_service/newborn_details/child/sex">
+            <label>Gender</label>
+            <item>
+              <label>Male</label>
+              <value>male</value>
+            </item>
+            <item>
+              <label>Female</label>
+              <value>female</value>
+            </item>
+            <item>
+              <label>Intersex</label>
+              <value>intesersex</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_care_service/newborn_details/child/is_born_in_kenya">
+            <label>Was <output value=" /postnatal_care_service/newborn_details/child/baby_name "/>'s born in Kenya?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/postnatal_care_service/newborn_details/child/other_country_of_birth">
+            <label>What is <output value=" /postnatal_care_service/newborn_details/child/baby_name "/>'s country of birth?</label>
+            <item>
+              <label>ÅLAND ISLANDS</label>
+              <value>AX</value>
+            </item>
+            <item>
+              <label>AFGHANISTAN</label>
+              <value>AF</value>
+            </item>
+            <item>
+              <label>ALBANIA</label>
+              <value>AL</value>
+            </item>
+            <item>
+              <label>ALGERIA</label>
+              <value>DZ</value>
+            </item>
+            <item>
+              <label>AMERICAN SAMOA</label>
+              <value>AS</value>
+            </item>
+            <item>
+              <label>ANDORRA</label>
+              <value>AD</value>
+            </item>
+            <item>
+              <label>ANGOLA</label>
+              <value>AO</value>
+            </item>
+            <item>
+              <label>ANGUILLA</label>
+              <value>AI</value>
+            </item>
+            <item>
+              <label>ANTARCTICA</label>
+              <value>AQ</value>
+            </item>
+            <item>
+              <label>ANTIGUA AND BARBUDA</label>
+              <value>AG</value>
+            </item>
+            <item>
+              <label>ARGENTINA</label>
+              <value>AR</value>
+            </item>
+            <item>
+              <label>ARMENIA</label>
+              <value>AM</value>
+            </item>
+            <item>
+              <label>ARUBA</label>
+              <value>AW</value>
+            </item>
+            <item>
+              <label>AUSTRALIA</label>
+              <value>AU</value>
+            </item>
+            <item>
+              <label>AUSTRIA</label>
+              <value>AT</value>
+            </item>
+            <item>
+              <label>AZERBAIJAN</label>
+              <value>AZ</value>
+            </item>
+            <item>
+              <label>BAHAMAS</label>
+              <value>BS</value>
+            </item>
+            <item>
+              <label>BAHRAIN</label>
+              <value>BH</value>
+            </item>
+            <item>
+              <label>BANGLADESH</label>
+              <value>BD</value>
+            </item>
+            <item>
+              <label>BARBADOS</label>
+              <value>BB</value>
+            </item>
+            <item>
+              <label>BELARUS</label>
+              <value>BY</value>
+            </item>
+            <item>
+              <label>BELGIUM</label>
+              <value>BE</value>
+            </item>
+            <item>
+              <label>BELIZE</label>
+              <value>BZ</value>
+            </item>
+            <item>
+              <label>BENIN</label>
+              <value>BJ</value>
+            </item>
+            <item>
+              <label>BERMUDA</label>
+              <value>BM</value>
+            </item>
+            <item>
+              <label>BHUTAN</label>
+              <value>BT</value>
+            </item>
+            <item>
+              <label>BOLIVIA</label>
+              <value>BO</value>
+            </item>
+            <item>
+              <label>BONAIRE, SINT EUSTATIUS AND SABA</label>
+              <value>BQ</value>
+            </item>
+            <item>
+              <label>BOSNIA AND HERZEGOVINA</label>
+              <value>BA</value>
+            </item>
+            <item>
+              <label>BOTSWANA</label>
+              <value>BW</value>
+            </item>
+            <item>
+              <label>BOUVET ISLAND</label>
+              <value>BV</value>
+            </item>
+            <item>
+              <label>BRAZIL</label>
+              <value>BR</value>
+            </item>
+            <item>
+              <label>BRITISH INDIAN OCEAN TERRITORY</label>
+              <value>IO</value>
+            </item>
+            <item>
+              <label>BRUNEI DARUSSALAM</label>
+              <value>BN</value>
+            </item>
+            <item>
+              <label>BULGARIA</label>
+              <value>BG</value>
+            </item>
+            <item>
+              <label>BURKINA FASO</label>
+              <value>BF</value>
+            </item>
+            <item>
+              <label>BURUNDI</label>
+              <value>BI</value>
+            </item>
+            <item>
+              <label>CABO VERDE</label>
+              <value>CV</value>
+            </item>
+            <item>
+              <label>CAMBODIA</label>
+              <value>KH</value>
+            </item>
+            <item>
+              <label>CAMEROON</label>
+              <value>CM</value>
+            </item>
+            <item>
+              <label>CANADA</label>
+              <value>CA</value>
+            </item>
+            <item>
+              <label>CAYMAN ISLANDS</label>
+              <value>KY</value>
+            </item>
+            <item>
+              <label>CENTRAL AFRICAN REPUBLIC</label>
+              <value>CF</value>
+            </item>
+            <item>
+              <label>CHAD</label>
+              <value>TD</value>
+            </item>
+            <item>
+              <label>CHILE</label>
+              <value>CL</value>
+            </item>
+            <item>
+              <label>CHINA</label>
+              <value>CN</value>
+            </item>
+            <item>
+              <label>CHRISTMAS ISLAND</label>
+              <value>CX</value>
+            </item>
+            <item>
+              <label>COCOS (KEELING) ISLANDS</label>
+              <value>CC</value>
+            </item>
+            <item>
+              <label>COLOMBIA</label>
+              <value>CO</value>
+            </item>
+            <item>
+              <label>COMOROS</label>
+              <value>KM</value>
+            </item>
+            <item>
+              <label>CONGO (THE DEMOCRATIC REPUBLIC OF THE)</label>
+              <value>CD</value>
+            </item>
+            <item>
+              <label>CONGO</label>
+              <value>CG</value>
+            </item>
+            <item>
+              <label>COOK ISLANDS</label>
+              <value>CK</value>
+            </item>
+            <item>
+              <label>COSTA RICA</label>
+              <value>CR</value>
+            </item>
+            <item>
+              <label>CROATIA</label>
+              <value>HR</value>
+            </item>
+            <item>
+              <label>CUBA</label>
+              <value>CU</value>
+            </item>
+            <item>
+              <label>CURAÇAO</label>
+              <value>CW</value>
+            </item>
+            <item>
+              <label>CYPRUS</label>
+              <value>CY</value>
+            </item>
+            <item>
+              <label>CZECHIA</label>
+              <value>CZ</value>
+            </item>
+            <item>
+              <label>CÔTE D'IVOIRE</label>
+              <value>CI</value>
+            </item>
+            <item>
+              <label>DENMARK</label>
+              <value>DK</value>
+            </item>
+            <item>
+              <label>DJIBOUTI</label>
+              <value>DJ</value>
+            </item>
+            <item>
+              <label>DOMINICA</label>
+              <value>DM</value>
+            </item>
+            <item>
+              <label>DOMINICAN REPUBLIC</label>
+              <value>DO</value>
+            </item>
+            <item>
+              <label>ECUADOR</label>
+              <value>EC</value>
+            </item>
+            <item>
+              <label>EGYPT</label>
+              <value>EG</value>
+            </item>
+            <item>
+              <label>EL SALVADOR</label>
+              <value>SV</value>
+            </item>
+            <item>
+              <label>EQUATORIAL GUINEA</label>
+              <value>GQ</value>
+            </item>
+            <item>
+              <label>ERITREA</label>
+              <value>ER</value>
+            </item>
+            <item>
+              <label>ESTONIA</label>
+              <value>EE</value>
+            </item>
+            <item>
+              <label>ESWATINI</label>
+              <value>SZ</value>
+            </item>
+            <item>
+              <label>ETHIOPIA</label>
+              <value>ET</value>
+            </item>
+            <item>
+              <label>FALKLAND ISLANDS [MALVINAS]</label>
+              <value>FK</value>
+            </item>
+            <item>
+              <label>FAROE ISLANDS</label>
+              <value>FO</value>
+            </item>
+            <item>
+              <label>FIJI</label>
+              <value>FJ</value>
+            </item>
+            <item>
+              <label>FINLAND</label>
+              <value>FI</value>
+            </item>
+            <item>
+              <label>FRANCE</label>
+              <value>FR</value>
+            </item>
+            <item>
+              <label>FRENCH GUIANA</label>
+              <value>GF</value>
+            </item>
+            <item>
+              <label>FRENCH POLYNESIA</label>
+              <value>PF</value>
+            </item>
+            <item>
+              <label>FRENCH SOUTHERN TERRITORIES</label>
+              <value>TF</value>
+            </item>
+            <item>
+              <label>GABON</label>
+              <value>GA</value>
+            </item>
+            <item>
+              <label>GAMBIA</label>
+              <value>GM</value>
+            </item>
+            <item>
+              <label>GEORGIA</label>
+              <value>GE</value>
+            </item>
+            <item>
+              <label>GERMANY</label>
+              <value>DE</value>
+            </item>
+            <item>
+              <label>GHANA</label>
+              <value>GH</value>
+            </item>
+            <item>
+              <label>GIBRALTAR</label>
+              <value>GI</value>
+            </item>
+            <item>
+              <label>GREECE</label>
+              <value>GR</value>
+            </item>
+            <item>
+              <label>GREENLAND</label>
+              <value>GL</value>
+            </item>
+            <item>
+              <label>GRENADA</label>
+              <value>GD</value>
+            </item>
+            <item>
+              <label>GUADELOUPE</label>
+              <value>GP</value>
+            </item>
+            <item>
+              <label>GUAM</label>
+              <value>GU</value>
+            </item>
+            <item>
+              <label>GUATEMALA</label>
+              <value>GT</value>
+            </item>
+            <item>
+              <label>GUERNSEY</label>
+              <value>GG</value>
+            </item>
+            <item>
+              <label>GUINEA</label>
+              <value>GN</value>
+            </item>
+            <item>
+              <label>GUINEA-BISSAU</label>
+              <value>GW</value>
+            </item>
+            <item>
+              <label>GUYANA</label>
+              <value>GY</value>
+            </item>
+            <item>
+              <label>HAITI</label>
+              <value>HT</value>
+            </item>
+            <item>
+              <label>HEARD ISLAND AND MCDONALD ISLANDS</label>
+              <value>HM</value>
+            </item>
+            <item>
+              <label>HOLY SEE</label>
+              <value>VA</value>
+            </item>
+            <item>
+              <label>HONDURAS</label>
+              <value>HN</value>
+            </item>
+            <item>
+              <label>HONG KONG</label>
+              <value>HK</value>
+            </item>
+            <item>
+              <label>HUNGARY</label>
+              <value>HU</value>
+            </item>
+            <item>
+              <label>ICELAND</label>
+              <value>IS</value>
+            </item>
+            <item>
+              <label>INDIA</label>
+              <value>IN</value>
+            </item>
+            <item>
+              <label>INDONESIA</label>
+              <value>ID</value>
+            </item>
+            <item>
+              <label>IRAN (ISLAMIC REPUBLIC OF)</label>
+              <value>IR</value>
+            </item>
+            <item>
+              <label>IRAQ</label>
+              <value>IQ</value>
+            </item>
+            <item>
+              <label>IRELAND</label>
+              <value>IE</value>
+            </item>
+            <item>
+              <label>ISLE OF MAN</label>
+              <value>IM</value>
+            </item>
+            <item>
+              <label>ISRAEL</label>
+              <value>IL</value>
+            </item>
+            <item>
+              <label>ITALY</label>
+              <value>IT</value>
+            </item>
+            <item>
+              <label>JAMAICA</label>
+              <value>JM</value>
+            </item>
+            <item>
+              <label>JAPAN</label>
+              <value>JP</value>
+            </item>
+            <item>
+              <label>JERSEY</label>
+              <value>JE</value>
+            </item>
+            <item>
+              <label>JORDAN</label>
+              <value>JO</value>
+            </item>
+            <item>
+              <label>KAZAKHSTAN</label>
+              <value>KZ</value>
+            </item>
+            <item>
+              <label>KENYA</label>
+              <value>KE</value>
+            </item>
+            <item>
+              <label>KIRIBATI</label>
+              <value>KI</value>
+            </item>
+            <item>
+              <label>KOREA (THE DEMOCRATIC PEOPLE'S REPUBLIC OF)</label>
+              <value>KP</value>
+            </item>
+            <item>
+              <label>KOREA (THE REPUBLIC OF)</label>
+              <value>KR</value>
+            </item>
+            <item>
+              <label>KUWAIT</label>
+              <value>KW</value>
+            </item>
+            <item>
+              <label>KYRGYZSTAN</label>
+              <value>KG</value>
+            </item>
+            <item>
+              <label>LAO PEOPLE'S DEMOCRATIC REPUBLIC</label>
+              <value>LA</value>
+            </item>
+            <item>
+              <label>LATVIA</label>
+              <value>LV</value>
+            </item>
+            <item>
+              <label>LEBANON</label>
+              <value>LB</value>
+            </item>
+            <item>
+              <label>LESOTHO</label>
+              <value>LS</value>
+            </item>
+            <item>
+              <label>LIBERIA</label>
+              <value>LR</value>
+            </item>
+            <item>
+              <label>LIBYA</label>
+              <value>LY</value>
+            </item>
+            <item>
+              <label>LIECHTENSTEIN</label>
+              <value>LI</value>
+            </item>
+            <item>
+              <label>LITHUANIA</label>
+              <value>LT</value>
+            </item>
+            <item>
+              <label>LUXEMBOURG</label>
+              <value>LU</value>
+            </item>
+            <item>
+              <label>MACAO</label>
+              <value>MO</value>
+            </item>
+            <item>
+              <label>MADAGASCAR</label>
+              <value>MG</value>
+            </item>
+            <item>
+              <label>MALAWI</label>
+              <value>MW</value>
+            </item>
+            <item>
+              <label>MALAYSIA</label>
+              <value>MY</value>
+            </item>
+            <item>
+              <label>MALDIVES</label>
+              <value>MV</value>
+            </item>
+            <item>
+              <label>MALI</label>
+              <value>ML</value>
+            </item>
+            <item>
+              <label>MALTA</label>
+              <value>MT</value>
+            </item>
+            <item>
+              <label>MARSHALL ISLANDS</label>
+              <value>MH</value>
+            </item>
+            <item>
+              <label>MARTINIQUE</label>
+              <value>MQ</value>
+            </item>
+            <item>
+              <label>MAURITANIA</label>
+              <value>MR</value>
+            </item>
+            <item>
+              <label>MAURITIUS</label>
+              <value>MU</value>
+            </item>
+            <item>
+              <label>MAYOTTE</label>
+              <value>YT</value>
+            </item>
+            <item>
+              <label>MEXICO</label>
+              <value>MX</value>
+            </item>
+            <item>
+              <label>MICRONESIA (FEDERATED STATES OF)</label>
+              <value>FM</value>
+            </item>
+            <item>
+              <label>MOLDOVA (THE REPUBLIC OF)</label>
+              <value>MD</value>
+            </item>
+            <item>
+              <label>MONACO</label>
+              <value>MC</value>
+            </item>
+            <item>
+              <label>MONGOLIA</label>
+              <value>MN</value>
+            </item>
+            <item>
+              <label>MONTENEGRO</label>
+              <value>ME</value>
+            </item>
+            <item>
+              <label>MONTSERRAT</label>
+              <value>MS</value>
+            </item>
+            <item>
+              <label>MOROCCO</label>
+              <value>MA</value>
+            </item>
+            <item>
+              <label>MOZAMBIQUE</label>
+              <value>MZ</value>
+            </item>
+            <item>
+              <label>MYANMAR</label>
+              <value>MM</value>
+            </item>
+            <item>
+              <label>NAMIBIA</label>
+              <value>NA</value>
+            </item>
+            <item>
+              <label>NAURU</label>
+              <value>NR</value>
+            </item>
+            <item>
+              <label>NEPAL</label>
+              <value>NP</value>
+            </item>
+            <item>
+              <label>NETHERLANDS</label>
+              <value>NL</value>
+            </item>
+            <item>
+              <label>NEW CALEDONIA</label>
+              <value>NC</value>
+            </item>
+            <item>
+              <label>NEW ZEALAND</label>
+              <value>NZ</value>
+            </item>
+            <item>
+              <label>NICARAGUA</label>
+              <value>NI</value>
+            </item>
+            <item>
+              <label>NIGER</label>
+              <value>NE</value>
+            </item>
+            <item>
+              <label>NIGERIA</label>
+              <value>NG</value>
+            </item>
+            <item>
+              <label>NIUE</label>
+              <value>NU</value>
+            </item>
+            <item>
+              <label>NORFOLK ISLAND</label>
+              <value>NF</value>
+            </item>
+            <item>
+              <label>NORTHERN MARIANA ISLANDS</label>
+              <value>MP</value>
+            </item>
+            <item>
+              <label>NORWAY</label>
+              <value>NO</value>
+            </item>
+            <item>
+              <label>OMAN</label>
+              <value>OM</value>
+            </item>
+            <item>
+              <label>PAKISTAN</label>
+              <value>PK</value>
+            </item>
+            <item>
+              <label>PALAU</label>
+              <value>PW</value>
+            </item>
+            <item>
+              <label>PALESTINE</label>
+              <value>PS</value>
+            </item>
+            <item>
+              <label>PANAMA</label>
+              <value>PA</value>
+            </item>
+            <item>
+              <label>PAPUA NEW GUINEA</label>
+              <value>PG</value>
+            </item>
+            <item>
+              <label>PARAGUAY</label>
+              <value>PY</value>
+            </item>
+            <item>
+              <label>PERU</label>
+              <value>PE</value>
+            </item>
+            <item>
+              <label>PHILIPPINES</label>
+              <value>PH</value>
+            </item>
+            <item>
+              <label>PITCAIRN</label>
+              <value>PN</value>
+            </item>
+            <item>
+              <label>POLAND</label>
+              <value>PL</value>
+            </item>
+            <item>
+              <label>PORTUGAL</label>
+              <value>PT</value>
+            </item>
+            <item>
+              <label>PUERTO RICO</label>
+              <value>PR</value>
+            </item>
+            <item>
+              <label>QATAR</label>
+              <value>QA</value>
+            </item>
+            <item>
+              <label>REPUBLIC OF NORTH MACEDONIA</label>
+              <value>MK</value>
+            </item>
+            <item>
+              <label>ROMANIA</label>
+              <value>RO</value>
+            </item>
+            <item>
+              <label>RUSSIAN FEDERATION</label>
+              <value>RU</value>
+            </item>
+            <item>
+              <label>RWANDA</label>
+              <value>RW</value>
+            </item>
+            <item>
+              <label>RÉUNION</label>
+              <value>RE</value>
+            </item>
+            <item>
+              <label>SAINT BARTHÉLEMY</label>
+              <value>BL</value>
+            </item>
+            <item>
+              <label>SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</label>
+              <value>SH</value>
+            </item>
+            <item>
+              <label>SAINT KITTS AND NEVIS</label>
+              <value>KN</value>
+            </item>
+            <item>
+              <label>SAINT LUCIA</label>
+              <value>LC</value>
+            </item>
+            <item>
+              <label>SAINT MARTIN (FRENCH PART)</label>
+              <value>MF</value>
+            </item>
+            <item>
+              <label>SAINT PIERRE AND MIQUELON</label>
+              <value>PM</value>
+            </item>
+            <item>
+              <label>SAINT VINCENT AND THE GRENADINES</label>
+              <value>VC</value>
+            </item>
+            <item>
+              <label>SAMOA</label>
+              <value>WS</value>
+            </item>
+            <item>
+              <label>SAN MARINO</label>
+              <value>SM</value>
+            </item>
+            <item>
+              <label>SAO TOME AND PRINCIPE</label>
+              <value>ST</value>
+            </item>
+            <item>
+              <label>SAUDI ARABIA</label>
+              <value>SA</value>
+            </item>
+            <item>
+              <label>SENEGAL</label>
+              <value>SN</value>
+            </item>
+            <item>
+              <label>SERBIA</label>
+              <value>RS</value>
+            </item>
+            <item>
+              <label>SEYCHELLES</label>
+              <value>SC</value>
+            </item>
+            <item>
+              <label>SIERRA LEONE</label>
+              <value>SL</value>
+            </item>
+            <item>
+              <label>SINGAPORE</label>
+              <value>SG</value>
+            </item>
+            <item>
+              <label>SINT MAARTEN (DUTCH PART)</label>
+              <value>SX</value>
+            </item>
+            <item>
+              <label>SLOVAKIA</label>
+              <value>SK</value>
+            </item>
+            <item>
+              <label>SLOVENIA</label>
+              <value>SI</value>
+            </item>
+            <item>
+              <label>SOLOMON ISLANDS</label>
+              <value>SB</value>
+            </item>
+            <item>
+              <label>SOMALIA</label>
+              <value>SO</value>
+            </item>
+            <item>
+              <label>SOUTH AFRICA</label>
+              <value>ZA</value>
+            </item>
+            <item>
+              <label>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</label>
+              <value>GS</value>
+            </item>
+            <item>
+              <label>SOUTH SUDAN</label>
+              <value>SS</value>
+            </item>
+            <item>
+              <label>SPAIN</label>
+              <value>ES</value>
+            </item>
+            <item>
+              <label>SRI LANKA</label>
+              <value>LK</value>
+            </item>
+            <item>
+              <label>SUDAN</label>
+              <value>SD</value>
+            </item>
+            <item>
+              <label>SURINAME</label>
+              <value>SR</value>
+            </item>
+            <item>
+              <label>SVALBARD AND JAN MAYEN</label>
+              <value>SJ</value>
+            </item>
+            <item>
+              <label>SWEDEN</label>
+              <value>SE</value>
+            </item>
+            <item>
+              <label>SWITZERLAND</label>
+              <value>CH</value>
+            </item>
+            <item>
+              <label>SYRIAN ARAB REPUBLIC</label>
+              <value>SY</value>
+            </item>
+            <item>
+              <label>TAIWAN (PROVINCE OF CHINA)</label>
+              <value>TW</value>
+            </item>
+            <item>
+              <label>TAJIKISTAN</label>
+              <value>TJ</value>
+            </item>
+            <item>
+              <label>TANZANIA</label>
+              <value>TZ</value>
+            </item>
+            <item>
+              <label>THAILAND</label>
+              <value>TH</value>
+            </item>
+            <item>
+              <label>TIMOR-LESTE</label>
+              <value>TL</value>
+            </item>
+            <item>
+              <label>TOGO</label>
+              <value>TG</value>
+            </item>
+            <item>
+              <label>TOKELAU</label>
+              <value>TK</value>
+            </item>
+            <item>
+              <label>TONGA</label>
+              <value>TO</value>
+            </item>
+            <item>
+              <label>TRINIDAD AND TOBAGO</label>
+              <value>TT</value>
+            </item>
+            <item>
+              <label>TUNISIA</label>
+              <value>TN</value>
+            </item>
+            <item>
+              <label>TURKEY</label>
+              <value>TR</value>
+            </item>
+            <item>
+              <label>TURKMENISTAN</label>
+              <value>TM</value>
+            </item>
+            <item>
+              <label>TURKS AND CAICOS ISLANDS</label>
+              <value>TC</value>
+            </item>
+            <item>
+              <label>TUVALU</label>
+              <value>TV</value>
+            </item>
+            <item>
+              <label>UGANDA</label>
+              <value>UG</value>
+            </item>
+            <item>
+              <label>UKRAINE</label>
+              <value>UA</value>
+            </item>
+            <item>
+              <label>UNITED ARAB EMIRATES</label>
+              <value>AE</value>
+            </item>
+            <item>
+              <label>UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND</label>
+              <value>GB</value>
+            </item>
+            <item>
+              <label>UNITED STATES MINOR OUTLYING ISLANDS</label>
+              <value>UM</value>
+            </item>
+            <item>
+              <label>UNITED STATES OF AMERICA</label>
+              <value>US</value>
+            </item>
+            <item>
+              <label>URUGUAY</label>
+              <value>UY</value>
+            </item>
+            <item>
+              <label>UZBEKISTAN</label>
+              <value>UZ</value>
+            </item>
+            <item>
+              <label>VANUATU</label>
+              <value>VU</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/postnatal_care_service/newborn_details/child/county_of_birth">
+            <label>County of birth</label>
+            <item>
+              <label>BARINGO</label>
+              <value>30</value>
+            </item>
+            <item>
+              <label>BOMET</label>
+              <value>36</value>
+            </item>
+            <item>
+              <label>BUNG'OMA</label>
+              <value>39</value>
+            </item>
+            <item>
+              <label>BUSIA</label>
+              <value>40</value>
+            </item>
+            <item>
+              <label>ELGEYO/MARAKWET</label>
+              <value>28</value>
+            </item>
+            <item>
+              <label>EMBU</label>
+              <value>14</value>
+            </item>
+            <item>
+              <label>GARISSA</label>
+              <value>7</value>
+            </item>
+            <item>
+              <label>HOMA BAY</label>
+              <value>43</value>
+            </item>
+            <item>
+              <label>ISIOLO</label>
+              <value>11</value>
+            </item>
+            <item>
+              <label>KAJIADO</label>
+              <value>34</value>
+            </item>
+            <item>
+              <label>KAKAMEGA</label>
+              <value>37</value>
+            </item>
+            <item>
+              <label>KERICHO</label>
+              <value>35</value>
+            </item>
+            <item>
+              <label>KIAMBU</label>
+              <value>22</value>
+            </item>
+            <item>
+              <label>KILIFI</label>
+              <value>3</value>
+            </item>
+            <item>
+              <label>KIRINYAGA</label>
+              <value>20</value>
+            </item>
+            <item>
+              <label>KISII</label>
+              <value>45</value>
+            </item>
+            <item>
+              <label>KISUMU</label>
+              <value>42</value>
+            </item>
+            <item>
+              <label>KITUI</label>
+              <value>15</value>
+            </item>
+            <item>
+              <label>KWALE</label>
+              <value>2</value>
+            </item>
+            <item>
+              <label>LAIKIPIA</label>
+              <value>31</value>
+            </item>
+            <item>
+              <label>LAMU</label>
+              <value>5</value>
+            </item>
+            <item>
+              <label>MACHAKOS</label>
+              <value>16</value>
+            </item>
+            <item>
+              <label>MAKUENI</label>
+              <value>17</value>
+            </item>
+            <item>
+              <label>MANDERA</label>
+              <value>9</value>
+            </item>
+            <item>
+              <label>MARSABIT</label>
+              <value>10</value>
+            </item>
+            <item>
+              <label>MERU</label>
+              <value>12</value>
+            </item>
+            <item>
+              <label>MIGORI</label>
+              <value>44</value>
+            </item>
+            <item>
+              <label>MOMBASA</label>
+              <value>1</value>
+            </item>
+            <item>
+              <label>MURANG'A</label>
+              <value>21</value>
+            </item>
+            <item>
+              <label>NAIROBI</label>
+              <value>47</value>
+            </item>
+            <item>
+              <label>NAKURU</label>
+              <value>32</value>
+            </item>
+            <item>
+              <label>NANDI</label>
+              <value>29</value>
+            </item>
+            <item>
+              <label>NAROK</label>
+              <value>33</value>
+            </item>
+            <item>
+              <label>NYAMIRA</label>
+              <value>46</value>
+            </item>
+            <item>
+              <label>NYANDARUA</label>
+              <value>18</value>
+            </item>
+            <item>
+              <label>NYERI</label>
+              <value>19</value>
+            </item>
+            <item>
+              <label>SAMBURU</label>
+              <value>25</value>
+            </item>
+            <item>
+              <label>SIAYA</label>
+              <value>41</value>
+            </item>
+            <item>
+              <label>TAITA TAVETA</label>
+              <value>6</value>
+            </item>
+            <item>
+              <label>TANA RIVER</label>
+              <value>4</value>
+            </item>
+            <item>
+              <label>THARAKA NITHI</label>
+              <value>13</value>
+            </item>
+            <item>
+              <label>TRANS NZOIA</label>
+              <value>26</value>
+            </item>
+            <item>
+              <label>TURKANA</label>
+              <value>23</value>
+            </item>
+            <item>
+              <label>UASIN GISHU</label>
+              <value>27</value>
+            </item>
+            <item>
+              <label>VIHIGA</label>
+              <value>38</value>
+            </item>
+            <item>
+              <label>WAJIR</label>
+              <value>8</value>
+            </item>
+            <item>
+              <label>WEST POKOT</label>
+              <value>24</value>
+            </item>
+            <item>
+              <label>DIASPORA</label>
+              <value>48</value>
+            </item>
+            <item>
+              <label>PRISONS</label>
+              <value>49</value>
+            </item>
+          </select1>
+          <select1 ref="/postnatal_care_service/newborn_details/child/relationship_to_hh_head">
+            <label>What is the relationship to the household head?</label>
+            <item>
+              <label>Child</label>
+              <value>child</value>
+            </item>
+            <item>
+              <label>Sibling</label>
+              <value>sibling</value>
+            </item>
+            <item>
+              <label>Other</label>
+              <value>other</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_care_service/newborn_details/child/relationship_to_hh_other">
+            <label>Specify other:</label>
+          </input>
+          <select1 ref="/postnatal_care_service/newborn_details/child/has_disability">
+            <label>Does <output value=" /postnatal_care_service/newborn_details/child/baby_name "/> have any known disability?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <select ref="/postnatal_care_service/newborn_details/child/disabilities">
+            <label>Which one?</label>
+            <item>
+              <label>Visual</label>
+              <value>visual</value>
+            </item>
+            <item>
+              <label>Hearing</label>
+              <value>hearing</value>
+            </item>
+            <item>
+              <label>Speech</label>
+              <value>speech</value>
+            </item>
+            <item>
+              <label>Physical</label>
+              <value>physical</value>
+            </item>
+            <item>
+              <label>Mental</label>
+              <value>mental</value>
+            </item>
+            <item>
+              <label>Other</label>
+              <value>other</value>
+            </item>
+          </select>
+          <input ref="/postnatal_care_service/newborn_details/child/disabilities_other">
+            <label>Specify other</label>
+          </input>
+          <select1 ref="/postnatal_care_service/newborn_details/child/identification_type">
+            <label>Identification</label>
+            <item>
+              <label>Birth Certificate</label>
+              <value>birth_certificate</value>
+            </item>
+            <item>
+              <label>None</label>
+              <value>none</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_care_service/newborn_details/child/identification_number">
+            <label>Enter the <output value=" /postnatal_care_service/newborn_details/child/calc_identification_type_label "/> number</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/get_id">
+            <label>**Encourage the <output value=" /postnatal_care_service/patient_name "/> to get <output value=" /postnatal_care_service/newborn_details/child/baby_name "/> a birth certificate.**</label>
+          </input>
+          <select ref="/postnatal_care_service/newborn_details/child/newborn_danger_signs">
+            <label>Ask for the following danger signs of newborn</label>
+            <item>
+              <label>Not able to feed since birth, or stopped feeding well</label>
+              <value>not_feeding</value>
+            </item>
+            <item>
+              <label>Convulsed or fitted since birth.</label>
+              <value>convulsed</value>
+            </item>
+            <item>
+              <label>Fast breathing: Two counts of 60 breaths or more in one minute (Use a watch or timer)</label>
+              <value>fast_breathing</value>
+            </item>
+            <item>
+              <label>Severe chest in-drawing</label>
+              <value>chest_indrawn</value>
+            </item>
+            <item>
+              <label>Have a fever of 38 and above or hotness of the body?</label>
+              <value>fever</value>
+            </item>
+            <item>
+              <label>Only moves when stimulated, or does not move even on stimulation.</label>
+              <value>not_moving</value>
+            </item>
+            <item>
+              <label>Yellow soles</label>
+              <value>yellow_soles</value>
+            </item>
+            <item>
+              <label>Bleeding from the umbilical stump</label>
+              <value>umbilical_stump_bleeding</value>
+            </item>
+            <item>
+              <label>Infected umbilicus red or draining pus, skin boils, or eyes draining pus</label>
+              <value>infected_umbilicus</value>
+            </item>
+            <item>
+              <label>None</label>
+              <value>none</value>
+            </item>
+          </select>
+          <input appearance="countdown-timer" ref="/postnatal_care_service/newborn_details/child/n_breaths_per_minute">
+            <label>Press the timer and count number of breaths for a full 60 seconds two times. Fast breathing is when you count 60 breaths or more twice. (Use a watch or timer)</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/breaths_per_minute">
+            <label>How many breaths per minute?</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_fast_breathing">
+            <label>Child has fast breathing</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_normal_breathing">
+            <label>Child has no fast breathing</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_temperature">
+            <label>Use your thermometer to take the patient's temperature. Ensure you clean the thermometer with surgical spirit in cotton wool before and after use.</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/temperature">
+            <label>What is <output value=" /postnatal_care_service/newborn_details/child/baby_name "/>'s temperature?</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_high_temperature">
+            <label>&lt;span style="color:red"&gt;**High temperature.**&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_low_temperature">
+            <label>&lt;span style="color:red"&gt;**Very low temperature.**&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_refer_temperature">
+            <label>&lt;span style="color:red"&gt;**Refer the child immediately to the health facility.**&lt;/span&gt;</label>
+          </input>
+          <select1 ref="/postnatal_care_service/newborn_details/child/has_updated_immunization_status">
+            <label>Is <output value=" /postnatal_care_service/newborn_details/child/baby_name "/>'s immunization upto date?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_care_service/newborn_details/child/n_educate_immunization">
+            <label>&lt;span style="color:red"&gt;Educate and Refer to the health facility.&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/newborn_details/child/n_encourage_immunization_schedule_adherence">
+            <label>&lt;span style="color:blue"&gt;Encourage the caregiver to continue adhering to the immunization schedule.&lt;/span&gt;</label>
+          </input>
+          <select ref="/postnatal_care_service/newborn_details/child/newborn_education">
+            <label>Educate caregiver on:-</label>
+            <item>
+              <label>personal and newborn hygiene</label>
+              <value>hygiene</value>
+            </item>
+            <item>
+              <label>Cord care to <output value=" /postnatal_care_service/newborn_details/child/baby_name "/></label>
+              <value>cord_care</value>
+            </item>
+            <item>
+              <label>Exclusive breastfeeding</label>
+              <value>exclusive_breastfeeding</value>
+            </item>
+            <item>
+              <label>Nurturing care</label>
+              <value>nurturing_care</value>
+            </item>
+            <item>
+              <label>Immunization</label>
+              <value>immunization</value>
+            </item>
+            <item>
+              <label>Growth Monitoring</label>
+              <value>growth_monitoring</value>
+            </item>
+            <item>
+              <label>Sleep under net</label>
+              <value>sleep_under_net</value>
+            </item>
+          </select>
+          <select1 ref="/postnatal_care_service/newborn_details/child/caregiver_educated_on_newborn_care">
+            <label>Have you educated the caregiver on the above information?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <group ref="/postnatal_care_service/newborn_details/child/data">
+            <label></label>
+            <group ref="/postnatal_care_service/newborn_details/child/data/_screening">
+              <label></label>
+            </group>
+            <group ref="/postnatal_care_service/newborn_details/child/data/_supporting_info">
+              <label></label>
+            </group>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_newborn_danger_signs_assessment">
+      <label>Newborn PNC Danger Signs</label>
+      <group ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment">
+        <label></label>
+        <repeat nodeset="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment" jr:count=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment_count ">
+          <select1 ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_available">
+            <label>Is <output value=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name "/> available?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_remind">
+            <label>&lt;span style=&quot;color:orange;&quot;&gt;**If <output value=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name "/> relocated remember to submit a muting request, if they died remember to submit a death report.**&lt;/span&gt;</label>
+          </input>
+          <select ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_danger_signs">
+            <label>Ask for the following danger signs of newborn</label>
+            <item>
+              <label>Not able to feed since birth, or stopped feeding well</label>
+              <value>not_feeding</value>
+            </item>
+            <item>
+              <label>Convulsed or fitted since birth.</label>
+              <value>convulsed</value>
+            </item>
+            <item>
+              <label>Fast breathing: Two counts of 60 breaths or more in one minute (Use a watch or timer)</label>
+              <value>fast_breathing</value>
+            </item>
+            <item>
+              <label>Severe chest in-drawing</label>
+              <value>chest_indrawn</value>
+            </item>
+            <item>
+              <label>Have a fever of 38 and above or hotness of the body?</label>
+              <value>fever</value>
+            </item>
+            <item>
+              <label>Only moves when stimulated, or does not move even on stimulation.</label>
+              <value>not_moving</value>
+            </item>
+            <item>
+              <label>Yellow soles</label>
+              <value>yellow_soles</value>
+            </item>
+            <item>
+              <label>Bleeding from the umbilical stump</label>
+              <value>umbilical_stump_bleeding</value>
+            </item>
+            <item>
+              <label>Infected umbilicus red or draining pus, skin boils, or eyes draining pus</label>
+              <value>infected_umbilicus</value>
+            </item>
+            <item>
+              <label>None</label>
+              <value>none</value>
+            </item>
+          </select>
+          <input appearance="countdown-timer" ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_breaths_per_minute">
+            <label>Press the timer and count number of breaths for a full 60 seconds two times. Fast breathing is when you count 60 breaths or more twice. (Use a watch or timer)</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_breaths_per_minute">
+            <label>How many breaths per minute?</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_fast_breathing">
+            <label>Child has fast breathing</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_normal_breathing">
+            <label>Child has no fast breathing</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_temperature">
+            <label>Use your thermometer to take the patient's temperature. Ensure you clean the thermometer with surgical spirit in cotton wool before and after use.</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_temperature">
+            <label>What is <output value=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name "/>'s temperature?</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_high_temperature">
+            <label>&lt;span style="color:red"&gt;**High temperature.**&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_low_temperature">
+            <label>&lt;span style="color:red"&gt;**Very low temperature.**&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_refer_temperature">
+            <label>&lt;span style="color:red"&gt;**Refer the child immediately to the health facility.**&lt;/span&gt;</label>
+          </input>
+          <select1 ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/c_has_updated_immunization_status">
+            <label>Is <output value=" /postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/child_name "/>'s immunization upto date?</label>
+            <item>
+              <label>Yes</label>
+              <value>yes</value>
+            </item>
+            <item>
+              <label>No</label>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_educate_immunization">
+            <label>&lt;span style="color:red"&gt;Educate and Refer to the health facility.&lt;/span&gt;</label>
+          </input>
+          <input ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/n_encourage_immunization_schedule_adherence">
+            <label>&lt;span style="color:blue"&gt;Encourage the caregiver to continue adhering to the immunization schedule.&lt;/span&gt;</label>
+          </input>
+          <select ref="/postnatal_care_service/group_newborn_danger_signs_assessment/newborn_assessment/newborn_education">
+            <label>Educate caregiver on:-</label>
+            <item>
+              <label>personal and newborn hygiene</label>
+              <value>hygiene</value>
+            </item>
+            <item>
+              <label>Cord care to <output value=" /postnatal_care_service/newborn_details/child/baby_name "/></label>
+              <value>cord_care</value>
+            </item>
+            <item>
+              <label>Exclusive breastfeeding</label>
+              <value>exclusive_breastfeeding</value>
+            </item>
+            <item>
+              <label>Nurturing care</label>
+              <value>nurturing_care</value>
+            </item>
+            <item>
+              <label>Immunization</label>
+              <value>immunization</value>
+            </item>
+            <item>
+              <label>Growth Monitoring</label>
+              <value>growth_monitoring</value>
+            </item>
+            <item>
+              <label>Sleep under net</label>
+              <value>sleep_under_net</value>
+            </item>
+          </select>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/group_maternal_mental_health">
+      <label>Maternal mental health</label>
+      <select ref="/postnatal_care_service/group_maternal_mental_health/mental_signs">
+        <label>Ask if the woman has any of these mental signs</label>
+        <item>
+          <label>Lack of sleep</label>
+          <value>lack_of_sleep</value>
+        </item>
+        <item>
+          <label>Feeling of worthlessness</label>
+          <value>feeling_of_worthlessness</value>
+        </item>
+        <item>
+          <label>Staying away from people</label>
+          <value>staying_away_from_people</value>
+        </item>
+        <item>
+          <label>Tearfulness</label>
+          <value>tearfulness</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <select ref="/postnatal_care_service/group_maternal_mental_health/observed_mental_signs">
+        <label>Observe if this woman has any of these mental signs</label>
+        <item>
+          <label>Lack of hygiene</label>
+          <value>lack_of_hygiene</value>
+        </item>
+        <item>
+          <label>Anxiety/worried for no apparent reason</label>
+          <value>anxiety_worried_for_no_apparent_reason</value>
+        </item>
+        <item>
+          <label>Irritability/agitated</label>
+          <value>irritability_agitated</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/postnatal_care_service/group_maternal_mental_health/n_refer_mental_signs">
+        <label>Refer mother to health facility</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/postnatal_care_service/insurance">
+      <label>Insurance</label>
+      <select1 ref="/postnatal_care_service/insurance/has_upto_date_insurance">
+        <label>Does <output value=" /postnatal_care_service/patient_name "/> have upto date insurance?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/postnatal_care_service/insurance/n_encourage_to_get_cover">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Encourage <output value=" /postnatal_care_service/patient_name "/> to get an insurance cover if they don't have or to update their insurance cover&lt;/span&gt;</label>
+      </input>
+      <select ref="/postnatal_care_service/insurance/insurance_cover">
+        <label>Which cover does <output value=" /postnatal_care_service/patient_name "/> have?</label>
+        <item>
+          <label>NHIF</label>
+          <value>nhif</value>
+        </item>
+        <item>
+          <label>Others</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/postnatal_care_service/insurance/n_congratulate_on_insurance">
+        <label>&lt;span style=&quot;color:blue;&quot;&gt;Congratulate <output value=" /postnatal_care_service/patient_name "/> and encourage them to continue updating their insurance cover&lt;/span&gt;</label>
+      </input>
+      <input ref="/postnatal_care_service/insurance/specify_other">
+        <label>Specify</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/postnatal_care_service/group_review">
+      <label></label>
+      <input appearance="h1" ref="/postnatal_care_service/group_review/summary_title">
+        <label>MOTHER and NEWBORN PNC RESULTS PAGE</label>
+      </input>
+      <input appearance="h1" ref="/postnatal_care_service/group_review/summary_title_referral">
+        <label>MOTHER and NEWBORN PNC REFERRAL NOTE</label>
+      </input>
+      <input ref="/postnatal_care_service/group_review/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/postnatal_care_service/group_review/r_summary">
+        <label>Mother's Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/postnatal_care_service/group_review/r_patient_info">
+        <label>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_care_service/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /postnatal_care_service/patient_age_display "/> &lt;/h5&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/postnatal_care_service/group_review/r_findings">
+        <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_delivery_status_delivered">
+        <label>Delivery Status: Delivered</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_delivery_status_not_delivered">
+        <label>Delivery Status: Not Delivered</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_mother_alive">
+        <label>Mother's Condition: &lt;span style="color:green"&gt;Mother Alive&lt;/span&gt;</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_mother_dead">
+        <label>Mother's Condition: &lt;span style="color:red"&gt;Mother Dead&lt;/span&gt;</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_date_of_delivery">
+        <label>Date of delivery: <output value=" /postnatal_care_service/group_pnc_visit/date_of_delivery_display "/></label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_place_of_delivery">
+        <label>Place of delivery: <output value=" /postnatal_care_service/group_pnc_visit/place_of_delivery_display "/></label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_babies_delivered">
+        <label>Number of newborns: <output value=" /postnatal_care_service/group_delivery_outcome/number_of_babies_delivered "/></label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_babies_alive">
+        <label>Number of living babies: <output value=" /postnatal_care_service/group_delivery_outcome/number_of_babies_alive "/></label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_pnc_uptodate_note">
+        <label>Health Facility PNC Visit Status: Upto date</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_pnc_not_uptodate_note">
+        <label>Health Facility PNC Visit Status: Not upto date</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_pnc_on_fp">
+        <label>On FP</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_pnc_not_on_fp">
+        <label>Not on FP</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_uptodate_insurance">
+        <label>Up-to-date Insurance</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_not_uptodate_insurance">
+        <label>Not up-to-date Insurance</label>
+      </input>
+      <group ref="/postnatal_care_service/group_review/group_mother_assessment_summary">
+        <label></label>
+        <input appearance="h1 yellow" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_danger_signs">
+          <label>Mother's Signs of Illness</label>
+        </input>
+        <input appearance="h3" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_ds_title">
+          <label>Danger Signs &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+        </input>
+        <group ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs">
+          <label></label>
+          <repeat nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs" appearance="field-list" jr:count=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs_count ">
+            <input appearance="li" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs/mother_ds_sign_note">
+              <label><output value=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_mother_danger_signs/sign "/></label>
+            </input>
+          </repeat>
+        </group>
+        <input appearance="h3" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_mother_mental_title">
+          <label>Maternal Mental Health &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+        </input>
+        <input appearance="li" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_no_maternal_health">
+          <label>No Signs</label>
+        </input>
+        <group ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs">
+          <label></label>
+          <repeat nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs" appearance="field-list" jr:count=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs_count ">
+            <input appearance="li" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs/mother_selected_mental_sign_note">
+              <label><output value=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_selected_maternal_mental_signs/selected_mental_sign "/></label>
+            </input>
+          </repeat>
+        </group>
+        <group ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs">
+          <label></label>
+          <repeat nodeset="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs" appearance="field-list" jr:count=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs_count ">
+            <input appearance="li" ref="/postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs/mother_observed_mental_sign_note">
+              <label><output value=" /postnatal_care_service/group_review/group_mother_assessment_summary/r_observed_maternal_mental_signs/observed_mental_sign "/></label>
+            </input>
+          </repeat>
+        </group>
+      </group>
+      <input appearance="h1 blue" ref="/postnatal_care_service/group_review/r_newborn_details">
+        <label>Newborn's Details &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+      </input>
+      <group ref="/postnatal_care_service/group_review/r_newborn_details_repeat">
+        <label></label>
+        <repeat nodeset="/postnatal_care_service/group_review/r_newborn_details_repeat" jr:count=" /postnatal_care_service/group_review/r_newborn_details_repeat_count ">
+          <input appearance="h3" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_name">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_name "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_date_of_birth">
+            <label>Date of birth: <output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_dob_display "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_age">
+            <label>Age: <output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_dob_display "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_id">
+            <label>Identification: <output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_id "/></label>
+          </input>
+          <input appearance="h3" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_findings_title">
+            <label>Findings &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;</label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_disabilities">
+            <label>Disability: <output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_newborn_disability "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_imm_status">
+            <label>Immunization status: <output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_calc_imm_status "/></label>
+          </input>
+          <input appearance="h3" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_title">
+            <label>Newborn's Signs of Illness &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_not_feeding">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_not_feeding "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_convulsed">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_convulsed "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_fast_breathing">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_fast_breathing "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_chest_indrawn">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_chest_indrawn "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_fever">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_fever "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_not_moving">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_not_moving "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_yellow_soles">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_yellow_soles "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_umbilical_stump_bleeding">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_umbilical_stump_bleeding "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_infected_umbilicus">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_infected_umbilicus "/></label>
+          </input>
+          <input appearance="li" ref="/postnatal_care_service/group_review/r_newborn_details_repeat/r_newborn_ds_none">
+            <label><output value=" /postnatal_care_service/group_review/r_newborn_details_repeat/r_child_ds_label_none "/></label>
+          </input>
+        </repeat>
+      </group>
+      <input appearance="h1 red" ref="/postnatal_care_service/group_review/r_referral_title">
+        <label>Refer Urgently to the Health Facility &lt;i class="fa fa-exclamation-triangle"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="h1 green" ref="/postnatal_care_service/group_review/r_follow_up_title">
+        <label>Follow Up &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_referral_follow_up_1">
+        <label>A Referral Follow up task will appear after 1 day</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_referral_follow_up_3">
+        <label>A Referral Follow up task will appear after 3 days</label>
+      </input>
+      <input appearance="h1 lime" ref="/postnatal_care_service/group_review/r_instruction_title">
+        <label>Instruction &lt;i class="fa fa-heart"&gt;&lt;/i&gt;</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_sync_if_refer">
+        <label>After submitting this form, please sync for the referral information to reach the health facility</label>
+      </input>
+      <input appearance="li" ref="/postnatal_care_service/group_review/r_sync">
+        <label>After submitting this form, please sync</label>
+      </input>
+    </group>
+    <group ref="/postnatal_care_service/data">
+      <label></label>
+      <group ref="/postnatal_care_service/data/_screening">
+        <label></label>
+      </group>
+      <group ref="/postnatal_care_service/data/_supporting_info">
+        <label></label>
+      </group>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,11 @@
+{
+    "title": {
+        "en": "Mother and Newborn PNC Home Visit Service"
+    },
+    "icon": "icon-postnatal-care-service",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "(!contact.date_of_birth || (ageInYears(contact) >= 10 && ageInYears(contact) <= 49)) && summary.is_female_or_intersex && contact.contact_type === 'f_client' && summary.is_eligible_for_home_visit_service && user.parent && user.parent.contact_type === 'd_community_health_volunteer_area' && user._id != contact._id && !summary.is_in_pnc"
+    }
+}

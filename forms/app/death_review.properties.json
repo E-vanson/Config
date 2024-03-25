@@ -1,0 +1,10 @@
+{
+    "title":{
+        "en": "Death Report Confirmation"
+    },
+    "icon": "icon-death",
+    "context": {
+        "person": false,
+        "place": false
+    }
+}

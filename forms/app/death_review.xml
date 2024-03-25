@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Death Report Confirmation</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="static_instance-cause_of_death-0">
+            <value>Sick</value>
+          </text>
+          <text id="static_instance-cause_of_death-1">
+            <value>Accident</value>
+          </text>
+          <text id="static_instance-cause_of_death-2">
+            <value>Suicide</value>
+          </text>
+          <text id="static_instance-cause_of_death-3">
+            <value>Sudden death</value>
+          </text>
+          <text id="static_instance-cause_of_death-4">
+            <value>Pregnancy and Childbirth related or unknown</value>
+          </text>
+          <text id="static_instance-cause_of_death-5">
+            <value>Unknown</value>
+          </text>
+          <text id="static_instance-cause_of_death-6">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-chv_notification_messages-0">
+            <value>The death report of <output value=" /death_review/patient_name_display "/> has been confirmed.</value>
+          </text>
+          <text id="static_instance-chv_notification_messages-1">
+            <value><output value=" /death_review/patient_name_display "/>'s death is not confirmed. Please continue providing services.</value>
+          </text>
+          <text id="static_instance-death_place-0">
+            <value>Health Facility</value>
+          </text>
+          <text id="static_instance-death_place-1">
+            <value>Home</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <death_review id="death_review" prefix="J1!death_review!" delimiter="#" version="2023-06-16 23:58:07">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <t_patient_id/>
+            <t_patient_name/>
+            <t_patient_sex/>
+            <t_chv_name/>
+            <t_chv_phone/>
+            <t_patient_age_in_years/>
+            <t_patient_age_in_months/>
+            <t_patient_age_in_days/>
+            <t_patient_age_display/>
+            <t_supervisor_phone/>
+            <t_household_id/>
+            <t_household_name/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <phone/>
+              <parent>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_display/>
+          <patient_id/>
+          <patient_name/>
+          <patient_name_display/>
+          <patient_sex/>
+          <chv_name/>
+          <chv_phone/>
+          <date_of_death/>
+          <date_of_death_display/>
+          <notification/>
+          <needs_signoff/>
+          <supervisor_phone/>
+          <household_id/>
+          <household_name/>
+          <cause_of_death/>
+          <death_type/>
+          <group_review>
+            <n_follow_up/>
+            <dead/>
+            <chv_notification/>
+            <place_of_death/>
+            <date_of_death/>
+            <probable_cause_of_death/>
+            <specify_other_cause_of_death/>
+            <pregnant_at_death/>
+            <given_birth_before_death/>
+            <group_confirmation db-doc="true">
+              <form/>
+              <type/>
+              <from/>
+              <content_type/>
+              <contact>
+                <_id/>
+              </contact>
+              <fields>
+                <inputs>
+                  <source/>
+                  <source_id/>
+                </inputs>
+                <date_of_death/>
+                <patient_id/>
+                <created_by_doc db-doc-ref="/death_review"/>
+                <needs_signoff/>
+                <patient_name/>
+              </fields>
+            </group_confirmation>
+          </group_review>
+          <group_summary>
+            <place_of_death_display/>
+            <cause_of_death_display/>
+            <submit/>
+            <r_summary/>
+            <r_patient_name/>
+            <r_patient_age/>
+            <r_findings/>
+            <r_date_of_death/>
+            <r_place_of_death/>
+            <r_cause_of_death/>
+            <r_no_follow_ups/>
+            <r_special_instructions/>
+            <r_switch_on_bundles/>
+          </group_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </death_review>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="chv_notification_messages">
+        <root>
+          <item>
+            <itextId>static_instance-chv_notification_messages-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-chv_notification_messages-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="death_place">
+        <root>
+          <item>
+            <itextId>static_instance-death_place-0</itextId>
+            <name>health_facility</name>
+          </item>
+          <item>
+            <itextId>static_instance-death_place-1</itextId>
+            <name>home</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="cause_of_death">
+        <root>
+          <item>
+            <itextId>static_instance-cause_of_death-0</itextId>
+            <name>sick</name>
+            <filter>all</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-1</itextId>
+            <name>accident</name>
+            <filter>all</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-2</itextId>
+            <name>suicide</name>
+            <filter>all</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-3</itextId>
+            <name>sudden_death</name>
+            <filter>all</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-4</itextId>
+            <name>pregnancy_and_childbirth</name>
+            <filter>female</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-5</itextId>
+            <name>unknown</name>
+            <filter>all</filter>
+          </item>
+          <item>
+            <itextId>static_instance-cause_of_death-6</itextId>
+            <name>other</name>
+            <filter>all</filter>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/death_review/inputs" relevant="./source='user'"/>
+      <bind nodeset="/death_review/inputs/source" type="string"/>
+      <bind nodeset="/death_review/inputs/source_id" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_id" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_name" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_sex" type="string"/>
+      <bind nodeset="/death_review/inputs/t_chv_name" type="string"/>
+      <bind nodeset="/death_review/inputs/t_chv_phone" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_age_in_years" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_age_in_months" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_age_in_days" type="string"/>
+      <bind nodeset="/death_review/inputs/t_patient_age_display" type="string"/>
+      <bind nodeset="/death_review/inputs/t_supervisor_phone" type="string"/>
+      <bind nodeset="/death_review/inputs/t_household_id" type="string"/>
+      <bind nodeset="/death_review/inputs/t_household_name" type="string"/>
+      <bind nodeset="/death_review/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/death_review/inputs/contact/name" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/sex" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/phone" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/death_review/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/death_review/patient_age_in_years" type="string" calculate="coalesce(floor( difference-in-months(  /death_review/inputs/contact/date_of_birth , today() ) div 12 ),  /death_review/inputs/t_patient_age_in_years )"/>
+      <bind nodeset="/death_review/patient_age_in_months" type="string" calculate="coalesce(difference-in-months(  /death_review/inputs/contact/date_of_birth , today() ),  /death_review/inputs/t_patient_age_in_months )"/>
+      <bind nodeset="/death_review/patient_age_in_days" type="string" calculate="coalesce(floor( decimal-date-time(today()) - decimal-date-time( /death_review/inputs/contact/date_of_birth ) ),  /death_review/inputs/t_patient_age_in_days )"/>
+      <bind nodeset="/death_review/patient_age_display" type="string" calculate="coalesce(concat(
+ if( /death_review/patient_age_in_years  &gt;= 1,concat( /death_review/patient_age_in_years , if( /death_review/patient_age_in_years =1,' year and ',' years and ')),''),
+ concat( /death_review/patient_age_in_months  mod 12, if(( /death_review/patient_age_in_months  mod 12)=1,' month old',' months old'))
+),  /death_review/inputs/t_patient_age_display )"/>
+      <bind nodeset="/death_review/patient_id" type="string" required="true()" calculate="coalesce(../inputs/contact/_id, /death_review/inputs/t_patient_id )"/>
+      <bind nodeset="/death_review/patient_name" type="string" calculate="coalesce(../inputs/contact/name,  /death_review/inputs/t_patient_name )"/>
+      <bind nodeset="/death_review/patient_name_display" type="string" calculate="../patient_name"/>
+      <bind nodeset="/death_review/patient_sex" type="string" calculate="coalesce(../inputs/contact/sex,  /death_review/inputs/t_patient_sex )"/>
+      <bind nodeset="/death_review/chv_name" type="string" calculate="coalesce(../inputs/contact/parent/parent/contact/name,  /death_review/inputs/t_chv_name )"/>
+      <bind nodeset="/death_review/chv_phone" type="string" calculate="coalesce(../inputs/contact/parent/parent/contact/phone,  /death_review/inputs/t_chv_phone )"/>
+      <bind nodeset="/death_review/date_of_death" type="string" calculate="../group_review/date_of_death"/>
+      <bind nodeset="/death_review/date_of_death_display" type="string" calculate="if(../group_review/date_of_death !='', format-date(../group_review/date_of_death,&quot;%b %e, %Y&quot;), '')"/>
+      <bind nodeset="/death_review/notification" type="string" calculate="jr:choice-name( /death_review/group_review/dead ,' /death_review/group_review/chv_notification ')"/>
+      <bind nodeset="/death_review/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/death_review/supervisor_phone" type="string" calculate=" /death_review/inputs/t_supervisor_phone "/>
+      <bind nodeset="/death_review/household_id" type="string" calculate=" /death_review/inputs/t_household_id "/>
+      <bind nodeset="/death_review/household_name" type="string" calculate=" /death_review/inputs/t_household_name "/>
+      <bind nodeset="/death_review/cause_of_death" type="string" calculate="../group_review/probable_cause_of_death"/>
+      <bind nodeset="/death_review/death_type" type="string" calculate="if( /death_review/patient_age_in_days  &lt; 7, 'perinatal death', if( /death_review/group_review/pregnant_at_death  = 'yes' or  /death_review/group_review/given_birth_before_death  = 'yes', 'maternal death',''))"/>
+      <bind nodeset="/death_review/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_review/dead" type="select1" required="true()"/>
+      <bind nodeset="/death_review/group_review/chv_notification" type="select1" required="false()"/>
+      <bind nodeset="/death_review/group_review/place_of_death" type="select1" relevant=" /death_review/group_review/dead  = 'yes'" required="true()"/>
+      <bind nodeset="/death_review/group_review/date_of_death" type="date" jr:constraintMsg="Date of death can't be in the future." relevant=" /death_review/group_review/dead  = 'yes'" required="true()" constraint=". &lt;= today()"/>
+      <bind nodeset="/death_review/group_review/probable_cause_of_death" type="select1" relevant=" /death_review/group_review/place_of_death  = 'home'" required="true()"/>
+      <bind nodeset="/death_review/group_review/specify_other_cause_of_death" type="string" relevant=" /death_review/group_review/probable_cause_of_death ='other' and  /death_review/group_review/place_of_death  = 'home'" required="true()"/>
+      <bind nodeset="/death_review/group_review/pregnant_at_death" type="select1" relevant=" /death_review/group_review/place_of_death ='home' and  /death_review/patient_sex  = 'female' and  /death_review/patient_age_in_years  &gt;=10 and  /death_review/patient_age_in_years  &lt;= 49" required="true()"/>
+      <bind nodeset="/death_review/group_review/given_birth_before_death" type="select1" relevant=" /death_review/group_review/pregnant_at_death ='no'" required="true()"/>
+      <bind nodeset="/death_review/group_review/group_confirmation" relevant=" /death_review/group_review/dead  = 'yes'"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/form" type="string" required="true()" calculate="string('death_confirmation')"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/type" type="string" required="true()" calculate="string('data_record')"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/from" type="string" required="true()" calculate=" /death_review/supervisor_phone "/>
+      <bind nodeset="/death_review/group_review/group_confirmation/content_type" type="string" required="true()" calculate="string('xml')"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/contact/_id" type="string" calculate=" /death_review/inputs/user/contact_id "/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/inputs/source" type="string" calculate="../../../../../inputs/source"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/inputs/source_id" type="string" calculate="../../../../../inputs/source_id"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/date_of_death" type="string" calculate="../../../date_of_death"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/patient_id" type="string" calculate="../../../../patient_id"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/created_by_doc" type="string" calculate="."/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/death_review/group_review/group_confirmation/fields/patient_name" type="string" calculate="../../../../patient_name"/>
+      <bind nodeset="/death_review/group_summary/place_of_death_display" type="string" calculate="jr:choice-name( /death_review/group_review/place_of_death , ' /death_review/group_review/place_of_death ')"/>
+      <bind nodeset="/death_review/group_summary/cause_of_death_display" type="string" calculate="if( /death_review/group_review/probable_cause_of_death  = 'other',  /death_review/group_review/specify_other_cause_of_death , jr:choice-name( /death_review/group_review/probable_cause_of_death , ' /death_review/group_review/probable_cause_of_death '))"/>
+      <bind nodeset="/death_review/group_summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_patient_name" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_patient_age" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_findings" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_date_of_death" readonly="true()" type="string" relevant=" /death_review/group_review/dead  = 'yes'"/>
+      <bind nodeset="/death_review/group_summary/r_place_of_death" readonly="true()" type="string" relevant=" /death_review/group_review/dead  = 'yes'"/>
+      <bind nodeset="/death_review/group_summary/r_cause_of_death" readonly="true()" type="string" relevant=" /death_review/group_review/place_of_death  = 'home'"/>
+      <bind nodeset="/death_review/group_summary/r_no_follow_ups" readonly="true()" type="string" relevant=" /death_review/group_review/dead  != ''"/>
+      <bind nodeset="/death_review/group_summary/r_special_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/group_summary/r_switch_on_bundles" readonly="true()" type="string"/>
+      <bind nodeset="/death_review/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/death_review/inputs">
+      <label>Patient</label>
+      <group ref="/death_review/inputs/user">
+        <label></label>
+      </group>
+      <group ref="/death_review/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/death_review/inputs/contact/_id">
+          <label>What is the patient's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/death_review/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/death_review/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/death_review/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/death_review/group_review">
+      <label></label>
+      <input ref="/death_review/group_review/n_follow_up">
+        <label>Please follow up with <output value=" /death_review/chv_name "/> to see if <output value=" /death_review/patient_name_display "/> died. [&lt;span style='background-color:#F0F4FD; border:1px solid #007AC0; padding: 0.5em; border-radius: 4px; text-decoration:none; display: block; margin-left: auto; margin-right: auto; width: 40%; text-align: center;'&gt;&lt;i class=&quot;fa fa-phone&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;Call <output value=" /death_review/chv_phone "/>&lt;/span&gt;](tel://<output value=" /death_review/chv_phone "/>)</label>
+      </input>
+      <select1 ref="/death_review/group_review/dead">
+        <label>Is <output value=" /death_review/patient_name_display "/> dead?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="hidden" ref="/death_review/group_review/chv_notification">
+        <label>Notification to CHP</label>
+        <item>
+          <label>The death report of <output value=" /death_review/patient_name_display "/> has been confirmed.</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label><output value=" /death_review/patient_name_display "/>'s death is not confirmed. Please continue providing services.</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/death_review/group_review/place_of_death">
+        <label>Place of death</label>
+        <item>
+          <label>Health Facility</label>
+          <value>health_facility</value>
+        </item>
+        <item>
+          <label>Home</label>
+          <value>home</value>
+        </item>
+      </select1>
+      <input ref="/death_review/group_review/date_of_death">
+        <label>Date of death</label>
+      </input>
+      <select1 ref="/death_review/group_review/probable_cause_of_death">
+        <label>Probable cause of death</label>
+        <itemset nodeset="instance('cause_of_death')/root/item[ /death_review/patient_sex =filter or filter='all']">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/death_review/group_review/specify_other_cause_of_death">
+        <label>Specify the cause of death</label>
+      </input>
+      <select1 ref="/death_review/group_review/pregnant_at_death">
+        <label>Was <output value=" /death_review/patient_name_display "/> pregnant at the time of death?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/death_review/group_review/given_birth_before_death">
+        <label>Had <output value=" /death_review/patient_name_display "/> given birth within 42 days before the date of death?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/death_review/group_review/group_confirmation">
+        <label></label>
+        <group appearance="hidden" ref="/death_review/group_review/group_confirmation/contact">
+          <label></label>
+        </group>
+        <group appearance="hidden" ref="/death_review/group_review/group_confirmation/fields">
+          <label></label>
+          <group appearance="hidden" ref="/death_review/group_review/group_confirmation/fields/inputs">
+            <label></label>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/death_review/group_summary">
+      <label>Death Results Page</label>
+      <input ref="/death_review/group_summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 yellow" ref="/death_review/group_summary/r_summary">
+        <label>Patient Details &lt;i class="fa fa-user"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_patient_name">
+        <label>&lt;p style=&quot;text-align:center;&quot;&gt;<output value=" /death_review/patient_name_display "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_patient_age">
+        <label>&lt;p style=&quot;text-align:center;&quot;&gt;<output value=" /death_review/patient_age_display "/>&lt;/p&gt;</label>
+      </input>
+      <input appearance="h1 blue" ref="/death_review/group_summary/r_findings">
+        <label>Findings &lt;i class="fa fa-info"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_date_of_death">
+        <label>&lt;p style=&quot;text-align: center&quot;&gt;Date of death: <output value=" /death_review/date_of_death_display "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_place_of_death">
+        <label>&lt;p style=&quot;text-align: center&quot;&gt;<output value=" /death_review/patient_name_display "/> died at <output value=" /death_review/group_summary/place_of_death_display "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_cause_of_death">
+        <label>&lt;p style=&quot;text-align: center&quot;&gt;Cause of Death: <output value=" /death_review/group_summary/cause_of_death_display "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_no_follow_ups">
+        <label>&lt;p style=&quot;color: red&quot;&gt;<output value=" /death_review/group_review/chv_notification "/>&lt;/p&gt;</label>
+      </input>
+      <input appearance="h1 green" ref="/death_review/group_summary/r_special_instructions">
+        <label>Key Instructions &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</label>
+      </input>
+      <input ref="/death_review/group_summary/r_switch_on_bundles">
+        <label>Kindly switch on the data bundles to facilitate fast notification of the findings to the CHP. Thank you.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

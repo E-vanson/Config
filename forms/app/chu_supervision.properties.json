@@ -1,0 +1,11 @@
+{
+    "title":{
+        "en": "CHU Supervision"
+    },
+    "icon": "icon-community-health-unit",
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "user.parent && user.parent.contact_type === 'b_sub_county' && !contact.muted && contact.contact_type === 'c_community_health_unit'"
+    }
+}

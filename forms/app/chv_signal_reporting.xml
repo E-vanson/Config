@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>CEBS Signal Report</h:title>
+    <model>
+      <instance>
+        <chv_signal_reporting id="chv_signal_reporting" prefix="J1!chv_signal_reporting!" delimiter="#" version="2023-04-01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <task_id/>
+            <contact>
+              <_id/>
+              <place_id/>
+              <contact>
+                <_id/>
+                <name/>
+                <phone/>
+              </contact>
+            </contact>
+          </inputs>
+          <place_uuid/>
+          <chw_area_id/>
+          <chw_id/>
+          <chw_name/>
+          <signal_code/>
+          <signal_type_label/>
+          <chv_signal>
+            <signal_type/>
+            <in_chv_area/>
+            <n_fill_death_report/>
+            <signal_description/>
+          </chv_signal>
+          <summary>
+            <n_results_page/>
+            <n_submit_reminder/>
+            <n_signal_details/>
+            <n_signal_type/>
+            <n_key_instruction/>
+            <n_mobile_data_reminder/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chv_signal_reporting>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/chv_signal_reporting/inputs" relevant="./source=user"/>
+      <bind nodeset="/chv_signal_reporting/inputs/source" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/source_id" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/task_id" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/chv_signal_reporting/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/chv_signal_reporting/inputs/contact/contact/phone" type="string"/>
+      <bind nodeset="/chv_signal_reporting/place_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/chv_signal_reporting/chw_area_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/chv_signal_reporting/chw_id" type="string" calculate="../inputs/contact/contact/_id"/>
+      <bind nodeset="/chv_signal_reporting/chw_name" type="string" calculate="../inputs/contact/contact/name"/>
+      <bind nodeset="/chv_signal_reporting/signal_code" type="string" calculate="if( /chv_signal_reporting/chv_signal/signal_type  = 'similar_symptoms', 1,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'death_in_community', 2,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'child_weak_legs_arms', 3,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'diarrhea', 4,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'increased_sickness_animals', 5,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'bitten_by_animal', 6,
+if( /chv_signal_reporting/chv_signal/signal_type  = 'public_event_of_concern', 7, '')))))))"/>
+      <bind nodeset="/chv_signal_reporting/signal_type_label" type="string" calculate="jr:choice-name( /chv_signal_reporting/chv_signal/signal_type , ' /chv_signal_reporting/chv_signal/signal_type ')"/>
+      <bind nodeset="/chv_signal_reporting/chv_signal/signal_type" type="select1" required="true()"/>
+      <bind nodeset="/chv_signal_reporting/chv_signal/in_chv_area" type="select1" relevant=" /chv_signal_reporting/chv_signal/signal_type  = 'death_in_community'"/>
+      <bind nodeset="/chv_signal_reporting/chv_signal/n_fill_death_report" readonly="true()" type="string" relevant=" /chv_signal_reporting/chv_signal/in_chv_area  = 'yes'"/>
+      <bind nodeset="/chv_signal_reporting/chv_signal/signal_description" type="string" relevant=" /chv_signal_reporting/chv_signal/in_chv_area  = 'no' or  /chv_signal_reporting/chv_signal/in_chv_area  = ''"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_results_page" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_submit_reminder" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_signal_details" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_signal_type" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_key_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/summary/n_mobile_data_reminder" readonly="true()" type="string"/>
+      <bind nodeset="/chv_signal_reporting/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/chv_signal_reporting/inputs">
+      <label>Patient</label>
+      <group ref="/chv_signal_reporting/inputs/contact">
+        <label>CHP Area</label>
+        <input appearance="db-object" ref="/chv_signal_reporting/inputs/contact/_id">
+          <label>CHP Area UUID</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/chv_signal_reporting/inputs/contact/contact">
+          <label>CHP</label>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/chv_signal_reporting/chv_signal">
+      <label>CEBS Signal <output value=" /chv_signal_reporting/signal_code "/> Report</label>
+      <select1 ref="/chv_signal_reporting/chv_signal/signal_type">
+        <label>What type of signal are you reporting?</label>
+        <hint>(Please note you can only report one signal at a time)</hint>
+        <item>
+          <label>1. Two or more people presenting with similar symptoms in a community (village, estate, institutions, gatherings e.g. funeral, wedding, market) within a week</label>
+          <value>similar_symptoms</value>
+        </item>
+        <item>
+          <label>2. Any death in the community</label>
+          <value>death_in_community</value>
+        </item>
+        <item>
+          <label>3. Any child less than 15 years with a sudden onset of weakness of the legs and arms not due to injury</label>
+          <value>child_weak_legs_arms</value>
+        </item>
+        <item>
+          <label>4. Any person 5 years of age or more with lots of watery diarrhea on the same day</label>
+          <value>diarrhea</value>
+        </item>
+        <item>
+          <label>5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/ birds or fish)</label>
+          <value>increased_sickness_animals</value>
+        </item>
+        <item>
+          <label>6. Any person who has been bitten by an animal including dogs</label>
+          <value>bitten_by_animal</value>
+        </item>
+        <item>
+          <label>7. Any event that causes public health anxiety/concern (floods, fires, tribal clashes, locust infestation and others)</label>
+          <value>public_event_of_concern</value>
+        </item>
+      </select1>
+      <select1 ref="/chv_signal_reporting/chv_signal/in_chv_area">
+        <label>Is the person under your CHP area?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/chv_signal_reporting/chv_signal/n_fill_death_report">
+        <label>Proceed to fill in the death report form in the persons profile</label>
+      </input>
+      <input ref="/chv_signal_reporting/chv_signal/signal_description">
+        <label>Provide brief description of signal (What happened/Is happening?)</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/chv_signal_reporting/summary">
+      <label></label>
+      <input ref="/chv_signal_reporting/summary/n_results_page">
+        <label>&lt;h3 style='background-color: #E06666; text-align: center;' &gt;SIGNAL REPORT RESULTS PAGE&lt;/h3&gt;</label>
+      </input>
+      <input ref="/chv_signal_reporting/summary/n_submit_reminder">
+        <label>&lt;p style='text-align: center;'&gt;Be sure you submit to complete this action&lt;/p&gt;</label>
+      </input>
+      <input ref="/chv_signal_reporting/summary/n_signal_details">
+        <label>&lt;h4 style='background-color: #8DB3E2 ; text-align: center;'&gt;&lt;bold&gt;Signal Details&lt;/bold&gt;&lt;/h4&gt;</label>
+      </input>
+      <input ref="/chv_signal_reporting/summary/n_signal_type">
+        <label>&lt;p style='background-color: #F4CCCC ; text-align: center;'&gt;Signal Type: <output value=" /chv_signal_reporting/signal_type_label "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/chv_signal_reporting/summary/n_key_instruction">
+        <label>&lt;h4 style='background-color: #6D9EEB ; text-align: center;'&gt;&lt;bold&gt;Key Instruction&lt;/bold&gt;&lt;/h4&gt;</label>
+      </input>
+      <input ref="/chv_signal_reporting/summary/n_mobile_data_reminder">
+        <label>&lt;p&gt;Kindly switch on the data bundles to facilitate fast notification of this signal to the CHA for confirmation. Thank you.&lt;/p&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

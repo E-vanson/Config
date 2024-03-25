@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Mute Person</h:title>
+    <model>
+      <instance>
+        <mute_person id="mute_person" prefix="J1!mute_person!" delimiter="#" version="2023-06-17 00:01:05">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <c_mute_reason/>
+          <visited_contact_uuid/>
+          <mute_report>
+            <mute_reason/>
+            <specify_reason/>
+            <confirm_mute/>
+            <inform_cha/>
+          </mute_report>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </mute_person>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/mute_person/inputs" relevant="./source='user'"/>
+      <bind nodeset="/mute_person/inputs/source" type="string"/>
+      <bind nodeset="/mute_person/inputs/source_id" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/mute_person/inputs/contact/name" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/sex" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/mute_person/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/mute_person/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/mute_person/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/mute_person/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/mute_person/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/mute_person/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/mute_person/c_mute_reason" type="string" calculate="if( /mute_person/mute_report/mute_reason  = 'other',  /mute_person/mute_report/specify_reason , jr:choice-name( /mute_person/mute_report/mute_reason , ' /mute_person/mute_report/mute_reason '))"/>
+      <bind nodeset="/mute_person/visited_contact_uuid" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/mute_person/mute_report/mute_reason" type="select1" required="true()"/>
+      <bind nodeset="/mute_person/mute_report/specify_reason" type="string" relevant=" /mute_person/mute_report/mute_reason  = 'other'" required="true()"/>
+      <bind nodeset="/mute_person/mute_report/confirm_mute" type="select1" required="true()"/>
+      <bind nodeset="/mute_person/mute_report/inform_cha" readonly="true()" type="string" relevant=" /mute_person/mute_report/confirm_mute  = 'yes'"/>
+      <bind nodeset="/mute_person/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/mute_person/inputs">
+      <label>Inputs</label>
+      <group ref="/mute_person/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/mute_person/inputs/contact/_id">
+          <label>ID of head of household</label>
+        </input>
+        <group ref="/mute_person/inputs/contact/parent">
+          <label>Parent</label>
+          <group ref="/mute_person/inputs/contact/parent/parent">
+            <label>Parent</label>
+            <group ref="/mute_person/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/mute_person/mute_report">
+      <label>Mute Report</label>
+      <select1 ref="/mute_person/mute_report/mute_reason">
+        <label>What is the reason for muting <output value=" /mute_person/patient_name "/>?</label>
+        <item>
+          <label>Relocated to outside CHP catchment area</label>
+          <value>relocated_outside_chv_area</value>
+        </item>
+        <item>
+          <label>No longer a household member</label>
+          <value>no_longer_household_member</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/mute_person/mute_report/specify_reason">
+        <label>Specify</label>
+      </input>
+      <select1 ref="/mute_person/mute_report/confirm_mute">
+        <label>Please confirm that you want to mute <output value=" /mute_person/patient_name "/></label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/mute_person/mute_report/inform_cha">
+        <label>A muting request has been sent to your supervisor for approval. Once approved, <output value=" /mute_person/patient_name "/> will be muted. You will not receive any task reminders until they are unmuted.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

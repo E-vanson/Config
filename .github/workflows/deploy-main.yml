@@ -1,0 +1,168 @@
+name: Live app deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - site: Migori/Siaya
+            hostname: echis.health.go.ke
+            password: ECHIS_PASSWORD 
+            interop_client_user: MIGORI_SIAYA_INTEROP_USER
+          - site: Homa Bay
+            hostname: homabay.echis.go.ke
+            password: HOMABAY_PASSWORD
+            interop_client_user: HOMABAY_INTEROP_USER
+          - site: Kakamega
+            hostname: kakamega.echis.go.ke
+            password: KAKAMEGA_PASSWORD
+            interop_client_user: KAKAMEGA_INTEROP_USER
+          - site: Kitui
+            hostname: kitui.echis.go.ke
+            password: KITUI_PASSWORD
+            interop_client_user: KITUI_INTEROP_USER
+          - site: Nairobi
+            hostname: nairobi.echis.go.ke
+            password: NAIROBI_PASSWORD
+            interop_client_user: NAIROBI_INTEROP_USER
+          - site: Nakuru
+            hostname: nakuru.echis.go.ke
+            password: NAKURU_PASSWORD
+            interop_client_user: NAKURU_INTEROP_USER
+          - site: Nyeri
+            hostname: nyeri.echis.go.ke
+            password: NYERI_PASSWORD
+            interop_client_user: NYERI_INTEROP_USER
+          - site: Vihiga
+            hostname: vihiga.echis.go.ke
+            password: VIHIGA_PASSWORD
+            interop_client_user: VIHIGA_INTEROP_USER
+          - site: Baringo
+            hostname: baringo.echis.go.ke
+            password: BARINGO_PASSWORD
+            interop_client_user: BARINGO_INTEROP_USER
+          - site: Elgeyo Marakwet
+            hostname: elgeyomarakwet.echis.go.ke
+            password: ELGEYO_PASSWORD
+            interop_client_user: ELGEYO_INTEROP_USER
+          - site: Embu
+            hostname: embu.echis.go.ke
+            password: EMBU_PASSWORD
+            interop_client_user: EMBU_INTEROP_USER
+          - site: Kericho
+            hostname: kericho.echis.go.ke
+            password: KERICHO_PASSWORD
+            interop_client_user: KERICHO_INTEROP_USER
+          - site: Kilifi
+            hostname: kilifi.echis.go.ke
+            password: KILIFI_PASSWORD
+            interop_client_user: KILIFI_INTEROP_USER
+          - site: Kwale
+            hostname: kwale.echis.go.ke
+            password: KWALE_PASSWORD
+            interop_client_user: KWALE_INTEROP_USER
+          - site: Nandi
+            hostname: nandi.echis.go.ke
+            password: NANDI_PASSWORD
+            interop_client_user: NANDI_INTEROP_USER
+          - site: Samburu
+            hostname: samburu.echis.go.ke
+            password: SAMBURU_PASSWORD
+            interop_client_user: SAMBURU_INTEROP_USER
+          - site: Turkana
+            hostname: turkana.echis.go.ke
+            password: TURKANA_PASSWORD
+            interop_client_user: TURKANA_INTEROP_USER    
+          - site: Taita Taveta
+            hostname: taitataveta.echis.go.ke
+            password: TAITA_TAVETA_PASSWORD
+            interop_client_user: TAITA_TAVETA_INTEROP_USER
+          - site: Trans Nzoia
+            hostname: transnzoia.echis.go.ke
+            password: TRANS_NZOIA_PASSWORD
+            interop_client_user: TRANS_NZOIA_INTEROP_USER
+          - site: Kisii
+            hostname: kisii.echis.go.ke
+            password: KISII_PASSWORD
+            interop_client_user: KISII_INTEROP_USER
+          - site: Makueni
+            hostname: makueni.echis.go.ke
+            password: MAKUENI_PASSWORD
+            interop_client_user: MAKUENI_INTEROP_USER
+          - site: Kirinyaga
+            hostname: kirinyaga.echis.go.ke
+            password: KIRINYAGA_PASSWORD
+            interop_client_user: KIRINYAGA_INTEROP_USER
+          - site: Kiambu
+            hostname: kiambu.echis.go.ke
+            password: KIAMBU_PASSWORD
+            interop_client_user: KIAMBU_INTEROP_USER
+          - site: West Pokot
+            hostname: westpokot.echis.go.ke
+            password: WEST_POKOT_PASSWORD
+            interop_client_user: WEST_POKOT_INTEROP_USER
+          - site: Bomet
+            hostname: bomet.echis.go.ke
+            password: BOMET_PASSWORD
+            interop_client_user: BOMET_INTEROP_USER
+
+          
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Update app settings with env variables
+        env:
+          INTEROP_CLIENT_USER: ${{ vars[matrix.interop_client_user] }}
+          INTEROP_GATEWAY_URL: https://interop-gateway.health.go.ke/interop
+        run: npm run readenv
+
+      - name: Set Interop Gateway password
+        run: |
+          curl -X PUT -H "Content-Type: text/plain" https://${{ secrets.STAGING_USERNAME }}:${{ secrets[matrix.password] }}@${{ matrix.hostname }}/api/v1/credentials/mykey -d ${{ secrets.INTEROP_GATEWAY_SHARED_PASSWORD }}
+
+      - name: Deploy to ${{ matrix.site }} instance (${{ matrix.hostname }})
+        uses: "medic/cht-core/.github/actions/deploy-conf@master"
+        with:
+          directory: "."
+          hostname: ${{ matrix.hostname }}
+          username: ${{ secrets.STAGING_USERNAME }}
+          password: ${{ secrets[matrix.password] }}
+
+      - name: "Get message"
+        id: "deploy-message"
+        run: |
+          echo "::set-output name=commit_msg::$(git log -1 --format=%B)"
+          echo "::set-output name=commit_sha::$(git log -1 --format=%H)"
+
+      - name: Notify successful deployment
+        if: success()
+        id: deploy-success
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+          slack-message: "${{ matrix.site}} deployment successful :successful: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+      - name: Notify failed deployment
+        if: failure()
+        id: deploy-fail
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+          slack-message: "${{ matrix.site}} deployment failed :warning: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

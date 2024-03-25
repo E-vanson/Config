@@ -1,0 +1,11 @@
+{
+    "icon": "icon-cash-interest",
+    "title": {
+        "en": "Socio Economic Survey"
+    },
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact && contact.contact_type === 'e_household' && user.parent && user.parent.contact_type === 'd_community_health_volunteer_area' && summary.is_eligible_for_home_visit_service"
+    }
+}

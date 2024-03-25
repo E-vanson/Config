@@ -1,0 +1,183 @@
+{
+  "REFERRAL_FOLLOWUP_AFYA_KE": {
+    "meta": {
+      "code": "referral_follow_up",
+      "icon": "icon-follow-up",
+      "translation_key": "outbound.referral_follow_up.title"
+    },
+    "fields": {
+      "subject": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.subject.name"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "patient_uuid": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.patient_uuid.name"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.patient_id.name"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "authored_on": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.authored_on.name"
+          }
+        },
+        "position": 3,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "date_service_offered": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.date_service_offered.name"
+          }
+        },
+        "position": 4,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "date_of_visit": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.date_of_visit.name"
+          }
+        },
+        "position": 5,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "follow_up_instruction": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.follow_up_instruction.name"
+          }
+        },
+        "position": 6,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      },
+      "health_facility_contact": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "translation_key": "outbound.health_facility_contact.name"
+          }
+        },
+        "position": 7,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": false
+      }
+    }
+  },
+  "CLIENT_DETAILS_MISMATCH": {
+    "meta": {
+      "code": "client_details_mismatch",
+      "icon": "icon-follow-up",
+      "translation_key": "outbound.client_details_mismatch.title"
+    },
+    "fields": {
+      "patient_id": {
+        "type": "string",
+        "required": true,
+        "labels": {
+          "short": {
+            "translation_key": "outbound.patient_uuid.name"
+          }
+        }
+      },
+      "mismatched_fields": {
+        "type": "string",
+        "required": true,
+        "labels": {
+          "short": {
+            "translation_key": "outbound.mismatched_fields.name"
+          }
+        }
+      },
+      "source": {
+        "type": "string",
+        "required": true,
+        "labels": {
+          "short": {
+            "translation_key": "outbound.source.name"
+          }
+        }
+      }
+    }
+  }
+}

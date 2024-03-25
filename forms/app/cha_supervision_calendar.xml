@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Supervision Calendar</h:title>
+    <model>
+      <instance>
+        <cha_supervision_calendar id="cha_supervision_calendar" prefix="J1!cha_supervision_calendar!" delimiter="#" version="2023-06-16 23:37:43">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <phone/>
+              <parent>
+                <parent>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <patient_name/>
+          <patient_name_display/>
+          <chv_name/>
+          <chv_phone/>
+          <cha_name/>
+          <cha_phone/>
+          <details>
+            <when_supervise/>
+          </details>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cha_supervision_calendar>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/cha_supervision_calendar/inputs" relevant="./source='user'"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/source" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/source_id" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/name" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/phone" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/cha_supervision_calendar/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/cha_supervision_calendar/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/cha_supervision_calendar/patient_name_display" type="string" calculate="../patient_name"/>
+      <bind nodeset="/cha_supervision_calendar/chv_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/cha_supervision_calendar/chv_phone" type="string" calculate="../inputs/contact/phone"/>
+      <bind nodeset="/cha_supervision_calendar/cha_name" type="string" calculate="../inputs/contact/parent/parent/contact/name"/>
+      <bind nodeset="/cha_supervision_calendar/cha_phone" type="string" calculate="../inputs/contact/parent/parent/contact/phone"/>
+      <bind nodeset="/cha_supervision_calendar/details/when_supervise" type="date" jr:constraintMsg="Don't put in past dates or more than 30 days from today" constraint="decimal-date-time(.) &gt; decimal-date-time(today() - 1) and decimal-date-time(.) &lt;= decimal-date-time(today() + 30)" required="true()"/>
+      <bind nodeset="/cha_supervision_calendar/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/cha_supervision_calendar/inputs">
+      <label>Patient</label>
+      <group ref="/cha_supervision_calendar/inputs/user">
+        <label></label>
+      </group>
+      <group ref="/cha_supervision_calendar/inputs/contact">
+        <label>Contact</label>
+        <input appearance="db-object" ref="/cha_supervision_calendar/inputs/contact/_id">
+          <label>What is the CHP's name?</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/cha_supervision_calendar/inputs/contact/parent">
+          <label>Contact</label>
+          <group ref="/cha_supervision_calendar/inputs/contact/parent/parent">
+            <label>Contact</label>
+            <group ref="/cha_supervision_calendar/inputs/contact/parent/parent/contact">
+              <label>Contact</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/cha_supervision_calendar/details">
+      <label></label>
+      <input ref="/cha_supervision_calendar/details/when_supervise">
+        <label>When would you like to supervise <output value=" /cha_supervision_calendar/chv_name "/>?</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

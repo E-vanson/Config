@@ -1,0 +1,76 @@
+name: Training app deployment
+
+on:
+  push:
+    branches:
+      - training
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+    - name: 'Deployment pending'
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'pending'
+        token: '${{ github.token }}'
+
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+
+    - name: Update interop gateway URL
+      uses: 'medic/gh-actions/dynamic-rapidpro-workspace-settings@main'
+      with:
+        directory: '.'
+        interop_gateway_url: https://interop-gateway-staging.health.go.ke/interop
+
+    - name: Deploy to training
+      uses: 'medic/cht-core/.github/actions/deploy-with-medic-conf@master'
+      with:
+        directory: '.'
+        hostname: chis-training.health.go.ke
+        username: ${{ secrets.STAGING_USERNAME }}
+        password: ${{ secrets.STAGING_PASSWORD }}
+
+    - name: 'Deployment success'
+      if: success()
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'success'
+        token: '${{ github.token }}'
+
+    - name: 'Get message'
+      id: 'deploy-message'
+      run: |
+            echo "::set-output name=commit_msg::$(git log -1 --format=%B)"
+            echo "::set-output name=commit_sha::$(git log -1 --format=%H)"
+
+    - name: Notify successful deployment
+      if: success()
+      id: deploy-success
+      uses: slackapi/slack-github-action@v1.24.0
+      with:
+        channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+        slack-message: "Training deployment successful :successful: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      
+    - name: Notify failed deployment
+      if: failure()
+      id: deploy-fail
+      uses: slackapi/slack-github-action@v1.24.0
+      with:
+        channel-id: ${{ secrets.DEPLOYMENT_CHANNEL_ID }}
+        slack-message: "Training deployment failed :warning: \n ${{ steps.deploy-message.outputs.commit_msg }}"
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+    - name: 'Deployment failure'
+      if: failure()
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'failure'
+        token: '${{ github.token }}'

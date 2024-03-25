@@ -1,0 +1,563 @@
+{
+  "default_country_code": 254,
+  "task_days_overdue": true,
+  "place_hierarchy_types": [
+    "a_county",
+    "b_sub_county",
+    "c_community_health_unit",
+    "d_community_health_volunteer_area",
+    "e_household"
+  ],
+  "contact_types": [
+    {
+      "id": "a_county",
+      "name_key": "contact.type.county",
+      "group_key": "contact.type.county.plural",
+      "create_key": "contact.type.county.new",
+      "edit_key": "contact.type.place.edit",
+      "primary_contact_key": "place.field.contact",
+      "icon": "icon-county",
+      "create_form": "form:contact:a_county:create",
+      "edit_form": "form:contact:a_county:edit"
+    },
+    {
+      "id": "b_sub_county",
+      "name_key": "contact.type.sub_county",
+      "group_key": "contact.type.sub_county.plural",
+      "create_key": "contact.type.sub_county.new",
+      "edit_key": "contact.type.place.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "a_county"
+      ],
+      "icon": "icon-sub-county",
+      "create_form": "form:contact:b_sub_county:create",
+      "edit_form": "form:contact:b_sub_county:edit"
+    },
+    {
+      "id": "c_community_health_unit",
+      "name_key": "contact.type.community_health_unit",
+      "group_key": "contact.type.community_health_unit.plural",
+      "create_key": "contact.type.community_health_unit.new",
+      "edit_key": "contact.type.place.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "b_sub_county"
+      ],
+      "icon": "icon-community-health-unit",
+      "create_form": "form:contact:c_community_health_unit:create",
+      "edit_form": "form:contact:c_community_health_unit:edit"
+    },
+    {
+      "id": "d_community_health_volunteer_area",
+      "name_key": "contact.type.community_health_volunteer_area",
+      "group_key": "contact.type.community_health_volunteer_area.plural",
+      "create_key": "contact.type.community_health_volunteer_area.new",
+      "edit_key": "contact.type.place.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "c_community_health_unit"
+      ],
+      "icon": "icon-community-health-volunteer-area",
+      "create_form": "form:contact:d_community_health_volunteer_area:create",
+      "edit_form": "form:contact:d_community_health_volunteer_area:edit"
+    },
+    {
+      "id": "e_household",
+      "name_key": "contact.type.household",
+      "group_key": "contact.type.household.plural",
+      "create_key": "contact.type.household.new",
+      "edit_key": "contact.type.place.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "d_community_health_volunteer_area"
+      ],
+      "icon": "icon-household",
+      "create_form": "form:contact:e_household:create",
+      "edit_form": "form:contact:e_household:edit",
+      "count_visits": true
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "parents": [
+        "a_county",
+        "b_sub_county",
+        "c_community_health_unit",
+        "d_community_health_volunteer_area"
+      ],
+      "icon": "icon-person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true
+    },
+    {
+      "id": "f_client",
+      "name_key": "contact.type.client",
+      "group_key": "contact.type.client.plural",
+      "create_key": "contact.type.client.new",
+      "edit_key": "contact.type.client.edit",
+      "parents": [
+        "e_household"
+      ],
+      "icon": "icon-person",
+      "create_form": "form:contact:f_client:create",
+      "edit_form": "form:contact:f_client:edit",
+      "person": true
+    }
+  ],
+  "roles": {
+    "county_supervisor": {
+      "name": "usertype.county_supervisor"
+    },
+    "sub_county_supervisor": {
+      "name": "usertype.sub_county_supervisor"
+    },
+    "analytics": {
+      "name": "usertype.analytics"
+    },
+    "gateway": {
+      "name": "usertype.gateway"
+    },
+    "community_health_assistant": {
+      "name": "usertype.community_health_assistant",
+      "offline": true
+    },
+    "community_health_volunteer": {
+      "name": "usertype.community_health_volunteer",
+      "offline": true
+    },
+    "user_manager": {
+      "name": "usertype.user_manager"
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+      "gateway"
+    ],
+    "can_bulk_delete_reports": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_configure": [],
+    "can_create_people": [
+      "user_manager",
+      "community_health_volunteer"
+    ],
+    "can_create_places": [
+      "user_manager",
+      "community_health_volunteer"
+    ],
+    "can_create_records": [
+      "gateway",
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_create_users": [
+      "user_manager"
+    ],
+    "can_create_chv_contacts": [],
+    "can_create_household_contacts": [
+      "community_health_volunteer"
+    ],
+    "can_edit_household_contacts": [
+      "community_health_volunteer"
+    ],
+    "can_delete_contacts": [],
+    "can_delete_messages": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_delete_reports": [],
+    "can_delete_users": [
+      "user_manager"
+    ],
+    "can_edit": [
+      "user_manager",
+      "gateway",
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_edit_profile": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_edit_verification": [
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_export_all": [],
+    "can_export_contacts": [
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_export_feedback": [],
+    "can_export_messages": [
+      "analytics",
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_log_out_on_android": [
+      "sub_county_supervisor",
+      "community_health_assistant"
+    ],
+    "can_update_places": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_update_reports": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_update_users": [],
+    "can_export_dhis": [],
+    "can_verify_reports": [
+      "sub_county_supervisor",
+      "community_health_assistant"
+    ],
+    "can_view_analytics": [
+      "analytics",
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_analytics_tab": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_call_action": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_contacts": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer",
+      "user_manager"
+    ],
+    "can_view_contacts_tab": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer",
+      "user_manager"
+    ],
+    "can_view_last_visited_date": [
+      "community_health_volunteer"
+    ],
+    "can_view_uhc_stats": [
+      "community_health_volunteer"
+    ],
+    "can_view_message_action": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_messages": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_messages_tab": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_outgoing_messages": [],
+    "can_view_reports": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_reports_tab": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_tasks": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_tasks_tab": [
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_tasks_group": [
+      "sub_county_supervisor",
+      "community_health_volunteer"
+    ],
+    "can_view_unallocated_data_records": [
+      "gateway",
+      "sub_county_supervisor",
+      "community_health_assistant",
+      "community_health_volunteer"
+    ],
+    "can_view_users": [
+      "user_manager"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_aggregate_targets": [
+      "sub_county_supervisor",
+      "community_health_assistant"
+    ],
+    "can_upgrade": []
+  },
+  "uhc": {
+    "contacts_default_sort": "last_visited_date",
+    "visit_count": {
+      "month_start_date": 1,
+      "visit_count_goal": 1
+    }
+  },
+  "replication_depth": [
+    {
+      "role": "sub_county_supervisor",
+      "depth": 2,
+      "report_depth": 2
+    }
+  ],
+  "death_reporting": {
+    "mark_deceased_forms": [
+      "death_confirmation"
+    ],
+    "date_field": "fields.date_of_death"
+  },
+  "muting": {
+    "mute_forms": [
+      "mute_person_confirmed",
+      "mute_household_confirmed"
+    ],
+    "unmute_forms": [
+      "unmute_person",
+      "unmute_household"
+    ]
+  },
+  "transitions": {
+    "death_reporting": true,
+    "muting": true,
+    "mark_for_outbound": true,
+    "accept_patient_reports": true,
+    "registration": true,
+    "accept_case_reports": true
+  },
+  "patient_reports": [
+    {
+      "form": "death_review",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.death.review.refuted",
+          "event_type": "report_accepted",
+          "recipient": "chv_phone",
+          "bool_expr": "doc.fields.group_review.dead === 'no'"
+        }
+      ]
+    },
+    {
+      "form": "approve_mute_person",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.muting.person.refuted",
+          "event_type": "report_accepted",
+          "recipient": "chv_phone",
+          "bool_expr": "doc.fields.approve_mute_report.status === 'reject'"
+        }
+      ]
+    },
+    {
+      "form": "approve_mute_household",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.muting.household.refuted",
+          "event_type": "report_accepted",
+          "recipient": "chv_phone",
+          "bool_expr": "doc.fields.approve_mute_report.status === 'reject'"
+        }
+      ]
+    },
+    {
+      "form": "sgbv",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.sgbv.referral.prompt",
+          "event_type": "report_accepted",
+          "recipient": "ancestor:c_community_health_unit",
+          "bool_expr": "doc.fields.sgbv.is_referred_to_cha === 'yes'"
+        }
+      ]
+    }
+  ],
+  "sms": {
+    "outgoing_service": "rapidpro",
+    "rapidpro": {
+      "url": "https://textit.in"
+    },
+    "duplicate_limit": "2"
+  },
+  "registrations": [
+    {
+      "form": "chv_signal_reporting",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_case"
+        }
+      ],
+      "messages": [
+        {
+          "event_type": "report_accepted",
+          "bool_expr": "true",
+          "message": "{{contact.name}} has reported  public health signal {{signal_code}}. Signal Unique ID is {{case_id}}.",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "cha_signal_reporting_verification",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_case"
+        }
+      ],
+      "messages": [
+        {
+          "event_type": "report_accepted",
+          "bool_expr": "doc.fields && doc.fields.cha_verification && doc.fields.cha_verification.threat_exists === 'yes'",
+          "message": "{{contact.name}} {{contact.phone}} has verified a public health signal {{signal_type_label}}.",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "cha_signal_verification",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "dummy"
+        }
+      ]
+    }
+  ],
+  "accept_case_reports": [
+    {
+      "form": "cha_signal_verification",
+      "validations": {},
+      "messages": [
+        {
+          "event_type": "report_accepted",
+          "bool_expr": "doc.fields && doc.fields.cha_verification && doc.fields.cha_verification.threat_exists === 'yes'",
+          "message": "{{contact.name}} {{contact.phone}} has verified a public health signal {{signal_type_label}}.",
+          "recipient": "parent"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "locale": "en",
+      "enabled": true
+    },
+    {
+      "locale": "sw",
+      "enabled": true
+    }
+  ],
+  "outbound": {
+    "process_in_client_registry": {
+      "relevant_to": "doc.type === 'contact' && doc.contact_type === 'f_client' && !['none', 'drivers_license'].includes(doc.identification_type) && !doc.upi && !doc.date_of_death",
+      "destination": {
+        "base_url": "env.INTEROP_GATEWAY_URL",
+        "auth": {
+          "type": "basic",
+          "username": "env.INTEROP_CLIENT_USER",
+          "password_key": "mykey"
+        },
+        "path": "/echis-mediator/client"
+      },
+      "mapping": {
+        "doc": "doc"
+      }
+    },
+    "referrals": {
+      "relevant_to": "doc.type === 'data_record' && doc.form && doc.fields.has_been_referred === 'yes'",
+      "destination": {
+        "base_url": "env.INTEROP_GATEWAY_URL",
+        "auth": {
+          "type": "basic",
+          "username": "env.INTEROP_CLIENT_USER",
+          "password_key": "mykey"
+        },
+        "path": "/echis-mediator/referral/facility"
+      },
+      "mapping": {
+        "_id": {
+          "expr": "doc._id"
+        },
+        "upi": {
+          "expr": "doc.fields.data._upi"
+        },
+        "name": {
+          "expr": "doc.fields.data._patient_name"
+        },
+        "service": {
+          "expr": "doc.form"
+        },
+        "screening": {
+          "expr": "doc.fields.data._screening"
+        },
+        "supportingInfo": {
+          "expr": "doc.fields.data._supporting_info"
+        },
+        "reported_date": {
+          "expr": "doc.reported_date"
+        },
+        "follow_up_date": {
+          "expr": "doc.fields.data._follow_up_date"
+        },
+        "chu_code": {
+          "expr": "doc.fields.data._chu_code"
+        },
+        "chu_name": {
+          "expr": "doc.fields.data._chu_name"
+        },
+        "referred_to_facility_code": {
+          "expr": "doc.fields.data._referred_to_facility_code"
+        },
+        "referred_to_facility_name": {
+          "expr": "doc.fields.data._referred_to_facility_name"
+        }
+      }
+    }
+  }
+}

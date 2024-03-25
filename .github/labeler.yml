@@ -1,0 +1,29 @@
+# Source: https://github.com/bjornvandijkman1993/pull-request-automation/blob/main/.github/labeler.yml
+ci/cd:
+  - .github/**
+
+app:
+  - forms/**
+  - app_settings/**
+  - resources/**
+  - branding/**
+  - translations/**
+  - ./*.js
+  - ./*.json
+
+documentation:
+  - README.md
+  - ./*.md
+
+tests:
+  - test/**
+
+analytics:
+  - sql/**
+
+scripting:
+  - scripts/**
+
+linting:
+  - ./.eslintrc
+  - ./.sqlfluff

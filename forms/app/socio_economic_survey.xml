@@ -1,0 +1,1071 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Social Economic Survey</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/socio_economic_survey/chv_name:label">
+            <value>CHV Name</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/dwelling_ownership:label">
+            <value>If owner occupied, state whether:</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/dwelling_rented:label">
+            <value>If rented/provided, state whether:</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/dwelling_risk:label">
+            <value>The dwelling unit is at risk of:</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/dwelling_risk_other:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/floor_material:label">
+            <value>Floor</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/floor_material_other:label">
+            <value>Other Wall material</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/n_housing_material:label">
+            <value>**Dominant Construction Material of the main Dwelling Unit**</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/no_of_rooms:label">
+            <value>How many habitable ROOMS does this dwelling unit contain?</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/owns_house:label">
+            <value>Does <output value=" /socio_economic_survey/place_contact_name "/> own this house?</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/roofing_material:label">
+            <value>ROOF</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/roofing_material_other:label">
+            <value>Other roofing material</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/wall_material:label">
+            <value>Wall</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household/wall_material_other:label">
+            <value>Other Wall material</value>
+          </text>
+          <text id="/socio_economic_survey/group_dwelling_and_household:label">
+            <value>Dwelling and Household</value>
+          </text>
+          <text id="/socio_economic_survey/group_fuel/cooking_fuel:label">
+            <value>Main type of cooking fuel</value>
+          </text>
+          <text id="/socio_economic_survey/group_fuel/cooking_fuel_other:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_fuel/lighting_fuel:label">
+            <value>Main type of Lighting fuel</value>
+          </text>
+          <text id="/socio_economic_survey/group_fuel/lighting_fuel_other:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_fuel:label">
+            <value>Fuel</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/area_type:label">
+            <value>Type of Area</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/area_type_other:label">
+            <value>Other type of area (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/n_residence_duration:label">
+            <value>Duration Of Residence In This Place:</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/nearest_school:label">
+            <value>Nearest School</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/physical_address:label">
+            <value>Physical Address</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/residence_duration_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/residence_duration_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification/village:label">
+            <value>Village</value>
+          </text>
+          <text id="/socio_economic_survey/group_geographic_identification:label">
+            <value>Geographic Identification</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/assets:hint">
+            <value>Tick every option that applies.</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/assets:label">
+            <value>Does this household own any of the following items that are functioning:</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/count_deaths_last_12_months:label">
+            <value>How many DEATHS occurred in this household in the last 12 months?</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/count_live_births_last_12_months:label">
+            <value>How many LIVE BIRTHS occurred in this household in the last 12 months?</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/household_conditions:label">
+            <value>What are the conditions of the household ?</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership/livestock:label">
+            <value>How many of each of the following livestock are currently owned by this household?</value>
+          </text>
+          <text id="/socio_economic_survey/group_house_asset_ownership:label">
+            <value>Household asset ownership</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/benefit_type:label">
+            <value>What type of BENEFIT do you receive?</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/cost_of_last_benefit:label">
+            <value>How MUCH was the benefit in the last receipt?</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/in_kind_benefit_type:label">
+            <value>Specify IN-KIND of benefit:.</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/other_benefit_type:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/programmes:label">
+            <value>Name of the programme(s)</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/receive_benefits_sap:label">
+            <value>Is anyone in this household receiving benefits from any other Social Assistance Programme or any other external support?</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance/skipped_meals_money:label">
+            <value>In the past 7 days, did anyone in this household cut the size of the meals or skip meals because of the lack of enough money?</value>
+          </text>
+          <text id="/socio_economic_survey/group_social_assistance:label">
+            <value>Social Assistance</value>
+          </text>
+          <text id="/socio_economic_survey/group_wash/human_waste_disposal:label">
+            <value>Main mode of human waste disposal</value>
+          </text>
+          <text id="/socio_economic_survey/group_wash/human_waste_disposal_other:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_wash/water_source:label">
+            <value>Main source of water</value>
+          </text>
+          <text id="/socio_economic_survey/group_wash/water_source_other:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/socio_economic_survey/group_wash:label">
+            <value>Water, Sanitation and Hygiene</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/_id:label">
+            <value>ID of head of household</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/_id:label">
+            <value>household_head_id</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/date_of_birth:label">
+            <value>date_of_birth</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/doing_last_7_days:label">
+            <value>place doing last 7 days</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/education_level:label">
+            <value>place education level</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/is_father_alive:label">
+            <value>father_alive</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/is_mother_alive:label">
+            <value>mother_alive</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/main_care_giver:label">
+            <value>place main care giver</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/marital_status:label">
+            <value>marital_status</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/name:label">
+            <value>Household_head_name</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/other_care_giver:label">
+            <value>place other care giver</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/other_education_level:label">
+            <value>place other education level</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/phone:label">
+            <value>household_head_phone</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/school_attendance_status:label">
+            <value>place school attendance status</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/spouse_live_in_house:label">
+            <value>spouse_live in house</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact/work_formal:label">
+            <value>place work formal</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/contact:label">
+            <value>household_head</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/parent/_id:label">
+            <value>Household ID</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/socio_economic_survey/inputs/source_id:label">
+            <value>Source Id</value>
+          </text>
+          <text id="/socio_economic_survey/inputs:label">
+            <value>Inputs</value>
+          </text>
+          <text id="/socio_economic_survey/intro:hint">
+            <value>This is a household survey that will be happening 
+annually for the first 3 years and thereafter every 2 years and the target is to reach all households in your catchment area. 
+It is important that you collect all information correctly.
+You are expected to reach ALL your assigned households.
+Please interview the household head (father or mother). If not available, interview a household member who is 18 years and above who can provide the required information. 
+Note the person you will be getting the information from. 
+If there is no one, make plans to revisit the house.</value>
+          </text>
+          <text id="/socio_economic_survey/intro:label">
+            <value>INTRODUCTION</value>
+          </text>
+          <text id="/socio_economic_survey/place_contact_id:label">
+            <value>Household head ID</value>
+          </text>
+          <text id="/socio_economic_survey/place_contact_name:label">
+            <value>Household head Name</value>
+          </text>
+          <text id="/socio_economic_survey/place_id:label">
+            <value>Place ID</value>
+          </text>
+          <text id="/socio_economic_survey/place_name:label">
+            <value>Place Name</value>
+          </text>
+          <text id="/socio_economic_survey/visited_contact_uuid:label">
+            <value>Contact Visited</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <socio_economic_survey id="socio_economic_survey" prefix="J1!socio_economic_survey!" delimiter="#" version="2023-12-20  22-46">
+          <intro/>
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <contact>
+                <_id>0</_id>
+                <name/>
+                <phone/>
+                <date_of_birth/>
+                <marital_status/>
+                <is_father_alive/>
+                <is_mother_alive/>
+                <spouse_live_in_house/>
+                <school_attendance_status/>
+                <education_level/>
+                <other_education_level/>
+                <doing_last_7_days/>
+                <work_formal/>
+                <main_care_giver/>
+                <other_care_giver/>
+                <sex/>
+              </contact>
+              <parent>
+                <_id/>
+                <contact>
+                  <name/>
+                  <phone/>
+                </contact>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <place_name/>
+          <chv_name/>
+          <place_contact_id/>
+          <place_contact_name/>
+          <visited_contact_uuid/>
+          <once/>
+          <group_geographic_identification>
+            <physical_address/>
+            <nearest_school/>
+            <n_residence_duration/>
+            <residence_duration_years/>
+            <residence_duration_months/>
+            <area_type/>
+            <area_type_other/>
+            <village/>
+          </group_geographic_identification>
+          <group_dwelling_and_household>
+            <no_of_rooms/>
+            <owns_house/>
+            <dwelling_ownership/>
+            <dwelling_rented/>
+            <n_housing_material/>
+            <roofing_material/>
+            <roofing_material_other/>
+            <wall_material/>
+            <wall_material_other/>
+            <floor_material/>
+            <floor_material_other/>
+            <dwelling_risk/>
+            <dwelling_risk_other/>
+          </group_dwelling_and_household>
+          <group_wash>
+            <water_source/>
+            <water_source_other/>
+            <human_waste_disposal/>
+            <human_waste_disposal_other/>
+          </group_wash>
+          <group_fuel>
+            <cooking_fuel/>
+            <cooking_fuel_other/>
+            <lighting_fuel/>
+            <lighting_fuel_other/>
+          </group_fuel>
+          <group_house_asset_ownership>
+            <assets/>
+            <livestock/>
+            <count_live_births_last_12_months/>
+            <count_deaths_last_12_months/>
+            <household_conditions/>
+          </group_house_asset_ownership>
+          <group_social_assistance>
+            <skipped_meals_money/>
+            <receive_benefits_sap/>
+            <programmes/>
+            <benefit_type/>
+            <other_benefit_type/>
+            <cost_of_last_benefit/>
+            <in_kind_benefit_type/>
+          </group_social_assistance>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </socio_economic_survey>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/socio_economic_survey/intro" readonly="true()" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs" relevant="./source='user'"/>
+      <bind nodeset="/socio_economic_survey/inputs/source" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/source_id" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/phone" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/date_of_birth" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/marital_status" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/is_father_alive" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/is_mother_alive" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/spouse_live_in_house" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/school_attendance_status" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/education_level" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/other_education_level" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/doing_last_7_days" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/work_formal" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/main_care_giver" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/other_care_giver" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/contact/sex" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/parent/contact/name" type="string"/>
+      <bind nodeset="/socio_economic_survey/inputs/contact/parent/contact/phone" type="string"/>
+      <bind nodeset="/socio_economic_survey/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/socio_economic_survey/place_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/socio_economic_survey/chv_name" type="string" calculate="../inputs/contact/parent/contact/name"/>
+      <bind nodeset="/socio_economic_survey/place_contact_id" type="string" calculate="../inputs/contact/contact/_id"/>
+      <bind nodeset="/socio_economic_survey/place_contact_name" type="string" calculate="../inputs/contact/contact/name"/>
+      <bind nodeset="/socio_economic_survey/visited_contact_uuid" type="string" calculate="../place_id"/>
+      <bind nodeset="/socio_economic_survey/once" type="string" calculate="true()"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/physical_address" type="string" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/physical_address,  /socio_economic_survey/group_geographic_identification/physical_address )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/nearest_school" type="string" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/nearest_school,  /socio_economic_survey/group_geographic_identification/nearest_school )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/n_residence_duration" readonly="true()" type="string"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/residence_duration_years" type="int" constraint=".&lt;=120" required="true()" jr:constraintMsg="Duration cannot be more than a year" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/residence_duration_years,  /socio_economic_survey/group_geographic_identification/residence_duration_years )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/residence_duration_months" type="int" constraint=".&lt;=12" required="true()" jr:constraintMsg="Any number greater than 12 should be converted to a year" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/residence_duration_months,  /socio_economic_survey/group_geographic_identification/residence_duration_months )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/area_type" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/area_type,  /socio_economic_survey/group_geographic_identification/area_type )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/area_type_other" type="string" required="true()" relevant=" /socio_economic_survey/group_geographic_identification/area_type ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/area_type_other,  /socio_economic_survey/group_geographic_identification/area_type_other )"/>
+      <bind nodeset="/socio_economic_survey/group_geographic_identification/village" type="string" constraint="regex(.,'^[(A-Za-z)+ ?]*$')" required="true()" jr:constraintMsg="This field is text only" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_geographic_identification/village,  /socio_economic_survey/group_geographic_identification/village )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/no_of_rooms" type="int" constraint=".&lt;=20" required="true()" jr:constraintMsg="A person dwelling house cannot have more than 20 rooms" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/no_of_rooms,  /socio_economic_survey/group_dwelling_and_household/no_of_rooms )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/owns_house" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/owns_house,  /socio_economic_survey/group_dwelling_and_household/owns_house )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/dwelling_ownership" type="select1" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/owns_house ='yes'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/dwelling_ownership,  /socio_economic_survey/group_dwelling_and_household/dwelling_ownership )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/dwelling_rented" type="select1" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/owns_house ='no'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/dwelling_rented,  /socio_economic_survey/group_dwelling_and_household/dwelling_rented )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/n_housing_material" readonly="true()" type="string"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/roofing_material" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/roofing_material,  /socio_economic_survey/group_dwelling_and_household/roofing_material )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/roofing_material_other" type="string" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/roofing_material ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/roofing_material_other,  /socio_economic_survey/group_dwelling_and_household/roofing_material_other )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/wall_material" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/wall_material,  /socio_economic_survey/group_dwelling_and_household/wall_material )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/wall_material_other" type="string" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/wall_material ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/wall_material_other,  /socio_economic_survey/group_dwelling_and_household/wall_material_other )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/floor_material" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/floor_material,  /socio_economic_survey/group_dwelling_and_household/floor_material )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/floor_material_other" type="string" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/floor_material ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/floor_material_other,  /socio_economic_survey/group_dwelling_and_household/floor_material_other )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/dwelling_risk" type="select1" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/dwelling_risk,  /socio_economic_survey/group_dwelling_and_household/dwelling_risk )"/>
+      <bind nodeset="/socio_economic_survey/group_dwelling_and_household/dwelling_risk_other" type="string" required="true()" relevant=" /socio_economic_survey/group_dwelling_and_household/dwelling_risk ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_dwelling_and_household/dwelling_risk_other,  /socio_economic_survey/group_dwelling_and_household/dwelling_risk_other )"/>
+      <bind nodeset="/socio_economic_survey/group_wash/water_source" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_wash/water_source,  /socio_economic_survey/group_wash/water_source )"/>
+      <bind nodeset="/socio_economic_survey/group_wash/water_source_other" type="string" required="true()" relevant=" /socio_economic_survey/group_wash/water_source ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_wash/water_source_other,  /socio_economic_survey/group_wash/water_source_other )"/>
+      <bind nodeset="/socio_economic_survey/group_wash/human_waste_disposal" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_wash/human_waste_disposal,  /socio_economic_survey/group_wash/human_waste_disposal )"/>
+      <bind nodeset="/socio_economic_survey/group_wash/human_waste_disposal_other" type="string" required="true()" relevant=" /socio_economic_survey/group_wash/human_waste_disposal ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_wash/human_waste_disposal_other,  /socio_economic_survey/group_wash/human_waste_disposal_other )"/>
+      <bind nodeset="/socio_economic_survey/group_fuel/cooking_fuel" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_fuel/cooking_fuel,  /socio_economic_survey/group_fuel/cooking_fuel )"/>
+      <bind nodeset="/socio_economic_survey/group_fuel/cooking_fuel_other" type="string" required="true()" relevant=" /socio_economic_survey/group_fuel/cooking_fuel ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_fuel/cooking_fuel_other,  /socio_economic_survey/group_fuel/cooking_fuel_other )"/>
+      <bind nodeset="/socio_economic_survey/group_fuel/lighting_fuel" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_fuel/lighting_fuel,  /socio_economic_survey/group_fuel/lighting_fuel )"/>
+      <bind nodeset="/socio_economic_survey/group_fuel/lighting_fuel_other" type="string" required="true()" relevant=" /socio_economic_survey/group_fuel/lighting_fuel ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_fuel/lighting_fuel_other,  /socio_economic_survey/group_fuel/lighting_fuel_other )"/>
+      <bind nodeset="/socio_economic_survey/group_house_asset_ownership/assets" type="select" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_house_asset_ownership/assets,  /socio_economic_survey/group_house_asset_ownership/assets )"/>
+      <bind nodeset="/socio_economic_survey/group_house_asset_ownership/livestock" type="select" constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" required="true()" jr:constraintMsg="None cannot be selected with any other option!" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_house_asset_ownership/livestock,  /socio_economic_survey/group_house_asset_ownership/livestock )"/>
+      <bind nodeset="/socio_economic_survey/group_house_asset_ownership/count_live_births_last_12_months" type="int" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_house_asset_ownership/count_live_births_last_12_months,  /socio_economic_survey/group_house_asset_ownership/count_live_births_last_12_months )"/>
+      <bind nodeset="/socio_economic_survey/group_house_asset_ownership/count_deaths_last_12_months" type="int" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_house_asset_ownership/count_deaths_last_12_months,  /socio_economic_survey/group_house_asset_ownership/count_deaths_last_12_months )"/>
+      <bind nodeset="/socio_economic_survey/group_house_asset_ownership/household_conditions" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_house_asset_ownership/household_conditions,  /socio_economic_survey/group_house_asset_ownership/household_conditions )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/skipped_meals_money" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/skipped_meals_money,  /socio_economic_survey/group_social_assistance/skipped_meals_money )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/receive_benefits_sap" type="select1" required="true()" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/receive_benefits_sap,  /socio_economic_survey/group_social_assistance/receive_benefits_sap )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/programmes" type="string" constraint="regex(.,'^[(A-Za-z0-9)+ ?]*$')" relevant="selected( /socio_economic_survey/group_social_assistance/receive_benefits_sap , 'yes')" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/programmes,  /socio_economic_survey/group_social_assistance/programmes )" jr:constraintMsg="This field can only have letters and numbers" required="true()"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/benefit_type" type="select" required="true()" relevant="selected( /socio_economic_survey/group_social_assistance/receive_benefits_sap , 'yes')" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/benefit_type,  /socio_economic_survey/group_social_assistance/benefit_type )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/other_benefit_type" type="string" required="true()" relevant="selected( /socio_economic_survey/group_social_assistance/receive_benefits_sap , 'yes') and  /socio_economic_survey/group_social_assistance/benefit_type ='other'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/other_benefit_type,  /socio_economic_survey/group_social_assistance/other_benefit_type )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/cost_of_last_benefit" type="int" required="true()" relevant="selected( /socio_economic_survey/group_social_assistance/receive_benefits_sap , 'yes')" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/cost_of_last_benefit,  /socio_economic_survey/group_social_assistance/cost_of_last_benefit )"/>
+      <bind nodeset="/socio_economic_survey/group_social_assistance/in_kind_benefit_type" type="string" required="true()" relevant="selected( /socio_economic_survey/group_social_assistance/receive_benefits_sap , 'yes') and  /socio_economic_survey/group_social_assistance/benefit_type ='in-kind'" calculate="if( /socio_economic_survey/once ='', instance('contact-summary')/context/demographics/group_social_assistance/in_kind_benefit_type,  /socio_economic_survey/group_social_assistance/in_kind_benefit_type )"/>
+      <bind nodeset="/socio_economic_survey/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input ref="/socio_economic_survey/intro">
+      <label ref="jr:itext('/socio_economic_survey/intro:label')"/>
+      <hint ref="jr:itext('/socio_economic_survey/intro:hint')"/>
+    </input>
+    <group appearance="field-list" ref="/socio_economic_survey/inputs">
+      <label ref="jr:itext('/socio_economic_survey/inputs:label')"/>
+      <group ref="/socio_economic_survey/inputs/contact">
+        <label ref="jr:itext('/socio_economic_survey/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/socio_economic_survey/inputs/contact/_id">
+          <label ref="jr:itext('/socio_economic_survey/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/socio_economic_survey/inputs/contact/contact">
+          <label ref="jr:itext('/socio_economic_survey/inputs/contact/contact:label')"/>
+        </group>
+        <group ref="/socio_economic_survey/inputs/contact/parent">
+          <label ref="jr:itext('/socio_economic_survey/inputs/contact/parent:label')"/>
+          <group ref="/socio_economic_survey/inputs/contact/parent/contact">
+            <label ref="jr:itext('/socio_economic_survey/inputs/contact/parent/contact:label')"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_geographic_identification">
+      <label ref="jr:itext('/socio_economic_survey/group_geographic_identification:label')"/>
+      <input ref="/socio_economic_survey/group_geographic_identification/physical_address">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/physical_address:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_geographic_identification/nearest_school">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/nearest_school:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_geographic_identification/n_residence_duration">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/n_residence_duration:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_geographic_identification/residence_duration_years">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/residence_duration_years:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_geographic_identification/residence_duration_months">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/residence_duration_months:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_geographic_identification/area_type">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/area_type:label')"/>
+        <item>
+          <label>Urban</label>
+          <value>urban</value>
+        </item>
+        <item>
+          <label>Rural</label>
+          <value>rural</value>
+        </item>
+        <item>
+          <label>Peri Urban</label>
+          <value>peri_urban</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_geographic_identification/area_type_other">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/area_type_other:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_geographic_identification/village">
+        <label ref="jr:itext('/socio_economic_survey/group_geographic_identification/village:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_dwelling_and_household">
+      <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household:label')"/>
+      <input ref="/socio_economic_survey/group_dwelling_and_household/no_of_rooms">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/no_of_rooms:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/owns_house">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/owns_house:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/dwelling_ownership">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/dwelling_ownership:label')"/>
+        <item>
+          <label>Purchased</label>
+          <value>purchased</value>
+        </item>
+        <item>
+          <label>Constructed</label>
+          <value>constructed</value>
+        </item>
+        <item>
+          <label>Inherited</label>
+          <value>inherited</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/dwelling_rented">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/dwelling_rented:label')"/>
+        <item>
+          <label>Government</label>
+          <value>government</value>
+        </item>
+        <item>
+          <label>Local Authority</label>
+          <value>local</value>
+        </item>
+        <item>
+          <label>Parastatal</label>
+          <value>parastatal</value>
+        </item>
+        <item>
+          <label>Private Company</label>
+          <value>private</value>
+        </item>
+        <item>
+          <label>Individual</label>
+          <value>individual</value>
+        </item>
+        <item>
+          <label>Faith based organization/NGO</label>
+          <value>fbo_or_ngo</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input appearance="field-list" ref="/socio_economic_survey/group_dwelling_and_household/n_housing_material">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/n_housing_material:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/roofing_material">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/roofing_material:label')"/>
+        <item>
+          <label>Corrugated iron sheets</label>
+          <value>iron_sheets</value>
+        </item>
+        <item>
+          <label>Tiles</label>
+          <value>tiles</value>
+        </item>
+        <item>
+          <label>Concrete</label>
+          <value>concrete</value>
+        </item>
+        <item>
+          <label>Asbestos sheets</label>
+          <value>asbestos_sheets</value>
+        </item>
+        <item>
+          <label>Grass</label>
+          <value>grass</value>
+        </item>
+        <item>
+          <label>Makuti</label>
+          <value>makuti</value>
+        </item>
+        <item>
+          <label>Tin</label>
+          <value>tin</value>
+        </item>
+        <item>
+          <label>Mud/dung</label>
+          <value>mud</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_dwelling_and_household/roofing_material_other">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/roofing_material_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/wall_material">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/wall_material:label')"/>
+        <item>
+          <label>Stone</label>
+          <value>stone</value>
+        </item>
+        <item>
+          <label>Brick/Block</label>
+          <value>brick_block</value>
+        </item>
+        <item>
+          <label>Mud/Wood</label>
+          <value>mud_wood</value>
+        </item>
+        <item>
+          <label>Mud/Cement</label>
+          <value>mud_cement</value>
+        </item>
+        <item>
+          <label>Wood only</label>
+          <value>wood_only</value>
+        </item>
+        <item>
+          <label>Corrugated iron sheets</label>
+          <value>iron_sheets</value>
+        </item>
+        <item>
+          <label>Grass/Reeds</label>
+          <value>grass_reeds</value>
+        </item>
+        <item>
+          <label>Tin</label>
+          <value>tin</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_dwelling_and_household/wall_material_other">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/wall_material_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/floor_material">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/floor_material:label')"/>
+        <item>
+          <label>Cement</label>
+          <value>cement</value>
+        </item>
+        <item>
+          <label>Tiles</label>
+          <value>tiles</value>
+        </item>
+        <item>
+          <label>Wood</label>
+          <value>wood</value>
+        </item>
+        <item>
+          <label>Earth</label>
+          <value>earth</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_dwelling_and_household/floor_material_other">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/floor_material_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_dwelling_and_household/dwelling_risk">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/dwelling_risk:label')"/>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+        <item>
+          <label>Landslide</label>
+          <value>landslide</value>
+        </item>
+        <item>
+          <label>Flooding</label>
+          <value>flooding</value>
+        </item>
+        <item>
+          <label>Fire</label>
+          <value>fire</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_dwelling_and_household/dwelling_risk_other">
+        <label ref="jr:itext('/socio_economic_survey/group_dwelling_and_household/dwelling_risk_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_wash">
+      <label ref="jr:itext('/socio_economic_survey/group_wash:label')"/>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_wash/water_source">
+        <label ref="jr:itext('/socio_economic_survey/group_wash/water_source:label')"/>
+        <item>
+          <label>Pond</label>
+          <value>pond</value>
+        </item>
+        <item>
+          <label>Dam</label>
+          <value>dam</value>
+        </item>
+        <item>
+          <label>Lake</label>
+          <value>lake</value>
+        </item>
+        <item>
+          <label>Stream/River</label>
+          <value>stream_river</value>
+        </item>
+        <item>
+          <label>Protected spring water</label>
+          <value>protected_spring_water</value>
+        </item>
+        <item>
+          <label>Unprotected spring water</label>
+          <value>unprotected_spring_water</value>
+        </item>
+        <item>
+          <label>Protected well</label>
+          <value>protected_well</value>
+        </item>
+        <item>
+          <label>Unprotected well</label>
+          <value>unprotected_well</value>
+        </item>
+        <item>
+          <label>Borehole</label>
+          <value>borehole</value>
+        </item>
+        <item>
+          <label>Piped into dwelling</label>
+          <value>piped_into_dwelling</value>
+        </item>
+        <item>
+          <label>Piped</label>
+          <value>piped</value>
+        </item>
+        <item>
+          <label>Jabia</label>
+          <value>jabia</value>
+        </item>
+        <item>
+          <label>Rain/Harvested</label>
+          <value>rain_harvested</value>
+        </item>
+        <item>
+          <label>Water vendor</label>
+          <value>water_vendor</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_wash/water_source_other">
+        <label ref="jr:itext('/socio_economic_survey/group_wash/water_source_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_wash/human_waste_disposal">
+        <label ref="jr:itext('/socio_economic_survey/group_wash/human_waste_disposal:label')"/>
+        <item>
+          <label>Main sewer</label>
+          <value>main_sewer</value>
+        </item>
+        <item>
+          <label>Septic tank</label>
+          <value>septic_tank</value>
+        </item>
+        <item>
+          <label>Cess pool</label>
+          <value>cess_pool</value>
+        </item>
+        <item>
+          <label>VIP pit latrine</label>
+          <value>vip_pit_latrine</value>
+        </item>
+        <item>
+          <label>Pit latrine covered</label>
+          <value>pit_latrine_covered</value>
+        </item>
+        <item>
+          <label>Pit latrine uncovered</label>
+          <value>pit_latrine_uncovered</value>
+        </item>
+        <item>
+          <label>Bucket Latrine</label>
+          <value>bucket_latrine</value>
+        </item>
+        <item>
+          <label>Bush</label>
+          <value>bush</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_wash/human_waste_disposal_other">
+        <label ref="jr:itext('/socio_economic_survey/group_wash/human_waste_disposal_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_fuel">
+      <label ref="jr:itext('/socio_economic_survey/group_fuel:label')"/>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_fuel/cooking_fuel">
+        <label ref="jr:itext('/socio_economic_survey/group_fuel/cooking_fuel:label')"/>
+        <item>
+          <label>Electricity</label>
+          <value>electricity</value>
+        </item>
+        <item>
+          <label>Paraffin</label>
+          <value>paraffin</value>
+        </item>
+        <item>
+          <label>LPG (Liquefied Petroleum Gas)</label>
+          <value>lpg</value>
+        </item>
+        <item>
+          <label>Biogas</label>
+          <value>biogas</value>
+        </item>
+        <item>
+          <label>Firewood</label>
+          <value>firewood</value>
+        </item>
+        <item>
+          <label>Charcoal</label>
+          <value>charcoal</value>
+        </item>
+        <item>
+          <label>Solar</label>
+          <value>solar</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_fuel/cooking_fuel_other">
+        <label ref="jr:itext('/socio_economic_survey/group_fuel/cooking_fuel_other:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_fuel/lighting_fuel">
+        <label ref="jr:itext('/socio_economic_survey/group_fuel/lighting_fuel:label')"/>
+        <item>
+          <label>Electricity</label>
+          <value>electricity</value>
+        </item>
+        <item>
+          <label>Pressure lamp</label>
+          <value>pressure_lamp</value>
+        </item>
+        <item>
+          <label>Lantern</label>
+          <value>lantern</value>
+        </item>
+        <item>
+          <label>Tin lamp</label>
+          <value>tin_lamp</value>
+        </item>
+        <item>
+          <label>Gas lamp</label>
+          <value>gas lamp</value>
+        </item>
+        <item>
+          <label>Fuel wood / Firewood</label>
+          <value>firewood</value>
+        </item>
+        <item>
+          <label>Solar</label>
+          <value>solar</value>
+        </item>
+        <item>
+          <label>Other:</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_fuel/lighting_fuel_other">
+        <label ref="jr:itext('/socio_economic_survey/group_fuel/lighting_fuel_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_house_asset_ownership">
+      <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership:label')"/>
+      <select appearance="horizontal" ref="/socio_economic_survey/group_house_asset_ownership/assets">
+        <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/assets:label')"/>
+        <hint ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/assets:hint')"/>
+        <item>
+          <label>Television</label>
+          <value>television</value>
+        </item>
+        <item>
+          <label>Refrigerator</label>
+          <value>refrigerator</value>
+        </item>
+        <item>
+          <label>Motorbike</label>
+          <value>motorbike</value>
+        </item>
+        <item>
+          <label>Car</label>
+          <value>car</value>
+        </item>
+        <item>
+          <label>Tuk Tuk</label>
+          <value>tuk_tuk</value>
+        </item>
+        <item>
+          <label>Mobile phone</label>
+          <value>mobile_phone</value>
+        </item>
+        <item>
+          <label>Bicycle</label>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <select appearance="horizontal" ref="/socio_economic_survey/group_house_asset_ownership/livestock">
+        <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/livestock:label')"/>
+        <item>
+          <label>Exotic cattle</label>
+          <value>exotic_cattle</value>
+        </item>
+        <item>
+          <label>Indigenous cattle</label>
+          <value>indigenous_cattle</value>
+        </item>
+        <item>
+          <label>Sheep</label>
+          <value>sheep</value>
+        </item>
+        <item>
+          <label>Goats</label>
+          <value>goats</value>
+        </item>
+        <item>
+          <label>Camels</label>
+          <value>camels</value>
+        </item>
+        <item>
+          <label>Donkeys</label>
+          <value>donkeys</value>
+        </item>
+        <item>
+          <label>Pigs</label>
+          <value>pigs</value>
+        </item>
+        <item>
+          <label>Chicken</label>
+          <value>chicken</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/socio_economic_survey/group_house_asset_ownership/count_live_births_last_12_months">
+        <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/count_live_births_last_12_months:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_house_asset_ownership/count_deaths_last_12_months">
+        <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/count_deaths_last_12_months:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_house_asset_ownership/household_conditions">
+        <label ref="jr:itext('/socio_economic_survey/group_house_asset_ownership/household_conditions:label')"/>
+        <item>
+          <label>Poor</label>
+          <value>poor</value>
+        </item>
+        <item>
+          <label>Fair</label>
+          <value>fair</value>
+        </item>
+        <item>
+          <label>Good</label>
+          <value>good</value>
+        </item>
+        <item>
+          <label>Very good</label>
+          <value>very_good</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/socio_economic_survey/group_social_assistance">
+      <label ref="jr:itext('/socio_economic_survey/group_social_assistance:label')"/>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_social_assistance/skipped_meals_money">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/skipped_meals_money:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/socio_economic_survey/group_social_assistance/receive_benefits_sap">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/receive_benefits_sap:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/socio_economic_survey/group_social_assistance/programmes">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/programmes:label')"/>
+      </input>
+      <select appearance="horizontal" ref="/socio_economic_survey/group_social_assistance/benefit_type">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/benefit_type:label')"/>
+        <item>
+          <label>Cash</label>
+          <value>cash</value>
+        </item>
+        <item>
+          <label>In-kind</label>
+          <value>in-kind</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/socio_economic_survey/group_social_assistance/other_benefit_type">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/other_benefit_type:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_social_assistance/cost_of_last_benefit">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/cost_of_last_benefit:label')"/>
+      </input>
+      <input ref="/socio_economic_survey/group_social_assistance/in_kind_benefit_type">
+        <label ref="jr:itext('/socio_economic_survey/group_social_assistance/in_kind_benefit_type:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

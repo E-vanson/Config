@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pre_job:
+      runs-on: ubuntu-latest
+      outputs:
+        should_skip: ${{ steps.skip_check.outputs.should_skip }}
+      steps:
+        - id: skip_check
+          uses: fkirc/skip-duplicate-actions@v5.3.0
+          with:
+            skip_after_successful_duplicate: 'true'
+
+  generate_test_list:
+    needs: pre_job
+    if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - run: sudo apt-get install xsltproc
+      - run: sudo python -m pip install git+https://github.com/medic/pyxform.git@medic-conf-1.17#egg=pyxform-medic
+      - run: npm ci  
+      - run: npm run compile-app-settings && npm run validate-forms
+      
+      - name: Build Cache 
+        uses: actions/cache/save@v3
+        with:
+          path: |
+            node_modules
+            app_settings.json
+            forms
+          key: ${{ runner.OS }}-${{ github.sha }}-build-cache
+      
+      - id: set-val
+        name: set-val
+        run: |
+          find test/**/*\.spec.js -print | jq -R '[.]' | jq -s 'add' | jq . -c > files.json
+          echo "file_list=$(cat files.json)" >> $GITHUB_OUTPUT
+    outputs:
+        file_list: ${{ steps.set-val.outputs.file_list }}
+        
+  test:
+    needs: generate_test_list
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: .
+    strategy:
+      matrix:
+        file: ${{fromJson(needs.generate_test_list.outputs.file_list)}}
+
+    steps:
+      - run: sudo apt-get install xsltproc
+      - run: sudo python -m pip install git+https://github.com/medic/pyxform.git@medic-conf-1.17#egg=pyxform-medic
+      
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      
+      - uses: actions/cache/restore@v3
+        with:
+          path: |
+            node_modules
+            app_settings.json
+            forms
+          key: ${{ runner.OS }}-${{ github.sha }}-build-cache
+
+      - run: npx mocha ${{ matrix.file }} --timeout 60000 --slow 5000

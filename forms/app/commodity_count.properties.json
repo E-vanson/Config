@@ -1,0 +1,11 @@
+{
+  "icon": "icon-form-general",
+  "title": {
+      "en": "Commodity Count"
+    },
+    "context": {
+      "person": false,
+      "place": true,
+      "expression": "contact.contact_type === 'd_community_health_volunteer_area' && user.parent.contact_type === 'd_community_health_volunteer_area'"
+    }
+}

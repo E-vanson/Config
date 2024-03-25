@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>CEBS Signal Verification</h:title>
+    <model>
+      <instance>
+        <cha_signal_verification id="cha_signal_verification" prefix="J1!cha_signal_verification!" delimiter="#" version="2023-04-01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <task_id/>
+            <t_source_chw_id/>
+            <t_source_chw_name/>
+            <t_source_chw_phone/>
+            <t_source_signal_id/>
+            <t_source_signal_type/>
+            <contact>
+              <_id/>
+              <place_id/>
+              <contact>
+                <_id/>
+                <name/>
+                <phone/>
+              </contact>
+            </contact>
+          </inputs>
+          <place_uuid/>
+          <case_id/>
+          <source_chw_id/>
+          <source_chw_name/>
+          <source_chw_phone/>
+          <signal_id/>
+          <source_signal_type/>
+          <cal_signal_type/>
+          <signal_code/>
+          <signal_type_label/>
+          <cha_verification>
+            <n_notification/>
+            <signal_description/>
+            <signal_matches/>
+            <n_signals/>
+            <n_signal_does_not_match/>
+            <signal_type/>
+            <is_new_signal/>
+            <n_is_now_new_signal/>
+            <q_health_threat_start_datetime/>
+            <health_threat_start_date/>
+            <health_threat_start_time/>
+            <health_threat_start_datetime/>
+            <approx_no_people_affected/>
+            <approx_no_people_dead/>
+            <involves_animals/>
+            <animals_involved/>
+            <animals_involved_other/>
+            <approx_no_animals_affected/>
+            <approx_no_animals_dead/>
+            <signal_source/>
+            <additional_details/>
+            <q_verification_datetime/>
+            <verification_date/>
+            <verification_time/>
+            <verification_datetime/>
+            <threat_exists/>
+            <n_threat_does_not_exist/>
+            <q_scdsc_informed_datetime/>
+            <scdsc_informed_date/>
+            <scdsc_informed_time/>
+            <scdsc_informed_datetime/>
+            <signal_referred_to_animal_health/>
+          </cha_verification>
+          <summary>
+            <n_results_page/>
+            <n_submit_reminder/>
+            <n_signal_details/>
+            <n_signal_type/>
+            <n_signal_id/>
+            <n_key_instruction/>
+            <n_mobile_data_reminder/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cha_signal_verification>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/cha_signal_verification/inputs" relevant="./source=user"/>
+      <bind nodeset="/cha_signal_verification/inputs/source" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/source_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/task_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/t_source_chw_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/t_source_chw_name" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/t_source_chw_phone" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/t_source_signal_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/t_source_signal_type" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/cha_signal_verification/inputs/contact/place_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/contact/contact/_id" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/contact/contact/name" type="string"/>
+      <bind nodeset="/cha_signal_verification/inputs/contact/contact/phone" type="string"/>
+      <bind nodeset="/cha_signal_verification/place_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/cha_signal_verification/case_id" type="string" calculate=" /cha_signal_verification/signal_id "/>
+      <bind nodeset="/cha_signal_verification/source_chw_id" type="string" calculate="../inputs/t_source_chw_id"/>
+      <bind nodeset="/cha_signal_verification/source_chw_name" type="string" calculate="../inputs/t_source_chw_name"/>
+      <bind nodeset="/cha_signal_verification/source_chw_phone" type="string" calculate="../inputs/t_source_chw_phone"/>
+      <bind nodeset="/cha_signal_verification/signal_id" type="string" calculate="../inputs/t_source_signal_id"/>
+      <bind nodeset="/cha_signal_verification/source_signal_type" type="string" calculate="../inputs/t_source_signal_type"/>
+      <bind nodeset="/cha_signal_verification/cal_signal_type" type="string" calculate="if( /cha_signal_verification/cha_verification/signal_type  != '',  /cha_signal_verification/cha_verification/signal_type , ../inputs/t_source_signal_type)"/>
+      <bind nodeset="/cha_signal_verification/signal_code" type="string" calculate="if( /cha_signal_verification/cal_signal_type  = 'similar_symptoms', 1,
+if( /cha_signal_verification/cal_signal_type  = 'death_in_community', 2,
+if( /cha_signal_verification/cal_signal_type  = 'child_weak_legs_arms', 3,
+if( /cha_signal_verification/cal_signal_type  = 'diarrhea', 4,
+if( /cha_signal_verification/cal_signal_type  = 'increased_sickness_animals', 5,
+if( /cha_signal_verification/cal_signal_type  = 'bitten_by_animal', 6,
+if( /cha_signal_verification/cal_signal_type  = 'public_event_of_concern', 7, '')))))))"/>
+      <bind nodeset="/cha_signal_verification/signal_type_label" type="string" calculate="jr:choice-name( /cha_signal_verification/cha_verification/signal_type , ' /cha_signal_verification/cha_verification/signal_type ')"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/n_notification" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/signal_description" type="string"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/signal_matches" type="select1" required="true()"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/n_signals" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/n_signal_does_not_match" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/signal_matches  = 'no'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/signal_type" type="select1" required="true()" relevant=" /cha_signal_verification/cha_verification/signal_matches  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/is_new_signal" type="select1" required="true()" relevant=" /cha_signal_verification/cha_verification/signal_matches  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/n_is_now_new_signal" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'no'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/q_health_threat_start_datetime" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/health_threat_start_date" type="date" jr:constraintMsg="Date should not be in the future." constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/health_threat_start_time" type="time" jr:constraintMsg="Time should not be in the future." constraint="decimal-date-time(concat( /cha_signal_verification/cha_verification/health_threat_start_date , 'T',  /cha_signal_verification/cha_verification/health_threat_start_time )) &lt;= decimal-date-time(now() + (0.5 div 24))" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/health_threat_start_datetime" type="string" calculate="concat( /cha_signal_verification/cha_verification/health_threat_start_date , 'T',  /cha_signal_verification/cha_verification/health_threat_start_time )"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/approx_no_people_affected" type="int" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes' and not(selected( /cha_signal_verification/cha_verification/signal_type , '')) and not(selected( /cha_signal_verification/cha_verification/signal_type , 'increased_sickness_animals'))"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/approx_no_people_dead" type="int" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes' and not(selected( /cha_signal_verification/cha_verification/signal_type , '')) and not(selected( /cha_signal_verification/cha_verification/signal_type , 'increased_sickness_animals'))"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/involves_animals" type="select1" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes' and not(selected( /cha_signal_verification/cha_verification/signal_type , '')) and (selected( /cha_signal_verification/cha_verification/signal_type , 'public_event_of_concern') or selected( /cha_signal_verification/cha_verification/signal_type , 'increased_sickness_animals'))"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/animals_involved" type="select" required="true()" relevant=" /cha_signal_verification/cha_verification/involves_animals  = 'yes' or ( /cha_signal_verification/cha_verification/is_new_signal  = 'yes' and selected( /cha_signal_verification/cha_verification/signal_type , 'bitten_by_animal'))"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/animals_involved_other" type="string" required="true()" relevant=" /cha_signal_verification/cha_verification/animals_involved  = 'other'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/approx_no_animals_affected" type="int" required="true()" relevant=" /cha_signal_verification/cha_verification/involves_animals  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/approx_no_animals_dead" type="int" required="true()" relevant=" /cha_signal_verification/cha_verification/involves_animals  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/signal_source" type="select" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/additional_details" type="string" required="false()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/q_verification_datetime" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/verification_date" type="date" jr:constraintMsg="Date should not be in the future." constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/verification_time" type="time" jr:constraintMsg="Time should not be in the future." constraint="decimal-date-time(concat( /cha_signal_verification/cha_verification/verification_date , 'T',  /cha_signal_verification/cha_verification/verification_time )) &lt;= decimal-date-time(now() + (0.5 div 24))" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/verification_datetime" type="string" required="true()" calculate="concat( /cha_signal_verification/cha_verification/verification_date , 'T',  /cha_signal_verification/cha_verification/verification_time )" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/threat_exists" type="select1" required="true()" relevant=" /cha_signal_verification/cha_verification/is_new_signal  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/n_threat_does_not_exist" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'no'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/q_scdsc_informed_datetime" readonly="true()" type="string" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/scdsc_informed_date" type="date" jr:constraintMsg="Date should not be in the future." constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" required="true()" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/scdsc_informed_time" type="time" jr:constraintMsg="Time should not be in the future." constraint="decimal-date-time(concat( /cha_signal_verification/cha_verification/scdsc_informed_date , 'T',  /cha_signal_verification/cha_verification/scdsc_informed_time )) &lt;= decimal-date-time(now() + (0.5 div 24))" required="true()" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/scdsc_informed_datetime" type="string" required="true()" calculate="concat( /cha_signal_verification/cha_verification/scdsc_informed_date , 'T',  /cha_signal_verification/cha_verification/scdsc_informed_time )" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/cha_verification/signal_referred_to_animal_health" type="select1" relevant=" /cha_signal_verification/cha_verification/threat_exists  != '' and  /cha_signal_verification/cha_verification/threat_exists  = 'yes'"/>
+      <bind nodeset="/cha_signal_verification/summary/n_results_page" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_submit_reminder" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_signal_details" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_signal_type" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_signal_id" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_key_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/n_mobile_data_reminder" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/cha_signal_verification/inputs">
+      <label>Patient</label>
+      <group ref="/cha_signal_verification/inputs/contact">
+        <label>CHP Area</label>
+        <input appearance="db-object" ref="/cha_signal_verification/inputs/contact/_id">
+          <label>CHP Area UUID</label>
+          <hint>Select a person from list</hint>
+        </input>
+        <group ref="/cha_signal_verification/inputs/contact/contact">
+          <label>CHP</label>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/cha_signal_verification/cha_verification">
+      <label>CEBS Signal <output value=" /cha_signal_verification/signal_code "/> Verification</label>
+      <input ref="/cha_signal_verification/cha_verification/n_notification">
+        <label><output value=" /cha_signal_verification/source_chw_name "/> <output value=" /cha_signal_verification/source_chw_phone "/> has reported a public health signal please contact them for you to triage and verify the report .</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/signal_description">
+        <label>Provide brief description of signal (What happened/Is happening?)</label>
+      </input>
+      <select1 ref="/cha_signal_verification/cha_verification/signal_matches">
+        <label>Does the information match one of the signals on the list below?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/cha_verification/n_signals">
+        <label>&lt;ol&gt;
+&lt;li&gt; 1. Two or more people presenting with similar symptoms in a community (village, estate, institutions, gatherings e.g. funeral, wedding, market) within a week &lt;/li&gt;
+&lt;li&gt; 2. Any death in the community &lt;/li&gt;
+&lt;li&gt; 3. Any child less than 15 years with a sudden onset of weakness of the legs and arms not due to injury &lt;/li&gt;
+&lt;li&gt; 4. Any person 5 years of age or more with lots of watery diarrhea on the same day &lt;/li&gt;
+&lt;li&gt; 5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/ birds or fish) &lt;/li&gt;
+&lt;li&gt; 6. Any person who has been bitten by an animal including dogs &lt;/li&gt;
+&lt;li&gt; 7. Any event that causes public health anxiety/concern &lt;/li&gt;
+&lt;/ol&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/n_signal_does_not_match">
+        <label>You have mentioned that the signal does not match any of the seven signals on the list. This form will come an end.</label>
+      </input>
+      <select1 ref="/cha_signal_verification/cha_verification/signal_type">
+        <label>What was the final classification of the public health signal?</label>
+        <hint>(Please note you can only report one signal at a time)</hint>
+        <item>
+          <label>1. Two or more people presenting with similar symptoms in a community (village, estate, institutions, gatherings e.g. funeral, wedding, market) within a week</label>
+          <value>similar_symptoms</value>
+        </item>
+        <item>
+          <label>2. Any death in the community</label>
+          <value>death_in_community</value>
+        </item>
+        <item>
+          <label>3. Any child less than 15 years with a sudden onset of weakness of the legs and arms not due to injury</label>
+          <value>child_weak_legs_arms</value>
+        </item>
+        <item>
+          <label>4. Any person 5 years of age or more with lots of watery diarrhea on the same day</label>
+          <value>diarrhea</value>
+        </item>
+        <item>
+          <label>5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/ birds or fish)</label>
+          <value>increased_sickness_animals</value>
+        </item>
+        <item>
+          <label>6. Any person who has been bitten by an animal including dogs</label>
+          <value>bitten_by_animal</value>
+        </item>
+        <item>
+          <label>7. Any event that causes public health anxiety/concern (floods, fires, tribal clashes, locust infestation and others)</label>
+          <value>public_event_of_concern</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_signal_verification/cha_verification/is_new_signal">
+        <label>Is this a new signal that hasn't been reported before?</label>
+        <hint>(assess if the information you are getting now is the same from a previous happening)</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/cha_verification/n_is_now_new_signal">
+        <label>You have mentioned that this is not a new signal and has been reported before (duplicate), this form will come to an end.</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/q_health_threat_start_datetime">
+        <label>&lt;strong&gt;When did the health threat start? (date and time)*&lt;/strong&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/health_threat_start_date">
+        <label>Date</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/health_threat_start_time">
+        <label>Time</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/approx_no_people_affected">
+        <label>Indicate an approximate number of people reported ill</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/approx_no_people_dead">
+        <label>Indicate an approximate number of people reported dead</label>
+      </input>
+      <select1 ref="/cha_signal_verification/cha_verification/involves_animals">
+        <label>Does this signal involve animals</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/cha_signal_verification/cha_verification/animals_involved">
+        <label>What animals are involved?</label>
+        <hint>(Tick all that apply)</hint>
+        <item>
+          <label>Poultry</label>
+          <value>poultry</value>
+        </item>
+        <item>
+          <label>Dogs</label>
+          <value>dogs</value>
+        </item>
+        <item>
+          <label>Cattle/Sheep/Goats</label>
+          <value>cattle_sheep_goats</value>
+        </item>
+        <item>
+          <label>Pigs</label>
+          <value>pigs</value>
+        </item>
+        <item>
+          <label>Wild Animals</label>
+          <value>wild_animals</value>
+        </item>
+        <item>
+          <label>Fish or other Marine animals</label>
+          <value>fish_or_marine</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/cha_signal_verification/cha_verification/animals_involved_other">
+        <label>Specify what animals are involved?</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/approx_no_animals_affected">
+        <label>Indicate an approximate number of animals affected</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/approx_no_animals_dead">
+        <label>Indicate an approximate number of animals reported dead</label>
+      </input>
+      <select ref="/cha_signal_verification/cha_verification/signal_source">
+        <label>From whom did the CHP get this information?</label>
+        <item>
+          <label>Community leader or organizer</label>
+          <value>community_leader</value>
+        </item>
+        <item>
+          <label>School official or teacher</label>
+          <value>school_official</value>
+        </item>
+        <item>
+          <label>Religious leader</label>
+          <value>religious_leader</value>
+        </item>
+        <item>
+          <label>Health care worker or chemist in the community</label>
+          <value>health_care_worker</value>
+        </item>
+        <item>
+          <label>Local news report</label>
+          <value>local_news</value>
+        </item>
+        <item>
+          <label>Rumor heard in casual conversation</label>
+          <value>rumor</value>
+        </item>
+        <item>
+          <label>Other member of the community</label>
+          <value>community_member</value>
+        </item>
+        <item>
+          <label>Self</label>
+          <value>self</value>
+        </item>
+      </select>
+      <input ref="/cha_signal_verification/cha_verification/additional_details">
+        <label>Please, provide any additional information about the signal</label>
+        <hint>(This includes any information that you may not have captured in the previous sections of the form)</hint>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/q_verification_datetime">
+        <label>&lt;strong&gt;When was the public health threat verified? (date and time )*&lt;/strong&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/verification_date">
+        <label>Date</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/verification_time">
+        <label>Time</label>
+      </input>
+      <select1 ref="/cha_signal_verification/cha_verification/threat_exists">
+        <label>Does the reported threat still exist?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/cha_verification/n_threat_does_not_exist">
+        <label>You mentioned that the reported public health threat does not exist .This form will come to an end</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/q_scdsc_informed_datetime">
+        <label>&lt;strong&gt;Date when SCDSC was informed about the public health event*&lt;/strong&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/scdsc_informed_date">
+        <label>Date</label>
+      </input>
+      <input ref="/cha_signal_verification/cha_verification/scdsc_informed_time">
+        <label>Time</label>
+      </input>
+      <select1 ref="/cha_signal_verification/cha_verification/signal_referred_to_animal_health">
+        <label>Has the signal been referred to the animal health team?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/cha_signal_verification/summary">
+      <label></label>
+      <input ref="/cha_signal_verification/summary/n_results_page">
+        <label>&lt;h3 style='background-color: #E06666; text-align: center;' &gt;SIGNAL REPORT RESULTS PAGE&lt;/h3&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_submit_reminder">
+        <label>&lt;p style='text-align: center;'&gt;Be sure you submit to complete this action&lt;/p&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_signal_details">
+        <label>&lt;h4 style='background-color: #8DB3E2 ; text-align: center;'&gt;&lt;bold&gt;Signal Details&lt;/bold&gt;&lt;/h4&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_signal_type">
+        <label>&lt;p style='background-color: #F4CCCC ; text-align: center;'&gt;Signal Type: <output value=" /cha_signal_verification/signal_type_label "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_signal_id">
+        <label>&lt;p style='background-color: #F4CCCC; text-align: center;'&gt;Signal ID: <output value=" /cha_signal_verification/signal_id "/>&lt;/p&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_key_instruction">
+        <label>&lt;h4 style='background-color: #6D9EEB ; text-align: center;'&gt;&lt;bold&gt;Key Instruction&lt;/bold&gt;&lt;/h4&gt;</label>
+      </input>
+      <input ref="/cha_signal_verification/summary/n_mobile_data_reminder">
+        <label>&lt;p&gt;Kindly switch on the data bundles to facilitate fast notification of this signal to the CHA for confirmation. Thank you.&lt;/p&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

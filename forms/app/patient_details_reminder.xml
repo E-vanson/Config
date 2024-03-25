@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Client Details Revision</h:title>
+    <model>
+      <instance>
+        <patient_details_reminder id="patient_details_reminder" prefix="J1!patient_details_reminder!" delimiter="#" version="2023-10-16 12:03:18">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <patient_uuid/>
+            <patient_name/>
+            <mismatched_fields/>
+            <link/>
+          </inputs>
+          <patient_id/>
+          <reminder_group>
+            <reminder_text/>
+            <reminder_missing_fields/>
+            <fields_count/>
+            <fields jr:template="">
+              <field_txt/>
+              <field/>
+            </fields>
+            <submit_note_default/>
+            <submit_note_mismatch_fields/>
+          </reminder_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </patient_details_reminder>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/patient_details_reminder/inputs/patient_uuid" type="string"/>
+      <bind nodeset="/patient_details_reminder/inputs/patient_name" type="string"/>
+      <bind nodeset="/patient_details_reminder/inputs/mismatched_fields" type="string"/>
+      <bind nodeset="/patient_details_reminder/inputs/link" type="string" calculate="concat('/#/contacts/',  /patient_details_reminder/patient_id , '/edit')"/>
+      <bind nodeset="/patient_details_reminder/patient_id" type="string" calculate="../inputs/patient_uuid"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/reminder_text" readonly="true()" type="string" relevant=" /patient_details_reminder/inputs/mismatched_fields =''"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/reminder_missing_fields" readonly="true()" type="string" relevant="count-selected( /patient_details_reminder/inputs/mismatched_fields ) &gt; 0"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/fields_count" type="string" readonly="true()" calculate="count-selected( /patient_details_reminder/inputs/mismatched_fields )"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/fields/field_txt" type="string" calculate="selected-at( /patient_details_reminder/inputs/mismatched_fields ,(position(..)-1))"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/fields/field" readonly="true()" type="string"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/submit_note_default" readonly="true()" type="string" relevant=" /patient_details_reminder/inputs/mismatched_fields =''"/>
+      <bind nodeset="/patient_details_reminder/reminder_group/submit_note_mismatch_fields" readonly="true()" type="string" relevant="count-selected( /patient_details_reminder/inputs/mismatched_fields ) &gt; 0"/>
+      <bind nodeset="/patient_details_reminder/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/patient_details_reminder/inputs"/>
+    <group appearance="field-list" ref="/patient_details_reminder/reminder_group">
+      <label>Client Details Revision Notification</label>
+      <input ref="/patient_details_reminder/reminder_group/reminder_text">
+        <label><output value=" /patient_details_reminder/inputs/patient_name "/>'s profile is missing details required by the client registry. Please [open their profile](<output value=" /patient_details_reminder/inputs/link "/>) to edit and add the missing fields.</label>
+      </input>
+      <input ref="/patient_details_reminder/reminder_group/reminder_missing_fields">
+        <label>The details you provided for <output value=" /patient_details_reminder/inputs/patient_name "/> do not match what we have in the client registry. Please follow up with <output value=" /patient_details_reminder/inputs/patient_name "/> and update their details</label>
+      </input>
+      <group ref="/patient_details_reminder/reminder_group/fields">
+        <label>Mismatched Fields</label>
+        <repeat nodeset="/patient_details_reminder/reminder_group/fields" jr:count=" /patient_details_reminder/reminder_group/fields_count ">
+          <input ref="/patient_details_reminder/reminder_group/fields/field">
+            <label><output value=" /patient_details_reminder/reminder_group/fields/field_txt "/></label>
+          </input>
+        </repeat>
+      </group>
+      <input ref="/patient_details_reminder/reminder_group/submit_note_default">
+        <label>&lt;strong&gt;You do not have to submit this form&lt;/strong&gt;, simply [Click this link](<output value=" /patient_details_reminder/inputs/link "/>) to start editing <output value=" /patient_details_reminder/inputs/patient_name "/>'s details.</label>
+      </input>
+      <input ref="/patient_details_reminder/reminder_group/submit_note_mismatch_fields">
+        <label>&lt;strong&gt;Submit this form after you [edit](<output value=" /patient_details_reminder/inputs/link "/>) <output value=" /patient_details_reminder/inputs/patient_name "/>'s details.&lt;/strong&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>
